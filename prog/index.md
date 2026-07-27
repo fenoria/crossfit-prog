@@ -1,7 +1,6 @@
 # Prog CrossFit — Thierry
 
-Source de vérité de la programmation (Markdown).  
-Site généré avec **VitePress** (Vue) depuis ce dossier.
+Ma programmation IA
 
 ## Hiérarchie
 
