@@ -28,7 +28,7 @@ Onze ouvrages exploitables :
 Processus explicite :
 
 1. **Lecture ciblée** de chaque livre (apports retenus, limites, pertinence profil).
-2. **Arbitrages** quand les auteurs divergent un pilote par question, les autres en soutien.
+2. **Arbitrages** quand les auteurs divergent, un pilote par question, les autres en soutien.
 3. **Synthèse**
 4. **Traduction en prog** → avec arborescence Saison → Macro → Meso → Semaine, avec un *pourquoi* à chaque niveau.
 
