@@ -95,6 +95,7 @@ export default defineConfig({
   srcDir: 'prog',
   base: repoBase,
   cleanUrls: true,
+  appearance: 'dark',
   themeConfig: {
     nav: [
       { text: 'Accueil', link: '/' },
