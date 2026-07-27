@@ -1,0 +1,107 @@
+name: Thierry
+age: 42
+height_cm: 179
+weight_kg: 87
+level: elite
+goal:
+  type: competition_performance  # à préciser (nom + date)
+  competition: null
+  date: null
+  notes: "Performance compétition ; fraîcheur et spécificité > volume gratuit"
+
+body:
+  composition: "très musclé"
+  training_history: "sportif de toujours"
+
+schedule:
+  weekday:
+    days: [mon, tue, wed, thu, fri]
+    time: "12:00-13:30"
+    max_minutes: 90
+  saturday:
+    frequency: every_other_week
+    time: "10:00-12:30"
+    max_minutes: 150
+  sunday: usually_off
+  preferences:
+    active_recovery_over_rest: true  # Z2 > off si créneau possible
+    z2_preferred_on_available_days: true
+
+equipment:
+  setting: crossfit_box
+  guided_machines: false
+  notes: "Matériel box standard uniquement (barres, DB, KB, rings, rig, ergos, box, WB, rope…)"
+
+strengths:
+  - ergos
+  - cardio
+  - technique_globale
+  - wall_balls_12kg
+  - burpees
+
+priorities:
+  - gym_volume_repeatability
+  - confidence_under_bar_controlled
+  - adductor_safe_loading
+
+weaknesses_or_limits:
+  - gym_volume_under_fatigue
+  - heavy_squat_snatch_caution
+  - heavy_squat_clean_caution
+  - residual_adductor_pain
+
+injury:
+  name: desinsertion_adducteur
+  year: 2025
+  status: residual_pain
+  programming_rules:
+    - "charges minorées"
+    - "pas de max out squat snatch / squat clean lourds"
+    - "écouter douleur adducteur ; réduire volume/stance/profondeur si irritation"
+    - "ne pas utiliser PRs pré-blessure pour les %"
+
+prs_pre_injury_kg:
+  back_squat: 160
+  front_squat: 140
+  clean: 130
+  jerk: 115
+  snatch: 80
+  deadlift: 200
+  weighted_pullup_1rm: 50
+
+prs_current_kg:
+  # à remplir via benchmarks
+  back_squat: null
+  front_squat: null
+  clean: null
+  jerk: null
+  snatch: null
+  deadlift: null
+  strict_press: null
+  weighted_pullup: null
+  notes: "Programmer uniquement après re-test / benchmarks"
+
+benchmarks:
+  last_run: null
+  next_due: "2026-08-03"
+  week_planned: "2026-08-03 to 2026-08-09"
+  battery:
+    - back_squat
+    - front_squat
+    - deadlift
+    - strict_press
+    - weighted_pullup
+    - snatch_technique_or_power
+    - clean_technique_or_power
+    - gym_volume_proxy  # BMU/RMU/HSW selon niveau actuel
+    - ergo_short
+
+coaching:
+  feedback_loop: true
+  language: fr
+  pedagogy_required: true
+
+knowledge:
+  methodology_status: validated
+  methodology_validated_on: 2026-07-27
+  corpus_notes: "Jamieson retiré (PDF image) — conditioning en fallback Bible PP jusqu’à nouvel ouvrage"

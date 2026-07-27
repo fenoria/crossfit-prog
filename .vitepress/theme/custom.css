@@ -1,0 +1,27 @@
+:root {
+  --vp-font-family-base: 'DM Sans', system-ui, sans-serif;
+  --vp-font-family-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  /* Athletic: charcoal + ember (évite le purple IA par défaut) */
+  --vp-c-brand-1: #e85d04;
+  --vp-c-brand-2: #f48c06;
+  --vp-c-brand-3: #dc2f02;
+  --vp-c-brand-soft: rgba(232, 93, 4, 0.14);
+}
+
+.dark {
+  --vp-c-brand-1: #fb8500;
+  --vp-c-brand-2: #ffb703;
+  --vp-c-brand-3: #e85d04;
+  --vp-c-brand-soft: rgba(251, 133, 0, 0.16);
+}
+
+.vp-doc h1 {
+  font-family: Syne, 'DM Sans', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.vp-doc h2 {
+  font-family: Syne, 'DM Sans', sans-serif;
+  border-top-color: var(--vp-c-brand-soft);
+}

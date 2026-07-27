@@ -1,0 +1,71 @@
+# Patterns de séances (draft) — budget 90 min box
+
+version: 1
+status: validated
+
+common:
+  warmup_min: 10-15
+  main_min: 45-60
+  accessory_or_finisher_min: 10-20
+  always_respect: [adductor, current_benchmarks, no_guided_machines]
+
+force_lower:
+  intent: "Force membre inférieur contrôlée / structure"
+  template:
+    - primary: "Back or Front squat — séries lourdes submax"
+    - secondary: "Hinge (RDL/DL variant) volume modéré"
+    - core: "anti-extension / roll-out"
+    - finisher: "Z2 easy si budget"
+
+force_upper:
+  intent: "Press + pull force relative"
+  template:
+    - primary: "Strict press"
+    - secondary: "Weighted pull-ups ou rows"
+    - accessory: "DB/KB shoulder health"
+    - finisher: "Z2 ou skill gym léger"
+
+gym_skill_day:
+  intent: "Technique + volume d'une skill dominante (Low)"
+  template:
+    - prep: "activation + drills"
+    - technique: "contraintes / progressions"
+    - volume: "EMOM / E2MOM submax (reps en réserve)"
+    - strength: "renfo lesté associé (pull/dip/HSPU strict)"
+  variants:
+    rmu_focus: ["ring support/kipping", "transition", "singles volume", "ring row/dip loaded"]
+    bmu_focus: ["kipping swings", "hip-to-bar", "singles/triples volume", "strict pull loaded"]
+    hsw_focus: ["HS hold/walk drills", "volume distance", "strict HSPU / wall walk"]
+    density: ["couplets gym+ergo courts unbroken", "repos fixes"]
+
+oly_power_day:
+  intent: "Puissance barre sans deep heavy squat obligatoire"
+  template:
+    - primary: "Power snatch ou power clean — singles/doubles techniques"
+    - pulls: "snatch/clean pulls"
+    - squat_light: "front squat léger technique si adducteur OK"
+    - note: "squat snatch/clean lourd = rare, stop douleur/peur"
+
+conditioning_z2:
+  intent: "Récup active / base aérobie (maintien)"
+  template:
+    - "30–60+ min Z2 ergo ou mix easy — parole possible"
+
+conditioning_specific:
+  intent: "Expression CF (bloc spécifique seulement)"
+  template:
+    - "WOD format compétition ou couplets points faibles"
+    - "Volume total limité ; qualité pacing"
+
+team_wod:
+  intent: "Contrainte box mercredi / samedi — comptabiliser fatigue"
+  template:
+    - "WOD team tel que programmé box"
+    - "Ajuster charge des jours suivants si RPE élevé"
+
+benchmark_session:
+  intent: "Calibrer charges actuelles"
+  rules:
+    - "1–2 lifts max par jour"
+    - "pas de max out squat snatch/clean agressif"
+    - "stop si douleur adducteur"

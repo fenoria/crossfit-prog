@@ -1,0 +1,14 @@
+---
+description: Persister toute décision métier durable en rules/profile/history
+alwaysApply: true
+---
+
+# Décisions → mémoire projet
+
+Quand l’utilisateur pose une contrainte durable (planning, matériel, blessure, préférence méthodo, nouveau livre, feedback récurrent…) :
+
+1. Mettre à jour `athlete/profile.yaml` et/ou la rule concernée
+2. Si c’est un arbitrage de prog : noter dans `history/decisions.md`
+3. Ne **pas** laisser la décision uniquement dans le chat
+
+Feedbacks post-séance récurrents (douleur à X kg, plafond charge, etc.) → même traitement.

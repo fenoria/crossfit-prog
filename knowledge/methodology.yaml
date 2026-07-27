@@ -1,0 +1,75 @@
+status: validated
+version: 1
+updated: 2026-07-27
+validated_on: 2026-07-27
+pilots:
+  structure: issurin
+  dosing: israetel
+  gym: low
+  oly: everett
+  transfer: verkhoshansky
+  macro_peaking: bompa
+  mental: encyclo_pm
+  conditioning_fallback: bible_pp
+gaps:
+  - jamieson_energy_systems_unavailable
+
+principles:
+  - one_dominant_intent_per_meso
+  - mev_mav_mrv_deloads
+  - residual_effects_sequencing
+  - transfer_to_cf_specificity
+  - pedagogy_at_every_level
+  - z2_over_off_when_possible
+  - cut_volume_not_intent_when_fatigued
+
+default_meso_order_post_injury:
+  - benchmarks
+  - ACC-GYM
+  - ACC-STR
+  - TRA-MIX
+  - REAL-mini
+
+annual_structure:
+  model: bompa_multi_peak_plus_issurin_stages
+  macrocycles_per_year: "2-3"
+  stage_pattern: [accumulation, transmutation, realization]
+  transition_weeks_end: "2-4"
+  note: "BON linear FORCE-GYM-OLY-SPEC rejected as annual template; annual model validated 2026-07-27"
+  annual_validated_on: 2026-07-27
+  rejected_annual_template: ["FORCE", "GYM", "HALTERO", "SPECIFIQUE", "PRECOMP", "TAPER_ONCE"]
+
+meso_types:
+  - ACC-GPP
+  - ACC-GYM
+  - ACC-STR
+  - ACC-OLY
+  - TRA-MIX
+  - TRA-POW
+  - REAL
+  - TRANS
+
+microcycle_template:
+  - volume_adaptatif
+  - surcharge_controlee
+  - pic
+  - deload
+
+session_budget_min:
+  weekday: 90
+  saturday_every_other: 150
+
+domains:
+  force:
+    patterns: [squat, hinge, press, pull]
+    intensity_note: "based_on_current_benchmarks"
+  gym:
+    priority: high
+    focuses: [rmu, bmu, hsw, hspu, density]
+  oly:
+    prefer: [power_snatch, power_clean, hangs, pulls]
+    limit: [heavy_squat_snatch, heavy_squat_clean]
+  conditioning:
+    role: maintenance
+    z2: frequent
+    high_intensity: limited_to_specific_block

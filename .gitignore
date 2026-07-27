@@ -1,0 +1,34 @@
+# Ebooks (copyright + large binaries) — racine seulement
+/books/
+*.pdf
+*.epub
+*.mobi
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Local previews / heavy raw extracts (keep structured knowledge)
+knowledge/raw/
+site/
+.vitepress/dist
+.vitepress/cache
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Secrets
+.env
+.env.*

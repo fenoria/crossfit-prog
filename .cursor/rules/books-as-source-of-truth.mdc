@@ -1,0 +1,13 @@
+---
+description: books/ est la source de connaissance principale pour toute prog
+alwaysApply: true
+---
+
+# Books = source de vérité
+
+- Le dossier `books/` et les artefacts dérivés dans `knowledge/` sont la **source de connaissance principale**.
+- Toute question de programmation, toute synthèse méthodo, toute génération de séances / cycles doit s’appuyer **en priorité** sur ce corpus.
+- Citer les principes / ouvrages pertinents quand c’est utile à la compréhension.
+- Ne pas inventer une méthodo hors corpus sans le signaler explicitement.
+- La méthodo dans `knowledge/methodology.md` est **validated** (2026-07-27). Toute génération de séances doit s’y conformer. Toute évolution méthodo majeure → repasser par validation athlète.
+- La prog se trouve dans **`prog/`** (Markdown + VitePress). L’ancien export BON n’est qu’un souvenir de forme, pas une source méthodo.

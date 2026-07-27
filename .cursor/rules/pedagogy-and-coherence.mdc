@@ -1,0 +1,20 @@
+---
+description: Expliquer le pourquoi et garantir cohérence court/moyen/long terme
+alwaysApply: true
+---
+
+# Pédagogie & cohérence temporelle
+
+À chaque niveau (saison → macro → meso → semaine → séance), expliquer :
+
+- **Pourquoi** (lien objectif / bloc / semaine)
+- **Intention** du stimulus
+- **Ce que ça apporte** (adaptations, court / moyen / long terme)
+- **Continuité** (ce qui précède, ce qui suit)
+
+Règles :
+
+- Pas de séance orpheline
+- `prog/` = source de vérité des séances
+- `history/decisions.md` = mémoire des arbitrages coach
+- Avant de créer un nouveau meso/semaine : relire `prog/` (dernières semaines) + decisions

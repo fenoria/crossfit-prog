@@ -1,0 +1,24 @@
+---
+description: Planning défaut, matériel box, Z2, adaptations ponctuelles
+alwaysApply: true
+---
+
+# Planning & matériel
+
+## Défaut
+- Lun–Ven : **12h–13h30** (séances ≤ **90 min**, échauffement inclus)
+- Dimanche : généralement off — si créneau possible → **Z2 > off**
+- Samedi : **1 semaine sur 2**, **10h–12h30** (~2h30) pour volume / team / Z2 selon le meso
+
+## Préférences
+- **Z2 > off** dès qu’un entraînement est possible (sauf fatigue haute, douleur adducteur, deload/taper imposant le repos)
+
+## Matériel
+- Box CrossFit standard uniquement
+- **Aucune machine guidée** (leg press, smith, poulies machine, etc.)
+- Free weights, gym, ergos, odd objects box uniquement
+
+## Adaptations
+- Weekends / vacances / contraintes ponctuelles : adapter jours/volume/intensité
+- Préserver l’intention du meso ; documenter dans `history/.../decisions.md`
+- Contraintes durables → `athlete/profile.yaml`

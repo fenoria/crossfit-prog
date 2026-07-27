@@ -1,0 +1,33 @@
+---
+description: Profil athlète élite, blessure, forces/faiblesses, benchmarks
+alwaysApply: true
+---
+
+# Contexte athlète
+
+Source structurée : `athlete/profile.yaml` (à tenir à jour).
+
+## Identité
+- 42 ans, 1,79 m, 87 kg, très musclé, sportif de toujours — niveau **élite / compétition**
+
+## Forces
+- Ergos excellents, cardio = point fort
+- Technique globalement bonne
+- Très à l’aise wall balls 12 kg et burpees
+
+## Priorités / faiblesses
+- Manque de **volume gym** (répétabilité sous fatigue) → levier principal
+- Frileux sur **squat snatch** et **squat clean** très lourds → power / charges contrôlées / progression
+
+## Blessure
+- Désinsertion adducteur (année dernière), douleurs résiduelles
+- Charges **minorées** ; éviter ce qui irrite l’adducteur
+- Ne jamais programmer sur les PRs pré-blessure sans re-test
+
+## PRs pré-blessure (historique seulement)
+BS 160 · FS 140 · Clean 130 · Jerk 115 · Snatch 80 · DL 200 · PU lesté 1×50 kg
+
+## Règles de prog
+- Intensité élite OK, mais privilégier volume/densité gym vs max out inutiles
+- Ne pas sur-stimuler le conditioning (déjà fort)
+- Planifier des **benchmarks** pour calibrer % et mesurer la progression

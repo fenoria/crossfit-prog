@@ -1,0 +1,18 @@
+---
+description: Source de vérité prog = Markdown dans prog/ (pas Notion)
+alwaysApply: true
+---
+
+# Prog Markdown = source de vérité
+
+- Toute la programmation se lit et s’écrit dans [`prog/`](prog/) (fichiers `.md`).
+- **Pas d’intégration Notion** (abandonnée) — ne pas créer/mettre à jour de pages Notion pour la prog.
+- Hiérarchie (validée, Issurin/Bompa) du plus haut au plus petit :
+  1. **Saison** — `prog/saison-YYYY/index.md`
+  2. **Macrocycle** — `.../macrocycle-N-nom/index.md`
+  3. **Meso** — `.../meso-nom/index.md`
+  4. **Semaine** — **1 fichier = 1 semaine** — `.../Sxx-YYYY-MM-DD.md`
+- Template semaine : pourquoi/intention · jours Lun–Ven · Notes athlète · créneau 90 min
+- Le site web (**VitePress** / Vue) est généré **depuis `prog/`** — sidebar auto ; `.vitepress/current.json` = semaine « En cours ».
+- Décisions coach durables : `history/decisions.md` + `athlete/profile.yaml` / rules.
+- Nettoyer les fichiers/dossiers obsolètes quand la structure évolue.

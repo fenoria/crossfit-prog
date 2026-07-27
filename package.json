@@ -1,0 +1,18 @@
+{
+  "name": "crossfit-prog",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "vitepress dev",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview",
+    "ingest": "python3 scripts/ingest-books.py"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  }
+}
