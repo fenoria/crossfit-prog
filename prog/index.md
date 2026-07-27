@@ -48,7 +48,7 @@ Règle d’or : si la fatigue monte, on coupe le **volume**, pas l’intention d
 1. Saison  
 2. Macrocycle  
 3. Meso  
-4. Semaine (1 fichier = 1 semaine)
+4. Semaine
 
 ## En cours
 
