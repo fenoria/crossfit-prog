@@ -54,7 +54,7 @@ function buildDirItems(dir: string): DefaultTheme.SidebarItem[] {
   const items: DefaultTheme.SidebarItem[] = []
 
   for (const name of entries) {
-    if (name.startsWith('.')) continue
+    if (name.startsWith('.') || name.startsWith('_')) continue
     const abs = join(dir, name)
     const st = statSync(abs)
 
