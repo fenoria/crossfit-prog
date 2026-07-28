@@ -3,15 +3,26 @@
 ## Rôle
 Référence **haltéro** : technique, erreurs, design de prog Oly.
 
-## Apports retenus
-- Force **et** technique indissociables ; programmer selon points faibles.
+## Vision
+Force et technique indissociables. Programmer selon points faibles. Variantes (power, hang, pulls) pour progresser sans maximiser la réception profonde à chaque séance.
+
+## Concepts clés
+- Technique + force.
 - Variables : fréquence, intensité, accessoires, restauration.
-- Variantes (power, hang, pulls) pour développer sans toujours maximiser la réception profonde.
-- Culture compétition / récupération / mobilité.
+- Variantes power / hang / pulls / singles contrôlés.
+- Culture compétition / mobilité / récupération.
+
+## Apports retenus
+- Technique Everett + **fréquence Oly modérée** (90 min + multi-domaines).
+- Power / hangs / pulls prioritaires.
+- Squat snatch/clean lourds = exposition rare et contrôlée.
 
 ## Limites / écarté
-- Modèle bulgare / très haute fréquence Oly : incompatible 90 min midi + CF multi-domaines → **fréquence Oly modérée**.
-- Max out fréquents : incompatibles adducteur + frileux squat snatch/clean.
+- Modèle bulgare / très haute fréquence Oly.
+- Max out fréquents (adducteur + frileux squat snatch/clean).
 
 ## Pertinence athlète
-Power snatch/clean, pulls, positions, singles contrôlés ; squat snatch/clean lourds = exposition progressive, jamais cœur de séance en reconstruction.
+Maintien / blocs Oly en reconstruction : qualité > kilos historiques.
+
+## Miroir site
+`prog/livres/everett-oly.md`

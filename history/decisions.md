@@ -61,3 +61,9 @@ Template + S01 + skills/rules/profile alignés.
 Blessure ~2025, douleur résiduelle possible → charges contrôlées / pas PRs pré-blessure.  
 **Pas** de score adducteur obligatoire en feedback ni de rappels systématiques dans `prog/`.  
 L’athlète signale s’il a mal ; le coach applique alors `adductor-protocol.yaml`.
+
+## 2026-07-28 — Fiches livres sur le site
+
+Fiches de lecture athlète sous `prog/livres/` (sidebar auto + nav « Livres »).  
+SoT coach enrichi en parallèle dans `knowledge/books/` (mêmes slugs).  
+Objectif : comprendre la méthodo sans lire les 11 ouvrages en entier.

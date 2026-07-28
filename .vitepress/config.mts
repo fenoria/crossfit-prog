@@ -108,6 +108,7 @@ export default defineConfig({
     siteTitle: 'Prog CrossFit',
     nav: [
       { text: 'Accueil', link: '/' },
+      { text: 'Livres', link: '/livres/' },
       { text: 'Saison 2026', link: '/saison-2026/' },
       { text: 'En cours', link: loadCurrentWeekLink() },
     ],

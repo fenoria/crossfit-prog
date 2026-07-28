@@ -1,14 +1,26 @@
 # Manuel ultime de musculation
 
 ## Rôle
-Complément hypertrophie / musculation.
+Complément hypertrophie / musculation — **secondaire**.
+
+## Vision
+Accessoires free-weight au service de la résilience (dos, épaules, tronc) — pas bodybuilding comme méthodo.
+
+## Concepts clés
+- Isolation / accessoires courts.
+- Hypertrophie locale = tissus, pas esthétique.
+- Budget temps : après le travail principal (90 min).
 
 ## Apports retenus
-- Idées d’accessoires free-weight pour renfo (dos, épaules, tronc) utiles à la gym et à la barre.
+- 1–2 accessoires fin de séance si temps.
+- Free weights only.
 
 ## Limites / écarté
-- Pas un manuel de périodisation CF élite → **secondaire**.
-- Machines / splits bodybuilding : incompatibles box / objectif compétition.
+- Pas un manuel de périodisation CF élite.
+- Machines / splits bodybuilding incompatibles box / objectif compétition.
 
 ## Pertinence athlète
-Accessoires courts en fin de séance si le budget 90 min le permet.
+Ponctuel ; ne pilote jamais le cycle.
+
+## Miroir site
+`prog/livres/manuel-muscu.md`

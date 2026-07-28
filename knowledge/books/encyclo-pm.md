@@ -3,12 +3,24 @@
 ## Rôle
 Mental compétition / stress / focus.
 
+## Vision
+Le jour J (incertitude CF) demande routines et gestion émotionnelle préparées. Activer surtout quand le volume physique descend (pré-comp / taper).
+
+## Concepts clés
+- Routines pré-comp, focus, stress, visualisation.
+- Réduction du bruit (nouveaux stimuli) en taper.
+- Cohérence « performer » vs seulement « encaisser ».
+
 ## Apports retenus
-- Préparation à l’incertitude compétition, routines, gestion émotionnelle.
-- Cohérence avec l’objectif « performer le jour J », pas seulement s’entraîner dur.
+- Modules mentaux en REAL / pré-comp / taper.
+- En Accumulation : clarté d’intention de séance, pas protocoles longs.
 
 ## Limites / écarté
 - Ne remplace pas la périodisation physique.
+- Pas de substitution d’un deload structurel par du « mental only ».
 
 ## Pertinence athlète
-Intégrer en pré-comp / taper : routines, visualisation, réduction du bruit (nouveaux stimuli).
+Surtout près des pics / events ; discret en ACC-GYM.
+
+## Miroir site
+`prog/livres/encyclo-pm.md`

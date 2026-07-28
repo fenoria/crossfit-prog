@@ -7,21 +7,21 @@ Chaque cycle, meso et séance s’appuie sur un **corpus d’ouvrages de référ
 
 ### 1. Corpus
 
-Onze ouvrages exploitables :
+Onze ouvrages exploitables — **[fiches de lecture complètes](/livres/)** :
 
 | Domaine | Ouvrage | Rôle |
 |---------|---------|------|
-| Structure de cycle | Issurin — *Block Periodization* | **Pilote** : blocs concentrés + résidus |
-| Macro / peaking | Bompa & Buzzichelli — *Periodization Training for Sports* | Année multi-pic, taper, transition |
-| Dose / fatigue | Israetel et al. — *Scientific Principles of Strength Training* | **Pilote** : dose utile vs trop (seuils de volume + deloads) |
-| Force | Zatsiorsky & Kraemer — *Science and Practice of Strength Training* | Principes force (intensité, volume, spécificité) |
-| Transfert | Verkhoshansky — *Special Strength Training* | Force générale → performance spécifique CF |
-| Haltéro | Everett — *Olympic Weightlifting* | Technique + prog Oly (power / pulls) |
-| Gym / BW | Low — *Overcoming Gravity* | **Pilote** volume & progressions gym |
-| PP générale | Reiss & Prévost — *La bible de la préparation physique* | Socle conditioning (sans Jamieson) |
-| PP large | *L’encyclopédie de la préparation physique* | Complément / réservoir d’idées |
-| Mental | *L’encyclopédie de la préparation mentale* | Pré-comp, routines, stress |
-| Accessoires | *Manuel ultime de musculation* | Renfo free-weight secondaire |
+| Structure de cycle | [Issurin — *Block Periodization*](/livres/issurin-block) | **Pilote** : blocs concentrés + résidus |
+| Macro / peaking | [Bompa & Buzzichelli — *Periodization Training for Sports*](/livres/bompa-periodization) | Année multi-pic, taper, transition |
+| Dose / fatigue | [Israetel et al. — *Scientific Principles of Strength Training*](/livres/israetel-scientific) | **Pilote** : dose utile vs trop (seuils de volume + deloads) |
+| Force | [Zatsiorsky & Kraemer — *Science and Practice of Strength Training*](/livres/zatsiorsky-spst) | Principes force (intensité, volume, spécificité) |
+| Transfert | [Verkhoshansky — *Special Strength Training*](/livres/verkhoshansky-sst) | Force générale → performance spécifique CF |
+| Haltéro | [Everett — *Olympic Weightlifting*](/livres/everett-oly) | Technique + prog Oly (power / pulls) |
+| Gym / BW | [Low — *Overcoming Gravity*](/livres/low-og) | **Pilote** volume & progressions gym |
+| PP générale | [Reiss & Prévost — *La bible de la préparation physique*](/livres/bible-pp) | Socle conditioning (sans Jamieson) |
+| PP large | [*L’encyclopédie de la préparation physique*](/livres/encyclo-pp) | Complément / réservoir d’idées |
+| Mental | [*L’encyclopédie de la préparation mentale*](/livres/encyclo-pm) | Pré-comp, routines, stress |
+| Accessoires | [*Manuel ultime de musculation*](/livres/manuel-muscu) | Renfo free-weight secondaire |
 
 ### 2. Comment j'en ai extrait une méthodo ?
 

@@ -3,14 +3,24 @@
 ## Rôle
 **Transfert** et force spéciale (comment la force générale devient performance).
 
+## Vision
+Fort en salle ≠ compétitif. Chaîne : force générale → force orientée → expression sous le régime du sport (mixed CF). Les mesos TRA existent pour convertir.
+
+## Concepts clés
+- SST : moyens alignés sur le régime moteur de la discipline.
+- Organisation concentrée des moyens de force (cohérent Issurin).
+- Boîte à outils (jump, circuit, coupling, strength-aerobic) — **sélection** selon meso.
+
 ## Apports retenus
-- SST (special strength training) : moyens orientés vers le régime moteur de la discipline.
-- Organisation concentrée des moyens de force dans le cycle annuel (cohérent avec Issurin).
-- Méthodes (jump, circuit, coupling/conjugate, strength-aerobic) comme boîte à outils — **sélection** selon le meso.
+- Passage ACC → TRA-MIX / TRA-POW → REAL.
+- Justification densités / WODs sous fatigue en conversion.
 
 ## Limites / écarté
-- Programmes sport-par-sport (aviron, sprint…) : ne pas copier ; extraire la logique de transfert.
-- Conjugate Westside « brut » : trop spécifique PL/strongman pour CF box sans adaptation.
+- Programmes sport-par-sport : ne pas copier.
+- Conjugate Westside brut : trop PL/strongman sans adaptation box/90 min.
 
 ## Pertinence athlète
-Guide le passage Accumulation (force générale) → Transmutation (force sous fatigue / sous skill CF) → Realization.
+Guide la Transmutation mixed du Macro 1 après gym + force.
+
+## Miroir site
+`prog/livres/verkhoshansky-sst.md`

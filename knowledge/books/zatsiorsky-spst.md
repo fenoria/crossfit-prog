@@ -3,13 +3,26 @@
 ## Rôle
 Socle scientifique **force** (intensité, effort, spécificité).
 
+## Vision
+La force a plusieurs méthodes (max, dynamique, hypertrophie). Clarifier intensité / effort / volume. Le transfert dépend de la spécificité — d’où Verkhoshansky ensuite.
+
+## Concepts clés
+- Effort ≠ intensité ≠ volume.
+- Méthodes de force et périodisation dans une saison.
+- Technique sous charge.
+- Spécificité du transfert.
+
 ## Apports retenus
-- Distinction effort / intensité / volume ; méthodes de force (max, dynamique, hypertrophie).
-- Spécificité du transfert ; importance de la technique sous charge.
-- Périodisation de la force dans une saison.
+- Cadre doses force structurelle (squat/hinge/push/pull) en ACC-STR.
+- Pas de max out inutiles en reconstruction ; RPE + charges actuelles.
+- Combiner Israetel (dose) + Verkhoshansky (transfert).
 
 ## Limites / écarté
-- Peu de « recettes » CrossFit/gymnastique — combiner avec Low / Everett / Issurin.
+- Peu de recettes CF/gym — combiner Low / Everett / Issurin.
+- Bodybuilding / machines écartés.
 
 ## Pertinence athlète
-Cadre pour doses force structurelle (squat/hinge/push/pull) en Accumulation, sans max out inutiles.
+Accumulation force post ACC-GYM ; frein post-blessure sur les %.
+
+## Miroir site
+`prog/livres/zatsiorsky-spst.md`
