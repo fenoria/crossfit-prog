@@ -16,7 +16,10 @@ description: Génère saison/macro/meso/semaines en Markdown sous prog/, uniquem
 ## Steps
 1. Définir objectif / date (ou Build sans A-event).
 2. Assurer Saison → Macrocycle → Meso (`index.md` ; meso depuis `prog/_templates/meso.md`).
-3. Écrire les semaines depuis `prog/_templates/semaine.md` (patterns + warmups + fondements + feedback).
+3. Écrire les semaines depuis `prog/_templates/semaine.md` :
+   - texte athlète (échauffements écrits) ;
+   - `<!-- pattern: -->` / `<!-- warmup: -->` pour ops ;
+   - fondements + feedback.
 4. Samedi = optionnel (décider à l’écriture / J-1 selon dispo).
 5. Microcycle Israetel : volume → surcharge → pic → deload.
 6. Mettre à jour index + `.vitepress/current.json`.

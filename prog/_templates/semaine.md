@@ -11,30 +11,37 @@
 
 ### Fondements (corpus)
 
-<!-- 1–3 refs max. Relire knowledge/books/ + knowledge/arbitrages.md.
-     Pas de liens vers knowledge/ (hors src VitePress) — citer auteur + titre. -->
-
 - **[Auteur]** (*Titre*) — [principe en 1–2 phrases qui justifie *cette* semaine].
-- **[Auteur]** (*Titre*) — … · voir arbitrage N si conflit d’auteurs.
+- **[Auteur]** (*Titre*) — …
 
 ## Règles
 
 - [contraintes spécifiques : adducteur, RPE, budget 90 min, etc.]
-- Maintien : respecter `maintenance-doses` du code meso
-- Patterns : chaque jour cite un `pattern:` parmi `knowledge/session-patterns.yaml`
+- [maintien en français clair — ex. « Z2 ≥ 60 min cette semaine »]
 
 ### Microcycle (si meso chargé)
 
-<!-- volume_adaptatif | surcharge_controlee | pic | deload -->
-**Phase micro** : [volume_adaptatif]
+**Phase micro** : volume adapté | surcharge | pic | deload
 
 ---
 
+<!-- Coach only (invisible site) : pattern + warmup ids pour lint / ops.
+     Visible = langage athlète, échauffement écrit en entier, zéro chemin knowledge/athlete. -->
+
 ## Lundi JJ/MM — [titre court]
 
-**Intention** : …  
-**Pattern** : `force_lower` | `gym_skill_day` | …  
-**Warm-up** : `warmup_…` (voir warmups)
+<!-- pattern: force_lower -->
+<!-- warmup: warmup_adductor_friendly -->
+
+**Intention** : …
+
+**Échauffement** (12–15’) :
+
+1. …
+2. …
+3. …
+
+**Séance** :
 
 1. …
 2. …
@@ -44,9 +51,16 @@
 
 ## Mardi JJ/MM — [titre court]
 
-**Intention** : …  
-**Pattern** : …  
-**Warm-up** : …
+<!-- pattern: force_upper -->
+<!-- warmup: warmup_upper_scap -->
+
+**Intention** : …
+
+**Échauffement** (8–12’) :
+
+1. …
+
+**Séance** :
 
 1. …
 
@@ -54,20 +68,33 @@
 
 ## Mercredi JJ/MM — Box / aérobie
 
-**Intention** : …  
-**Pattern** : `team_wod` | `conditioning_z2`  
-**Warm-up** : `warmup_general_90` | `warmup_z2_only`
+<!-- pattern: team_wod -->
+<!-- warmup: warmup_general_90 -->
 
-- **Si WOD team** : … · noter RPE (si ≥ 8 → −volume jeudi)
+**Intention** : …
+
+- **Si WOD team** : le faire · noter RPE (si ≥ 8 → alléger jeudi)
 - **Sinon** : Z2 …
+
+**Échauffement** (selon choix) :
+
+- Team : ergo easy 3–5’ → mobilité → 2 rounds barre vide / scap
+- Z2 : 2–3’ easy puis entrer en zone 2 (parole possible)
 
 ---
 
 ## Jeudi JJ/MM — [titre court]
 
-**Intention** : …  
-**Pattern** : …  
-**Warm-up** : …
+<!-- pattern: force_lower -->
+<!-- warmup: warmup_adductor_friendly -->
+
+**Intention** : …
+
+**Échauffement** :
+
+1. …
+
+**Séance** :
 
 1. …
 
@@ -75,9 +102,16 @@
 
 ## Vendredi JJ/MM — [titre court]
 
-**Intention** : …  
-**Pattern** : …  
-**Warm-up** : …
+<!-- pattern: gym_skill_day -->
+<!-- warmup: warmup_gym_skill -->
+
+**Intention** : …
+
+**Échauffement** :
+
+1. …
+
+**Séance** :
 
 1. …
 
@@ -85,9 +119,7 @@
 
 ## Samedi JJ/MM — Off (optionnel)
 
-<!-- Décider J-1 selon dispo.
-     Off : garder « Off » dans le titre (lint OK sans Pattern).
-     Si séance : retirer Off, ajouter Pattern + Warm-up (volume luxe / team / Z2). -->
+<!-- Off : laisser « Off » dans le titre. Si séance : retirer Off + ajouter pattern/warmup comments + échauffement écrit. -->
 
 Off.
 
@@ -95,14 +127,13 @@ Off.
 
 ## Dimanche JJ/MM
 
-Off, ou Z2 easy (`conditioning_z2`) — **Warm-up** : `warmup_z2_only` si séance.
+Off, ou Z2 easy si tu bouges.
+
+**Si Z2** — échauffement : 2–3’ easy puis zone 2 (parole possible).
 
 ---
 
 ## Notes / feedback
-
-<!-- Remplir après chaque séance. Skill session-feedback parse ce bloc.
-     Douleur adducteur : appliquer knowledge/adductor-protocol.yaml -->
 
 | Jour | Fait | Charges / score | RPE | Adducteur 0–10 | Fatigue 1–5 | Variante / note |
 |------|------|-----------------|-----|----------------|-------------|-----------------|

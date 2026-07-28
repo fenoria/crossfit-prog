@@ -5,42 +5,42 @@
 
 ## Pourquoi
 
-Sans charges actuelles fiables, on ne dose pas les % (Israetel). Gate avant Accumulation.
+Sans charges actuelles fiables, on ne dose pas correctement la suite. Semaine de calibration avant Accumulation gym.
 
 ## Intention dominante
 
-**Code** : `benchmarks`  
+**Type de bloc** : Benchmarks (calibration)  
 **Stimulus** : mesurer (RPE 8–9), pas ego-max.  
-**Ce que ce n’est pas** : un meso de développement force/gym.
+**Ce que ce n’est pas** : un meso de développement force / gym.
 
 ## Apport
 
-- Court : remplir `prs_current_kg` + proxies gym / Oly  
-- Moyen : calibrer ACC-GYM (volumes MEV de départ)  
-- Long : base de comparaison pour retests de fin de macro
+- Court : charges et proxies gym / haltéro notés  
+- Moyen : doser correctement le premier bloc Accumulation gym  
+- Long : base de comparaison pour les retests de fin de macro
 
 ## Continuité
 
 - **Précède** : — (démarrage Macro 1)
-- **Suit** : **ACC-GYM** — seulement si gate `benchmarks_to_ACC_GYM` OK (`knowledge/meso-gates.yaml`)
+- **Suit** : **Accumulation gym** — seulement si les tests clés sont notés et l’adducteur sous contrôle
 
-## Focus / patterns
+## Focus par semaine
 
-| Semaine | Focus | Patterns |
-|---------|--------|----------|
-| S01 (meso Benchmarks) | Tests force + gym proxies + Oly power | `benchmark_session`, `team_wod` / `conditioning_z2` |
+| Semaine | Focus | Contenu type |
+|---------|--------|--------------|
+| S01 | Tests force + gym + haltéro power | Max contrôlés, proxies volume, power snatch/clean |
 
 ## Maintien
 
-N/A (semaine de tests) — Z2 léger OK ; pas d’HI ajouté.
+Semaine de tests : zone 2 légère OK ; pas d’efforts durs ajoutés hors tests.
 
 ## Métriques de succès (sortie)
 
-- [ ] Force clé notée (BS/FS, DL, press, PU lesté)
-- [ ] Proxies gym + cran ladder baseline
-- [ ] Oly power charges confortables
+- [ ] Force clé notée (back squat, front squat, deadlift, press, pull-up lesté)
+- [ ] Proxies gym notés (BMU, HSPU, HSW, RMU si possible)
+- [ ] Charges power snatch / power clean confortables notées
 - [ ] Adducteur documenté ; pas de douleur ≥ 6 non gérée
-- [ ] `athlete/profile.yaml` mis à jour
+- [ ] Charges actuelles à jour pour la suite
 
 ## Semaines
 
@@ -48,4 +48,4 @@ N/A (semaine de tests) — Z2 léger OK ; pas d’HI ajouté.
 
 ## Notes meso
 
-_(après S01 : valider gate → ACC-GYM)_
+_(après S01 : valider la sortie → Accumulation gym)_

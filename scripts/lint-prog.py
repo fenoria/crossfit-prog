@@ -28,10 +28,6 @@ PATTERN_IDS = {
     "benchmark_session",
 }
 
-DAY_HEADINGS = re.compile(
-    r"^## (Lundi|Mardi|Mercredi|Jeudi|Vendredi|Samedi|Dimanche)\b",
-    re.M,
-)
 DAY_BLOCKS = re.compile(
     r"^## (Lundi|Mardi|Mercredi|Jeudi|Vendredi|Samedi|Dimanche)\b.*?(?=^## |\Z)",
     re.M | re.S,
@@ -40,7 +36,17 @@ FORBIDDEN = re.compile(
     r"squat\s+(snatch|clean).{0,40}(max\s*out|1\s*RM|PR\s*pré)",
     re.I,
 )
-BACKTICK_ID = re.compile(r"`([a-z][a-z0-9_]*)`")
+COMMENT_PATTERN = re.compile(r"<!--\s*pattern:\s*([a-z][a-z0-9_]*)\s*-->", re.I)
+COMMENT_WARMUP = re.compile(r"<!--\s*warmup:\s*([a-z][a-z0-9_]*)\s*-->", re.I)
+HTML_COMMENT = re.compile(r"<!--.*?-->", re.S)
+# Fuite structure interne dans le texte visible (hors commentaires HTML)
+INTERNAL_LEAK = re.compile(
+    r"knowledge/|athlete/profile|prs_current_kg|maintenance-doses|meso-gates|"
+    r"session-patterns|gym-ladder|adductor-protocol|warmup_[a-z_]+|"
+    r"`(?:force_lower|force_upper|gym_skill_day|oly_power_day|conditioning_z2|"
+    r"conditioning_specific|team_wod|benchmark_session)`",
+    re.I,
+)
 
 
 def load_pattern_ids() -> set[str]:
@@ -100,6 +106,14 @@ def week_files() -> list[Path]:
     return sorted(p for p in PROG.rglob("S*.md") if p.name.startswith("S"))
 
 
+def strip_html_comments(text: str) -> str:
+    return HTML_COMMENT.sub("", text)
+
+
+def extract_comment_ids(block: str, regex: re.Pattern[str]) -> list[str]:
+    return [m.group(1) for m in regex.finditer(block)]
+
+
 def check_methodo(errors: list[str], warnings: list[str]) -> None:
     text = METHODO.read_text(encoding="utf-8")
     if "validated" not in text.lower():
@@ -127,15 +141,6 @@ def check_current_json(errors: list[str]) -> None:
         errors.append(f"current.json pointe vers un fichier absent : {week}")
 
 
-def extract_ids_after_label(block: str, label: str) -> list[str]:
-    """Tous les `snake_case` sur les lignes **Label** : …"""
-    ids: list[str] = []
-    for line in block.splitlines():
-        if re.match(rf"\*\*{label}\*\*\s*:", line, re.I):
-            ids.extend(BACKTICK_ID.findall(line))
-    return ids
-
-
 def check_week(
     path: Path,
     pattern_ids: set[str],
@@ -145,6 +150,7 @@ def check_week(
 ) -> None:
     text = path.read_text(encoding="utf-8")
     rel = path.relative_to(ROOT)
+    visible = strip_html_comments(text)
 
     if "### Fondements" not in text and "## Fondements" not in text:
         errors.append(f"{rel} : section Fondements manquante")
@@ -155,6 +161,9 @@ def check_week(
     if "Notes / feedback" not in text and "## Notes" not in text:
         warnings.append(f"{rel} : section Notes / feedback absente")
 
+    for m in INTERNAL_LEAK.finditer(visible):
+        errors.append(f"{rel} : ref interne visible « {m.group(0)} » (réservé knowledge/agent)")
+
     blocks = list(DAY_BLOCKS.finditer(text))
     if len(blocks) < 5:
         warnings.append(f"{rel} : moins de 5 jours nommés ({len(blocks)})")
@@ -162,28 +171,32 @@ def check_week(
     for m in blocks:
         day = m.group(1)
         block = m.group(0)
-        # Dimanche off pur sans pattern OK
-        patterns = extract_ids_after_label(block, "Pattern")
-        warmups = extract_ids_after_label(block, "Warm-up")
+        patterns = extract_comment_ids(block, COMMENT_PATTERN)
+        warmups = extract_comment_ids(block, COMMENT_WARMUP)
+        has_echauffement = bool(re.search(r"\*\*Échauffement\*\*", block, re.I))
 
         if day != "Dimanche" and not patterns:
-            # Samedi OFF peut n’avoir que le libellé
             if day == "Samedi" and re.search(r"\bOFF\b", block, re.I):
                 continue
-            errors.append(f"{rel} : {day} sans champ Pattern")
+            errors.append(f"{rel} : {day} sans <!-- pattern: … -->")
 
         for pid in patterns:
             if pid not in pattern_ids:
                 errors.append(f"{rel} : {day} pattern inconnu « {pid} »")
 
-        if day in {"Lundi", "Mardi", "Jeudi", "Vendredi"} and not warmups:
-            errors.append(f"{rel} : {day} sans Warm-up")
+        if day in {"Lundi", "Mardi", "Jeudi", "Vendredi"}:
+            if not warmups:
+                errors.append(f"{rel} : {day} sans <!-- warmup: … -->")
+            if not has_echauffement:
+                errors.append(f"{rel} : {day} sans **Échauffement** écrit")
 
-        if day in {"Mercredi", "Samedi"} and patterns and not warmups:
-            # séance active attendue
+        if day in {"Mercredi", "Samedi"} and patterns:
             if day == "Samedi" and re.search(r"\bOFF\b", block, re.I):
                 continue
-            warnings.append(f"{rel} : {day} sans Warm-up (recommandé)")
+            if not warmups:
+                warnings.append(f"{rel} : {day} sans <!-- warmup: … --> (recommandé)")
+            if not has_echauffement:
+                warnings.append(f"{rel} : {day} sans **Échauffement** écrit (recommandé)")
 
         for wid in warmups:
             if warmup_ids and wid not in warmup_ids:
@@ -191,6 +204,22 @@ def check_week(
 
     if FORBIDDEN.search(text):
         errors.append(f"{rel} : formulation squat snatch/clean max out / PR pré-blessure")
+
+
+def check_visible_prog(errors: list[str]) -> None:
+    """Fuites structure interne hors templates (site visible)."""
+    for path in PROG.rglob("*.md"):
+        if "_templates" in path.parts:
+            continue
+        # semaines déjà couvertes dans check_week
+        if path.name.startswith("S") and len(path.name) > 1 and path.name[1].isdigit():
+            continue
+        text = path.read_text(encoding="utf-8")
+        visible = strip_html_comments(text)
+        rel = path.relative_to(ROOT)
+        m = INTERNAL_LEAK.search(visible)
+        if m:
+            errors.append(f"{rel} : ref interne visible « {m.group(0)} »")
 
 
 def check_meso_indexes(meso_codes: set[str], warnings: list[str]) -> None:
@@ -220,6 +249,7 @@ def main() -> int:
     check_methodo(errors, warnings)
     check_current_json(errors)
     check_meso_indexes(meso_codes, warnings)
+    check_visible_prog(errors)
 
     weeks = week_files()
     if not weeks:

@@ -4,8 +4,10 @@ version: 1
 status: validated
 updated: 2026-07-28
 
-# Utilisation : citer l’id dans la séance (ex. « Warm-up : warmup_adductor_friendly »)
-# plutôt que réinventer chaque jour.
+# Utilisation agent : id en commentaire HTML dans la séance
+#   <!-- warmup: warmup_adductor_friendly -->
+# + recopier les steps en français sous **Échauffement** (visible athlète).
+# Ne jamais laisser seulement l’id dans le texte visible de prog/.
 
 warmups:
   warmup_general_90:

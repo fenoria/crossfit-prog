@@ -17,22 +17,29 @@ Sidebar VitePress = **auto** (arborescence `prog/`).
 - `knowledge/methodology.md` status **validated**
 - Lire `athlete/profile.yaml` + dernières semaines du même meso
 - Relire fiches livres + `knowledge/arbitrages.md` pertinentes
-- Relire ops pack :
+- Relire ops pack (agent only — ne pas coller ces chemins dans le texte visible) :
   - `knowledge/maintenance-doses.yaml` (code meso ; `REAL-mini` → `REAL`)
-  - `knowledge/session-patterns.yaml` (ids obligatoires)
-  - `knowledge/warmups.yaml`
+  - `knowledge/session-patterns.yaml`
+  - `knowledge/warmups.yaml` → **recopier les steps** sous **Échauffement**
   - `knowledge/gym-ladder.md` si ACC-GYM
   - `knowledge/meso-gates.yaml` si changement de meso (scope Macro 1)
   - `knowledge/adductor-protocol.yaml` / `conditioning-matrix.yaml`
 - Samedi : optionnel (décider selon dispo)
 
+## Langage athlète (obligatoire)
+- Texte visible = compréhensible à l’entraînement, sans question.
+- Échauffement **écrit en entier** (pas d’id `warmup_*` seul).
+- Pas de `knowledge/…`, `athlete/…`, `prs_current_kg`, etc. dans le markdown visible.
+- Ids ops en commentaires HTML : `<!-- pattern: … -->` · `<!-- warmup: … -->`
+
 ## Steps
 1. Assurer les `index.md` Saison / Macro / Meso (meso depuis template meso).
 2. Créer/mettre à jour `Sxx-YYYY-MM-DD.md` depuis le template semaine :
-   - Pourquoi / intention / apport / suite · Fondements 1–3 refs
-   - **Pattern** + **Warm-up** sur chaque jour actif (ids validés)
+   - Pourquoi / intention / apport / suite · Fondements 1–3 refs (auteur + titre)
+   - Commentaires pattern + warmup sur chaque jour actif
+   - **Échauffement** détaillé + **Séance** numérotée
    - Hors pattern → `history/decisions.md`
-   - Maintien du code meso respecté
+   - Maintien du code meso respecté (formulé en français)
    - Lun–Ven ≤90 min ; Mercredi team ou Z2 ; Samedi optionnel ; Dim off/Z2
    - Tableau **Notes / feedback**
 3. Mettre à jour l’index du meso si besoin.

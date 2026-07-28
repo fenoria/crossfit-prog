@@ -7,16 +7,17 @@ alwaysApply: true
 
 Quand on écrit ou adapte une semaine / un meso :
 
-1. **Patterns** — chaque jour a un `Pattern:` ∈ `knowledge/session-patterns.yaml` ; hors liste → `history/decisions.md`
-2. **Warm-ups** — citer un id `knowledge/warmups.yaml` (lower → `warmup_adductor_friendly`)
-3. **Maintien** — respecter `knowledge/maintenance-doses.yaml` pour le code meso
-4. **Gates** — ne pas enchaîner de meso sans `knowledge/meso-gates.yaml`
-5. **Adducteur** — `knowledge/adductor-protocol.yaml` (0–2 / 3–5 / 6–10)
-6. **Conditioning** — `knowledge/conditioning-matrix.yaml` ; HI surtout TRA/REAL
-7. **Gym** — progressions via `knowledge/gym-ladder.md` en ACC-GYM
-8. **Samedi** — optionnel ; décider semaine / J-1 selon dispo
-9. **Feedback** — tableau Notes du template semaine
-10. **Volumes** — % / sets sur `prs_current` + `volumes` profile ; jamais PRs pré-blessure
+1. **Patterns** — chaque jour actif a `<!-- pattern: id -->` ∈ `knowledge/session-patterns.yaml` ; hors liste → `history/decisions.md`
+2. **Warm-ups** — choisir un id dans `knowledge/warmups.yaml` (`<!-- warmup: id -->`) **et** écrire l’échauffement **en entier** dans la séance (pas d’id visible)
+3. **Langage `prog/`** — zéro chemin `knowledge/` / `athlete/` / champs profile ; texte compréhensible à la box
+4. **Maintien** — respecter `knowledge/maintenance-doses.yaml` pour le code meso (traduire en français dans la page)
+5. **Gates** — ne pas enchaîner de meso sans `knowledge/meso-gates.yaml` (condition en français dans la page)
+6. **Adducteur** — `knowledge/adductor-protocol.yaml` (0–2 / 3–5 / 6–10)
+7. **Conditioning** — `knowledge/conditioning-matrix.yaml` ; HI surtout TRA/REAL
+8. **Gym** — progressions via `knowledge/gym-ladder.md` en ACC-GYM
+9. **Samedi** — optionnel ; décider semaine / J-1 selon dispo
+10. **Feedback** — tableau Notes du template semaine
+11. **Volumes** — % / sets sur charges actuelles + volumes profile ; jamais PRs pré-blessure
 
 Lint : `npm run lint:prog` (obligatoire après write-week / generate)  
 SoT : profile (instance) > prog (séances) > knowledge (méthodo) > books (brut) · history = mémoire

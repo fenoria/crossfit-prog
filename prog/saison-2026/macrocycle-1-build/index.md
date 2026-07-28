@@ -24,5 +24,4 @@ Contenu typique si on : volume gym luxe, team, ou Z2 (selon meso ; pas d’HI gr
 
 ## Règles fatigue box
 
-- Mercredi team RPE ≥ 8 → −volume jeudi (maintien de l’intention meso).
-- Voir `knowledge/maintenance-doses.yaml` → `team_wod_rule`.
+- Mercredi team RPE ≥ 8 → alléger le volume jeudi (garder l’intention du meso).
