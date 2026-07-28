@@ -2,11 +2,9 @@
 
 **Meso** : [nom] · **Macrocycle N — [nom]** · **Saison YYYY**
 
-## Contexte athlète
+## Objectif de la semaine
 
-- Créneau : lun–ven ~90 min (12h–13h30) · samedi optionnel · dimanche souvent off
-- Matériel : box CrossFit (pas de machines guidées)
-- [contraintes : adducteur, etc.]
+[une ligne — ex. mesurer les charges actuelles, pas battre des records]
 
 ## Glossaire (si besoin cette semaine)
 

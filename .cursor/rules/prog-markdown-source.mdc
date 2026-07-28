@@ -17,6 +17,6 @@ alwaysApply: true
 
 - `prog/` hors commentaires HTML = **lisible à la box et partageable** (collègue / coach sans questions).
 - Chaque séance active : cibles **chiffrées** (reps, RPE, durée, repos) — interdit « lourd confortable » / « submax » seuls.
-- Échauffements écrits en entier ; glossaire si acronymes ; bloc **Contexte** en tête de semaine.
+- Échauffements écrits en entier ; glossaire si acronymes ; **Objectif de la semaine** en tête (pas créneau / matériel / profil).
 - Interdit dans le texte visible : chemins `knowledge/` / `athlete/`, champs profile, ids `warmup_*` / patterns seuls, codes meso bruts (ACC-GYM…) sans nom lisible.
 - Métadonnées coach / lint : commentaires HTML uniquement (`<!-- pattern: … -->`, `<!-- warmup: … -->`).

@@ -28,7 +28,7 @@ Sidebar VitePress = **auto** (arborescence `prog/`).
 
 ## Langage athlète (obligatoire)
 - Texte visible = compréhensible à l’entraînement **et partageable** (collègue / coach sans questions).
-- **Contexte** + **glossaire** en tête de semaine si besoin.
+- **Objectif de la semaine** en tête (pas créneau / matériel / profil athlète).
 - Échauffement **écrit en entier** ; cibles **chiffrées** (reps / RPE / durée / repos).
 - Pas de `knowledge/…`, `athlete/…`, codes meso bruts seuls, ids `warmup_*` visibles.
 - Ids ops en commentaires HTML : `<!-- pattern: … -->` · `<!-- warmup: … -->`
