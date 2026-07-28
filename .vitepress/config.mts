@@ -7,6 +7,12 @@ const rootDir = dirname(fileURLToPath(import.meta.url))
 const progDir = join(rootDir, '..', 'prog')
 const repoBase = process.env.VITEPRESS_BASE || '/'
 
+/** Absolute public asset path, respecting `base` (e.g. GitHub Pages subpath). */
+function asset(path: string): string {
+  const base = repoBase.endsWith('/') ? repoBase.slice(0, -1) : repoBase
+  return `${base}${path.startsWith('/') ? path : `/${path}`}`
+}
+
 function mdTitle(filePath: string, fallback: string): string {
   try {
     const text = readFileSync(filePath, 'utf8')
@@ -90,13 +96,15 @@ const sidebarItems: DefaultTheme.SidebarItem[] = [
 
 export default defineConfig({
   title: 'Prog CrossFit',
-  description: 'Programmation CrossFit élite — source Markdown',
+  description: 'Programmation CrossFit élite — Thierry Maxel',
   lang: 'fr-FR',
   srcDir: 'prog',
   base: repoBase,
   cleanUrls: true,
   appearance: 'dark',
   themeConfig: {
+    logo: { src: '/logo.svg', alt: 'Prog CrossFit' },
+    siteTitle: 'Prog CrossFit',
     nav: [
       { text: 'Accueil', link: '/' },
       { text: 'Saison 2026', link: '/saison-2026/' },
@@ -138,6 +146,35 @@ export default defineConfig({
       {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap',
+      },
+    ],
+    ['link', { rel: 'icon', href: asset('/favicon.ico'), sizes: 'any' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: asset('/favicon.svg') }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: asset('/favicon-32x32.png') }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: asset('/favicon-16x16.png') }],
+    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: asset('/apple-touch-icon.png') }],
+    ['link', { rel: 'manifest', href: asset('/site.webmanifest') }],
+    ['link', { rel: 'mask-icon', href: asset('/safari-pinned-tab.svg'), color: '#64ffda' }],
+    ['meta', { name: 'theme-color', content: '#0b1426' }],
+    ['meta', { name: 'msapplication-TileColor', content: '#0b1426' }],
+    ['meta', { name: 'author', content: 'Thierry Maxel' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:title', content: 'Prog CrossFit' }],
+    [
+      'meta',
+      {
+        property: 'og:description',
+        content: 'Programmation CrossFit élite — Thierry Maxel',
+      },
+    ],
+    ['meta', { property: 'og:locale', content: 'fr_FR' }],
+    ['meta', { name: 'twitter:card', content: 'summary' }],
+    ['meta', { name: 'twitter:title', content: 'Prog CrossFit' }],
+    [
+      'meta',
+      {
+        name: 'twitter:description',
+        content: 'Programmation CrossFit élite — Thierry Maxel',
       },
     ],
   ],
