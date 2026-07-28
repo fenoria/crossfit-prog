@@ -44,23 +44,22 @@ strengths:
 priorities:
   - gym_volume_repeatability
   - confidence_under_bar_controlled
-  - adductor_safe_loading
 
 weaknesses_or_limits:
   - gym_volume_under_fatigue
   - heavy_squat_snatch_caution
   - heavy_squat_clean_caution
-  - residual_adductor_pain
+  - residual_adductor_pain  # historique 2025 — charges prudentes ; pas un focus quotidien
 
 injury:
   name: desinsertion_adducteur
   year: 2025
   status: residual_pain
   programming_rules:
-    - "charges minorées"
+    - "contexte : blessure ~1 an ; douleur résiduelle possible — charges contrôlées, pas PRs pré-blessure"
     - "pas de max out squat snatch / squat clean lourds"
-    - "écouter douleur adducteur ; réduire volume/stance/profondeur si irritation"
-    - "ne pas utiliser PRs pré-blessure pour les %"
+    - "ne pas interroger systématiquement la douleur en feedback ; réagir seulement si l’athlète la signale"
+    - "si douleur signalée → knowledge/adductor-protocol.yaml"
 
 prs_pre_injury_kg:
   back_squat: 160
@@ -150,10 +149,11 @@ coaching:
   feedback_schema: "blocs Notes / feedback (### par jour) dans prog/_templates/semaine.md"
   mrv_signals:
     - sommeil_degrade
-    - douleur_adducteur_recente
     - chute_perf
     - rpe_chronique_eleve
+    - douleur_signalee  # toute douleur (dont adducteur) — seulement si l’athlète la mentionne
   team_wod_rpe_threshold_cut_next_day: 8
+  adductor_focus: minimal  # pas de score quotidien ; protocole on-demand si feedback douleur
 
 knowledge:
   methodology_status: validated

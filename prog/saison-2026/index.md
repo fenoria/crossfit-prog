@@ -7,7 +7,7 @@ Plan annuel CrossFit élite : plusieurs pics dans l’année, avec des blocs à 
 - Athlète : niveau compétition · priorité **volume gym** · cardio déjà solide (on le maintient)
 - Créneau type : lun–ven **12h–13h30** (~90 min) · samedi optionnel · dimanche souvent off
 - Matériel : box CrossFit uniquement (pas de machines guidées)
-- Adducteur : charge prudente ; les séances lower le prennent en compte
+- Charges : basées sur les benchmarks actuels (pas d’anciens records)
 
 ## Intention long terme
 

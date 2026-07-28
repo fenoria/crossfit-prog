@@ -9,10 +9,9 @@ description: Ingère le feedback post-séance, met à jour history/profile, adap
    - fait / partiel / skip
    - charges / score
    - RPE
-   - adducteur 0–10
    - fatigue 1–5
-   - note / variante
-2. Appliquer `knowledge/adductor-protocol.yaml` si douleur > 2.
+   - note / variante / douleur **si mentionnée**
+2. **Ne pas** demander systématiquement un score adducteur. Si douleur signalée (adducteur ou autre) → appliquer `knowledge/adductor-protocol.yaml` / adapter volume.
 3. Si team WOD RPE ≥ 8 → −volume J+1 (déjà dans maintenance-doses).
 4. Adapter la suite **sans casser l’intention du meso** (couper volume, pas le focus).
 5. Écrire dans le bloc du jour + **Synthèse semaine** / **Suite prévue**.

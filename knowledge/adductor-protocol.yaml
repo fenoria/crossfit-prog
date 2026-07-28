@@ -1,11 +1,12 @@
-# Protocole adducteur gradué — décision immédiate en séance / feedback
-# Sources : profil athlète · méthodo §7 · schedule-adaptation
+# Protocole adducteur — on-demand si douleur signalée (pas de score quotidien)
+# Sources : profil athlète · méthodo §7 · décisions 2026-07-28
 
 version: 1
 status: validated
 updated: 2026-07-28
 injury: desinsertion_adducteur_2025
-scale: "douleur adducteur 0–10 pendant ou juste après le mouvement"
+usage: "Appliquer seulement si l’athlète signale une douleur (feedback). Ne pas demander un score 0–10 à chaque séance."
+scale: "douleur adducteur 0–10 pendant ou juste après le mouvement (si rapportée)"
 
 levels:
   "0-2":
@@ -36,14 +37,14 @@ levels:
     document: true
     escalate_profile: true  # maj athlete/profile.yaml + history/decisions.md si récurrent
 
-warmup_mandatory_lower: "warmup_adductor_friendly"  # voir knowledge/warmups.yaml
+warmup_lower_default: "warmup_adductor_friendly"  # mobilité hanches standard lower — pas un focus blessure visible
 
 never:
   - "Programmer sur PRs pré-blessure"
-  - "Forcer un single ego si douleur > 2 en montée"
-  - "Empiler hinge lourd + squat lourd le même jour si irritation récente"
+  - "Forcer un single ego si douleur nette en montée"
+  - "Empiler hinge lourd + squat lourd le même jour si irritation récente signalée"
 
-feedback_fields:
-  - adductor_pain_0_10
+when_reported:
+  - pain_note
   - variant_used
   - load_adjustment

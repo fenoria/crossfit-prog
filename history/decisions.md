@@ -53,5 +53,11 @@ Tout ce qui était faisable **sans** résultats S01 :
 ## 2026-07-28 — Feedback semaine : blocs, pas tableau
 
 Tableau 7 colonnes illisible (surtout mobile / VitePress).  
-Format = un `###` par jour avec listes : Fait · Charges/score · RPE · Adducteur · Fatigue · Note.  
+Format = un `###` par jour avec listes : Fait · Charges/score · RPE · Fatigue · Note.  
 Template + S01 + skills/rules/profile alignés.
+
+## 2026-07-28 — Adducteur : contrainte de fond, pas focus quotidien
+
+Blessure ~2025, douleur résiduelle possible → charges contrôlées / pas PRs pré-blessure.  
+**Pas** de score adducteur obligatoire en feedback ni de rappels systématiques dans `prog/`.  
+L’athlète signale s’il a mal ; le coach applique alors `adductor-protocol.yaml`.

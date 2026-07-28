@@ -19,7 +19,7 @@ common:
   warmup_min: "selon id knowledge/warmups.yaml (souvent 8–15 ; Z2-only 3–5)"
   main_min: 45-60
   accessory_or_finisher_min: 10-20
-  always_respect: [adductor, current_benchmarks, no_guided_machines]
+  always_respect: [current_benchmarks, no_guided_machines, no_pre_injury_prs]
   warmup_ids_ref: knowledge/warmups.yaml
   off_pattern_requires: "entrée history/decisions.md (arbitrage)"
 
@@ -59,8 +59,8 @@ oly_power_day:
   template:
     - primary: "Power snatch ou power clean — singles/doubles techniques"
     - pulls: "snatch/clean pulls"
-    - squat_light: "front squat léger technique si adducteur OK"
-    - note: "squat snatch/clean lourd = rare, stop douleur/peur"
+    - squat_light: "front squat léger technique si confort"
+    - note: "squat snatch/clean lourd = rare ; stop si douleur/peur signalée"
 
 conditioning_z2:
   intent: "Récup active / base aérobie (maintien)"
@@ -85,4 +85,4 @@ benchmark_session:
   rules:
     - "1–2 lifts max par jour"
     - "pas de max out squat snatch/clean agressif"
-    - "stop si douleur adducteur"
+    - "stop si douleur nette signalée"

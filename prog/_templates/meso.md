@@ -48,7 +48,6 @@ En français clair pour ce bloc :
 
 - [ ] …
 - [ ] …
-- [ ] Adducteur sous contrôle
 
 ## Semaines
 

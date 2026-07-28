@@ -17,7 +17,7 @@ Extraire le **meilleur** et le **plus pertinent/récent** du corpus `books/` pou
    - `knowledge/methodology.md` — méthodo lisible (`draft` | `validated`)
    - `knowledge/methodology.yaml` (contrat machine, sync avec md)
    - Ops pack si impacté : `session-patterns`, `maintenance-doses`, `meso-gates`, `warmups`, `adductor-protocol`, `conditioning-matrix`, `volume-landmarks`, `gym-ladder`
-4. Critères : pertinence CF, qualité, récence si divergence, box / 90 min / adducteur / gym volume.
+4. Critères : pertinence CF, qualité, récence si divergence, box / 90 min / gym volume / charges actuelles.
 5. **Validation humaine** avant d’écrire des semaines dans `prog/`.
 
 ## Roles indicatifs

@@ -7,7 +7,7 @@ description: Propose et enregistre une batterie de benchmarks pour calibrer les 
 
 1. Si un meso benchmarks / semaine existe déjà dans `prog/` → **adapter ce fichier**, ne pas recréer une batterie divergente.
 2. Batterie : force, Oly contrôlé, gym volume, ergo smoke test — **pas** de max out squat snatch/clean agressifs.
-3. Respecter adducteur et créneaux 90 min.
+3. Respecter créneaux 90 min ; charges actuelles (pas PRs pré-blessure).
 4. Après résultats :
    - `athlete/profile.yaml` → `prs_current_kg` + `benchmarks.last_run`
    - `gym_ladder_level` (`knowledge/gym-ladder.md`)

@@ -27,7 +27,7 @@
 ## Règles
 
 - Repos force : 2–3’ entre sets lourds
-- [adducteur / team RPE≥8 → alléger J+1 avec dose chiffrée]
+- Team RPE ≥ 8 → alléger J+1 avec dose chiffrée
 - Cibles de séance **chiffrées** (reps, RPE, durée) — pas de « lourd confortable » seul
 
 ### Microcycle (si meso chargé)
@@ -152,7 +152,6 @@ Remplir après chaque séance (ou coller le feedback en chat — le coach met à
 - **Fait** : oui / partiel / skip
 - **Charges / score** :
 - **RPE** : /10
-- **Adducteur** : /10
 - **Fatigue** : /5
 - **Note** :
 
@@ -160,7 +159,6 @@ Remplir après chaque séance (ou coller le feedback en chat — le coach met à
 - **Fait** :
 - **Charges / score** :
 - **RPE** : /10
-- **Adducteur** : /10
 - **Fatigue** : /5
 - **Note** :
 
@@ -168,7 +166,6 @@ Remplir après chaque séance (ou coller le feedback en chat — le coach met à
 - **Fait** :
 - **Charges / score** :
 - **RPE** : /10
-- **Adducteur** : /10
 - **Fatigue** : /5
 - **Note** :
 
@@ -176,7 +173,6 @@ Remplir après chaque séance (ou coller le feedback en chat — le coach met à
 - **Fait** :
 - **Charges / score** :
 - **RPE** : /10
-- **Adducteur** : /10
 - **Fatigue** : /5
 - **Note** :
 
@@ -184,7 +180,6 @@ Remplir après chaque séance (ou coller le feedback en chat — le coach met à
 - **Fait** :
 - **Charges / score** :
 - **RPE** : /10
-- **Adducteur** : /10
 - **Fatigue** : /5
 - **Note** :
 
@@ -192,7 +187,6 @@ Remplir après chaque séance (ou coller le feedback en chat — le coach met à
 - **Fait** : off / oui / partiel
 - **Charges / score** :
 - **RPE** : /10
-- **Adducteur** : /10
 - **Fatigue** : /5
 - **Note** :
 
@@ -200,7 +194,6 @@ Remplir après chaque séance (ou coller le feedback en chat — le coach met à
 - **Fait** : off / oui / partiel
 - **Charges / score** :
 - **RPE** : /10
-- **Adducteur** : /10
 - **Fatigue** : /5
 - **Note** :
 

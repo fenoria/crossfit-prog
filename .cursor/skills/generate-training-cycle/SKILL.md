@@ -8,7 +8,7 @@ description: Génère saison/macro/meso/semaines en Markdown sous prog/, uniquem
 ## Preconditions
 - `knowledge/methodology.md` statut **validated**
 - Lire `athlete/profile.yaml` + dernières pages dans `prog/`
-- Respecter planning 90 min, box only, Z2>off, adducteur
+- Respecter planning 90 min, box only, Z2>off, charges actuelles (pas PRs pré-blessure)
 - Vérifier **gates** (`knowledge/meso-gates.yaml`, scope Macro 1) avant meso suivant
 - Ops : maintenance-doses, session-patterns, conditioning-matrix, warmups, gym-ladder
 - Code meso : `REAL` (pas `REAL-mini` comme clé)

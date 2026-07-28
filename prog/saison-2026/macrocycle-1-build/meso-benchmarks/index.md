@@ -22,7 +22,7 @@ Sans mesures de force / gym / haltéro actuelles, on ne dose pas correctement la
 ## Continuité
 
 - **Précède** : — (démarrage Macrocycle 1)
-- **Suit** : **Accumulation gym** — si les tests clés sont notés et l’adducteur sous contrôle
+- **Suit** : **Accumulation gym** — si les tests clés sont notés
 
 ## Focus par semaine
 
@@ -39,7 +39,6 @@ Semaine de tests : zone 2 légère OK ; pas d’efforts durs ajoutés hors tests
 - [ ] Force notée : back squat, front squat, deadlift, press, traction lestée
 - [ ] Gym noté : BMU, HSPU, HSW (RMU si possible)
 - [ ] Power snatch et power clean (charges RPE 7–8) notés
-- [ ] Adducteur documenté ; pas de douleur ≥ 6 non gérée
 - [ ] Chiffres prêts pour doser Accumulation gym
 
 ## Semaines

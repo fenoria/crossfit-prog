@@ -12,7 +12,7 @@ Sources : corpus `books/` (11 ouvrages) · profil `athlete/profile.yaml` · arbi
 2. **Dose intelligente** (Israetel) — progresser entre MEV et MRV ; deload avant de casser.
 3. **Transfert vers la compétition** (Verkhoshansky) — la force et la gym doivent se retrouver sous fatigue CF.
 4. **Comprendre pour adhérer** — chaque cycle / meso / semaine / séance a un pourquoi explicite.
-5. **Santé > ego** — adducteur et confiance barre guident les variantes (power vs squat).
+5. **Santé > ego** — confiance barre et charges actuelles guident les variantes (power vs squat) ; douleur signalée → adapter.
 6. **Z2 > off** si créneau possible ; vrai repos seulement si fatigue/douleur/deload/taper l’exigent.
 
 **Règle d’or** : si la fatigue monte, on coupe le **volume**, pas l’intention du bloc.
@@ -25,7 +25,7 @@ Sources : corpus `books/` (11 ouvrages) · profil `athlete/profile.yaml` · arbi
 |--------|------------------|
 | Cardio / ergos / WB / burpees forts | Ne pas sur-investir le conditioning ; maintien |
 | Faible volume gym | Meso(s) GYM prioritaires ; densité + renfo (Low) |
-| Adducteur + PRs minorés | Benchmarks d’abord ; charges actuelles only |
+| Charges post-blessure (adducteur 2025) | Benchmarks d’abord ; charges actuelles only ; pas de focus quotidien douleur |
 | Frileux squat snatch/clean lourds | Power / technique / pulls ; exposition profonde rare |
 | 90 min midi · samedi optionnel | Séances condensées ; samedi = volume « luxe » si dispo |
 | Box only | Pas de machines guidées |
@@ -77,7 +77,7 @@ On **répète** et **alterne** ces blocs dans l’année selon le calendrier com
 
 ### 3.3 Macrocycle 1 en cours (dès août 2026) — reconstruction
 
-Contexte : post-adducteur, pas de A-event fixé, priorité gym (validée).
+Contexte : reconstruction après blessure 2025, pas de A-event fixé, priorité gym (validée).
 
 | Semaines | Bloc | Pourquoi (livres) |
 |----------|------|-------------------|
@@ -97,7 +97,7 @@ Dès qu’un calendrier de comps est connu, on **ancre les REAL** sur les A/B-ev
 
 - **Macro 2** : souvent plus de **ACC-STR / ACC-OLY** puis TRA-MIX → REAL (élever le plafond neural/force)
 - **Macro 3** : plus de **TRA-MIX / REAL** vers le A-event majeur ; Accumulation plus courte et plus spécifique
-- **Transition de fin d’année** : 2–4 semaines volume bas, compensation adducteur/épaules, GPP agréable (Bompa)
+- **Transition de fin d’année** : 2–4 semaines volume bas, compensation tissus / épaules, GPP agréable (Bompa)
 
 Sans date de comps : on enchaîne Macro 2 sur le même canevas Issurin en changeant l’accent Accumulation (ex. force/Oly si la gym a progressé).
 
@@ -111,7 +111,7 @@ Jours : Lun–Ven ≤90 min · Mercredi team si box · Samedi optionnel · Diman
 ## 4. Principes de dose (tous domaines)
 
 - Travailler au-dessus du **MEV**, viser **MAV**, ne pas vivre au-delà du **MRV**.
-- Deload dès signes : sommeil, douleur adducteur, chute perf, RPE excessif chronique.
+- Deload dès signes : sommeil, chute perf, RPE excessif chronique, douleur signalée.
 - Intensité : RPE / % sur **benchmarks actuels**, jamais PRs pré-blessure.
 - Progression : d’abord volume/qualité reps, ensuite charge.
 
@@ -122,8 +122,8 @@ Jours : Lun–Ven ≤90 min · Mercredi team si box · Samedi optionnel · Diman
 ### Force
 - Patterns : squat, hinge, press, pull (Zatsiorsky).
 - Accumulation : 70–85 % ressenti actuel, volumes contrôlés, tempo si tissus.
-- Éviter deep heavy squat agressif si adducteur parle → stance/profondeur/variants.
-- Warm-up lower : `warmup_adductor_friendly` obligatoire.
+- Squats contrôlés (pas de max agressif) ; power / stance adaptés si besoin.
+- Warm-up lower : `warmup_adductor_friendly` (mobilité hanches douce — standard lower, pas un « focus blessure »).
 
 ### Gym (priorité)
 - Skill technique + volume (EMOM, densité) + renfo lesté (Low).
@@ -159,9 +159,9 @@ Gate : `knowledge/meso-gates.yaml` → `benchmarks_to_ACC_GYM`.
 
 ## 7. Adaptation coaching
 
-- Feedback post-séance (blocs Notes semaine, un jour = un titre) → ajuster volume/variante **sans changer l’intention du meso**.
+- Feedback post-séance (blocs Notes semaine) → ajuster volume/variante **sans changer l’intention du meso**.
 - Planning ponctuel (vacances) → Z2 ou séance réduite documentée dans `history/`.
-- Douleur adducteur → `knowledge/adductor-protocol.yaml` (0–2 / 3–5 / 6–10).
+- Douleur signalée (dont adducteur) → `knowledge/adductor-protocol.yaml` — **pas** de score quotidien demandé.
 - Team RPE ≥ 8 → −volume J+1.
 
 ## 7bis. Ops pack (cohérence opérationnelle) — 2026-07-28
@@ -175,7 +175,7 @@ Fichiers normatifs (en plus de cette méthodo) :
 | `gym-ladder.md` | Progressions BMU/RMU/HSPU/HSW |
 | `session-patterns.yaml` | Ids de séances obligatoires |
 | `warmups.yaml` | Warm-ups réutilisables |
-| `adductor-protocol.yaml` | Arbre douleur |
+| `adductor-protocol.yaml` | Arbre douleur (on-demand si signalée) |
 | `conditioning-matrix.yaml` | Caps energy systems |
 | `volume-landmarks.yaml` | MEV/MAV/MRV (à remplir post-S01) |
 
@@ -210,7 +210,7 @@ Lint : `npm run lint:prog`
 
 ## Validation ops pack (2026-07-28)
 
-- [x] Maintien / gates / ladder / patterns / warmups / adducteur / conditioning matrix
+- [x] Maintien / gates / ladder / patterns / warmups / conditioning matrix (+ protocole douleur on-demand)
 - [x] Templates meso + semaine (feedback structuré)
 - [x] Patch cohérence 2026-07-28 (canon REAL, SoT, lint, Z2/volumes)
 - [ ] Volumes MEV/MAV/MRV gym/force/oly chiffrés — **après S01**

@@ -10,6 +10,6 @@ alwaysApply: true
 ## Invariants (rappel)
 - Niveau **élite / compétition** · priorité **volume gym** · cardio = force (ne pas sur-stimuler)
 - Frileux squat snatch/clean lourds → power / charges contrôlées
-- Adducteur résiduel → charges minorées ; protocole `knowledge/adductor-protocol.yaml`
+- Blessure adducteur ~2025 → charges contrôlées / pas PRs pré-blessure ; **pas** de focus quotidien (protocole seulement si douleur signalée en feedback)
 - Jamais PRs pré-blessure pour les % (voir `prs_pre_injury_kg` = historique only)
 - Ops : `maintenance-doses`, `meso-gates`, `conditioning-matrix`, `gym-ladder`

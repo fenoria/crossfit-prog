@@ -8,7 +8,7 @@ updated: 2026-07-28
 note: >
   Une qualité hors meso dominant reçoit au moins la dose ci-dessous,
   sans voler le budget du focus. Si fatigue haute → couper le maintien
-  avant de couper l’intention du bloc (sauf douleur adducteur).
+  avant de couper l’intention du bloc (sauf douleur signalée bloquante).
   Alias : REAL-mini / « REAL mini » → clé REAL.
   Z2 : MEV annuel/Accumulation = 60 min (profile) ; en REAL/TRA les minima
   ci-dessous peuvent être < MEV (fraîcheur Issurin) — ce n’est pas une contradiction Israetel.
@@ -41,7 +41,7 @@ by_meso_type:
     dominant: oly
     oly: dominant
     gym: { min_per_week: 1, unit: gym_session }
-    force: { min_per_week: 1, unit: force_stimulus, note: "squat/hinge contrôlés si adducteur OK" }
+    force: { min_per_week: 1, unit: force_stimulus, note: "squat/hinge contrôlés" }
     z2: { min_minutes_week: 45 }
     cond_hi: { max_per_week: 0 }
 

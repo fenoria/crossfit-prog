@@ -20,13 +20,13 @@ warmups:
 
   warmup_adductor_friendly:
     duration_min: "12-15"
-    when: "tout lower (squat, hinge, FS, DL) — obligatoire si douleur récente ≥ 3"
+    when: "tout lower (squat, hinge, FS, DL)"
     steps:
-      - "Ergo easy 4–5’ (bike préférable si adducteur sensible)"
-      - "Mobilité douce adducteur : frog rock / cossack léger sans douleur 2–3’"
-      - "Glute bridge ou hip thrust bodyweight 2×8"
-      - "Squat progressif barre à vide → charges légères (pas de jump stretch agressif)"
-      - "Stop et swap protocole si douleur > 2 en montée"
+      - "Ergo easy 4–5’ (vélo ou rameur)"
+      - "Mobilité hanches : frog rock / fente latérale légère 2–3’"
+      - "Pont fessier ou hip thrust bodyweight 2×8"
+      - "Squat progressif barre à vide → charges légères"
+    # Si douleur signalée en séance → adductor-protocol.yaml (pas de check systématique)
 
   warmup_upper_scap:
     duration_min: "8-12"

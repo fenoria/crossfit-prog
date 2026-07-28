@@ -23,7 +23,8 @@ Sidebar VitePress = **auto** (arborescence `prog/`).
   - `knowledge/warmups.yaml` → **recopier les steps** sous **Échauffement**
   - `knowledge/gym-ladder.md` si ACC-GYM
   - `knowledge/meso-gates.yaml` si changement de meso (scope Macro 1)
-  - `knowledge/adductor-protocol.yaml` / `conditioning-matrix.yaml`
+  - `knowledge/conditioning-matrix.yaml`
+  - `knowledge/adductor-protocol.yaml` seulement si douleur signalée (pas de focus systématique)
 - Samedi : optionnel (décider selon dispo)
 
 ## Langage athlète (obligatoire)

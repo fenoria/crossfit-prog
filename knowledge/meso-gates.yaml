@@ -2,7 +2,7 @@
 # Scope actuel : chemin Macro 1 (benchmarks → ACC-GYM → ACC-STR → TRA-MIX → REAL → Macro2).
 # Autres meso_types (ACC-GPP, ACC-OLY, TRA-POW, TRANS) : pas de gate YAML —
 # passage via history/decisions.md jusqu’à Macro 2+.
-# Ne pas enchaîner au calendrier seul : vérifier gates + adducteur + fatigue.
+# Ne pas enchaîner au calendrier seul : vérifier gates + fatigue (+ douleur seulement si signalée).
 # Code canonique REAL (label « REAL mini » = même code, durée courte).
 
 version: 1
@@ -15,7 +15,7 @@ sources:
   - "Profil — gym volume prioritaire reconstruction"
 
 global_blockers:
-  - "adductor_pain_recurrent ≥ 6 → ne pas avancer vers ACC-STR lourd ; adapter"
+  - "douleur lower florissante signalée (≥ 6) → ne pas avancer vers ACC-STR lourd ; adapter"
   - "sommeil / RPE chronique élevé / chute perf → deload avant gate"
   - "prs_current_kg incomplets → ne pas démarrer ACC-GYM chargé (sauf proxies gym seuls OK si force déjà notée)"
 
@@ -27,7 +27,6 @@ gates:
       - "prs_current_kg : au moins BS ou FS, DL, strict_press, weighted_pullup renseignés (ou N/A documenté)"
       - "proxies gym notés (BMU/RMU/HSW/HSPU) dans profile ou Notes S01"
       - "oly power : charges confortables notées (pas forcément 1RM)"
-      - "aucune douleur adducteur ≥ 6 non résolue"
     optional:
       - "ergo court smoke test (benchmarks only — pas un WOD HI)"
     on_fail: "Prolonger benchmarks 2–3 jours ou retester le lift manquant ; ne pas inventer des %"
@@ -38,8 +37,8 @@ gates:
     required:
       - "deload ACC-GYM fait (−30 % volume skill) ou semaine pic digérée"
       - "au moins 2 skills gym ont progressé d’un cran ladder OU densité EMOM stable vs baseline"
-      - "adducteur moyen séance ≤ 3 sur les 5 derniers lower (s’il y en a eu)"
       - "maintien force respecté (≥ 1 stimulus/semaine) sans casse"
+      - "pas de douleur lower florissante signalée bloquant le squat/hinge"
     soft_targets:
       - "BMU : singles EMOM stables (cran ≥ 2) si baseline le permettait"
       - "HSW ou HSPU : volume/distance en hausse vs S01"
@@ -52,7 +51,7 @@ gates:
       - "deload force fait"
       - "charges force actuelles réévaluées (RPE) vs post-benchmarks"
       - "gym maintien ≥ 2 séances/sem. pendant ACC-STR (pas de perte totale skill)"
-      - "adducteur OK pour mixed (≤ 3 sur lower récents)"
+      - "pas de douleur lower florissante signalée"
     on_fail: "Maintenir ACC-STR léger ou mini ACC-GYM refresh 1 sem."
 
   TRA_MIX_to_REAL:
@@ -61,7 +60,7 @@ gates:
     label: "REAL mini (Macro 1)"
     required:
       - "1–2 séances mixed qualité digérées (RPE noté)"
-      - "pas de douleur adducteur florissante"
+      - "pas de douleur florissante signalée"
       - "fraîcheur relative : pas de semaine surcharge empilée juste avant"
     on_fail: "Semaine volume ↓ / Z2 puis retester mixed"
 
