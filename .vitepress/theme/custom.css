@@ -146,7 +146,12 @@
 
 .vp-doc h2 {
   font-family: Syne, 'DM Sans', sans-serif;
-  border-top-color: var(--vp-c-brand-soft);
+  border-top: none;
+  margin-top: 16px;
+}
+
+.vp-doc hr {
+  margin-top: 48px;
 }
 
 .dark .vp-doc a {
