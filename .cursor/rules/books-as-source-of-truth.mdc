@@ -1,13 +1,18 @@
 ---
-description: books/ est la source de connaissance principale pour toute prog
+description: Couches SoT — knowledge (méthodo) vs books (brut)
 alwaysApply: true
 ---
 
-# Books = source de vérité
+# SoT connaissance = `knowledge/` (+ `books/` brut)
 
-- Le dossier `books/` et les artefacts dérivés dans `knowledge/` sont la **source de connaissance principale**.
-- Toute question de programmation, toute synthèse méthodo, toute génération de séances / cycles doit s’appuyer **en priorité** sur ce corpus.
-- Citer les principes / ouvrages pertinents quand c’est utile à la compréhension.
-- Ne pas inventer une méthodo hors corpus sans le signaler explicitement.
-- La méthodo dans `knowledge/methodology.md` est **validated** (2026-07-27). Toute génération de séances doit s’y conformer. Toute évolution méthodo majeure → repasser par validation athlète.
-- La prog se trouve dans **`prog/`** (Markdown + VitePress).
+Couches (qui gagne en conflit) :
+
+1. **`athlete/profile.yaml`** — instance athlète (charges, volumes, douleur, planning)
+2. **`prog/`** — séances exécutées (ce que l’athlète fait)
+3. **`knowledge/`** — méthodo + ops pack validés
+4. **`books/`** — corpus brut (jamais citer contre une méthodo `validated` sans arbitrage)
+5. **`history/decisions.md`** — mémoire des arbitrages coach
+
+- Toute génération de séances s’appuie sur `knowledge/methodology.md` (**validated**) + ops pack.
+- Ne pas inventer une méthodo hors corpus sans le signaler.
+- Évolution méthodo majeure → revalidation athlète.

@@ -16,7 +16,7 @@ pattern_ids:
   - benchmark_session
 
 common:
-  warmup_min: 10-15
+  warmup_min: "selon id knowledge/warmups.yaml (souvent 8–15 ; Z2-only 3–5)"
   main_min: 45-60
   accessory_or_finisher_min: 10-20
   always_respect: [adductor, current_benchmarks, no_guided_machines]
@@ -26,6 +26,7 @@ common:
 
 force_lower:
   intent: "Force membre inférieur contrôlée / structure"
+  warmup_required: warmup_adductor_friendly
   template:
     - primary: "Back or Front squat — séries lourdes submax"
     - secondary: "Hinge (RDL/DL variant) volume modéré"

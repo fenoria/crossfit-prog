@@ -14,17 +14,18 @@ Calibrer → accumuler gym → force structurelle → convertir (mixed) → mini
 | Meso — ACC-GYM | Accumulation volume gym | à venir |
 | Meso — ACC-STR | Force structurelle | à venir |
 | Meso — TRA-MIX | Conversion mixed CF | à venir |
-| Meso — REAL mini | Expression / mock | à venir |
-| Mini-transition | Avant Macrocycle 2 | à venir |
+| Meso — REAL (mini) | Expression / mock | à venir |
+| Meso — TRANS | Avant Macrocycle 2 | à venir |
 
 ## Calendrier samedi ON/OFF (Macro 1)
 
-Règle profil : **1 samedi sur 2**, 10h–12h30. Ancré ici pour éviter l’ambiguïté à l’écriture des semaines.
+Règle profil : **1 samedi sur 2**, 10h–12h30. Ancré ici pour éviter l’ambiguïté à l’écriture des semaines.  
+Numérotation **Sxx** = relative au **meso** (Benchmarks S01 ≠ ACC-GYM S01).
 
 | Semaine (lundi) | Samedi | Statut |
 |-----------------|--------|--------|
-| 2026-08-03 (S01 Benchmarks) | **ON** 08/08 | planifié |
-| 2026-08-10 (ACC-GYM S01 prévu) | OFF | provisoire* |
+| 2026-08-03 (Benchmarks S01) | **ON** 08/08 | planifié |
+| 2026-08-10 (ACC-GYM, 1ʳᵉ sem. du meso) | OFF | provisoire* |
 | 2026-08-17 | **ON** | provisoire* |
 | 2026-08-24 | OFF | provisoire* |
 | 2026-08-31 | **ON** | provisoire* |

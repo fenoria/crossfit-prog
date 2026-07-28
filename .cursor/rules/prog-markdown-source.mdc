@@ -1,17 +1,14 @@
 ---
-description: Source de vérité prog = Markdown dans prog/ (pas Notion)
+description: SoT programmation = Markdown dans prog/ (pas Notion)
 alwaysApply: true
 ---
 
-# Prog Markdown = source de vérité
+# SoT programmation = `prog/`
 
-- Toute la programmation se lit et s’écrit dans [`prog/`](prog/) (fichiers `.md`).
-- Hiérarchie (validée, Issurin/Bompa) du plus haut au plus petit :
-  1. **Saison** — `prog/saison-YYYY/index.md`
-  2. **Macrocycle** — `.../macrocycle-N-nom/index.md`
-  3. **Meso** — `.../meso-nom/index.md`
-  4. **Semaine** — **1 fichier = 1 semaine** — `.../Sxx-YYYY-MM-DD.md`
-- Template semaine : [`prog/_templates/semaine.md`](prog/_templates/semaine.md) — pourquoi/intention/apport/suite · **Fondements (corpus)** · jours Lun–Dim · Notes · créneau 90 min
-- Le site web (**VitePress** / Vue) est généré **depuis `prog/`** — sidebar auto ; `.vitepress/current.json` = semaine « En cours ».
-- Décisions coach durables : `history/decisions.md` + `athlete/profile.yaml` / rules.
-- Nettoyer les fichiers/dossiers obsolètes quand la structure évolue.
+- Séances / calendrier : uniquement [`prog/`](prog/) (fichiers `.md`).
+- Hiérarchie : Saison → Macrocycle → Meso → Semaine (`Sxx-YYYY-MM-DD.md`).
+- Templates : [`prog/_templates/semaine.md`](prog/_templates/semaine.md) · [`meso.md`](prog/_templates/meso.md)
+- Site VitePress généré **depuis `prog/`** ; `.vitepress/current.json` = « En cours ».
+- Connaissance / méthodo : `knowledge/` (voir rule SoT connaissance).
+- Décisions durables : `history/decisions.md` + `athlete/profile.yaml`.
+- Nettoyer fichiers obsolètes quand la structure évolue.

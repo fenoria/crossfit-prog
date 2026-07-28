@@ -55,7 +55,8 @@
 ## Mercredi JJ/MM — Box / aérobie
 
 **Intention** : …  
-**Pattern** : `team_wod` | `conditioning_z2`
+**Pattern** : `team_wod` | `conditioning_z2`  
+**Warm-up** : `warmup_general_90` | `warmup_z2_only`
 
 - **Si WOD team** : … · noter RPE (si ≥ 8 → −volume jeudi)
 - **Sinon** : Z2 …
@@ -86,13 +87,16 @@
 
 _(ON cette semaine / OFF)_ — calendrier macro
 
+**Pattern** : …  
+**Warm-up** : `warmup_z2_only` | …
+
 …
 
 ---
 
 ## Dimanche JJ/MM
 
-Off, ou Z2 easy (`conditioning_z2`).
+Off, ou Z2 easy (`conditioning_z2`) — **Warm-up** : `warmup_z2_only` si séance.
 
 ---
 

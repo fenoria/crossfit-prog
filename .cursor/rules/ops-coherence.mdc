@@ -18,4 +18,5 @@ Quand on écrit ou adapte une semaine / un meso :
 9. **Feedback** — tableau Notes du template semaine
 10. **Volumes** — % / sets sur `prs_current` + `volumes` profile ; jamais PRs pré-blessure
 
-Lint : `npm run lint:prog`
+Lint : `npm run lint:prog` (obligatoire après write-week / generate)  
+SoT : profile (instance) > prog (séances) > knowledge (méthodo) > books (brut) · history = mémoire

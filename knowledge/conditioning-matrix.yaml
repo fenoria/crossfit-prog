@@ -57,8 +57,9 @@ systems:
     notes: "Ne remplace pas le volume gym prioritaire"
 
 forbidden_outside_specific: >
-  Pas de WODs « hero » / tests conditioning gratuits en ACC-GYM / ACC-STR /
-  benchmarks — ils volent la récupération sans servir l’intention.
+  Pas de WODs « hero » / chippers durs gratuits en ACC-GYM / ACC-STR.
+  Exception benchmarks : smoke test ergo court optionnel (ex. 500 m)
+  pour calibrer — 1 effort max, skip si adducteur/fatigue ; ce n’est pas du HI de développement.
 
 team_box:
   count_as: "glycolytic si RPE ≥ 7 ; Z2/tempo si easy"

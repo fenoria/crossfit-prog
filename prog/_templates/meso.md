@@ -1,7 +1,7 @@
 # Meso — [CODE] [nom lisible]
 
-<!-- Template : copier vers prog/saison-YYYY/macrocycle-N-…/meso-…/index.md
-     Codes : ACC-GYM | ACC-STR | ACC-OLY | ACC-GPP | TRA-MIX | TRA-POW | REAL | TRANS | benchmarks
+<!-- Codes : ACC-GYM | ACC-STR | ACC-OLY | ACC-GPP | TRA-MIX | TRA-POW | REAL | TRANS | benchmarks
+     « REAL mini » = code REAL (durée courte).
      Relire : knowledge/maintenance-doses.yaml · meso-gates.yaml · gym-ladder.md · session-patterns.yaml -->
 
 **Macrocycle** : N — [nom] · **Saison** : YYYY  
@@ -14,6 +14,8 @@
 ## Intention dominante
 
 **Code** : `[ACC-GYM]`  
+<!-- Codes canoniques : ACC-GPP | ACC-GYM | ACC-STR | ACC-OLY | TRA-MIX | TRA-POW | REAL | TRANS | benchmarks
+     Label « REAL mini » = code REAL. -->
 **Stimulus** : […]  
 **Ce que ce n’est pas** : […]
 

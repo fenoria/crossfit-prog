@@ -1,9 +1,14 @@
 # Critères de sortie / gates de meso
+# Scope actuel : chemin Macro 1 (benchmarks → ACC-GYM → ACC-STR → TRA-MIX → REAL → Macro2).
+# Autres meso_types (ACC-GPP, ACC-OLY, TRA-POW, TRANS) : pas de gate YAML —
+# passage via history/decisions.md jusqu’à Macro 2+.
 # Ne pas enchaîner au calendrier seul : vérifier gates + adducteur + fatigue.
+# Code canonique REAL (label « REAL mini » = même code, durée courte).
 
 version: 1
 status: validated
 updated: 2026-07-28
+scope: macrocycle_1_path
 sources:
   - "Israetel — progresser sous MRV, deload"
   - "Issurin — intention de bloc atteinte avant pivot"
@@ -24,7 +29,7 @@ gates:
       - "oly power : charges confortables notées (pas forcément 1RM)"
       - "aucune douleur adducteur ≥ 6 non résolue"
     optional:
-      - "ergo court smoke test"
+      - "ergo court smoke test (benchmarks only — pas un WOD HI)"
     on_fail: "Prolonger benchmarks 2–3 jours ou retester le lift manquant ; ne pas inventer des %"
 
   ACC_GYM_to_ACC_STR:
@@ -50,9 +55,10 @@ gates:
       - "adducteur OK pour mixed (≤ 3 sur lower récents)"
     on_fail: "Maintenir ACC-STR léger ou mini ACC-GYM refresh 1 sem."
 
-  TRA_MIX_to_REAL_mini:
+  TRA_MIX_to_REAL:
     from: TRA-MIX
     to: REAL
+    label: "REAL mini (Macro 1)"
     required:
       - "1–2 séances mixed qualité digérées (RPE noté)"
       - "pas de douleur adducteur florissante"

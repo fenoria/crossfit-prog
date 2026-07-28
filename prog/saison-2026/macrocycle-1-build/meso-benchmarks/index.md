@@ -28,7 +28,7 @@ Sans charges actuelles fiables, on ne dose pas les % (Israetel). Gate avant Accu
 
 | Semaine | Focus | Patterns |
 |---------|--------|----------|
-| S01 | Tests force + gym proxies + Oly power | `benchmark_session`, `team_wod` / `conditioning_z2` |
+| S01 (meso Benchmarks) | Tests force + gym proxies + Oly power | `benchmark_session`, `team_wod` / `conditioning_z2` |
 
 ## Maintien
 

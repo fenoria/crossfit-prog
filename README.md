@@ -4,13 +4,14 @@ Programmation CrossFit élite — **source de vérité = [`prog/`](prog/)** (Mar
 
 ## Stack
 
-| | |
+| Couche | Rôle |
 |---|---|
-| Méthodo | [`knowledge/methodology.md`](knowledge/methodology.md) |
-| Profil | [`athlete/profile.yaml`](athlete/profile.yaml) |
-| Livres | [`books/`](books/) (gitignorés) |
-| Site | **VitePress** (Vue) → GitHub Pages |
-| Semaine en cours | [`.vitepress/current.json`](.vitepress/current.json) |
+| Connaissance | [`knowledge/`](knowledge/) (+ [`books/`](books/) brut) |
+| Instance | [`athlete/profile.yaml`](athlete/profile.yaml) |
+| Séances | [`prog/`](prog/) — **SoT programmation** |
+| Mémoire | [`history/decisions.md`](history/decisions.md) |
+| Site | **VitePress** → GitHub Pages |
+| En cours | [`.vitepress/current.json`](.vitepress/current.json) |
 
 ## Hiérarchie
 

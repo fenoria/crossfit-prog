@@ -34,7 +34,7 @@ Sources : corpus `books/` (11 ouvrages) · profil `athlete/profile.yaml` · arbi
 
 ## 3. Architecture temporelle (années — livres, pas BON)
 
-> **Correction** : l’ancienne prog BON (FORCE → GYM → HALTÉRO → SPÉCIFIQUE → pré-comp → taper) était un **unique pic** vers une compétition. Ce n’est **pas** le modèle annuel retenu. On s’aligne sur **Issurin** (stages / résidus) + **Bompa** (plan annuel multi-pics + transition) + séquence force Bompa (AA → max strength → conversion).
+> **Correction** : l’ancienne prog BON (FORCE → GYM → HALTÉRO → SPÉCIFIQUE → pré-comp → taper) était un **unique pic** vers une compétition. Ce n’est **pas** le modèle annuel retenu. On s’aligne sur **Issurin** (stages / résidus) + **Bompa** (plan annuel multi-pics + transition). La séquence force Bompa (AA → max strength → conversion) guide un macro « force » classique ; **exception reconstruction post-blessure** : Accumulation **gym** (ACC-GYM) prime sur AA force, car c’est la qualité limitante (Issurin + profil).
 
 ### 3.1 Long terme — année type CrossFit élite
 
@@ -85,8 +85,8 @@ Contexte : post-adducteur, pas de A-event fixé, priorité gym (validée).
 | ~4 sem. | **ACC-GYM** | Accumulation concentrée sur ta qualité la plus limitante (Issurin + Low) |
 | ~4 sem. | **ACC-STR** | Force structurelle contrôlée (Bompa Max Strength / Zats) tout en entretenant gym (résidu) |
 | ~4 sem. | **TRA-MIX** | Conversion : gym + barre + mixed sous fatigue (Verkhoshansky / Issurin Trans) |
-| ~2–3 sem. | **REAL mini** | Mock / test weekend / local — apprendre à exprimer sans taper ultra-long |
-| 1 sem. | Deload / mini-transition | Avant Macro 2 |
+| ~2–3 sem. | **REAL** (label : REAL mini) | Mock / test weekend / local — apprendre à exprimer sans taper ultra-long |
+| 1 sem. | **TRANS** / mini-transition | Avant Macro 2 |
 
 **Maintien pendant les blocs** → doses chiffrées dans `knowledge/maintenance-doses.yaml` (résidus Issurin).  
 **Passage de meso** → gates dans `knowledge/meso-gates.yaml` (pas calendrier seul).
@@ -123,6 +123,7 @@ Jours : Lun–Ven ≤90 min · Mercredi team si box · Samedi 1/2 · Dimanche of
 - Patterns : squat, hinge, press, pull (Zatsiorsky).
 - Accumulation : 70–85 % ressenti actuel, volumes contrôlés, tempo si tissus.
 - Éviter deep heavy squat agressif si adducteur parle → stance/profondeur/variants.
+- Warm-up lower : `warmup_adductor_friendly` obligatoire.
 
 ### Gym (priorité)
 - Skill technique + volume (EMOM, densité) + renfo lesté (Low).
@@ -205,12 +206,13 @@ Lint : `npm run lint:prog`
 - [x] Année en **2–3 macrocycles** (Bompa multi-pic) + transition — pas un seul run FORCE→GYM→HALTÉRO→SPEC façon BON
 - [x] Chaque macro = stages **Accumulation → Transmutation → Realization** (Issurin)
 - [x] Mesos nommés par **intention** (ACC-GYM, ACC-STR, TRA-MIX, REAL…) et **répétés** dans l’année
-- [x] Macro 1 août 2026 : Benchmarks → ACC-GYM → ACC-STR → TRA-MIX → REAL mini
+- [x] Macro 1 août 2026 : Benchmarks → ACC-GYM → ACC-STR → TRA-MIX → REAL (mini)
 
 ## Validation ops pack (2026-07-28)
 
 - [x] Maintien / gates / ladder / patterns / warmups / adducteur / conditioning matrix
 - [x] Templates meso + semaine (feedback structuré)
-- [ ] Volumes MEV/MAV/MRV chiffrés — **après S01**
+- [x] Patch cohérence 2026-07-28 (canon REAL, SoT, lint, Z2/volumes)
+- [ ] Volumes MEV/MAV/MRV gym/force/oly chiffrés — **après S01**
 
 Validée le 2026-07-27 (athlète). Ops pack 2026-07-28. Prochaine étape : benchmarks 3–9 août → remplir profile → ACC-GYM.

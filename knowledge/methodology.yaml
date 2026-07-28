@@ -1,7 +1,13 @@
 status: validated
 version: 1
-updated: 2026-07-27
+updated: 2026-07-28
 validated_on: 2026-07-27
+# md = narratif athlète ; yaml = contrat machine — garder meso_types / order / status sync
+source_of_truth:
+  knowledge: "knowledge/ (méthodo + ops) — books/ = brut"
+  athlete: "athlete/profile.yaml — instance (charges, volumes, douleur)"
+  prog: "prog/ — séances exécutées"
+  history: "history/decisions.md — arbitrages coach"
 pilots:
   structure: issurin
   dosing: israetel
@@ -11,6 +17,7 @@ pilots:
   macro_peaking: bompa
   mental: encyclo_pm
   conditioning_fallback: bible_pp
+secondary_refs: [encyclo_pp, manuel_muscu, bible_pp]
 gaps:
   - jamieson_energy_systems_unavailable
 
@@ -38,13 +45,20 @@ principles:
   - pedagogy_at_every_level
   - z2_over_off_when_possible
   - cut_volume_not_intent_when_fatigued
+  - health_over_ego_adductor_and_bar_confidence
+  - z2_may_be_below_mev_in_REAL_for_freshness
+
+# Codes canoniques = meso_types. Label « REAL mini » = code REAL (durée courte Macro 1).
+meso_code_aliases:
+  REAL-mini: REAL
+  "REAL mini": REAL
 
 default_meso_order_post_injury:
   - benchmarks
   - ACC-GYM
   - ACC-STR
   - TRA-MIX
-  - REAL-mini
+  - REAL  # label humain : REAL mini (Macro 1)
 
 annual_structure:
   model: bompa_multi_peak_plus_issurin_stages
@@ -79,6 +93,8 @@ domains:
   force:
     patterns: [squat, hinge, press, pull]
     intensity_note: "based_on_current_benchmarks"
+    accumulation_pct_felt: "70-85"
+    warmup_required_lower: warmup_adductor_friendly
   gym:
     priority: high
     focuses: [rmu, bmu, hsw, hspu, density]
@@ -88,4 +104,4 @@ domains:
   conditioning:
     role: maintenance
     z2: frequent
-    high_intensity: limited_to_specific_block
+    high_intensity: "TRA-MIX / TRA-POW / REAL only — see conditioning-matrix.yaml"

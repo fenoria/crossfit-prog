@@ -1,11 +1,17 @@
-# Volumes cibles (Israetel) — structure prête ; chiffres = post-benchmarks
-# Remplir athlete/profile.yaml → volumes après S01 (et ajuster ici si standards meso changent).
+# Volumes cibles (Israetel)
+# Règle d’écriture (post-S01) :
+#   - athlete/profile.yaml → volumes = INSTANCE athlète (chiffres courants, targets semaine)
+#   - ce fichier = BORNES / standards méthodo (référence ; Z2 déjà calibré)
+# Ne pas remplir les deux « à l’identique » sans sync : en cas de doute, profile gagne pour la prog.
 
 version: 1
-status: draft_structure  # passe validated quand profile.volumes renseigné post-S01
+status: draft_values  # structure ops OK ; valeurs gym/force/oly après S01 → puis validated
 updated: 2026-07-28
 note: >
-  Sans 1RM / proxies actuels, les sets/semaine restent null.
+  Sans 1RM / proxies actuels, gym/force/oly restent null.
+  Z2 MEV 60 = cible Accumulation / année type.
+  En REAL (et souvent TRA), maintenance-doses peut imposer un min Z2 < MEV
+  (fraîcheur Issurin) — autorisé, pas une violation Israetel.
   Après benchmarks : estimer MEV bas (entrée ACC-GYM), progresser vers MAV,
   deload si signes MRV (voir profile.coaching.mrv_signals).
 
@@ -40,7 +46,9 @@ domains:
     mev: 60
     mav: 120
     mrv: 180
-    note: "Préférence athlète ; Z2 ne remplace pas le focus meso"
+    note: >
+      MEV Accumulation / année. REAL peut descendre à 30 min/sem. (maintenance-doses)
+      sans être « sous-MEV illégal » — peaking = fraîcheur.
 
 deload_default:
   volume_reduction_pct: 30

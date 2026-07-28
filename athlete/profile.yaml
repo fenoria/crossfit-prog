@@ -18,6 +18,7 @@ schedule:
     days: [mon, tue, wed, thu, fri]
     time: "12:00-13:30"
     max_minutes: 90
+    team_day: wed  # souvent WOD team box — compter fatigue
   saturday:
     frequency: every_other_week
     time: "10:00-12:30"
@@ -83,7 +84,9 @@ prs_current_kg:
   power_clean: null
   notes: "Programmer uniquement après re-test / benchmarks"
 
-# Volumes Israetel — remplir après S01 ; landmarks vides dans knowledge/volume-landmarks.yaml
+# Volumes Israetel — INSTANCE athlète (remplir après S01).
+# Bornes méthodo : knowledge/volume-landmarks.yaml (Z2 déjà 60/120/180 ; gym/force/oly null).
+# En conflit profile vs landmarks pour la prog courante → profile gagne.
 volumes:
   updated: null
   gym:

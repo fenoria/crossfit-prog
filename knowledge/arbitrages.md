@@ -1,6 +1,10 @@
 # Arbitrages méthodologiques
 
-Décisions prises après analyse du corpus (2026-07-27). À valider avec l’athlète.
+Décisions corpus **validées** avec l’athlète (2026-07-27) · ops pack (2026-07-28).  
+Rôle : conflits **entre auteurs** + décision retenue.  
+Arbitrages coach / calendrier / feedback → `history/decisions.md` (ne pas tout dupliquer ici).
+
+**Encore ouvert** : conditioning fin si version texte Jamieson arrive (§6).
 
 ## 1. Structure de cycle : Issurin vs Bompa « traditionnel »
 - **Conflit** : Bompa/classique = développement concurrent de nombreuses qualités ; Issurin = blocs concentrés + résidus.
@@ -25,8 +29,8 @@ Décisions prises après analyse du corpus (2026-07-27). À valider avec l’ath
 
 ## 6. Conditioning : sans Jamieson
 - **Constat** : *Ultimate MMA Conditioning* indisponible en texte.
-- **Décision temporaire** : conditioning via Bible PP + Bompa + logique Issurin (aérobie en Accumulation, densité/spécificité plus tard) ; **ne pas sur-stimuler** (force de l’athlète).
-- **Si** une version texte Jamieson arrive → ré-analyser energy systems et mettre à jour cette section.
+- **Décision** : fallback **validé** via Bible PP + Bompa + Issurin + `conditioning-matrix.yaml` ; **ne pas sur-stimuler** (force de l’athlète).
+- **Réouverture** : si version texte Jamieson → ré-analyser energy systems et mettre à jour cette section + la matrice.
 
 ## 7. Mental
 - **Décision** : Encyclopédie mentale active surtout pré-comp / taper (routines, stress), pas au détriment du travail physique en Accumulation.
@@ -37,10 +41,16 @@ Décisions prises après analyse du corpus (2026-07-27). À valider avec l’ath
 ## 9. Architecture annuelle (2026-07-27)
 - **Conflit** : copier les mesos BON sur 1 an vs Issurin stages + Bompa multi-pic.
 - **Décision** : année = **2–3 macrocycles** ; chaque macro = Acc → Trans → Real ; mesos = intentions concentrées répétables (ACC-GYM, ACC-STR, TRA-MIX, REAL…).
-- **Macro 1 immédiat** : Benchmarks → ACC-GYM → ACC-STR → TRA-MIX → REAL mini (reconstruction post-blessure).
+- **Macro 1 immédiat** : Benchmarks → ACC-GYM → ACC-STR → TRA-MIX → REAL (label mini) → TRANS.
 - **Validé athlète** 2026-07-27.
 
 ## 10. Ops pack (2026-07-28)
 - **Conflit** : méthodo narrative seule vs contrôles opérationnels (volume, maintien, gates).
-- **Décision** : pack normatif sous `knowledge/` (maintenance, gates, ladder, patterns, warmups, adducteur, conditioning, volume landmarks) + templates meso/semaine + lint.
-- **Volumes chiffrés** : après benchmarks S01 seulement.
+- **Décision** : pack normatif sous `knowledge/` + templates meso/semaine + lint.
+- **Volumes** : `profile.volumes` = instance ; `volume-landmarks.yaml` = bornes (Z2 déjà calibré).
+- **Canon** : code meso `REAL` (label « REAL mini » OK en prose).
+- **Z2** : MEV 60 en Accumulation ; min < MEV autorisé en REAL (fraîcheur).
+
+## 11. Reconstruction : GYM avant AA force (2026-07-28)
+- **Conflit** : séquence Bompa AA → max strength vs qualité limitante gym.
+- **Décision** : Macro 1 Accumulation = **ACC-GYM** puis ACC-STR (exception post-blessure documentée méthodo §3).
