@@ -79,7 +79,50 @@ prs_current_kg:
   deadlift: null
   strict_press: null
   weighted_pullup: null
+  power_snatch: null
+  power_clean: null
   notes: "Programmer uniquement après re-test / benchmarks"
+
+# Volumes Israetel — remplir après S01 ; landmarks vides dans knowledge/volume-landmarks.yaml
+volumes:
+  updated: null
+  gym:
+    unit: skill_minutes_quality_per_week
+    mev: null
+    mav: null
+    mrv: null
+    current_target: null
+  force_lower:
+    unit: hard_sets_per_week
+    mev: null
+    mav: null
+    mrv: null
+    current_target: null
+  force_upper:
+    unit: hard_sets_per_week
+    mev: null
+    mav: null
+    mrv: null
+    current_target: null
+  oly:
+    unit: quality_lifts_per_week
+    mev: null
+    mav: null
+    mrv: null
+    current_target: null
+  z2:
+    unit: minutes_per_week
+    mev: 60
+    mav: 120
+    mrv: 180
+    current_target: 60
+
+gym_ladder_level:
+  # crans 1–5 — knowledge/gym-ladder.md ; baseline après S01
+  bmu: null
+  rmu: null
+  hspu: null
+  hsw: null
 
 benchmarks:
   last_run: null
@@ -96,12 +139,34 @@ benchmarks:
     - gym_volume_proxy  # BMU/RMU/HSW selon niveau actuel
     - ergo_short
 
+saturday_calendar_macro1:
+  rule: every_other_week
+  source: "prog/saison-2026/macrocycle-1-build/index.md"
+  next_on: "2026-08-08"
+
 coaching:
   feedback_loop: true
   language: fr
   pedagogy_required: true
+  feedback_schema: "tableau Notes / feedback dans prog/_templates/semaine.md"
+  mrv_signals:
+    - sommeil_degrade
+    - douleur_adducteur_recente
+    - chute_perf
+    - rpe_chronique_eleve
+  team_wod_rpe_threshold_cut_next_day: 8
 
 knowledge:
   methodology_status: validated
   methodology_validated_on: 2026-07-27
-  corpus_notes: "Jamieson retiré (PDF image) — conditioning en fallback Bible PP jusqu’à nouvel ouvrage"
+  ops_pack_validated_on: 2026-07-28
+  corpus_notes: "Jamieson retiré (PDF image) — conditioning-matrix.yaml = fallback Bible PP"
+  refs:
+    maintenance: knowledge/maintenance-doses.yaml
+    gates: knowledge/meso-gates.yaml
+    gym_ladder: knowledge/gym-ladder.md
+    adductor: knowledge/adductor-protocol.yaml
+    conditioning: knowledge/conditioning-matrix.yaml
+    warmups: knowledge/warmups.yaml
+    volumes: knowledge/volume-landmarks.yaml
+    patterns: knowledge/session-patterns.yaml

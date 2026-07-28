@@ -20,5 +20,7 @@ alwaysApply: true
 
 ## Adaptations
 - Weekends / vacances / contraintes ponctuelles : adapter jours/volume/intensité
-- Préserver l’intention du meso ; documenter dans `history/.../decisions.md`
+- Préserver l’intention du meso ; documenter dans `history/decisions.md`
 - Contraintes durables → `athlete/profile.yaml`
+- Samedi ON/OFF : calendrier dans l’index du macrocycle (`prog/.../macrocycle-*/index.md`)
+- Team WOD RPE ≥ 8 → −volume le lendemain

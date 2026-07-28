@@ -1,0 +1,47 @@
+# Volumes cibles (Israetel) — structure prête ; chiffres = post-benchmarks
+# Remplir athlete/profile.yaml → volumes après S01 (et ajuster ici si standards meso changent).
+
+version: 1
+status: draft_structure  # passe validated quand profile.volumes renseigné post-S01
+updated: 2026-07-28
+note: >
+  Sans 1RM / proxies actuels, les sets/semaine restent null.
+  Après benchmarks : estimer MEV bas (entrée ACC-GYM), progresser vers MAV,
+  deload si signes MRV (voir profile.coaching.mrv_signals).
+
+domains:
+  gym:
+    unit: "skill_minutes_quality_per_week"  # EMOM/drills submax, hors warm-up
+    mev: null
+    mav: null
+    mrv: null
+    starting_note: "Post-S01 : partir bas (ex. 40–60 min skill qualité/sem.) puis +10–15 %/sem. si récup OK"
+
+  force_lower:
+    unit: "hard_sets_per_week"  # séries ≥ RPE 6–7 squat/hinge
+    mev: null
+    mav: null
+    mrv: null
+
+  force_upper:
+    unit: "hard_sets_per_week"
+    mev: null
+    mav: null
+    mrv: null
+
+  oly:
+    unit: "quality_lifts_per_week"  # singles/doubles techniques comptés
+    mev: null
+    mav: null
+    mrv: null
+
+  z2:
+    unit: "minutes_per_week"
+    mev: 60
+    mav: 120
+    mrv: 180
+    note: "Préférence athlète ; Z2 ne remplace pas le focus meso"
+
+deload_default:
+  volume_reduction_pct: 30
+  intensity: "maintenir charges relatives ou −5 %, couper volume"

@@ -1,0 +1,60 @@
+# Warm-ups réutilisables (box, ≤ 12–15 min)
+
+version: 1
+status: validated
+updated: 2026-07-28
+
+# Utilisation : citer l’id dans la séance (ex. « Warm-up : warmup_adductor_friendly »)
+# plutôt que réinventer chaque jour.
+
+warmups:
+  warmup_general_90:
+    duration_min: "10-12"
+    when: "séance mixte / team"
+    steps:
+      - "Ergo easy 3–5’ (row/bike/ski)"
+      - "Mobilité globale : hanches, thoracique, épaules 3’"
+      - "Activation : 2 rounds empty bar ou PVC + scap pulls"
+
+  warmup_adductor_friendly:
+    duration_min: "12-15"
+    when: "tout lower (squat, hinge, FS, DL) — obligatoire si douleur récente ≥ 3"
+    steps:
+      - "Ergo easy 4–5’ (bike préférable si adducteur sensible)"
+      - "Mobilité douce adducteur : frog rock / cossack léger sans douleur 2–3’"
+      - "Glute bridge ou hip thrust bodyweight 2×8"
+      - "Squat progressif barre à vide → charges légères (pas de jump stretch agressif)"
+      - "Stop et swap protocole si douleur > 2 en montée"
+
+  warmup_upper_scap:
+    duration_min: "8-12"
+    when: "press, pull, gym haut du corps"
+    steps:
+      - "Ergo easy 2–3’ ou jump rope easy"
+      - "Scap pulls / band pull-aparts / face pulls légers 2×12"
+      - "Shoulder CARs ou openers 1–2’"
+      - "Build press ou kipping drills légers"
+
+  warmup_gym_skill:
+    duration_min: "10-12"
+    when: "jour skill BMU/RMU/HSW/HSPU"
+    steps:
+      - "Ergo easy 3’"
+      - "Scap + hollow / arch 2’"
+      - "Drills spécifiques skill 4–6’ (voir gym-ladder cran actuel)"
+      - "1–2 sets très submax avant volume EMOM"
+
+  warmup_oly_power:
+    duration_min: "10-12"
+    when: "power snatch / power clean / pulls"
+    steps:
+      - "Ergo easy 3’"
+      - "Mobilité cheville/hanche/thoracique 3’"
+      - "PVC / barre : muscle snatch, OH squat léger si confort, clean tall"
+      - "Build technique — pas de deep heavy squat snatch/clean"
+
+  warmup_z2_only:
+    duration_min: "3-5"
+    when: "séance Z2 pure"
+    steps:
+      - "2–3’ easy puis entrer en Z2 (parole possible)"

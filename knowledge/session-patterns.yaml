@@ -1,13 +1,28 @@
-# Patterns de séances (draft) — budget 90 min box
+# Patterns de séances — budget 90 min box
+# write-week / generate-training-cycle : chaque jour DOIT citer un id ci-dessous (champ Pattern).
 
 version: 1
 status: validated
+updated: 2026-07-28
+
+pattern_ids:
+  - force_lower
+  - force_upper
+  - gym_skill_day
+  - oly_power_day
+  - conditioning_z2
+  - conditioning_specific
+  - team_wod
+  - benchmark_session
 
 common:
   warmup_min: 10-15
   main_min: 45-60
   accessory_or_finisher_min: 10-20
   always_respect: [adductor, current_benchmarks, no_guided_machines]
+  warmup_ids_ref: knowledge/warmups.yaml
+  off_pattern_requires: "entrée history/decisions.md (arbitrage)"
+
 
 force_lower:
   intent: "Force membre inférieur contrôlée / structure"
@@ -61,7 +76,8 @@ team_wod:
   intent: "Contrainte box mercredi / samedi — comptabiliser fatigue"
   template:
     - "WOD team tel que programmé box"
-    - "Ajuster charge des jours suivants si RPE élevé"
+    - "Si RPE ≥ 8 → −volume lendemain (−1 série force ou −20–30 % gym)"
+    - "Compter comme glycolytique dans conditioning-matrix si RPE ≥ 7"
 
 benchmark_session:
   intent: "Calibrer charges actuelles"

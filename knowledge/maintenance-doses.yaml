@@ -1,0 +1,97 @@
+# Doses de maintien (résidus Issurin) — hors bloc dominant
+# Source : Issurin (résidus) · Israetel (MEV entretien) · méthodo §3.3
+# Les volumes « dominant » se calibrent après benchmarks ; ici = minima hors focus.
+
+version: 1
+status: validated
+updated: 2026-07-28
+note: >
+  Une qualité hors meso dominant reçoit au moins la dose ci-dessous,
+  sans voler le budget du focus. Si fatigue haute → couper le maintien
+  avant de couper l’intention du bloc (sauf douleur adducteur).
+
+units:
+  gym_session: "1 séance skill 20–35 min (EMOM/drills submax, 1–2 reps en réserve)"
+  force_stimulus: "1 séance lower ou upper submax (3–5 séries travail, RPE ≤ 7)"
+  oly_session: "1 séance power/technique 15–25 min (singles/doubles, pas max)"
+  z2_min_week: "minutes Z2 easy (parole possible)"
+  cond_hi_session: "séance HI (glycolytique / mixed dur) — rare hors TRA/REAL"
+
+by_meso_type:
+  ACC-GYM:
+    dominant: gym
+    gym: dominant  # volume selon athlete/profile.yaml → volumes.gym
+    force: { min_per_week: 1, unit: force_stimulus, note: "lower prudent OU upper ; pas les deux lourds" }
+    oly: { min_per_week: 1, unit: oly_session }
+    z2: { min_minutes_week: 60 }
+    cond_hi: { max_per_week: 0, note: "team WOD compte comme fatigue ; pas d’HI ajouté" }
+
+  ACC-STR:
+    dominant: force
+    force: dominant
+    gym: { min_per_week: 2, unit: gym_session, note: "protéger le gain ACC-GYM (résidu moyen)" }
+    oly: { min_per_week: 1, unit: oly_session }
+    z2: { min_minutes_week: 60 }
+    cond_hi: { max_per_week: 0 }
+
+  ACC-OLY:
+    dominant: oly
+    oly: dominant
+    gym: { min_per_week: 1, unit: gym_session }
+    force: { min_per_week: 1, unit: force_stimulus, note: "squat/hinge contrôlés si adducteur OK" }
+    z2: { min_minutes_week: 45 }
+    cond_hi: { max_per_week: 0 }
+
+  ACC-GPP:
+    dominant: gpp
+    gym: { min_per_week: 1, unit: gym_session }
+    force: { min_per_week: 1, unit: force_stimulus }
+    oly: { min_per_week: 0, note: "optionnel technique légère" }
+    z2: { min_minutes_week: 90 }
+    cond_hi: { max_per_week: 0 }
+
+  TRA-MIX:
+    dominant: mixed_cf
+    gym: { min_per_week: 1, unit: gym_session, note: "souvent dans le mixed ; 1 skill isolé si besoin" }
+    force: { min_per_week: 1, unit: force_stimulus, note: "entretien neural léger" }
+    oly: { min_per_week: 1, unit: oly_session }
+    z2: { min_minutes_week: 45 }
+    cond_hi: { max_per_week: 2, note: "doses limitées ; qualité pacing" }
+
+  TRA-POW:
+    dominant: power
+    gym: { min_per_week: 1, unit: gym_session }
+    force: { min_per_week: 1, unit: force_stimulus }
+    oly: dominant
+    z2: { min_minutes_week: 45 }
+    cond_hi: { max_per_week: 1 }
+
+  REAL:
+    dominant: expression
+    gym: { min_per_week: 1, unit: gym_session, note: "qualité, pas junk volume" }
+    force: { min_per_week: 0, note: "singles ouverts seulement si peaking force" }
+    oly: { min_per_week: 0, note: "ouverture technique légère OK" }
+    z2: { min_minutes_week: 30 }
+    cond_hi: { max_per_week: 2, note: "mock / spécifique ; ↓ volume total semaine" }
+
+  TRANS:
+    dominant: recovery
+    gym: { min_per_week: 0, note: "fun / léger optionnel" }
+    force: { min_per_week: 0 }
+    oly: { min_per_week: 0 }
+    z2: { min_minutes_week: 60 }
+    cond_hi: { max_per_week: 0 }
+
+  benchmarks:
+    dominant: testing
+    note: "pas de doses de développement ; 1–2 tests lourds/jour max"
+    gym: { min_per_week: 0 }
+    force: { min_per_week: 0 }
+    oly: { min_per_week: 0 }
+    z2: { min_minutes_week: 40 }
+    cond_hi: { max_per_week: 0 }
+
+team_wod_rule: >
+  Mercredi (ou samedi) team WOD RPE ≥ 8 → réduire volume du lendemain
+  (−1 série force ou −20–30 % volume gym), pas l’intention du meso.
+  Documenter dans Notes de la semaine.

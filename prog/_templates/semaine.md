@@ -19,15 +19,24 @@
 
 ## Règles
 
-- [contraintes spécifiques à la semaine : adducteur, RPE, 1–2 tests max, etc.]
+- [contraintes spécifiques : adducteur, RPE, budget 90 min, etc.]
+- Maintien : respecter `maintenance-doses` du code meso
+- Patterns : chaque jour cite un `pattern:` parmi `knowledge/session-patterns.yaml`
+
+### Microcycle (si meso chargé)
+
+<!-- volume_adaptatif | surcharge_controlee | pic | deload -->
+**Phase micro** : [volume_adaptatif]
 
 ---
 
 ## Lundi JJ/MM — [titre court]
 
-**Intention** : …
+**Intention** : …  
+**Pattern** : `force_lower` | `gym_skill_day` | …  
+**Warm-up** : `warmup_…` (voir warmups)
 
-1. Warm-up …
+1. …
 2. …
 3. …
 
@@ -35,7 +44,9 @@
 
 ## Mardi JJ/MM — [titre court]
 
-**Intention** : …
+**Intention** : …  
+**Pattern** : …  
+**Warm-up** : …
 
 1. …
 
@@ -43,16 +54,19 @@
 
 ## Mercredi JJ/MM — Box / aérobie
 
-**Intention** : …
+**Intention** : …  
+**Pattern** : `team_wod` | `conditioning_z2`
 
-- **Si WOD team** : …
+- **Si WOD team** : … · noter RPE (si ≥ 8 → −volume jeudi)
 - **Sinon** : Z2 …
 
 ---
 
 ## Jeudi JJ/MM — [titre court]
 
-**Intention** : …
+**Intention** : …  
+**Pattern** : …  
+**Warm-up** : …
 
 1. …
 
@@ -60,7 +74,9 @@
 
 ## Vendredi JJ/MM — [titre court]
 
-**Intention** : …
+**Intention** : …  
+**Pattern** : …  
+**Warm-up** : …
 
 1. …
 
@@ -68,7 +84,7 @@
 
 ## Samedi JJ/MM — Optionnel
 
-_(ON cette semaine / OFF)_
+_(ON cette semaine / OFF)_ — calendrier macro
 
 …
 
@@ -76,10 +92,24 @@ _(ON cette semaine / OFF)_
 
 ## Dimanche JJ/MM
 
-Off, ou Z2 easy.
+Off, ou Z2 easy (`conditioning_z2`).
 
 ---
 
-## Notes
+## Notes / feedback
 
-_(à remplir après les séances / feedback)_
+<!-- Remplir après chaque séance. Skill session-feedback parse ce bloc.
+     Douleur adducteur : appliquer knowledge/adductor-protocol.yaml -->
+
+| Jour | Fait | Charges / score | RPE | Adducteur 0–10 | Fatigue 1–5 | Variante / note |
+|------|------|-----------------|-----|----------------|-------------|-----------------|
+| Lun | oui / partiel / skip | | | | | |
+| Mar | | | | | | |
+| Mer | | | | | | |
+| Jeu | | | | | | |
+| Ven | | | | | | |
+| Sam | | | | | | |
+| Dim | | | | | | |
+
+**Synthèse semaine** :  
+**Décision J+7** : _(garder / −volume / swap / deload anticipé)_

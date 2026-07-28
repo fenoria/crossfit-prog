@@ -14,6 +14,22 @@ pilots:
 gaps:
   - jamieson_energy_systems_unavailable
 
+ops_pack:
+  validated_on: 2026-07-28
+  files:
+    - knowledge/maintenance-doses.yaml
+    - knowledge/meso-gates.yaml
+    - knowledge/gym-ladder.md
+    - knowledge/session-patterns.yaml
+    - knowledge/warmups.yaml
+    - knowledge/adductor-protocol.yaml
+    - knowledge/conditioning-matrix.yaml
+    - knowledge/volume-landmarks.yaml
+  templates:
+    - prog/_templates/semaine.md
+    - prog/_templates/meso.md
+  lint: "npm run lint:prog"
+
 principles:
   - one_dominant_intent_per_meso
   - mev_mav_mrv_deloads

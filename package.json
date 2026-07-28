@@ -10,7 +10,8 @@
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
-    "ingest": "python3 scripts/ingest-books.py"
+    "ingest": "python3 scripts/ingest-books.py",
+    "lint:prog": "python3 scripts/lint-prog.py"
   },
   "devDependencies": {
     "vitepress": "^1.6.3"

@@ -23,11 +23,13 @@ Source structurée : `athlete/profile.yaml` (à tenir à jour).
 - Désinsertion adducteur (année dernière), douleurs résiduelles
 - Charges **minorées** ; éviter ce qui irrite l’adducteur
 - Ne jamais programmer sur les PRs pré-blessure sans re-test
+- Protocole gradué : `knowledge/adductor-protocol.yaml` (0–2 / 3–5 / 6–10)
 
 ## PRs pré-blessure (historique seulement)
 BS 160 · FS 140 · Clean 130 · Jerk 115 · Snatch 80 · DL 200 · PU lesté 1×50 kg
 
 ## Règles de prog
 - Intensité élite OK, mais privilégier volume/densité gym vs max out inutiles
-- Ne pas sur-stimuler le conditioning (déjà fort)
+- Ne pas sur-stimuler le conditioning (déjà fort) — `knowledge/conditioning-matrix.yaml`
 - Planifier des **benchmarks** pour calibrer % et mesurer la progression
+- Maintien hors focus / gates meso : ops pack (`maintenance-doses`, `meso-gates`)

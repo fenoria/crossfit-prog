@@ -1,0 +1,21 @@
+---
+description: Ops pack — patterns, maintien, gates, feedback, lint pour cohérence prog
+alwaysApply: true
+---
+
+# Ops pack cohérence prog
+
+Quand on écrit ou adapte une semaine / un meso :
+
+1. **Patterns** — chaque jour a un `Pattern:` ∈ `knowledge/session-patterns.yaml` ; hors liste → `history/decisions.md`
+2. **Warm-ups** — citer un id `knowledge/warmups.yaml` (lower → `warmup_adductor_friendly`)
+3. **Maintien** — respecter `knowledge/maintenance-doses.yaml` pour le code meso
+4. **Gates** — ne pas enchaîner de meso sans `knowledge/meso-gates.yaml`
+5. **Adducteur** — `knowledge/adductor-protocol.yaml` (0–2 / 3–5 / 6–10)
+6. **Conditioning** — `knowledge/conditioning-matrix.yaml` ; HI surtout TRA/REAL
+7. **Gym** — progressions via `knowledge/gym-ladder.md` en ACC-GYM
+8. **Samedi** — calendrier dans l’index du macrocycle
+9. **Feedback** — tableau Notes du template semaine
+10. **Volumes** — % / sets sur `prs_current` + `volumes` profile ; jamais PRs pré-blessure
+
+Lint : `npm run lint:prog`

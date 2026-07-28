@@ -39,3 +39,8 @@ Décisions prises après analyse du corpus (2026-07-27). À valider avec l’ath
 - **Décision** : année = **2–3 macrocycles** ; chaque macro = Acc → Trans → Real ; mesos = intentions concentrées répétables (ACC-GYM, ACC-STR, TRA-MIX, REAL…).
 - **Macro 1 immédiat** : Benchmarks → ACC-GYM → ACC-STR → TRA-MIX → REAL mini (reconstruction post-blessure).
 - **Validé athlète** 2026-07-27.
+
+## 10. Ops pack (2026-07-28)
+- **Conflit** : méthodo narrative seule vs contrôles opérationnels (volume, maintien, gates).
+- **Décision** : pack normatif sous `knowledge/` (maintenance, gates, ladder, patterns, warmups, adducteur, conditioning, volume landmarks) + templates meso/semaine + lint.
+- **Volumes chiffrés** : après benchmarks S01 seulement.

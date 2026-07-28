@@ -79,8 +79,6 @@ On **répète** et **alterne** ces blocs dans l’année selon le calendrier com
 
 Contexte : post-adducteur, pas de A-event fixé, priorité gym (validée).
 
-Proposition (à valider) :
-
 | Semaines | Bloc | Pourquoi (livres) |
 |----------|------|-------------------|
 | 3–9 août | **Benchmarks** | Calibrage Israetel (MEV/MRV) |
@@ -90,11 +88,8 @@ Proposition (à valider) :
 | ~2–3 sem. | **REAL mini** | Mock / test weekend / local — apprendre à exprimer sans taper ultra-long |
 | 1 sem. | Deload / mini-transition | Avant Macro 2 |
 
-**Maintien pendant les blocs** (résidus Issurin, créneau 90 min) :
-- Z2 fréquent (ta préférence)
-- Gym : volume d’entretien hors bloc ACC-GYM
-- Force / Oly : doses d’entretien hors leur bloc dominant
-- Conditioning HI : surtout en TRA/REAL, pas en Accumulation
+**Maintien pendant les blocs** → doses chiffrées dans `knowledge/maintenance-doses.yaml` (résidus Issurin).  
+**Passage de meso** → gates dans `knowledge/meso-gates.yaml` (pas calendrier seul).
 
 ### 3.4 Macrocycles 2 et 3 (reste de l’année) — logique
 
@@ -140,8 +135,8 @@ Jours : Lun–Ven ≤90 min · Mercredi team si box · Samedi 1/2 · Dimanche of
 
 ### Conditioning
 - Maintien Z2 fréquent (préférence athlète).
-- VO2 / glycolytique : doses limitées, surtout en spécifique.
-- *Gap* : sans Jamieson, energy systems moins granulaires — OK pour v1 ; enrichir si livre disponible.
+- Matrice Z2 / tempo / glycolytique / alactique + caps : `knowledge/conditioning-matrix.yaml` (fallback Bible PP, sans Jamieson).
+- HI surtout en TRA/REAL ; team WOD dur compte dans le quota.
 
 ### Mental
 - Actif en pré-comp : routines, focus, acceptation incertitude (Encyclopédie mentale).
@@ -156,15 +151,35 @@ Jours : Lun–Ven ≤90 min · Mercredi team si box · Samedi 1/2 · Dimanche of
 - Gym : proxies volume (ex. max sets submax BMU/RMU, HSPU strict, HSW distance)
 - Ergo court : smoke test seulement
 
-Mettre à jour `athlete/profile.yaml` → `prs_current_kg`.
+Mettre à jour `athlete/profile.yaml` → `prs_current_kg`, `gym_ladder_level`, `volumes.*` (MEV de départ).  
+Gate : `knowledge/meso-gates.yaml` → `benchmarks_to_ACC_GYM`.
 
 ---
 
 ## 7. Adaptation coaching
 
-- Feedback post-séance → ajuster volume/variante **sans changer l’intention du meso**.
+- Feedback post-séance (tableau Notes semaine) → ajuster volume/variante **sans changer l’intention du meso**.
 - Planning ponctuel (vacances) → Z2 ou séance réduite documentée dans `history/`.
-- Douleur adducteur → coupe squat/hinge agressifs immédiatement.
+- Douleur adducteur → `knowledge/adductor-protocol.yaml` (0–2 / 3–5 / 6–10).
+- Team RPE ≥ 8 → −volume J+1.
+
+## 7bis. Ops pack (cohérence opérationnelle) — 2026-07-28
+
+Fichiers normatifs (en plus de cette méthodo) :
+
+| Fichier | Rôle |
+|---------|------|
+| `maintenance-doses.yaml` | Minima hors focus (résidus) |
+| `meso-gates.yaml` | Critères de sortie de meso |
+| `gym-ladder.md` | Progressions BMU/RMU/HSPU/HSW |
+| `session-patterns.yaml` | Ids de séances obligatoires |
+| `warmups.yaml` | Warm-ups réutilisables |
+| `adductor-protocol.yaml` | Arbre douleur |
+| `conditioning-matrix.yaml` | Caps energy systems |
+| `volume-landmarks.yaml` | MEV/MAV/MRV (à remplir post-S01) |
+
+Templates : `prog/_templates/semaine.md` · `prog/_templates/meso.md`  
+Lint : `npm run lint:prog`
 
 ---
 
@@ -192,4 +207,10 @@ Mettre à jour `athlete/profile.yaml` → `prs_current_kg`.
 - [x] Mesos nommés par **intention** (ACC-GYM, ACC-STR, TRA-MIX, REAL…) et **répétés** dans l’année
 - [x] Macro 1 août 2026 : Benchmarks → ACC-GYM → ACC-STR → TRA-MIX → REAL mini
 
-Validée le 2026-07-27 (athlète). Prochaine étape : benchmarks 3–9 août → ACC-GYM.
+## Validation ops pack (2026-07-28)
+
+- [x] Maintien / gates / ladder / patterns / warmups / adducteur / conditioning matrix
+- [x] Templates meso + semaine (feedback structuré)
+- [ ] Volumes MEV/MAV/MRV chiffrés — **après S01**
+
+Validée le 2026-07-27 (athlète). Ops pack 2026-07-28. Prochaine étape : benchmarks 3–9 août → remplir profile → ACC-GYM.

@@ -10,20 +10,33 @@ description: Écrit ou met à jour une semaine d’entraînement en Markdown sou
 Sidebar VitePress = **auto** (arborescence `prog/`).
 
 ## Template forme
-Copier la coquille depuis [`prog/_templates/semaine.md`](prog/_templates/semaine.md) — ne pas inventer une autre structure de titres.
+- Semaine : [`prog/_templates/semaine.md`](prog/_templates/semaine.md)
+- Meso (si nouveau) : [`prog/_templates/meso.md`](prog/_templates/meso.md)
 
 ## Preconditions
 - `knowledge/methodology.md` status **validated**
 - Lire `athlete/profile.yaml` + dernières semaines du même meso
-- Relire les fiches `knowledge/books/` + `knowledge/arbitrages.md` pertinentes au meso
+- Relire fiches livres + `knowledge/arbitrages.md` pertinentes
+- Relire ops pack :
+  - `knowledge/maintenance-doses.yaml` (code meso)
+  - `knowledge/session-patterns.yaml` (ids obligatoires)
+  - `knowledge/warmups.yaml`
+  - `knowledge/gym-ladder.md` si ACC-GYM
+  - `knowledge/meso-gates.yaml` si changement de meso
+  - `knowledge/adductor-protocol.yaml` / `conditioning-matrix.yaml`
+- Calendrier samedi : index du macrocycle (`prog/.../macrocycle-*/index.md`)
 
 ## Steps
-1. Assurer les `index.md` Saison / Macro / Meso si absents (intention + lien temporel).
-2. Créer/mettre à jour `Sxx-YYYY-MM-DD.md` depuis le template :
+1. Assurer les `index.md` Saison / Macro / Meso (meso depuis template meso).
+2. Créer/mettre à jour `Sxx-YYYY-MM-DD.md` depuis le template semaine :
    - Pourquoi / intention / apport / suite
-   - **Fondements (corpus)** : 1–3 refs max (auteur + *titre* + résumé 1–2 phrases qui justifient *cette* semaine). Pas de liens vers `knowledge/` (hors src VitePress). Si conflit d’auteurs → renvoyer à l’arbitrage N.
-   - Jours Lun–Ven (≤90 min), Mercredi team ou Z2, Samedi si ON, Dimanche off/Z2
-   - Notes athlète
-3. Mettre à jour l’index du meso (liste des semaines).
-4. Mettre à jour [`.vitepress/current.json`](.vitepress/current.json) (`week` + `label`) pour le lien nav « En cours ».
-5. Entrée courte dans `history/decisions.md` si arbitrage.
+   - **Fondements (corpus)** : 1–3 refs
+   - **Pattern** + **Warm-up** sur chaque jour (ids validés)
+   - Hors pattern → arbitrage dans `history/decisions.md`
+   - Maintien du code meso respecté dans la répartition des jours
+   - Lun–Ven ≤90 min ; Mercredi team ou Z2 ; Samedi selon calendrier macro ; Dim off/Z2
+   - Tableau **Notes / feedback** (schéma template)
+3. Mettre à jour l’index du meso + samedi ON/OFF si besoin.
+4. Mettre à jour [`.vitepress/current.json`](.vitepress/current.json).
+5. Entrée `history/decisions.md` si arbitrage.
+6. Optionnel : `npm run lint:prog` (garde-fou cohérence).

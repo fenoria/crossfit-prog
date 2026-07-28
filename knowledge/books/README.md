@@ -16,4 +16,4 @@ Statut analyse : 2026-07-27 · 11 ouvrages exploitables (Jamieson retiré — PD
 | [encyclo-pm](encyclo-pm.md) | Encyclopédie préparation mentale | Mental compétition |
 | [manuel-muscu](manuel-muscu.md) | Manuel ultime de musculation | Complément hypertrophie (secondaire) |
 
-Voir aussi : [`../arbitrages.md`](../arbitrages.md) · [`../methodology.md`](../methodology.md)
+Voir aussi : [`../arbitrages.md`](../arbitrages.md) · [`../methodology.md`](../methodology.md) · ops pack (`../maintenance-doses.yaml`, `../meso-gates.yaml`, `../gym-ladder.md`, …)

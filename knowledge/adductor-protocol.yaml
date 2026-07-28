@@ -1,0 +1,49 @@
+# Protocole adducteur gradué — décision immédiate en séance / feedback
+# Sources : profil athlète · méthodo §7 · schedule-adaptation
+
+version: 1
+status: validated
+updated: 2026-07-28
+injury: desinsertion_adducteur_2025
+scale: "douleur adducteur 0–10 pendant ou juste après le mouvement"
+
+levels:
+  "0-2":
+    label: "OK"
+    action: "Prog normale (charges actuelles / RPE prévu)"
+    swaps: []
+    document: false
+
+  "3-5":
+    label: "Irritation"
+    action: "Modifier stance / profondeur / volume ; continuer le stimulus autrement"
+    swaps:
+      - "Back squat profond → box squat haut, tempo contrôlé, ou front squat plus haut"
+      - "DL conventionnel large → sumo léger ou RDL / hip hinge DB si plus confortable"
+      - "Couper 1–2 séries ou −10–20 % charge"
+      - "Pas de squat snatch/clean ; power only"
+    next_session: "Re-tester avec variante ; si encore ≥ 3, rester en mode Irritation"
+    document: true
+
+  "6-10":
+    label: "Stop agressif"
+    action: "Couper squat/hinge agressifs immédiatement"
+    swaps:
+      - "Lower → upper force + core + Z2"
+      - "Ou skill gym haut du corps + Z2"
+      - "Pas de max out, pas de deep heavy"
+    next_session: "Z2 + upper/gym jusqu’à douleur ≤ 2 au warm-up lower ; puis remonter prudemment"
+    document: true
+    escalate_profile: true  # maj athlete/profile.yaml + history/decisions.md si récurrent
+
+warmup_mandatory_lower: "warmup_adductor_friendly"  # voir knowledge/warmups.yaml
+
+never:
+  - "Programmer sur PRs pré-blessure"
+  - "Forcer un single ego si douleur > 2 en montée"
+  - "Empiler hinge lourd + squat lourd le même jour si irritation récente"
+
+feedback_fields:
+  - adductor_pain_0_10
+  - variant_used
+  - load_adjustment
