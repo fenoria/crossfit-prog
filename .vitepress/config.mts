@@ -60,7 +60,8 @@ function buildDirItems(dir: string): DefaultTheme.SidebarItem[] {
   const items: DefaultTheme.SidebarItem[] = []
 
   for (const name of entries) {
-    if (name.startsWith('.') || name.startsWith('_')) continue
+    // Skip hidden / template dirs and VitePress static assets (`prog/public`)
+    if (name.startsWith('.') || name.startsWith('_') || name === 'public') continue
     const abs = join(dir, name)
     const st = statSync(abs)
 
