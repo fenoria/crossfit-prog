@@ -16,7 +16,7 @@ Quand on écrit ou adapte une semaine / un meso :
 7. **Conditioning** — `knowledge/conditioning-matrix.yaml` ; HI surtout TRA/REAL
 8. **Gym** — progressions via `knowledge/gym-ladder.md` en ACC-GYM
 9. **Samedi** — optionnel ; décider semaine / J-1 selon dispo
-10. **Feedback** — tableau Notes du template semaine
+10. **Feedback** — blocs Notes du template semaine (un jour = un `###`, pas de tableau)
 11. **Volumes** — % / sets sur charges actuelles + volumes profile ; jamais PRs pré-blessure
 
 Lint : `npm run lint:prog` (obligatoire après write-week / generate)  

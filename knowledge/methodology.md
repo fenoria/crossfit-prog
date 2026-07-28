@@ -159,7 +159,7 @@ Gate : `knowledge/meso-gates.yaml` → `benchmarks_to_ACC_GYM`.
 
 ## 7. Adaptation coaching
 
-- Feedback post-séance (tableau Notes semaine) → ajuster volume/variante **sans changer l’intention du meso**.
+- Feedback post-séance (blocs Notes semaine, un jour = un titre) → ajuster volume/variante **sans changer l’intention du meso**.
 - Planning ponctuel (vacances) → Z2 ou séance réduite documentée dans `history/`.
 - Douleur adducteur → `knowledge/adductor-protocol.yaml` (0–2 / 3–5 / 6–10).
 - Team RPE ≥ 8 → −volume J+1.

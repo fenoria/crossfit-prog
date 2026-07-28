@@ -42,6 +42,6 @@ npm run lint:prog    # garde-fou structure prog/
 
 ## Coaching
 
-Feedback séance → tableau **Notes / feedback** dans la semaine `prog/` + éventuellement `.vitepress/current.json`.  
+Feedback séance → blocs **Notes / feedback** (un jour = un titre) dans la semaine `prog/` + éventuellement `.vitepress/current.json`.  
 Décisions durables : [`history/decisions.md`](history/decisions.md).  
 Ops pack : `knowledge/maintenance-doses.yaml`, `meso-gates.yaml`, `gym-ladder.md`, etc. · lint : `npm run lint:prog`

@@ -147,7 +147,7 @@ coaching:
   feedback_loop: true
   language: fr
   pedagogy_required: true
-  feedback_schema: "tableau Notes / feedback dans prog/_templates/semaine.md"
+  feedback_schema: "blocs Notes / feedback (### par jour) dans prog/_templates/semaine.md"
   mrv_signals:
     - sommeil_degrade
     - douleur_adducteur_recente

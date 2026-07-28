@@ -43,7 +43,7 @@ Sidebar VitePress = **auto** (arborescence `prog/`).
    - Hors pattern → `history/decisions.md`
    - Maintien du code meso respecté (formulé en français)
    - Lun–Ven ≤90 min ; Mercredi team ou Z2 ; Samedi optionnel ; Dim off/Z2
-   - Tableau **Notes / feedback**
+   - Blocs **Notes / feedback** (un `###` par jour, pas de tableau)
 3. Mettre à jour l’index du meso si besoin.
 4. Mettre à jour [`.vitepress/current.json`](.vitepress/current.json).
 5. Entrée `history/decisions.md` si arbitrage.

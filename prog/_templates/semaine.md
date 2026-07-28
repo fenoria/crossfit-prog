@@ -146,15 +146,63 @@ Si zone 2 : **[durée]’** · échauffement 2–3’ easy puis zone 2.
 
 ## Notes / feedback
 
-| Jour | Fait | Charges / score | RPE | Adducteur 0–10 | Fatigue 1–5 | Variante / note |
-|------|------|-----------------|-----|----------------|-------------|-----------------|
-| Lun | oui / partiel / skip | | | | | |
-| Mar | | | | | | |
-| Mer | | | | | | |
-| Jeu | | | | | | |
-| Ven | | | | | | |
-| Sam | | | | | | |
-| Dim | | | | | | |
+Remplir après chaque séance (ou coller le feedback en chat — le coach met à jour ici).
+
+### Lundi
+- **Fait** : oui / partiel / skip
+- **Charges / score** :
+- **RPE** : /10
+- **Adducteur** : /10
+- **Fatigue** : /5
+- **Note** :
+
+### Mardi
+- **Fait** :
+- **Charges / score** :
+- **RPE** : /10
+- **Adducteur** : /10
+- **Fatigue** : /5
+- **Note** :
+
+### Mercredi
+- **Fait** :
+- **Charges / score** :
+- **RPE** : /10
+- **Adducteur** : /10
+- **Fatigue** : /5
+- **Note** :
+
+### Jeudi
+- **Fait** :
+- **Charges / score** :
+- **RPE** : /10
+- **Adducteur** : /10
+- **Fatigue** : /5
+- **Note** :
+
+### Vendredi
+- **Fait** :
+- **Charges / score** :
+- **RPE** : /10
+- **Adducteur** : /10
+- **Fatigue** : /5
+- **Note** :
+
+### Samedi
+- **Fait** : off / oui / partiel
+- **Charges / score** :
+- **RPE** : /10
+- **Adducteur** : /10
+- **Fatigue** : /5
+- **Note** :
+
+### Dimanche
+- **Fait** : off / oui / partiel
+- **Charges / score** :
+- **RPE** : /10
+- **Adducteur** : /10
+- **Fatigue** : /5
+- **Note** :
 
 **Synthèse semaine** :  
 **Suite prévue** : …

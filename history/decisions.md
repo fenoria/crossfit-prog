@@ -32,7 +32,7 @@ Tout ce qui était faisable **sans** résultats S01 :
 5. Protocole adducteur gradué (`adductor-protocol.yaml`)
 6. Warm-ups réutilisables (`warmups.yaml`)
 7. Structure volumes MEV/MAV/MRV + champs `athlete/profile.yaml` (chiffres après S01)
-8. Template meso + semaine enrichie (Pattern, Warm-up, feedback tableau)
+8. Template meso + semaine enrichie (Pattern, Warm-up, feedback structuré)
 9. Rule team RPE≥8
 10. Skills/rules ops + lint `npm run lint:prog`
 
@@ -49,3 +49,9 @@ Tout ce qui était faisable **sans** résultats S01 :
 - S01 / template : Warm-up Mer–Dim ; smoke test 500 m explicite
 - Gates Macro 1 only documenté ; exception Bompa GYM-first
 - Rule élite allégée → pointeurs vers profile
+
+## 2026-07-28 — Feedback semaine : blocs, pas tableau
+
+Tableau 7 colonnes illisible (surtout mobile / VitePress).  
+Format = un `###` par jour avec listes : Fait · Charges/score · RPE · Adducteur · Fatigue · Note.  
+Template + S01 + skills/rules/profile alignés.
