@@ -27,10 +27,12 @@ Sidebar VitePress = **auto** (arborescence `prog/`).
 - Samedi : optionnel (décider selon dispo)
 
 ## Langage athlète (obligatoire)
-- Texte visible = compréhensible à l’entraînement, sans question.
-- Échauffement **écrit en entier** (pas d’id `warmup_*` seul).
-- Pas de `knowledge/…`, `athlete/…`, `prs_current_kg`, etc. dans le markdown visible.
+- Texte visible = compréhensible à l’entraînement **et partageable** (collègue / coach sans questions).
+- **Contexte** + **glossaire** en tête de semaine si besoin.
+- Échauffement **écrit en entier** ; cibles **chiffrées** (reps / RPE / durée / repos).
+- Pas de `knowledge/…`, `athlete/…`, codes meso bruts seuls, ids `warmup_*` visibles.
 - Ids ops en commentaires HTML : `<!-- pattern: … -->` · `<!-- warmup: … -->`
+- Formuler la suite en « Suite prévue : … » (pas « Décision J+7 »).
 
 ## Steps
 1. Assurer les `index.md` Saison / Macro / Meso (meso depuis template meso).

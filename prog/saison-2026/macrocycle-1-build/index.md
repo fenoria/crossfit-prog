@@ -1,27 +1,27 @@
 # Macrocycle 1 — Build
 
-**Début** : 2026-08-03  
+**Début** : 3 août 2026  
 
 ## Intention
 
-Calibrer → accumuler gym → force structurelle → convertir (mixed) → mini-realization.
+Calibrer les charges → accumuler le volume gym → reconstruire la force → convertir en mixed CrossFit → courte phase d’expression → transition.
 
 ## Mesos
 
 | Meso | Rôle | Statut |
-|---|---|---|
-| [Meso — Benchmarks](meso-benchmarks/index.md) | Calibrer charges actuelles | en cours (S01) |
-| Meso — ACC-GYM | Accumulation volume gym | à venir |
-| Meso — ACC-STR | Force structurelle | à venir |
-| Meso — TRA-MIX | Conversion mixed CF | à venir |
-| Meso — REAL (mini) | Expression / mock | à venir |
-| Meso — TRANS | Avant Macrocycle 2 | à venir |
+|------|------|--------|
+| [Benchmarks](meso-benchmarks/index.md) | Calibrer les charges actuelles | en cours (S01) |
+| Accumulation gym | Volume et densité gymnastique | à venir |
+| Accumulation force | Force structurelle (squat, hinge, press) | à venir |
+| Conversion mixed | Transfert vers le WOD / mixed | à venir |
+| Expression (courte) | Mock / test de forme | à venir |
+| Transition | Décharge avant Macrocycle 2 | à venir |
 
 ## Samedi
 
-Optionnel (souvent ~1/2 si dispo, 10h–12h30). Décider à l’écriture de la semaine ou J-1.  
-Contenu typique si on : volume gym luxe, team, ou Z2 (selon meso ; pas d’HI gratuit en Accumulation).
+Optionnel selon disponibilité (~10h–12h30 si tu viens).  
+Si tu t’entraînes : volume gym confortable, team box, ou zone 2 longue — selon le meso en cours (pas d’efforts durs gratuits pendant Accumulation).
 
 ## Règles fatigue box
 
-- Mercredi team RPE ≥ 8 → alléger le volume jeudi (garder l’intention du meso).
+- Mercredi team à RPE ≥ 8 → alléger jeudi (−1 set d’approche et −10 à −15 % sur les charges de test / travail, ou RPE cible −1).

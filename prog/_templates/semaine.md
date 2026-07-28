@@ -2,22 +2,35 @@
 
 **Meso** : [nom] · **Macrocycle N — [nom]** · **Saison YYYY**
 
+## Contexte athlète
+
+- Créneau : lun–ven ~90 min (12h–13h30) · samedi optionnel · dimanche souvent off
+- Matériel : box CrossFit (pas de machines guidées)
+- [contraintes : adducteur, etc.]
+
+## Glossaire (si besoin cette semaine)
+
+| Terme | Signification |
+|-------|----------------|
+| **RPE** | Effort perçu /10 |
+| **Zone 2** | Cardio facile (parole possible) · ergo au choix |
+
 ## Pourquoi / Intention / Apport / Suite
 
-- **Pourquoi** : [une ligne — lien objectif / meso]
-- **Intention** : [stimulus de la semaine]
-- **Apport** : [adaptations court / moyen terme]
-- **Suite** : [ce qui suit dans le meso / macro]
+- **Pourquoi** : …
+- **Intention** : …
+- **Apport** : …
+- **Suite** : …
 
 ### Fondements (corpus)
 
-- **[Auteur]** (*Titre*) — [principe en 1–2 phrases qui justifie *cette* semaine].
-- **[Auteur]** (*Titre*) — …
+- **[Auteur]** (*Titre*) — [principe en 1–2 phrases].
 
 ## Règles
 
-- [contraintes spécifiques : adducteur, RPE, budget 90 min, etc.]
-- [maintien en français clair — ex. « Z2 ≥ 60 min cette semaine »]
+- Repos force : 2–3’ entre sets lourds
+- [adducteur / team RPE≥8 → alléger J+1 avec dose chiffrée]
+- Cibles de séance **chiffrées** (reps, RPE, durée) — pas de « lourd confortable » seul
 
 ### Microcycle (si meso chargé)
 
@@ -25,8 +38,7 @@
 
 ---
 
-<!-- Coach only (invisible site) : pattern + warmup ids pour lint / ops.
-     Visible = langage athlète, échauffement écrit en entier, zéro chemin knowledge/athlete. -->
+<!-- Coach only : pattern + warmup en commentaires séparés ; échauffement écrit en entier. -->
 
 ## Lundi JJ/MM — [titre court]
 
@@ -43,9 +55,8 @@
 
 **Séance** :
 
-1. …
+1. [mouvement] — [format] — [cible reps/RPE] — noter …
 2. …
-3. …
 
 ---
 
@@ -73,13 +84,15 @@
 
 **Intention** : …
 
-- **Si WOD team** : le faire · noter RPE (si ≥ 8 → alléger jeudi)
-- **Sinon** : Z2 …
+**Choix (un seul)** :
 
-**Échauffement** (selon choix) :
+1. **WOD team** — noter RPE (si ≥ 8 → alléger jeudi : −1 set / −10–15 % ou RPE −1)
+2. **Sinon** — zone 2 [durée]’
 
-- Team : ergo easy 3–5’ → mobilité → 2 rounds barre vide / scap
-- Z2 : 2–3’ easy puis entrer en zone 2 (parole possible)
+**Échauffement** :
+
+- Team : …
+- Zone 2 : 2–3’ easy puis zone 2
 
 ---
 
@@ -119,17 +132,17 @@
 
 ## Samedi JJ/MM — Off (optionnel)
 
-<!-- Off : laisser « Off » dans le titre. Si séance : retirer Off + ajouter pattern/warmup comments + échauffement écrit. -->
+Off par défaut.
 
-Off.
+Si séance : [contenu + durée + échauffement écrit].
 
 ---
 
 ## Dimanche JJ/MM
 
-Off, ou Z2 easy si tu bouges.
+Off recommandé.
 
-**Si Z2** — échauffement : 2–3’ easy puis zone 2 (parole possible).
+Si zone 2 : **[durée]’** · échauffement 2–3’ easy puis zone 2.
 
 ---
 
@@ -146,4 +159,4 @@ Off, ou Z2 easy si tu bouges.
 | Dim | | | | | | |
 
 **Synthèse semaine** :  
-**Décision J+7** : _(garder / −volume / swap / deload anticipé)_
+**Suite prévue** : …

@@ -13,7 +13,7 @@ Onze ouvrages exploitables :
 |---------|---------|------|
 | Structure de cycle | Issurin — *Block Periodization* | **Pilote** : blocs concentrés + résidus |
 | Macro / peaking | Bompa & Buzzichelli — *Periodization Training for Sports* | Année multi-pic, taper, transition |
-| Dose / fatigue | Israetel et al. — *Scientific Principles of Strength Training* | **Pilote** : MEV / MAV / MRV + deloads |
+| Dose / fatigue | Israetel et al. — *Scientific Principles of Strength Training* | **Pilote** : dose utile vs trop (seuils de volume + deloads) |
 | Force | Zatsiorsky & Kraemer — *Science and Practice of Strength Training* | Principes force (intensité, volume, spécificité) |
 | Transfert | Verkhoshansky — *Special Strength Training* | Force générale → performance spécifique CF |
 | Haltéro | Everett — *Olympic Weightlifting* | Technique + prog Oly (power / pulls) |
@@ -35,7 +35,7 @@ Processus explicite :
 Arbitrages structurants (détail) :
 
 - **Issurin pilote la séquence des mesos** (une intention dominante par bloc) ; Bompa cadre le **macro** (2–3 pics / an, peaking, transition) — on ne développe pas six qualités à fond chaque semaine.
-- **Israetel pilote la dose** : progresser entre MEV et MRV ; deload.
+- **Israetel pilote la dose** : progresser dans une zone utile, deload quand la fatigue monte.
 - **Gym = Low** en meso dédié (densité, skill, renfo).
 - **Oly = Everett**, fréquence modérée ; power / hangs / pulls avant squat snatch/clean lourds.
 - **Force = Zatsiorsky + transfert Verkhoshansky** vers le mixed CF ; hypertrophie bodybuilding et machines guidées écartées.
