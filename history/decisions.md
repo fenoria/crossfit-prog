@@ -67,3 +67,26 @@ L’athlète signale s’il a mal ; le coach applique alors `adductor-protocol.y
 Fiches de lecture athlète sous `prog/livres/` (sidebar auto + nav « Livres »).  
 SoT coach enrichi en parallèle dans `knowledge/books/` (mêmes slugs).  
 Objectif : comprendre la méthodo sans lire les 11 ouvrages en entier.
+
+## 2026-07-28 — Calendrier compétitions (ancre annuelle)
+
+Pour caler les cycles en général :
+
+1. **A** — *Battle of Normandy Throwdown* : **2ème weekend de juillet** (grosse compete)
+2. **B** — *Fire Contest* (Nantes) : **2ème weekend de septembre** (plus petite) — **team mixte à 2**
+3. **C** — *S7mbioz Throwdown* (équipe) : **12–13 décembre 2026** (confirmé)
+4. **Opportunistes** — petites compet possibles dans l’année, dates non définies → intégrer seulement quand annoncées, sans casser le plan A/B/C
+
+Conséquence prog : macros / pics / taper autour de juillet (A) → septembre (B) → décembre (C team).  
+**2026** : A faite → prochaine = Fire Contest (~12–13 sept.) puis S7mbioz (12–13 déc.).  
+Profil : `athlete/profile.yaml` → `goal.competitions` + `goal.results`.
+
+### Résultat Battle 2026
+
+*Battle of Normandy Throwdown* — **7e / 40** division **RX**, team de **3**.  
+Niveau élite confirmé en contexte compétition ; pas de changement de priorité méthodo (GYM volume + confiance barre contrôlée). Benchmarks S01 (août) restent la calibration charges post-compete.
+
+### Résultat Fire 2025
+
+*Fire Contest* (Nantes) — **5e / 40** division **RX**, team mixte à **2**.  
+Référence pour caler Fire 2026 (même format).

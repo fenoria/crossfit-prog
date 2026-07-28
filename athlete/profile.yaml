@@ -4,10 +4,54 @@ height_cm: 179
 weight_kg: 87
 level: elite
 goal:
-  type: competition_performance  # à préciser (nom + date)
-  competition: null
-  date: null
-  notes: "Performance compétition ; fraîcheur et spécificité > volume gratuit"
+  type: competition_performance
+  notes: "Performance compétition ; fraîcheur et spécificité > volume gratuit. Caler les macros sur A/B puis C équipe ; petites compet opportunistes si dates connues."
+  # Ancre annuelle pour caler les cycles (récurrent tant que non modifié)
+  competitions:
+    primary_a:
+      name: "Battle of Normandy Throwdown"
+      when: "2ème weekend de juillet"
+      role: A  # grosse compete — pic / taper prioritaire
+      format_typical: team_of_3
+    secondary_b:
+      name: "Fire Contest"
+      location: Nantes
+      when: "2ème weekend de septembre"
+      format: team_mixed_of_2  # team mixte à 2
+      role: B  # plus petite — pic secondaire / maintien forme
+    team_c:
+      name: "S7mbioz Throwdown"
+      format: team
+      when: "12–13 décembre"  # dates 2026 confirmées ; récurrent si même créneau
+      role: C  # compet équipe — pic / spécificité team en fin d’année
+    opportunistic:
+      notes: "Petites compet possibles dans l’année ; dates non fixées — intégrer seulement quand annoncées (sans casser le plan A/B/C)"
+  results:
+    - event: "Battle of Normandy Throwdown"
+      year: 2026
+      when: "2ème weekend de juillet"
+      division: RX
+      format: team_of_3
+      place: 7
+      field: 40
+      notes: "7e / 40 RX en team de 3 — niveau élite confirmé ; suite 2026 = Fire Contest puis S7mbioz"
+    - event: "Fire Contest"
+      year: 2025
+      location: Nantes
+      when: "2ème weekend de septembre"
+      division: RX
+      format: team_mixed_of_2
+      place: 5
+      field: 40
+      notes: "5e / 40 RX team mixte à 2 — référence pour Fire 2026"
+  # Cible courante (année en cours) — à affiner quand les dates exactes sont publiées
+  # 2026 : A (Battle) faite → ancre prochaine = B Fire Contest, puis C S7mbioz
+  competition: "Fire Contest (Nantes)"
+  date: "2026-09-12"  # approx 2ème we septembre 2026 (sam) ; confirmer dès officialisation
+  next_after_b:
+    name: "S7mbioz Throwdown"
+    date: "2026-12-12"  # 12–13 déc. 2026 (team)
+  next_primary_a: "Battle of Normandy Throwdown — 2ème weekend juillet 2027 (à confirmer)"
 
 body:
   composition: "très musclé"
