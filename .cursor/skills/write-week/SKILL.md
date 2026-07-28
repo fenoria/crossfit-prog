@@ -35,6 +35,11 @@ Sidebar VitePress = **auto** (arborescence `prog/`).
 - Ids ops en commentaires HTML : `<!-- pattern: … -->` · `<!-- warmup: … -->`
 - Formuler la suite en « Suite prévue : … » (pas « Décision J+7 »).
 
+## Immutabilité (semaine commencée / passée)
+- **Ne jamais** modifier le contenu prescrit des séances d’une semaine déjà commencée ou passée.
+- Mise en forme OK (sans changer le sens) ; blocs Notes / feedback OK.
+- Toute adaptation → semaine(s) suivante(s) uniquement + `history/decisions.md` si durable.
+
 ## Steps
 1. Assurer les `index.md` Saison / Macro / Meso (meso depuis template meso).
 2. Créer/mettre à jour `Sxx-YYYY-MM-DD.md` depuis le template semaine :

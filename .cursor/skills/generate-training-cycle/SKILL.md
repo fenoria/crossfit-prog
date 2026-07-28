@@ -12,6 +12,7 @@ description: Génère saison/macro/meso/semaines en Markdown sous prog/, uniquem
 - Vérifier **gates** (`knowledge/meso-gates.yaml`, scope Macro 1) avant meso suivant
 - Ops : maintenance-doses, session-patterns, conditioning-matrix, warmups, gym-ladder
 - Code meso : `REAL` (pas `REAL-mini` comme clé)
+- Ne pas réécrire le contenu des semaines déjà commencées / passées (mise en forme OK)
 
 ## Steps
 1. Définir objectif / date (ou Build sans A-event).

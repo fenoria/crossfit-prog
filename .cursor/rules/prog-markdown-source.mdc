@@ -20,3 +20,13 @@ alwaysApply: true
 - Échauffements écrits en entier ; glossaire si acronymes ; **Objectif de la semaine** en tête (pas créneau / matériel / profil).
 - Interdit dans le texte visible : chemins `knowledge/` / `athlete/`, champs profile, ids `warmup_*` / patterns seuls, codes meso bruts (ACC-GYM…) sans nom lisible.
 - Métadonnées coach / lint : commentaires HTML uniquement (`<!-- pattern: … -->`, `<!-- warmup: … -->`).
+
+## Immutabilité des séances (vérité historique)
+
+Dès qu’une semaine est **commencée** ou **passée** :
+
+- **Interdit** de modifier le **contenu** des séances prescrites (exercices, doses, charges cibles, structure du jour).
+- **OK** : mise en forme / lisibilité (titres, markdown, typos purement cosmétiques, glossaire) **sans** changer le sens de ce qui était prescrit.
+- **OK** : remplir / enrichir les blocs **Notes / feedback** (ce qui a été fait).
+- Adaptations coach → **semaines futures uniquement** (jamais de réécriture rétroactive pour « corriger » le passé).
+- Objectif : `prog/` = trace fidèle de ce qui était prévu et de ce qui a été fait.

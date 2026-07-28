@@ -90,3 +90,13 @@ Niveau élite confirmé en contexte compétition ; pas de changement de priorit�
 
 *Fire Contest* (Nantes) — **5e / 40** division **RX**, team mixte à **2**.  
 Référence pour caler Fire 2026 (même format).
+
+## 2026-07-28 — Immutabilité des semaines commencées / passées
+
+Une fois une semaine **commencée** ou **dépassée** :
+- **Pas** de changement rétroactif du **contenu** des séances (vérité historique de ce qui était prescrit / fait).
+- Mise en forme OK si besoin (sans changer le sens).
+- Notes / feedback OK (journal de ce qui a été fait).
+- Adaptations → semaines futures uniquement.
+
+Rules / skills : `prog-markdown-source.mdc`, `write-week`, `session-feedback`.

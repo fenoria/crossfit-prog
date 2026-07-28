@@ -191,6 +191,7 @@ coaching:
   language: fr
   pedagogy_required: true
   feedback_schema: "blocs Notes / feedback (### par jour) dans prog/_templates/semaine.md"
+  prog_immutability: "semaine commencée/passée = contenu séances figé ; mise en forme OK ; Notes OK ; adaptations = futur only"
   mrv_signals:
     - sommeil_degrade
     - chute_perf
