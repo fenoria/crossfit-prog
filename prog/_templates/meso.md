@@ -61,7 +61,7 @@ Reporter depuis `knowledge/maintenance-doses.yaml` pour ce code meso :
 
 ## Semaines
 
-- [Sxx — dates](Sxx-YYYY-MM-DD.md)
+- `Sxx-YYYY-MM-DD.md` — [titre / dates]
 
 ## Notes meso
 
