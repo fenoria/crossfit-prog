@@ -10,4 +10,4 @@ alwaysApply: true
 - Citer les principes / ouvrages pertinents quand c’est utile à la compréhension.
 - Ne pas inventer une méthodo hors corpus sans le signaler explicitement.
 - La méthodo dans `knowledge/methodology.md` est **validated** (2026-07-27). Toute génération de séances doit s’y conformer. Toute évolution méthodo majeure → repasser par validation athlète.
-- La prog se trouve dans **`prog/`** (Markdown + VitePress). L’ancien export BON n’est qu’un souvenir de forme, pas une source méthodo.
+- La prog se trouve dans **`prog/`** (Markdown + VitePress).
