@@ -53,12 +53,6 @@ Reporter depuis `knowledge/maintenance-doses.yaml` pour ce code meso :
 - [ ] …
 - [ ] Adducteur sous contrôle (protocole)
 
-## Calendrier samedi (ce meso)
-
-| Semaine | Samedi |
-|---------|--------|
-| Sxx | ON / OFF |
-
 ## Semaines
 
 - `Sxx-YYYY-MM-DD.md` — [titre / dates]

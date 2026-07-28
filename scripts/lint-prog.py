@@ -168,7 +168,7 @@ def check_week(
 
         if day != "Dimanche" and not patterns:
             # Samedi OFF peut n’avoir que le libellé
-            if day == "Samedi" and re.search(r"\bOFF\b", block):
+            if day == "Samedi" and re.search(r"\bOFF\b", block, re.I):
                 continue
             errors.append(f"{rel} : {day} sans champ Pattern")
 
@@ -181,7 +181,7 @@ def check_week(
 
         if day in {"Mercredi", "Samedi"} and patterns and not warmups:
             # séance active attendue
-            if day == "Samedi" and re.search(r"\bOFF\b", block):
+            if day == "Samedi" and re.search(r"\bOFF\b", block, re.I):
                 continue
             warnings.append(f"{rel} : {day} sans Warm-up (recommandé)")
 

@@ -42,12 +42,6 @@ N/A (semaine de tests) — Z2 léger OK ; pas d’HI ajouté.
 - [ ] Adducteur documenté ; pas de douleur ≥ 6 non gérée
 - [ ] `athlete/profile.yaml` mis à jour
 
-## Calendrier samedi
-
-| Semaine | Samedi |
-|---------|--------|
-| S01 (8 août) | **ON** — Z2 / compléter RMU |
-
 ## Semaines
 
 - [S01 — 3–9 août 2026](S01-2026-08-03.md)

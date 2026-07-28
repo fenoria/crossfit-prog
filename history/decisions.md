@@ -33,7 +33,7 @@ Tout ce qui était faisable **sans** résultats S01 :
 6. Warm-ups réutilisables (`warmups.yaml`)
 7. Structure volumes MEV/MAV/MRV + champs `athlete/profile.yaml` (chiffres après S01)
 8. Template meso + semaine enrichie (Pattern, Warm-up, feedback tableau)
-9. Calendrier samedi ON/OFF Macro 1 + règle team RPE≥8
+9. Rule team RPE≥8
 10. Skills/rules ops + lint `npm run lint:prog`
 
 **Reporté post-S01** : remplir `prs_current_kg`, `volumes.*`, `gym_ladder_level`, valider `volume-landmarks.yaml`.

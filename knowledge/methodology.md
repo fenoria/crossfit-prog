@@ -27,7 +27,7 @@ Sources : corpus `books/` (11 ouvrages) · profil `athlete/profile.yaml` · arbi
 | Faible volume gym | Meso(s) GYM prioritaires ; densité + renfo (Low) |
 | Adducteur + PRs minorés | Benchmarks d’abord ; charges actuelles only |
 | Frileux squat snatch/clean lourds | Power / technique / pulls ; exposition profonde rare |
-| 90 min midi · samedi 1/2 | Séances condensées ; samedi = volume « luxe » |
+| 90 min midi · samedi optionnel | Séances condensées ; samedi = volume « luxe » si dispo |
 | Box only | Pas de machines guidées |
 
 ---
@@ -105,7 +105,7 @@ Sans date de comps : on enchaîne Macro 2 sur le même canevas Issurin en change
 Dans un meso concentré (Israetel) :
 1. Volume adaptatif → 2. Surcharge → 3. Pic (densité/intensité) → 4. Deload (~−30 % volume)
 
-Jours : Lun–Ven ≤90 min · Mercredi team si box · Samedi 1/2 · Dimanche off ou Z2.
+Jours : Lun–Ven ≤90 min · Mercredi team si box · Samedi optionnel · Dimanche off ou Z2.
 ---
 
 ## 4. Principes de dose (tous domaines)

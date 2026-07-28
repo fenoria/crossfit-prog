@@ -83,14 +83,13 @@
 
 ---
 
-## Samedi JJ/MM — Optionnel
+## Samedi JJ/MM — Off (optionnel)
 
-_(ON cette semaine / OFF)_ — calendrier macro
+<!-- Décider J-1 selon dispo.
+     Off : garder « Off » dans le titre (lint OK sans Pattern).
+     Si séance : retirer Off, ajouter Pattern + Warm-up (volume luxe / team / Z2). -->
 
-**Pattern** : …  
-**Warm-up** : `warmup_z2_only` | …
-
-…
+Off.
 
 ---
 

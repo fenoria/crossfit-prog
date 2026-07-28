@@ -20,9 +20,10 @@ schedule:
     max_minutes: 90
     team_day: wed  # souvent WOD team box — compter fatigue
   saturday:
-    frequency: every_other_week
+    frequency: optional  # décider semaine / J-1 selon dispo
     time: "10:00-12:30"
     max_minutes: 150
+    notes: "Souvent ~1/2 si dispo ; volume luxe / team / Z2 selon meso"
   sunday: usually_off
   preferences:
     active_recovery_over_rest: true  # Z2 > off si créneau possible
@@ -141,11 +142,6 @@ benchmarks:
     - clean_technique_or_power
     - gym_volume_proxy  # BMU/RMU/HSW selon niveau actuel
     - ergo_short
-
-saturday_calendar_macro1:
-  rule: every_other_week
-  source: "prog/saison-2026/macrocycle-1-build/index.md"
-  next_on: "2026-08-08"
 
 coaching:
   feedback_loop: true

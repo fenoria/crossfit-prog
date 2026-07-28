@@ -24,7 +24,7 @@ Sidebar VitePress = **auto** (arborescence `prog/`).
   - `knowledge/gym-ladder.md` si ACC-GYM
   - `knowledge/meso-gates.yaml` si changement de meso (scope Macro 1)
   - `knowledge/adductor-protocol.yaml` / `conditioning-matrix.yaml`
-- Calendrier samedi : index du macrocycle
+- Samedi : optionnel (décider selon dispo)
 
 ## Steps
 1. Assurer les `index.md` Saison / Macro / Meso (meso depuis template meso).
@@ -33,9 +33,9 @@ Sidebar VitePress = **auto** (arborescence `prog/`).
    - **Pattern** + **Warm-up** sur chaque jour actif (ids validés)
    - Hors pattern → `history/decisions.md`
    - Maintien du code meso respecté
-   - Lun–Ven ≤90 min ; Mercredi team ou Z2 ; Samedi selon calendrier ; Dim off/Z2
+   - Lun–Ven ≤90 min ; Mercredi team ou Z2 ; Samedi optionnel ; Dim off/Z2
    - Tableau **Notes / feedback**
-3. Mettre à jour l’index du meso + samedi ON/OFF si besoin.
+3. Mettre à jour l’index du meso si besoin.
 4. Mettre à jour [`.vitepress/current.json`](.vitepress/current.json).
 5. Entrée `history/decisions.md` si arbitrage.
 6. **Obligatoire** : `npm run lint:prog` — corriger toute ERROR avant de conclure.
