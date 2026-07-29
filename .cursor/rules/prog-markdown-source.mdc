@@ -39,6 +39,10 @@ Deux zones distinctes sur le site (et dans `prog/`) :
 - `prog/` hors commentaires HTML = **lisible à la box et partageable** (collègue / coach sans questions).
 - **Ton neutre** : pas de tutoiement ni d’adresse directe (« tu / toi / chez toi / Si tu… ») — formuler en impersonnel (« Si entraînement », « Si séance », « on »).
 - Pour le **référentiel public**, éviter aussi les formules méta (`ici`, `la prog`, `dans les Notes`, `en cours`) quand elles n’apportent rien au concept.
+- Pour la **prescription spécifique** (`prog/saison-YYYY/**/*.md`) : viser une **feuille de route exécutable** ; le lecteur ne doit pas avoir à déduire l’ordre, le format, les repos, les cibles ou l’option à choisir.
+- Pour la **prescription spécifique** : pédagogie **légère à moyenne** — `Objectif de la semaine` + `Intention` du jour systématiques ; davantage d’explication seulement quand cela aide réellement l’exécution ou la cohérence du bloc.
+- Pour la **prescription spécifique** : quand la consigne est en `RPE`, ajouter si possible un **repère de charge / d’allure** fondé sur les capacités actuelles et les feedbacks récents.
+- Pour la **prescription spécifique** : éviter les formulations prescriptives lourdes (`l’athlète doit`, `il faudra`) si une rédaction plus directe et neutre suffit.
 - Chaque séance active : cibles **chiffrées** (reps, RPE, durée, repos) — interdit « lourd confortable » / « submax » seuls.
 - Échauffements écrits en entier ; glossaire si acronymes ; **Objectif de la semaine** en tête (pas créneau / matériel / profil).
 - Interdit dans le texte visible : chemins `knowledge/` / `athlete/`, champs profile, ids `warmup_*` / patterns seuls, codes meso bruts (ACC-GYM…) sans nom lisible.

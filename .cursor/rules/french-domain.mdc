@@ -9,4 +9,5 @@ alwaysApply: true
 - Contenu `prog/` / méthodo / profile en français
 - OK : titres d’ouvrages EN, termes techniques standards (EMOM, RMU, HSPU, Z2, RPE…)
 - **Ton `prog/`** : neutre / impersonnel — **pas** de tutoiement ni d’adresse directe (« tu », « toi », « chez toi », « pour toi », « Si tu… »). Préférer « Si entraînement », « Si séance », « on ».
+- Pour la **prescription spécifique** : éviter aussi les formulations inutilement injonctives ou lourdes (`l’athlète doit`, `il faudra`, `veiller à bien`) si une rédaction plus simple suffit.
 - Pour le **référentiel public** (`prog/index.md`, `prog/livres/`, `prog/public/concepts/`) : éviter aussi `ici`, `la prog` et les formulations trop conversationnelles ou métadiscursives si elles n’apportent rien au concept.

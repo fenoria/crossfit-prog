@@ -28,7 +28,9 @@
 
 - Repos force : 2–3’ entre sets lourds
 - Team RPE ≥ 8 → alléger J+1 avec dose chiffrée
-- Cibles de séance **chiffrées** (reps, RPE, durée) — pas de « lourd confortable » seul
+- Cibles de séance **chiffrées** (reps, RPE, durée, repos) — pas de « lourd confortable » seul
+- Même en cadre `RPE`, donner si possible un **ordre d’idée de charge / d’allure** à partir des capacités actuelles
+- Si option ou alternative : la cadrer clairement (quand, quoi choisir, quelle dose)
 
 ### Microcycle (si meso chargé)
 
@@ -53,7 +55,7 @@
 
 **Séance** :
 
-1. [mouvement] — [format] — [cible reps/RPE] — noter …
+1. [mouvement] — [format] — [charge / RPE cible] — [repos] — noter …
 2. …
 
 ---
@@ -71,7 +73,7 @@
 
 **Séance** :
 
-1. …
+1. [mouvement] — [format] — [charge / RPE cible] — [repos] — noter …
 
 ---
 
@@ -82,10 +84,10 @@
 
 **Intention** : …
 
-**Choix (un seul)** :
+**Choix (un seul, cadré)** :
 
 1. **WOD team** — noter RPE (si ≥ 8 → alléger jeudi : −1 set / −10–15 % ou RPE −1)
-2. **Sinon** — zone 2 [durée]’
+2. **Sinon** — zone 2 [durée]’ — [allure / repère simple]
 
 **Échauffement** :
 
@@ -107,7 +109,7 @@
 
 **Séance** :
 
-1. …
+1. [mouvement] — [format] — [charge / RPE cible] — [repos] — noter …
 
 ---
 
@@ -124,7 +126,7 @@
 
 **Séance** :
 
-1. …
+1. [mouvement] — [format] — [charge / RPE cible] — [repos] — noter …
 
 ---
 
@@ -146,7 +148,7 @@ Si zone 2 : **[durée]’** · échauffement 2–3’ easy puis zone 2.
 
 ## Notes / feedback
 
-Remplir après chaque séance (ou coller le feedback en chat — le coach met à jour ici).
+Remplir après chaque séance (ou coller le feedback en chat — mise à jour ensuite dans cette section).
 
 ### Lundi
 - **Fait** : oui / partiel / skip
