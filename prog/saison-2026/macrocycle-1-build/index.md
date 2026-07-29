@@ -1,34 +1,36 @@
-# Macrocycle 1 — Build
+# Macrocycle 1 — Build → Fire Contest
 
-**Début** : 3 août 2026  
+**Début** : 3 août 2026 · **Fin prévue** : 20 septembre 2026  
+**Pic** : Fire Contest (Nantes) — rôle B, ~12–13 septembre
 
 ## Intention
 
-Calibrer les charges → accumuler le volume gym → développer la force → convertir en mixed CrossFit → courte phase d’expression → transition.
+Calibrer les charges → accumuler le volume gym (qualité limitante) → **exprimer** sur Fire Contest sans taper ultra-long → mini-transition avant Macro 2.
+
+Fire Contest est un **pic secondaire** (maintien de forme / expression) : on ne sacrifie pas l’année pour un affûtage A. Force structurelle et conversion mixed longues passent en **Macro 2** après le B.
 
 **Pourquoi gym avant force max** : la qualité limitante est la répétabilité gym, pas la force max — le plafond gymnastique passe en premier.
 
 <figure class="concept-figure">
-  <img src="/saison-2026/macro1-build.svg" alt="Séquence Benchmarks Accumulation gym Accumulation force Conversion Affûtage Transition" width="800" height="240" />
-  <figcaption>Saison 2026 · Macro 1 — séquence du cycle.</figcaption>
+  <img src="/saison-2026/macro1-build.svg" alt="Séquence Benchmarks Accumulation gym Expression Fire Transition" width="800" height="240" />
+  <figcaption>Macro 1 — Build vers le pic B Fire Contest.</figcaption>
 </figure>
 
 ## Mesos
 
-| Meso | Rôle | Statut |
-|------|------|--------|
-| [Benchmarks](meso-benchmarks/index.md) | Calibrer les charges actuelles | en cours (S01) |
-| Accumulation gym | Volume et densité gymnastique | à venir |
-| Accumulation force | Force structurelle (squat, hinge, press) | à venir |
-| Conversion mixed | Transfert vers le WOD / mixed | à venir |
-| Expression (courte) | Mock / test de forme | à venir |
-| Transition | Décharge avant Macrocycle 2 | à venir |
+| Meso | Fenêtre | Rôle | Statut |
+|------|---------|------|--------|
+| [Benchmarks](meso-benchmarks/index.md) | 3–9 août | Calibrer les charges actuelles | en cours (S01) |
+| [Accumulation gym](meso-accumulation-gym/index.md) | 10 août – 6 sept. | Volume et densité gymnastique (~4 sem.) | à venir |
+| [Expression — Fire Contest](meso-expression-fire/index.md) | 7–13 sept. | Fraîcheur + weekend compétition | à venir |
+| [Transition mini](meso-transition-mini/index.md) | 14–20 sept. | Décharge post-Fire → Macro 2 | à venir |
 
 ## Samedi
 
 Optionnel selon disponibilité (~10h–12h30 si séance).  
-Si entraînement : choisir **un seul** format selon le meso en cours — volume gym confortable, team box, ou zone 2 longue. Pas d’efforts durs ajoutés gratuitement pendant Accumulation.
+Si entraînement : choisir **un seul** format selon le meso — volume gym confortable, team box, ou zone 2 longue. Pas d’efforts durs ajoutés gratuitement pendant Accumulation. Semaine Fire : pas de samedi box en plus du weekend compétition.
 
 ## Règles fatigue box
 
 - Mercredi team à RPE ≥ 8 → alléger jeudi (−1 set d’approche et −10 à −15 % sur les charges de test / travail, ou RPE cible −1).
+- Semaine Fire : volume bas, pas de surcharge empilée avant le weekend.

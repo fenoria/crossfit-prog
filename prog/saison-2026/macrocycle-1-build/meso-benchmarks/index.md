@@ -1,6 +1,6 @@
 # Meso — Benchmarks
 
-**Macrocycle** : 1 — Build · **Saison** : 2026  
+**Macrocycle** : 1 — Build → Fire · **Saison** : 2026  
 **Durée prévue** : 1 semaine (3–9 août) · **Statut** : en cours (S01)
 
 ## Pourquoi
@@ -22,7 +22,7 @@ Sans mesures de force / gym / haltéro actuelles, on ne dose pas correctement la
 ## Continuité
 
 - **Précède** : — (démarrage Macrocycle 1)
-- **Suit** : **Accumulation gym** — si les tests clés sont notés
+- **Suit** : **Accumulation gym** (jusqu’au 6 sept.) — si les tests clés sont notés ; puis Expression Fire Contest (~12–13 sept.)
 
 ## Focus par semaine
 

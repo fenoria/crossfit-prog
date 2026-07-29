@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" role="img" aria-label="Macro 1 Build">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" role="img" aria-label="Macro 1 Build vers Fire Contest">
   <defs>
     <style>
       .t { font-family: Syne, 'DM Sans', system-ui, sans-serif; fill: #e8f4fd; }
@@ -10,50 +10,36 @@
   </defs>
   <rect width="800" height="240" rx="8" fill="#0b1426"/>
 
-  <text class="t" x="32" y="36" font-size="18" font-weight="700">Saison 2026 · Macro 1 — Build</text>
-  <text class="m" x="32" y="56" font-size="12">Instance : Accumulation gym avant Accumulation force (qualité limitante)</text>
+  <text class="t" x="32" y="36" font-size="18" font-weight="700">Saison 2026 · Macro 1 — Build → Fire</text>
+  <text class="m" x="32" y="56" font-size="12">Pic B Fire Contest (~12–13 sept.) — ACC-STR reporté en Macro 2</text>
 
-  <g transform="translate(28, 90)">
-    <rect width="100" height="56" rx="8" fill="#1a2332" stroke="#ffe082" stroke-width="1.5"/>
-    <text class="l" x="50" y="24" font-size="11" text-anchor="middle" fill="#ffe082">Benchmarks</text>
-    <text class="m" x="50" y="42" font-size="9" text-anchor="middle">calibrage</text>
+  <g transform="translate(40, 90)">
+    <rect width="140" height="56" rx="8" fill="#1a2332" stroke="#ffe082" stroke-width="1.5"/>
+    <text class="l" x="70" y="24" font-size="11" text-anchor="middle" fill="#ffe082">Benchmarks</text>
+    <text class="m" x="70" y="42" font-size="9" text-anchor="middle">3–9 août</text>
   </g>
-  <polygon points="138,118 150,124 138,130" fill="#546e7a"/>
+  <polygon points="190,118 202,124 190,130" fill="#546e7a"/>
 
-  <g transform="translate(158, 90)">
-    <rect width="100" height="56" rx="8" fill="#64ffda"/>
-    <text class="s" x="50" y="24" text-anchor="middle">ACC-GYM</text>
-    <text x="50" y="42" text-anchor="middle" font-family="DM Sans, system-ui, sans-serif" font-size="9" fill="#0b1426" opacity="0.75">~4 sem.</text>
+  <g transform="translate(210, 90)">
+    <rect width="160" height="56" rx="8" fill="#64ffda"/>
+    <text class="s" x="80" y="24" text-anchor="middle">ACC-GYM</text>
+    <text x="80" y="42" text-anchor="middle" font-family="DM Sans, system-ui, sans-serif" font-size="9" fill="#0b1426" opacity="0.75">10 août – 6 sept.</text>
   </g>
-  <polygon points="268,118 280,124 268,130" fill="#546e7a"/>
+  <polygon points="380,118 392,124 380,130" fill="#546e7a"/>
 
-  <g transform="translate(288, 90)">
-    <rect width="100" height="56" rx="8" fill="#4fd1c7"/>
-    <text class="s" x="50" y="24" text-anchor="middle">ACC-STR</text>
-    <text x="50" y="42" text-anchor="middle" font-family="DM Sans, system-ui, sans-serif" font-size="9" fill="#0b1426" opacity="0.75">~4 sem.</text>
+  <g transform="translate(400, 90)">
+    <rect width="160" height="56" rx="8" fill="#b388ff"/>
+    <text class="s" x="80" y="24" text-anchor="middle">REAL Fire</text>
+    <text x="80" y="42" text-anchor="middle" font-family="DM Sans, system-ui, sans-serif" font-size="9" fill="#0b1426" opacity="0.75">7–13 sept.</text>
   </g>
-  <polygon points="398,118 410,124 398,130" fill="#546e7a"/>
+  <polygon points="570,118 582,124 570,130" fill="#546e7a"/>
 
-  <g transform="translate(418, 90)">
-    <rect width="100" height="56" rx="8" fill="#82b1ff"/>
-    <text class="s" x="50" y="24" text-anchor="middle">TRA-MIX</text>
-    <text x="50" y="42" text-anchor="middle" font-family="DM Sans, system-ui, sans-serif" font-size="9" fill="#0b1426" opacity="0.75">~4 sem.</text>
-  </g>
-  <polygon points="528,118 540,124 528,130" fill="#546e7a"/>
-
-  <g transform="translate(548, 90)">
-    <rect width="100" height="56" rx="8" fill="#b388ff"/>
-    <text class="s" x="50" y="24" text-anchor="middle">REAL</text>
-    <text x="50" y="42" text-anchor="middle" font-family="DM Sans, system-ui, sans-serif" font-size="9" fill="#0b1426" opacity="0.75">mini 2-3 sem.</text>
-  </g>
-  <polygon points="658,118 670,124 658,130" fill="#546e7a"/>
-
-  <g transform="translate(678, 90)">
-    <rect width="90" height="56" rx="8" fill="#1a2332" stroke="#546e7a" stroke-width="1.5" stroke-dasharray="4 3"/>
-    <text class="l" x="45" y="24" font-size="11" text-anchor="middle">TRANS</text>
-    <text class="m" x="45" y="42" font-size="9" text-anchor="middle">-&gt; Macro 2</text>
+  <g transform="translate(590, 90)">
+    <rect width="160" height="56" rx="8" fill="#1a2332" stroke="#546e7a" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <text class="l" x="80" y="24" font-size="11" text-anchor="middle">TRANS mini</text>
+    <text class="m" x="80" y="42" font-size="9" text-anchor="middle">14–20 sept. → Macro 2</text>
   </g>
 
-  <text class="m" x="32" y="190" font-size="11">Pourquoi gym d’abord : qualité limitante = répétabilité gym (pas la force max).</text>
-  <text class="m" x="32" y="210" font-size="11">Les blocs se répètent dans l’année — ce n’est pas un parcours unique figé.</text>
+  <text class="m" x="32" y="190" font-size="11">Pic B = expression / maintien de forme — pas un taper A ultra-long.</text>
+  <text class="m" x="32" y="210" font-size="11">Force structurelle et conversion longues = Macro 2, vers S7mbioz (C).</text>
 </svg>

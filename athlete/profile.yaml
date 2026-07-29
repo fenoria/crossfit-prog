@@ -5,7 +5,7 @@ weight_kg: 87
 level: elite
 goal:
   type: competition_performance
-  notes: "Performance compétition ; fraîcheur et spécificité > volume gratuit. Caler les macros sur A/B puis C équipe ; petites compet opportunistes si dates connues. Macro 1 = Build (élever le plafond), jamais « reconstruction » — déjà en forme ; prudence charges adducteur ≠ convalescence."
+  notes: "Performance compétition ; fraîcheur et spécificité > volume gratuit. Macros calés sur A (fait) → B Fire Contest (~sept.) → C S7mbioz (12–13 déc.). Petites compet opportunistes si dates connues, sans casser B/C. Macro 1 = Build gym → REAL Fire (pas ACC-STR avant le B). Prudence charges adducteur ≠ convalescence."
   # Ancre annuelle pour caler les cycles (récurrent tant que non modifié)
   competitions:
     primary_a:

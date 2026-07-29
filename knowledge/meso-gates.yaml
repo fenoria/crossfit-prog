@@ -1,18 +1,19 @@
 # Critères de sortie / gates de meso
-# Scope actuel : chemin Macro 1 (benchmarks → ACC-GYM → ACC-STR → TRA-MIX → REAL → Macro2).
-# Autres meso_types (ACC-GPP, ACC-OLY, TRA-POW, TRANS) : pas de gate YAML —
-# passage via Notes meso + profile jusqu’à Macro 2+.
+# Scope actuel : chemin Macro 1 compressé vers Fire Contest (B)
+#   benchmarks → ACC-GYM → REAL (Fire) → TRANS → Macro 2 (ACC-STR…)
+# Macro 2+ : ACC-STR → ACC-OLY → TRA-MIX → Macro 3 (TRA team → REAL S7mbioz)
 # Ne pas enchaîner au calendrier seul : vérifier gates + fatigue (+ douleur seulement si signalée).
-# Code canonique REAL (label « REAL mini » = même code, durée courte).
+# Code canonique REAL (label « REAL mini » / pic B = même code, durée courte).
 
 version: 1
 status: validated
-updated: 2026-07-28
-scope: macrocycle_1_path
+updated: 2026-07-29
+scope: macrocycle_1_path_fire_b
 sources:
   - "Israetel — progresser sous MRV, deload"
   - "Issurin — intention de bloc atteinte avant pivot"
-  - "Profil — gym volume prioritaire Macro 1 Build"
+  - "Bompa — REAL ancré sur pics B/C"
+  - "Profil — gym volume prioritaire Macro 1 Build ; Fire B puis S7mbioz C"
 
 global_blockers:
   - "douleur lower florissante signalée (≥ 6) → ne pas avancer vers ACC-STR lourd ; adapter"
@@ -31,48 +32,80 @@ gates:
       - "ergo court smoke test (benchmarks only — pas un WOD HI)"
     on_fail: "Prolonger benchmarks 2–3 jours ou retester le lift manquant ; ne pas inventer des %"
 
-  ACC_GYM_to_ACC_STR:
+  ACC_GYM_to_REAL_Fire:
     from: ACC-GYM
-    to: ACC-STR
+    to: REAL
+    label: "REAL Fire Contest (pic B)"
     required:
-      - "deload ACC-GYM fait (−30 % volume skill) ou semaine pic digérée"
+      - "deload ACC-GYM fait (−30 % volume skill) ou semaine pic digérée / allègement pré-Fire"
       - "au moins 2 skills gym ont progressé d’un cran ladder OU densité EMOM stable vs baseline"
       - "maintien force respecté (≥ 1 stimulus/semaine) sans casse"
-      - "pas de douleur lower florissante signalée bloquant le squat/hinge"
+      - "fraîcheur relative : pas de semaine surcharge empilée juste avant Fire"
+      - "pas de douleur florissante signalée"
     soft_targets:
       - "BMU : singles EMOM stables (cran ≥ 2) si baseline le permettait"
       - "HSW ou HSPU : volume/distance en hausse vs S01"
-    on_fail: "1 semaine ACC-GYM supplémentaire (volume) plutôt que forcer ACC-STR"
+    on_fail: "1 semaine ACC-GYM supplémentaire (volume) ou allonger le deload ; ne pas forcer un taper A"
 
-  ACC_STR_to_TRA_MIX:
+  REAL_Fire_to_TRANS:
+    from: REAL
+    to: TRANS
+    label: "post-Fire Contest"
+    required:
+      - "weekend Fire Contest fait ou skip documenté"
+      - "notes peaking (ce qui a marché) dans Notes meso / semaine (`prog/`)"
+    on_fail: "Documenter le skip ; enchaîner TRANS quand même si fatigue haute"
+
+  TRANS_to_Macro2_ACC_STR:
+    from: TRANS
+    to: ACC-STR
+    required:
+      - "fatigue subjective redescendue vs semaine Fire"
+      - "intention Macro 2 confirmée (force → oly → mixed → Macro 3 S7mbioz)"
+      - "pas de douleur lower florissante signalée bloquant le squat/hinge"
+    on_fail: "Prolonger TRANS 3–7 jours (Z2 / GPP) avant ACC-STR"
+
+  # Gates Macro 2 (réutilisées post-Fire)
+  ACC_STR_to_ACC_OLY:
     from: ACC-STR
-    to: TRA-MIX
+    to: ACC-OLY
     required:
       - "deload force fait"
-      - "charges force actuelles réévaluées (RPE) vs post-benchmarks"
-      - "gym maintien ≥ 2 séances/sem. pendant ACC-STR (pas de perte totale skill)"
+      - "charges force actuelles réévaluées (RPE) vs post-benchmarks / post-Fire"
+      - "gym maintien ≥ 2 séances/sem. pendant ACC-STR"
       - "pas de douleur lower florissante signalée"
     on_fail: "Maintenir ACC-STR léger ou mini ACC-GYM refresh 1 sem."
 
-  TRA_MIX_to_REAL:
+  ACC_OLY_to_TRA_MIX:
+    from: ACC-OLY
+    to: TRA-MIX
+    required:
+      - "power snatch / clean notés à RPE utile"
+      - "pas de régression technique majeure"
+      - "pas de douleur florissante signalée"
+    on_fail: "1 semaine technique oly supplémentaire"
+
+  TRA_MIX_to_Macro3:
     from: TRA-MIX
-    to: REAL
-    label: "REAL mini (Macro 1)"
+    to: Macro3_TRA_team_or_REAL
     required:
       - "1–2 séances mixed qualité digérées (RPE noté)"
       - "pas de douleur florissante signalée"
-      - "fraîcheur relative : pas de semaine surcharge empilée juste avant"
+      - "fraîcheur relative : pas de semaine surcharge empilée juste avant Macro 3"
     on_fail: "Semaine volume ↓ / Z2 puis retester mixed"
 
-  REAL_to_transition_or_macro2:
-    from: REAL
-    to: TRANS_or_Macro2
+  Macro3_to_REAL_S7mbioz:
+    from: TRA-MIX_team
+    to: REAL
+    label: "REAL S7mbioz (pic C)"
     required:
-      - "mock / test weekend fait ou documenté skip"
-      - "notes peaking (ce qui a marché) dans Notes meso (`prog/`)"
-      - "calendrier Macro 2 intention définie (même sans A-event)"
+      - "au moins 2 séances team / formats partagés digérées (ou équivalent box)"
+      - "fraîcheur relative avant le weekend 12–13 déc."
+      - "pas de douleur florissante signalée"
+    on_fail: "Allonger spécificité légère ou avancer le taper (volume ↓)"
 
 retest_policy:
   after_each_macro: "re-benchmark force clé + proxies gym (pas tout re-maxer)"
   mid_meso_if: "doute sur charges ou plateau > 2 semaines"
   never: "retester sur ego pendant deload"
+  after_Fire: "notes peaking + éventuel recalibrage charges légères avant ACC-STR"

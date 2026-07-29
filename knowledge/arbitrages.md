@@ -1,6 +1,6 @@
 # Arbitrages méthodologiques
 
-Décisions corpus **validées** avec l’athlète (2026-07-27) · ops pack (2026-07-28) · Laursen/Buchheit (2026-07-29).  
+Décisions corpus **validées** avec l’athlète (2026-07-27) · ops pack (2026-07-28) · Laursen/Buchheit (2026-07-29) · calendrier B/C (2026-07-29).  
 Rôle : conflits **entre auteurs** + décision retenue.  
 Contraintes athlète / calendrier / feedback durable → `athlete/profile.yaml` (ne pas tout dupliquer ici).
 
@@ -39,8 +39,9 @@ Contraintes athlète / calendrier / feedback durable → `athlete/profile.yaml` 
 ## 9. Architecture annuelle (2026-07-27)
 - **Conflit** : copier les mesos BON sur 1 an vs Issurin stages + Bompa multi-pic.
 - **Décision** : année = **2–3 macrocycles** ; chaque macro = Acc → Trans → Real ; mesos = intentions concentrées répétables (ACC-GYM, ACC-STR, TRA-MIX, REAL…).
-- **Macro 1 immédiat** : Benchmarks → ACC-GYM → ACC-STR → TRA-MIX → REAL (label mini) → TRANS.
+- **Macro 1 (initial)** : Benchmarks → ACC-GYM → ACC-STR → TRA-MIX → REAL (label mini) → TRANS.
 - **Validé athlète** 2026-07-27.
+- **Amendement 2026-07-29** : voir §12 (compression Macro 1 sur Fire Contest B).
 
 ## 10. Ops pack (2026-07-28)
 - **Conflit** : méthodo narrative seule vs contrôles opérationnels (volume, maintien, gates).
@@ -51,5 +52,15 @@ Contraintes athlète / calendrier / feedback durable → `athlete/profile.yaml` 
 
 ## 11. Macro 1 Build : GYM avant AA force (2026-07-28)
 - **Conflit** : séquence Bompa AA → max strength vs qualité limitante gym.
-- **Décision** : Macro 1 Accumulation = **ACC-GYM** puis ACC-STR (athlète déjà en forme — Build pour élever le plafond ; prudence charges adducteur 2025, pas convalescence).
+- **Décision** : Macro 1 Accumulation = **ACC-GYM** d’abord (athlète déjà en forme — Build pour élever le plafond ; prudence charges adducteur 2025, pas convalescence). ACC-STR suit **après** le pic B (Macro 2), pas avant Fire Contest.
 - **Libellé** (2026-07-29) : abandon de « reconstruction » → **Build** partout (visible + méthodo).
+
+## 12. Calendrier 2026 ancré B/C (2026-07-29)
+- **Conflit** : Macro 1 long (~15 sem. jusqu’à REAL générique) vs Fire Contest ~12 sept. + S7mbioz 12–13 déc.
+- **Décision** :
+  - Macro 1 (3 août – 20 sept.) : Benchmarks → ACC-GYM → **REAL Fire (B)** → TRANS mini.
+  - Macro 2 (21 sept. – 15 nov.) : ACC-STR → ACC-OLY → TRA-MIX (élévation, pas de taper A).
+  - Macro 3 (16 nov. – 13 déc.) : TRA team → **REAL S7mbioz (C)**.
+  - Transition dès 14 déc.
+- Fire = pic **secondaire** (expression / maintien) — pas un taper A qui casse le Build.
+- SoT dates : `athlete/profile.yaml` (`competitions` + `competition` / `next_after_b`).
