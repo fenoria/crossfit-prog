@@ -171,7 +171,7 @@ const sidebarItems: DefaultTheme.SidebarItem[] = [
 ]
 
 export default defineConfig({
-  title: 'Prog CrossFit',
+  title: 'Prog T. Maxel',
   description: 'Programmation CrossFit élite',
   lang: 'fr-FR',
   srcDir: 'prog',
@@ -180,8 +180,8 @@ export default defineConfig({
   appearance: 'dark',
   themeConfig: {
     // VitePress prefixes `themeConfig.logo` with `base` automatically.
-    logo: { src: '/logo.svg', alt: 'Prog CrossFit' },
-    siteTitle: 'Prog CrossFit',
+    logo: { src: '/logo.svg', alt: 'Prog T. Maxel' },
+    siteTitle: 'Prog T. Maxel',
     nav: [
       { text: 'Accueil', link: '/' },
       { text: 'Concepts', link: '/livres/concepts' },
@@ -238,7 +238,7 @@ export default defineConfig({
     ['meta', { name: 'msapplication-TileColor', content: '#0b1426' }],
     ['meta', { name: 'author', content: 'Thierry Maxel' }],
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:title', content: 'Prog CrossFit' }],
+    ['meta', { property: 'og:title', content: 'Prog T. Maxel' }],
     [
       'meta',
       {
@@ -248,7 +248,7 @@ export default defineConfig({
     ],
     ['meta', { property: 'og:locale', content: 'fr_FR' }],
     ['meta', { name: 'twitter:card', content: 'summary' }],
-    ['meta', { name: 'twitter:title', content: 'Prog CrossFit' }],
+    ['meta', { name: 'twitter:title', content: 'Prog T. Maxel' }],
     [
       'meta',
       {
