@@ -10,8 +10,8 @@
   </defs>
   <rect width="800" height="260" rx="8" fill="#0b1426"/>
 
-  <text class="t" x="32" y="36" font-size="18" font-weight="700">Stage Issurin &#8212; une intention concentr&#233;e</text>
-  <text class="m" x="32" y="56" font-size="12">R&#233;sidus : a&#233;robie / structure t&#244;t &#183; vitesse / sp&#233;cificit&#233; proches du pic</text>
+  <text class="t" x="32" y="36" font-size="18" font-weight="700">Stage Issurin — une intention concentrée</text>
+  <text class="m" x="32" y="56" font-size="12">Résidus : aérobie / structure tôt · vitesse / spécificité proches du pic</text>
 
   <rect x="40" y="84" width="220" height="120" rx="10" fill="#1a2332" stroke="#64ffda" stroke-width="1.5"/>
   <rect x="40" y="84" width="220" height="28" rx="10" fill="#64ffda"/>
@@ -20,7 +20,7 @@
   <text class="l" x="56" y="140" font-size="12">Volume / bases</text>
   <text class="m" x="56" y="160" font-size="11">Z2 - gym volume - AA/force</text>
   <text class="m" x="56" y="176" font-size="11">technique Oly</text>
-  <text class="m" x="56" y="196" font-size="10">r&#233;sidu long</text>
+  <text class="m" x="56" y="196" font-size="10">résidu long</text>
 
   <polygon points="288,138 300,144 288,150" fill="#546e7a"/>
 
@@ -28,8 +28,8 @@
   <rect x="310" y="84" width="220" height="28" rx="10" fill="#82b1ff"/>
   <rect x="310" y="98" width="220" height="14" fill="#82b1ff"/>
   <text class="w" x="420" y="104" font-size="13" text-anchor="middle">TRANSMUTATION</text>
-  <text class="l" x="326" y="140" font-size="12">Conversion sp&#233;cifique</text>
-  <text class="m" x="326" y="160" font-size="11">densit&#233; gym sous fatigue</text>
+  <text class="l" x="326" y="140" font-size="12">Conversion spécifique</text>
+  <text class="m" x="326" y="160" font-size="11">densité gym sous fatigue</text>
   <text class="m" x="326" y="176" font-size="11">puissance - mixed CF - VO2</text>
   <text class="m" x="326" y="196" font-size="10">pont vers le pic</text>
 
@@ -40,9 +40,9 @@
   <rect x="580" y="98" width="180" height="14" fill="#b388ff"/>
   <text class="w" x="670" y="104" font-size="13" text-anchor="middle">REALIZATION</text>
   <text class="l" x="596" y="140" font-size="12">Expression</text>
-  <text class="m" x="596" y="160" font-size="11">&#8595; volume &#183; mocks</text>
-  <text class="m" x="596" y="176" font-size="11">taper &#183; fra&#238;cheur</text>
-  <text class="m" x="596" y="196" font-size="10">r&#233;sidu court</text>
+  <text class="m" x="596" y="160" font-size="11">↓ volume · mocks</text>
+  <text class="m" x="596" y="176" font-size="11">taper · fraîcheur</text>
+  <text class="m" x="596" y="196" font-size="10">résidu court</text>
 
   <text class="m" x="40" y="240" font-size="11">Un meso = 3-5 semaines + deload, une intention dominante (ACC-GYM, TRA-MIX, REAL...).</text>
 </svg>

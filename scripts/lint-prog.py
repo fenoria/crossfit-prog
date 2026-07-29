@@ -237,7 +237,7 @@ def check_meso_indexes(meso_codes: set[str], warnings: list[str]) -> None:
 
 
 def check_public_svgs(errors: list[str]) -> None:
-    """SVG sous prog/public : ASCII + entités XML (évite Encoding error navigateur)."""
+    """SVG sous prog/public : UTF-8 strict + XML bien formé (sinon img cassée en navigateur)."""
     public = PROG / "public"
     if not public.is_dir():
         return
@@ -255,11 +255,11 @@ def check_public_svgs(errors: list[str]) -> None:
             errors.append(f"{rel} : BOM UTF-8 interdit (réécrire sans BOM)")
             continue
         try:
-            text = raw.decode("ascii")
+            text = raw.decode("utf-8")
         except UnicodeDecodeError as exc:
             errors.append(
-                f"{rel} : octet non-ASCII @ byte {exc.start} — "
-                "utiliser des entités XML (&#233; etc.), fichier ASCII pur"
+                f"{rel} : encodage non UTF-8 ({exc.reason} @ byte {exc.start}) "
+                '— réécrire en UTF-8 (encoding="UTF-8")'
             )
             continue
         try:
@@ -267,7 +267,7 @@ def check_public_svgs(errors: list[str]) -> None:
         except ET.ParseError as exc:
             errors.append(f"{rel} : XML invalide ({exc})")
         if 'encoding="UTF-8"' not in text[:200] and "encoding='UTF-8'" not in text[:200]:
-            errors.append(f"{rel} : déclaration <?xml … encoding=\"UTF-8\"?> manquante")
+            errors.append(f'{rel} : déclaration <?xml … encoding="UTF-8"?> manquante')
 
         # Collision VitePress : public/<page-dir>/… masqué par la route Markdown
         try:
