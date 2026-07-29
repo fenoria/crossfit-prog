@@ -77,7 +77,7 @@ function seasonDirsNewestFirst(): string[] {
 
 function defaultSeasonLink(): string {
   const seasons = seasonDirsNewestFirst()
-  if (seasons.length === 0) return '/saisons/'
+  if (seasons.length === 0) return '/'
   return `/${seasons[0]}/`
 }
 
@@ -141,19 +141,13 @@ function buildSeasonItems(currentSeason: string | null): DefaultTheme.SidebarIte
 
 const current = loadCurrent()
 const livresDir = join(progDir, 'livres')
-const saisonsHub = join(progDir, 'saisons', 'index.md')
 
 const sidebarItems: DefaultTheme.SidebarItem[] = [
   { text: 'Accueil', link: '/' },
   {
     text: 'Saisons',
     collapsed: false,
-    items: [
-      ...(existsSync(saisonsHub)
-        ? [{ text: 'Hub saisons', link: '/saisons/' }]
-        : []),
-      ...buildSeasonItems(current.season),
-    ],
+    items: buildSeasonItems(current.season),
   },
   {
     text: 'Référentiel',
@@ -192,7 +186,7 @@ export default defineConfig({
       { text: 'Accueil', link: '/' },
       { text: 'Concepts', link: '/livres/concepts' },
       { text: 'Livres', link: '/livres/' },
-      { text: 'Saisons', link: '/saisons/' },
+      { text: 'Saisons', link: defaultSeasonLink() },
       { text: 'En cours', link: loadCurrentWeekLink() },
     ],
     sidebar: {

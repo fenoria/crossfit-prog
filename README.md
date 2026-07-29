@@ -18,7 +18,6 @@ Programmation CrossFit élite — **source de vérité = [`prog/`](prog/)** (Mar
 prog/
   index.md              ← référentiel (méthodo, pérenne, neutre profil)
   livres/               ← référentiel (fiches + concepts)
-  saisons/              ← hub des années
   saison-2026/          ← instance année (priorités, macros, semaines)
     macrocycle-1-build/
       meso-benchmarks/

@@ -20,14 +20,14 @@ Deux zones distinctes sur le site (et dans `prog/`) :
 | Zone | Contenu | Exemples | Contraintes |
 |------|---------|----------|-------------|
 | **Référentiel** | Méthodo, concepts, fiches livres | `prog/index.md`, `prog/livres/`, `prog/public/concepts/` | **Pérenne** (2026, 2027…) et **neutre profil** — pas de calendrier d’année, pas de qualité limitante / créneau / blessure / priorité athlète |
-| **Saisons** | Instance année | `prog/saisons/`, `prog/saison-YYYY/`, `prog/public/saison-YYYY/` | Priorités, créneaux, séquence des macros, schémas d’instance |
+| **Saisons** | Instance année | `prog/saison-YYYY/`, `prog/public/saison-YYYY/` | Priorités, créneaux, séquence des macros, schémas d’instance |
 
 - Concepts / livres / accueil méthodo → formuler de façon **générale** (« selon la qualité limitante », « selon le diagnostic de saison »).
 - Concepts / livres / accueil méthodo → ton **référentiel de prépa physique** : compréhensible par un coach externe, sans présupposer le contexte du repo.
 - Détail athlète / année → uniquement sous `saison-YYYY/` (et profile hors site).
-- Lien croisé OK : référentiel → hub [Saisons](/saisons/) ; saison → concepts / méthodo.
+- Lien croisé OK : référentiel → saison courante (`/saison-YYYY/`) ; saison → concepts / méthodo.
 - Nouvelle saison = nouveau dossier `saison-YYYY/` ; ne pas réécrire le référentiel pour coller à l’année.
-- Dans le texte visible du **référentiel** (`prog/index.md`, `prog/livres/`, `prog/public/concepts/`) : pas de mention à « la prog », au repo, aux Notes, au hub, ni à un profil / une saison / un créneau particuliers.
+- Dans le texte visible du **référentiel** (`prog/index.md`, `prog/livres/`, `prog/public/concepts/`) : pas de mention à « la prog », au repo, aux Notes, ni à un profil / une saison / un créneau particuliers.
 - Préférer un registre **pédagogique, publication-ready, coach-friendly** ; éviter les formulations trop internes, trop orales ou trop “insider” si une alternative claire existe.
 - Dans le texte visible, **dire le concept plutôt que justifier le cadre éditorial** : éviter les phrases du type « cette page… », « ici… », « cadre pérenne / neutre », « pas un concept générique », « pas une copie… » quand une formulation directe suffit.
 - Éviter les **disclaimers défensifs** et métadiscursifs dans le rendu final ; garder seulement l’information utile au lecteur (principe, intention, usage, limite réellement opérationnelle).
