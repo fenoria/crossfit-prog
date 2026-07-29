@@ -179,12 +179,12 @@
 
 /* Sidebar active = lueur aurore */
 .dark .VPSidebarItem.is-active > .item .link {
-  color: var(--aurora-green);
+  color: var(--aurora-blue);
 }
 
 .dark .VPSidebarItem.is-active > .item .link::before {
-  background: var(--aurora-green);
-  box-shadow: 0 0 8px rgba(100, 255, 218, 0.5);
+  background: var(--aurora-blue);
+  box-shadow: 0 0 8px rgba(130, 177, 255, 0.5);
 }
 
 .dark .VPNavBarTitle .title {
@@ -192,7 +192,7 @@
 }
 
 .dark .VPNavBarMenuLink.active {
-  color: var(--aurora-green) !important;
+  color: var(--aurora-blue) !important;
 }
 
 .dark .VPLink:hover {
