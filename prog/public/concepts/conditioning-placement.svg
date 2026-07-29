@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" role="img" aria-label="Conditioning placement">
+  <defs>
+    <style>
+      .t { font-family: Syne, 'DM Sans', system-ui, sans-serif; fill: #e8f4fd; }
+      .m { font-family: 'DM Sans', system-ui, sans-serif; fill: #78909c; }
+      .l { font-family: 'DM Sans', system-ui, sans-serif; fill: #b0bec5; }
+      .w { font-family: 'DM Sans', system-ui, sans-serif; fill: #0b1426; font-weight: 600; }
+    </style>
+  </defs>
+  <rect width="800" height="280" rx="8" fill="#0b1426"/>
+
+  <text class="t" x="32" y="36" font-size="18" font-weight="700">Conditioning — maintien, pas accumulation HI</text>
+  <text class="m" x="32" y="56" font-size="12">Laursen &amp; Buchheit · cible physiologique avant format · Z2 &gt; off</text>
+
+  <text class="l" x="160" y="88" font-size="12" text-anchor="middle" fill="#64ffda">Accumulation</text>
+  <text class="l" x="400" y="88" font-size="12" text-anchor="middle" fill="#82b1ff">Transmutation</text>
+  <text class="l" x="640" y="88" font-size="12" text-anchor="middle" fill="#b388ff">Realization</text>
+
+  <text class="m" x="32" y="130" font-size="11">Z2</text>
+  <rect x="80" y="112" width="160" height="32" rx="6" fill="#64ffda"/>
+  <text class="w" x="160" y="133" font-size="11" text-anchor="middle">fréquent</text>
+  <rect x="320" y="112" width="160" height="32" rx="6" fill="#4fd1c7" opacity="0.85"/>
+  <text class="w" x="400" y="133" font-size="11" text-anchor="middle">présent</text>
+  <rect x="560" y="112" width="160" height="32" rx="6" fill="#1a2332" stroke="#4fd1c7" stroke-width="1.5"/>
+  <text class="l" x="640" y="133" font-size="11" text-anchor="middle" fill="#4fd1c7">min si besoin</text>
+
+  <text class="m" x="32" y="178" font-size="11">Tempo</text>
+  <rect x="80" y="160" width="160" height="32" rx="6" fill="#1a2332" stroke="#82b1ff" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text class="l" x="160" y="181" font-size="11" text-anchor="middle">rare / fin Acc</text>
+  <rect x="320" y="160" width="160" height="32" rx="6" fill="#82b1ff" opacity="0.5"/>
+  <text class="w" x="400" y="181" font-size="11" text-anchor="middle">optionnel</text>
+  <rect x="560" y="160" width="160" height="32" rx="6" fill="#1a2332" stroke="#37474f" stroke-width="1"/>
+  <text class="m" x="640" y="181" font-size="11" text-anchor="middle">-</text>
+
+  <text class="m" x="32" y="226" font-size="11">HI / mixed</text>
+  <rect x="80" y="208" width="160" height="32" rx="6" fill="#1a2332" stroke="#37474f" stroke-width="1"/>
+  <text class="m" x="160" y="229" font-size="11" text-anchor="middle">éviter surcharge</text>
+  <rect x="320" y="208" width="160" height="32" rx="6" fill="#ff6b9d"/>
+  <text class="w" x="400" y="229" font-size="11" text-anchor="middle">cible principale</text>
+  <rect x="560" y="208" width="160" height="32" rx="6" fill="#b388ff"/>
+  <text class="w" x="640" y="229" font-size="11" text-anchor="middle">spécificité dosée</text>
+
+  <text class="m" x="80" y="264" font-size="11">Cardio déjà fort → ROI faible à pousser le HI en Accumulation. Cap glycolytique : TRA/REAL.</text>
+</svg>

@@ -2,6 +2,8 @@
 
 Douze ouvrages nourrissent la programmation. Pas besoin de les lire en entier : ces fiches résument la vision de chaque auteur, les idées clés, et **ce qui est réellement retenu** dans la prog.
 
+**Vue visuelle** : [Concepts clés](concepts.md) — schémas (année, stages, dose, transfert, conditioning) dans la charte du site.
+
 ## Qui pilote quoi ?
 
 | Question | Pilote | Soutien |

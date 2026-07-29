@@ -187,3 +187,67 @@
 .dark .VPLink:hover {
   color: var(--aurora-green);
 }
+
+/* Diagrammes concepts (charte Aurora) */
+.concept-figure {
+  margin: 1.25rem 0 2rem;
+  padding: 1rem 1rem 0.75rem;
+  border: 1px solid var(--arctic-border, #37474f);
+  border-radius: 12px;
+  background:
+    radial-gradient(ellipse 70% 60% at 0% 0%, rgba(100, 255, 218, 0.06), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 100% 100%, rgba(130, 177, 255, 0.05), transparent 50%),
+    var(--arctic-panel, #0f1b2e);
+  overflow: hidden;
+}
+
+.concept-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.concept-figure figcaption {
+  margin: 0.65rem 0 0.15rem;
+  font-size: 0.875rem;
+  line-height: 1.45;
+  color: var(--arctic-muted, #78909c);
+}
+
+.concept-figure figcaption strong {
+  color: var(--aurora-green-dim, #4fd1c7);
+  font-weight: 600;
+}
+
+.concept-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin: 0.5rem 0 1.5rem;
+  padding: 0;
+  list-style: none;
+  font-size: 0.8125rem;
+  color: var(--arctic-muted, #78909c);
+}
+
+.concept-legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.concept-legend i {
+  display: inline-block;
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.concept-legend .c-green { background: #64ffda; }
+.concept-legend .c-blue { background: #82b1ff; }
+.concept-legend .c-purple { background: #b388ff; }
+.concept-legend .c-gold { background: #ffe082; }
+.concept-legend .c-pink { background: #ff6b9d; }
+.concept-legend .c-muted { background: #546e7a; }
