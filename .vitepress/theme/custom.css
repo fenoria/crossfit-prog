@@ -188,6 +188,14 @@
   color: var(--aurora-green);
 }
 
+.VPSidebar .group + .group {
+  border-top: none;
+}
+
+.VPSidebarItem.level-0 {
+  padding-bottom: 12px;
+}
+
 /* Diagrammes concepts (charte Aurora) */
 .concept-figure {
   margin: 1.25rem 0 2rem;
