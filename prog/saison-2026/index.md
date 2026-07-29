@@ -10,8 +10,6 @@ Plan annuel CrossFit élite à **plusieurs pics**, calé sur le calendrier comp�
 | B | Fire Contest (Nantes) | ~12–13 septembre | Pic secondaire — fin Macro 1 |
 | C | S7mbioz Throwdown | 12–13 décembre | Pic équipe — Macro 3 |
 
-Petites compet opportunistes : seulement si annoncées, sans casser A/B/C.
-
 ## Intention long terme
 
 Élever le volume gym, développer force et confiance sous la barre, maintenir le cardio, **exprimer** sur Fire Contest (B) puis S7mbioz (C), avec transition de fin d’année.

@@ -1,18 +1,14 @@
 # Prog CrossFit
 
-Cadre de planification pour le CrossFit compétition. Chaque cycle, meso et séance s’appuie sur un **corpus d’ouvrages de référence** (détail dans [Livres](/livres/)).
+Cadre de planification pour le CrossFit compétition. Chaque cycle, meso et séance s’appuie sur **des ouvrages de référence** (détail dans [Livres](/livres/)).
 
 Cette page résume la logique des blocs, du dosage, du transfert et de la progression.
 
-## Méthodologie — vision coach
+## Méthodologie
 
 ### En une phrase
 
 On ne développe pas tout à fond chaque semaine. On **concentre** une intention dominante par bloc (meso), on **dose** le volume pour progresser sans excès de fatigue, puis on **convertit** vers des formats combinés sous fatigue avant l’expression sur les pics.
-
-::: tip Règle d’or
-Si la fatigue monte, on coupe le **volume**, pas l’intention du bloc.
-:::
 
 ### Philosophie (6 piliers)
 
@@ -20,12 +16,12 @@ Si la fatigue monte, on coupe le **volume**, pas l’intention du bloc.
 2. **Dose intelligente** — travailler au-dessus du minimum utile, viser une zone productive, deload avant le plafond de récupération. Pas « plus c’est dur, mieux c’est ».
 3. **Transfert vers la compétition** — la force et la gym doivent se retrouver dans des formats combinés sous fatigue, pas seulement en séances isolées.
 4. **Clarté de lecture** — chaque niveau (saison → macro → meso → semaine → séance) porte un *pourquoi* explicite.
-5. **Primauté de l’intégrité physique** — charges basées sur les benchmarks **actuels** ; variantes et technique contrôlées si besoin ; douleur signalée → adaptation.
+5. **Primauté de l’intégrité physique** — charges basées sur les benchmarks **actuels** ; variantes et technique contrôlées ; douleur signalée → adaptation.
 6. **Récupération active quand elle sert le plan** — selon le niveau de fatigue et l’objectif du bloc, un travail aérobie léger peut parfois remplacer un repos complet.
 
 ### Architecture temporelle
 
-Le CrossFit compétition offre des opportunités **toute l’année**. On construit donc un plan à **plusieurs pics**, pas un seul run linéaire « force → gym → haltéro → spécifique ».
+Le CrossFit compétition offre des opportunités **toute l’année**. On construit donc un plan à **plusieurs pics**.
 
 ```text
 ANNÉE
@@ -35,7 +31,7 @@ ANNÉE
 └── Transition / compensation                 ~2–4 sem.
 ```
 
-Chaque **macrocycle** suit un stage Issurin :
+Chaque **macrocycle** suit la méthode Issurin :
 
 | Phase | Intention | Contenu typique CF |
 |-------|-----------|-------------------|
@@ -43,11 +39,13 @@ Chaque **macrocycle** suit un stage Issurin :
 | **Transmutation** | Conversion vers le spécifique | Densité gym sous fatigue, puissance barre, formats combinés, HI dosé |
 | **Realization** | Expression + fraîcheur | Spécifique ↓ volume, tests proches de la compétition, taper court |
 
-**Résidus** : les qualités à effet long (aérobie, structure) peuvent être développées plus tôt ; les qualités à effet court (intensité nerveuse, spécificité) se placent **au plus près** du pic.
+**Résidus** :
+Les qualités à effet long (aérobie, structure) peuvent être développées plus tôt.
+Les qualités à effet court (intensité nerveuse, spécificité) se placent **au plus près** du pic.
 
 ### Types de mesocycles
 
-Un meso = **3–5 semaines** + deload, **une priorité claire**. Ces blocs se **répètent et s’alternent** dans l’année selon le calendrier — on ne les enchaîne pas une seule fois.
+Un meso = **3–5 semaines** + deload, **une priorité claire**. Ces blocs se **répètent et s’alternent** dans l’année selon le calendrier.
 
 | Bloc | Intention dominante | Quand |
 |------|---------------------|-------|
@@ -93,27 +91,18 @@ Organisation type (à adapter au calendrier et au niveau de pratique) :
 - Deload dès signes : sommeil dégradé, chute de perf, RPE excessif chronique, douleur signalée.
 - Team WOD très dur (RPE ≥ 8) → volume réduit le lendemain.
 
-### Adaptation coaching
+### Adaptation
 
 - Feedback de séance → ajuster volume, variante ou densité **sans changer l’intention du meso**.
 - Contrainte logistique ou fatigue ponctuelle → réduire la dose plutôt que brouiller le stimulus.
 - Douleur signalée → adapter pattern, amplitude, variante ou charge.
 - Le suivi sert à préserver la cohérence entre ce qui était visé, ce qui a été toléré, et ce qui sera enchaîné ensuite.
 
-### Ce que ce n’est pas
-
-- Une juxtaposition de WODs sans logique de progression
-- Un programme bodybuilding ou machines guidées
-- Un développement concurrent maximal de toutes les qualités, chaque semaine
-- Un unique pic annuel type FORCE → GYM → HALTÉRO → SPEC
-
----
-
 ## D’où vient la méthodo ?
 
-### Corpus
+### Littérature
 
-Douze ouvrages — **[fiches de lecture](/livres/)** · **[concepts](/livres/concepts)** :
+Douze ouvrages de réference — **[fiches de lecture](/livres/)** · **[concepts](/livres/concepts)** :
 
 | Domaine | Ouvrage | Rôle |
 |---------|---------|------|
@@ -138,8 +127,6 @@ Quand les auteurs divergent, un **pilote** tranche ; les autres soutiennent :
 - **Israetel** pilote la dose (zone utile + deload).
 - **Gym = Low** en meso dédié · **Oly = Everett** · **Force = Zatsiorsky + transfert Verkhoshansky**.
 - **Conditioning = Laursen & Buchheit** (cibles / formats) + Bible PP en socle.
-
----
 
 ## Niveaux
 

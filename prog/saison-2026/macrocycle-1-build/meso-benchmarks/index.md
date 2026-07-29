@@ -32,7 +32,7 @@ Sans mesures de force / gym / haltéro actuelles, on ne dose pas correctement la
 
 ## Maintien
 
-Semaine de tests : zone 2 légère OK ; aucun effort dur ajouté hors tests et hors option 500 m rameur.
+Semaine de tests : zone 2 légère OK ; aucun effort dur ajouté hors tests et hors option 500m rameur.
 
 ## Métriques de succès (sortie)
 
