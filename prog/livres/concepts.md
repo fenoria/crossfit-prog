@@ -28,12 +28,12 @@ Cadre long (Bompa) : opportunités toute l’année → **2 ou 3 macros**, pas u
   <figcaption><strong>Issurin</strong> — concentration + résidus. Les mesos (ACC-GYM, TRA-MIX, REAL…) répètent ce canevas.</figcaption>
 </figure>
 
-## Macro 1 — reconstruction
+## Macro 1 — Build
 
-Exception documentée : la gym passe avant la force max, parce que c’est la qualité limitante.
+Exception documentée : la gym passe avant la force max, parce que c’est la qualité limitante — athlète déjà en forme, on élève le plafond.
 
 <figure class="concept-figure">
-  <img src="/concepts/macro1-reconstruction.svg" alt="Séquence Benchmarks ACC-GYM ACC-STR TRA-MIX REAL TRANS" width="800" height="240" />
+  <img src="/concepts/macro1-build.svg" alt="Séquence Benchmarks ACC-GYM ACC-STR TRA-MIX REAL TRANS" width="800" height="240" />
   <figcaption>Saison 2026 · Macro 1 — voir aussi la [Saison 2026](/saison-2026/).</figcaption>
 </figure>
 

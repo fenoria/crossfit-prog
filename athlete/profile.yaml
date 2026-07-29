@@ -5,7 +5,7 @@ weight_kg: 87
 level: elite
 goal:
   type: competition_performance
-  notes: "Performance compétition ; fraîcheur et spécificité > volume gratuit. Caler les macros sur A/B puis C équipe ; petites compet opportunistes si dates connues."
+  notes: "Performance compétition ; fraîcheur et spécificité > volume gratuit. Caler les macros sur A/B puis C équipe ; petites compet opportunistes si dates connues. Macro 1 = Build (élever le plafond), jamais « reconstruction » — déjà en forme ; prudence charges adducteur ≠ convalescence."
   # Ancre annuelle pour caler les cycles (récurrent tant que non modifié)
   competitions:
     primary_a:

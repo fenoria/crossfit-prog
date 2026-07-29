@@ -11,7 +11,7 @@ Plan annuel CrossFit élite : plusieurs pics dans l’année, avec des blocs à 
 
 ## Intention long terme
 
-Élever le volume gym, reconstruire force et confiance sous la barre, maintenir le cardio, puis exprimer la performance sur plusieurs pics.
+Élever le volume gym, développer force et confiance sous la barre, maintenir le cardio, puis exprimer la performance sur plusieurs pics.
 
 ## Macrocycles
 

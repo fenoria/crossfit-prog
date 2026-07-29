@@ -34,7 +34,7 @@ Sources : corpus `books/` (12 ouvrages) · profil `athlete/profile.yaml` · arbi
 
 ## 3. Architecture temporelle (années — livres, pas BON)
 
-> **Correction** : l’ancienne prog BON (FORCE → GYM → HALTÉRO → SPÉCIFIQUE → pré-comp → taper) était un **unique pic** vers une compétition. Ce n’est **pas** le modèle annuel retenu. On s’aligne sur **Issurin** (stages / résidus) + **Bompa** (plan annuel multi-pics + transition). La séquence force Bompa (AA → max strength → conversion) guide un macro « force » classique ; **exception reconstruction post-blessure** : Accumulation **gym** (ACC-GYM) prime sur AA force, car c’est la qualité limitante (Issurin + profil).
+> **Correction** : l’ancienne prog BON (FORCE → GYM → HALTÉRO → SPÉCIFIQUE → pré-comp → taper) était un **unique pic** vers une compétition. Ce n’est **pas** le modèle annuel retenu. On s’aligne sur **Issurin** (stages / résidus) + **Bompa** (plan annuel multi-pics + transition). La séquence force Bompa (AA → max strength → conversion) guide un macro « force » classique ; **exception Macro 1 Build** : Accumulation **gym** (ACC-GYM) prime sur AA force, car c’est la qualité limitante (Issurin + profil) — athlète déjà en forme, on élève le plafond ; prudence charges (adducteur 2025), pas une phase de convalescence.
 
 ### 3.1 Long terme — année type CrossFit élite
 
@@ -42,7 +42,7 @@ Le CrossFit compétition a des opportunités **toute l’année** → Bompa reco
 
 ```text
 ANNÉE
-├── Macrocycle 1 (Build / reconstruction)     ~12–16 semaines
+├── Macrocycle 1 (Build)                      ~12–16 semaines
 ├── Macrocycle 2 (Élévation du plafond)       ~12–16 semaines
 ├── Macrocycle 3 (Spécifique + A-event)       ~12–16 semaines
 └── Transition / compensation                 ~2–4 semaines
@@ -75,9 +75,9 @@ Un meso = **3–5 semaines** + deload (Israetel), **une intention dominante** :
 
 On **répète** et **alterne** ces blocs dans l’année selon le calendrier compétitions et les résidus — on ne fait **pas** une seule fois FORCE puis GYM puis HALTÉRO puis SPEC.
 
-### 3.3 Macrocycle 1 en cours (dès août 2026) — reconstruction
+### 3.3 Macrocycle 1 en cours (dès août 2026) — Build
 
-Contexte : reconstruction après blessure 2025, pas de A-event fixé, priorité gym (validée).
+Contexte : athlète déjà en forme (élite) ; Macro 1 = **Build** pour élever encore le plafond. Priorité gym (qualité limitante, validée). Prudence charges / pas PRs pré-blessure (adducteur 2025) — ce n’est pas une phase de convalescence. Ancre compétitions : Fire Contest puis S7mbioz.
 
 | Semaines | Bloc | Pourquoi (livres) |
 |----------|------|-------------------|
@@ -196,7 +196,7 @@ Lint : `npm run lint:prog`
 ## Validation méthodo de base
 
 - [x] Issurin blocs concentrés
-- [x] GYM prioritaire en reconstruction
+- [x] GYM prioritaire en Macro 1 Build
 - [x] Power Oly > squat Oly lourd (phase actuelle)
 - [x] Conditioning en maintien
 - [x] Microcycles volume → surcharge → pic → deload

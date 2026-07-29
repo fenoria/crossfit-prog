@@ -29,7 +29,7 @@ Le CrossFit compétition offre des opportunités **toute l’année**. On constr
 
 ```text
 ANNÉE
-├── Macrocycle 1 — Build / reconstruction     ~12–16 sem.
+├── Macrocycle 1 — Build                      ~12–16 sem.
 ├── Macrocycle 2 — Élévation du plafond       ~12–16 sem.
 ├── Macrocycle 3 — Spécifique + A-event       ~12–16 sem.
 └── Transition / compensation                 ~2–4 sem.

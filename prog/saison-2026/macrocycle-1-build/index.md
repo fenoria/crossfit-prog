@@ -4,7 +4,7 @@
 
 ## Intention
 
-Calibrer les charges → accumuler le volume gym → reconstruire la force → convertir en mixed CrossFit → courte phase d’expression → transition.
+Calibrer les charges → accumuler le volume gym → développer la force → convertir en mixed CrossFit → courte phase d’expression → transition.
 
 ## Mesos
 

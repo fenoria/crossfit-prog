@@ -26,7 +26,7 @@ On peut avoir une charge modérée avec un effort élevé (séries longues) ou u
 - Dynamique / puissance — intention de vitesse.
 - Hypertrophie / structure — tissus, masse utile, résilience.
 
-En Accumulation force, on mélange structure + force avec doses Israetel ; on évite les max out inutiles en reconstruction.
+En Accumulation force, on mélange structure + force avec doses Israetel ; on évite les max out inutiles en Macro 1 Build.
 
 ### Spécificité & technique
 

@@ -49,6 +49,7 @@ Contraintes athlète / calendrier / feedback durable → `athlete/profile.yaml` 
 - **Canon** : code meso `REAL` (label « REAL mini » OK en prose).
 - **Z2** : MEV 60 en Accumulation ; min < MEV autorisé en REAL (fraîcheur).
 
-## 11. Reconstruction : GYM avant AA force (2026-07-28)
+## 11. Macro 1 Build : GYM avant AA force (2026-07-28)
 - **Conflit** : séquence Bompa AA → max strength vs qualité limitante gym.
-- **Décision** : Macro 1 Accumulation = **ACC-GYM** puis ACC-STR (exception post-blessure documentée méthodo §3).
+- **Décision** : Macro 1 Accumulation = **ACC-GYM** puis ACC-STR (athlète déjà en forme — Build pour élever le plafond ; prudence charges adducteur 2025, pas convalescence).
+- **Libellé** (2026-07-29) : abandon de « reconstruction » → **Build** partout (visible + méthodo).

@@ -14,7 +14,7 @@ La force a plusieurs méthodes (max, dynamique, hypertrophie). Clarifier intensi
 
 ## Apports retenus
 - Cadre doses force structurelle (squat/hinge/push/pull) en ACC-STR.
-- Pas de max out inutiles en reconstruction ; RPE + charges actuelles.
+- Pas de max out inutiles en Macro 1 Build ; RPE + charges actuelles.
 - Combiner Israetel (dose) + Verkhoshansky (transfert).
 
 ## Limites / écarté

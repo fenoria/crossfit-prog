@@ -24,7 +24,7 @@ Chez l’élite, trop de qualités concurrentes diluent l’adaptation. Concentr
 - Ne pas interpréter « blocs » comme abandon total des autres qualités.
 
 ## Pertinence athlète
-Excellente : meso gym, puis force, puis mixed, etc. — reconstruction post-blessure + créneau serré.
+Excellente : meso gym, puis force, puis mixed, etc. — Macro 1 Build (gym limitante) + créneau serré.
 
 ## Miroir site
 `prog/livres/issurin-block.md`

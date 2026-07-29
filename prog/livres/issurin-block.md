@@ -40,7 +40,7 @@ Un mesocycle = une **priorité claire**. Le reste existe en **maintien** (assez 
 ## Ce qu’on retient pour la prog
 
 - **Issurin pilote la séquence des mesos** : pas six qualités à fond chaque semaine.
-- Macrocycle 1 (reconstruction) : Benchmarks → Accumulation **gym** → Accumulation force → Transmutation mixed → Affûtage court → Transition.
+- Macrocycle 1 (Build) : Benchmarks → Accumulation **gym** → Accumulation force → Transmutation mixed → Affûtage court → Transition.
 - Compatible créneau 90 min : on concentre le midi sur l’intention du bloc.
 - Le samedi optionnel sert souvent de volume « luxe » sans casser la logique du meso.
 

@@ -40,7 +40,7 @@ Varier assez pour ne pas stagner / se blesser, pas assez pour diluer l’adaptat
 - **Israetel pilote la dose** sur force, gym et Oly.
 - Microcycles typiques : volume → surcharge → pic → deload.
 - Cardio déjà fort → on ne cherche pas le MRV conditioning ; maintien.
-- Volume gym = priorité reconstruction : on le monte **sous** le plafond récupérable.
+- Volume gym = priorité Macro 1 Build : on le monte **sous** le plafond récupérable.
 - Charges = **actuelles**, jamais PRs pré-blessure pour les %.
 
 ## Ce qu’on n’applique pas

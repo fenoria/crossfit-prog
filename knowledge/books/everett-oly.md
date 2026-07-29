@@ -22,7 +22,7 @@ Force et technique indissociables. Programmer selon points faibles. Variantes (p
 - Max out fréquents (adducteur + frileux squat snatch/clean).
 
 ## Pertinence athlète
-Maintien / blocs Oly en reconstruction : qualité > kilos historiques.
+Maintien / blocs Oly en Macro 1 Build : qualité > kilos historiques.
 
 ## Miroir site
 `prog/livres/everett-oly.md`

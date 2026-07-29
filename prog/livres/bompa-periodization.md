@@ -8,7 +8,7 @@ Bompa est une figure centrale de la périodisation « classique » occidentale. 
 
 ## Vision globale
 
-La performance de haut niveau se **planifie sur l’année** (ou plusieurs macrocycles), pas semaine par semaine au feeling. On construit des pics, on descend en transition, on reconstruit. Le CrossFit a des opportunités **toute l’année** → plutôt **2 ou 3 macrocycles** (bi/tri-pic) qu’un seul grand pic saisonnier façon « une seule compétition ».
+La performance de haut niveau se **planifie sur l’année** (ou plusieurs macrocycles), pas semaine par semaine au feeling. On construit des pics, on descend en transition, on repart en Build. Le CrossFit a des opportunités **toute l’année** → plutôt **2 ou 3 macrocycles** (bi/tri-pic) qu’un seul grand pic saisonnier façon « une seule compétition ».
 
 Bompa fournit le **cadre long** ; Issurin fournit la **concentration** à l’intérieur de chaque macro.
 
@@ -30,7 +30,7 @@ Unités de planification : le meso porte une intention ; le micro (semaine) modu
 
 ### Séquence force classique
 
-Anatomical adaptation → max strength → conversion. **Exception reconstruction** ici : l’Accumulation **gym** passe avant l’AA force pure, parce que la gym est la qualité limitante.
+Anatomical adaptation → max strength → conversion. **Exception Macro 1 Build** ici : l’Accumulation **gym** passe avant l’AA force pure, parce que la gym est la qualité limitante.
 
 ## Ce qu’on retient pour la prog
 
