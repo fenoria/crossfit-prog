@@ -6,8 +6,7 @@
       <stop offset="100%" stop-color="#82b1ff"/>
     </linearGradient>
   </defs>
-  <rect width="64" height="64" rx="14" fill="#0b1426"/>
-  <circle cx="32" cy="32" r="20" fill="none" stroke="url(#aurora)" stroke-width="5"/>
-  <circle cx="32" cy="32" r="12" fill="none" stroke="#4fd1c7" stroke-width="2.5" opacity="0.7"/>
-  <circle cx="32" cy="32" r="5" fill="#64ffda"/>
+  <circle cx="32" cy="32" r="28" fill="none" stroke="url(#aurora)" stroke-width="6"/>
+  <circle cx="32" cy="32" r="16.8" fill="none" stroke="#4fd1c7" stroke-width="3" opacity="0.7"/>
+  <circle cx="32" cy="32" r="7" fill="#64ffda"/>
 </svg>
