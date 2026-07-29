@@ -6,6 +6,7 @@ from __future__ import annotations
 import json
 import re
 import sys
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -235,6 +236,50 @@ def check_meso_indexes(meso_codes: set[str], warnings: list[str]) -> None:
                 warnings.append(f"{rel} : code meso « {code} » hors maintenance-doses")
 
 
+def check_public_svgs(errors: list[str]) -> None:
+    """SVG sous prog/public : UTF-8 strict + XML bien formé (sinon img cassée en navigateur)."""
+    public = PROG / "public"
+    if not public.is_dir():
+        return
+
+    page_dirs = {
+        p.name
+        for p in PROG.iterdir()
+        if p.is_dir() and not p.name.startswith(("_", ".")) and p.name != "public"
+    }
+
+    for path in sorted(public.rglob("*.svg")):
+        rel = path.relative_to(ROOT)
+        raw = path.read_bytes()
+        try:
+            text = raw.decode("utf-8")
+        except UnicodeDecodeError as exc:
+            errors.append(
+                f"{rel} : encodage non UTF-8 ({exc.reason} @ byte {exc.start}) "
+                "— réécrire en UTF-8 (encoding=\"UTF-8\")"
+            )
+            continue
+        if raw.startswith(b"\xef\xbb\xbf"):
+            errors.append(f"{rel} : BOM UTF-8 interdit (réécrire sans BOM)")
+        try:
+            ET.fromstring(raw)
+        except ET.ParseError as exc:
+            errors.append(f"{rel} : XML invalide ({exc})")
+        if 'encoding="UTF-8"' not in text[:200] and "encoding='UTF-8'" not in text[:200]:
+            errors.append(f"{rel} : déclaration <?xml … encoding=\"UTF-8\"?> manquante")
+
+        # Collision VitePress : public/<page-dir>/… masqué par la route Markdown
+        try:
+            top = path.relative_to(public).parts[0]
+        except ValueError:
+            continue
+        if top in page_dirs:
+            errors.append(
+                f"{rel} : sous public/{top}/ — collision avec la page /{top}/ ; "
+                "placer sous public/diagrams/{top}/ (ou autre préfixe hors pages)"
+            )
+
+
 def main() -> int:
     errors: list[str] = []
     warnings: list[str] = []
@@ -250,6 +295,7 @@ def main() -> int:
     check_current_json(errors)
     check_meso_indexes(meso_codes, warnings)
     check_visible_prog(errors)
+    check_public_svgs(errors)
 
     weeks = week_files()
     if not weeks:

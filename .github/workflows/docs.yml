@@ -32,6 +32,8 @@ jobs:
           cache: npm
       - name: Install
         run: npm ci || npm install
+      - name: Lint prog assets
+        run: npm run lint:prog
       - name: Build
         env:
           VITEPRESS_BASE: /${{ github.event.repository.name }}/

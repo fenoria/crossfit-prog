@@ -10,8 +10,8 @@
   </defs>
   <rect width="800" height="280" rx="8" fill="#0b1426"/>
 
-  <text class="t" x="32" y="36" font-size="18" font-weight="700">Saison 2026 — calendrier des pics</text>
-  <text class="m" x="32" y="56" font-size="12">A fait (juillet) · B Fire Contest · C S7mbioz</text>
+  <text class="t" x="32" y="36" font-size="18" font-weight="700">Saison 2026 â€” calendrier des pics</text>
+  <text class="m" x="32" y="56" font-size="12">A fait (juillet) Â· B Fire Contest Â· C S7mbioz</text>
 
   <!-- timeline bar -->
   <rect x="40" y="120" width="720" height="12" rx="6" fill="#1a2332"/>
@@ -22,7 +22,7 @@
 
   <!-- Macro 2 -->
   <rect x="260" y="110" width="260" height="32" rx="8" fill="#82b1ff" opacity="0.9"/>
-  <text class="s" x="390" y="130" text-anchor="middle">Macro 2 Élévation</text>
+  <text class="s" x="390" y="130" text-anchor="middle">Macro 2 Ã‰lÃ©vation</text>
 
   <!-- Macro 3 -->
   <rect x="520" y="110" width="160" height="32" rx="8" fill="#b388ff" opacity="0.9"/>
@@ -37,14 +37,14 @@
   <text fill="#ffe082" font-family="DM Sans, system-ui, sans-serif" font-size="11" font-weight="700" x="230" y="90" text-anchor="middle">B Fire ~12 sept.</text>
 
   <line x1="655" y1="100" x2="655" y2="155" stroke="#ffe082" stroke-width="2"/>
-  <text fill="#ffe082" font-family="DM Sans, system-ui, sans-serif" font-size="11" font-weight="700" x="655" y="90" text-anchor="middle">C S7mbioz 12–13 déc.</text>
+  <text fill="#ffe082" font-family="DM Sans, system-ui, sans-serif" font-size="11" font-weight="700" x="655" y="90" text-anchor="middle">C S7mbioz 12â€“13 dÃ©c.</text>
 
-  <text class="m" x="40" y="190" font-size="12">août</text>
+  <text class="m" x="40" y="190" font-size="12">aoÃ»t</text>
   <text class="m" x="230" y="190" font-size="12">sept.</text>
-  <text class="m" x="390" y="190" font-size="12">oct. – nov.</text>
-  <text class="m" x="600" y="190" font-size="12">nov. – déc.</text>
-  <text class="m" x="720" y="190" font-size="12">fin déc.</text>
+  <text class="m" x="390" y="190" font-size="12">oct. â€“ nov.</text>
+  <text class="m" x="600" y="190" font-size="12">nov. â€“ dÃ©c.</text>
+  <text class="m" x="720" y="190" font-size="12">fin dÃ©c.</text>
 
-  <text class="m" x="32" y="230" font-size="11">B = pic secondaire (expression après ACC-GYM). C = pic équipe de fin d’année.</text>
-  <text class="m" x="32" y="250" font-size="11">Force / oly / mixed longs après Fire ; spécificité team avant S7mbioz.</text>
+  <text class="m" x="32" y="230" font-size="11">B = pic secondaire (expression aprÃ¨s ACC-GYM). C = pic Ã©quipe de fin dâ€™annÃ©e.</text>
+  <text class="m" x="32" y="250" font-size="11">Force / oly / mixed longs aprÃ¨s Fire ; spÃ©cificitÃ© team avant S7mbioz.</text>
 </svg>
