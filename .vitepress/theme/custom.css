@@ -188,38 +188,6 @@
   color: var(--aurora-green);
 }
 
-/* Sidebar gauche plus légère, sans séparateurs durs */
-.dark .VPSidebar {
-  --vp-sidebar-padding-top: 20px;
-}
-
-.dark .VPSidebar .curtain,
-.dark .VPSidebarItem .group,
-.dark .VPSidebarItem.collapsible > .item {
-  border-top: 0;
-  border-bottom: 0;
-}
-
-.dark .VPSidebarNav {
-  padding-top: 10px;
-  padding-bottom: 18px;
-}
-
-.dark .VPSidebarItem .group {
-  padding-top: 6px;
-  padding-bottom: 6px;
-}
-
-.dark .VPSidebarItem .item {
-  padding-top: 2px;
-  padding-bottom: 2px;
-}
-
-.dark .VPSidebarItem .group + .group,
-.dark .VPSidebarItem + .VPSidebarItem {
-  margin-top: 10px;
-}
-
 /* Diagrammes concepts (charte Aurora) */
 .concept-figure {
   margin: 1.25rem 0 2rem;
