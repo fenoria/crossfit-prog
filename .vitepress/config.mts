@@ -143,11 +143,7 @@ const current = loadCurrent()
 const livresDir = join(progDir, 'livres')
 
 const sidebarItems: DefaultTheme.SidebarItem[] = [
-  {
-    text: 'Saisons',
-    collapsed: false,
-    items: buildSeasonItems(current.season),
-  },
+  ...buildSeasonItems(current.season),
   {
     text: 'Référentiel',
     collapsed: true,
