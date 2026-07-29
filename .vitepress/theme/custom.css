@@ -199,6 +199,10 @@
   color: var(--aurora-green);
 }
 
+#VPSidebarNav {
+  padding-top: 18px;
+}
+
 .VPSidebar .group + .group {
   border-top: none;
 }
