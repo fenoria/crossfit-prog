@@ -10,8 +10,8 @@ Sans mesures de force / gym / haltéro actuelles, on ne dose pas correctement la
 ## Intention dominante
 
 **Type de bloc** : Benchmarks (calibration)  
-**Stimulus** : mesurer à RPE 8–9 — pas de max à tout prix.  
-**Ce que ce n’est pas** : un meso pour développer la force ou le volume gym.
+**Stimulus** : mesurer à RPE 8–9, sans chercher de max absolu.  
+**Périmètre** : calibrer la suite, pas développer la force ni le volume gym cette semaine.
 
 ## Apport
 
@@ -32,7 +32,7 @@ Sans mesures de force / gym / haltéro actuelles, on ne dose pas correctement la
 
 ## Maintien
 
-Semaine de tests : zone 2 légère OK ; pas d’efforts durs ajoutés hors tests et hors option 500 m rameur.
+Semaine de tests : zone 2 légère OK ; aucun effort dur ajouté hors tests et hors option 500 m rameur.
 
 ## Métriques de succès (sortie)
 

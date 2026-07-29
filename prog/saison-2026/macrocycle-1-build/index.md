@@ -27,7 +27,7 @@ Calibrer les charges → accumuler le volume gym → développer la force → co
 ## Samedi
 
 Optionnel selon disponibilité (~10h–12h30 si séance).  
-Si entraînement : volume gym confortable, team box, ou zone 2 longue — selon le meso en cours (pas d’efforts durs gratuits pendant Accumulation).
+Si entraînement : choisir **un seul** format selon le meso en cours — volume gym confortable, team box, ou zone 2 longue. Pas d’efforts durs ajoutés gratuitement pendant Accumulation.
 
 ## Règles fatigue box
 
