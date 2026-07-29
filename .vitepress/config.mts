@@ -24,6 +24,11 @@ function mdTitle(filePath: string, fallback: string): string {
   return fallback
 }
 
+/** Libellé sidebar uniquement — pages gardent le titre Markdown complet. */
+function sidebarLabel(title: string): string {
+  return title.replace(/\bMacrocycle\b/g, 'Macro')
+}
+
 function toLink(absPath: string): string {
   const rel = relative(progDir, absPath).split(sep).join('/')
   if (rel === 'index.md') return '/'
@@ -95,7 +100,7 @@ function buildDirItems(dir: string): DefaultTheme.SidebarItem[] {
     if (st.isDirectory()) {
       const indexPath = join(abs, 'index.md')
       const childItems = buildDirItems(abs)
-      const text = existsSync(indexPath) ? mdTitle(indexPath, name) : name
+      const text = sidebarLabel(existsSync(indexPath) ? mdTitle(indexPath, name) : name)
       const overview = existsSync(indexPath)
         ? [{ text: 'Vue d’ensemble', link: toLink(indexPath) }]
         : []
@@ -109,7 +114,7 @@ function buildDirItems(dir: string): DefaultTheme.SidebarItem[] {
 
     if (!name.endsWith('.md') || name === 'index.md') continue
     items.push({
-      text: mdTitle(abs, basename(name, '.md')),
+      text: sidebarLabel(mdTitle(abs, basename(name, '.md'))),
       link: toLink(abs),
     })
   }
@@ -124,7 +129,7 @@ function buildSeasonItems(currentSeason: string | null): DefaultTheme.SidebarIte
       const abs = join(progDir, name)
       if (!statSync(abs).isDirectory()) return []
       const indexPath = join(abs, 'index.md')
-      const text = existsSync(indexPath) ? mdTitle(indexPath, name) : name
+      const text = sidebarLabel(existsSync(indexPath) ? mdTitle(indexPath, name) : name)
       const overview = existsSync(indexPath)
         ? [{ text: 'Vue d’ensemble', link: toLink(indexPath) }]
         : []
