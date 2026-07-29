@@ -1,6 +1,6 @@
 # Saison 2026
 
-Plan annuel CrossFit élite à **plusieurs pics**, calé sur le calendrier compétitions (profil).
+Plan annuel CrossFit élite à **plusieurs pics**, calé sur le calendrier compétitions.
 
 ## Ancres compétitions 2026
 
