@@ -1,4 +1,4 @@
-# Macrocycle 3 — Spécifique S7mbioz
+# Macrocycle 3 — Spécifique (S7mbioz)
 
 **Début prévu** : 16 novembre 2026 · **Fin prévue** : 13 décembre 2026  
 **Pic** : S7mbioz Throwdown — rôle C équipe · **12–13 décembre 2026**
