@@ -1,6 +1,6 @@
 status: validated
 version: 1
-updated: 2026-07-28
+updated: 2026-07-29
 validated_on: 2026-07-27
 # md = narratif athlète ; yaml = contrat machine — garder meso_types / order / status sync
 source_of_truth:
@@ -16,10 +16,9 @@ pilots:
   transfer: verkhoshansky
   macro_peaking: bompa
   mental: encyclo_pm
-  conditioning_fallback: bible_pp
+  conditioning: laursen_buchheit_hiit
 secondary_refs: [encyclo_pp, manuel_muscu, bible_pp]
-gaps:
-  - jamieson_energy_systems_unavailable
+gaps: []
 
 ops_pack:
   validated_on: 2026-07-28

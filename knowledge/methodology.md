@@ -2,7 +2,7 @@
 
 **Statut : `validated`**  
 Validée le : 2026-07-27 (athlète : oui sur structure Issurin, GYM d’abord, power Oly, conditioning maintien, microcycles volume→surcharge→pic→deload)  
-Sources : corpus `books/` (11 ouvrages) · profil `athlete/profile.yaml` · arbitrages `knowledge/arbitrages.md`
+Sources : corpus `books/` (12 ouvrages) · profil `athlete/profile.yaml` · arbitrages `knowledge/arbitrages.md`
 
 ---
 
@@ -136,7 +136,7 @@ Jours : Lun–Ven ≤90 min · Mercredi team si box · Samedi optionnel · Diman
 
 ### Conditioning
 - Maintien Z2 fréquent (préférence athlète).
-- Matrice Z2 / tempo / glycolytique / alactique + caps : `knowledge/conditioning-matrix.yaml` (fallback Bible PP, sans Jamieson).
+- Matrice Z2 / tempo / glycolytique / alactique + caps : `knowledge/conditioning-matrix.yaml` (**pilote** Laursen & Buchheit ; Bible PP en socle FR).
 - HI surtout en TRA/REAL ; team WOD dur compte dans le quota.
 
 ### Mental

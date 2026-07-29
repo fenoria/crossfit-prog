@@ -28,7 +28,7 @@ Tout ce qui était faisable **sans** résultats S01 :
 1. Doses de maintien par type de meso (`maintenance-doses.yaml`)
 2. Gates de sortie de meso (`meso-gates.yaml`, scope Macro 1)
 3. Ladder gym Low→CF (`gym-ladder.md`)
-4. Matrice conditioning sans Jamieson (`conditioning-matrix.yaml`)
+4. Matrice conditioning Laursen & Buchheit (`conditioning-matrix.yaml`) — Bible PP en socle FR
 5. Protocole adducteur gradué (`adductor-protocol.yaml`)
 6. Warm-ups réutilisables (`warmups.yaml`)
 7. Structure volumes MEV/MAV/MRV + champs `athlete/profile.yaml` (chiffres après S01)
@@ -66,7 +66,7 @@ L’athlète signale s’il a mal ; le coach applique alors `adductor-protocol.y
 
 Fiches de lecture athlète sous `prog/livres/` (sidebar auto + nav « Livres »).  
 SoT coach enrichi en parallèle dans `knowledge/books/` (mêmes slugs).  
-Objectif : comprendre la méthodo sans lire les 11 ouvrages en entier.
+Objectif : comprendre la méthodo sans lire les 12 ouvrages en entier.
 
 ## 2026-07-28 — Calendrier compétitions (ancre annuelle)
 
@@ -90,6 +90,14 @@ Niveau élite confirmé en contexte compétition ; pas de changement de priorit�
 
 *Fire Contest* (Nantes) — **5e / 40** division **RX**, team mixte à **2**.  
 Référence pour caler Fire 2026 (même format).
+
+## 2026-07-29 — Conditioning : Laursen & Buchheit remplace le gap energy systems
+
+Ajout corpus : *Science and Application of High-Intensity Interval Training* (Laursen & Buchheit).  
+- **Pilote** conditioning / HIIT (cibles physiologiques + formats).
+- Bible PP reste socle FR / variété.
+- Matrice `conditioning-matrix.yaml` v2 ; arbitrages §6 mis à jour.
+- Plus de gap conditioning ouvert dans `methodology.yaml`.
 
 ## 2026-07-28 — Immutabilité des semaines commencées / passées
 

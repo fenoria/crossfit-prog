@@ -1,6 +1,6 @@
 # Livres
 
-Onze ouvrages nourrissent la programmation. Tu n’as pas besoin de les lire en entier : ces fiches résument la vision de chaque auteur, les idées clés, et **ce qui est réellement retenu** dans ta prog.
+Douze ouvrages nourrissent la programmation. Tu n’as pas besoin de les lire en entier : ces fiches résument la vision de chaque auteur, les idées clés, et **ce qui est réellement retenu** dans ta prog.
 
 ## Qui pilote quoi ?
 
@@ -11,7 +11,7 @@ Onze ouvrages nourrissent la programmation. Tu n’as pas besoin de les lire en 
 | Volume & progressions gym | Low | — |
 | Haltéro | Everett | — |
 | Transfert force → compétition | Verkhoshansky | Zatsiorsky |
-| Conditioning (maintien) | Bible PP + matrice | Encyclopédie PP |
+| Conditioning (maintien) | Laursen & Buchheit | Bible PP · Encyclopédie PP |
 | Mental pré-comp | Encyclopédie mentale | — |
 | Accessoires renfo | Manuel muscu (secondaire) | — |
 
@@ -22,20 +22,21 @@ Onze ouvrages nourrissent la programmation. Tu n’as pas besoin de les lire en 
 1. [Issurin — Block Periodization](issurin-block.md) — pourquoi on concentre une intention par meso
 2. [Israetel — Scientific Principles…](israetel-scientific.md) — dose utile vs trop, deloads
 3. [Low — Overcoming Gravity](low-og.md) — volume gym, progressions, tissus
+4. [Laursen & Buchheit — Science and Application of HIIT](laursen-buchheit-hiit.md) — cibles & formats conditioning
 
 ### Cadre annuel & force
 
-4. [Bompa — Periodization Training for Sports](bompa-periodization.md) — année multi-pic, peaking, taper
-5. [Zatsiorsky — Science and Practice of Strength Training](zatsiorsky-spst.md) — principes de force
-6. [Verkhoshansky — Special Strength Training](verkhoshansky-sst.md) — transfert vers le mixed CF
+5. [Bompa — Periodization Training for Sports](bompa-periodization.md) — année multi-pic, peaking, taper
+6. [Zatsiorsky — Science and Practice of Strength Training](zatsiorsky-spst.md) — principes de force
+7. [Verkhoshansky — Special Strength Training](verkhoshansky-sst.md) — transfert vers le mixed CF
 
 ### Spécialités
 
-7. [Everett — Olympic Weightlifting](everett-oly.md) — technique & prog Oly (power / pulls)
-8. [Reiss & Prévost — Bible de la PP](bible-pp.md) — socle conditioning
-9. [Encyclopédie de la PP](encyclo-pp.md) — réservoir d’idées
-10. [Encyclopédie de la préparation mentale](encyclo-pm.md) — routines & stress pré-comp
-11. [Manuel ultime de musculation](manuel-muscu.md) — accessoires free-weight
+8. [Everett — Olympic Weightlifting](everett-oly.md) — technique & prog Oly (power / pulls)
+9. [Reiss & Prévost — Bible de la PP](bible-pp.md) — socle PP FR
+10. [Encyclopédie de la PP](encyclo-pp.md) — réservoir d’idées
+11. [Encyclopédie de la préparation mentale](encyclo-pm.md) — routines & stress pré-comp
+12. [Manuel ultime de musculation](manuel-muscu.md) — accessoires free-weight
 
 ## Lien avec la saison
 

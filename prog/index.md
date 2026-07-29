@@ -7,7 +7,7 @@ Chaque cycle, meso et séance s’appuie sur un **corpus d’ouvrages de référ
 
 ### 1. Corpus
 
-Onze ouvrages exploitables — **[fiches de lecture complètes](/livres/)** :
+Douze ouvrages exploitables — **[fiches de lecture complètes](/livres/)** :
 
 | Domaine | Ouvrage | Rôle |
 |---------|---------|------|
@@ -18,7 +18,8 @@ Onze ouvrages exploitables — **[fiches de lecture complètes](/livres/)** :
 | Transfert | [Verkhoshansky — *Special Strength Training*](/livres/verkhoshansky-sst) | Force générale → performance spécifique CF |
 | Haltéro | [Everett — *Olympic Weightlifting*](/livres/everett-oly) | Technique + prog Oly (power / pulls) |
 | Gym / BW | [Low — *Overcoming Gravity*](/livres/low-og) | **Pilote** volume & progressions gym |
-| PP générale | [Reiss & Prévost — *La bible de la préparation physique*](/livres/bible-pp) | Socle conditioning (sans Jamieson) |
+| Conditioning / HIIT | [Laursen & Buchheit — *Science and Application of HIIT*](/livres/laursen-buchheit-hiit) | **Pilote** energy systems / formats HIIT |
+| PP générale | [Reiss & Prévost — *La bible de la préparation physique*](/livres/bible-pp) | Socle PP FR / complément |
 | PP large | [*L’encyclopédie de la préparation physique*](/livres/encyclo-pp) | Complément / réservoir d’idées |
 | Mental | [*L’encyclopédie de la préparation mentale*](/livres/encyclo-pm) | Pré-comp, routines, stress |
 | Accessoires | [*Manuel ultime de musculation*](/livres/manuel-muscu) | Renfo free-weight secondaire |
@@ -39,7 +40,7 @@ Arbitrages structurants (détail) :
 - **Gym = Low** en meso dédié (densité, skill, renfo).
 - **Oly = Everett**, fréquence modérée ; power / hangs / pulls avant squat snatch/clean lourds.
 - **Force = Zatsiorsky + transfert Verkhoshansky** vers le mixed CF ; hypertrophie bodybuilding et machines guidées écartées.
-- **Conditioning en maintien** (déjà un point fort) ; Z2 > off si créneau possible.
+- **Conditioning = Laursen & Buchheit** (formats / cibles HIIT) + Bible PP en socle ; maintien, Z2 > off si créneau possible.
 
 Règle d’or : si la fatigue monte, on coupe le **volume**, pas l’intention du bloc.
 

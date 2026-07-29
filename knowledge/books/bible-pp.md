@@ -12,12 +12,12 @@ Mesurer → hiérarchiser les besoins → programmer. Toutes les qualités n’o
 - Culture « mesurer → programmer » (lien meso Benchmarks).
 
 ## Apports retenus
-- Fallback conditioning **validé** sans Jamieson (+ Bompa/Issurin + `conditioning-matrix.yaml`).
+- Socle PP FR + variété de moyens ; matrice conditioning **pilotée** par Laursen & Buchheit (`conditioning-matrix.yaml`).
 - Z2 > off ; ne pas sur-stimuler HI/glycolytique.
 - HI surtout TRA/REAL, dosé.
 
 ## Limites / écarté
-- Ne pilote ni structure de cycle ni dose élite.
+- Ne pilote ni structure de cycle, ni dose élite, ni granularité energy systems (rôle Laursen/Buchheit).
 - Extraction PDF parfois bruitée — concepts > citations fragiles.
 
 ## Pertinence athlète

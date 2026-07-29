@@ -4,7 +4,7 @@
 
 ## L’auteur et le livre
 
-Ouvrage de référence FR sur la préparation physique : qualités, diagnostic des besoins, moyens d’entraînement. Utile comme **culture PP** et boîte à outils conditioning — surtout en l’absence d’un manuel conditioning élite type Jamieson (non disponible en texte ici).
+Ouvrage de référence FR sur la préparation physique : qualités, diagnostic des besoins, moyens d’entraînement. Utile comme **culture PP** et boîte à outils — le pilotage energy systems / HIIT est chez [Laursen & Buchheit](laursen-buchheit-hiit.md).
 
 ## Vision globale
 
@@ -26,7 +26,7 @@ Tester, comparer, ajuster — d’où l’intérêt d’un meso Benchmarks en ou
 
 ## Ce qu’on retient pour ta prog
 
-- Fallback conditioning validé (avec Bompa / Issurin et la matrice interne).
+- Socle conditioning FR (avec Bompa / Issurin et la matrice pilotée Laursen/Buchheit).
 - Z2 > off si créneau possible.
 - Ne **pas** sur-stimuler le glycolytique / HI déjà solide.
 - HI surtout en Transmutation / Affûtage, dosé.

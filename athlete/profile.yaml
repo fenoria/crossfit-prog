@@ -204,7 +204,7 @@ knowledge:
   methodology_status: validated
   methodology_validated_on: 2026-07-27
   ops_pack_validated_on: 2026-07-28
-  corpus_notes: "Jamieson retiré (PDF image) — conditioning-matrix.yaml = fallback Bible PP"
+  corpus_notes: "12 ouvrages — conditioning pilote Laursen & Buchheit (conditioning-matrix.yaml)"
   refs:
     maintenance: knowledge/maintenance-doses.yaml
     gates: knowledge/meso-gates.yaml

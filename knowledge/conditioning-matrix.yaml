@@ -1,10 +1,11 @@
-# Matrice conditioning (sans Jamieson) — fallback Bible PP + Issurin + Bompa
-# Gap corpus : Ultimate MMA Conditioning indisponible — ne pas inventer une granularité Jamieson.
+# Matrice conditioning — Laursen & Buchheit (HIIT) + Bible PP + Issurin + Bompa
+# Mapping HIIT types (Laursen) : 1–2 ≈ aérobie O₂ (± neuro) · 3–4 ≈ O₂ + glycolyse · 5 ≈ glycolyse/neuro · 6 ≈ neuro seul
 
-version: 1
+version: 2
 status: validated
-updated: 2026-07-28
+updated: 2026-07-29
 sources:
+  - "Laursen & Buchheit — Science and Application of High-Intensity Interval Training"
   - "Reiss & Prévost — La bible de la préparation physique"
   - "Issurin — Block Periodization (aérobie tôt, spécificité tard)"
   - "Bompa — peaking / taper"
@@ -13,13 +14,16 @@ sources:
 athlete_rule: >
   Conditioning = maintien. Z2 fréquent (préférence). HI surtout en TRA/REAL.
   Ergos / WB / burpees déjà forts → ROI faible à pousser le HI en Accumulation.
+  Choisir une cible physiologique (Laursen) avant le format ; ne pas empiler
+  type 4/5 le même jour qu’une grosse force / dens gym.
 
 systems:
   z2:
     name: "Aérobie Z2"
-    intent: "Récup active, base, préférence athlète (Z2 > off)"
+    intent: "Récup active, base, préférence athlète (Z2 > off) — équivalent low-intensity continu (hors HIIT)"
     markers: "parole possible, RPE 3–5"
     when: "toute l’année, surtout Accumulation / TRANS"
+    laursen_note: "Complément obligatoire du HIIT ; pas un format HIIT"
     dose_cap:
       weekday_finisher_min: "8–15"
       dedicated_session_min: "30–60+"
@@ -28,9 +32,10 @@ systems:
 
   tempo_threshold:
     name: "Tempo / seuil"
-    intent: "Capacité continuum aéro-anaérobie sans glycolyse max"
+    intent: "Capacité continuum aéro-anaérobie sans glycolyse max (proche seuil / mild HIIT)"
     markers: "RPE 6–7, durées contrôlées"
     when: "fin Accumulation / début Transmutation, rare"
+    laursen_note: "Souvent short intervals submax / récup active → cible type 1–2"
     dose_cap:
       sessions_per_week_max: 1
       work_min: "12–25"
@@ -38,9 +43,10 @@ systems:
 
   glycolytic:
     name: "Glycolytique / mixed dur"
-    intent: "Spécificité CF sous acidose (couplets, chippers durs)"
+    intent: "Spécificité CF sous acidose (couplets, chippers durs, long/short intervals durs)"
     markers: "RPE 8–9, récup incomplète"
     when: "TRA-MIX, TRA-POW, REAL uniquement"
+    laursen_note: "Cibles type 3–5 ; long intervals ou short durs ; game-based / team compte ici"
     dose_cap:
       sessions_per_week_max: 2
       hard_minutes_week_max: 30
@@ -48,9 +54,10 @@ systems:
 
   alactic_power:
     name: "Alactique / puissance courte"
-    intent: "Puissance / densités très courtes (sprints ergo, complexes courts)"
+    intent: "Puissance / densités très courtes (sprints ergo, complexes courts, RST)"
     markers: "effort ≤ 15–20 s, repos long"
     when: "TRA-POW, REAL ; optionnel ACC-STR neural"
+    laursen_note: "Repeated short sprints / SIT dosé ; forte composante neuro (type 5–6)"
     dose_cap:
       sessions_per_week_max: 1
       total_work_sec_week: "60–120"

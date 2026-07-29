@@ -1,10 +1,8 @@
 # Arbitrages méthodologiques
 
-Décisions corpus **validées** avec l’athlète (2026-07-27) · ops pack (2026-07-28).  
+Décisions corpus **validées** avec l’athlète (2026-07-27) · ops pack (2026-07-28) · Laursen/Buchheit (2026-07-29).  
 Rôle : conflits **entre auteurs** + décision retenue.  
 Arbitrages coach / calendrier / feedback → `history/decisions.md` (ne pas tout dupliquer ici).
-
-**Encore ouvert** : conditioning fin si version texte Jamieson arrive (§6).
 
 ## 1. Structure de cycle : Issurin vs Bompa « traditionnel »
 - **Conflit** : Bompa/classique = développement concurrent de nombreuses qualités ; Issurin = blocs concentrés + résidus.
@@ -27,10 +25,10 @@ Arbitrages coach / calendrier / feedback → `history/decisions.md` (ne pas tout
 - **Décision** : progressions et volume **Low** (densité, EMOM skill, renfo) dans un meso dédié ; pas seulement « gym dans le WOD ».
 - **Pourquoi** : faiblesse principale = répétabilité gym.
 
-## 6. Conditioning : sans Jamieson
-- **Constat** : *Ultimate MMA Conditioning* indisponible en texte.
-- **Décision** : fallback **validé** via Bible PP + Bompa + Issurin + `conditioning-matrix.yaml` ; **ne pas sur-stimuler** (force de l’athlète).
-- **Réouverture** : si version texte Jamieson → ré-analyser energy systems et mettre à jour cette section + la matrice.
+## 6. Conditioning : Laursen & Buchheit vs « plus de HI = mieux »
+- **Conflit** : surcharger le glycolytique / hero WODs vs dose HIIT ciblée.
+- **Décision** : **Laursen & Buchheit pilote** energy systems / formats HIIT (`conditioning-matrix.yaml`) ; Bible PP = socle FR / variété ; Issurin/Bompa = placement Acc vs TRA/REAL. **Ne pas sur-stimuler** (conditioning déjà fort).
+- **Pourquoi** : cible physiologique avant format ; Z2 + HI placé > accumulation HI gratuite.
 
 ## 7. Mental
 - **Décision** : Encyclopédie mentale active surtout pré-comp / taper (routines, stress), pas au détriment du travail physique en Accumulation.

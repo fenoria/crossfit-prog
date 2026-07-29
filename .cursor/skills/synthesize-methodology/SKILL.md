@@ -22,4 +22,4 @@ Extraire le **meilleur** et le **plus pertinent/récent** du corpus `books/` pou
 
 ## Roles indicatifs
 - Structure : Issurin + Bompa · Dose : Israetel · Force spéciale : Verkhoshansky
-- Haltéro : Everett · Gym : Low · Conditioning : matrix + Bible PP (gap Jamieson)
+- Haltéro : Everett · Gym : Low · Conditioning : Laursen & Buchheit (+ Bible PP)
