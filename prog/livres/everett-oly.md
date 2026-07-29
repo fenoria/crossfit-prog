@@ -8,7 +8,7 @@ Guide complet pour athlètes et coaches : technique des olympiques, erreurs cour
 
 ## Vision globale
 
-L’haltéro, c’est **technique + force**, indissociables. On programme selon les points faibles (positions, pulls, réception, mobilité), pas seulement « snatch lourd le lundi ». Les variantes (power, hang, pulls) permettent de progresser **sans** maximiser la réception profonde à chaque séance — utile quand on dose l’exposition squat / lourde.
+L’haltéro, c’est **technique + force**, indissociables. La programmation suit les points faibles (positions, pulls, réception, mobilité), avec des variantes (power, hang, pulls) qui permettent de progresser en dosant l’exposition squat / lourde.
 
 ## Concepts essentiels
 
@@ -42,7 +42,7 @@ Fréquence, intensité, volume, accessoires, restauration. Le modèle « bulgare
 
 ## À retenir
 
-- Technique + force, pas l’un sans l’autre.
+- Technique + force, indissociables.
 - Variantes = outils, pas rétrogradations.
 - Modérer la fréquence et la profondeur selon le besoin.
 - Qualité des reps > kilos historiques.

@@ -40,7 +40,7 @@ Tester, comparer, ajuster — d’où l’intérêt d’une phase de calibration
 
 - Mesurer → prioriser → programmer.
 - Conditioning = dose selon diagnostic (souvent maintien en multi-domaines).
-- Socle FR utile, pas cookbook élite CF seul.
+- Socle francophone utile pour la préparation physique.
 - Z2 intelligent > repos par défaut.
 
 ## Applications pratiques

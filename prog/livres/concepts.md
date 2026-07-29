@@ -1,6 +1,6 @@
 # Concepts clés
 
-Schémas originaux qui résument les idées directrices du corpus — pas des copies des figures des livres. Cadre **pérenne** et **neutre** : pas d’exemple de saison particulière, pas de profil athlète implicite.
+Schémas originaux qui résument les idées directrices du corpus.
 
 <ul class="concept-legend">
   <li><i class="c-green"></i> Accumulation / dose utile</li>
@@ -12,7 +12,7 @@ Schémas originaux qui résument les idées directrices du corpus — pas des co
 
 ## Année multi-pics
 
-Cadre long (Bompa) : opportunités toute l’année → **2 ou 3 macros**, pas un seul peaking one-shot.
+Opportunités toute l’année → **2 ou 3 macros**, pas un seul peaking one-shot.
 
 <figure class="concept-figure">
   <img src="/concepts/annee-multi-pics.svg" alt="Année avec trois macrocycles et une transition" width="800" height="280" />
@@ -70,7 +70,7 @@ En cas de conflit entre auteurs, un **pilote** tranche — le soutien nuance, il
 
 <figure class="concept-figure">
   <img src="/concepts/roles-pilotes.svg" alt="Tableau des auteurs pilotes par question" width="800" height="320" />
-  <figcaption>Détail dans les [fiches livres](/livres/) — même logique que le tableau d’accueil Livres.</figcaption>
+  <figcaption>Répartition des auteurs pilotes selon la question traitée.</figcaption>
 </figure>
 
 ## Lire ensuite

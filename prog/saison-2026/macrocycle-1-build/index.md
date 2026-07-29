@@ -6,11 +6,11 @@
 
 Calibrer les charges → accumuler le volume gym → développer la force → convertir en mixed CrossFit → courte phase d’expression → transition.
 
-**Pourquoi gym avant force max** (cette saison) : la qualité limitante est la répétabilité gym, pas la force max — athlète déjà en forme cardio, on élève le plafond côté gymnastique.
+**Pourquoi gym avant force max** : la qualité limitante est la répétabilité gym, pas la force max — le plafond gymnastique passe en premier.
 
 <figure class="concept-figure">
   <img src="/saison-2026/macro1-build.svg" alt="Séquence Benchmarks Accumulation gym Accumulation force Conversion Affûtage Transition" width="800" height="240" />
-  <figcaption>Saison 2026 · Macro 1 — séquence d’instance (pas un concept générique).</figcaption>
+  <figcaption>Saison 2026 · Macro 1 — séquence du cycle.</figcaption>
 </figure>
 
 ## Mesos

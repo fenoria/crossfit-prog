@@ -1,10 +1,8 @@
 # Livres
 
-Douze ouvrages nourrissent la réflexion de planification. Pas besoin de les lire en entier : ces fiches résument la vision de chaque auteur, les idées clés, et **ce qui peut être retenu** pour structurer une progression.
+Douze ouvrages nourrissent la réflexion de planification. Ces fiches résument la vision de chaque auteur, les idées clés, et les principes utiles pour structurer une progression.
 
-Cadre **pérenne** : ces fiches présentent des principes transférables, pas l’exemple d’une saison particulière.
-
-**Vue visuelle** : [Concepts clés](/livres/concepts) — schémas (année, stages, dose, transfert, conditioning).
+**Schémas** : [Concepts clés](/livres/concepts) — année, stages, dose, transfert, conditioning.
 
 ## Qui pilote quoi ?
 
@@ -42,8 +40,8 @@ Cadre **pérenne** : ces fiches présentent des principes transférables, pas l�
 11. [Encyclopédie de la préparation mentale](encyclo-pm.md) — routines & stress pré-comp
 12. [Manuel ultime de musculation](manuel-muscu.md) — accessoires free-weight
 
-## Lien avec la planification
+## Utilité en planification
 
-La lecture du corpus aide à hiérarchiser les besoins, choisir l’ordre des blocs, doser le travail et situer les pics selon le calendrier compétitif.
+Ces fiches aident à hiérarchiser les besoins, choisir l’ordre des blocs, doser le travail et situer les pics selon le calendrier compétitif.
 
 **Règle d’or** : si la fatigue monte, on coupe le **volume**, pas l’intention du bloc.

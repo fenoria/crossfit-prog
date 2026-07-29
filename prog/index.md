@@ -2,7 +2,7 @@
 
 Cadre de planification pour le CrossFit compétition. Chaque cycle, meso et séance s’appuie sur un **corpus d’ouvrages de référence** (détail dans [Livres](/livres/)).
 
-Cette page résume **comment structurer une planification** : logique des blocs, dosage, transfert et progression. Le cadre reste volontairement pérenne, indépendant d’une saison précise ou d’un profil individuel.
+Cette page résume la logique des blocs, du dosage, du transfert et de la progression.
 
 ## Méthodologie — vision coach
 
@@ -139,11 +139,9 @@ Quand les auteurs divergent, un **pilote** tranche ; les autres soutiennent :
 - **Gym = Low** en meso dédié · **Oly = Everett** · **Force = Zatsiorsky + transfert Verkhoshansky**.
 - **Conditioning = Laursen & Buchheit** (cibles / formats) + Bible PP en socle.
 
-Processus : lecture ciblée → arbitrages → synthèse → traduction en arborescence Saison → Macro → Meso → Semaine.
-
 ---
 
-## Niveaux de lecture
+## Niveaux
 
 1. **Référentiel** — principes, concepts, auteurs  
 2. **Saison** — hiérarchie des besoins et calendrier  

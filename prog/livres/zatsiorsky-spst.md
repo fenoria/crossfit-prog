@@ -4,7 +4,7 @@
 
 ## L’auteur et le livre
 
-Référence académique / coaching sur l’entraînement de la force : intensité, volume, effort, méthodes (maximale, dynamique, hypertrophie), spécificité, périodisation. Peu de « recettes CrossFit » — on en tire un **cadre de principes**.
+Référence académique / coaching sur l’entraînement de la force : intensité, volume, effort, méthodes (maximale, dynamique, hypertrophie), spécificité, périodisation. Un **cadre de principes** particulièrement utile pour clarifier le travail de force en CrossFit.
 
 ## Vision globale
 
@@ -48,7 +48,7 @@ Une barre lourde mal faite n’entraîne pas le mouvement qu’on croit. Techniq
 - Clarifier intensité, effort, volume.
 - Choisir la méthode selon l’intention du meso.
 - Technique sous charge = non négociable.
-- Socle, pas cookbook CrossFit.
+- Socle scientifique pour la force.
 
 ## Applications pratiques
 

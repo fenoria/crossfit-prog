@@ -6,7 +6,7 @@
 
 Issurin est un méthodologiste issu de l’école soviétique, connu pour avoir formalisé la **périodisation par blocs** pour les athlètes d’élite. Le livre critique le modèle « traditionnel » (tout développer en parallèle) et propose une alternative : concentrer le travail sur peu de qualités à la fois, puis les enchaîner.
 
-Le contexte d’origine est souvent mono-sport (natation, kayak, cyclisme). On **traduit** la logique au CrossFit multi-domaines — on ne copie pas les tableaux sport par sport.
+Le contexte d’origine est souvent mono-sport (natation, kayak, cyclisme). La logique se transpose bien au CrossFit multi-domaines.
 
 ## Vision globale
 
@@ -48,7 +48,7 @@ Un mesocycle = une **priorité claire**. Le reste existe en **maintien** (assez 
 
 - Tableaux mono-sport tels quels.
 - L’idée que « blocs » = ignorer tout le reste : le **maintien** des autres qualités est obligatoire (sinon on perd ce qui a été construit).
-- Bompa « concurrent » comme excuse pour tout mélanger — Bompa cadre l’**année** ; Issurin cadre les **blocs**.
+- Bompa cadre l’**année** ; Issurin cadre les **blocs**.
 
 ## À retenir
 

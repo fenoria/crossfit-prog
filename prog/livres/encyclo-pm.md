@@ -4,7 +4,7 @@
 
 ## L’auteur et le livre
 
-Référentiel sur le mental du sportif : stress, routines, focus, incertitude du jour J. Complément utile en **pré-compétition / taper**, pas un substitut à la périodisation physique.
+Référentiel sur le mental du sportif : stress, routines, focus, incertitude du jour J. Apport surtout utile en **pré-compétition / taper**.
 
 ## Vision globale
 
@@ -15,9 +15,9 @@ S’entraîner dur ne suffit pas : le jour J, l’incertitude (workouts inconnus
 - Routines pré-comp (échauffement mental, focus, check-list).
 - Gestion du stress et de l’incertitude (typique CrossFit compétition).
 - Visualisation / réduction du bruit (nouveaux stimuli inutiles en taper).
-- Cohérence avec l’objectif « performer », pas seulement « encaisser ».
+- Cohérence avec l’objectif de performance.
 
-## Ce qu’on retient pour la prog
+## Ce qu’un coach peut retenir
 
 - Activer surtout en Affûtage / pré-comp / taper.
 - En Accumulation : le mental suit le travail physique (clarité d’intention de séance), sans modules longs.
@@ -32,8 +32,8 @@ S’entraîner dur ne suffit pas : le jour J, l’incertitude (workouts inconnus
 - Mental = phase, surtout près des pics.
 - Routines > motivation vague.
 - Réduire le bruit en taper.
-- Ne remplace pas Acc / Trans / Real physiques.
+- S’intègre surtout autour des phases physiques d’affûtage.
 
-## Où ça se voit
+## Applications pratiques
 
 Semaines d’affûtage et notes pré-comp quand un event approche ; moins présent en meso Benchmarks / Accumulation gym.

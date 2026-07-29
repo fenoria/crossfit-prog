@@ -2,9 +2,9 @@
 
 Plan annuel CrossFit élite : plusieurs pics dans l’année, avec des blocs à intention dominante (accumulation → conversion → expression).
 
-Cette page est l’**instance 2026** : priorités, créneaux et séquence des macros. Le cadre méthodo reste dans l’[accueil](/) et les [concepts](/livres/concepts).
+Saison 2026 : priorités, contraintes et séquence des macrocycles.
 
-## Contexte (cette saison)
+## Contexte
 
 - Niveau compétition · **qualité limitante = volume / répétabilité gym** · cardio déjà solide → **maintien**
 - Créneau type : lun–ven **12h–13h30** (~90 min) · samedi optionnel · dimanche souvent off
@@ -28,4 +28,4 @@ Cette page est l’**instance 2026** : priorités, créneaux et séquence des ma
 
 ## Lecture rapide
 
-1. Saison (ici) → 2. Macrocycle → 3. Meso → 4. Semaine (séances du jour)
+1. Saison → 2. Macrocycle → 3. Meso → 4. Semaine

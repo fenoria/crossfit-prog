@@ -6,7 +6,7 @@
 
 Steven Low (kiné) propose un système pour la force au poids du corps et la gymnastique de type calisthenics : progressions, volume, fréquence, gestion des tissus. Public large — du débutant à la planche avancée.
 
-Pour le CrossFit, on extrait le cadre **volume / progressions / récupération**, orienté transfert (BMU, RMU, HSPU, handstand walk…), pas la planche compétition.
+Pour le CrossFit, l’apport majeur concerne le **volume**, les **progressions** et la **récupération**, avec un bon transfert vers les BMU, RMU, HSPU et handstand walk.
 
 ## Vision globale
 
@@ -39,7 +39,7 @@ Priorité n°1 quand on monte le volume gym : tendons, épaules, coudes. La prog
 ## Ce qu’un coach peut retenir
 
 - **Low pilote les mesos Accumulation gym** : densité, EMOM techniques, renfo, ladder de skills.
-- Si la gym limite la performance → blocs dédiés, pas seulement gym « noyée » dans le WOD.
+- Si la gym limite la performance → blocs dédiés et progressions explicites.
 - Transfert CF : muscle-ups, HSPU, handstand, pulls/dips — pas des objectifs de force au poids de corps sans transfert compétitif.
 - Deload gym intégré aux mesos (Israetel × Low).
 

@@ -4,7 +4,7 @@
 
 ## L’auteur et le livre
 
-Référentiel large des moyens de préparation physique. Trop encyclopédique pour piloter une méthodo élite à lui seul — rôle **secondaire** : réservoir d’idées sous contrainte Issurin + Israetel.
+Référentiel large des moyens de préparation physique. Rôle **secondaire** : réservoir d’idées à filtrer sous contrainte Issurin + Israetel.
 
 ## Vision globale
 
@@ -14,7 +14,7 @@ Il existe beaucoup de façons de stimuler une qualité. L’encyclopédie aide �
 
 - Catalogue de moyens (force, énergie, mobilité, etc.).
 - Utile quand un stimulus stagne : alternative dans la même famille.
-- Ne remplace pas une hiérarchie de priorités.
+- À utiliser sur une hiérarchie de priorités déjà établie.
 
 ## Ce qu’un coach peut retenir
 
@@ -28,7 +28,7 @@ Il existe beaucoup de façons de stimuler une qualité. L’encyclopédie aide �
 
 ## À retenir
 
-- Réservoir, pas pilote.
+- Réservoir d’idées, en appui du cadre principal.
 - Varier sous contrainte > varier pour varier.
 - Box only.
 

@@ -4,7 +4,7 @@
 
 ## L’auteur et le livre
 
-Ouvrage issu de Renaissance Periodization (RP). Public d’origine : surtout force / powerlifting / hypertrophie. On garde les **principes de dose et de fatigue**, pas les splits « squat / bench / deadlift » ni les recettes PL.
+Ouvrage issu de Renaissance Periodization (RP), centré surtout sur la force, le powerlifting et l’hypertrophie. Les **principes de dose et de fatigue** se transfèrent bien au CrossFit.
 
 ## Vision globale
 
@@ -52,7 +52,7 @@ Varier assez pour ne pas stagner / se blesser, pas assez pour diluer l’adaptat
 ## À retenir
 
 - Zone utile entre « trop peu » et « trop ».
-- Deload = partie du plan, pas un aveu de faiblesse.
+- Deload = partie du plan.
 - Fatigue haute → −volume, intention du bloc conservée.
 - RPE = frein de sécurité au quotidien.
 

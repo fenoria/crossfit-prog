@@ -4,7 +4,7 @@
 
 ## L’auteur et le livre
 
-Manuel orienté hypertrophie / musculation classique. Utile comme **catalogue d’accessoires free-weight** (dos, épaules, tronc) — pas comme méthodo CrossFit élite.
+Manuel orienté hypertrophie / musculation classique. Apport utile comme **catalogue d’accessoires free-weight** (dos, épaules, tronc).
 
 ## Vision globale
 
@@ -29,10 +29,10 @@ Des muscles et tendons solides aident la gym et la barre. Mais le bodybuilding (
 
 ## À retenir
 
-- Secondaire et court.
+- Court et secondaire.
 - Au service de la gym et de la barre.
 - Box only.
-- Ne pilote jamais le cycle.
+- Appui ponctuel dans le cycle.
 
 ## Applications pratiques
 
