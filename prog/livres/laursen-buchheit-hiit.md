@@ -23,8 +23,8 @@ Dans une planification où le conditioning n’est pas la qualité prioritaire, 
 |--------|------|-------------------------|
 | Long intervals (~2–5 min) | Près de VO₂max, fort O₂ + glycolyse | Rare ; fin Acc / Trans |
 | Short intervals (10–60 s) | Le plus polyvalent | Ergos / mixed contrôlés en Trans |
-| Repeated short sprints | Très court, repos, neuro + alactique | TRA-POW / REAL |
-| Repeated long sprints / SIT | Plus glycolytique / neuromusculaire | REAL / mock, dosé |
+| Repeated short sprints | Très court, repos, neuro + alactique | Transmutation puissance / Réalisation |
+| Repeated long sprints / SIT | Plus glycolytique / neuromusculaire | Réalisation / mock, dosé |
 | Game-based | Spécificité fatigue + décisions | Team / mixed CF (compte dans le quota) |
 
 ### Cibles (types 1 → 6)

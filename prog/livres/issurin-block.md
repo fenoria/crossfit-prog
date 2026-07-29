@@ -16,13 +16,13 @@ La solution Issurin : des **blocs concentrés**, puis on compte sur les **effets
 
 ## Concepts essentiels
 
-### Accumulation → Transmutation → Realization
+### Accumulation → Transmutation → Réalisation
 
 Un « stage » typique (souvent 6–8 semaines, ajustable) :
 
 1. **Accumulation** — volume et capacités de base (aérobie, structure musculaire, technique en volume, gym…).
 2. **Transmutation** — on convertit ces bases vers le spécifique (intensité, densité, mixed sous fatigue).
-3. **Realization** — expression compétitive : volume ↓, précision ↑, fraîcheur nerveuse.
+3. **Réalisation** — expression compétitive : volume ↓, précision ↑, fraîcheur nerveuse.
 
 ### Effets résiduels
 

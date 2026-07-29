@@ -37,7 +37,7 @@ Chaque **macrocycle** suit la méthode Issurin :
 |-------|-----------|-------------------|
 | **Accumulation** | Volume / bases concentrées | Gym volume, force structurelle, technique Oly, Z2 |
 | **Transmutation** | Conversion vers le spécifique | Densité gym sous fatigue, puissance barre, formats combinés, HI dosé |
-| **Realization** | Expression + fraîcheur | Spécifique ↓ volume, tests proches de la compétition, taper court |
+| **Réalisation** | Expression + fraîcheur | Spécifique ↓ volume, tests proches de la compétition, taper court |
 
 **Résidus** :
 Les qualités à effet long (aérobie, structure) peuvent être développées plus tôt.
@@ -49,14 +49,14 @@ Un meso = **3–5 semaines** + deload, **une priorité claire**. Ces blocs se **
 
 | Bloc | Intention dominante | Quand |
 |------|---------------------|-------|
-| **Accumulation GPP** | Capacité de travail + Z2 + tissus | Reprise / base |
+| **Accumulation PPG** | Capacité de travail + Z2 + tissus | Reprise / base |
 | **Accumulation gym** | Volume, skill, densité gym | Qualité limitante ou reconstr. |
 | **Accumulation force** | Force max / structure | Selon hiérarchie des besoins |
 | **Accumulation oly** | Technique + power haltéro | Fréquence modérée |
 | **Transmutation mixed** | Gym + barre + ergo sous fatigue | Conversion compétition |
 | **Transmutation puissance** | Densité / bar cycling | Avant un pic |
-| **Realization** | Spécifique + peaking / taper | Autour d’un event |
-| **Transition** | Décharge, compensation, GPP léger | Entre macros / fin d’année |
+| **Réalisation** | Spécifique + peaking / taper | Autour d’un event |
+| **Transition** | Décharge, compensation, PPG légère | Entre macros / fin d’année |
 
 Pendant un meso focalisé, les autres qualités restent en **doses de maintien** (minima pour ne pas régresser).
 

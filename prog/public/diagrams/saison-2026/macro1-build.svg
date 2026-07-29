@@ -29,7 +29,7 @@
 
   <g transform="translate(400, 90)">
     <rect width="160" height="56" rx="8" fill="#b388ff"/>
-    <text class="s" x="80" y="24" text-anchor="middle">REAL Fire</text>
+    <text class="s" x="80" y="24" text-anchor="middle">Expression Fire</text>
     <text x="80" y="42" text-anchor="middle" font-family="DM Sans, system-ui, sans-serif" font-size="9" fill="#0b1426" opacity="0.75">7–13 sept.</text>
   </g>
   <polygon points="570,118 582,124 570,130" fill="#546e7a"/>

@@ -29,7 +29,7 @@ Tester, comparer, ajuster — d’où l’intérêt d’une phase de calibration
 - Socle conditioning FR (avec Bompa / Issurin et la matrice pilotée Laursen/Buchheit).
 - Selon le contexte, un travail aérobie léger peut utilement remplacer un repos complet.
 - Ne **pas** sur-stimuler une qualité déjà non limitante.
-- HI surtout en Transmutation / Realization, dosé.
+- HI surtout en Transmutation / Réalisation, dosé.
 
 ## Ce qu’on n’applique pas
 

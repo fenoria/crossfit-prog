@@ -12,7 +12,7 @@ Ancrer une phase d’expression sur le pic B (Bompa multi-pic). Fraîcheur, pas 
 
 ## Intention dominante
 
-**Type de bloc** : Realization (pic B)  
+**Type de bloc** : Réalisation (pic B)  
 **Stimulus** : volume bas, intensité utile, spécificité légère team mixte à 2 ; weekend compétition.  
 **Ce que ce n’est pas** : accumulation, deload « off » total, mock gratuit en plus de la compet.
 

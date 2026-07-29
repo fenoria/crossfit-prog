@@ -18,7 +18,7 @@ Il existe beaucoup de façons de stimuler une qualité. L’encyclopédie aide �
 
 ## Ce qu’un coach peut retenir
 
-- Inspiration ponctuelle (variantes d’ergo, renfo, GPP) quand le contexte le permet.
+- Inspiration ponctuelle (variantes d’ergo, renfo, PPG) quand le contexte le permet.
 - Toujours filtré par : intention du meso, dose Israetel, matériel disponible.
 
 ## Ce qu’on n’applique pas
@@ -34,4 +34,4 @@ Il existe beaucoup de façons de stimuler une qualité. L’encyclopédie aide �
 
 ## Applications pratiques
 
-Occasionnellement dans des accessoires, des variantes de GPP ou des phases de transition.
+Occasionnellement dans des accessoires, des variantes de PPG ou des phases de transition.

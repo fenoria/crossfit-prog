@@ -15,7 +15,7 @@
 
   <text class="l" x="160" y="88" font-size="12" text-anchor="middle" fill="#64ffda">Accumulation</text>
   <text class="l" x="400" y="88" font-size="12" text-anchor="middle" fill="#82b1ff">Transmutation</text>
-  <text class="l" x="640" y="88" font-size="12" text-anchor="middle" fill="#b388ff">Realization</text>
+  <text class="l" x="640" y="88" font-size="12" text-anchor="middle" fill="#b388ff">Réalisation</text>
 
   <text class="m" x="32" y="130" font-size="11">Z2</text>
   <rect x="80" y="112" width="160" height="32" rx="6" fill="#64ffda"/>
@@ -41,5 +41,5 @@
   <rect x="560" y="208" width="160" height="32" rx="6" fill="#b388ff"/>
   <text class="w" x="640" y="229" font-size="11" text-anchor="middle">spécificité dosée</text>
 
-  <text class="m" x="80" y="264" font-size="11">Cardio déjà fort → ROI faible à pousser le HI en Accumulation. Cap glycolytique : TRA/REAL.</text>
+  <text class="m" x="80" y="264" font-size="11">Cardio déjà fort → ROI faible à pousser le HI en Accumulation. Cap glycolytique : Transmutation / Réalisation.</text>
 </svg>

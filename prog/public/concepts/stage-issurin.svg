@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 260" role="img" aria-label="Stage Issurin Acc Trans Real">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 260" role="img" aria-label="Stage Issurin Acc Trans Réalisation">
   <defs>
     <style>
       .t { font-family: Syne, 'DM Sans', system-ui, sans-serif; fill: #e8f4fd; }
@@ -38,11 +38,11 @@
   <rect x="580" y="84" width="180" height="120" rx="10" fill="#1a2332" stroke="#b388ff" stroke-width="1.5"/>
   <rect x="580" y="84" width="180" height="28" rx="10" fill="#b388ff"/>
   <rect x="580" y="98" width="180" height="14" fill="#b388ff"/>
-  <text class="w" x="670" y="104" font-size="13" text-anchor="middle">REALIZATION</text>
+  <text class="w" x="670" y="104" font-size="13" text-anchor="middle">RÉALISATION</text>
   <text class="l" x="596" y="140" font-size="12">Expression</text>
   <text class="m" x="596" y="160" font-size="11">↓ volume · mocks</text>
   <text class="m" x="596" y="176" font-size="11">taper · fraîcheur</text>
   <text class="m" x="596" y="196" font-size="10">résidu court</text>
 
-  <text class="m" x="40" y="240" font-size="11">Un meso = 3-5 semaines + deload, une intention dominante (ACC-GYM, TRA-MIX, REAL...).</text>
+  <text class="m" x="40" y="240" font-size="11">Un meso = 3-5 semaines + deload, une intention dominante (accumulation gym, conversion mixed, réalisation…).</text>
 </svg>

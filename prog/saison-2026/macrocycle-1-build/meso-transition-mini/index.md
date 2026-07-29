@@ -12,7 +12,7 @@ Après un pic B, une courte décharge protège l’enchaînement vers Macro 2 (�
 ## Intention dominante
 
 **Type de bloc** : Transition  
-**Stimulus** : volume bas, GPP agréable, tissus / épaules, Z2 si créneau.  
+**Stimulus** : volume bas, PPG agréable, tissus / épaules, Z2 si créneau.  
 **Ce que ce n’est pas** : reprise force lourde, HI, tests.
 
 ## Apport
@@ -30,7 +30,7 @@ Après un pic B, une courte décharge protège l’enchaînement vers Macro 2 (�
 
 | Semaine | Focus | Contenu type |
 |---------|-------|--------------|
-| S07 (14–20 sept.) | Décharge | Volume −30 à −50 % vs Accumulation gym ; Z2 ; mobilité ; fun GPP léger |
+| S07 (14–20 sept.) | Décharge | Volume −30 à −50 % vs Accumulation gym ; Z2 ; mobilité ; fun PPG légère |
 
 ## Maintien (hors focus)
 

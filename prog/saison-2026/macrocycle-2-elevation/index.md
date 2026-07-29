@@ -5,7 +5,7 @@
 
 ## Intention
 
-Post-Fire : accumulation force structurelle → haltéro power / technique → conversion mixed. Pas de second taper A ici — la Realization majeure du semestre est le pic C en Macro 3.
+Post-Fire : accumulation force structurelle → haltéro power / technique → conversion mixed. Pas de second taper A ici — la réalisation majeure du semestre est le pic C en Macro 3.
 
 ## Mesos
 

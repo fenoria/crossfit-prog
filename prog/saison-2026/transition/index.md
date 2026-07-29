@@ -5,7 +5,7 @@
 
 ## Intention
 
-Après S7mbioz : décharge, compensation tissus / épaules, GPP agréable, Z2 si créneau. Protéger l’enchaînement vers 2027 (Battle of Normandy — 2ᵉ weekend de juillet, à confirmer).
+Après S7mbioz : décharge, compensation tissus / épaules, PPG agréable, Z2 si créneau. Protéger l’enchaînement vers 2027 (Battle of Normandy — 2ᵉ weekend de juillet, à confirmer).
 
 ## Contenu type
 

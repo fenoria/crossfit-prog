@@ -18,7 +18,7 @@ Bompa fournit le **cadre long** ; Issurin fournit la **concentration** à l’in
 
 - **Préparation** : bases et montée de capacité.
 - **Compétition** : expression, peaking, gestion de la fraîcheur.
-- **Transition** : décharge, compensation, GPP légère ou régénérative — pour enchaîner le macro suivant sans épuisement accumulé.
+- **Transition** : décharge, compensation, PPG légère ou régénérative — pour enchaîner le macro suivant sans épuisement accumulé.
 
 ### Peaking & taper
 

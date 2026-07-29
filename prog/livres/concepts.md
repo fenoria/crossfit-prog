@@ -5,7 +5,7 @@ Schémas originaux qui résument les idées directrices du corpus.
 <ul class="concept-legend">
   <li><i class="c-green"></i> Accumulation / dose utile</li>
   <li><i class="c-blue"></i> Transmutation / conversion</li>
-  <li><i class="c-purple"></i> Realization / pic</li>
+  <li><i class="c-purple"></i> Réalisation / pic</li>
   <li><i class="c-gold"></i> Deload / benchmarks</li>
   <li><i class="c-pink"></i> Intensité haute / plafond</li>
 </ul>
@@ -16,15 +16,15 @@ Opportunités toute l’année → **2 ou 3 macros**, pas un seul peaking one-sh
 
 <figure class="concept-figure">
   <img src="/concepts/annee-multi-pics.svg" alt="Année avec trois macrocycles et une transition" width="800" height="280" />
-  <figcaption><strong>Bompa</strong> — chaque pic s’ancre sur un REAL ; la transition protège l’enchaînement.</figcaption>
+  <figcaption><strong>Bompa</strong> — chaque pic s’ancre sur une réalisation ; la transition protège l’enchaînement.</figcaption>
 </figure>
 
-## Stage Acc → Trans → Real
+## Stage Acc → Trans → Réalisation
 
 À l’intérieur d’un macro, Issurin concentre **une intention** par phase. Les qualités à résidu court se placent près du pic, les qualités à résidu long plus tôt dans le cycle.
 
 <figure class="concept-figure">
-  <img src="/concepts/stage-issurin.svg" alt="Accumulation, Transmutation, Realization" width="800" height="260" />
+  <img src="/concepts/stage-issurin.svg" alt="Accumulation, Transmutation, Réalisation" width="800" height="260" />
   <figcaption><strong>Issurin</strong> — concentration + résidus. Les mésocycles déclinent ensuite ce canevas selon la qualité dominante recherchée.</figcaption>
 </figure>
 
@@ -52,7 +52,7 @@ La force et la gym ne comptent que si elles tiennent sous fatigue CrossFit.
 
 <figure class="concept-figure">
   <img src="/concepts/transfert-sst.svg" alt="Force gym Oly convergent vers conversion mixed puis affûtage" width="800" height="260" />
-  <figcaption><strong>Verkhoshansky</strong> (+ Zatsiorsky) — conversion en Transmutation, expression en Realization.</figcaption>
+  <figcaption><strong>Verkhoshansky</strong> (+ Zatsiorsky) — conversion en Transmutation, expression en Réalisation.</figcaption>
 </figure>
 
 ## Conditioning — où placer quoi
@@ -60,8 +60,8 @@ La force et la gym ne comptent que si elles tiennent sous fatigue CrossFit.
 Cible physiologique avant le format (Laursen & Buchheit). Le HI n’est pas une fin en soi : on le place là où il sert le stage.
 
 <figure class="concept-figure">
-  <img src="/concepts/conditioning-placement.svg" alt="Placement Z2 tempo et HI selon Acc Trans Real" width="800" height="280" />
-  <figcaption>Z2 utile toute l’année · HI / mixed dur surtout en Transmutation et Realization.</figcaption>
+  <img src="/concepts/conditioning-placement.svg" alt="Placement Z2 tempo et HI selon Acc Trans Réalisation" width="800" height="280" />
+  <figcaption>Z2 utile toute l’année · HI / mixed dur surtout en Transmutation et Réalisation.</figcaption>
 </figure>
 
 ## Qui pilote quoi ?

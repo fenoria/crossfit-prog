@@ -12,7 +12,7 @@ Pic C équipe de fin d’année : expression ancrée sur les dates confirmées. 
 
 ## Intention dominante
 
-**Type de bloc** : Realization (pic C)  
+**Type de bloc** : Réalisation (pic C)  
 **Stimulus** : volume bas, ouvertures, spécificité légère ; weekend compétition 12–13 déc.  
 **Ce que ce n’est pas** : accumulation, tests max inutiles, HI hors compet.
 
