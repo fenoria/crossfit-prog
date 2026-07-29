@@ -45,6 +45,10 @@ function sortEntries(names: string[]): string[] {
   return names.sort((a, b) => {
     if (a === 'index.md') return -1
     if (b === 'index.md') return 1
+    // macrocycle-01 before macrocycle-02…
+    const ac = a.match(/^macrocycle-(\d+)/i)
+    const bc = b.match(/^macrocycle-(\d+)/i)
+    if (ac && bc) return Number(ac[1]) - Number(bc[1])
     // meso-01 before meso-02…
     const am = a.match(/^meso-(\d+)/i)
     const bm = b.match(/^meso-(\d+)/i)

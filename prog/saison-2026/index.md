@@ -18,9 +18,9 @@ Plan annuel CrossFit élite à **plusieurs pics**, calé sur le calendrier comp�
 
 | Macrocycle | Fenêtre | Pic / rôle | Statut |
 |------------|---------|------------|--------|
-| [Macrocycle 1 — Build → Fire](macrocycle-1-build/index.md) | 3 août – 20 sept. | Pic B Fire Contest | en cours |
-| [Macrocycle 2 — Élévation](macrocycle-2-elevation/index.md) | 21 sept. – 15 nov. | Plafond force / haltéro / mixed | à venir |
-| [Macrocycle 3 — Spécifique S7mbioz](macrocycle-3-specifique/index.md) | 16 nov. – 13 déc. | Pic C équipe | à venir |
+| [Macrocycle 1 — Build → Fire](macrocycle-01-build/index.md) | 3 août – 20 sept. | Pic B Fire Contest | en cours |
+| [Macrocycle 2 — Élévation](macrocycle-02-elevation/index.md) | 21 sept. – 15 nov. | Plafond force / haltéro / mixed | à venir |
+| [Macrocycle 3 — Spécifique S7mbioz](macrocycle-03-specifique/index.md) | 16 nov. – 13 déc. | Pic C équipe | à venir |
 | [Transition](transition/index.md) | dès 14 déc. (~2–3 sem.) | Décharge fin d’année | à venir |
 
 <figure class="concept-figure">
