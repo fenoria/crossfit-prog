@@ -1,4 +1,4 @@
-# Meso — Transition mini (post Fire)
+# Meso — Transition (post Fire)
 
 <!-- Coach : code TRANS -->
 
