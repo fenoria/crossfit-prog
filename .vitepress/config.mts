@@ -171,7 +171,8 @@ export default defineConfig({
   cleanUrls: true,
   appearance: 'dark',
   themeConfig: {
-    logo: { src: asset('/logo.svg'), alt: 'Prog CrossFit' },
+    // VitePress prefixes `themeConfig.logo` with `base` automatically.
+    logo: { src: '/logo.svg', alt: 'Prog CrossFit' },
     siteTitle: 'Prog CrossFit',
     nav: [
       { text: 'Accueil', link: '/' },
