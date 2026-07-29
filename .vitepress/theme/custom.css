@@ -119,6 +119,17 @@
   backdrop-filter: blur(12px);
 }
 
+/*
+ * VitePress met le fond nav sur `.content-body` seulement, et ajoute un
+ * padding-right sur `.content` (≥1440px) → bande transparente à droite.
+ * On peint toute la barre pour couvrir la largeur.
+ */
+@media (min-width: 960px) {
+  .VPNavBar.has-sidebar:not(.home) {
+    background-color: var(--vp-nav-bg-color);
+  }
+}
+
 .dark body {
   background-color: var(--arctic-night);
   background-image:

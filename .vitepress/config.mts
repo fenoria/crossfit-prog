@@ -43,16 +43,28 @@ function sortEntries(names: string[]): string[] {
   })
 }
 
-function loadCurrentWeekLink(): string {
+function loadCurrent(): { week: string; season: string | null } {
+  const fallbackWeek = defaultSeasonLink()
   const currentPath = join(rootDir, 'current.json')
-  const fallback = defaultSeasonLink()
-  if (!existsSync(currentPath)) return fallback
+  if (!existsSync(currentPath)) {
+    return { week: fallbackWeek, season: seasonFromLink(fallbackWeek) }
+  }
   try {
     const data = JSON.parse(readFileSync(currentPath, 'utf8')) as { week?: string }
-    return data.week || fallback
+    const week = data.week || fallbackWeek
+    return { week, season: seasonFromLink(week) }
   } catch {
-    return fallback
+    return { week: fallbackWeek, season: seasonFromLink(fallbackWeek) }
   }
+}
+
+function seasonFromLink(link: string): string | null {
+  const match = link.match(/\/?(saison-\d{4})\b/)
+  return match ? match[1] : null
+}
+
+function loadCurrentWeekLink(): string {
+  return loadCurrent().week
 }
 
 function seasonDirsNewestFirst(): string[] {
@@ -89,7 +101,7 @@ function buildDirItems(dir: string): DefaultTheme.SidebarItem[] {
         : []
       items.push({
         text,
-        collapsed: false,
+        collapsed: true,
         items: [...overview, ...childItems],
       })
       continue
@@ -105,7 +117,7 @@ function buildDirItems(dir: string): DefaultTheme.SidebarItem[] {
   return items
 }
 
-function buildSeasonItems(): DefaultTheme.SidebarItem[] {
+function buildSeasonItems(currentSeason: string | null): DefaultTheme.SidebarItem[] {
   if (!existsSync(progDir)) return []
   return seasonDirsNewestFirst()
     .flatMap((name) => {
@@ -119,26 +131,38 @@ function buildSeasonItems(): DefaultTheme.SidebarItem[] {
       return [
         {
           text,
-          collapsed: false,
+          // Seule la saison « En cours » (current.json) reste ouverte
+          collapsed: name !== currentSeason,
           items: [...overview, ...buildDirItems(abs)],
         },
       ]
     })
 }
 
+const current = loadCurrent()
 const livresDir = join(progDir, 'livres')
 const saisonsHub = join(progDir, 'saisons', 'index.md')
 
 const sidebarItems: DefaultTheme.SidebarItem[] = [
   { text: 'Accueil', link: '/' },
   {
-    text: 'Référentiel',
+    text: 'Saisons',
     collapsed: false,
+    items: [
+      ...(existsSync(saisonsHub)
+        ? [{ text: 'Hub saisons', link: '/saisons/' }]
+        : []),
+      ...buildSeasonItems(current.season),
+    ],
+  },
+  {
+    text: 'Référentiel',
+    collapsed: true,
     items: [
       { text: 'Concepts', link: '/livres/concepts' },
       {
         text: 'Livres',
-        collapsed: false,
+        collapsed: true,
         items: [
           ...(existsSync(join(livresDir, 'index.md'))
             ? [{ text: 'Vue d’ensemble', link: '/livres/' }]
@@ -148,16 +172,6 @@ const sidebarItems: DefaultTheme.SidebarItem[] = [
           ),
         ],
       },
-    ],
-  },
-  {
-    text: 'Saisons',
-    collapsed: false,
-    items: [
-      ...(existsSync(saisonsHub)
-        ? [{ text: 'Hub saisons', link: '/saisons/' }]
-        : []),
-      ...buildSeasonItems(),
     ],
   },
 ]
