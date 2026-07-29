@@ -14,6 +14,7 @@
     "lint:prog": "python3 scripts/lint-prog.py"
   },
   "devDependencies": {
+    "@types/node": "^26.1.2",
     "vitepress": "^1.6.3"
   }
 }

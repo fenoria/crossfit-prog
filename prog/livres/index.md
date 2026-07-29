@@ -4,7 +4,7 @@ Douze ouvrages nourrissent la programmation. Pas besoin de les lire en entier : 
 
 Cadre **pérenne** — les priorités d’une année se lisent dans les [Saisons](/saisons/), pas ici.
 
-**Vue visuelle** : [Concepts clés](concepts.md) — schémas (année, stages, dose, transfert, conditioning).
+**Vue visuelle** : [Concepts clés](/livres/concepts) — schémas (année, stages, dose, transfert, conditioning).
 
 ## Qui pilote quoi ?
 

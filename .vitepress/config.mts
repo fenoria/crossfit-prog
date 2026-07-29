@@ -55,13 +55,16 @@ function loadCurrentWeekLink(): string {
   }
 }
 
-function defaultSeasonLink(): string {
-  if (!existsSync(progDir)) return '/saisons/'
-  const seasons = readdirSync(progDir)
+function seasonDirsNewestFirst(): string[] {
+  if (!existsSync(progDir)) return []
+  return readdirSync(progDir)
     .filter((name: string) => name.startsWith('saison-'))
     .filter((name: string) => statSync(join(progDir, name)).isDirectory())
     .sort((a: string, b: string) => b.localeCompare(a, 'fr'))
+}
 
+function defaultSeasonLink(): string {
+  const seasons = seasonDirsNewestFirst()
   if (seasons.length === 0) return '/saisons/'
   return `/${seasons[0]}/`
 }
@@ -104,8 +107,7 @@ function buildDirItems(dir: string): DefaultTheme.SidebarItem[] {
 
 function buildSeasonItems(): DefaultTheme.SidebarItem[] {
   if (!existsSync(progDir)) return []
-  return sortEntries(readdirSync(progDir))
-    .filter((name) => name.startsWith('saison-'))
+  return seasonDirsNewestFirst()
     .flatMap((name) => {
       const abs = join(progDir, name)
       if (!statSync(abs).isDirectory()) return []
