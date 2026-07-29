@@ -9,7 +9,6 @@ Programmation CrossFit élite — **source de vérité = [`prog/`](prog/)** (Mar
 | Connaissance | [`knowledge/`](knowledge/) (+ [`books/`](books/) brut) |
 | Instance | [`athlete/profile.yaml`](athlete/profile.yaml) |
 | Séances | [`prog/`](prog/) — **SoT programmation** |
-| Mémoire | [`history/decisions.md`](history/decisions.md) |
 | Site | **VitePress** → GitHub Pages |
 | En cours | [`.vitepress/current.json`](.vitepress/current.json) |
 
@@ -43,5 +42,5 @@ npm run lint:prog    # garde-fou structure prog/
 ## Coaching
 
 Feedback séance → blocs **Notes / feedback** (un jour = un titre) dans la semaine `prog/` + éventuellement `.vitepress/current.json`.  
-Décisions durables : [`history/decisions.md`](history/decisions.md).  
+Décisions durables : [`athlete/profile.yaml`](athlete/profile.yaml) · conflits corpus : [`knowledge/arbitrages.md`](knowledge/arbitrages.md).  
 Ops pack : `knowledge/maintenance-doses.yaml`, `meso-gates.yaml`, `gym-ladder.md`, etc. · lint : `npm run lint:prog`

@@ -10,7 +10,7 @@ alwaysApply: true
 - Templates : [`prog/_templates/semaine.md`](prog/_templates/semaine.md) · [`meso.md`](prog/_templates/meso.md)
 - Site VitePress généré **depuis `prog/`** ; `.vitepress/current.json` = « En cours ».
 - Connaissance / méthodo : `knowledge/` (voir rule SoT connaissance).
-- Décisions durables : `history/decisions.md` + `athlete/profile.yaml`.
+- Décisions durables : `athlete/profile.yaml` + rules ; conflits corpus → `knowledge/arbitrages.md`.
 - Nettoyer fichiers obsolètes quand la structure évolue.
 
 ## Langage athlète (site visible)

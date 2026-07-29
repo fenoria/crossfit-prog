@@ -9,9 +9,8 @@ Couches (qui gagne en conflit) :
 
 1. **`athlete/profile.yaml`** — instance athlète (charges, volumes, douleur, planning)
 2. **`prog/`** — séances exécutées (ce que l’athlète fait)
-3. **`knowledge/`** — méthodo + ops pack validés
+3. **`knowledge/`** — méthodo + ops pack + arbitrages corpus
 4. **`books/`** — corpus brut (jamais citer contre une méthodo `validated` sans arbitrage)
-5. **`history/decisions.md`** — mémoire des arbitrages coach
 
 - Toute génération de séances s’appuie sur `knowledge/methodology.md` (**validated**) + ops pack.
 - Ne pas inventer une méthodo hors corpus sans le signaler.

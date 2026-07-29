@@ -13,4 +13,4 @@ description: Propose et enregistre une batterie de benchmarks pour calibrer les 
    - `gym_ladder_level` (`knowledge/gym-ladder.md`)
    - `volumes.*` MEV de départ (instance) ; bornes dans `volume-landmarks.yaml`
 5. Vérifier gate `benchmarks_to_ACC_GYM` (`knowledge/meso-gates.yaml`).
-6. Noter dans `history/decisions.md` et expliquer le recalibrage des %.
+6. Expliquer le recalibrage des % (charges actuelles = SoT).

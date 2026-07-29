@@ -24,5 +24,5 @@ description: Génère saison/macro/meso/semaines en Markdown sous prog/, uniquem
 4. Samedi = optionnel (décider à l’écriture / J-1 selon dispo).
 5. Microcycle Israetel : volume → surcharge → pic → deload.
 6. Mettre à jour index + `.vitepress/current.json`.
-7. Noter arbitrages dans `history/decisions.md`.
+7. Arbitrage durable → `athlete/profile.yaml` (ou `knowledge/arbitrages.md` si conflit corpus).
 8. **Obligatoire** : `npm run lint:prog` — zéro ERROR.

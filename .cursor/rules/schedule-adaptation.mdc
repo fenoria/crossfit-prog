@@ -20,7 +20,7 @@ alwaysApply: true
 
 ## Adaptations
 - Weekends / vacances / contraintes ponctuelles : adapter jours/volume/intensité
-- Préserver l’intention du meso ; documenter dans `history/decisions.md`
+- Préserver l’intention du meso ; contrainte durable → `athlete/profile.yaml` (ou rule planning)
 - Contraintes durables → `athlete/profile.yaml`
 - Samedi : décider à l’écriture de la semaine ou J-1 selon dispo — section optionnelle dans le fichier semaine
 - Team WOD RPE ≥ 8 → −volume le lendemain

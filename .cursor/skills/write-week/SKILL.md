@@ -39,7 +39,7 @@ Sidebar VitePress = **auto** (arborescence `prog/`).
 ## Immutabilité (semaine commencée / passée)
 - **Ne jamais** modifier le contenu prescrit des séances d’une semaine déjà commencée ou passée.
 - Mise en forme OK (sans changer le sens) ; blocs Notes / feedback OK.
-- Toute adaptation → semaine(s) suivante(s) uniquement + `history/decisions.md` si durable.
+- Toute adaptation → semaine(s) suivante(s) uniquement (+ `athlete/profile.yaml` si durable).
 
 ## Steps
 1. Assurer les `index.md` Saison / Macro / Meso (meso depuis template meso).
@@ -47,11 +47,11 @@ Sidebar VitePress = **auto** (arborescence `prog/`).
    - Pourquoi / intention / apport / suite · Fondements 1–3 refs (auteur + titre)
    - Commentaires pattern + warmup sur chaque jour actif
    - **Échauffement** détaillé + **Séance** numérotée
-   - Hors pattern → `history/decisions.md`
+   - Hors pattern → justifier dans Notes de la semaine (+ profile si durable)
    - Maintien du code meso respecté (formulé en français)
    - Lun–Ven ≤90 min ; Mercredi team ou Z2 ; Samedi optionnel ; Dim off/Z2
    - Blocs **Notes / feedback** (un `###` par jour, pas de tableau)
 3. Mettre à jour l’index du meso si besoin.
 4. Mettre à jour [`.vitepress/current.json`](.vitepress/current.json).
-5. Entrée `history/decisions.md` si arbitrage.
+5. Arbitrage durable → `athlete/profile.yaml` (ou `knowledge/arbitrages.md` si conflit corpus).
 6. **Obligatoire** : `npm run lint:prog` — corriger toute ERROR avant de conclure.

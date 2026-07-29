@@ -2,7 +2,7 @@
 
 Décisions corpus **validées** avec l’athlète (2026-07-27) · ops pack (2026-07-28) · Laursen/Buchheit (2026-07-29).  
 Rôle : conflits **entre auteurs** + décision retenue.  
-Arbitrages coach / calendrier / feedback → `history/decisions.md` (ne pas tout dupliquer ici).
+Contraintes athlète / calendrier / feedback durable → `athlete/profile.yaml` (ne pas tout dupliquer ici).
 
 ## 1. Structure de cycle : Issurin vs Bompa « traditionnel »
 - **Conflit** : Bompa/classique = développement concurrent de nombreuses qualités ; Issurin = blocs concentrés + résidus.

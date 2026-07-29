@@ -1,7 +1,7 @@
 # Critères de sortie / gates de meso
 # Scope actuel : chemin Macro 1 (benchmarks → ACC-GYM → ACC-STR → TRA-MIX → REAL → Macro2).
 # Autres meso_types (ACC-GPP, ACC-OLY, TRA-POW, TRANS) : pas de gate YAML —
-# passage via history/decisions.md jusqu’à Macro 2+.
+# passage via Notes meso + profile jusqu’à Macro 2+.
 # Ne pas enchaîner au calendrier seul : vérifier gates + fatigue (+ douleur seulement si signalée).
 # Code canonique REAL (label « REAL mini » = même code, durée courte).
 
@@ -69,7 +69,7 @@ gates:
     to: TRANS_or_Macro2
     required:
       - "mock / test weekend fait ou documenté skip"
-      - "notes peaking (ce qui a marché) dans history/decisions.md"
+      - "notes peaking (ce qui a marché) dans Notes meso (`prog/`)"
       - "calendrier Macro 2 intention définie (même sans A-event)"
 
 retest_policy:

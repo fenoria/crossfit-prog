@@ -4,10 +4,9 @@ updated: 2026-07-29
 validated_on: 2026-07-27
 # md = narratif athlète ; yaml = contrat machine — garder meso_types / order / status sync
 source_of_truth:
-  knowledge: "knowledge/ (méthodo + ops) — books/ = brut"
-  athlete: "athlete/profile.yaml — instance (charges, volumes, douleur)"
+  knowledge: "knowledge/ (méthodo + ops + arbitrages) — books/ = brut"
+  athlete: "athlete/profile.yaml — instance (charges, volumes, douleur, planning)"
   prog: "prog/ — séances exécutées"
-  history: "history/decisions.md — arbitrages coach"
 pilots:
   structure: issurin
   dosing: israetel
