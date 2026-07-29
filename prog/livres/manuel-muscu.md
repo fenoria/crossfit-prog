@@ -8,7 +8,7 @@ Manuel orienté hypertrophie / musculation classique. Utile comme **catalogue d�
 
 ## Vision globale
 
-Des muscles et tendons solides aident la gym et la barre. Mais le bodybuilding (splits, machines, volume d’isolation massif) n’est **pas** l’objectif : on prend des idées d’accessoires courts, compatibles box et créneau 90 min.
+Des muscles et tendons solides aident la gym et la barre. Mais le bodybuilding (splits, machines, volume d’isolation massif) n’est **pas** l’objectif : on prend des idées d’accessoires courts, compatibles box et séances chronométrées.
 
 ## Concepts essentiels
 

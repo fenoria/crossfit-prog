@@ -1,6 +1,6 @@
 # Concepts clés
 
-Schémas originaux qui résument ce que la prog **retient** du corpus — pas des copies des figures des livres. Charte alignée sur le site (Aurora).
+Schémas originaux qui résument ce que la méthodo **retient** du corpus — pas des copies des figures des livres. Cadre **pérenne** (valable d’une saison à l’autre) et **neutre** : pas de calendrier d’année, pas de priorité athlète.
 
 <ul class="concept-legend">
   <li><i class="c-green"></i> Accumulation / dose utile</li>
@@ -25,16 +25,7 @@ Cadre long (Bompa) : opportunités toute l’année → **2 ou 3 macros**, pas u
 
 <figure class="concept-figure">
   <img src="/concepts/stage-issurin.svg" alt="Accumulation, Transmutation, Realization" width="800" height="260" />
-  <figcaption><strong>Issurin</strong> — concentration + résidus. Les mesos (ACC-GYM, TRA-MIX, REAL…) répètent ce canevas.</figcaption>
-</figure>
-
-## Macro 1 — Build
-
-Exception documentée : la gym passe avant la force max, parce que c’est la qualité limitante — athlète déjà en forme, on élève le plafond.
-
-<figure class="concept-figure">
-  <img src="/concepts/macro1-build.svg" alt="Séquence Benchmarks ACC-GYM ACC-STR TRA-MIX REAL TRANS" width="800" height="240" />
-  <figcaption>Saison 2026 · Macro 1 — voir aussi la [Saison 2026](/saison-2026/).</figcaption>
+  <figcaption><strong>Issurin</strong> — concentration + résidus. Les mesos (Accumulation gym, Conversion mixed, Affûtage…) répètent ce canevas.</figcaption>
 </figure>
 
 ## Dose MEV · MAV · MRV
@@ -60,17 +51,17 @@ Modulation courte à l’intérieur d’un meso concentré.
 La force et la gym ne comptent que si elles tiennent sous fatigue CrossFit.
 
 <figure class="concept-figure">
-  <img src="/concepts/transfert-sst.svg" alt="Force gym Oly convergis vers TRA-MIX puis REAL" width="800" height="260" />
-  <figcaption><strong>Verkhoshansky</strong> (+ Zatsiorsky) — conversion en TRA-MIX, expression en REAL.</figcaption>
+  <img src="/concepts/transfert-sst.svg" alt="Force gym Oly convergis vers conversion mixed puis affûtage" width="800" height="260" />
+  <figcaption><strong>Verkhoshansky</strong> (+ Zatsiorsky) — conversion en Transmutation, expression en Realization.</figcaption>
 </figure>
 
 ## Conditioning — où placer quoi
 
-Maintien, pas « plus de HI = mieux ». Cible physiologique avant le format (Laursen & Buchheit).
+Cible physiologique avant le format (Laursen & Buchheit). Le HI n’est pas une fin en soi : on le place là où il sert le stage.
 
 <figure class="concept-figure">
   <img src="/concepts/conditioning-placement.svg" alt="Placement Z2 tempo et HI selon Acc Trans Real" width="800" height="280" />
-  <figcaption>Z2 fréquent toute l’année · HI / mixed dur surtout en TRA et REAL.</figcaption>
+  <figcaption>Z2 utile toute l’année · HI / mixed dur surtout en Transmutation et Realization.</figcaption>
 </figure>
 
 ## Qui pilote quoi ?
@@ -85,5 +76,5 @@ En cas de conflit entre auteurs, un **pilote** tranche — le soutien nuance, il
 ## Lire ensuite
 
 - [Fiches livres](/livres/) — vision de chaque auteur + retenu vs écarté
-- [Saison 2026](/saison-2026/) — où ces schémas se voient dans le calendrier
+- [Saisons](/saisons/) — calendriers, priorités et séquences d’instance (année par année)
 - Règle d’or : si la fatigue monte, on coupe le **volume**, pas l’intention du bloc

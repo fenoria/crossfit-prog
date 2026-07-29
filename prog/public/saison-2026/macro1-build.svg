@@ -10,8 +10,8 @@
   </defs>
   <rect width="800" height="240" rx="8" fill="#0b1426"/>
 
-  <text class="t" x="32" y="36" font-size="18" font-weight="700">Macro 1 — Build (dès août 2026)</text>
-  <text class="m" x="32" y="56" font-size="12">Élever le plafond : Accumulation gym avant AA force (qualité limitante)</text>
+  <text class="t" x="32" y="36" font-size="18" font-weight="700">Saison 2026 · Macro 1 — Build</text>
+  <text class="m" x="32" y="56" font-size="12">Instance : Accumulation gym avant Accumulation force (qualité limitante)</text>
 
   <g transform="translate(28, 90)">
     <rect width="100" height="56" rx="8" fill="#1a2332" stroke="#ffe082" stroke-width="1.5"/>

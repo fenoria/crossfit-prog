@@ -2,12 +2,16 @@
 
 Plan annuel CrossFit élite : plusieurs pics dans l’année, avec des blocs à intention dominante (accumulation → conversion → expression).
 
-## Contexte
+Cette page est l’**instance 2026** : priorités, créneaux et séquence des macros. Le cadre méthodo reste dans l’[accueil](/) et les [concepts](/livres/concepts).
 
-- Athlète : niveau compétition · priorité **volume gym** · cardio déjà solide (on le maintient)
+## Contexte (cette saison)
+
+- Niveau compétition · **qualité limitante = volume / répétabilité gym** · cardio déjà solide → **maintien**
 - Créneau type : lun–ven **12h–13h30** (~90 min) · samedi optionnel · dimanche souvent off
 - Matériel : box CrossFit uniquement (pas de machines guidées)
-- Charges : basées sur les benchmarks actuels (pas d’anciens records)
+- Charges : benchmarks **actuels** (pas d’anciens records)
+- Haltéro : power / pulls prioritaires ; squat snatch / clean lourds rares et contrôlés
+- Douleur signalée → adaptation (pas de score quotidien demandé)
 
 ## Intention long terme
 

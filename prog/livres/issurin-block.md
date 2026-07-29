@@ -41,7 +41,7 @@ Un mesocycle = une **priorité claire**. Le reste existe en **maintien** (assez 
 
 - **Issurin pilote la séquence des mesos** : pas six qualités à fond chaque semaine.
 - Macrocycle 1 (Build) : Benchmarks → Accumulation **gym** → Accumulation force → Transmutation mixed → Affûtage court → Transition.
-- Compatible créneau 90 min : on concentre le midi sur l’intention du bloc.
+- Compatible agenda serré : on concentre la séance sur l’intention du bloc.
 - Le samedi optionnel sert souvent de volume « luxe » sans casser la logique du meso.
 
 ## Ce qu’on n’applique pas
@@ -59,4 +59,4 @@ Un mesocycle = une **priorité claire**. Le reste existe en **maintien** (assez 
 
 ## Où ça se voit
 
-Toute la [Saison 2026](/saison-2026/) : chaque meso a un pourquoi et une intention. Les semaines « Fondements (corpus) » citent souvent Issurin quand on justifie un bloc concentré.
+Chaque meso d’une [saison](/saisons/) porte un pourquoi et une intention. Les semaines « Fondements (corpus) » citent souvent Issurin quand on justifie un bloc concentré.

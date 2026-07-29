@@ -13,6 +13,20 @@ alwaysApply: true
 - Décisions durables : `athlete/profile.yaml` + rules ; conflits corpus → `knowledge/arbitrages.md`.
 - Nettoyer fichiers obsolètes quand la structure évolue.
 
+## Cloisonnement référentiel vs saisons
+
+Deux zones distinctes sur le site (et dans `prog/`) :
+
+| Zone | Contenu | Exemples | Contraintes |
+|------|---------|----------|-------------|
+| **Référentiel** | Méthodo, concepts, fiches livres | `prog/index.md`, `prog/livres/`, `prog/public/concepts/` | **Pérenne** (2026, 2027…) et **neutre profil** — pas de calendrier d’année, pas de qualité limitante / créneau / blessure / priorité athlète |
+| **Saisons** | Instance année | `prog/saisons/`, `prog/saison-YYYY/`, `prog/public/saison-YYYY/` | Priorités, créneaux, séquence des macros, schémas d’instance |
+
+- Concepts / livres / accueil méthodo → formuler de façon **générale** (« selon la qualité limitante », « selon le diagnostic de saison »).
+- Détail athlète / année → uniquement sous `saison-YYYY/` (et profile hors site).
+- Lien croisé OK : référentiel → hub [Saisons](/saisons/) ; saison → concepts / méthodo.
+- Nouvelle saison = nouveau dossier `saison-YYYY/` ; ne pas réécrire le référentiel pour coller à l’année.
+
 ## Langage athlète (site visible)
 
 - `prog/` hors commentaires HTML = **lisible à la box et partageable** (collègue / coach sans questions).

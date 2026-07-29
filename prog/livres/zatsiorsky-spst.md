@@ -35,7 +35,7 @@ Une barre lourde mal faite n’entraîne pas le mouvement qu’on croit. Techniq
 ## Ce qu’on retient pour la prog
 
 - Cadre pour squat / hinge / push / pull en Accumulation force.
-- Pas de chasse aux PRs pré-blessure ; charges actuelles + RPE.
+- Pas de chasse aux records anciens ; charges actuelles + RPE.
 - Combine avec Israetel (dose) et Verkhoshansky (transfert vers mixed).
 
 ## Ce qu’on n’applique pas

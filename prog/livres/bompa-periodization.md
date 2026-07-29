@@ -30,7 +30,7 @@ Unités de planification : le meso porte une intention ; le micro (semaine) modu
 
 ### Séquence force classique
 
-Anatomical adaptation → max strength → conversion. **Exception Macro 1 Build** ici : l’Accumulation **gym** passe avant l’AA force pure, parce que la gym est la qualité limitante.
+Anatomical adaptation → max strength → conversion. L’ordre réel des Accumulations suit la **qualité limitante** de la saison (gym, force, oly…) — pas un ordre unique figé.
 
 ## Ce qu’on retient pour la prog
 
@@ -50,8 +50,8 @@ Anatomical adaptation → max strength → conversion. **Exception Macro 1 Build
 - Bompa = carte de l’année ; Issurin = zoom sur les blocs.
 - Multi-pics > mono-pic pour le CF compétition.
 - Taper et transition sont des phases, pas des improvisations.
-- Exception post-blessure : gym avant force max.
+- Hiérarchie des besoins → ordre des Accumulations.
 
 ## Où ça se voit
 
-Structure [Saison 2026](/saison-2026/) en macros ; phase Transition en fin de Macro 1 ; peaking sur le meso d’affûtage.
+Structure d’une [saison](/saisons/) en macros ; phases Transition et peaking (Realization) selon le calendrier.

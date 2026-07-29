@@ -8,7 +8,7 @@ Guide complet pour athlètes et coaches : technique des olympiques, erreurs cour
 
 ## Vision globale
 
-L’haltéro, c’est **technique + force**, indissociables. On programme selon les points faibles (positions, pulls, réception, mobilité), pas seulement « snatch lourd le lundi ». Les variantes (power, hang, pulls) permettent de progresser **sans** maximiser la réception profonde à chaque séance — crucial si frileux en squat snatch/clean ou en prudence charges (adducteur / confiance barre).
+L’haltéro, c’est **technique + force**, indissociables. On programme selon les points faibles (positions, pulls, réception, mobilité), pas seulement « snatch lourd le lundi ». Les variantes (power, hang, pulls) permettent de progresser **sans** maximiser la réception profonde à chaque séance — utile quand on dose l’exposition squat / lourde.
 
 ## Concepts essentiels
 
@@ -31,8 +31,8 @@ Fréquence, intensité, volume, accessoires, restauration. Le modèle « bulgare
 
 - Everett = référence technique et design Oly.
 - **Fréquence Oly modérée** (agenda + multi-domaines).
-- Power / hangs / pulls prioritaires ; squat snatch/clean lourds = exposition **rare et contrôlée**.
-- Pas de max out fréquents en Macro 1 Build (charges actuelles + RPE).
+- Power / hangs / pulls = outils de progression ; squat snatch/clean lourds = exposition **dosée**.
+- Pas de max out fréquents hors intention de meso (charges actuelles + RPE).
 
 ## Ce qu’on n’applique pas
 
@@ -44,7 +44,7 @@ Fréquence, intensité, volume, accessoires, restauration. Le modèle « bulgare
 
 - Technique + force, pas l’un sans l’autre.
 - Variantes = outils, pas rétrogradations.
-- Modérer la fréquence et la profondeur selon le profil.
+- Modérer la fréquence et la profondeur selon le besoin.
 - Qualité des reps > kilos historiques.
 
 ## Où ça se voit

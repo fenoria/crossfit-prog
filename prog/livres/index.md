@@ -1,8 +1,10 @@
 # Livres
 
-Douze ouvrages nourrissent la programmation. Pas besoin de les lire en entier : ces fiches résument la vision de chaque auteur, les idées clés, et **ce qui est réellement retenu** dans la prog.
+Douze ouvrages nourrissent la programmation. Pas besoin de les lire en entier : ces fiches résument la vision de chaque auteur, les idées clés, et **ce qui est réellement retenu** dans la méthodo.
 
-**Vue visuelle** : [Concepts clés](concepts.md) — schémas (année, stages, dose, transfert, conditioning) dans la charte du site.
+Cadre **pérenne** — les priorités d’une année se lisent dans les [Saisons](/saisons/), pas ici.
+
+**Vue visuelle** : [Concepts clés](concepts.md) — schémas (année, stages, dose, transfert, conditioning).
 
 ## Qui pilote quoi ?
 
@@ -13,7 +15,7 @@ Douze ouvrages nourrissent la programmation. Pas besoin de les lire en entier : 
 | Volume & progressions gym | Low | — |
 | Haltéro | Everett | — |
 | Transfert force → compétition | Verkhoshansky | Zatsiorsky |
-| Conditioning (maintien) | Laursen & Buchheit | Bible PP · Encyclopédie PP |
+| Conditioning | Laursen & Buchheit | Bible PP · Encyclopédie PP |
 | Mental pré-comp | Encyclopédie mentale | — |
 | Accessoires renfo | Manuel muscu (secondaire) | — |
 
@@ -34,14 +36,14 @@ Douze ouvrages nourrissent la programmation. Pas besoin de les lire en entier : 
 
 ### Spécialités
 
-8. [Everett — Olympic Weightlifting](everett-oly.md) — technique & prog Oly (power / pulls)
+8. [Everett — Olympic Weightlifting](everett-oly.md) — technique & prog Oly
 9. [Reiss & Prévost — Bible de la PP](bible-pp.md) — socle PP FR
 10. [Encyclopédie de la PP](encyclo-pp.md) — réservoir d’idées
 11. [Encyclopédie de la préparation mentale](encyclo-pm.md) — routines & stress pré-comp
 12. [Manuel ultime de musculation](manuel-muscu.md) — accessoires free-weight
 
-## Lien avec la saison
+## Lien avec les saisons
 
-La méthodo validée se lit aussi sur l’[accueil](/) et se traduit dans la [Saison 2026](/saison-2026/) : Benchmarks → Accumulation gym → Force → Mixed → Affûtage → Transition.
+La méthodo se traduit année par année dans les [Saisons](/saisons/) : chaque saison choisit l’ordre des blocs selon la qualité limitante et le calendrier d’events.
 
 **Règle d’or** : si la fatigue monte, on coupe le **volume**, pas l’intention du bloc.

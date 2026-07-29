@@ -39,7 +39,7 @@ Priorité n°1 quand on monte le volume gym : tendons, épaules, coudes. La prog
 ## Ce qu’on retient pour la prog
 
 - **Low pilote les mesos Accumulation gym** : densité, EMOM techniques, renfo, ladder de skills.
-- Faiblesse principale du profil = **répétabilité gym** → blocs dédiés, pas seulement gym « noyée » dans le WOD.
+- Si la gym limite la performance → blocs dédiés, pas seulement gym « noyée » dans le WOD.
 - Transfert CF : muscle-ups, HSPU, handstand, pulls/dips — pas objectifs street workout purs.
 - Deload gym intégré aux mesos (Israetel × Low).
 
@@ -58,4 +58,4 @@ Priorité n°1 quand on monte le volume gym : tendons, épaules, coudes. La prog
 
 ## Où ça se voit
 
-Meso Accumulation gym de la [Saison 2026](/saison-2026/) : progressions, densités, renfo — et ladder de skills CF dérivée de cette logique.
+Mesos Accumulation gym des [saisons](/saisons/) : progressions, densités, renfo — et ladder de skills CF dérivée de cette logique.

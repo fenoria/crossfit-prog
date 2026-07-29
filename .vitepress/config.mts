@@ -90,9 +90,62 @@ function buildDirItems(dir: string): DefaultTheme.SidebarItem[] {
   return items
 }
 
+function buildSeasonItems(): DefaultTheme.SidebarItem[] {
+  if (!existsSync(progDir)) return []
+  return sortEntries(readdirSync(progDir))
+    .filter((name) => name.startsWith('saison-'))
+    .flatMap((name) => {
+      const abs = join(progDir, name)
+      if (!statSync(abs).isDirectory()) return []
+      const indexPath = join(abs, 'index.md')
+      const text = existsSync(indexPath) ? mdTitle(indexPath, name) : name
+      const overview = existsSync(indexPath)
+        ? [{ text: 'Vue d’ensemble', link: toLink(indexPath) }]
+        : []
+      return [
+        {
+          text,
+          collapsed: false,
+          items: [...overview, ...buildDirItems(abs)],
+        },
+      ]
+    })
+}
+
+const livresDir = join(progDir, 'livres')
+const saisonsHub = join(progDir, 'saisons', 'index.md')
+
 const sidebarItems: DefaultTheme.SidebarItem[] = [
   { text: 'Accueil', link: '/' },
-  ...buildDirItems(progDir),
+  {
+    text: 'Référentiel',
+    collapsed: false,
+    items: [
+      { text: 'Concepts', link: '/livres/concepts' },
+      {
+        text: 'Livres',
+        collapsed: false,
+        items: [
+          ...(existsSync(join(livresDir, 'index.md'))
+            ? [{ text: 'Vue d’ensemble', link: '/livres/' }]
+            : []),
+          ...buildDirItems(livresDir).filter(
+            (item) => !('link' in item && item.link === '/livres/concepts'),
+          ),
+        ],
+      },
+    ],
+  },
+  {
+    text: 'Saisons',
+    collapsed: false,
+    items: [
+      ...(existsSync(saisonsHub)
+        ? [{ text: 'Hub saisons', link: '/saisons/' }]
+        : []),
+      ...buildSeasonItems(),
+    ],
+  },
 ]
 
 export default defineConfig({
@@ -108,8 +161,9 @@ export default defineConfig({
     siteTitle: 'Prog CrossFit',
     nav: [
       { text: 'Accueil', link: '/' },
+      { text: 'Concepts', link: '/livres/concepts' },
       { text: 'Livres', link: '/livres/' },
-      { text: 'Saison 2026', link: '/saison-2026/' },
+      { text: 'Saisons', link: '/saisons/' },
       { text: 'En cours', link: loadCurrentWeekLink() },
     ],
     sidebar: {

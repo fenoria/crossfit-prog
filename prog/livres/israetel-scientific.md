@@ -10,7 +10,7 @@ Ouvrage issu de Renaissance Periodization (RP). Public d’origine : surtout for
 
 Le progrès n’est pas « plus c’est dur, mieux c’est ». Il existe une **zone utile** de volume : trop peu = pas d’adaptation ; trop = fatigue qui mange les gains et augmente le risque de blessure.
 
-L’athlète intelligent progresse **dans** cette zone, planifie des **deloads**, et utilise le RPE / la proximité de l’échec pour réguler au jour le jour — surtout utile après une blessure ou avec un créneau quotidien serré.
+L’athlète intelligent progresse **dans** cette zone, planifie des **deloads**, et utilise le RPE / la proximité de l’échec pour réguler au jour le jour — surtout utile en reprise ou avec un agenda serré.
 
 ## Concepts essentiels
 
@@ -29,7 +29,7 @@ La fatigue est un outil, pas un trophée. Deloads systématiques (souvent en fin
 ### Overload & individualisation
 
 - Charger un peu plus (reps, sets, densité, charge) que la semaine précédente **si** la récupération suit.
-- RPE et sensations post-blessure > ego sur des % historiques.
+- RPE et sensations du jour > ego sur des % historiques.
 
 ### Spécificité & variation
 
@@ -40,8 +40,8 @@ Varier assez pour ne pas stagner / se blesser, pas assez pour diluer l’adaptat
 - **Israetel pilote la dose** sur force, gym et Oly.
 - Microcycles typiques : volume → surcharge → pic → deload.
 - Cardio déjà fort → on ne cherche pas le MRV conditioning ; maintien.
-- Volume gym = priorité Macro 1 Build : on le monte **sous** le plafond récupérable.
-- Charges = **actuelles**, jamais PRs pré-blessure pour les %.
+- Quand une qualité est prioritaire (ex. gym), on monte le volume **sous** le plafond récupérable.
+- Charges = **actuelles** (benchmarks du moment), pas d’anciens records pour les %.
 
 ## Ce qu’on n’applique pas
 
@@ -54,7 +54,7 @@ Varier assez pour ne pas stagner / se blesser, pas assez pour diluer l’adaptat
 - Zone utile entre « trop peu » et « trop ».
 - Deload = partie du plan, pas un aveu de faiblesse.
 - Fatigue haute → −volume, intention du bloc conservée.
-- RPE = frein de sécurité post-blessure.
+- RPE = frein de sécurité au quotidien.
 
 ## Où ça se voit
 

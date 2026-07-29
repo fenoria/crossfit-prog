@@ -8,7 +8,7 @@ Ouvrage de référence FR sur la préparation physique : qualités, diagnostic d
 
 ## Vision globale
 
-Avant de programmer, on **mesure et on hiérarchise les besoins**. Toutes les qualités ne méritent pas le même investissement. Ici, le conditioning (ergos, wall-balls, burpees…) est déjà un point fort → la Bible PP sert de **socle de maintien et de variété**, pas de feuille de route pour « devenir un monstre cardio ».
+Avant de programmer, on **mesure et on hiérarchise les besoins**. Toutes les qualités ne méritent pas le même investissement. La Bible PP sert de **socle et de variété** ; le volume conditioning suit le diagnostic de saison (développement ou maintien).
 
 ## Concepts essentiels
 
@@ -28,18 +28,18 @@ Tester, comparer, ajuster — d’où l’intérêt d’un meso Benchmarks en ou
 
 - Socle conditioning FR (avec Bompa / Issurin et la matrice pilotée Laursen/Buchheit).
 - Z2 > off si créneau possible.
-- Ne **pas** sur-stimuler le glycolytique / HI déjà solide.
-- HI surtout en Transmutation / Affûtage, dosé.
+- Ne **pas** sur-stimuler une qualité déjà non limitante.
+- HI surtout en Transmutation / Realization, dosé.
 
 ## Ce qu’on n’applique pas
 
 - En faire le pilote de structure de cycle (rôle d’Issurin) ou de dose (Israetel).
-- Programmes PP génériques qui ignoreraient le profil « cardio fort / gym faible ».
+- Programmes PP génériques qui ignorent le diagnostic de besoins.
 
 ## À retenir
 
 - Mesurer → prioriser → programmer.
-- Conditioning = maintien, pas accumulation prioritaire.
+- Conditioning = dose selon diagnostic (souvent maintien en multi-domaines).
 - Socle FR utile, pas cookbook élite CF seul.
 - Z2 intelligent > repos par défaut.
 
