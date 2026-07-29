@@ -37,12 +37,12 @@ D’où l’ordre des blocs : on ne finit pas un cycle par un gros volume gym si
 
 Un mesocycle = une **priorité claire**. Le reste existe en **maintien** (assez pour ne pas perdre, pas assez pour voler le stimulus principal).
 
-## Ce qu’on retient pour la prog
+## Ce qu’un coach peut retenir
 
 - **Issurin pilote la séquence des mesos** : pas six qualités à fond chaque semaine.
-- Macrocycle 1 (Build) : Benchmarks → Accumulation **gym** → Accumulation force → Transmutation mixed → Affûtage court → Transition.
-- Compatible agenda serré : on concentre la séance sur l’intention du bloc.
-- Le samedi optionnel sert souvent de volume « luxe » sans casser la logique du meso.
+- Les blocs s’enchaînent selon une logique simple : calibrer si besoin, accumuler, transmuter, exprimer, puis décharger.
+- Plus le calendrier est contraint, plus la concentration du stimulus devient utile.
+- Les séances additionnelles ne valent que si elles prolongent l’intention du meso sans la diluer.
 
 ## Ce qu’on n’applique pas
 
@@ -57,6 +57,6 @@ Un mesocycle = une **priorité claire**. Le reste existe en **maintien** (assez 
 - Les résidus dictent l’ordre : spécifique / nerveux près du pic.
 - Compatible élite + agenda serré : mieux vaut concentrer que saupoudrer.
 
-## Où ça se voit
+## Applications pratiques
 
-Chaque meso d’une [saison](/saisons/) porte un pourquoi et une intention. Les semaines « Fondements (corpus) » citent souvent Issurin quand on justifie un bloc concentré.
+Un mésocycle porte une priorité clairement nommée, des doses de maintien pour le reste, puis un relais vers la phase suivante.

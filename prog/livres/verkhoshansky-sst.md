@@ -8,7 +8,7 @@ Manuel coach sur la **force spéciale** (SST) : comment organiser les moyens de 
 
 ## Vision globale
 
-Devenir plus fort en salle ne garantit pas d’être meilleur en compétition. Il faut une **chaîne de transfert** : force générale → force orientée → expression sous le régime du sport (ici : mixed CrossFit — gym + barre + ergo sous fatigue).
+Devenir plus fort en salle ne garantit pas d’être meilleur en compétition. Il faut une **chaîne de transfert** : force générale → force orientée → expression sous le régime du sport (ici, mixed CrossFit : gym + barre + ergo sous fatigue).
 
 Les mesos de **Transmutation** existent pour ça : convertir ce qui a été construit en Accumulation.
 
@@ -26,7 +26,7 @@ Les blocs de force ne sont pas saupoudrés au hasard : concentration, puis conve
 
 Sauts, circuits, coupling, travail force-aérobie… On **sélectionne** selon le meso ; on ne colle pas un programme aviron ou sprint tel quel, ni un Westside « brut ».
 
-## Ce qu’on retient pour la prog
+## Ce qu’un coach peut retenir
 
 - Guide le passage Accumulation → Transmutation mixed → Affûtage.
 - Dans le mixed : gym + barre + conditioning **sous fatigue**, pas des qualités isolées éternellement.
@@ -35,7 +35,7 @@ Sauts, circuits, coupling, travail force-aérobie… On **sélectionne** selon l
 ## Ce qu’on n’applique pas
 
 - Programmes sport-par-sport copiés.
-- Conjugate Westside sans adaptation box / 90 min.
+- Conjugate Westside sans adaptation au contexte réel de la discipline.
 - Force pour la force sans date de transfert.
 
 ## À retenir
@@ -45,6 +45,6 @@ Sauts, circuits, coupling, travail force-aérobie… On **sélectionne** selon l
 - Sélectionner les moyens SST, ne pas tout faire.
 - Complète Zatsiorsky (principes) + Issurin (blocs).
 
-## Où ça se voit
+## Applications pratiques
 
-Meso Transmutation mixed du Macrocycle 1 : conversion vers le stimulus compétition.
+Blocs de Transmutation mixed : conversion vers un stimulus de compétition, couplings et densités orientés transfert.

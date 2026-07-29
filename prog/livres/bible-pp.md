@@ -18,16 +18,16 @@ Identifier ce qui limite la performance, puis allouer le temps d’entraînement
 
 ### Qualités physiques & moyens
 
-Endurance, force, vitesse, etc. — avec des outils utilisables en box (free weights, ergos, poids de corps), sans machines guidées.
+Endurance, force, vitesse, etc. — avec des outils de terrain simples : free weights, ergos, poids de corps, ateliers techniques.
 
 ### Culture de la mesure
 
-Tester, comparer, ajuster — d’où l’intérêt d’un meso Benchmarks en ouverture de macro.
+Tester, comparer, ajuster — d’où l’intérêt d’une phase de calibration en ouverture de cycle.
 
-## Ce qu’on retient pour la prog
+## Ce qu’un coach peut retenir
 
 - Socle conditioning FR (avec Bompa / Issurin et la matrice pilotée Laursen/Buchheit).
-- Z2 > off si créneau possible.
+- Selon le contexte, un travail aérobie léger peut utilement remplacer un repos complet.
 - Ne **pas** sur-stimuler une qualité déjà non limitante.
 - HI surtout en Transmutation / Realization, dosé.
 
@@ -43,6 +43,6 @@ Tester, comparer, ajuster — d’où l’intérêt d’un meso Benchmarks en ou
 - Socle FR utile, pas cookbook élite CF seul.
 - Z2 intelligent > repos par défaut.
 
-## Où ça se voit
+## Applications pratiques
 
-Blocs Z2, conditioning de maintien dans les mesos Accumulation, et tests du meso Benchmarks.
+Blocs Z2, conditioning de maintien dans les mésocycles d’Accumulation, et phases de calibration en ouverture de cycle.

@@ -8,7 +8,7 @@ Référentiel large des moyens de préparation physique. Trop encyclopédique po
 
 ## Vision globale
 
-Il existe beaucoup de façons de stimuler une qualité. L’encyclopédie aide à **varier** sans sortir du cadre box (pas de machines guidées) et sans diluer l’intention du meso.
+Il existe beaucoup de façons de stimuler une qualité. L’encyclopédie aide à **varier** les moyens sans diluer l’intention du meso.
 
 ## Concepts essentiels
 
@@ -16,10 +16,10 @@ Il existe beaucoup de façons de stimuler une qualité. L’encyclopédie aide �
 - Utile quand un stimulus stagne : alternative dans la même famille.
 - Ne remplace pas une hiérarchie de priorités.
 
-## Ce qu’on retient pour la prog
+## Ce qu’un coach peut retenir
 
-- Inspiration ponctuelle (variantes d’ergo, renfo, GPP) si le budget 90 min le permet.
-- Toujours filtré par : intention du meso, dose Israetel, matériel box.
+- Inspiration ponctuelle (variantes d’ergo, renfo, GPP) quand le contexte le permet.
+- Toujours filtré par : intention du meso, dose Israetel, matériel disponible.
 
 ## Ce qu’on n’applique pas
 
@@ -32,6 +32,6 @@ Il existe beaucoup de façons de stimuler une qualité. L’encyclopédie aide �
 - Varier sous contrainte > varier pour varier.
 - Box only.
 
-## Où ça se voit
+## Applications pratiques
 
-Occasionnellement dans des accessoires ou GPP de transition — rarement cité en « Fondements » d’une semaine pilote.
+Occasionnellement dans des accessoires, des variantes de GPP ou des phases de transition.

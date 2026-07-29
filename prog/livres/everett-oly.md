@@ -18,7 +18,7 @@ Corriger une position sans force utile, ou charger sans position : les deux stag
 
 ### Variables de prog
 
-Fréquence, intensité, volume, accessoires, restauration. Le modèle « bulgare » (très haute fréquence, très lourd) est une option parmi d’autres — souvent incompatible avec un CrossFit multi-domaines en 90 min.
+Fréquence, intensité, volume, accessoires, restauration. Le modèle « bulgare » (très haute fréquence, très lourd) est une option parmi d’autres — souvent incompatible avec une planification CrossFit multi-domaines.
 
 ### Variantes utiles
 
@@ -27,10 +27,10 @@ Fréquence, intensité, volume, accessoires, restauration. Le modèle « bulgare
 - **Pulls** — force du tirage sans réception stressante.
 - Singles contrôlés — exposition qualité > ego.
 
-## Ce qu’on retient pour la prog
+## Ce qu’un coach peut retenir
 
 - Everett = référence technique et design Oly.
-- **Fréquence Oly modérée** (agenda + multi-domaines).
+- **Fréquence Oly modérée** en contexte multi-domaines.
 - Power / hangs / pulls = outils de progression ; squat snatch/clean lourds = exposition **dosée**.
 - Pas de max out fréquents hors intention de meso (charges actuelles + RPE).
 
@@ -47,6 +47,6 @@ Fréquence, intensité, volume, accessoires, restauration. Le modèle « bulgare
 - Modérer la fréquence et la profondeur selon le besoin.
 - Qualité des reps > kilos historiques.
 
-## Où ça se voit
+## Applications pratiques
 
-Séances Oly en Accumulation / maintien : power, pulls, positions ; consignes de charge contrôlée.
+Séances Oly en Accumulation ou maintien : power, pulls, travail de positions et consignes de charge contrôlée.

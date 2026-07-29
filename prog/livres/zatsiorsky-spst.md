@@ -26,13 +26,13 @@ On peut avoir une charge modérée avec un effort élevé (séries longues) ou u
 - Dynamique / puissance — intention de vitesse.
 - Hypertrophie / structure — tissus, masse utile, résilience.
 
-En Accumulation force, on mélange structure + force avec doses Israetel ; on évite les max out inutiles en Macro 1 Build.
+En Accumulation force, on mélange structure + force avec doses Israetel ; on évite les max out inutiles hors phase de test ou d’expression.
 
 ### Spécificité & technique
 
 Une barre lourde mal faite n’entraîne pas le mouvement qu’on croit. Technique sous charge = partie de la force.
 
-## Ce qu’on retient pour la prog
+## Ce qu’un coach peut retenir
 
 - Cadre pour squat / hinge / push / pull en Accumulation force.
 - Pas de chasse aux records anciens ; charges actuelles + RPE.
@@ -50,6 +50,6 @@ Une barre lourde mal faite n’entraîne pas le mouvement qu’on croit. Techniq
 - Technique sous charge = non négociable.
 - Socle, pas cookbook CrossFit.
 
-## Où ça se voit
+## Applications pratiques
 
-Meso Accumulation force de la saison ; consignes de charges et RPE sur les patterns force.
+Blocs de force structurés, consignes de charges relatives, et distinction claire entre intensité, effort et volume.

@@ -36,7 +36,7 @@ Excentriques, isométries, variations d’angle, lestage : pour avancer quand le
 
 Priorité n°1 quand on monte le volume gym : tendons, épaules, coudes. La prog doit laisser digérer — cohérent avec Israetel.
 
-## Ce qu’on retient pour la prog
+## Ce qu’un coach peut retenir
 
 - **Low pilote les mesos Accumulation gym** : densité, EMOM techniques, renfo, ladder de skills.
 - Si la gym limite la performance → blocs dédiés, pas seulement gym « noyée » dans le WOD.
@@ -56,6 +56,6 @@ Priorité n°1 quand on monte le volume gym : tendons, épaules, coudes. La prog
 - Force et endurance musculaire : pas tout en même temps.
 - Tissus = frein ; deload = outil.
 
-## Où ça se voit
+## Applications pratiques
 
-Mesos Accumulation gym des [saisons](/saisons/) : progressions, densités, renfo — et ladder de skills CF dérivée de cette logique.
+Mésocycles à dominante gym : progressions, densités, renforcement ciblé et organisation raisonnée de la fréquence.

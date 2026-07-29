@@ -1,6 +1,6 @@
 # Concepts clés
 
-Schémas originaux qui résument ce que la méthodo **retient** du corpus — pas des copies des figures des livres. Cadre **pérenne** (valable d’une saison à l’autre) et **neutre** : pas de calendrier d’année, pas de priorité athlète.
+Schémas originaux qui résument les idées directrices du corpus — pas des copies des figures des livres. Cadre **pérenne** et **neutre** : pas d’exemple de saison particulière, pas de profil athlète implicite.
 
 <ul class="concept-legend">
   <li><i class="c-green"></i> Accumulation / dose utile</li>
@@ -21,11 +21,11 @@ Cadre long (Bompa) : opportunités toute l’année → **2 ou 3 macros**, pas u
 
 ## Stage Acc → Trans → Real
 
-À l’intérieur d’un macro, Issurin concentre **une intention** par phase. Les qualités à résidu court se placent près du pic.
+À l’intérieur d’un macro, Issurin concentre **une intention** par phase. Les qualités à résidu court se placent près du pic, les qualités à résidu long plus tôt dans le cycle.
 
 <figure class="concept-figure">
   <img src="/concepts/stage-issurin.svg" alt="Accumulation, Transmutation, Realization" width="800" height="260" />
-  <figcaption><strong>Issurin</strong> — concentration + résidus. Les mesos (Accumulation gym, Conversion mixed, Affûtage…) répètent ce canevas.</figcaption>
+  <figcaption><strong>Issurin</strong> — concentration + résidus. Les mésocycles déclinent ensuite ce canevas selon la qualité dominante recherchée.</figcaption>
 </figure>
 
 ## Dose MEV · MAV · MRV
@@ -75,6 +75,6 @@ En cas de conflit entre auteurs, un **pilote** tranche — le soutien nuance, il
 
 ## Lire ensuite
 
-- [Fiches livres](/livres/) — vision de chaque auteur + retenu vs écarté
-- [Saisons](/saisons/) — calendriers, priorités et séquences d’instance (année par année)
+- [Fiches livres](/livres/) — vision de chaque auteur + idées conservées
 - Règle d’or : si la fatigue monte, on coupe le **volume**, pas l’intention du bloc
+- Point de vigilance : toujours relire ces schémas à travers le niveau de l’athlète, le calendrier et la qualité réellement prioritaire

@@ -1,8 +1,8 @@
 # Livres
 
-Douze ouvrages nourrissent la programmation. Pas besoin de les lire en entier : ces fiches résument la vision de chaque auteur, les idées clés, et **ce qui est réellement retenu** dans la méthodo.
+Douze ouvrages nourrissent la réflexion de planification. Pas besoin de les lire en entier : ces fiches résument la vision de chaque auteur, les idées clés, et **ce qui peut être retenu** pour structurer une progression.
 
-Cadre **pérenne** — les priorités d’une année se lisent dans les [Saisons](/saisons/), pas ici.
+Cadre **pérenne** : ces fiches présentent des principes transférables, pas l’exemple d’une saison particulière.
 
 **Vue visuelle** : [Concepts clés](/livres/concepts) — schémas (année, stages, dose, transfert, conditioning).
 
@@ -42,8 +42,8 @@ Cadre **pérenne** — les priorités d’une année se lisent dans les [Saisons
 11. [Encyclopédie de la préparation mentale](encyclo-pm.md) — routines & stress pré-comp
 12. [Manuel ultime de musculation](manuel-muscu.md) — accessoires free-weight
 
-## Lien avec les saisons
+## Lien avec la planification
 
-La méthodo se traduit année par année dans les [Saisons](/saisons/) : chaque saison choisit l’ordre des blocs selon la qualité limitante et le calendrier d’events.
+La lecture du corpus aide à hiérarchiser les besoins, choisir l’ordre des blocs, doser le travail et situer les pics selon le calendrier compétitif.
 
 **Règle d’or** : si la fatigue monte, on coupe le **volume**, pas l’intention du bloc.

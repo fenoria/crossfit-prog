@@ -1,8 +1,8 @@
 # Prog CrossFit
 
-Programmation CrossFit élite. Chaque cycle, meso et séance s’appuie sur un **corpus d’ouvrages de référence** (détail dans [Livres](/livres/)).
+Cadre de planification pour le CrossFit compétition. Chaque cycle, meso et séance s’appuie sur un **corpus d’ouvrages de référence** (détail dans [Livres](/livres/)).
 
-Cette page résume **comment on programme** — cadre pérenne, indépendant d’une saison ou d’un profil. Les priorités et le calendrier de l’année se lisent dans les [Saisons](/saisons/).
+Cette page résume **comment structurer une planification** : logique des blocs, dosage, transfert et progression. Le cadre reste volontairement pérenne, indépendant d’une saison précise ou d’un profil individuel.
 
 ## Méthodologie — vision coach
 
@@ -19,9 +19,9 @@ Si la fatigue monte, on coupe le **volume**, pas l’intention du bloc.
 1. **Une intention dominante par meso** — pas « force + gym + oly + VO2 max » en parallèle à haute dose. Le reste des qualités est en *maintien* (assez pour ne pas perdre, pas assez pour voler le stimulus principal).
 2. **Dose intelligente** — travailler au-dessus du minimum utile, viser une zone productive, deload avant le plafond de récupération. Pas « plus c’est dur, mieux c’est ».
 3. **Transfert vers la compétition** — la force et la gym doivent se retrouver sous fatigue CF (mixed), pas seulement en séances isolées.
-4. **Comprendre pour adhérer** — chaque niveau (saison → macro → meso → semaine → séance) porte un *pourquoi* explicite.
+4. **Clarté de lecture** — chaque niveau (saison → macro → meso → semaine → séance) porte un *pourquoi* explicite.
 5. **Santé > ego** — charges basées sur les benchmarks **actuels** ; variantes et technique contrôlées si besoin ; douleur signalée → on adapte.
-6. **Z2 > off** — dès qu’un créneau d’entraînement est possible, préférer du travail aérobie léger au repos total (sauf fatigue haute, douleur, deload ou taper).
+6. **Récupération active quand elle sert le plan** — selon le niveau de fatigue et l’objectif du bloc, un travail aérobie léger peut parfois remplacer un repos complet.
 
 ### Architecture temporelle
 
@@ -62,7 +62,7 @@ Un meso = **3–5 semaines** + deload, **une priorité claire**. Ces blocs se **
 
 Pendant un meso focalisé, les autres qualités restent en **doses de maintien** (minima pour ne pas régresser).
 
-L’**ordre** des blocs Accumulation (gym, force, oly…) dépend de la qualité limitante de la saison — pas d’un ordre unique figé.
+L’**ordre** des blocs Accumulation (gym, force, oly…) dépend du besoin dominant de la saison — pas d’un ordre unique figé.
 
 ### Microcycle (semaine type)
 
@@ -70,12 +70,11 @@ Dans un meso concentré, la logique hebdo suit souvent :
 
 1. **Volume adaptatif** → 2. **Surcharge** → 3. **Pic** (densité / intensité) → 4. **Deload** (~−30 % volume)
 
-Organisation type (à adapter par saison) :
+Organisation type (à adapter au calendrier et au niveau de pratique) :
 
-- Jours de semaine : séances chronométrées (échauffement inclus)
-- Un créneau team box possible (compte dans la dose)
-- Week-end : optionnel — volume / team / Z2 selon dispo et meso
-- Jour off, ou Z2 si créneau
+- les séances techniques ou volumineuses plutôt loin des pics
+- les expositions très spécifiques ou nerveuses plutôt proches des événements
+- les jours légers pensés comme récupération active, consolidation technique ou entretien
 
 ### Domaines — comment on les traite
 
@@ -96,10 +95,10 @@ Organisation type (à adapter par saison) :
 
 ### Adaptation coaching
 
-- Feedback post-séance (bloc Notes de chaque jour) → ajuster volume / variante **sans changer l’intention du meso**.
-- Contrainte ponctuelle (vacances, créneau) → séance réduite ou Z2 ; noter dans les Notes.
-- Douleur signalée → protocole adapté.
-- Semaine **commencée ou passée** : le contenu prescrit reste figé (trace historique) ; les adaptations vont dans les **semaines futures**.
+- Feedback de séance → ajuster volume, variante ou densité **sans changer l’intention du meso**.
+- Contrainte logistique ou fatigue ponctuelle → réduire la dose plutôt que brouiller le stimulus.
+- Douleur signalée → adapter pattern, amplitude, variante ou charge.
+- Le suivi sert à préserver la cohérence entre ce qui était visé, ce qui a été toléré, et ce qui sera enchaîné ensuite.
 
 ### Ce que ce n’est pas
 
@@ -144,14 +143,10 @@ Processus : lecture ciblée → arbitrages → synthèse → traduction en arbor
 
 ---
 
-## Lecture de la prog
+## Niveaux de lecture
 
-1. **Référentiel** — méthodo (ici) · [concepts](/livres/concepts) · [livres](/livres/)  
-2. **Saison** — plan annuel ([hub](/saisons/))  
-3. **Macrocycle** — stage Acc → Trans → Real  
-4. **Meso** — intention dominante + critères de passage  
-5. **Semaine** — séances du jour (cibles chiffrées)
-
-## Aller vers l’instance
-
-Le référentiel reste volontairement stable. Pour l’année active, les semaines en cours et les macros ouvertes, voir le hub [Saisons](/saisons/).
+1. **Référentiel** — principes, concepts, auteurs  
+2. **Saison** — hiérarchie des besoins et calendrier  
+3. **Macrocycle** — orientation d’ensemble et place des pics  
+4. **Meso** — intention dominante et critères de passage  
+5. **Semaine** — mise en dose concrète des séances

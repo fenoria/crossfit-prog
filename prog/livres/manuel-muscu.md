@@ -8,7 +8,7 @@ Manuel orienté hypertrophie / musculation classique. Utile comme **catalogue d�
 
 ## Vision globale
 
-Des muscles et tendons solides aident la gym et la barre. Mais le bodybuilding (splits, machines, volume d’isolation massif) n’est **pas** l’objectif : on prend des idées d’accessoires courts, compatibles box et séances chronométrées.
+Des muscles et tendons solides aident la gym et la barre. Mais le bodybuilding (splits, machines, volume d’isolation massif) n’est **pas** l’objectif : on retient surtout des accessoires courts, simples à insérer autour du travail principal.
 
 ## Concepts essentiels
 
@@ -16,7 +16,7 @@ Des muscles et tendons solides aident la gym et la barre. Mais le bodybuilding (
 - Hypertrophie locale au service de la résilience (épaules, rachis), pas de l’esthétique.
 - Volume d’accessoires = reste du budget temps après le travail principal.
 
-## Ce qu’on retient pour la prog
+## Ce qu’un coach peut retenir
 
 - 1–2 accessoires en fin de séance si le temps le permet.
 - Free weights only (halteres, barre, kettlebells, bandes…) — **aucune machine guidée**.
@@ -34,6 +34,6 @@ Des muscles et tendons solides aident la gym et la barre. Mais le bodybuilding (
 - Box only.
 - Ne pilote jamais le cycle.
 
-## Où ça se voit
+## Applications pratiques
 
-Fin de séance ponctuelle ; jamais en « Fondements (corpus) » d’une semaine pilote.
+Fin de séance ponctuelle, en renforcement complémentaire plutôt qu’en axe structurant de cycle.

@@ -10,7 +10,7 @@ Ouvrage issu de Renaissance Periodization (RP). Public d’origine : surtout for
 
 Le progrès n’est pas « plus c’est dur, mieux c’est ». Il existe une **zone utile** de volume : trop peu = pas d’adaptation ; trop = fatigue qui mange les gains et augmente le risque de blessure.
 
-L’athlète intelligent progresse **dans** cette zone, planifie des **deloads**, et utilise le RPE / la proximité de l’échec pour réguler au jour le jour — surtout utile en reprise ou avec un agenda serré.
+La progression se fait **dans** cette zone, avec des **deloads** planifiés et un usage du RPE / de la proximité de l’échec pour réguler au jour le jour.
 
 ## Concepts essentiels
 
@@ -35,7 +35,7 @@ La fatigue est un outil, pas un trophée. Deloads systématiques (souvent en fin
 
 Varier assez pour ne pas stagner / se blesser, pas assez pour diluer l’adaptation (cohérent avec Issurin : une intention dominante).
 
-## Ce qu’on retient pour la prog
+## Ce qu’un coach peut retenir
 
 - **Israetel pilote la dose** sur force, gym et Oly.
 - Microcycles typiques : volume → surcharge → pic → deload.
@@ -56,6 +56,6 @@ Varier assez pour ne pas stagner / se blesser, pas assez pour diluer l’adaptat
 - Fatigue haute → −volume, intention du bloc conservée.
 - RPE = frein de sécurité au quotidien.
 
-## Où ça se voit
+## Applications pratiques
 
-Semaines avec deload explicite, progressions de volume gym, consignes RPE chiffrées, et la règle d’or sur l’[accueil](/).
+Semaines avec deload explicite, progressions de volume raisonnées, et consignes RPE chiffrées sur les blocs prioritaires.
