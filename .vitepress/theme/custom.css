@@ -6,6 +6,7 @@
 :root {
   --vp-font-family-base: 'DM Sans', system-ui, sans-serif;
   --vp-font-family-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --vp-sidebar-width: 320px;
 
   /* Brand = Aurora Green */
   --vp-c-brand-1: #0d9488;
