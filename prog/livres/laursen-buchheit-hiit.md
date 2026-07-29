@@ -4,7 +4,7 @@
 
 ## L’auteur et le livre
 
-Ouvrage de référence sur le **HIIT** : science des formats (long/short intervals, sprints répétés, jeux réduits) et des **cibles physiologiques** (aérobie, glycolyse, strain neuromusculaire). Moins « recettes WODs » que guide pour choisir *quel* stimulus et *quand*, en cohérence avec le reste de la semaine.
+Ouvrage de référence sur le **HIIT** : science des formats (long/short intervals, sprints répétés, jeux réduits) et des **cibles physiologiques** (aérobie, glycolyse, strain neuromusculaire). Moins un catalogue de séances qu’un guide pour choisir *quel* stimulus et *quand*, en cohérence avec le reste de la semaine.
 
 ## Vision globale
 
@@ -40,13 +40,13 @@ Une séance HI dure n’existe pas isolée : glycogène, fatigue nerveuse, tendo
 - **Laursen/Buchheit pilote** le choix des cibles conditioning.
 - Z2 fréquent ; HI surtout en Transmutation / Affûtage.
 - Caps : peu de minutes glycolytiques dures / semaine ; alactique = efforts très courts, repos long.
-- Toute séance mixed très glycolytique doit compter dans le quota de fatigue de la semaine.
+- Toute séance combinée très glycolytique doit compter dans la charge de fatigue de la semaine.
 
 ## Ce qu’on n’applique pas
 
-- Transformer chaque meso Accumulation en camp HIIT.
+- Transformer chaque meso d’Accumulation en bloc centré sur le HIIT.
 - Copier des séances course / foot telles quelles.
-- Utiliser le livre pour justifier des « hero WODs » gratuits en ACC-GYM / ACC-STR.
+- Utiliser le livre pour justifier des efforts très durs sans lien avec l’intention du bloc.
 
 ## À retenir
 

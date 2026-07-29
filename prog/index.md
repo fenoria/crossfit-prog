@@ -8,7 +8,7 @@ Cette page résume **comment structurer une planification** : logique des blocs,
 
 ### En une phrase
 
-On ne développe pas tout à fond chaque semaine. On **concentre** une intention dominante par bloc (meso), on **dose** le volume pour progresser sans casser, et on **convertit** ensuite vers le mixed CrossFit sous fatigue — puis on **exprime** sur des pics.
+On ne développe pas tout à fond chaque semaine. On **concentre** une intention dominante par bloc (meso), on **dose** le volume pour progresser sans excès de fatigue, puis on **convertit** vers des formats combinés sous fatigue avant l’expression sur les pics.
 
 ::: tip Règle d’or
 Si la fatigue monte, on coupe le **volume**, pas l’intention du bloc.
@@ -18,9 +18,9 @@ Si la fatigue monte, on coupe le **volume**, pas l’intention du bloc.
 
 1. **Une intention dominante par meso** — pas « force + gym + oly + VO2 max » en parallèle à haute dose. Le reste des qualités est en *maintien* (assez pour ne pas perdre, pas assez pour voler le stimulus principal).
 2. **Dose intelligente** — travailler au-dessus du minimum utile, viser une zone productive, deload avant le plafond de récupération. Pas « plus c’est dur, mieux c’est ».
-3. **Transfert vers la compétition** — la force et la gym doivent se retrouver sous fatigue CF (mixed), pas seulement en séances isolées.
+3. **Transfert vers la compétition** — la force et la gym doivent se retrouver dans des formats combinés sous fatigue, pas seulement en séances isolées.
 4. **Clarté de lecture** — chaque niveau (saison → macro → meso → semaine → séance) porte un *pourquoi* explicite.
-5. **Santé > ego** — charges basées sur les benchmarks **actuels** ; variantes et technique contrôlées si besoin ; douleur signalée → on adapte.
+5. **Primauté de l’intégrité physique** — charges basées sur les benchmarks **actuels** ; variantes et technique contrôlées si besoin ; douleur signalée → adaptation.
 6. **Récupération active quand elle sert le plan** — selon le niveau de fatigue et l’objectif du bloc, un travail aérobie léger peut parfois remplacer un repos complet.
 
 ### Architecture temporelle
@@ -40,8 +40,8 @@ Chaque **macrocycle** suit un stage Issurin :
 | Phase | Intention | Contenu typique CF |
 |-------|-----------|-------------------|
 | **Accumulation** | Volume / bases concentrées | Gym volume, force structurelle, technique Oly, Z2 |
-| **Transmutation** | Conversion vers le spécifique | Densité gym sous fatigue, puissance barre, mixed CF, HI dosé |
-| **Realization** | Expression + fraîcheur | Spécifique ↓ volume, mock events, taper court |
+| **Transmutation** | Conversion vers le spécifique | Densité gym sous fatigue, puissance barre, formats combinés, HI dosé |
+| **Realization** | Expression + fraîcheur | Spécifique ↓ volume, tests proches de la compétition, taper court |
 
 **Résidus** : les qualités à effet long (aérobie, structure) peuvent être développées plus tôt ; les qualités à effet court (intensité nerveuse, spécificité) se placent **au plus près** du pic.
 
@@ -80,7 +80,7 @@ Organisation type (à adapter au calendrier et au niveau de pratique) :
 
 | Domaine | Approche |
 |---------|----------|
-| **Gym** | Skill + volume (EMOM, densité) + renfo lesté. Une qualité dominante par jour en meso gym. Pas de junk-volume. |
+| **Gym** | Skill + volume (EMOM, densité) + renfo lesté. Une qualité dominante par jour en meso gym. Pas de volume sans adaptation visée. |
 | **Force** | Patterns squat / hinge / press / pull. Accumulation contrôlée ; technique sous charge non négociable. |
 | **Haltéro** | Technique + pulls + variantes (power, hang) selon le besoin. Exposition squat profond / lourde = dosée. |
 | **Conditioning** | Dose selon le diagnostic de saison (développement ou maintien). Z2 fréquent. HI placé surtout en conversion / pic. |
@@ -102,9 +102,9 @@ Organisation type (à adapter au calendrier et au niveau de pratique) :
 
 ### Ce que ce n’est pas
 
-- Une copie HWPO / Mayhem / template « random WOD »
+- Une juxtaposition de WODs sans logique de progression
 - Un programme bodybuilding ou machines guidées
-- Du concurrent « tout pousser » chaque semaine
+- Un développement concurrent maximal de toutes les qualités, chaque semaine
 - Un unique pic annuel type FORCE → GYM → HALTÉRO → SPEC
 
 ---

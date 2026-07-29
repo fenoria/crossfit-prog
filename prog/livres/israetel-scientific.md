@@ -29,7 +29,7 @@ La fatigue est un outil, pas un trophée. Deloads systématiques (souvent en fin
 ### Overload & individualisation
 
 - Charger un peu plus (reps, sets, densité, charge) que la semaine précédente **si** la récupération suit.
-- RPE et sensations du jour > ego sur des % historiques.
+- RPE et sensations du jour priment sur des pourcentages historiques mal contextualisés.
 
 ### Spécificité & variation
 
@@ -39,7 +39,7 @@ Varier assez pour ne pas stagner / se blesser, pas assez pour diluer l’adaptat
 
 - **Israetel pilote la dose** sur force, gym et Oly.
 - Microcycles typiques : volume → surcharge → pic → deload.
-- Cardio déjà fort → on ne cherche pas le MRV conditioning ; maintien.
+- Quand le conditioning n’est pas prioritaire, on ne cherche pas le MRV sur ce registre ; on reste sur une dose de maintien.
 - Quand une qualité est prioritaire (ex. gym), on monte le volume **sous** le plafond récupérable.
 - Charges = **actuelles** (benchmarks du moment), pas d’anciens records pour les %.
 
@@ -47,7 +47,7 @@ Varier assez pour ne pas stagner / se blesser, pas assez pour diluer l’adaptat
 
 - Splits powerlifting / focus 3 lifts.
 - Hypertrophie pure comme objectif principal (sauf renfo tissus / gym).
-- « Échec musculaire » systématique en CrossFit élite — on utilise la proximité de l’échec, pas le smash quotidien.
+- « Échec musculaire » systématique en CrossFit élite — on utilise la proximité de l’échec, pas l’épuisement quotidien comme méthode.
 
 ## À retenir
 

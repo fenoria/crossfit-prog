@@ -18,7 +18,7 @@ Bompa fournit le **cadre long** ; Issurin fournit la **concentration** à l’in
 
 - **Préparation** : bases et montée de capacité.
 - **Compétition** : expression, peaking, gestion de la fraîcheur.
-- **Transition** : décharge, compensation, « fun GPP » — pour enchaîner le macro suivant sans burnout.
+- **Transition** : décharge, compensation, GPP légère ou régénérative — pour enchaîner le macro suivant sans épuisement accumulé.
 
 ### Peaking & taper
 
@@ -37,13 +37,13 @@ Anatomical adaptation → max strength → conversion. L’ordre réel des Accum
 - Année = **2–3 macros** ; chaque macro ≈ Acc → Trans → Real (Issurin) dans un cadre Bompa.
 - Taper / affûtage avant les vrais pics.
 - Transition entre macros.
-- Vocabulaire meso / micro utile pour lire la prog.
+- Vocabulaire meso / micro utile pour lire une planification.
 
 ## Ce qu’on n’applique pas
 
 - Développer six qualités à fond en parallèle chaque semaine (« traditionnel concurrent »).
 - Recettes sport-spécifiques hors CrossFit copiées telles quelles.
-- Un seul pic annuel façon ancienne prog « FORCE → GYM → HALTÉRO → SPEC » one-shot.
+- Un seul pic annuel selon une logique linéaire unique « FORCE → GYM → HALTÉRO → SPEC ».
 
 ## À retenir
 

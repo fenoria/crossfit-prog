@@ -12,7 +12,7 @@ Le contexte d’origine est souvent mono-sport (natation, kayak, cyclisme). On *
 
 Chez l’élite, le corps ne s’adapte bien qu’à un **petit nombre de stimuli** simultanés. Si on pousse force max, volume gym, VO2, skill et puissance barre chaque semaine à fond, chaque adaptation est diluée.
 
-La solution Issurin : des **blocs concentrés**, puis on compte sur les **effets résiduels** — une qualité développée continue d’exister un moment après qu’on arrête de la stimuler. En séquençant bien, on arrive en compétition avec plusieurs qualités encore « chaudes », sans les avoir toutes poussées la veille.
+La solution Issurin : des **blocs concentrés**, puis on compte sur les **effets résiduels** — une qualité développée continue d’exister un moment après qu’on arrête de la stimuler. En séquençant bien, on arrive en compétition avec plusieurs qualités encore exprimables, sans les avoir toutes poussées la veille.
 
 ## Concepts essentiels
 
@@ -55,7 +55,7 @@ Un mesocycle = une **priorité claire**. Le reste existe en **maintien** (assez 
 - Une intention dominante par meso.
 - Acc → Trans → Real (éventuellement répété plusieurs fois dans l’année).
 - Les résidus dictent l’ordre : spécifique / nerveux près du pic.
-- Compatible élite + agenda serré : mieux vaut concentrer que saupoudrer.
+- Chez l’élite, mieux vaut concentrer que disperser.
 
 ## Applications pratiques
 

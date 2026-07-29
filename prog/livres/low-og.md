@@ -4,13 +4,13 @@
 
 ## L’auteur et le livre
 
-Steven Low (kiné) propose un système pour la force au poids du corps et la gymnastique « street / calisthenics » : progressions, volume, fréquence, gestion des tissus. Public large — du débutant à la planche avancée.
+Steven Low (kiné) propose un système pour la force au poids du corps et la gymnastique de type calisthenics : progressions, volume, fréquence, gestion des tissus. Public large — du débutant à la planche avancée.
 
 Pour le CrossFit, on extrait le cadre **volume / progressions / récupération**, orienté transfert (BMU, RMU, HSPU, handstand walk…), pas la planche compétition.
 
 ## Vision globale
 
-La gym se programme comme la force : **progressions claires**, volume dosé, fréquence intelligente, deload. Ce n’est pas « quelques toes-to-bar dans le WOD » qui construisent la répétabilité élite.
+La gym se programme comme la force : **progressions claires**, volume dosé, fréquence intelligente, deload. Quelques répétitions glissées dans une séance mixte ne suffisent pas à construire une vraie répétabilité de haut niveau.
 
 Deux extrêmes à éviter : tout en force maximale (trop peu de reps utiles sous fatigue CF) et tout en endurance musculaire sale (technique qui s’écroule). Low place les skills sur un **continuum force ↔ endurance** : on choisit où on travaille selon le meso.
 
@@ -40,14 +40,14 @@ Priorité n°1 quand on monte le volume gym : tendons, épaules, coudes. La prog
 
 - **Low pilote les mesos Accumulation gym** : densité, EMOM techniques, renfo, ladder de skills.
 - Si la gym limite la performance → blocs dédiés, pas seulement gym « noyée » dans le WOD.
-- Transfert CF : muscle-ups, HSPU, handstand, pulls/dips — pas objectifs street workout purs.
+- Transfert CF : muscle-ups, HSPU, handstand, pulls/dips — pas des objectifs de force au poids de corps sans transfert compétitif.
 - Deload gym intégré aux mesos (Israetel × Low).
 
 ## Ce qu’on n’applique pas
 
 - Objectifs planche / one-arm / figures hors transfert compétition.
 - Volume gym « random » chaque jour sans progression.
-- Ignorer les tissus pour « se casser sur les MU ».
+- Ignorer les tissus jusqu’à surcharger inutilement épaules et coudes sur les muscle-ups.
 
 ## À retenir
 

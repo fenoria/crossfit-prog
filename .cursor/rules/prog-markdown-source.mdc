@@ -23,14 +23,18 @@ Deux zones distinctes sur le site (et dans `prog/`) :
 | **Saisons** | Instance année | `prog/saisons/`, `prog/saison-YYYY/`, `prog/public/saison-YYYY/` | Priorités, créneaux, séquence des macros, schémas d’instance |
 
 - Concepts / livres / accueil méthodo → formuler de façon **générale** (« selon la qualité limitante », « selon le diagnostic de saison »).
+- Concepts / livres / accueil méthodo → ton **référentiel de prépa physique** : compréhensible par un coach externe, sans présupposer le contexte du repo.
 - Détail athlète / année → uniquement sous `saison-YYYY/` (et profile hors site).
 - Lien croisé OK : référentiel → hub [Saisons](/saisons/) ; saison → concepts / méthodo.
 - Nouvelle saison = nouveau dossier `saison-YYYY/` ; ne pas réécrire le référentiel pour coller à l’année.
+- Dans le texte visible du **référentiel** (`prog/index.md`, `prog/livres/`, `prog/public/concepts/`) : pas de mention à « la prog », au repo, aux Notes, au hub, ni à un profil / une saison / un créneau particuliers.
+- Préférer un registre **pédagogique, publication-ready, coach-friendly** ; éviter les formulations trop internes, trop orales ou trop “insider” si une alternative claire existe.
 
 ## Langage athlète (site visible)
 
 - `prog/` hors commentaires HTML = **lisible à la box et partageable** (collègue / coach sans questions).
 - **Ton neutre** : pas de tutoiement ni d’adresse directe (« tu / toi / chez toi / Si tu… ») — formuler en impersonnel (« Si entraînement », « Si séance », « ici », « la prog », « on »).
+- Pour le **référentiel public**, éviter aussi les formules méta (`ici`, `la prog`, `dans les Notes`, `en cours`) quand elles n’apportent rien au concept.
 - Chaque séance active : cibles **chiffrées** (reps, RPE, durée, repos) — interdit « lourd confortable » / « submax » seuls.
 - Échauffements écrits en entier ; glossaire si acronymes ; **Objectif de la semaine** en tête (pas créneau / matériel / profil).
 - Interdit dans le texte visible : chemins `knowledge/` / `athlete/`, champs profile, ids `warmup_*` / patterns seuls, codes meso bruts (ACC-GYM…) sans nom lisible.
