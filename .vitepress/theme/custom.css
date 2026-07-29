@@ -192,8 +192,8 @@
   border-top: none;
 }
 
-.VPSidebarItem.level-0 {
-  padding-bottom: 12px;
+.VPSidebar .VPSidebarItem.level-0 {
+  padding-bottom: 12px !important;
 }
 
 /* Diagrammes concepts (charte Aurora) */
