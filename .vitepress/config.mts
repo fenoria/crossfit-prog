@@ -143,7 +143,6 @@ const current = loadCurrent()
 const livresDir = join(progDir, 'livres')
 
 const sidebarItems: DefaultTheme.SidebarItem[] = [
-  { text: 'Accueil', link: '/' },
   {
     text: 'Saisons',
     collapsed: false,
