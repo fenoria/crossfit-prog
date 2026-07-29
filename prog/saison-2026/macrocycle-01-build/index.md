@@ -25,11 +25,6 @@ Fire Contest est un **pic secondaire** (maintien de forme / expression) : on ne 
 | [Expression — Fire Contest](meso-03-expression-fire/index.md) | 7–13 sept. | Fraîcheur + weekend compétition | à venir |
 | [Transition mini](meso-04-transition-mini/index.md) | 14–20 sept. | Décharge post-Fire → Macro 2 | à venir |
 
-## Samedi
-
-Optionnel selon disponibilité (~10h–12h30 si séance).  
-Si entraînement : choisir **un seul** format selon le meso — volume gym confortable, team box, ou zone 2 longue. Pas d’efforts durs ajoutés gratuitement pendant Accumulation. Semaine Fire : pas de samedi box en plus du weekend compétition.
-
 ## Règles fatigue box
 
 - Mercredi team à RPE ≥ 8 → alléger jeudi (−1 set d’approche et −10 à −15 % sur les charges de test / travail, ou RPE cible −1).

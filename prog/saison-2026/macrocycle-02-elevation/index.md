@@ -15,10 +15,6 @@ Post-Fire : accumulation force structurelle → haltéro power / technique → c
 | [Accumulation haltéro](meso-02-accumulation-halterro/index.md) | 19 oct. – 1er nov. | Power / pulls / technique (~2 sem.) | à venir |
 | [Conversion mixed](meso-03-conversion-mixed/index.md) | 2–15 nov. | Gym + barre + ergo sous fatigue (~2 sem.) | à venir |
 
-## Samedi
-
-Optionnel. Selon le meso : volume force contrôlé, technique oly, team box, ou Z2. Pas d’HI gratuit en Accumulation force.
-
 ## Règles fatigue box
 
 - Mercredi team à RPE ≥ 8 → alléger jeudi.  

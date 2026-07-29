@@ -14,10 +14,6 @@ Spécificité team + peaking court vers le pic C de fin d’année. Volume ↓, 
 | [Spécificité team](meso-01-specificite-team/index.md) | 16–29 nov. | Conversion orientée team (~2 sem.) | à venir |
 | [Expression — S7mbioz](meso-02-expression-s7mbioz/index.md) | 30 nov. – 13 déc. | Affûtage + weekend compétition | à venir |
 
-## Samedi
-
-Optionnel hors weekend compétition. Préférer team box léger ou Z2 ; pas d’HI gratuit la semaine du C.
-
 ## Règles fatigue box
 
 - Mercredi team dur compte dans le quota HI / fatigue.  
