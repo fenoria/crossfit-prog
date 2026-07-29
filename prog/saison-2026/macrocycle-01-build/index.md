@@ -1,4 +1,4 @@
-# Macrocycle 1 — Build → Fire Contest
+# Macrocycle 1 — Build (Fire)
 
 **Début** : 3 août 2026 · **Fin prévue** : 20 septembre 2026  
 **Pic** : Fire Contest (Nantes) — rôle B, ~12–13 septembre
