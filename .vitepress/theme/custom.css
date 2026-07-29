@@ -177,17 +177,17 @@
   color: #fff;
 }
 
-/* Sidebar active = bleu (VitePress colore .text + .indicator via brand-1) */
+/* Sidebar active = lueur aurore (vert brand) */
 .dark .VPSidebarItem.is-active > .item .link > .text {
-  color: var(--aurora-blue) !important;
+  color: var(--aurora-green) !important;
 }
 
 .dark .VPSidebarItem.level-2.is-active > .item > .indicator,
 .dark .VPSidebarItem.level-3.is-active > .item > .indicator,
 .dark .VPSidebarItem.level-4.is-active > .item > .indicator,
 .dark .VPSidebarItem.level-5.is-active > .item > .indicator {
-  background-color: var(--aurora-blue);
-  box-shadow: 0 0 8px rgba(130, 177, 255, 0.5);
+  background-color: var(--aurora-green);
+  box-shadow: 0 0 8px rgba(100, 255, 218, 0.5);
 }
 
 .dark .VPNavBarTitle .title {
@@ -195,7 +195,7 @@
 }
 
 .dark .VPNavBarMenuLink.active {
-  color: var(--aurora-blue) !important;
+  color: var(--aurora-green) !important;
 }
 
 .dark .VPLink:hover {
