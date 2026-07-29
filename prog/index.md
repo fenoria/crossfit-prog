@@ -102,7 +102,7 @@ Organisation type (à adapter au calendrier et au niveau de pratique) :
 
 ### Littérature
 
-Douze ouvrages de réference — **[fiches de lecture](/livres/)** · **[concepts](/livres/concepts)** :
+Douze ouvrages de référence — **[fiches de lecture](/livres/)** · **[concepts](/livres/concepts)** :
 
 | Domaine | Ouvrage | Rôle |
 |---------|---------|------|
