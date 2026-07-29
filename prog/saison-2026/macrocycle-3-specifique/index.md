@@ -11,8 +11,8 @@ Spécificité team + peaking court vers le pic C de fin d’année. Volume ↓, 
 
 | Meso | Fenêtre | Rôle | Statut |
 |------|---------|------|--------|
-| [Spécificité team](meso-specificite-team/index.md) | 16–29 nov. | Conversion orientée team (~2 sem.) | à venir |
-| [Expression — S7mbioz](meso-expression-s7mbioz/index.md) | 30 nov. – 13 déc. | Affûtage + weekend compétition | à venir |
+| [Spécificité team](meso-01-specificite-team/index.md) | 16–29 nov. | Conversion orientée team (~2 sem.) | à venir |
+| [Expression — S7mbioz](meso-02-expression-s7mbioz/index.md) | 30 nov. – 13 déc. | Affûtage + weekend compétition | à venir |
 
 ## Samedi
 

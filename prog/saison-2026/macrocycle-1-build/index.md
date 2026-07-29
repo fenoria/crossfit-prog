@@ -20,10 +20,10 @@ Fire Contest est un **pic secondaire** (maintien de forme / expression) : on ne 
 
 | Meso | Fenêtre | Rôle | Statut |
 |------|---------|------|--------|
-| [Benchmarks](meso-benchmarks/index.md) | 3–9 août | Calibrer les charges actuelles | en cours (S01) |
-| [Accumulation gym](meso-accumulation-gym/index.md) | 10 août – 6 sept. | Volume et densité gymnastique (~4 sem.) | à venir |
-| [Expression — Fire Contest](meso-expression-fire/index.md) | 7–13 sept. | Fraîcheur + weekend compétition | à venir |
-| [Transition mini](meso-transition-mini/index.md) | 14–20 sept. | Décharge post-Fire → Macro 2 | à venir |
+| [Benchmarks](meso-01-benchmarks/index.md) | 3–9 août | Calibrer les charges actuelles | en cours (S01) |
+| [Accumulation gym](meso-02-accumulation-gym/index.md) | 10 août – 6 sept. | Volume et densité gymnastique (~4 sem.) | à venir |
+| [Expression — Fire Contest](meso-03-expression-fire/index.md) | 7–13 sept. | Fraîcheur + weekend compétition | à venir |
+| [Transition mini](meso-04-transition-mini/index.md) | 14–20 sept. | Décharge post-Fire → Macro 2 | à venir |
 
 ## Samedi
 

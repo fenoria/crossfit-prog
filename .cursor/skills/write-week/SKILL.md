@@ -43,6 +43,7 @@ Sidebar VitePress = **auto** (arborescence `prog/`).
 
 ## Steps
 1. Assurer les `index.md` Saison / Macro / Meso (meso depuis template meso).
+   - Dossier meso : `meso-NN-<slug>/` (ex. `meso-01-benchmarks`) — numérotation chrono dans le macro pour l’ordre sidebar.
 2. Créer/mettre à jour `Sxx-YYYY-MM-DD.md` depuis le template semaine :
    - Pourquoi / intention / apport / suite · Fondements 1–3 refs (auteur + titre)
    - Commentaires pattern + warmup sur chaque jour actif

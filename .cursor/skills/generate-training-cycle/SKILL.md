@@ -16,7 +16,7 @@ description: Génère saison/macro/meso/semaines en Markdown sous prog/, uniquem
 
 ## Steps
 1. Définir objectif / date (ou Build sans A-event).
-2. Assurer Saison → Macrocycle → Meso (`index.md` ; meso depuis `prog/_templates/meso.md`).
+2. Assurer Saison → Macrocycle → Meso (`index.md` ; meso depuis `prog/_templates/meso.md` ; dossier `meso-NN-<slug>/` pour l’ordre sidebar).
 3. Écrire les semaines depuis `prog/_templates/semaine.md` :
    - texte athlète (échauffements écrits) ;
    - `<!-- pattern: -->` / `<!-- warmup: -->` pour ops ;

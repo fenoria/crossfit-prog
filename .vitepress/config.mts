@@ -25,8 +25,13 @@ function mdTitle(filePath: string, fallback: string): string {
 }
 
 /** Libellé sidebar uniquement — pages gardent le titre Markdown complet. */
-function sidebarLabel(title: string): string {
-  return title.replace(/\bMacrocycle\b/g, 'Macro')
+function sidebarLabel(title: string, entryName?: string): string {
+  let label = title.replace(/\bMacrocycle\b/g, 'Macro')
+  const mesoNum = entryName?.match(/^meso-(\d+)/i)
+  if (mesoNum) {
+    label = label.replace(/^Meso\b/, `Meso ${Number(mesoNum[1])}`)
+  }
+  return label
 }
 
 function toLink(absPath: string): string {
@@ -40,6 +45,10 @@ function sortEntries(names: string[]): string[] {
   return names.sort((a, b) => {
     if (a === 'index.md') return -1
     if (b === 'index.md') return 1
+    // meso-01 before meso-02…
+    const am = a.match(/^meso-(\d+)/i)
+    const bm = b.match(/^meso-(\d+)/i)
+    if (am && bm) return Number(am[1]) - Number(bm[1])
     // S01 before S02… then alpha
     const as = a.match(/^S(\d+)/i)
     const bs = b.match(/^S(\d+)/i)
@@ -100,7 +109,10 @@ function buildDirItems(dir: string): DefaultTheme.SidebarItem[] {
     if (st.isDirectory()) {
       const indexPath = join(abs, 'index.md')
       const childItems = buildDirItems(abs)
-      const text = sidebarLabel(existsSync(indexPath) ? mdTitle(indexPath, name) : name)
+      const text = sidebarLabel(
+        existsSync(indexPath) ? mdTitle(indexPath, name) : name,
+        name,
+      )
       const overview = existsSync(indexPath)
         ? [{ text: 'Vue d’ensemble', link: toLink(indexPath) }]
         : []
@@ -114,7 +126,7 @@ function buildDirItems(dir: string): DefaultTheme.SidebarItem[] {
 
     if (!name.endsWith('.md') || name === 'index.md') continue
     items.push({
-      text: sidebarLabel(mdTitle(abs, basename(name, '.md'))),
+      text: sidebarLabel(mdTitle(abs, basename(name, '.md')), name),
       link: toLink(abs),
     })
   }

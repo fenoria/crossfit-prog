@@ -20,7 +20,7 @@ prog/
   livres/               ← référentiel (fiches + concepts)
   saison-2026/          ← instance année (priorités, macros, semaines)
     macrocycle-1-build/
-      meso-benchmarks/
+      meso-01-benchmarks/
         S01-….md        ← 1 fichier = 1 semaine
   public/concepts/      ← schémas génériques
   public/diagrams/      ← schémas d’instance (hors collision /saison-YYYY/)
