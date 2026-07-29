@@ -36,7 +36,7 @@ Excentriques, isométries, variations d’angle, lestage : pour avancer quand le
 
 Priorité n°1 quand on monte le volume gym : tendons, épaules, coudes. La prog doit laisser digérer — cohérent avec Israetel.
 
-## Ce qu’on retient pour ta prog
+## Ce qu’on retient pour la prog
 
 - **Low pilote les mesos Accumulation gym** : densité, EMOM techniques, renfo, ladder de skills.
 - Faiblesse principale du profil = **répétabilité gym** → blocs dédiés, pas seulement gym « noyée » dans le WOD.
@@ -47,7 +47,7 @@ Priorité n°1 quand on monte le volume gym : tendons, épaules, coudes. La prog
 
 - Objectifs planche / one-arm / figures hors transfert compétition.
 - Volume gym « random » chaque jour sans progression.
-- Ignorer les tissus pour « casse toi au MU ».
+- Ignorer les tissus pour « se casser sur les MU ».
 
 ## À retenir
 

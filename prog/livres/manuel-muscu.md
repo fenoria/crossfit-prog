@@ -16,7 +16,7 @@ Des muscles et tendons solides aident la gym et la barre. Mais le bodybuilding (
 - Hypertrophie locale au service de la résilience (épaules, rachis), pas de l’esthétique.
 - Volume d’accessoires = reste du budget temps après le travail principal.
 
-## Ce qu’on retient pour ta prog
+## Ce qu’on retient pour la prog
 
 - 1–2 accessoires en fin de séance si le temps le permet.
 - Free weights only (halteres, barre, kettlebells, bandes…) — **aucune machine guidée**.

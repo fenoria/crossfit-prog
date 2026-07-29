@@ -9,7 +9,7 @@ Quand on écrit ou adapte une semaine / un meso :
 
 1. **Patterns** — chaque jour actif a `<!-- pattern: id -->` ∈ `knowledge/session-patterns.yaml` ; hors liste → `history/decisions.md`
 2. **Warm-ups** — choisir un id dans `knowledge/warmups.yaml` (`<!-- warmup: id -->`) **et** écrire l’échauffement **en entier** dans la séance (pas d’id visible)
-3. **Langage `prog/`** — zéro chemin `knowledge/` / `athlete/` / champs profile ; texte compréhensible à la box
+3. **Langage `prog/`** — zéro chemin `knowledge/` / `athlete/` / champs profile ; texte compréhensible à la box ; **ton neutre** (pas de tutoiement / adresse directe)
 4. **Maintien** — respecter `knowledge/maintenance-doses.yaml` pour le code meso (traduire en français dans la page)
 5. **Gates** — ne pas enchaîner de meso sans `knowledge/meso-gates.yaml` (condition en français dans la page)
 6. **Douleur** — ne pas interroger l’adducteur à chaque séance ; si signalée → `knowledge/adductor-protocol.yaml`

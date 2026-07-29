@@ -13,13 +13,13 @@ Le conditioning de haut niveau, ce n’est pas empiler du dur. C’est mélanger
 1. du **bas intensité** (Z2 / effort continu soutenable) — base, récup, volume aérobie ;
 2. du **HIIT ciblé** — efforts au-dessus du seuil, avec récup, pour toucher VO₂, glycolyse ou puissance courte **sans** tout mélanger chaque jour.
 
-Chez toi, le cardio / ergos / wall-balls / burpees sont déjà un point fort → ce livre sert à **doser et placer** le HI, pas à en faire une accumulation prioritaire.
+Ici, le cardio / ergos / wall-balls / burpees sont déjà un point fort → ce livre sert à **doser et placer** le HI, pas à en faire une accumulation prioritaire.
 
 ## Concepts essentiels
 
 ### Cinq formats HIIT
 
-| Format | Idée | Usage typique chez toi |
+| Format | Idée | Usage typique ici |
 |--------|------|-------------------------|
 | Long intervals (~2–5 min) | Près de VO₂max, fort O₂ + glycolyse | Rare ; fin Acc / Trans |
 | Short intervals (10–60 s) | Le plus polyvalent | Ergos / mixed contrôlés en Trans |
@@ -35,7 +35,7 @@ Du plus « aérobie O₂ » au plus « glycolyse + neuromusculaire ». On choisi
 
 Une séance HI dure n’existe pas isolée : glycogen, fatigue nerveuse, tendons. D’où les caps de la matrice conditioning et la règle team RPE élevé → −volume le lendemain.
 
-## Ce qu’on retient pour ta prog
+## Ce qu’on retient pour la prog
 
 - **Laursen/Buchheit pilote** la matrice conditioning (avec Bible PP en socle FR).
 - Z2 fréquent (Z2 > off) ; HI surtout en Transmutation / Affûtage.
@@ -52,7 +52,7 @@ Une séance HI dure n’existe pas isolée : glycogen, fatigue nerveuse, tendons
 
 - Cible physiologique d’abord, format ensuite.
 - Bas intensité + HIIT ciblé, pas HIIT partout.
-- Pour toi : **maintien** intelligent > développement conditioning.
+- **Maintien** intelligent > développement conditioning.
 
 ## Où ça se voit
 

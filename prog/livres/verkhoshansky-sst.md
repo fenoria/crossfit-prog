@@ -8,7 +8,7 @@ Manuel coach sur la **force spéciale** (SST) : comment organiser les moyens de 
 
 ## Vision globale
 
-Devenir plus fort en salle ne garantit pas d’être meilleur en compétition. Il faut une **chaîne de transfert** : force générale → force orientée → expression sous le régime du sport (chez toi : mixed CrossFit — gym + barre + ergo sous fatigue).
+Devenir plus fort en salle ne garantit pas d’être meilleur en compétition. Il faut une **chaîne de transfert** : force générale → force orientée → expression sous le régime du sport (ici : mixed CrossFit — gym + barre + ergo sous fatigue).
 
 Les mesos de **Transmutation** existent pour ça : convertir ce qui a été construit en Accumulation.
 
@@ -26,7 +26,7 @@ Les blocs de force ne sont pas saupoudrés au hasard : concentration, puis conve
 
 Sauts, circuits, coupling, travail force-aérobie… On **sélectionne** selon le meso ; on ne colle pas un programme aviron ou sprint tel quel, ni un Westside « brut ».
 
-## Ce qu’on retient pour ta prog
+## Ce qu’on retient pour la prog
 
 - Guide le passage Accumulation → Transmutation mixed → Affûtage.
 - Dans le mixed : gym + barre + conditioning **sous fatigue**, pas des qualités isolées éternellement.

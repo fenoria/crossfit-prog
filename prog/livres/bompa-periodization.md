@@ -30,9 +30,9 @@ Unités de planification : le meso porte une intention ; le micro (semaine) modu
 
 ### Séquence force classique
 
-Anatomical adaptation → max strength → conversion. **Exception reconstruction** chez toi : l’Accumulation **gym** passe avant l’AA force pure, parce que la gym est la qualité limitante.
+Anatomical adaptation → max strength → conversion. **Exception reconstruction** ici : l’Accumulation **gym** passe avant l’AA force pure, parce que la gym est la qualité limitante.
 
-## Ce qu’on retient pour ta prog
+## Ce qu’on retient pour la prog
 
 - Année = **2–3 macros** ; chaque macro ≈ Acc → Trans → Real (Issurin) dans un cadre Bompa.
 - Taper / affûtage avant les vrais pics.

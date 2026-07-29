@@ -8,7 +8,7 @@ Référence académique / coaching sur l’entraînement de la force : intensit�
 
 ## Vision globale
 
-La force n’est pas un seul stimulus. Selon l’objectif (structure, force max, puissance), on choisit la **méthode**, la charge relative, le volume et la proximité de l’échec. Le transfert vers le sport dépend de la **spécificité** : ce que tu charges doit ressembler, en régime moteur, à ce que tu veux améliorer — ou y préparer clairement (d’où Verkhoshansky ensuite).
+La force n’est pas un seul stimulus. Selon l’objectif (structure, force max, puissance), on choisit la **méthode**, la charge relative, le volume et la proximité de l’échec. Le transfert vers le sport dépend de la **spécificité** : ce qu’on charge doit ressembler, en régime moteur, à ce qu’on veut améliorer — ou y préparer clairement (d’où Verkhoshansky ensuite).
 
 ## Concepts essentiels
 
@@ -30,9 +30,9 @@ En Accumulation force, on mélange structure + force avec doses Israetel ; on é
 
 ### Spécificité & technique
 
-Une barre lourde mal faite n’entraîne pas le mouvement que tu crois. Technique sous charge = partie de la force.
+Une barre lourde mal faite n’entraîne pas le mouvement qu’on croit. Technique sous charge = partie de la force.
 
-## Ce qu’on retient pour ta prog
+## Ce qu’on retient pour la prog
 
 - Cadre pour squat / hinge / push / pull en Accumulation force.
 - Pas de chasse aux PRs pré-blessure ; charges actuelles + RPE.

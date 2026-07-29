@@ -29,6 +29,7 @@ Sidebar VitePress = **auto** (arborescence `prog/`).
 
 ## Langage athlète (obligatoire)
 - Texte visible = compréhensible à l’entraînement **et partageable** (collègue / coach sans questions).
+- **Ton neutre** : pas de tutoiement (« tu / toi / Si tu… ») — « Si entraînement », « Si séance », « ici », « la prog », « on ».
 - **Objectif de la semaine** en tête (pas créneau / matériel / profil athlète).
 - Échauffement **écrit en entier** ; cibles **chiffrées** (reps / RPE / durée / repos).
 - Pas de `knowledge/…`, `athlete/…`, codes meso bruts seuls, ids `warmup_*` visibles.

@@ -18,7 +18,7 @@ L’athlète intelligent progresse **dans** cette zone, planifie des **deloads**
 
 - **MEV** (*Minimum Effective Volume*) — volume minimum pour progresser.
 - **MAV** (*Maximum Adaptive Volume*) — zone où l’adaptation est la plus rentable.
-- **MRV** (*Maximum Recoverable Volume*) — au-delà, tu digères moins bien que tu construis : net négatif.
+- **MRV** (*Maximum Recoverable Volume*) — au-delà, on digère moins bien qu’on construit : net négatif.
 
 La prog vise à **monter progressivement** vers le haut de la zone utile, puis deload, puis recommencer un cran plus haut si possible.
 
@@ -35,7 +35,7 @@ La fatigue est un outil, pas un trophée. Deloads systématiques (souvent en fin
 
 Varier assez pour ne pas stagner / se blesser, pas assez pour diluer l’adaptation (cohérent avec Issurin : une intention dominante).
 
-## Ce qu’on retient pour ta prog
+## Ce qu’on retient pour la prog
 
 - **Israetel pilote la dose** sur force, gym et Oly.
 - Microcycles typiques : volume → surcharge → pic → deload.

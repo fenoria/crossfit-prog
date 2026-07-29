@@ -17,7 +17,7 @@ S’entraîner dur ne suffit pas : le jour J, l’incertitude (workouts inconnus
 - Visualisation / réduction du bruit (nouveaux stimuli inutiles en taper).
 - Cohérence avec l’objectif « performer », pas seulement « encaisser ».
 
-## Ce qu’on retient pour ta prog
+## Ce qu’on retient pour la prog
 
 - Activer surtout en Affûtage / pré-comp / taper.
 - En Accumulation : le mental suit le travail physique (clarité d’intention de séance), sans modules longs.

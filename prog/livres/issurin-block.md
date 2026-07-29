@@ -10,7 +10,7 @@ Le contexte d’origine est souvent mono-sport (natation, kayak, cyclisme). On *
 
 ## Vision globale
 
-Chez l’élite, le corps ne s’adapte bien qu’à un **petit nombre de stimuli** simultanés. Si tu pousses force max, volume gym, VO2, skill et puissance barre chaque semaine à fond, chaque adaptation est diluée.
+Chez l’élite, le corps ne s’adapte bien qu’à un **petit nombre de stimuli** simultanés. Si on pousse force max, volume gym, VO2, skill et puissance barre chaque semaine à fond, chaque adaptation est diluée.
 
 La solution Issurin : des **blocs concentrés**, puis on compte sur les **effets résiduels** — une qualité développée continue d’exister un moment après qu’on arrête de la stimuler. En séquençant bien, on arrive en compétition avec plusieurs qualités encore « chaudes », sans les avoir toutes poussées la veille.
 
@@ -37,7 +37,7 @@ D’où l’ordre des blocs : on ne finit pas un cycle par un gros volume gym si
 
 Un mesocycle = une **priorité claire**. Le reste existe en **maintien** (assez pour ne pas perdre, pas assez pour voler le stimulus principal).
 
-## Ce qu’on retient pour ta prog
+## Ce qu’on retient pour la prog
 
 - **Issurin pilote la séquence des mesos** : pas six qualités à fond chaque semaine.
 - Macrocycle 1 (reconstruction) : Benchmarks → Accumulation **gym** → Accumulation force → Transmutation mixed → Affûtage court → Transition.
@@ -47,7 +47,7 @@ Un mesocycle = une **priorité claire**. Le reste existe en **maintien** (assez 
 ## Ce qu’on n’applique pas
 
 - Tableaux mono-sport tels quels.
-- L’idée que « blocs » = ignorer tout le reste : le **maintien** des autres qualités est obligatoire (sinon tu perds ce que tu as construit).
+- L’idée que « blocs » = ignorer tout le reste : le **maintien** des autres qualités est obligatoire (sinon on perd ce qui a été construit).
 - Bompa « concurrent » comme excuse pour tout mélanger — Bompa cadre l’**année** ; Issurin cadre les **blocs**.
 
 ## À retenir

@@ -16,6 +16,7 @@ alwaysApply: true
 ## Langage athlète (site visible)
 
 - `prog/` hors commentaires HTML = **lisible à la box et partageable** (collègue / coach sans questions).
+- **Ton neutre** : pas de tutoiement ni d’adresse directe (« tu / toi / chez toi / Si tu… ») — formuler en impersonnel (« Si entraînement », « Si séance », « ici », « la prog », « on »).
 - Chaque séance active : cibles **chiffrées** (reps, RPE, durée, repos) — interdit « lourd confortable » / « submax » seuls.
 - Échauffements écrits en entier ; glossaire si acronymes ; **Objectif de la semaine** en tête (pas créneau / matériel / profil).
 - Interdit dans le texte visible : chemins `knowledge/` / `athlete/`, champs profile, ids `warmup_*` / patterns seuls, codes meso bruts (ACC-GYM…) sans nom lisible.

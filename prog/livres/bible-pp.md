@@ -8,7 +8,7 @@ Ouvrage de référence FR sur la préparation physique : qualités, diagnostic d
 
 ## Vision globale
 
-Avant de programmer, on **mesure et on hiérarchise les besoins**. Toutes les qualités ne méritent pas le même investissement. Chez toi, le conditioning (ergos, wall-balls, burpees…) est déjà un point fort → la Bible PP sert de **socle de maintien et de variété**, pas de feuille de route pour « devenir un monstre cardio ».
+Avant de programmer, on **mesure et on hiérarchise les besoins**. Toutes les qualités ne méritent pas le même investissement. Ici, le conditioning (ergos, wall-balls, burpees…) est déjà un point fort → la Bible PP sert de **socle de maintien et de variété**, pas de feuille de route pour « devenir un monstre cardio ».
 
 ## Concepts essentiels
 
@@ -24,7 +24,7 @@ Endurance, force, vitesse, etc. — avec des outils utilisables en box (free wei
 
 Tester, comparer, ajuster — d’où l’intérêt d’un meso Benchmarks en ouverture de macro.
 
-## Ce qu’on retient pour ta prog
+## Ce qu’on retient pour la prog
 
 - Socle conditioning FR (avec Bompa / Issurin et la matrice pilotée Laursen/Buchheit).
 - Z2 > off si créneau possible.
@@ -39,7 +39,7 @@ Tester, comparer, ajuster — d’où l’intérêt d’un meso Benchmarks en ou
 ## À retenir
 
 - Mesurer → prioriser → programmer.
-- Conditioning = maintien pour toi, pas accumulation prioritaire.
+- Conditioning = maintien, pas accumulation prioritaire.
 - Socle FR utile, pas cookbook élite CF seul.
 - Z2 intelligent > repos par défaut.
 

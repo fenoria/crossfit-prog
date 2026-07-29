@@ -1,6 +1,6 @@
 # Livres
 
-Douze ouvrages nourrissent la programmation. Tu n’as pas besoin de les lire en entier : ces fiches résument la vision de chaque auteur, les idées clés, et **ce qui est réellement retenu** dans ta prog.
+Douze ouvrages nourrissent la programmation. Pas besoin de les lire en entier : ces fiches résument la vision de chaque auteur, les idées clés, et **ce qui est réellement retenu** dans la prog.
 
 ## Qui pilote quoi ?
 

@@ -16,7 +16,7 @@ Il existe beaucoup de façons de stimuler une qualité. L’encyclopédie aide �
 - Utile quand un stimulus stagne : alternative dans la même famille.
 - Ne remplace pas une hiérarchie de priorités.
 
-## Ce qu’on retient pour ta prog
+## Ce qu’on retient pour la prog
 
 - Inspiration ponctuelle (variantes d’ergo, renfo, GPP) si le budget 90 min le permet.
 - Toujours filtré par : intention du meso, dose Israetel, matériel box.

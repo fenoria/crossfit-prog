@@ -108,3 +108,9 @@ Une fois une semaine **commencée** ou **dépassée** :
 - Adaptations → semaines futures uniquement.
 
 Rules / skills : `prog-markdown-source.mdc`, `write-week`, `session-feedback`.
+
+## 2026-07-29 — Ton neutre dans `prog/`
+
+Pas d’adresse directe / tutoiement dans le texte visible (`tu`, `toi`, `chez toi`, `pour toi`, `Si tu…`).  
+Formulations type : « Si entraînement », « Si séance », « ici », « la prog », « on ».  
+Appliqué aux semaines, macros, fiches livres ; rules `french-domain`, `prog-markdown-source`, `ops-coherence` + skill `write-week`.
