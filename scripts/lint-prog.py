@@ -237,7 +237,7 @@ def check_meso_indexes(meso_codes: set[str], warnings: list[str]) -> None:
 
 
 def check_public_svgs(errors: list[str]) -> None:
-    """SVG sous prog/public : UTF-8 strict + XML bien formé (sinon img cassée en navigateur)."""
+    """SVG sous prog/public : ASCII + entités XML (évite Encoding error navigateur)."""
     public = PROG / "public"
     if not public.is_dir():
         return
@@ -251,16 +251,17 @@ def check_public_svgs(errors: list[str]) -> None:
     for path in sorted(public.rglob("*.svg")):
         rel = path.relative_to(ROOT)
         raw = path.read_bytes()
-        try:
-            text = raw.decode("utf-8")
-        except UnicodeDecodeError as exc:
-            errors.append(
-                f"{rel} : encodage non UTF-8 ({exc.reason} @ byte {exc.start}) "
-                "— réécrire en UTF-8 (encoding=\"UTF-8\")"
-            )
-            continue
         if raw.startswith(b"\xef\xbb\xbf"):
             errors.append(f"{rel} : BOM UTF-8 interdit (réécrire sans BOM)")
+            continue
+        try:
+            text = raw.decode("ascii")
+        except UnicodeDecodeError as exc:
+            errors.append(
+                f"{rel} : octet non-ASCII @ byte {exc.start} — "
+                "utiliser des entités XML (&#233; etc.), fichier ASCII pur"
+            )
+            continue
         try:
             ET.fromstring(raw)
         except ET.ParseError as exc:
