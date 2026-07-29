@@ -29,9 +29,9 @@ Le CrossFit compétition offre des opportunités **toute l’année**. On constr
 
 ```text
 ANNÉE
-├── Macrocycle 1 — Build                      ~12–16 sem.
-├── Macrocycle 2 — Élévation du plafond       ~12–16 sem.
-├── Macrocycle 3 — Spécifique + A-event       ~12–16 sem.
+├── Macrocycle A — besoin prioritaire #1      ~12–16 sem.
+├── Macrocycle B — besoin prioritaire #2      ~12–16 sem.
+├── Macrocycle C — spécifique / pic majeur    ~12–16 sem.
 └── Transition / compensation                 ~2–4 sem.
 ```
 
@@ -152,6 +152,6 @@ Processus : lecture ciblée → arbitrages → synthèse → traduction en arbor
 4. **Meso** — intention dominante + critères de passage  
 5. **Semaine** — séances du jour (cibles chiffrées)
 
-## En cours
+## Aller vers l’instance
 
-- [Saison 2026](/saison-2026/) → Macrocycle 1 — Build → Meso Benchmarks → [S01](/saison-2026/macrocycle-1-build/meso-benchmarks/S01-2026-08-03)
+Le référentiel reste volontairement stable. Pour l’année active, les semaines en cours et les macros ouvertes, voir le hub [Saisons](/saisons/).

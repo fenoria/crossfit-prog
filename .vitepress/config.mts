@@ -45,13 +45,25 @@ function sortEntries(names: string[]): string[] {
 
 function loadCurrentWeekLink(): string {
   const currentPath = join(rootDir, 'current.json')
-  if (!existsSync(currentPath)) return '/saison-2026/'
+  const fallback = defaultSeasonLink()
+  if (!existsSync(currentPath)) return fallback
   try {
     const data = JSON.parse(readFileSync(currentPath, 'utf8')) as { week?: string }
-    return data.week || '/saison-2026/'
+    return data.week || fallback
   } catch {
-    return '/saison-2026/'
+    return fallback
   }
+}
+
+function defaultSeasonLink(): string {
+  if (!existsSync(progDir)) return '/saisons/'
+  const seasons = readdirSync(progDir)
+    .filter((name: string) => name.startsWith('saison-'))
+    .filter((name: string) => statSync(join(progDir, name)).isDirectory())
+    .sort((a: string, b: string) => b.localeCompare(a, 'fr'))
+
+  if (seasons.length === 0) return '/saisons/'
+  return `/${seasons[0]}/`
 }
 
 function buildDirItems(dir: string): DefaultTheme.SidebarItem[] {
@@ -150,14 +162,14 @@ const sidebarItems: DefaultTheme.SidebarItem[] = [
 
 export default defineConfig({
   title: 'Prog CrossFit',
-  description: 'Programmation CrossFit élite — Thierry Maxel',
+  description: 'Programmation CrossFit élite',
   lang: 'fr-FR',
   srcDir: 'prog',
   base: repoBase,
   cleanUrls: true,
   appearance: 'dark',
   themeConfig: {
-    logo: { src: '/logo.svg', alt: 'Prog CrossFit' },
+    logo: { src: asset('/logo.svg'), alt: 'Prog CrossFit' },
     siteTitle: 'Prog CrossFit',
     nav: [
       { text: 'Accueil', link: '/' },
@@ -220,7 +232,7 @@ export default defineConfig({
       'meta',
       {
         property: 'og:description',
-        content: 'Programmation CrossFit élite — Thierry Maxel',
+        content: 'Programmation CrossFit élite',
       },
     ],
     ['meta', { property: 'og:locale', content: 'fr_FR' }],
@@ -230,7 +242,7 @@ export default defineConfig({
       'meta',
       {
         name: 'twitter:description',
-        content: 'Programmation CrossFit élite — Thierry Maxel',
+        content: 'Programmation CrossFit élite',
       },
     ],
   ],

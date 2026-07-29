@@ -51,7 +51,7 @@ Modulation courte à l’intérieur d’un meso concentré.
 La force et la gym ne comptent que si elles tiennent sous fatigue CrossFit.
 
 <figure class="concept-figure">
-  <img src="/concepts/transfert-sst.svg" alt="Force gym Oly convergis vers conversion mixed puis affûtage" width="800" height="260" />
+  <img src="/concepts/transfert-sst.svg" alt="Force gym Oly convergent vers conversion mixed puis affûtage" width="800" height="260" />
   <figcaption><strong>Verkhoshansky</strong> (+ Zatsiorsky) — conversion en Transmutation, expression en Realization.</figcaption>
 </figure>
 

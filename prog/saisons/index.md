@@ -9,5 +9,5 @@ Le référentiel (méthodo, [concepts](/livres/concepts), [livres](/livres/)) re
 | Saison | Rôle | Statut |
 |--------|------|--------|
 | [2026](/saison-2026/) | Build + calibration, priorité volume gym | en cours |
-| 2027 | — | à venir |
-| 2028 | — | à venir |
+
+Les saisons futures apparaîtront ici à leur ouverture.
