@@ -23,7 +23,7 @@ units:
 by_meso_type:
   ACC-GYM:
     dominant: gym
-    gym: dominant  # volume selon athlete/profile.yaml → volumes.gym
+    gym: dominant  # volume selon profil athlète actif → volumes.gym
     force: { min_per_week: 1, unit: force_stimulus, note: "lower prudent OU upper ; pas les deux lourds" }
     oly: { min_per_week: 1, unit: oly_session }
     z2: { min_minutes_week: 60 }

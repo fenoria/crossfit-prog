@@ -1,15 +1,20 @@
 ---
-description: Profil athlète — pointeurs ; chiffres dans athlete/profile.yaml
+description: Profil athlète actif — chiffres dans athletes/<id>/profile.yaml
 alwaysApply: true
 ---
 
 # Contexte athlète
 
-**Source chiffres / planning** : `athlete/profile.yaml` (à tenir à jour — ne pas dupliquer ici les kg / dates).
+**Résolution** : `athletes/current.yaml` (`id`) → `athletes/<id>/profile.yaml`.
 
-## Invariants (rappel)
-- Niveau **élite / compétition** · priorité **volume gym** · cardio = force (ne pas sur-stimuler)
-- Frileux squat snatch/clean lourds → power / charges contrôlées
-- Blessure adducteur ~2025 → charges contrôlées / pas PRs pré-blessure ; **pas** de focus quotidien (protocole seulement si douleur signalée en feedback)
-- Jamais PRs pré-blessure pour les % (voir `prs_pre_injury_kg` = historique only)
-- Ops : `maintenance-doses`, `meso-gates`, `conditioning-matrix`, `gym-ladder`
+**Source chiffres / planning / blessure / priorités** : le profil de l’athlète actif (à tenir à jour — ne pas dupliquer ici les kg / dates / créneaux).
+
+## Lecture obligatoire avant prog / feedback
+- `level`, `priorities`, `strengths`, `weaknesses_or_limits`
+- `schedule`, `equipment`, `goal` (compétitions)
+- `injury` + `programming_rules` le cas échéant
+- `prs_current_kg` pour les % (jamais `prs_pre_injury_kg` — historique only)
+- `volumes.*`, `gym_ladder_level`, `coaching.*`
+
+## Ops (partagés)
+`maintenance-doses`, `meso-gates`, `conditioning-matrix`, `gym-ladder` — voir `knowledge/` ; doses instance = profil.

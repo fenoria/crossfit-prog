@@ -2,7 +2,7 @@
 
 Décisions corpus **validées** avec l’athlète (2026-07-27) · ops pack (2026-07-28) · Laursen/Buchheit (2026-07-29) · calendrier B/C (2026-07-29).  
 Rôle : conflits **entre auteurs** + décision retenue.  
-Contraintes athlète / calendrier / feedback durable → `athlete/profile.yaml` (ne pas tout dupliquer ici).
+Contraintes athlète / calendrier / feedback durable → profil athlète actif (`athletes/<id>/profile.yaml`) (ne pas tout dupliquer ici).
 
 ## 1. Structure de cycle : Issurin vs Bompa « traditionnel »
 - **Conflit** : Bompa/classique = développement concurrent de nombreuses qualités ; Issurin = blocs concentrés + résidus.
@@ -63,4 +63,4 @@ Contraintes athlète / calendrier / feedback durable → `athlete/profile.yaml` 
   - Macro 3 (16 nov. – 13 déc.) : TRA team → **REAL S7mbioz (C)**.
   - Transition dès 14 déc.
 - Fire = pic **secondaire** (expression / maintien) — pas un taper A qui casse le Build.
-- SoT dates : `athlete/profile.yaml` (`competitions` + `competition` / `next_after_b`).
+- SoT dates : profil athlète actif (`competitions` + `competition` / `next_after_b`).

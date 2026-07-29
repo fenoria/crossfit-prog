@@ -1,6 +1,6 @@
 # Volumes cibles (Israetel)
 # Règle d’écriture (post-S01) :
-#   - athlete/profile.yaml → volumes = INSTANCE athlète (chiffres courants, targets semaine)
+#   - athletes/<id>/profile.yaml → volumes = INSTANCE athlète (chiffres courants, targets semaine)
 #   - ce fichier = BORNES / standards méthodo (référence ; Z2 déjà calibré)
 # Ne pas remplir les deux « à l’identique » sans sync : en cas de doute, profile gagne pour la prog.
 

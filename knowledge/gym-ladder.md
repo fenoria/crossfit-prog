@@ -55,4 +55,4 @@ Une **qualité dominante par séance skill** en ACC-GYM. Progresser d’un cran 
 
 ## Tracking profil
 
-Après benchmarks gym, remplir dans `athlete/profile.yaml` → `volumes.gym` et `gym_ladder_level` (cran actuel par skill).
+Après benchmarks gym, remplir dans le profil athlète actif → `volumes.gym` et `gym_ladder_level` (cran actuel par skill).

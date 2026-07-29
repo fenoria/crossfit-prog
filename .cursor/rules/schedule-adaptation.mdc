@@ -1,26 +1,21 @@
 ---
-description: Planning défaut, matériel box, Z2, adaptations ponctuelles
+description: Planning & matériel — source = profil athlète actif
 alwaysApply: true
 ---
 
 # Planning & matériel
 
-## Défaut
-- Lun–Ven : **12h–13h30** (séances ≤ **90 min**, échauffement inclus)
-- Dimanche : généralement off — si créneau possible → **Z2 > off**
-- Samedi : **optionnel** (souvent ~1/2 si dispo), **10h–12h30** (~2h30) — volume / team / Z2 selon le meso
+**Source** : `schedule`, `equipment` et préférences du profil athlète actif (`athletes/current.yaml` → `athletes/<id>/profile.yaml`). Ne pas inventer de créneau / matériel hors profil.
 
-## Préférences
-- **Z2 > off** dès qu’un entraînement est possible (sauf fatigue haute, douleur signalée, deload/taper imposant le repos)
-
-## Matériel
-- Box CrossFit standard uniquement
-- **Aucune machine guidée** (leg press, smith, poulies machine, etc.)
-- Free weights, gym, ergos, odd objects box uniquement
+## Lecture typique (champs profil)
+- Semaine : jours, horaires, `max_minutes`, jour team éventuel
+- Samedi : fréquence (souvent optionnel), créneau, durée max
+- Dimanche : off vs Z2 selon profil + fatigue
+- Préférences récup active (`active_recovery_over_rest`, Z2)
+- Matériel : setting box, machines guidées autorisées ou non
 
 ## Adaptations
 - Weekends / vacances / contraintes ponctuelles : adapter jours/volume/intensité
-- Préserver l’intention du meso ; contrainte durable → `athlete/profile.yaml` (ou rule planning)
-- Contraintes durables → `athlete/profile.yaml`
+- Préserver l’intention du meso ; contrainte durable → profil athlète actif (ou rule planning)
 - Samedi : décider à l’écriture de la semaine ou J-1 selon dispo — section optionnelle dans le fichier semaine
-- Team WOD RPE ≥ 8 → −volume le lendemain
+- Team WOD RPE ≥ seuil profil (`coaching.team_wod_rpe_threshold_cut_next_day`, défaut 8) → −volume le lendemain

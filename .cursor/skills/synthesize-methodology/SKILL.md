@@ -6,7 +6,7 @@ description: Analyse fine des ebooks dans books/, produit fiches livre et une m�
 # Synthesize methodology
 
 ## Goal
-Extraire le **meilleur** et le **plus pertinent/récent** du corpus `books/` pour une méthodo CrossFit élite adaptée à `athlete/profile.yaml`. Pas de génération de séances.
+Extraire le **meilleur** et le **plus pertinent/récent** du corpus `books/` pour une méthodo CrossFit élite adaptée au profil athlète actif (`athletes/current.yaml` → `athletes/<id>/profile.yaml`). Pas de génération de séances.
 
 ## Steps
 1. Lister les fichiers dans `books/`.
@@ -16,8 +16,8 @@ Extraire le **meilleur** et le **plus pertinent/récent** du corpus `books/` pou
    - `knowledge/arbitrages.md` — conflits auteurs + décision
    - `knowledge/methodology.md` — méthodo lisible (`draft` | `validated`)
    - `knowledge/methodology.yaml` (contrat machine, sync avec md)
-   - Ops pack si impacté : `session-patterns`, `maintenance-doses`, `meso-gates`, `warmups`, `adductor-protocol`, `conditioning-matrix`, `volume-landmarks`, `gym-ladder`
-4. Critères : pertinence CF, qualité, récence si divergence, box / 90 min / gym volume / charges actuelles.
+   - Ops pack si impacté : `session-patterns`, `maintenance-doses`, `meso-gates`, `warmups`, `conditioning-matrix`, `volume-landmarks`, `gym-ladder` (+ protocoles douleur liés au profil si besoin)
+4. Critères : pertinence CF, qualité, récence si divergence, contraintes du profil actif (équipement, créneaux, priorités, charges actuelles).
 5. **Validation humaine** avant d’écrire des semaines dans `prog/`.
 
 ## Roles indicatifs

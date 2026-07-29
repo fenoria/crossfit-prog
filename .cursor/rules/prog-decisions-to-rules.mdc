@@ -7,7 +7,7 @@ alwaysApply: true
 
 Quand l’utilisateur pose une contrainte durable (planning, matériel, blessure, préférence méthodo, nouveau livre, feedback récurrent…) :
 
-1. Mettre à jour `athlete/profile.yaml` et/ou la rule concernée
+1. Mettre à jour le profil athlète actif (`athletes/<id>/profile.yaml`) et/ou la rule concernée
 2. Si conflit **entre auteurs / corpus** → `knowledge/arbitrages.md` (+ méthodo si besoin)
 3. Ne **pas** laisser la décision uniquement dans le chat
 

@@ -42,7 +42,7 @@ COMMENT_WARMUP = re.compile(r"<!--\s*warmup:\s*([a-z][a-z0-9_]*)\s*-->", re.I)
 HTML_COMMENT = re.compile(r"<!--.*?-->", re.S)
 # Fuite structure interne dans le texte visible (hors commentaires HTML)
 INTERNAL_LEAK = re.compile(
-    r"knowledge/|athlete/profile|prs_current_kg|maintenance-doses|meso-gates|"
+    r"knowledge/|athletes/|athlete/profile|prs_current_kg|maintenance-doses|meso-gates|"
     r"session-patterns|gym-ladder|adductor-protocol|warmup_[a-z_]+|"
     r"`(?:force_lower|force_upper|gym_skill_day|oly_power_day|conditioning_z2|"
     r"conditioning_specific|team_wod|benchmark_session)`",

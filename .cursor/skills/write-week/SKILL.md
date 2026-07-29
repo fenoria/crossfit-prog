@@ -15,7 +15,7 @@ Sidebar VitePress = **auto** (arborescence `prog/`).
 
 ## Preconditions
 - `knowledge/methodology.md` status **validated**
-- Lire `athlete/profile.yaml` + dernières semaines du même meso
+- Lire `athletes/current.yaml` → profil `athletes/<id>/profile.yaml` + dernières semaines du même meso
 - Relire fiches livres + `knowledge/arbitrages.md` pertinentes
 - Relire ops pack (agent only — ne pas coller ces chemins dans le texte visible) :
   - `knowledge/maintenance-doses.yaml` (code meso ; `REAL-mini` → `REAL`)
@@ -24,22 +24,22 @@ Sidebar VitePress = **auto** (arborescence `prog/`).
   - `knowledge/gym-ladder.md` si ACC-GYM
   - `knowledge/meso-gates.yaml` si changement de meso (scope Macro 1)
   - `knowledge/conditioning-matrix.yaml`
-  - `knowledge/adductor-protocol.yaml` seulement si douleur signalée (pas de focus systématique)
-- Samedi : optionnel (décider selon dispo)
+  - protocole douleur du profil seulement si douleur signalée (pas de focus systématique)
+- Samedi : selon `schedule.saturday` du profil (décider selon dispo)
 
 ## Langage athlète (obligatoire)
 - Texte visible = compréhensible à l’entraînement **et partageable** (collègue / coach sans questions).
 - **Ton neutre** : pas de tutoiement (« tu / toi / Si tu… ») — « Si entraînement », « Si séance », « ici », « la prog », « on ».
 - **Objectif de la semaine** en tête (pas créneau / matériel / profil athlète).
 - Échauffement **écrit en entier** ; cibles **chiffrées** (reps / RPE / durée / repos).
-- Pas de `knowledge/…`, `athlete/…`, codes meso bruts seuls, ids `warmup_*` visibles.
+- Pas de `knowledge/…`, `athletes/…`, codes meso bruts seuls, ids `warmup_*` visibles.
 - Ids ops en commentaires HTML : `<!-- pattern: … -->` · `<!-- warmup: … -->`
 - Formuler la suite en « Suite prévue : … » (pas « Décision J+7 »).
 
 ## Immutabilité (semaine commencée / passée)
 - **Ne jamais** modifier le contenu prescrit des séances d’une semaine déjà commencée ou passée.
 - Mise en forme OK (sans changer le sens) ; blocs Notes / feedback OK.
-- Toute adaptation → semaine(s) suivante(s) uniquement (+ `athlete/profile.yaml` si durable).
+- Toute adaptation → semaine(s) suivante(s) uniquement (+ profil athlète actif si durable).
 
 ## Steps
 1. Assurer les `index.md` Saison / Macro / Meso (meso depuis template meso).
@@ -51,9 +51,9 @@ Sidebar VitePress = **auto** (arborescence `prog/`).
    - **Échauffement** détaillé + **Séance** numérotée
    - Hors pattern → justifier dans Notes de la semaine (+ profile si durable)
    - Maintien du code meso respecté (formulé en français)
-   - Lun–Ven ≤90 min ; Mercredi team ou Z2 ; Samedi optionnel ; Dim off/Z2
+   - Respecter `schedule` / `max_minutes` du profil ; team day / Z2 / samedi selon profil
    - Blocs **Notes / feedback** (un `###` par jour, pas de tableau)
 3. Mettre à jour l’index du meso si besoin.
 4. Mettre à jour [`.vitepress/current.json`](.vitepress/current.json).
-5. Arbitrage durable → `athlete/profile.yaml` (ou `knowledge/arbitrages.md` si conflit corpus).
+5. Arbitrage durable → profil athlète actif (ou `knowledge/arbitrages.md` si conflit corpus).
 6. **Obligatoire** : `npm run lint:prog` — corriger toute ERROR avant de conclure.

@@ -21,7 +21,7 @@ common:
   accessory_or_finisher_min: 10-20
   always_respect: [current_benchmarks, no_guided_machines, no_pre_injury_prs]
   warmup_ids_ref: knowledge/warmups.yaml
-  off_pattern_requires: "justifier dans Notes de la semaine (+ athlete/profile.yaml si contrainte durable)"
+  off_pattern_requires: "justifier dans Notes de la semaine (+ profil athlète actif si contrainte durable)"
 
 
 force_lower:

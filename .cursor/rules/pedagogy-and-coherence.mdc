@@ -18,4 +18,4 @@ Règles :
 - Pas de séance orpheline
 - `prog/` = source de vérité des séances
 - Semaine commencée / passée : contenu séances **figé** (mise en forme OK ; Notes OK) — pas de réécriture rétroactive
-- Avant de créer un nouveau meso/semaine : relire `prog/` (dernières semaines) + `athlete/profile.yaml`
+- Avant de créer un nouveau meso/semaine : relire `prog/` (dernières semaines) + profil athlète actif (`athletes/current.yaml` → `athletes/<id>/profile.yaml`)

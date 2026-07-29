@@ -2,7 +2,7 @@
 
 **Statut : `validated`**  
 Validée le : 2026-07-27 (athlète : oui sur structure Issurin, GYM d’abord, power Oly, conditioning maintien, microcycles volume→surcharge→pic→deload)  
-Sources : corpus `books/` (12 ouvrages) · profil `athlete/profile.yaml` · arbitrages `knowledge/arbitrages.md`
+Sources : corpus `books/` (12 ouvrages) · profil athlète actif (`athletes/<id>/profile.yaml`) · arbitrages `knowledge/arbitrages.md`
 
 ---
 
@@ -156,7 +156,7 @@ Jours : Lun–Ven ≤90 min · Mercredi team si box · Samedi optionnel · Diman
 - Gym : proxies volume (ex. max sets submax BMU/RMU, HSPU strict, HSW distance)
 - Ergo court : smoke test seulement
 
-Mettre à jour `athlete/profile.yaml` → `prs_current_kg`, `gym_ladder_level`, `volumes.*` (MEV de départ).  
+Mettre à jour le profil athlète actif → `prs_current_kg`, `gym_ladder_level`, `volumes.*` (MEV de départ).  
 Gate : `knowledge/meso-gates.yaml` → `benchmarks_to_ACC_GYM`.
 
 ---

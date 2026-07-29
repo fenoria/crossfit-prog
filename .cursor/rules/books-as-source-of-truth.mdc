@@ -7,7 +7,7 @@ alwaysApply: true
 
 Couches (qui gagne en conflit) :
 
-1. **`athlete/profile.yaml`** — instance athlète (charges, volumes, douleur, planning)
+1. **Profil athlète actif** (`athletes/current.yaml` → `athletes/<id>/profile.yaml`) — instance (charges, volumes, douleur, planning)
 2. **`prog/`** — séances exécutées (ce que l’athlète fait)
 3. **`knowledge/`** — méthodo + ops pack + arbitrages corpus
 4. **`books/`** — corpus brut (jamais citer contre une méthodo `validated` sans arbitrage)

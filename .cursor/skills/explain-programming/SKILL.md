@@ -8,4 +8,4 @@ description: Explique finement une séance/semaine/meso déjà généré via pro
 1. Lire la semaine / meso concerné dans `prog/`.
 2. Expliquer pourquoi, intention, bénéfices, lien court/moyen/long terme.
 3. Relier aux principes des livres retenus dans `knowledge/` (+ ops pack si pertinent : maintien, gates, ladder).
-4. Si adaptation post-feedback : s’appuyer sur `prog/` (Notes) + `athlete/profile.yaml` si durable.
+4. Si adaptation post-feedback : s’appuyer sur `prog/` (Notes) + profil athlète actif si durable.

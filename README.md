@@ -7,7 +7,7 @@ Programmation CrossFit élite — **source de vérité = [`prog/`](prog/)** (Mar
 | Couche | Rôle |
 |---|---|
 | Connaissance | [`knowledge/`](knowledge/) (+ [`books/`](books/) brut) |
-| Instance | [`athlete/profile.yaml`](athlete/profile.yaml) |
+| Instance | [`athletes/`](athletes/) — `current.yaml` + `<id>/profile.yaml` |
 | Séances | [`prog/`](prog/) — **SoT programmation** |
 | Site | **VitePress** → GitHub Pages |
 | En cours | [`.vitepress/current.json`](.vitepress/current.json) |
@@ -15,10 +15,13 @@ Programmation CrossFit élite — **source de vérité = [`prog/`](prog/)** (Mar
 ## Hiérarchie
 
 ```text
+athletes/
+  current.yaml          ← athlète actif (Cursor)
+  <id>/profile.yaml     ← instance (charges, planning, blessure…)
 prog/
   index.md              ← référentiel (méthodo, pérenne, neutre profil)
   livres/               ← référentiel (fiches + concepts)
-  saison-2026/          ← instance année (priorités, macros, semaines)
+  saison-2026/          ← séances année (SoT programmation ; site)
     macrocycle-01-build/
       meso-01-benchmarks/
         S01-….md        ← 1 fichier = 1 semaine
@@ -46,5 +49,5 @@ npm run lint:prog    # garde-fou structure prog/
 ## Coaching
 
 Feedback séance → blocs **Notes / feedback** (un jour = un titre) dans la semaine `prog/` + éventuellement `.vitepress/current.json`.  
-Décisions durables : [`athlete/profile.yaml`](athlete/profile.yaml) · conflits corpus : [`knowledge/arbitrages.md`](knowledge/arbitrages.md).  
+Décisions durables : [`athletes/<id>/profile.yaml`](athletes/) (via [`current.yaml`](athletes/current.yaml)) · conflits corpus : [`knowledge/arbitrages.md`](knowledge/arbitrages.md).  
 Ops pack : `knowledge/maintenance-doses.yaml`, `meso-gates.yaml`, `gym-ladder.md`, etc. · lint : `npm run lint:prog`

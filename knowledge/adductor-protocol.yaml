@@ -35,7 +35,7 @@ levels:
       - "Pas de max out, pas de deep heavy"
     next_session: "Z2 + upper/gym jusqu’à douleur ≤ 2 au warm-up lower ; puis remonter prudemment"
     document: true
-    escalate_profile: true  # maj athlete/profile.yaml si récurrent
+    escalate_profile: true  # maj profil athlète actif si récurrent
 
 warmup_lower_default: "warmup_adductor_friendly"  # mobilité hanches standard lower — pas un focus blessure visible
 
