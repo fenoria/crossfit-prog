@@ -23,7 +23,7 @@ prog/
       meso-benchmarks/
         S01-….md        ← 1 fichier = 1 semaine
   public/concepts/      ← schémas génériques
-  public/saison-2026/   ← schémas d’instance
+  public/diagrams/      ← schémas d’instance (hors collision /saison-YYYY/)
 .vitepress/current.json ← lien nav « En cours »
 ```
 

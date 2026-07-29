@@ -20,7 +20,7 @@ Deux zones distinctes sur le site (et dans `prog/`) :
 | Zone | Contenu | Exemples | Contraintes |
 |------|---------|----------|-------------|
 | **Référentiel** | Méthodo, concepts, fiches livres | `prog/index.md`, `prog/livres/`, `prog/public/concepts/` | **Pérenne** (2026, 2027…) et **neutre profil** — pas de calendrier d’année, pas de qualité limitante / créneau / blessure / priorité athlète |
-| **Saisons** | Instance année | `prog/saison-YYYY/`, `prog/public/saison-YYYY/` | Priorités, créneaux, séquence des macros, schémas d’instance |
+| **Saisons** | Instance année | `prog/saison-YYYY/`, `prog/public/diagrams/saison-YYYY/` | Priorités, créneaux, séquence des macros, schémas d’instance |
 
 - Concepts / livres / accueil méthodo → formuler de façon **générale** (« selon la qualité limitante », « selon le diagnostic de saison »).
 - Concepts / livres / accueil méthodo → ton **référentiel de prépa physique** : compréhensible par un coach externe, sans présupposer le contexte du repo.

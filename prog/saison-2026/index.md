@@ -12,15 +12,6 @@ Plan annuel CrossFit élite à **plusieurs pics**, calé sur le calendrier comp�
 
 Petites compet opportunistes : seulement si annoncées, sans casser A/B/C.
 
-## Contexte
-
-- Niveau compétition · **qualité limitante = volume / répétabilité gym** · cardio déjà solide → **maintien**
-- Créneau type : lun–ven **12h–13h30** (~90 min) · samedi optionnel · dimanche souvent off
-- Matériel : box CrossFit uniquement (pas de machines guidées)
-- Charges : benchmarks **actuels** (pas d’anciens records)
-- Haltéro : power / pulls prioritaires ; squat snatch / clean lourds rares et contrôlés
-- Douleur signalée → adaptation (pas de score quotidien demandé)
-
 ## Intention long terme
 
 Élever le volume gym, développer force et confiance sous la barre, maintenir le cardio, **exprimer** sur Fire Contest (B) puis S7mbioz (C), avec transition de fin d’année.
@@ -35,10 +26,6 @@ Petites compet opportunistes : seulement si annoncées, sans casser A/B/C.
 | [Transition](transition/index.md) | dès 14 déc. (~2–3 sem.) | Décharge fin d’année | à venir |
 
 <figure class="concept-figure">
-  <img src="/saison-2026/annee-2026-pics.svg" alt="Saison 2026 : Macro 1 vers Fire Contest, Macro 2 élévation, Macro 3 vers S7mbioz, transition" width="800" height="280" />
+  <img src="/diagrams/saison-2026/annee-2026-pics.svg" alt="Saison 2026 : Macro 1 vers Fire Contest, Macro 2 élévation, Macro 3 vers S7mbioz, transition" width="800" height="280" />
   <figcaption>Saison 2026 — pics B (septembre) et C (décembre).</figcaption>
 </figure>
-
-## Lecture rapide
-
-1. Saison → 2. Macrocycle → 3. Meso → 4. Semaine

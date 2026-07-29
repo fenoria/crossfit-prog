@@ -12,7 +12,7 @@ Fire Contest est un **pic secondaire** (maintien de forme / expression) : on ne 
 **Pourquoi gym avant force max** : la qualité limitante est la répétabilité gym, pas la force max — le plafond gymnastique passe en premier.
 
 <figure class="concept-figure">
-  <img src="/saison-2026/macro1-build.svg" alt="Séquence Benchmarks Accumulation gym Expression Fire Transition" width="800" height="240" />
+  <img src="/diagrams/saison-2026/macro1-build.svg" alt="Séquence Benchmarks Accumulation gym Expression Fire Transition" width="800" height="240" />
   <figcaption>Macro 1 — Build vers le pic B Fire Contest.</figcaption>
 </figure>
 
