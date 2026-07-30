@@ -59,40 +59,6 @@ const activeConfig = computed<TimerConfig>(() => ({
         : null,
 }))
 
-const configSummary = computed(() => {
-  const label = types.find((t) => t.value === timerType.value)?.label ?? ''
-  const parts: string[] = [label]
-
-  if (timerLauncherTime.value > 0) {
-    parts.push(`pre-count ${timerLauncherTime.value}s`)
-  }
-
-  if (['amrap', 'countdown'].includes(timerType.value)) {
-    parts.push(timerTotalTime.value)
-  }
-
-  if (['forTime', 'emom', 'tabata'].includes(timerType.value)) {
-    parts.push(`${timerTotalRounds.value} rounds`)
-  }
-
-  if (timerType.value === 'tabata') {
-    parts.push(`${timerTabataRoundTime.value}s / ${timerTabataRoundRestTime.value}s`)
-  }
-
-  if (timerType.value === 'emom') {
-    parts.push(`${timerEmomRoundTime.value}s`)
-    if (timerEmomRoundRestTime.value > 0) {
-      parts.push(`rest ${timerEmomRoundRestTime.value}s`)
-    }
-  }
-
-  if (hasAudio.value) {
-    parts.push('son')
-  }
-
-  return parts.join(' · ')
-})
-
 function openTimer() {
   isRunning.value = true
 }
@@ -180,8 +146,6 @@ function closeTimer() {
           <input v-model="hasAudio" type="checkbox" />
           <span>Activer le son</span>
         </label>
-
-        <p class="tool-summary">{{ configSummary }}</p>
 
         <button type="button" class="tool-action" @click="openTimer">
           Lancer le timer

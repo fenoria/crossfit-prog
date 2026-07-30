@@ -125,15 +125,6 @@
   color: var(--vp-c-brand-1);
 }
 
-.tool-summary {
-  grid-column: 1 / -1;
-  margin: 0;
-  text-align: center;
-  font-size: 0.8125rem;
-  color: var(--vp-c-text-3);
-  letter-spacing: 0.01em;
-}
-
 .tool-form--timer .tool-field--checkbox,
 .tool-form--timer .tool-action {
   grid-column: 1 / -1;
