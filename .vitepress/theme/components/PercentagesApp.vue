@@ -25,7 +25,7 @@ function getWeight(percent: number) {
 
 <template>
   <div class="tool-app">
-    <section class="tool-panel concept-figure">
+    <section class="tool-panel">
       <div class="tool-form tool-form--percentages">
         <label class="tool-field">
           <span>Charge (kg)</span>

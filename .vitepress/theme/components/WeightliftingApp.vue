@@ -5,7 +5,7 @@ import { snatchMoves, cleanMoves, jerkMoves } from '../weightlifting/moves'
 
 <template>
   <div class="tool-app">
-    <section class="tool-panel concept-figure tool-section">
+    <section class="tool-panel tool-section">
       <h2 class="tool-section__heading">Arraché</h2>
       <WeightliftingTable
         :moves="snatchMoves"
@@ -14,7 +14,7 @@ import { snatchMoves, cleanMoves, jerkMoves } from '../weightlifting/moves'
       />
     </section>
 
-    <section class="tool-panel concept-figure tool-section">
+    <section class="tool-panel tool-section">
       <h2 class="tool-section__heading">Épaulé</h2>
       <WeightliftingTable
         :moves="cleanMoves"
@@ -23,7 +23,7 @@ import { snatchMoves, cleanMoves, jerkMoves } from '../weightlifting/moves'
       />
     </section>
 
-    <section class="tool-panel concept-figure tool-section">
+    <section class="tool-panel tool-section">
       <h2 class="tool-section__heading">Jeté</h2>
       <WeightliftingTable
         :moves="jerkMoves"

@@ -4,7 +4,7 @@
 
 **Macrocycle** : 1 — Build → Fire · **Saison** : 2026  
 **Durée prévue** : 1 sem. (7–13 septembre) · **Statut** : à venir  
-**Événement** : Fire Contest (Nantes) — rôle B · ~12–13 septembre (confirmer dès officialisation)
+**Événement** : Fire Contest (Nantes) — rôle B · ~12–13 septembre
 
 ## Pourquoi
 

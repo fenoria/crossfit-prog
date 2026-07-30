@@ -76,7 +76,7 @@ function closeTimer() {
       @close="closeTimer"
     />
 
-    <section class="tool-panel concept-figure">
+    <section class="tool-panel">
       <div class="tool-form">
         <label class="tool-field">
           <span>Type</span>
