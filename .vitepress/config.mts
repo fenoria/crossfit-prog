@@ -168,6 +168,7 @@ function buildSeasonItems(currentSeason: string | null): DefaultTheme.SidebarIte
 const current = loadCurrent()
 const livresDir = join(progDir, 'livres')
 const outilsDir = join(progDir, 'outils')
+const outilsItems = buildDirItems(outilsDir)
 
 const sidebarItems: DefaultTheme.SidebarItem[] = [
   ...buildSeasonItems(current.season),
@@ -193,7 +194,7 @@ const sidebarItems: DefaultTheme.SidebarItem[] = [
   {
     text: 'Outils',
     collapsed: true,
-    items: buildDirItems(outilsDir),
+    items: outilsItems,
   },
 ]
 
@@ -211,9 +212,12 @@ export default defineConfig({
     siteTitle: 'Prog T. Maxel',
     nav: [
       { text: 'Accueil', link: '/' },
-      { text: 'Timer', link: '/outils/timer' },
       { text: 'Concepts', link: '/livres/concepts' },
       { text: 'Livres', link: '/livres/' },
+      {
+        text: 'Outils',
+        items: outilsItems,
+      },
       { text: 'Saisons', link: defaultSeasonLink() },
       { text: 'En cours', link: loadCurrentWeekLink() },
     ],

@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { computed, onMounted, ref, watch, type Ref } from 'vue'
+import { computed, ref } from 'vue'
 import WorkoutTimer from './WorkoutTimer.vue'
 import { timeToSeconds } from '../timer/time'
 import type { TimerConfig, TimerType } from '../composables/useWorkoutTimer'
+import { useToolStorage } from '../composables/useToolStorage'
 
 const types: { value: TimerType; label: string }[] = [
   { value: 'forTime', label: 'For Time' },
@@ -12,32 +13,6 @@ const types: { value: TimerType; label: string }[] = [
   { value: 'chrono', label: 'Chrono' },
   { value: 'countdown', label: 'Countdown' },
 ]
-
-function restoreFromStorage<T extends string | number | boolean>(
-  refVariable: Ref<T>,
-  storageKey: string,
-) {
-  const stored = localStorage.getItem(storageKey)
-  if (stored === null) return
-
-  if (typeof refVariable.value === 'boolean') {
-    refVariable.value = (stored === 'true') as T
-  } else if (typeof refVariable.value === 'number') {
-    const n = Number(stored)
-    if (!Number.isNaN(n)) refVariable.value = n as T
-  } else {
-    refVariable.value = stored as T
-  }
-}
-
-function watchAndStoreRef<T extends string | number | boolean>(
-  refVariable: Ref<T>,
-  storageKey: string,
-) {
-  watch(refVariable, (newValue) => {
-    localStorage.setItem(storageKey, String(newValue))
-  })
-}
 
 const timerType = ref<TimerType>('forTime')
 const timerTotalTime = ref('10:00')
@@ -50,27 +25,15 @@ const timerLauncherTime = ref(0)
 const hasAudio = ref(false)
 const isRunning = ref(false)
 
-onMounted(() => {
-  restoreFromStorage(timerType, 'timerType')
-  restoreFromStorage(timerTotalTime, 'timerTotalTime')
-  restoreFromStorage(timerTotalRounds, 'timerTotalRounds')
-  restoreFromStorage(timerTabataRoundTime, 'timerTabataRoundTime')
-  restoreFromStorage(timerTabataRoundRestTime, 'timerTabataRoundRestTime')
-  restoreFromStorage(timerEmomRoundTime, 'timerEmomRoundTime')
-  restoreFromStorage(timerEmomRoundRestTime, 'timerEmomRoundRestTime')
-  restoreFromStorage(timerLauncherTime, 'timerLauncherTime')
-  restoreFromStorage(hasAudio, 'hasAudio')
-})
-
-watchAndStoreRef(timerType, 'timerType')
-watchAndStoreRef(timerTotalTime, 'timerTotalTime')
-watchAndStoreRef(timerTotalRounds, 'timerTotalRounds')
-watchAndStoreRef(timerTabataRoundTime, 'timerTabataRoundTime')
-watchAndStoreRef(timerTabataRoundRestTime, 'timerTabataRoundRestTime')
-watchAndStoreRef(timerEmomRoundTime, 'timerEmomRoundTime')
-watchAndStoreRef(timerEmomRoundRestTime, 'timerEmomRoundRestTime')
-watchAndStoreRef(timerLauncherTime, 'timerLauncherTime')
-watchAndStoreRef(hasAudio, 'hasAudio')
+useToolStorage(timerType, 'timer:type')
+useToolStorage(timerTotalTime, 'timer:totalTime')
+useToolStorage(timerTotalRounds, 'timer:totalRounds')
+useToolStorage(timerTabataRoundTime, 'timer:tabataRoundTime')
+useToolStorage(timerTabataRoundRestTime, 'timer:tabataRoundRestTime')
+useToolStorage(timerEmomRoundTime, 'timer:emomRoundTime')
+useToolStorage(timerEmomRoundRestTime, 'timer:emomRoundRestTime')
+useToolStorage(timerLauncherTime, 'timer:launcherTime')
+useToolStorage(hasAudio, 'timer:hasAudio')
 
 const activeConfig = computed<TimerConfig>(() => ({
   type: timerType.value,
@@ -106,17 +69,16 @@ function closeTimer() {
 </script>
 
 <template>
-  <div class="timer-app">
+  <div class="tool-app">
     <WorkoutTimer
       v-if="isRunning"
       v-bind="activeConfig"
       @close="closeTimer"
     />
 
-    <section class="timer-panel concept-figure">
-
-      <div class="timer-form">
-        <label class="timer-field">
+    <section class="tool-panel concept-figure">
+      <div class="tool-form">
+        <label class="tool-field">
           <span>Type</span>
           <select v-model="timerType">
             <option v-for="t in types" :key="t.value" :value="t.value">
@@ -125,14 +87,14 @@ function closeTimer() {
           </select>
         </label>
 
-        <label class="timer-field">
+        <label class="tool-field">
           <span>Pre-count (s)</span>
           <input v-model.number="timerLauncherTime" type="number" min="0" />
         </label>
 
         <label
           v-if="['amrap', 'countdown'].includes(timerType)"
-          class="timer-field"
+          class="tool-field"
         >
           <span>Durée (mm:ss ou secondes)</span>
           <input v-model="timerTotalTime" type="text" placeholder="10:00" />
@@ -140,18 +102,18 @@ function closeTimer() {
 
         <label
           v-if="['forTime', 'emom', 'tabata'].includes(timerType)"
-          class="timer-field"
+          class="tool-field"
         >
           <span>Rounds</span>
           <input v-model.number="timerTotalRounds" type="number" min="1" />
         </label>
 
         <template v-if="timerType === 'tabata'">
-          <label class="timer-field">
+          <label class="tool-field">
             <span>Work (s)</span>
             <input v-model.number="timerTabataRoundTime" type="number" min="1" />
           </label>
-          <label class="timer-field">
+          <label class="tool-field">
             <span>Rest (s)</span>
             <input
               v-model.number="timerTabataRoundRestTime"
@@ -162,11 +124,11 @@ function closeTimer() {
         </template>
 
         <template v-if="timerType === 'emom'">
-          <label class="timer-field">
+          <label class="tool-field">
             <span>Intervalle (s)</span>
             <input v-model.number="timerEmomRoundTime" type="number" min="1" />
           </label>
-          <label class="timer-field">
+          <label class="tool-field">
             <span>Rest (s)</span>
             <input
               v-model.number="timerEmomRoundRestTime"
@@ -176,12 +138,12 @@ function closeTimer() {
           </label>
         </template>
 
-        <label class="timer-field timer-field--checkbox">
+        <label class="tool-field tool-field--checkbox">
           <input v-model="hasAudio" type="checkbox" />
           <span>Son en fin de phase</span>
         </label>
 
-        <button type="button" class="timer-launch" @click="openTimer">
+        <button type="button" class="tool-action" @click="openTimer">
           Lancer le timer
         </button>
       </div>

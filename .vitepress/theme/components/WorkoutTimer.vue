@@ -120,7 +120,7 @@ onBeforeUnmount(() => timer.dispose())
 
       <div
         v-if="timer.showSplitsTable.value && timer.rounds.value.length"
-        class="workout-timer__splits"
+        class="tool-table"
       >
         <table>
           <thead>
