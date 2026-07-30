@@ -206,6 +206,18 @@
   transition: opacity 0.3s ease;
 }
 
+@media (max-width: 639px) and (orientation: portrait) {
+  .workout-timer__time {
+    font-size: clamp(5.25rem, 28vw, 10.5rem);
+  }
+}
+
+@media (max-width: 639px) and (orientation: landscape) {
+  .workout-timer__time {
+    font-size: clamp(4.75rem, 22vw, 9rem);
+  }
+}
+
 @media (min-width: 640px) {
   .workout-timer__main {
     min-height: 100vh;
