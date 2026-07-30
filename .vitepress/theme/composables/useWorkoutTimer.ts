@@ -81,10 +81,13 @@ export function useWorkoutTimer(config: TimerConfig) {
   )
 
   const displayRound = computed(() => {
-    let count = rounds.value.length + 1
+    const type = currentTimer.value.type ?? ''
+    let count = ['forTime', 'amrap'].includes(type)
+      ? rounds.value.length
+      : rounds.value.length + 1
 
     if (
-      ['tabata', 'emom'].includes(currentTimer.value.type ?? '') &&
+      ['tabata', 'emom'].includes(type) &&
       currentTimer.value.isRest
     ) {
       count = rounds.value.length
@@ -189,6 +192,27 @@ export function useWorkoutTimer(config: TimerConfig) {
     rounds.value.push({ elapsedTime: elapsedTime.value, roundTime, diff })
   }
 
+  const shouldAddFinalSplit = () => {
+    const type = currentTimer.value.type ?? ''
+    if (!['forTime', 'amrap'].includes(type) || elapsedTime.value <= 0) {
+      return false
+    }
+
+    if (
+      type === 'forTime' &&
+      config.totalRounds &&
+      rounds.value.length >= config.totalRounds
+    ) {
+      return false
+    }
+
+    if (!rounds.value.length) return true
+
+    return (
+      elapsedTime.value > rounds.value[rounds.value.length - 1].elapsedTime
+    )
+  }
+
   const startWakeLock = async () => {
     if (!('wakeLock' in navigator) || wakeLock) return
     try {
@@ -243,6 +267,8 @@ export function useWorkoutTimer(config: TimerConfig) {
           ['tabata', 'emom'].includes(currentTimer.value.type ?? '') &&
           !currentTimer.value.isRest
         ) {
+          addSplitTime()
+        } else if (shouldAddFinalSplit()) {
           addSplitTime()
         }
 

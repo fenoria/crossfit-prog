@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { computed, onBeforeUnmount, onMounted } from 'vue'
+import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import {
+  ListOrdered,
   Maximize2,
   Minimize2,
   Pause,
@@ -61,6 +62,19 @@ const showBottomBar = computed(() => {
   return !timer.showRoundButton.value
 })
 
+const splitsVisible = ref(false)
+
+const canShowSplits = computed(
+  () => timer.showSplitsTable.value && timer.rounds.value.length > 0,
+)
+
+watch(
+  () => timer.timerStatus.value,
+  (status) => {
+    if (status === 'ready') splitsVisible.value = false
+  },
+)
+
 onMounted(() => timer.init())
 onBeforeUnmount(() => timer.dispose())
 </script>
@@ -111,6 +125,17 @@ onBeforeUnmount(() => timer.dispose())
         @click="timer.resetTimer()"
       >
         <RotateCcw aria-hidden="true" />
+      </button>
+
+      <button
+        v-if="canShowSplits"
+        type="button"
+        class="timer-btn"
+        :class="{ 'timer-btn--active': splitsVisible }"
+        title="Consulter les splits"
+        @click="splitsVisible = true"
+      >
+        <ListOrdered aria-hidden="true" />
       </button>
 
       <button
@@ -179,12 +204,26 @@ onBeforeUnmount(() => timer.dispose())
           {{ timer.formattedTime.value }}
         </div>
       </button>
+    </div>
 
-      <div
-        v-if="timer.showSplitsTable.value && timer.rounds.value.length"
-        class="tool-table tool-table--timer"
-      >
-        <table>
+    <div
+      v-if="canShowSplits && splitsVisible"
+      class="workout-timer__splits"
+    >
+      <div class="workout-timer__splits-header">
+        <span class="workout-timer__splits-title">Splits</span>
+        <button
+          type="button"
+          class="timer-btn"
+          title="Fermer"
+          @click="splitsVisible = false"
+        >
+          <X aria-hidden="true" />
+        </button>
+      </div>
+
+      <div class="workout-timer__splits-body">
+        <table class="workout-timer__splits-table">
           <thead>
             <tr>
               <th>#</th>
@@ -195,10 +234,14 @@ onBeforeUnmount(() => timer.dispose())
           </thead>
           <tbody>
             <tr
-              v-for="(round, index) in timer.rounds.value.slice().reverse()"
-              :key="timer.rounds.value.length - index"
+              v-for="(round, index) in timer.rounds.value"
+              :key="index + 1"
+              :class="{
+                'workout-timer__splits-row--latest':
+                  index === timer.rounds.value.length - 1,
+              }"
             >
-              <td>{{ timer.rounds.value.length - index }}</td>
+              <td>{{ index + 1 }}</td>
               <td>
                 {{ timer.getStringTime(round.elapsedTime, true) }}
               </td>
