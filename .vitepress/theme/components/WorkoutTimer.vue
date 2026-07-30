@@ -64,28 +64,90 @@ const showBottomBar = computed(() => {
 
 const splitsVisible = ref(false)
 
-const FIREFLIES = [
-  { top: '7%', left: '5%', rgb: '100, 255, 218', size: 2, drift: 'a', driftDuration: 26, driftDelay: -4, twinkle: 5.8, twinkleDelay: -2.1 },
-  { top: '12%', left: '18%', rgb: '255, 224, 130', size: 3, drift: 'c', driftDuration: 28, driftDelay: -12, twinkle: 6.6, twinkleDelay: -4.6 },
-  { top: '9%', left: '42%', rgb: '200, 170, 255', size: 2, drift: 'e', driftDuration: 23, driftDelay: -18, twinkle: 5.2, twinkleDelay: -1.2 },
-  { top: '15%', left: '68%', rgb: '180, 255, 210', size: 2, drift: 'b', driftDuration: 27, driftDelay: -8, twinkle: 6.1, twinkleDelay: -3.2 },
-  { top: '6%', left: '88%', rgb: '255, 224, 130', size: 3, drift: 'd', driftDuration: 22, driftDelay: -22, twinkle: 7.2, twinkleDelay: -5.8 },
-  { top: '24%', left: '10%', rgb: '130, 220, 180', size: 2, drift: 'd', driftDuration: 25, driftDelay: -14, twinkle: 5.6, twinkleDelay: -2.5 },
-  { top: '28%', left: '32%', rgb: '230, 245, 255', size: 2, drift: 'a', driftDuration: 24, driftDelay: -26, twinkle: 4.9, twinkleDelay: -4.8 },
-  { top: '22%', left: '78%', rgb: '200, 170, 255', size: 2, drift: 'c', driftDuration: 27, driftDelay: -16, twinkle: 6.4, twinkleDelay: -2.9 },
-  { top: '38%', left: '6%', rgb: '100, 255, 218', size: 3, drift: 'e', driftDuration: 21, driftDelay: -10, twinkle: 5.9, twinkleDelay: -3.7 },
-  { top: '44%', left: '92%', rgb: '180, 255, 210', size: 2, drift: 'b', driftDuration: 24, driftDelay: -28, twinkle: 5.3, twinkleDelay: -1.5 },
-  { top: '52%', left: '14%', rgb: '255, 224, 130', size: 2, drift: 'a', driftDuration: 29, driftDelay: -20, twinkle: 7.4, twinkleDelay: -6.4 },
-  { top: '48%', left: '52%', rgb: '100, 255, 218', size: 3, drift: 'd', driftDuration: 23, driftDelay: -6, twinkle: 5.5, twinkleDelay: -2.3 },
-  { top: '56%', left: '72%', rgb: '230, 245, 255', size: 2, drift: 'c', driftDuration: 26, driftDelay: -32, twinkle: 5.1, twinkleDelay: -4.2 },
-  { top: '62%', left: '28%', rgb: '200, 170, 255', size: 2, drift: 'b', driftDuration: 22, driftDelay: -24, twinkle: 6.8, twinkleDelay: -5.1 },
-  { top: '68%', left: '86%', rgb: '130, 220, 180', size: 3, drift: 'e', driftDuration: 25, driftDelay: -12, twinkle: 5.8, twinkleDelay: -3.4 },
-  { top: '74%', left: '8%', rgb: '180, 255, 210', size: 2, drift: 'c', driftDuration: 21, driftDelay: -30, twinkle: 4.8, twinkleDelay: -5.9 },
-  { top: '78%', left: '38%', rgb: '255, 224, 130', size: 2, drift: 'a', driftDuration: 27, driftDelay: -18, twinkle: 6.9, twinkleDelay: -1.8 },
-  { top: '82%', left: '58%', rgb: '100, 255, 218', size: 3, drift: 'd', driftDuration: 26, driftDelay: -8, twinkle: 5.7, twinkleDelay: -4.1 },
-  { top: '88%', left: '22%', rgb: '200, 170, 255', size: 2, drift: 'b', driftDuration: 28, driftDelay: -36, twinkle: 7.1, twinkleDelay: -7.2 },
-  { top: '91%', left: '76%', rgb: '230, 245, 255', size: 2, drift: 'e', driftDuration: 23, driftDelay: -14, twinkle: 4.7, twinkleDelay: -0.8 },
-] as const
+type FireflyDrift = 'a' | 'b' | 'c' | 'd' | 'e'
+
+interface FireflyConfig {
+  top: string
+  left: string
+  rgb: string
+  size: number
+  drift: FireflyDrift
+  driftDuration: number
+  driftDelay: number
+  twinkle: number
+  twinkleDelay: number
+  swayDuration: number
+  swayDelay: number
+}
+
+const FIREFLY_POSITIONS: [number, number][] = [
+  [7, 5], [12, 18], [9, 42], [15, 68], [6, 88],
+  [24, 10], [28, 32], [22, 78], [38, 6], [44, 92],
+  [52, 14], [48, 52], [56, 72], [62, 28], [68, 86],
+  [74, 8], [78, 38], [82, 58], [88, 22], [91, 76],
+  [18, 55], [35, 8], [65, 45], [33, 88], [85, 35],
+  [55, 12], [72, 62], [45, 25],
+]
+
+const FIREFLY_BLUEPRINTS: Omit<
+  FireflyConfig,
+  'top' | 'left' | 'swayDuration' | 'swayDelay'
+>[] = [
+  { rgb: '100, 255, 218', size: 2, drift: 'a', driftDuration: 26, driftDelay: -4, twinkle: 5.8, twinkleDelay: -2.1 },
+  { rgb: '255, 224, 130', size: 3, drift: 'c', driftDuration: 28, driftDelay: -12, twinkle: 6.6, twinkleDelay: -4.6 },
+  { rgb: '200, 170, 255', size: 2, drift: 'e', driftDuration: 23, driftDelay: -18, twinkle: 5.2, twinkleDelay: -1.2 },
+  { rgb: '180, 255, 210', size: 2, drift: 'b', driftDuration: 27, driftDelay: -8, twinkle: 6.1, twinkleDelay: -3.2 },
+  { rgb: '255, 224, 130', size: 3, drift: 'd', driftDuration: 22, driftDelay: -22, twinkle: 7.2, twinkleDelay: -5.8 },
+  { rgb: '130, 220, 180', size: 2, drift: 'd', driftDuration: 25, driftDelay: -14, twinkle: 5.6, twinkleDelay: -2.5 },
+  { rgb: '230, 245, 255', size: 2, drift: 'a', driftDuration: 24, driftDelay: -26, twinkle: 4.9, twinkleDelay: -4.8 },
+  { rgb: '200, 170, 255', size: 2, drift: 'c', driftDuration: 27, driftDelay: -16, twinkle: 6.4, twinkleDelay: -2.9 },
+  { rgb: '100, 255, 218', size: 3, drift: 'e', driftDuration: 21, driftDelay: -10, twinkle: 5.9, twinkleDelay: -3.7 },
+  { rgb: '180, 255, 210', size: 2, drift: 'b', driftDuration: 24, driftDelay: -28, twinkle: 5.3, twinkleDelay: -1.5 },
+  { rgb: '255, 224, 130', size: 2, drift: 'a', driftDuration: 29, driftDelay: -20, twinkle: 7.4, twinkleDelay: -6.4 },
+  { rgb: '100, 255, 218', size: 3, drift: 'd', driftDuration: 23, driftDelay: -6, twinkle: 5.5, twinkleDelay: -2.3 },
+  { rgb: '230, 245, 255', size: 2, drift: 'c', driftDuration: 26, driftDelay: -32, twinkle: 5.1, twinkleDelay: -4.2 },
+  { rgb: '200, 170, 255', size: 2, drift: 'b', driftDuration: 22, driftDelay: -24, twinkle: 6.8, twinkleDelay: -5.1 },
+  { rgb: '130, 220, 180', size: 3, drift: 'e', driftDuration: 25, driftDelay: -12, twinkle: 5.8, twinkleDelay: -3.4 },
+  { rgb: '180, 255, 210', size: 2, drift: 'c', driftDuration: 21, driftDelay: -30, twinkle: 4.8, twinkleDelay: -5.9 },
+  { rgb: '255, 224, 130', size: 2, drift: 'a', driftDuration: 27, driftDelay: -18, twinkle: 6.9, twinkleDelay: -1.8 },
+  { rgb: '100, 255, 218', size: 3, drift: 'd', driftDuration: 26, driftDelay: -8, twinkle: 5.7, twinkleDelay: -4.1 },
+  { rgb: '200, 170, 255', size: 2, drift: 'b', driftDuration: 28, driftDelay: -36, twinkle: 7.1, twinkleDelay: -7.2 },
+  { rgb: '230, 245, 255', size: 2, drift: 'e', driftDuration: 23, driftDelay: -14, twinkle: 4.7, twinkleDelay: -0.8 },
+]
+
+const FIREFLY_TEMPO = 0.9
+
+function buildFireflies(): FireflyConfig[] {
+  const viewport =
+    typeof window !== 'undefined'
+      ? window.innerWidth + window.innerHeight
+      : 1200
+  const count = Math.min(28, Math.max(18, Math.round(viewport / 120)))
+
+  return Array.from({ length: count }, (_, i) => {
+    const slot = FIREFLY_POSITIONS[i % FIREFLY_POSITIONS.length]
+    const blueprint = FIREFLY_BLUEPRINTS[i % FIREFLY_BLUEPRINTS.length]
+    const layer = Math.floor(i / FIREFLY_POSITIONS.length)
+    const topJitter = layer > 0 ? (i % 4) * 3 - 4 : 0
+    const leftJitter = layer > 0 ? (i % 3) * 4 - 4 : 0
+
+    return {
+      ...blueprint,
+      top: `${Math.max(4, Math.min(93, slot[0] + topJitter))}%`,
+      left: `${Math.max(4, Math.min(93, slot[1] + leftJitter))}%`,
+      driftDuration: Math.round(blueprint.driftDuration * FIREFLY_TEMPO),
+      twinkle: Math.round(blueprint.twinkle * FIREFLY_TEMPO * 10) / 10,
+      swayDuration: Math.round((34 + (i % 6) * 5) * FIREFLY_TEMPO),
+      swayDelay: -(i * 2.7),
+    }
+  })
+}
+
+const fireflies = ref<FireflyConfig[]>(buildFireflies())
+
+function refreshFireflies() {
+  fireflies.value = buildFireflies()
+}
 
 const canShowSplits = computed(
   () => timer.showSplitsTable.value && timer.rounds.value.length > 0,
@@ -98,8 +160,15 @@ watch(
   },
 )
 
-onMounted(() => timer.init())
-onBeforeUnmount(() => timer.dispose())
+onMounted(() => {
+  timer.init()
+  refreshFireflies()
+  window.addEventListener('resize', refreshFireflies)
+})
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', refreshFireflies)
+  timer.dispose()
+})
 </script>
 
 <template>
@@ -112,24 +181,32 @@ onBeforeUnmount(() => timer.dispose())
   >
     <div class="workout-timer__fireflies" aria-hidden="true">
       <span
-        v-for="(fly, i) in FIREFLIES"
+        v-for="(fly, i) in fireflies"
         :key="i"
-        class="workout-timer__firefly"
-        :class="[
-          `workout-timer__firefly--drift-${fly.drift}`,
-          { 'workout-timer__firefly--large': fly.size > 2 },
-        ]"
+        class="workout-timer__firefly-wrap"
         :style="{
           top: fly.top,
           left: fly.left,
-          '--ff-rgb': fly.rgb,
-          '--ff-size': `${fly.size}px`,
-          '--ff-drift-duration': `${fly.driftDuration}s`,
-          '--ff-drift-delay': `${fly.driftDelay}s`,
-          '--ff-twinkle': `${fly.twinkle}s`,
-          '--ff-twinkle-delay': `${fly.twinkleDelay}s`,
+          '--ff-sway-duration': `${fly.swayDuration}s`,
+          '--ff-sway-delay': `${fly.swayDelay}s`,
         }"
-      />
+      >
+        <span
+          class="workout-timer__firefly"
+          :class="[
+            `workout-timer__firefly--drift-${fly.drift}`,
+            { 'workout-timer__firefly--large': fly.size > 2 },
+          ]"
+          :style="{
+            '--ff-rgb': fly.rgb,
+            '--ff-size': `${fly.size}px`,
+            '--ff-drift-duration': `${fly.driftDuration}s`,
+            '--ff-drift-delay': `${fly.driftDelay}s`,
+            '--ff-twinkle': `${fly.twinkle}s`,
+            '--ff-twinkle-delay': `${fly.twinkleDelay}s`,
+          }"
+        />
+      </span>
     </div>
 
     <div class="workout-timer__toolbar">
