@@ -43,6 +43,7 @@ export function useWorkoutTimer(config: TimerConfig) {
   const isFullscreen = ref(false)
   const timerStatus = ref<'ready' | 'started' | 'stopped' | 'ended'>('ready')
   const elapsedTime = ref(0)
+  const segmentProgress = ref<number | null>(null)
   const rounds: Ref<RoundSplit[]> = ref([])
 
   const currentTimer = ref<{
@@ -112,6 +113,11 @@ export function useWorkoutTimer(config: TimerConfig) {
     return 'timer-time--normal'
   })
 
+  const roundProgress = computed(() => {
+    if (!config.totalRounds || config.totalRounds <= 0) return null
+    return Math.min(displayRound.value / config.totalRounds, 1)
+  })
+
   const setTimerQueue = () => {
     timerQueue = []
 
@@ -157,7 +163,17 @@ export function useWorkoutTimer(config: TimerConfig) {
 
     elapsedTime.value = 0
     elapsedOffset = 0
+    segmentProgress.value = 0
     return true
+  }
+
+  const updateSegmentProgress = (fractionalElapsed: number) => {
+    const total = currentTimer.value.totalTime
+    if (!total || total <= 0) {
+      segmentProgress.value = null
+      return
+    }
+    segmentProgress.value = Math.min(fractionalElapsed / total, 1)
   }
 
   const addSplitTime = () => {
@@ -206,9 +222,10 @@ export function useWorkoutTimer(config: TimerConfig) {
 
   const tick = () => {
     animationFrame = requestAnimationFrame(() => {
-      elapsedTime.value = Math.floor(
-        (performance.now() - (startedAt ?? 0)) / 1000 + elapsedOffset,
-      )
+      const fractionalElapsed =
+        (performance.now() - (startedAt ?? 0)) / 1000 + elapsedOffset
+      elapsedTime.value = Math.floor(fractionalElapsed)
+      updateSegmentProgress(fractionalElapsed)
 
       const keepRunning =
         (isDownType() && (remainingTime.value ?? 0) > 0) ||
@@ -219,6 +236,9 @@ export function useWorkoutTimer(config: TimerConfig) {
       if (keepRunning) {
         tick()
       } else {
+        if (currentTimer.value.totalTime) {
+          segmentProgress.value = 1
+        }
         if (
           ['tabata', 'emom'].includes(currentTimer.value.type ?? '') &&
           !currentTimer.value.isRest
@@ -320,6 +340,8 @@ export function useWorkoutTimer(config: TimerConfig) {
     showRoundButton,
     showSplitsTable,
     timeClass,
+    segmentProgress,
+    roundProgress,
     init,
     dispose,
     togglePlayPause,

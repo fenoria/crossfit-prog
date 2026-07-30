@@ -94,6 +94,51 @@
   background: var(--vp-button-brand-hover-bg);
 }
 
+.tool-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  grid-column: 1 / -1;
+}
+
+.tool-pill {
+  padding: 0.4rem 0.75rem;
+  border: 1px solid var(--vp-c-border);
+  border-radius: 999px;
+  background: var(--vp-c-bg-elv);
+  color: var(--vp-c-text-2);
+  font-family: var(--vp-font-family-base);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+}
+
+.tool-pill:hover {
+  border-color: var(--vp-c-brand-1);
+  color: var(--vp-c-text-1);
+}
+
+.tool-pill--active {
+  border-color: var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+}
+
+.tool-summary {
+  grid-column: 1 / -1;
+  margin: 0;
+  text-align: center;
+  font-size: 0.8125rem;
+  color: var(--vp-c-text-3);
+  letter-spacing: 0.01em;
+}
+
+.tool-form--timer .tool-field--checkbox,
+.tool-form--timer .tool-action {
+  grid-column: 1 / -1;
+}
+
 .tool-table {
   width: 100%;
   margin-top: 1.5rem;
