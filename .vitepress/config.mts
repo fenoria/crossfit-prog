@@ -206,6 +206,11 @@ export default defineConfig({
   base: repoBase,
   cleanUrls: true,
   appearance: 'dark',
+  transformPageData(pageData) {
+    if (pageData.relativePath.startsWith('outils/')) {
+      pageData.frontmatter.aside = false
+    }
+  },
   themeConfig: {
     // VitePress prefixes `themeConfig.logo` with `base` automatically.
     logo: { src: '/logo.svg', alt: 'Prog T. Maxel' },
