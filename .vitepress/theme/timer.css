@@ -180,6 +180,8 @@
 }
 
 .workout-timer__main {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -190,7 +192,225 @@
   box-sizing: border-box;
 }
 
+.workout-timer__fireflies {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+  transition: opacity 0.4s ease;
+}
+
+.workout-timer__firefly {
+  position: absolute;
+  width: var(--ff-size, 2px);
+  height: var(--ff-size, 2px);
+  border-radius: 50%;
+  background: rgba(var(--ff-rgb, 180, 255, 210), 0.9);
+  box-shadow:
+    0 0 2px rgba(var(--ff-rgb, 180, 255, 210), 1),
+    0 0 5px rgba(var(--ff-rgb, 180, 255, 210), 0.75),
+    0 0 12px rgba(var(--ff-rgb, 180, 255, 210), 0.42),
+    0 0 24px rgba(var(--ff-rgb, 180, 255, 210), 0.18),
+    0 0 40px rgba(var(--ff-rgb, 180, 255, 210), 0.07);
+  filter: blur(0.4px);
+  opacity: 0;
+  will-change: transform, opacity;
+  animation:
+    workout-timer-firefly-twinkle var(--ff-twinkle, 5.5s) ease-in-out infinite,
+    workout-timer-firefly-drift-a var(--ff-drift-duration, 24s) ease-in-out infinite;
+  animation-delay: var(--ff-twinkle-delay, 0s), var(--ff-drift-delay, 0s);
+}
+
+.workout-timer__firefly--large {
+  box-shadow:
+    0 0 2px rgba(var(--ff-rgb, 180, 255, 210), 1),
+    0 0 6px rgba(var(--ff-rgb, 180, 255, 210), 0.8),
+    0 0 14px rgba(var(--ff-rgb, 180, 255, 210), 0.45),
+    0 0 28px rgba(var(--ff-rgb, 180, 255, 210), 0.2),
+    0 0 44px rgba(var(--ff-rgb, 180, 255, 210), 0.08);
+}
+
+.workout-timer__firefly--drift-b {
+  animation-name: workout-timer-firefly-twinkle, workout-timer-firefly-drift-b;
+}
+
+.workout-timer__firefly--drift-c {
+  animation-name: workout-timer-firefly-twinkle, workout-timer-firefly-drift-c;
+}
+
+.workout-timer__firefly--drift-d {
+  animation-name: workout-timer-firefly-twinkle, workout-timer-firefly-drift-d;
+}
+
+.workout-timer__firefly--drift-e {
+  animation-name: workout-timer-firefly-twinkle, workout-timer-firefly-drift-e;
+}
+
+@keyframes workout-timer-firefly-twinkle {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  14% {
+    opacity: 0.1;
+  }
+
+  26% {
+    opacity: 0.38;
+  }
+
+  38% {
+    opacity: 0.12;
+  }
+
+  52% {
+    opacity: 0.46;
+  }
+
+  66% {
+    opacity: 0.16;
+  }
+
+  82% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes workout-timer-firefly-drift-a {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  18% {
+    transform: translate(2.5vmin, -2vmin);
+  }
+
+  36% {
+    transform: translate(4.5vmin, -4.5vmin);
+  }
+
+  54% {
+    transform: translate(3vmin, -6.5vmin);
+  }
+
+  72% {
+    transform: translate(-1.5vmin, -5vmin);
+  }
+
+  88% {
+    transform: translate(-2vmin, -2vmin);
+  }
+}
+
+@keyframes workout-timer-firefly-drift-b {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  20% {
+    transform: translate(-3vmin, -2vmin);
+  }
+
+  40% {
+    transform: translate(-5.5vmin, 0.5vmin);
+  }
+
+  60% {
+    transform: translate(-2.5vmin, 3vmin);
+  }
+
+  80% {
+    transform: translate(2vmin, 1.5vmin);
+  }
+}
+
+@keyframes workout-timer-firefly-drift-c {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  22% {
+    transform: translate(3vmin, 2vmin);
+  }
+
+  44% {
+    transform: translate(1vmin, 5vmin);
+  }
+
+  66% {
+    transform: translate(-3.5vmin, 3.5vmin);
+  }
+
+  84% {
+    transform: translate(-1.5vmin, 1vmin);
+  }
+}
+
+@keyframes workout-timer-firefly-drift-d {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  20% {
+    transform: translate(-2vmin, 2.5vmin);
+  }
+
+  42% {
+    transform: translate(-4.5vmin, 5vmin);
+  }
+
+  62% {
+    transform: translate(-1vmin, 3vmin);
+  }
+
+  82% {
+    transform: translate(2.5vmin, 0.5vmin);
+  }
+}
+
+@keyframes workout-timer-firefly-drift-e {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  16% {
+    transform: translate(3.5vmin, -1.5vmin);
+  }
+
+  34% {
+    transform: translate(6vmin, -4vmin);
+  }
+
+  52% {
+    transform: translate(4vmin, -6vmin);
+  }
+
+  70% {
+    transform: translate(0.5vmin, -4vmin);
+  }
+
+  86% {
+    transform: translate(-2vmin, -1.5vmin);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .workout-timer__firefly {
+    animation: none;
+    opacity: 0.18;
+  }
+}
+
 .workout-timer__time-btn {
+  position: relative;
+  z-index: 1;
   padding: 0;
   border: none;
   background: transparent;
@@ -289,10 +509,18 @@
   opacity: 0.55;
 }
 
+.workout-timer--paused .workout-timer__fireflies {
+  opacity: 0.55;
+}
+
 .workout-timer--ended .workout-timer__time,
 .workout-timer--ended .workout-timer__round,
 .workout-timer--ended .workout-timer__round-num {
   opacity: 0.4;
+}
+
+.workout-timer--ended .workout-timer__fireflies {
+  opacity: 0.3;
 }
 
 .workout-timer--ended .workout-timer__ring-fill {
