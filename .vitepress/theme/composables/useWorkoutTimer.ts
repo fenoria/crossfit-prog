@@ -82,15 +82,15 @@ export function useWorkoutTimer(config: TimerConfig) {
 
   const displayRound = computed(() => {
     const type = currentTimer.value.type ?? ''
-    let count = ['forTime', 'amrap'].includes(type)
-      ? rounds.value.length
-      : rounds.value.length + 1
+    let count = rounds.value.length
 
+    // Tabata/EMOM : le split est pris en fin de work, mais le tour n'est
+    // comptabilisé qu'une fois la récup terminée (work + rest = 1 tour).
     if (
       ['tabata', 'emom'].includes(type) &&
       currentTimer.value.isRest
     ) {
-      count = rounds.value.length
+      count = Math.max(0, rounds.value.length - 1)
     }
 
     if (config.totalRounds && config.totalRounds > 0) {
