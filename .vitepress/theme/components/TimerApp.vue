@@ -140,7 +140,7 @@ function closeTimer() {
 
         <label class="tool-field tool-field--checkbox">
           <input v-model="hasAudio" type="checkbox" />
-          <span>Son en fin de phase</span>
+          <span>Activer le son</span>
         </label>
 
         <button type="button" class="tool-action" @click="openTimer">
