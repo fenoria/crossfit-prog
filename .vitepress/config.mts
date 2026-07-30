@@ -16,6 +16,11 @@ function asset(path: string): string {
 function mdTitle(filePath: string, fallback: string): string {
   try {
     const text = readFileSync(filePath, 'utf8')
+    const fm = text.match(/^---\r?\n([\s\S]*?)\r?\n---/)
+    if (fm) {
+      const titleLine = fm[1].match(/^title:\s*(.+)$/m)
+      if (titleLine) return titleLine[1].trim().replace(/^['"]|['"]$/g, '')
+    }
     const match = text.match(/^#\s+(.+)$/m)
     if (match) return match[1].trim()
   } catch {
@@ -162,6 +167,7 @@ function buildSeasonItems(currentSeason: string | null): DefaultTheme.SidebarIte
 
 const current = loadCurrent()
 const livresDir = join(progDir, 'livres')
+const outilsDir = join(progDir, 'outils')
 
 const sidebarItems: DefaultTheme.SidebarItem[] = [
   ...buildSeasonItems(current.season),
@@ -184,6 +190,11 @@ const sidebarItems: DefaultTheme.SidebarItem[] = [
       },
     ],
   },
+  {
+    text: 'Outils',
+    collapsed: true,
+    items: buildDirItems(outilsDir),
+  },
 ]
 
 export default defineConfig({
@@ -200,6 +211,7 @@ export default defineConfig({
     siteTitle: 'Prog T. Maxel',
     nav: [
       { text: 'Accueil', link: '/' },
+      { text: 'Timer', link: '/outils/timer' },
       { text: 'Concepts', link: '/livres/concepts' },
       { text: 'Livres', link: '/livres/' },
       { text: 'Saisons', link: defaultSeasonLink() },
@@ -240,7 +252,7 @@ export default defineConfig({
       'link',
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap',
       },
     ],
     ['link', { rel: 'icon', href: asset('/favicon.ico'), sizes: 'any' }],

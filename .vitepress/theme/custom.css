@@ -219,13 +219,21 @@
 .concept-figure {
   margin: 1.25rem 0 2rem;
   padding: 1rem 1rem 0.75rem;
-  border: 1px solid var(--arctic-border, #37474f);
+  border: 1px solid var(--vp-c-border);
   border-radius: 12px;
+  background:
+    radial-gradient(ellipse 70% 60% at 0% 0%, rgba(13, 148, 136, 0.07), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 100% 100%, rgba(13, 148, 136, 0.05), transparent 50%),
+    var(--vp-c-bg-soft);
+  overflow: hidden;
+}
+
+.dark .concept-figure {
+  border-color: var(--arctic-border, #37474f);
   background:
     radial-gradient(ellipse 70% 60% at 0% 0%, rgba(100, 255, 218, 0.06), transparent 55%),
     radial-gradient(ellipse 50% 40% at 100% 100%, rgba(130, 177, 255, 0.05), transparent 50%),
     var(--arctic-panel, #0f1b2e);
-  overflow: hidden;
 }
 
 .concept-figure img {
@@ -239,11 +247,11 @@
   margin: 0.65rem 0 0.15rem;
   font-size: 0.875rem;
   line-height: 1.45;
-  color: var(--arctic-muted, #78909c);
+  color: var(--vp-c-text-2);
 }
 
 .concept-figure figcaption strong {
-  color: var(--aurora-green-dim, #4fd1c7);
+  color: var(--vp-c-brand-1);
   font-weight: 600;
 }
 
