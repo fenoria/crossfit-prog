@@ -245,64 +245,41 @@
   stroke-width: 3;
 }
 
+/* Glow unifié — intensité médiane entre normal adouci et états accentués */
 .timer-time--normal {
   color: var(--arctic-fg, #e8f4fd);
-  text-shadow:
-    0 0 3px rgba(130, 177, 255, 0.65),
-    0 0 14px rgba(130, 177, 255, 0.42),
-    0 0 32px rgba(130, 177, 255, 0.25),
-    0 0 52px rgba(130, 177, 255, 0.12);
+  --timer-glow-rgb: 130, 177, 255;
 }
 
 .timer-time--urgent {
   color: var(--arctic-fg, #e8f4fd);
-  text-shadow:
-    0 0 3px rgba(255, 107, 157, 0.75),
-    0 0 20px rgba(255, 107, 157, 0.62),
-    0 0 44px rgba(255, 107, 157, 0.4),
-    0 0 76px rgba(255, 107, 157, 0.22);
+  --timer-glow-rgb: 255, 107, 157;
 }
 
 .timer-time--rest {
   color: var(--arctic-fg, #e8f4fd);
-  text-shadow:
-    0 0 3px rgba(100, 255, 218, 0.75),
-    0 0 18px rgba(100, 255, 218, 0.55),
-    0 0 40px rgba(100, 255, 218, 0.35),
-    0 0 68px rgba(100, 255, 218, 0.18);
+  --timer-glow-rgb: 100, 255, 218;
 }
 
 .timer-time--launcher {
   color: var(--arctic-fg, #e8f4fd);
-  text-shadow:
-    0 0 3px rgba(255, 224, 130, 0.75),
-    0 0 18px rgba(255, 224, 130, 0.55),
-    0 0 40px rgba(255, 224, 130, 0.35),
-    0 0 68px rgba(255, 224, 130, 0.18);
+  --timer-glow-rgb: 255, 224, 130;
 }
 
-.workout-timer__round-num.timer-time--normal {
+.workout-timer__time[class*='timer-time--'] {
   text-shadow:
-    0 0 2px rgba(130, 177, 255, 0.75),
-    0 0 8px rgba(130, 177, 255, 0.55),
-    0 0 16px rgba(130, 177, 255, 0.35),
-    0 0 28px rgba(130, 177, 255, 0.18);
+    0 0 3px rgba(var(--timer-glow-rgb), 0.58),
+    0 0 14px rgba(var(--timer-glow-rgb), 0.4),
+    0 0 32px rgba(var(--timer-glow-rgb), 0.24),
+    0 0 52px rgba(var(--timer-glow-rgb), 0.11);
 }
 
-.workout-timer__round-num.timer-time--urgent {
+.workout-timer__round-num[class*='timer-time--'] {
   text-shadow:
-    0 0 2px rgba(255, 107, 157, 0.75),
-    0 0 9px rgba(255, 107, 157, 0.62),
-    0 0 18px rgba(255, 107, 157, 0.4),
-    0 0 30px rgba(255, 107, 157, 0.22);
-}
-
-.workout-timer__round-num.timer-time--rest {
-  text-shadow:
-    0 0 2px rgba(100, 255, 218, 0.75),
-    0 0 8px rgba(100, 255, 218, 0.55),
-    0 0 16px rgba(100, 255, 218, 0.35),
-    0 0 28px rgba(100, 255, 218, 0.18);
+    0 0 2px rgba(var(--timer-glow-rgb), 0.58),
+    0 0 10px rgba(var(--timer-glow-rgb), 0.4),
+    0 0 22px rgba(var(--timer-glow-rgb), 0.24),
+    0 0 34px rgba(var(--timer-glow-rgb), 0.11);
 }
 
 .workout-timer--paused .workout-timer__time,
