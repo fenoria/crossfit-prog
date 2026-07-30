@@ -5,7 +5,8 @@ description: Répond aux questions de programmation en consultant d’abord book
 
 # Answer from books
 
-1. Consulter `knowledge/methodology.md` / fiches `knowledge/books/` / extraits `books/` si besoin.
-2. Répondre en français, au niveau du profil athlète actif, applicable à ce profil.
-3. Citer les ouvrages / principes retenus.
-4. Si hors corpus : le dire clairement.
+1. **`knowledge/methodology.md`** et fiches `knowledge/books/` en priorité.
+2. **`knowledge/arbitrages.md`** si conflit entre auteurs.
+3. **`books/`** : extrait ciblé **uniquement** si knowledge insuffisant (ne pas parcourir le corpus).
+
+Répondre en français ; citer auteur + ouvrage ; ne pas contredire méthodo **validated** sans arbitrage.

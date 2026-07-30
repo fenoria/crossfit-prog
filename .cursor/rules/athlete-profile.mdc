@@ -1,0 +1,20 @@
+---
+description: Édition profil athlète — champs, planning, persistance feedback récurrent
+globs: athletes/**/*
+alwaysApply: false
+---
+
+# Profil athlète
+
+**Résolution** : `athletes/current.yaml` (`id`) → `athletes/<id>/profile.yaml`.
+
+## Champs clés
+- Capacités : `level`, `priorities`, `strengths`, `weaknesses_or_limits`, `gym_ladder_level`
+- Planning : jours, horaires, `max_minutes`, team day, samedi (fréquence, créneau, durée), dimanche (off vs Z2), `active_recovery_over_rest`
+- Matériel : setting box, machines guidées
+- Blessure : `injury`, `programming_rules`, protocoles référencés
+- Charges : `prs_current_kg`, `volumes.*` — jamais `prs_pre_injury_kg` pour les %
+- Coaching : `coaching.*` (seuil team WOD, etc.)
+
+## Mise à jour
+Feedback récurrent (douleur à X kg, plafond charge, contrainte planning durable) → profil immédiatement, pas seulement dans le chat.

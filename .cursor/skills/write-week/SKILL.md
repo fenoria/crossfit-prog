@@ -5,55 +5,32 @@ description: Écrit ou met à jour une semaine d’entraînement en Markdown sou
 
 # Write week (prog/)
 
-## Source de vérité
-[`prog/`](prog/) — hiérarchie Saison → Macrocycle → Meso → Semaine.  
-Sidebar VitePress = **auto** (arborescence `prog/`).
-
-## Template forme
-- Semaine : [`prog/_templates/semaine.md`](prog/_templates/semaine.md)
-- Meso (si nouveau) : [`prog/_templates/meso.md`](prog/_templates/meso.md)
+Règles rédaction : **`.cursor/rules/prog-writing.mdc`** (ton, ops pack, immutabilité, lint).
 
 ## Preconditions
 - `knowledge/methodology.md` status **validated**
-- Lire `athletes/current.yaml` → profil `athletes/<id>/profile.yaml` + dernières semaines du même meso
-- Relire fiches livres + `knowledge/arbitrages.md` pertinentes
-- Relire ops pack (agent only — ne pas coller ces chemins dans le texte visible) :
-  - `knowledge/maintenance-doses.yaml` (code meso ; `REAL-mini` → `REAL`)
+- Lire `athletes/current.yaml` → profil + dernières semaines du même meso
+- Fiches livres + `knowledge/arbitrages.md` pertinentes
+- Ops pack (agent only — ne pas coller ces chemins dans le texte visible) :
+  - `knowledge/maintenance-doses.yaml` (`REAL-mini` → `REAL`)
   - `knowledge/session-patterns.yaml`
-  - `knowledge/warmups.yaml` → **recopier les steps** sous **Échauffement**
+  - `knowledge/warmups.yaml` → recopier steps sous **Échauffement**
   - `knowledge/gym-ladder.md` si ACC-GYM
-  - `knowledge/meso-gates.yaml` si changement de meso (scope Macro 1)
+  - `knowledge/meso-gates.yaml` si changement de meso
   - `knowledge/conditioning-matrix.yaml`
-  - protocole douleur du profil seulement si douleur signalée (pas de focus systématique)
-- Samedi : selon `schedule.saturday` du profil (décider selon dispo)
+  - protocole douleur du profil seulement si douleur signalée
 
-## Langage athlète (obligatoire)
-- Texte visible = compréhensible à l’entraînement **et partageable** (collègue / coach sans questions).
-- **Ton neutre** : pas de tutoiement (« tu / toi / Si tu… ») — « Si entraînement », « Si séance », « ici », « la prog », « on ».
-- **Objectif de la semaine** en tête (pas créneau / matériel / profil athlète).
-- Échauffement **écrit en entier** ; cibles **chiffrées** (reps / RPE / durée / repos).
-- Pas de `knowledge/…`, `athletes/…`, codes meso bruts seuls, ids `warmup_*` visibles.
-- Ids ops en commentaires HTML : `<!-- pattern: … -->` · `<!-- warmup: … -->`
-- Formuler la suite en « Suite prévue : … » (pas « Décision J+7 »).
-
-## Immutabilité (semaine commencée / passée)
-- **Ne jamais** modifier le contenu prescrit des séances d’une semaine déjà commencée ou passée.
-- Mise en forme OK (sans changer le sens) ; blocs Notes / feedback OK.
-- Toute adaptation → semaine(s) suivante(s) uniquement (+ profil athlète actif si durable).
+## Templates
+- Semaine : `prog/_templates/semaine.md`
+- Meso (si nouveau) : `prog/_templates/meso.md`
 
 ## Steps
-1. Assurer les `index.md` Saison / Macro / Meso (meso depuis template meso).
-   - Dossier meso : `meso-NN-<slug>/` (ex. `meso-01-benchmarks`) — numérotation chrono dans le macro pour l’ordre sidebar.
-   - Dossier macro : `macrocycle-NN-<slug>/` (ex. `macrocycle-01-build`) — même convention.
-2. Créer/mettre à jour `Sxx-YYYY-MM-DD.md` depuis le template semaine :
-   - Pourquoi / intention / apport / suite · Fondements 1–3 refs (auteur + titre)
-   - Commentaires pattern + warmup sur chaque jour actif
-   - **Échauffement** détaillé + **Séance** numérotée
-   - Hors pattern → justifier dans Notes de la semaine (+ profile si durable)
-   - Maintien du code meso respecté (formulé en français)
-   - Respecter `schedule` / `max_minutes` du profil ; team day / Z2 / samedi selon profil
-   - Blocs **Notes / feedback** (un `###` par jour, pas de tableau)
-3. Mettre à jour l’index du meso si besoin.
-4. Mettre à jour [`.vitepress/current.json`](.vitepress/current.json).
-5. Arbitrage durable → profil athlète actif (ou `knowledge/arbitrages.md` si conflit corpus).
-6. **Obligatoire** : `npm run lint:prog` — corriger toute ERROR avant de conclure.
+1. Assurer `index.md` Saison / Macro / Meso (`meso-NN-<slug>/`, `macrocycle-NN-<slug>/`).
+2. Créer/mettre à jour `Sxx-YYYY-MM-DD.md` :
+   - Pourquoi / intention / apport / suite · Fondements 1–3 refs
+   - `<!-- pattern: -->` + `<!-- warmup: -->` ; échauffement détaillé ; séance numérotée
+   - Maintien code meso en français ; `schedule` / team / Z2 / samedi selon profil
+   - Notes feedback (`###` par jour)
+3. Index meso + `.vitepress/current.json` si besoin.
+4. Arbitrage durable → profil ou `knowledge/arbitrages.md`.
+5. **Obligatoire** : `npm run lint:prog` — zéro ERROR.

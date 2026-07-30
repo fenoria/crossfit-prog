@@ -1,0 +1,25 @@
+# Corpus brut (lourd, copyright) — préférer knowledge/
+books/
+*.pdf
+*.epub
+*.mobi
+
+# Extraits bruts / previews
+knowledge/raw/
+site/
+.vitepress/dist/
+.vitepress/cache/
+
+# Dépendances & artefacts
+node_modules/
+npm-debug.log*
+__pycache__/
+.venv/
+venv/
+dist/
+build/
+
+# OS / secrets
+.DS_Store
+.env
+.env.*

@@ -5,24 +5,20 @@ description: Génère saison/macro/meso/semaines en Markdown sous prog/, uniquem
 
 # Generate training cycle
 
+Règles : **`.cursor/rules/prog-writing.mdc`**.
+
 ## Preconditions
-- `knowledge/methodology.md` statut **validated**
-- Lire `athletes/current.yaml` → profil `athletes/<id>/profile.yaml` + dernières pages dans `prog/`
-- Respecter `schedule` / `equipment` / préférences du profil ; % sur `prs_current_kg` (jamais `prs_pre_injury_kg` si présent)
-- Vérifier **gates** (`knowledge/meso-gates.yaml`, scope Macro 1) avant meso suivant
+- `knowledge/methodology.md` **validated**
+- Profil actif + dernières pages `prog/`
+- Gates : `knowledge/meso-gates.yaml` avant meso suivant
 - Ops : maintenance-doses, session-patterns, conditioning-matrix, warmups, gym-ladder
-- Code meso : `REAL` (pas `REAL-mini` comme clé)
-- Ne pas réécrire le contenu des semaines déjà commencées / passées (mise en forme OK)
 
 ## Steps
-1. Définir objectif / date (ou Build sans A-event).
-2. Assurer Saison → Macrocycle → Meso (`index.md` ; macro `macrocycle-NN-<slug>/` ; meso `meso-NN-<slug>/` depuis `prog/_templates/meso.md`).
-3. Écrire les semaines depuis `prog/_templates/semaine.md` :
-   - texte athlète (échauffements écrits) ;
-   - `<!-- pattern: -->` / `<!-- warmup: -->` pour ops ;
-   - fondements + feedback.
-4. Samedi selon profil (décider à l’écriture / J-1 selon dispo).
-5. Microcycle Israetel : volume → surcharge → pic → deload.
-6. Mettre à jour index + `.vitepress/current.json`.
-7. Arbitrage durable → profil athlète actif (ou `knowledge/arbitrages.md` si conflit corpus).
-8. **Obligatoire** : `npm run lint:prog` — zéro ERROR.
+1. Objectif / date (ou Build sans A-event).
+2. Saison → Macro (`macrocycle-NN-<slug>/`) → Meso (`meso-NN-<slug>/`, template meso).
+3. Semaines depuis `prog/_templates/semaine.md` : pattern/warmup comments, fondements, feedback.
+4. Microcycle Israetel : volume → surcharge → pic → deload.
+5. Index + `.vitepress/current.json` ; arbitrage → profil ou `knowledge/arbitrages.md`.
+6. **Obligatoire** : `npm run lint:prog` — zéro ERROR.
+
+Pour le détail semaine par semaine, enchaîner avec skill **write-week**.

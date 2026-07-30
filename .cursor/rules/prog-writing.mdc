@@ -1,0 +1,59 @@
+---
+description: Rédaction prog — structure, ops pack, pédagogie, planning, immutabilité
+globs: prog/**/*.md
+alwaysApply: false
+---
+
+# SoT programmation = `prog/`
+
+- Séances : fichiers `.md` ; hiérarchie Saison → Macrocycle → Meso → Semaine (`Sxx-YYYY-MM-DD.md`).
+- Templates : `prog/_templates/semaine.md` · `prog/_templates/meso.md`
+- Site VitePress depuis `prog/` ; `.vitepress/current.json` = « En cours ».
+- Nettoyer fichiers obsolètes quand la structure évolue.
+
+## Référentiel vs saisons
+
+| Zone | Chemins | Contraintes |
+|------|---------|-------------|
+| **Référentiel** | `prog/index.md`, `prog/livres/`, `prog/public/concepts/` | Pérenne, neutre profil ; ton coach externe ; pas de calendrier année ni contexte athlète |
+| **Saisons** | `prog/saison-YYYY/`, `prog/public/diagrams/saison-YYYY/` | Instance : priorités, créneaux, macros |
+
+- Détail athlète / année → `saison-YYYY/` (+ profile hors site). Nouvelle saison = nouveau dossier.
+- Référentiel : pas de « la prog », « ici », Notes, profil ou créneau particulier ; formulation directe, pas de disclaimers métadiscursifs.
+- Fiches `prog/livres/*.md` : gabarit homogène (`L’auteur et le livre` → `Vision globale` → `Concepts essentiels` → `Ce qu’un coach peut retenir` → `Ce qu’on n’applique pas` → `À retenir` → `Applications pratiques`).
+
+## Langage visible (hors commentaires HTML)
+
+- Lisible à la box, partageable ; **ton neutre** (pas de tutoiement / adresse directe) — « Si entraînement », « Si séance », « on ».
+- Séances (`saison-YYYY/**`) : **feuille de route exécutable** — ordre, format, repos, durée, cibles sans interprétation restante.
+- `Objectif de la semaine` + `Intention` du jour systématiques ; en tête de semaine, pas créneau / matériel / profil.
+- RPE → repère charge/allure si possible.
+- Cibles **chiffrées** (reps, RPE, durée, repos) ; échauffements **en entier** ; glossaire si acronymes.
+- Interdit visible : chemins `knowledge/` / `athletes/`, champs profile, ids `warmup_*` / patterns seuls, codes meso bruts sans nom lisible.
+- Métadonnées coach : `<!-- pattern: … -->` · `<!-- warmup: … -->` uniquement.
+
+## Ops pack (semaine / meso)
+
+1. **Patterns** — `<!-- pattern: id -->` ∈ `knowledge/session-patterns.yaml` ; hors liste → Notes (+ profile si durable)
+2. **Warm-ups** — id `knowledge/warmups.yaml` + échauffement **recopié en entier** (id invisible)
+3. **Maintien** — `knowledge/maintenance-doses.yaml` (code meso en français ; `REAL-mini` → `REAL`)
+4. **Gates** — pas de meso suivant sans `knowledge/meso-gates.yaml` (condition en français)
+5. **Douleur** — pas d’interrogation systématique ; si signalée → protocole profil (ex. adductor)
+6. **Conditioning** — `knowledge/conditioning-matrix.yaml` ; HI surtout TRA/REAL
+7. **Gym** — `knowledge/gym-ladder.md` en ACC-GYM
+8. **Options** — bornées : choix limité, même intention, mêmes repères
+9. **Volumes** — % / sets sur `prs_current_kg` + volumes profile
+10. **Feedback** — Notes (`###` par jour) : Fait · Charges · RPE · Fatigue · Note ; suite en « Suite prévue : … »
+11. **Lint** — `npm run lint:prog` obligatoire après write-week / generate
+
+## Pédagogie & cohérence
+
+À chaque niveau : **Pourquoi**, **Intention**, **Apport**, **Continuité**. Semaine : **Fondements (corpus)** 1–3 refs (auteur + titre) — voir template semaine. Pas de séance orpheline. Avant nouveau meso/semaine : relire dernières semaines + profil.
+
+## Planning & matériel
+
+Source : `schedule`, `equipment`, préférences du profil. Samedi selon `schedule.saturday` (décider semaine / J-1). Team WOD RPE ≥ seuil profil (`coaching.team_wod_rpe_threshold_cut_next_day`, défaut 8) → −volume lendemain. Weekends / vacances : adapter en gardant l’intention du meso.
+
+## Immutabilité
+
+Semaine **commencée ou passée** : interdit de modifier le contenu prescrit (exercices, doses, structure). OK : mise en forme cosmétique, blocs Notes/feedback. Adaptations → semaines futures uniquement.
