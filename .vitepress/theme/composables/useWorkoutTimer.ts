@@ -194,7 +194,7 @@ export function useWorkoutTimer(config: TimerConfig) {
 
   const shouldAddFinalSplit = () => {
     const type = currentTimer.value.type ?? ''
-    if (!['forTime', 'amrap'].includes(type) || elapsedTime.value <= 0) {
+    if (type !== 'forTime' || elapsedTime.value <= 0) {
       return false
     }
 
