@@ -255,7 +255,7 @@
   font-weight: 600;
 }
 
-.concept-legend {
+.vp-doc ul.concept-legend {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem 1rem;
@@ -266,23 +266,25 @@
   color: var(--arctic-muted, #78909c);
 }
 
-.concept-legend li {
+.vp-doc .concept-legend li {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
+  margin: 0;
 }
 
-.concept-legend i {
+.vp-doc .concept-legend i {
   display: inline-block;
   width: 0.65rem;
   height: 0.65rem;
   border-radius: 2px;
   flex-shrink: 0;
+  font-style: normal;
 }
 
-.concept-legend .c-green { background: #64ffda; }
-.concept-legend .c-blue { background: #82b1ff; }
-.concept-legend .c-purple { background: #b388ff; }
-.concept-legend .c-gold { background: #ffe082; }
-.concept-legend .c-pink { background: #ff6b9d; }
-.concept-legend .c-muted { background: #546e7a; }
+.vp-doc .concept-legend .c-green { background: #64ffda; }
+.vp-doc .concept-legend .c-blue { background: #82b1ff; }
+.vp-doc .concept-legend .c-purple { background: #b388ff; }
+.vp-doc .concept-legend .c-gold { background: #ffe082; }
+.vp-doc .concept-legend .c-pink { background: #ff6b9d; }
+.vp-doc .concept-legend .c-muted { background: #546e7a; }
