@@ -9,7 +9,7 @@ import { snatchMoves, cleanMoves, jerkMoves } from '../weightlifting/moves'
       <h2 class="tool-section__heading">Arraché</h2>
       <WeightliftingTable
         :moves="snatchMoves"
-        :default-max="65"
+        :default-max="75"
         storage-prefix="lift:snatch"
       />
     </section>
@@ -18,7 +18,7 @@ import { snatchMoves, cleanMoves, jerkMoves } from '../weightlifting/moves'
       <h2 class="tool-section__heading">Épaulé</h2>
       <WeightliftingTable
         :moves="cleanMoves"
-        :default-max="105"
+        :default-max="120"
         storage-prefix="lift:clean"
       />
     </section>
@@ -27,7 +27,7 @@ import { snatchMoves, cleanMoves, jerkMoves } from '../weightlifting/moves'
       <h2 class="tool-section__heading">Jeté</h2>
       <WeightliftingTable
         :moves="jerkMoves"
-        :default-max="80"
+        :default-max="110"
         storage-prefix="lift:jerk"
       />
     </section>
