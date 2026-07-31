@@ -199,6 +199,14 @@
   color: var(--aurora-green) !important;
 }
 
+/* Mobile nav screen — hauteur explicite (évite les soucis bottom:0 + 100vh iOS) */
+@media (max-width: 767px) {
+  .VPNavScreen {
+    bottom: auto;
+    height: calc(100dvh - var(--vp-nav-height) - var(--vp-layout-top-height, 0px));
+  }
+}
+
 .dark .VPLink:hover {
   color: var(--aurora-green);
 }
