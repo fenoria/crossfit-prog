@@ -209,11 +209,11 @@
 
 @keyframes workout-timer-firefly-sway {
   0% {
-    transform: translateX(0);
+    transform: translate(0, 0);
   }
 
   100% {
-    transform: translateX(2.2vmin);
+    transform: translate(5vmin, -3.5vmin);
   }
 }
 
@@ -223,11 +223,11 @@
 
 @keyframes workout-timer-firefly-sway-reverse {
   0% {
-    transform: translateX(0);
+    transform: translate(0, 0);
   }
 
   100% {
-    transform: translateX(-2.2vmin);
+    transform: translate(-5vmin, 3vmin);
   }
 }
 
@@ -322,15 +322,15 @@
   }
 
   35% {
-    transform: translate(4.5vmin, -4.5vmin);
+    transform: translate(8vmin, -7vmin);
   }
 
   70% {
-    transform: translate(-1.5vmin, -6vmin);
+    transform: translate(-3vmin, -10vmin);
   }
 
   100% {
-    transform: translate(-2vmin, -2vmin);
+    transform: translate(-4vmin, -3.5vmin);
   }
 }
 
@@ -340,11 +340,11 @@
   }
 
   40% {
-    transform: translate(-5.5vmin, 0.5vmin);
+    transform: translate(-9vmin, 1vmin);
   }
 
   100% {
-    transform: translate(2vmin, 1.5vmin);
+    transform: translate(4vmin, 3vmin);
   }
 }
 
@@ -354,11 +354,11 @@
   }
 
   45% {
-    transform: translate(1vmin, 5vmin);
+    transform: translate(2vmin, 8vmin);
   }
 
   100% {
-    transform: translate(-1.5vmin, 1vmin);
+    transform: translate(-3vmin, 2vmin);
   }
 }
 
@@ -368,11 +368,11 @@
   }
 
   42% {
-    transform: translate(-4.5vmin, 5vmin);
+    transform: translate(-8vmin, 8vmin);
   }
 
   100% {
-    transform: translate(2.5vmin, 0.5vmin);
+    transform: translate(5vmin, 1vmin);
   }
 }
 
@@ -382,15 +382,15 @@
   }
 
   34% {
-    transform: translate(6vmin, -4vmin);
+    transform: translate(10vmin, -7vmin);
   }
 
   70% {
-    transform: translate(0.5vmin, -4vmin);
+    transform: translate(1vmin, -7vmin);
   }
 
   100% {
-    transform: translate(-2vmin, -1.5vmin);
+    transform: translate(-4vmin, -2.5vmin);
   }
 }
 

@@ -80,13 +80,12 @@ interface FireflyConfig {
   swayDelay: number
 }
 
+const FIREFLY_COUNT = 12
+
 const FIREFLY_POSITIONS: [number, number][] = [
-  [7, 5], [12, 18], [9, 42], [15, 68], [6, 88],
-  [24, 10], [28, 32], [22, 78], [38, 6], [44, 92],
-  [52, 14], [48, 52], [56, 72], [62, 28], [68, 86],
-  [74, 8], [78, 38], [82, 58], [88, 22], [91, 76],
-  [18, 55], [35, 8], [65, 45], [33, 88], [85, 35],
-  [55, 12], [72, 62], [45, 25],
+  [7, 5], [12, 18], [9, 42], [24, 10], [38, 6],
+  [52, 14], [48, 52], [62, 28], [74, 8], [78, 38],
+  [18, 55], [85, 35],
 ]
 
 const FIREFLY_BLUEPRINTS: Omit<
@@ -118,37 +117,24 @@ const FIREFLY_BLUEPRINTS: Omit<
 const FIREFLY_TEMPO = 0.9
 
 function buildFireflies(): FireflyConfig[] {
-  const viewport =
-    typeof window !== 'undefined'
-      ? window.innerWidth + window.innerHeight
-      : 1200
-  const count = Math.min(28, Math.max(18, Math.round(viewport / 120)))
-
-  return Array.from({ length: count }, (_, i) => {
-    const slot = FIREFLY_POSITIONS[i % FIREFLY_POSITIONS.length]
+  return Array.from({ length: FIREFLY_COUNT }, (_, i) => {
+    const slot = FIREFLY_POSITIONS[i]
     const blueprint = FIREFLY_BLUEPRINTS[i % FIREFLY_BLUEPRINTS.length]
-    const layer = Math.floor(i / FIREFLY_POSITIONS.length)
-    const topJitter = layer > 0 ? (i % 4) * 3 - 4 : 0
-    const leftJitter = layer > 0 ? (i % 3) * 4 - 4 : 0
 
     return {
       ...blueprint,
       size: blueprint.size + 1,
-      top: `${Math.max(4, Math.min(93, slot[0] + topJitter))}%`,
-      left: `${Math.max(4, Math.min(93, slot[1] + leftJitter))}%`,
+      top: `${slot[0]}%`,
+      left: `${slot[1]}%`,
       driftDuration: Math.round(blueprint.driftDuration * FIREFLY_TEMPO),
       twinkle: Math.round(blueprint.twinkle * FIREFLY_TEMPO * 10) / 10,
-      swayDuration: Math.round((34 + (i % 6) * 5) * FIREFLY_TEMPO),
+      swayDuration: Math.round((28 + (i % 5) * 6) * FIREFLY_TEMPO),
       swayDelay: -(i * 2.7),
     }
   })
 }
 
 const fireflies = ref<FireflyConfig[]>(buildFireflies())
-
-function refreshFireflies() {
-  fireflies.value = buildFireflies()
-}
 
 const canShowSplits = computed(
   () => timer.showSplitsTable.value && timer.rounds.value.length > 0,
@@ -163,11 +149,8 @@ watch(
 
 onMounted(() => {
   timer.init()
-  refreshFireflies()
-  window.addEventListener('resize', refreshFireflies)
 })
 onBeforeUnmount(() => {
-  window.removeEventListener('resize', refreshFireflies)
   timer.dispose()
 })
 </script>
