@@ -1,5 +1,5 @@
 import { computed, ref, type Ref } from 'vue'
-import { playTimerSound } from '../timer/audio'
+import { playTimerSound, primeTimerAudio } from '../timer/audio'
 import { getStringTime } from '../timer/time'
 
 export type TimerType =
@@ -371,11 +371,16 @@ export function useWorkoutTimer(config: TimerConfig) {
   }
 
   const togglePlayPause = () => {
-    if (timerStatus.value === 'ready') startTimer()
-    else if (timerStatus.value === 'started') stopTimer()
-    else if (timerStatus.value === 'stopped') startTimer()
-    else if (timerStatus.value === 'ended') {
+    if (timerStatus.value === 'ready') {
+      primeTimerAudio()
+      startTimer()
+    } else if (timerStatus.value === 'started') stopTimer()
+    else if (timerStatus.value === 'stopped') {
+      primeTimerAudio()
+      startTimer()
+    } else if (timerStatus.value === 'ended') {
       resetTimer()
+      primeTimerAudio()
       startTimer()
     }
   }
@@ -387,6 +392,7 @@ export function useWorkoutTimer(config: TimerConfig) {
     ) {
       return
     }
+    primeTimerAudio()
     addSplitTime()
     playTimerSound('round', config.hasAudio)
   }

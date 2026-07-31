@@ -4,6 +4,7 @@ import WorkoutTimer from './WorkoutTimer.vue'
 import { timeToSeconds } from '../timer/time'
 import type { TimerConfig, TimerType } from '../composables/useWorkoutTimer'
 import { useToolStorage } from '../composables/useToolStorage'
+import { primeTimerAudio } from '../timer/audio'
 
 const types: { value: TimerType; label: string }[] = [
   { value: 'forTime', label: 'For Time' },
@@ -60,6 +61,7 @@ const activeConfig = computed<TimerConfig>(() => ({
 }))
 
 function openTimer() {
+  if (hasAudio.value) primeTimerAudio()
   isRunning.value = true
 }
 
