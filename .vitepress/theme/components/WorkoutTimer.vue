@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
+import { computed, onBeforeUnmount, onMounted, ref, watch, type PropType } from 'vue'
 import {
   ListOrdered,
   Maximize2,
@@ -9,32 +9,30 @@ import {
   RotateCcw,
   X,
 } from '@lucide/vue'
-import { useWorkoutTimer } from '../composables/useWorkoutTimer'
+import {
+  useWorkoutTimer,
+  type TimerConfig,
+  type TimerType,
+} from '../composables/useWorkoutTimer'
+import { formatDiff } from '../timer/time'
+import WorkoutTimerFireflies from './WorkoutTimerFireflies.vue'
 
 const ROUND_RING_R = 34
 const ROUND_RING_CIRC = 2 * Math.PI * ROUND_RING_R
 
 const props = defineProps({
-  type: { type: String, required: true },
-  totalTime: { type: Number, default: null },
-  totalRounds: { type: Number, default: null },
-  roundTime: { type: Number, default: null },
-  roundRestTime: { type: Number, default: null },
+  type: { type: String as PropType<TimerType>, required: true },
+  totalTime: { type: Number as PropType<number | null>, default: null },
+  totalRounds: { type: Number as PropType<number | null>, default: null },
+  roundTime: { type: Number as PropType<number | null>, default: null },
+  roundRestTime: { type: Number as PropType<number | null>, default: null },
   launcherTime: { type: Number, default: 0 },
   hasAudio: { type: Boolean, default: false },
-})
+}) satisfies TimerConfig
 
 const emit = defineEmits(['close'])
 
-const timer = useWorkoutTimer({
-  type: props.type,
-  totalTime: props.totalTime,
-  totalRounds: props.totalRounds,
-  roundTime: props.roundTime,
-  roundRestTime: props.roundRestTime,
-  launcherTime: props.launcherTime,
-  hasAudio: props.hasAudio,
-})
+const timer = useWorkoutTimer(props)
 
 const isLauncherPhase = computed(
   () => timer.currentTimer.value.type === 'launcher',
@@ -64,78 +62,6 @@ const showBottomBar = computed(() => {
 
 const splitsVisible = ref(false)
 
-type FireflyDrift = 'a' | 'b' | 'c' | 'd' | 'e'
-
-interface FireflyConfig {
-  top: string
-  left: string
-  rgb: string
-  size: number
-  drift: FireflyDrift
-  driftDuration: number
-  driftDelay: number
-  twinkle: number
-  twinkleDelay: number
-  swayDuration: number
-  swayDelay: number
-}
-
-const FIREFLY_COUNT = 12
-
-const FIREFLY_POSITIONS: [number, number][] = [
-  [7, 5], [12, 18], [9, 42], [24, 10], [38, 6],
-  [52, 14], [48, 52], [62, 28], [74, 8], [78, 38],
-  [18, 55], [85, 35],
-]
-
-const FIREFLY_BLUEPRINTS: Omit<
-  FireflyConfig,
-  'top' | 'left' | 'swayDuration' | 'swayDelay'
->[] = [
-  { rgb: '100, 255, 218', size: 2, drift: 'a', driftDuration: 26, driftDelay: -4, twinkle: 5.8, twinkleDelay: -2.1 },
-  { rgb: '255, 224, 130', size: 3, drift: 'c', driftDuration: 28, driftDelay: -12, twinkle: 6.6, twinkleDelay: -4.6 },
-  { rgb: '200, 170, 255', size: 2, drift: 'e', driftDuration: 23, driftDelay: -18, twinkle: 5.2, twinkleDelay: -1.2 },
-  { rgb: '180, 255, 210', size: 2, drift: 'b', driftDuration: 27, driftDelay: -8, twinkle: 6.1, twinkleDelay: -3.2 },
-  { rgb: '255, 224, 130', size: 3, drift: 'd', driftDuration: 22, driftDelay: -22, twinkle: 7.2, twinkleDelay: -5.8 },
-  { rgb: '130, 220, 180', size: 2, drift: 'd', driftDuration: 25, driftDelay: -14, twinkle: 5.6, twinkleDelay: -2.5 },
-  { rgb: '230, 245, 255', size: 2, drift: 'a', driftDuration: 24, driftDelay: -26, twinkle: 4.9, twinkleDelay: -4.8 },
-  { rgb: '200, 170, 255', size: 2, drift: 'c', driftDuration: 27, driftDelay: -16, twinkle: 6.4, twinkleDelay: -2.9 },
-  { rgb: '100, 255, 218', size: 3, drift: 'e', driftDuration: 21, driftDelay: -10, twinkle: 5.9, twinkleDelay: -3.7 },
-  { rgb: '180, 255, 210', size: 2, drift: 'b', driftDuration: 24, driftDelay: -28, twinkle: 5.3, twinkleDelay: -1.5 },
-  { rgb: '255, 224, 130', size: 2, drift: 'a', driftDuration: 29, driftDelay: -20, twinkle: 7.4, twinkleDelay: -6.4 },
-  { rgb: '100, 255, 218', size: 3, drift: 'd', driftDuration: 23, driftDelay: -6, twinkle: 5.5, twinkleDelay: -2.3 },
-  { rgb: '230, 245, 255', size: 2, drift: 'c', driftDuration: 26, driftDelay: -32, twinkle: 5.1, twinkleDelay: -4.2 },
-  { rgb: '200, 170, 255', size: 2, drift: 'b', driftDuration: 22, driftDelay: -24, twinkle: 6.8, twinkleDelay: -5.1 },
-  { rgb: '130, 220, 180', size: 3, drift: 'e', driftDuration: 25, driftDelay: -12, twinkle: 5.8, twinkleDelay: -3.4 },
-  { rgb: '180, 255, 210', size: 2, drift: 'c', driftDuration: 21, driftDelay: -30, twinkle: 4.8, twinkleDelay: -5.9 },
-  { rgb: '255, 224, 130', size: 2, drift: 'a', driftDuration: 27, driftDelay: -18, twinkle: 6.9, twinkleDelay: -1.8 },
-  { rgb: '100, 255, 218', size: 3, drift: 'd', driftDuration: 26, driftDelay: -8, twinkle: 5.7, twinkleDelay: -4.1 },
-  { rgb: '200, 170, 255', size: 2, drift: 'b', driftDuration: 28, driftDelay: -36, twinkle: 7.1, twinkleDelay: -7.2 },
-  { rgb: '230, 245, 255', size: 2, drift: 'e', driftDuration: 23, driftDelay: -14, twinkle: 4.7, twinkleDelay: -0.8 },
-]
-
-const FIREFLY_TEMPO = 0.9
-
-function buildFireflies(): FireflyConfig[] {
-  return Array.from({ length: FIREFLY_COUNT }, (_, i) => {
-    const slot = FIREFLY_POSITIONS[i]
-    const blueprint = FIREFLY_BLUEPRINTS[i % FIREFLY_BLUEPRINTS.length]
-
-    return {
-      ...blueprint,
-      size: blueprint.size + 1,
-      top: `${slot[0]}%`,
-      left: `${slot[1]}%`,
-      driftDuration: Math.round(blueprint.driftDuration * FIREFLY_TEMPO),
-      twinkle: Math.round(blueprint.twinkle * FIREFLY_TEMPO * 10) / 10,
-      swayDuration: Math.round((28 + (i % 5) * 6) * FIREFLY_TEMPO),
-      swayDelay: -(i * 2.7),
-    }
-  })
-}
-
-const fireflies = ref<FireflyConfig[]>(buildFireflies())
-
 const canShowSplits = computed(
   () => timer.showSplitsTable.value && timer.rounds.value.length > 0,
 )
@@ -163,35 +89,7 @@ onBeforeUnmount(() => {
       'workout-timer--ended': timer.timerStatus.value === 'ended',
     }"
   >
-    <div class="workout-timer__fireflies" aria-hidden="true">
-      <span
-        v-for="(fly, i) in fireflies"
-        :key="i"
-        class="workout-timer__firefly-wrap"
-        :style="{
-          top: fly.top,
-          left: fly.left,
-          '--ff-sway-duration': `${fly.swayDuration}s`,
-          '--ff-sway-delay': `${fly.swayDelay}s`,
-        }"
-      >
-        <span
-          class="workout-timer__firefly"
-          :class="[
-            `workout-timer__firefly--drift-${fly.drift}`,
-            { 'workout-timer__firefly--large': fly.size > 3 },
-          ]"
-          :style="{
-            '--ff-rgb': fly.rgb,
-            '--ff-size': `${fly.size}px`,
-            '--ff-drift-duration': `${fly.driftDuration}s`,
-            '--ff-drift-delay': `${fly.driftDelay}s`,
-            '--ff-twinkle': `${fly.twinkle}s`,
-            '--ff-twinkle-delay': `${fly.twinkleDelay}s`,
-          }"
-        />
-      </span>
-    </div>
+    <WorkoutTimerFireflies />
 
     <div class="workout-timer__toolbar">
       <button
@@ -360,7 +258,7 @@ onBeforeUnmount(() => {
                       : 'workout-timer__diff--fast'
                   "
                 >
-                  {{ round.diff > 0 ? `+${round.diff}` : round.diff }}
+                  {{ formatDiff(round.diff) }}
                 </span>
               </td>
             </tr>

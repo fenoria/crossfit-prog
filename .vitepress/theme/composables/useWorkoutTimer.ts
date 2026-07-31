@@ -1,4 +1,5 @@
 import { computed, ref, type Ref } from 'vue'
+import { playTimerSound } from '../timer/audio'
 import { getStringTime } from '../timer/time'
 
 export type TimerType =
@@ -31,9 +32,10 @@ interface QueueItem {
   isRest?: boolean
 }
 
-export function useWorkoutTimer(config: TimerConfig) {
-  const audioDing = new Audio(`${import.meta.env.BASE_URL}sounds/ding.mp3`)
+const DOWN_TYPES = ['amrap', 'countdown', 'tabata', 'emom', 'launcher'] as const
+const INTERVAL_TYPES = ['tabata', 'emom'] as const
 
+export function useWorkoutTimer(config: TimerConfig) {
   let animationFrame: number | undefined
   let wakeLock: WakeLockSentinel | null = null
   let timerQueue: QueueItem[] = []
@@ -57,9 +59,10 @@ export function useWorkoutTimer(config: TimerConfig) {
   })
 
   const isDownType = () =>
-    ['amrap', 'countdown', 'tabata', 'emom', 'launcher'].includes(
-      currentTimer.value.type ?? '',
-    )
+    DOWN_TYPES.includes(currentTimer.value.type as (typeof DOWN_TYPES)[number])
+
+  const getFractionalElapsed = () =>
+    (performance.now() - (startedAt ?? 0)) / 1000 + elapsedOffset
 
   const remainingTime = computed(() => {
     if (!currentTimer.value.totalTime) return null
@@ -83,12 +86,10 @@ export function useWorkoutTimer(config: TimerConfig) {
   const displayRound = computed(() => {
     const type = currentTimer.value.type ?? ''
 
-    // AMRAP : score = rounds complétés (0 au départ).
     if (type === 'amrap') {
       return rounds.value.length
     }
 
-    // Tabata, EMOM, For Time : round en cours (1 au départ).
     if (['tabata', 'emom', 'forTime'].includes(type)) {
       const current = rounds.value.length + 1
       if (config.totalRounds && config.totalRounds > 0) {
@@ -214,6 +215,89 @@ export function useWorkoutTimer(config: TimerConfig) {
     )
   }
 
+  const shouldKeepRunning = (fractionalElapsed: number) => {
+    const type = currentTimer.value.type ?? ''
+
+    if (DOWN_TYPES.includes(type as (typeof DOWN_TYPES)[number])) {
+      const total = currentTimer.value.totalTime
+      if (!total || total <= 0) return false
+      return fractionalElapsed < total
+    }
+
+    if (type === 'forTime') {
+      return rounds.value.length < (config.totalRounds ?? 0)
+    }
+
+    if (type === 'chrono') return true
+
+    return false
+  }
+
+  const playSegmentTransitionSound = () => {
+    const type = currentTimer.value.type ?? ''
+    if (INTERVAL_TYPES.includes(type as (typeof INTERVAL_TYPES)[number])) {
+      playTimerSound(
+        currentTimer.value.isRest ? 'rest' : 'work',
+        config.hasAudio,
+      )
+    } else {
+      playTimerSound('segment', config.hasAudio)
+    }
+  }
+
+  const finishCurrentSegment = () => {
+    if (currentTimer.value.totalTime) {
+      segmentProgress.value = 1
+    }
+
+    const type = currentTimer.value.type ?? ''
+    if (
+      INTERVAL_TYPES.includes(type as (typeof INTERVAL_TYPES)[number]) &&
+      !currentTimer.value.isRest
+    ) {
+      addSplitTime()
+    } else if (shouldAddFinalSplit()) {
+      addSplitTime()
+    }
+
+    playSegmentTransitionSound()
+
+    stopTimer()
+    if (setCurrentTimer()) startTimer()
+    else stopTimer('ended')
+  }
+
+  const updateFromClock = () => {
+    const fractionalElapsed = getFractionalElapsed()
+    elapsedTime.value = Math.floor(fractionalElapsed)
+    updateSegmentProgress(fractionalElapsed)
+    return fractionalElapsed
+  }
+
+  const syncFromClock = () => {
+    if (timerStatus.value !== 'started' || startedAt == null) return
+
+    if (animationFrame) {
+      cancelAnimationFrame(animationFrame)
+      animationFrame = undefined
+    }
+
+    let safety = 0
+    while (timerStatus.value === 'started' && safety++ < 200) {
+      const fractionalElapsed = updateFromClock()
+      if (shouldKeepRunning(fractionalElapsed)) {
+        tick()
+        return
+      }
+      finishCurrentSegment()
+      if (timerStatus.value === 'ended') return
+    }
+
+    if (timerStatus.value === 'started' && !animationFrame) {
+      tick()
+    }
+  }
+
   const startWakeLock = async () => {
     if (!('wakeLock' in navigator) || wakeLock) return
     try {
@@ -237,49 +321,25 @@ export function useWorkoutTimer(config: TimerConfig) {
   }
 
   const handleVisibilityChange = () => {
-    if (
-      document.visibilityState === 'visible' &&
-      timerStatus.value === 'started'
-    ) {
+    if (document.visibilityState !== 'visible') return
+    if (timerStatus.value === 'started') {
       startWakeLock()
+      syncFromClock()
     }
+  }
+
+  const handleFullscreenChange = () => {
+    isFullscreen.value = !!document.fullscreenElement
   }
 
   const tick = () => {
     animationFrame = requestAnimationFrame(() => {
-      const fractionalElapsed =
-        (performance.now() - (startedAt ?? 0)) / 1000 + elapsedOffset
-      elapsedTime.value = Math.floor(fractionalElapsed)
-      updateSegmentProgress(fractionalElapsed)
+      const fractionalElapsed = updateFromClock()
 
-      const keepRunning =
-        (isDownType() && (remainingTime.value ?? 0) > 0) ||
-        (currentTimer.value.type === 'forTime' &&
-          rounds.value.length < (config.totalRounds ?? 0)) ||
-        currentTimer.value.type === 'chrono'
-
-      if (keepRunning) {
+      if (shouldKeepRunning(fractionalElapsed)) {
         tick()
       } else {
-        if (currentTimer.value.totalTime) {
-          segmentProgress.value = 1
-        }
-        if (
-          ['tabata', 'emom'].includes(currentTimer.value.type ?? '') &&
-          !currentTimer.value.isRest
-        ) {
-          addSplitTime()
-        } else if (shouldAddFinalSplit()) {
-          addSplitTime()
-        }
-
-        if (config.hasAudio) {
-          audioDing.play().catch(() => {})
-        }
-
-        stopTimer()
-        if (setCurrentTimer()) startTimer()
-        else stopTimer('ended')
+        finishCurrentSegment()
       }
     })
   }
@@ -293,6 +353,7 @@ export function useWorkoutTimer(config: TimerConfig) {
 
   const stopTimer = (status: 'stopped' | 'ended' = 'stopped') => {
     if (animationFrame) cancelAnimationFrame(animationFrame)
+    animationFrame = undefined
     timerStatus.value = status
     elapsedOffset = elapsedTime.value
     startedAt = null
@@ -300,6 +361,7 @@ export function useWorkoutTimer(config: TimerConfig) {
 
   const resetTimer = (status: 'ready' | 'ended' = 'ready') => {
     if (animationFrame) cancelAnimationFrame(animationFrame)
+    animationFrame = undefined
     setTimerQueue()
     setCurrentTimer()
     rounds.value = []
@@ -326,21 +388,20 @@ export function useWorkoutTimer(config: TimerConfig) {
       return
     }
     addSplitTime()
+    playTimerSound('round', config.hasAudio)
   }
 
   const startFullscreen = async () => {
     try {
       await document.documentElement.requestFullscreen()
-      isFullscreen.value = true
     } catch {
       /* ignore */
     }
   }
 
   const stopFullscreen = () => {
-    if (isFullscreen.value) {
-      document.exitFullscreen()
-      isFullscreen.value = false
+    if (document.fullscreenElement) {
+      document.exitFullscreen().catch(() => {})
     }
   }
 
@@ -348,6 +409,8 @@ export function useWorkoutTimer(config: TimerConfig) {
     resetTimer()
     startWakeLock()
     document.addEventListener('visibilitychange', handleVisibilityChange)
+    document.addEventListener('fullscreenchange', handleFullscreenChange)
+    isFullscreen.value = !!document.fullscreenElement
   }
 
   const dispose = () => {
@@ -355,6 +418,7 @@ export function useWorkoutTimer(config: TimerConfig) {
     stopFullscreen()
     stopWakeLock()
     document.removeEventListener('visibilitychange', handleVisibilityChange)
+    document.removeEventListener('fullscreenchange', handleFullscreenChange)
   }
 
   return {

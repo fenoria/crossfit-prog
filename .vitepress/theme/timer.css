@@ -213,7 +213,7 @@
   }
 
   100% {
-    transform: translate(5vmin, -3.5vmin);
+    transform: translate(4vmin, -3vmin);
   }
 }
 
@@ -227,7 +227,7 @@
   }
 
   100% {
-    transform: translate(-5vmin, 3vmin);
+    transform: translate(-4vmin, 3vmin);
   }
 }
 

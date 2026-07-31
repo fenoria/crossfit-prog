@@ -29,3 +29,11 @@ export function timeToSeconds(timeString: string | number): number {
 
   return Number.isNaN(seconds) ? 0 : seconds
 }
+
+export function formatDiff(seconds: number): string {
+  const sign = seconds > 0 ? '+' : seconds < 0 ? '−' : ''
+  const abs = Math.abs(seconds)
+  const minutes = Math.floor(abs / 60)
+  const secs = abs % 60
+  return `${sign}${minutes}:${secs.toString().padStart(2, '0')}`
+}
