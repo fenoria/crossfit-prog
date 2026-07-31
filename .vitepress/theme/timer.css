@@ -15,6 +15,7 @@
     radial-gradient(ellipse 50% 30% at 50% 100%, rgba(130, 177, 255, 0.06), transparent 60%);
   overflow-y: auto;
   min-height: 100dvh;
+  --timer-fg: #fff;
 }
 
 .workout-timer__toolbar {
@@ -41,7 +42,7 @@
   border: none;
   border-radius: 8px;
   background: transparent;
-  color: var(--arctic-fg, #e8f4fd);
+  color: var(--timer-fg);
   cursor: pointer;
   transition: background 0.15s, color 0.15s;
 }
@@ -54,12 +55,12 @@
 
 .timer-btn:hover {
   background: rgba(100, 255, 218, 0.12);
-  color: var(--aurora-green, #64ffda);
+  color: var(--timer-fg);
 }
 
 .timer-btn--active {
   background: rgba(100, 255, 218, 0.14);
-  color: var(--aurora-green, #64ffda);
+  color: var(--timer-fg);
 }
 
 .workout-timer__round-wrap {
@@ -459,22 +460,22 @@
 
 /* Glow unifié — intensité médiane entre normal adouci et états accentués */
 .timer-time--normal {
-  color: var(--arctic-fg, #e8f4fd);
+  color: var(--timer-fg);
   --timer-glow-rgb: 130, 177, 255;
 }
 
 .timer-time--urgent {
-  color: var(--arctic-fg, #e8f4fd);
+  color: var(--timer-fg);
   --timer-glow-rgb: 255, 107, 157;
 }
 
 .timer-time--rest {
-  color: var(--arctic-fg, #e8f4fd);
+  color: var(--timer-fg);
   --timer-glow-rgb: 100, 255, 218;
 }
 
 .timer-time--launcher {
-  color: var(--arctic-fg, #e8f4fd);
+  color: var(--timer-fg);
   --timer-glow-rgb: 255, 224, 130;
 }
 
@@ -521,12 +522,12 @@
 
 .workout-timer__diff--slow {
   font-weight: 700;
-  color: var(--aurora-pink, #ff6b9d);
+  color: var(--timer-fg);
 }
 
 .workout-timer__diff--fast {
   font-weight: 700;
-  color: var(--aurora-green, #64ffda);
+  color: var(--timer-fg);
 }
 
 /* Panel splits — overlay plein écran */
@@ -559,7 +560,7 @@
   font-family: 'Bebas Neue', sans-serif;
   font-size: 1.5rem;
   letter-spacing: 0.04em;
-  color: var(--arctic-fg, #e8f4fd);
+  color: var(--timer-fg);
 }
 
 .workout-timer__splits-body {
@@ -632,7 +633,7 @@
   top: 0;
   z-index: 1;
   padding: 0.65rem 0.75rem;
-  color: var(--arctic-muted, #78909c);
+  color: var(--timer-fg);
   font-weight: 600;
   font-size: 0.6875rem;
   text-transform: uppercase;
@@ -643,7 +644,7 @@
 
 .workout-timer__splits-table td {
   padding: 0.75rem;
-  color: var(--arctic-fg, #e8f4fd);
+  color: var(--timer-fg);
 }
 
 .workout-timer__splits-table tbody tr + tr td {
@@ -655,7 +656,7 @@
   width: 2.75rem;
   padding-left: 0.85rem;
   text-align: center;
-  color: var(--arctic-muted, #78909c);
+  color: var(--timer-fg);
 }
 
 .workout-timer__splits-table th:nth-child(2),
@@ -676,7 +677,7 @@
 
 .workout-timer__splits-row--latest td {
   font-weight: 600;
-  color: var(--arctic-fg, #e8f4fd);
+  color: var(--timer-fg);
 }
 
 @media (max-width: 480px) {
