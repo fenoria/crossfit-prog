@@ -173,6 +173,11 @@ const outilsItems = buildDirItems(outilsDir)
 const sidebarItems: DefaultTheme.SidebarItem[] = [
   ...buildSeasonItems(current.season),
   {
+    text: 'Outils',
+    collapsed: false,
+    items: outilsItems,
+  },
+  {
     text: 'Référentiel',
     collapsed: true,
     items: [
@@ -190,11 +195,6 @@ const sidebarItems: DefaultTheme.SidebarItem[] = [
         ],
       },
     ],
-  },
-  {
-    text: 'Outils',
-    collapsed: true,
-    items: outilsItems,
   },
 ]
 
