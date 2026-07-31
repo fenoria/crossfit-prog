@@ -1,13 +1,17 @@
 /* Timer WOD — overlay plein écran */
 
+html.timer-open,
+html.timer-open body {
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
 .workout-timer {
   position: fixed;
   inset: 0;
   z-index: 200;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  height: 100dvh;
   overflow: hidden;
   background-color: var(--arctic-night, #0b1426);
   background-image:
@@ -15,6 +19,7 @@
     radial-gradient(ellipse 60% 40% at 90% 0%, rgba(179, 136, 255, 0.1), transparent 50%),
     radial-gradient(ellipse 50% 30% at 50% 100%, rgba(130, 177, 255, 0.06), transparent 60%);
   --timer-fg: #fff;
+  --timer-chrome-top: 7.5rem;
 }
 
 .workout-timer__toolbar {
@@ -106,7 +111,7 @@
 }
 
 .workout-timer__bar {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
@@ -189,13 +194,13 @@
   flex: 1;
   min-height: 0;
   width: 100%;
-  padding: 4.5rem 0.75rem 1.5rem;
+  padding: var(--timer-chrome-top) 0.75rem 1.5rem;
   box-sizing: border-box;
   overflow: hidden;
 }
 
 .workout-timer__fireflies {
-  position: fixed;
+  position: absolute;
   inset: 0;
   pointer-events: none;
   z-index: 0;
@@ -413,7 +418,7 @@
 
 .workout-timer__time {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(5rem, min(26vw, 22vh), 10rem);
+  font-size: clamp(5rem, 26vw, 10rem);
   line-height: 0.9;
   letter-spacing: 0.02em;
   font-variant-numeric: tabular-nums;
@@ -421,31 +426,39 @@
 }
 
 @media (max-width: 639px) and (orientation: portrait) {
+  .workout-timer {
+    --timer-chrome-top: 6.5rem;
+  }
+
+  .workout-timer__main {
+    padding: var(--timer-chrome-top) 1.25rem 2rem;
+  }
+
   .workout-timer__time {
-    font-size: clamp(5.25rem, min(28vw, 24vh), 10.5rem);
+    font-size: clamp(6rem, 24vh, 12rem);
   }
 }
 
 @media (max-width: 639px) and (orientation: landscape) {
   .workout-timer__time {
-    font-size: clamp(4.75rem, min(22vw, 38vh), 9rem);
+    font-size: clamp(4.75rem, 22vw, 9rem);
   }
 }
 
 @media (min-width: 640px) {
   .workout-timer__main {
-    padding: 5rem 1rem 2rem;
+    padding: var(--timer-chrome-top) 1rem 2rem;
   }
 
   .workout-timer__time {
-    font-size: clamp(8rem, min(15rem, 22vh), 15rem);
+    font-size: 14rem;
     line-height: 0.867;
   }
 }
 
 @media (min-width: 768px) {
   .workout-timer__time {
-    font-size: clamp(10rem, min(20rem, 28vh), 20rem);
+    font-size: 18rem;
     line-height: 0.85;
   }
 }

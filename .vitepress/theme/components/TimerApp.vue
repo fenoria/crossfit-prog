@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed, onBeforeUnmount, ref, watch } from 'vue'
 import WorkoutTimer from './WorkoutTimer.vue'
 import { timeToSeconds } from '../timer/time'
 import type { TimerConfig, TimerType } from '../composables/useWorkoutTimer'
@@ -68,15 +68,25 @@ function openTimer() {
 function closeTimer() {
   isRunning.value = false
 }
+
+watch(isRunning, (running) => {
+  document.documentElement.classList.toggle('timer-open', running)
+})
+
+onBeforeUnmount(() => {
+  document.documentElement.classList.remove('timer-open')
+})
 </script>
 
 <template>
   <div class="tool-app">
-    <WorkoutTimer
-      v-if="isRunning"
-      v-bind="activeConfig"
-      @close="closeTimer"
-    />
+    <Teleport to="body">
+      <WorkoutTimer
+        v-if="isRunning"
+        v-bind="activeConfig"
+        @close="closeTimer"
+      />
+    </Teleport>
 
     <section class="tool-panel">
       <div class="tool-form tool-form--timer">
