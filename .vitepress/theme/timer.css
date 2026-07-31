@@ -28,7 +28,7 @@
   background: rgba(15, 27, 46, 0.55);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  z-index: 2;
+  z-index: 3;
 }
 
 .timer-btn {
@@ -68,7 +68,7 @@
   left: 0.75rem;
   width: 6.5rem;
   height: 6.5rem;
-  z-index: 2;
+  z-index: 3;
 }
 
 .workout-timer__round-ring {
@@ -234,8 +234,8 @@
 .workout-timer__firefly {
   position: relative;
   display: block;
-  width: var(--ff-size, 2px);
-  height: var(--ff-size, 2px);
+  width: var(--ff-size, 3px);
+  height: var(--ff-size, 3px);
   border-radius: 50%;
   background: radial-gradient(
     circle,

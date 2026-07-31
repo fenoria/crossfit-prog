@@ -133,6 +133,7 @@ function buildFireflies(): FireflyConfig[] {
 
     return {
       ...blueprint,
+      size: blueprint.size + 1,
       top: `${Math.max(4, Math.min(93, slot[0] + topJitter))}%`,
       left: `${Math.max(4, Math.min(93, slot[1] + leftJitter))}%`,
       driftDuration: Math.round(blueprint.driftDuration * FIREFLY_TEMPO),
@@ -195,7 +196,7 @@ onBeforeUnmount(() => {
           class="workout-timer__firefly"
           :class="[
             `workout-timer__firefly--drift-${fly.drift}`,
-            { 'workout-timer__firefly--large': fly.size > 2 },
+            { 'workout-timer__firefly--large': fly.size > 3 },
           ]"
           :style="{
             '--ff-rgb': fly.rgb,
