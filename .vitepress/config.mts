@@ -29,9 +29,29 @@ function mdTitle(filePath: string, fallback: string): string {
   return fallback
 }
 
+/** Abréviations mois — sidebar uniquement (titres de page inchangés). */
+const SIDEBAR_MONTH_ABBR: [RegExp, string][] = [
+  [/\bjanvier\b/gi, 'janv'],
+  [/\bfévrier\b/gi, 'févr'],
+  [/\bjuillet\b/gi, 'juil'],
+  [/\bseptembre\b/gi, 'sept'],
+  [/\boctobre\b/gi, 'oct'],
+  [/\bnovembre\b/gi, 'nov'],
+  [/\bdécembre\b/gi, 'déc'],
+  [/\bavril\b/gi, 'avr'],
+]
+
+function abbreviateMonthsForSidebar(label: string): string {
+  for (const [re, abbr] of SIDEBAR_MONTH_ABBR) {
+    label = label.replace(re, abbr)
+  }
+  return label
+}
+
 /** Libellé sidebar uniquement — pages gardent le titre Markdown complet. */
 function sidebarLabel(title: string, entryName?: string): string {
   let label = title.replace(/\bMacrocycle\b/g, 'Macro')
+  label = abbreviateMonthsForSidebar(label)
   const mesoNum = entryName?.match(/^meso-(\d+)/i)
   if (mesoNum) {
     label = label.replace(/^Meso\b/, `Meso ${Number(mesoNum[1])}`)
