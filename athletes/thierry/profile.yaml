@@ -182,7 +182,7 @@ volumes:
 gym_ladder_level:
   # crans 1–5 — knowledge/gym-ladder.md ; baseline S01 (2026-08-07)
   bmu: 4       # EMOM 10' × 6/min stable — densité haute (cran 4)
-  rmu: null    # non testé S01 (temps / ampoules BMU)
+  rmu: 4       # EMOM × 2/min stable (S01 vendredi)
   hspu: 3      # 4×10 strict propres, 1–2 RIR
   hsw: 3       # 20 m continu ; chute au demi-tour (cran 4 pivot pas validé)
 
@@ -204,7 +204,7 @@ benchmarks:
       bmu: "EMOM 10' — 6/min (60 total)"
       hspu_strict: "4 × 10"
       hsw: "20 m continu"
-      rmu: "non testé"
+      rmu: "EMOM — 2/min stable"
     flags:
       - "adducteur : tension (pas douleur) dès ~120 kg BS — surveiller montées lourdes"
       - "mercredi WOD team RPE 9 — fatigue 3/5"

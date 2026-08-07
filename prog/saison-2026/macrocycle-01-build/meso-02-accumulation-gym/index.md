@@ -54,7 +54,7 @@ La qualité limitante est le volume / la répétabilité gym. Avant le pic B Fir
 - [S02 — 10–16 août 2026](S02-2026-08-10.md) — volume adaptatif
 - [S03 — 17–23 août 2026](S03-2026-08-17.md) — surcharge
 - [S04 — 24–30 août 2026](S04-2026-08-24.md) — pic densité
-- S05 — 31 août – 6 sept. — deload / pré-Fire _(à écrire)_
+- [S05 — 31 août – 6 sept. 2026](S05-2026-08-31.md) — deload / pré-Fire
 
 ## Notes meso
 
