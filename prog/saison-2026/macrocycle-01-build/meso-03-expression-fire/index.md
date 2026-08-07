@@ -3,7 +3,7 @@
 <!-- Coach : code REAL -->
 
 **Macrocycle** : 1 — Build → Fire · **Saison** : 2026  
-**Durée prévue** : 1 sem. (7–13 septembre) · **Statut** : à venir  
+**Durée prévue** : 1 sem. (7–13 septembre) · **Statut** : rédigé (S06) · à venir (exécution)
 **Événement** : Fire Contest (Nantes) — rôle B · ~12–13 septembre
 
 ## Pourquoi
@@ -45,7 +45,7 @@ Tout hors compétition reste léger : pas de HI ajouté, pas de max force, gym e
 
 ## Semaines
 
-_(à écrire en approche Fire — confirmer date officielle)_
+- [S06 — 7–13 septembre 2026](S06-2026-09-07.md) — expression Fire Contest
 
 ## Notes meso
 

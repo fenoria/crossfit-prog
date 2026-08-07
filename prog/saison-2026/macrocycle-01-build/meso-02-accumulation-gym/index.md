@@ -3,7 +3,7 @@
 <!-- Coach : code ACC-GYM -->
 
 **Macrocycle** : 1 — Build → Fire · **Saison** : 2026  
-**Durée prévue** : ~4 sem. (10 août – 6 sept.) · **Statut** : en cours (S02)
+**Durée prévue** : 4 sem. (10 août – 6 sept.) · **Statut** : rédigé (S02–S05) · en cours d’exécution (S02)
 
 ## Pourquoi
 
