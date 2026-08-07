@@ -107,6 +107,8 @@ injury:
     - "si douleur signalée → knowledge/adductor-protocol.yaml"
 
 prs_pre_injury_kg:
+  # Tous 1RM / PR max — référence historique uniquement, jamais pour les %
+  unit: 1rm
   back_squat: 160
   front_squat: 140
   clean: 130
@@ -116,48 +118,60 @@ prs_pre_injury_kg:
   weighted_pullup_1rm: 50
 
 prs_current_kg:
-  # à remplir via benchmarks
-  back_squat: null
-  front_squat: null
-  clean: null
-  jerk: null
-  snatch: null
-  deadlift: null
-  strict_press: null
-  weighted_pullup: null
-  power_snatch: null
-  power_clean: null
-  notes: "Programmer uniquement après re-test / benchmarks"
+  # S01 benchmarks (2026-08-03 → 09) — charges de travail RPE 8–9, pas des 1RM
+  # SoT pour les % de prog ; ne pas confondre avec prs_pre_injury_kg (1RM)
+  unit: working_weight  # 2–3RM ou singles RPE 7–9 selon le lift
+  back_squat: 130        # 3RM @ RPE 9 ; tension adducteur dès ~120 (pas douleur)
+  front_squat: 120       # 3RM @ RPE 9 (cible ≤8 dépassée — charge conservatrice pour %)
+  deadlift: 180          # 2RM @ RPE 9
+  strict_press: 70       # 2RM @ RPE 9
+  weighted_pullup: 40    # 3RM @ RPE 9.5 ; single 52 @ RPE 10 (échec menton @ 54)
+  power_snatch: 70       # 3 singles @ RPE 9
+  power_clean: 100       # 3 singles @ RPE 9
+  clean: null            # non testé (power only)
+  jerk: null             # non testé
+  snatch: null           # non testé (squat snatch interdit profil)
+  notes: "SoT charges courantes post-S01. % prog sur ces valeurs uniquement — pas sur prs_pre_injury_kg."
+  tested_on: "2026-08-03 to 2026-08-07"
+  vs_pre_injury_1rm_estimate:
+    # Extrapolation Epley grossière depuis les tests S01 — indicatif, pas pour programmer
+    back_squat: "~143 kg"   # 130×3 → vs 160 PR
+    front_squat: "~132 kg"  # 120×3 → vs 140 PR
+    deadlift: "~192 kg"     # 180×2 → vs 200 PR
+    strict_press: "~75 kg"  # 70×2 ; pas de PR pré-blessure noté
+    weighted_pullup: "52 kg single @ RPE 10 → vs 50 PR (≈ au niveau ou au-dessus)"
+    power_snatch: "70 kg (power) → vs snatch 80 PR full (comparaison partielle)"
+    power_clean: "100 kg (power) → vs clean 130 PR full (comparaison partielle)"
 
 # Volumes Israetel — INSTANCE athlète (remplir après S01).
 # Bornes méthodo : knowledge/volume-landmarks.yaml (Z2 déjà 60/120/180 ; gym/force/oly null).
 # En conflit profile vs landmarks pour la prog courante → profile gagne.
 volumes:
-  updated: null
+  updated: "2026-08-07"
   gym:
     unit: skill_minutes_quality_per_week
-    mev: null
-    mav: null
-    mrv: null
-    current_target: null
+    mev: 50
+    mav: 80
+    mrv: 100
+    current_target: 50   # entrée ACC-GYM ; BMU 10' + HSPU + HSW ≈ baseline S01
   force_lower:
     unit: hard_sets_per_week
-    mev: null
-    mav: null
-    mrv: null
-    current_target: null
+    mev: 4
+    mav: 8
+    mrv: 12
+    current_target: 4    # maintien en ACC-GYM
   force_upper:
     unit: hard_sets_per_week
-    mev: null
-    mav: null
-    mrv: null
-    current_target: null
+    mev: 4
+    mav: 8
+    mrv: 12
+    current_target: 4
   oly:
     unit: quality_lifts_per_week
-    mev: null
-    mav: null
-    mrv: null
-    current_target: null
+    mev: 10
+    mav: 20
+    mrv: 30
+    current_target: 10   # power singles maintien
   z2:
     unit: minutes_per_week
     mev: 60
@@ -166,16 +180,35 @@ volumes:
     current_target: 60
 
 gym_ladder_level:
-  # crans 1–5 — knowledge/gym-ladder.md ; baseline après S01
-  bmu: null
-  rmu: null
-  hspu: null
-  hsw: null
+  # crans 1–5 — knowledge/gym-ladder.md ; baseline S01 (2026-08-07)
+  bmu: 4       # EMOM 10' × 6/min stable — densité haute (cran 4)
+  rmu: null    # non testé S01 (temps / ampoules BMU)
+  hspu: 3      # 4×10 strict propres, 1–2 RIR
+  hsw: 3       # 20 m continu ; chute au demi-tour (cran 4 pivot pas validé)
 
 benchmarks:
-  last_run: null
-  next_due: "2026-08-03"
+  last_run: "2026-08-07"
+  next_due: "post-Fire-2026"  # retest force clé + proxies gym après REAL B
   week_planned: "2026-08-03 to 2026-08-09"
+  s01_results:
+    force:
+      back_squat: "130 kg × 3 @ RPE 9"
+      strict_press: "70 kg × 2 @ RPE 9"
+      weighted_pullup: "40 kg × 3 @ RPE 9.5 ; 52 kg × 1 @ RPE 10"
+      deadlift: "180 kg × 2 @ RPE 9"
+      front_squat: "120 kg × 3 @ RPE 9"
+    oly:
+      power_snatch: "70 kg × 3 @ RPE 9"
+      power_clean: "100 kg × 3 @ RPE 9"
+    gym:
+      bmu: "EMOM 10' — 6/min (60 total)"
+      hspu_strict: "4 × 10"
+      hsw: "20 m continu"
+      rmu: "non testé"
+    flags:
+      - "adducteur : tension (pas douleur) dès ~120 kg BS — surveiller montées lourdes"
+      - "mercredi WOD team RPE 9 — fatigue 3/5"
+      - "ampoules main post-BMU vendredi"
   battery:
     - back_squat
     - front_squat
