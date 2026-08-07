@@ -3,7 +3,7 @@
 <!-- Coach : code ACC-GYM -->
 
 **Macrocycle** : 1 — Build → Fire · **Saison** : 2026  
-**Durée prévue** : ~4 sem. (10 août – 6 sept.) · **Statut** : à venir
+**Durée prévue** : ~4 sem. (10 août – 6 sept.) · **Statut** : en cours (S02)
 
 ## Pourquoi
 
@@ -51,7 +51,10 @@ La qualité limitante est le volume / la répétabilité gym. Avant le pic B Fir
 
 ## Semaines
 
-_(à écrire après sortie Benchmarks)_
+- [S02 — 10–16 août 2026](S02-2026-08-10.md) — volume adaptatif
+- [S03 — 17–23 août 2026](S03-2026-08-17.md) — surcharge
+- [S04 — 24–30 août 2026](S04-2026-08-24.md) — pic densité
+- S05 — 31 août – 6 sept. — deload / pré-Fire _(à écrire)_
 
 ## Notes meso
 

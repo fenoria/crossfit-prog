@@ -1,7 +1,7 @@
 # Meso — Benchmarks
 
 **Macrocycle** : 1 — Build → Fire · **Saison** : 2026  
-**Durée prévue** : 1 semaine (3–9 août) · **Statut** : en cours (S01)
+**Durée prévue** : 1 semaine (3–9 août) · **Statut** : terminé (S01)
 
 ## Pourquoi
 
@@ -47,4 +47,4 @@ Semaine de tests : zone 2 légère OK ; aucun effort dur ajouté hors tests et h
 
 ## Notes meso
 
-_(après S01 : valider la sortie → Accumulation gym)_
+S01 complète (2026-08-07) — gate benchmarks→ACC-GYM validée. Profil mis à jour (charges, ladder gym, volumes). Suite : meso Accumulation gym S02–S05.
