@@ -8,7 +8,7 @@ description: Ingère le feedback post-séance, met à jour profile / prog, adapt
 Règles : **`.cursor/rules/prog-writing.mdc`** (immutabilité, Notes) · **`.cursor/rules/athlete-profile.mdc`** (profil).
 
 1. Lire `athletes/current.yaml` → profil.
-2. Parser feedback (blocs **Notes / feedback**, un `###` par jour) : fait · charges · RPE · fatigue · note · douleur si mentionnée.
+2. Parser feedback (blocs **Notes / feedback**, un `###` par jour) : fait · charges / score · note ; RPE par mouvement souvent inline dans charges ; RPE séance explicite le mercredi team ; fatigue / douleur dans note si mentionnées.
 3. Pas de score douleur systématique. Si douleur → protocole profil / adapter volume.
 4. Team WOD RPE ≥ seuil profil (défaut 8) → −volume J+1.
 5. Adapter la suite sans casser l’intention du meso ; écrire bloc jour + **Synthèse semaine** / **Suite prévue**.

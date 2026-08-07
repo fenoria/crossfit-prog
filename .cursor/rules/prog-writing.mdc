@@ -43,7 +43,7 @@ alwaysApply: false
 7. **Gym** — `knowledge/gym-ladder.md` en ACC-GYM
 8. **Options** — bornées : choix limité, même intention, mêmes repères
 9. **Volumes** — % / sets sur `prs_current_kg` + volumes profile
-10. **Feedback** — Notes (`###` par jour) : Fait · Charges · RPE · Fatigue · Note ; suite en « Suite prévue : … »
+10. **Feedback** — Notes (`###` par jour) : Fait · Charges / score · Note ; RPE par mouvement inline dans Charges ; fatigue / douleur dans Note ; **mercredi team** : RPE séance explicite (seuil J+1) ; suite en « Suite prévue : … »
 11. **Lint** — `npm run lint:prog` obligatoire après write-week / generate
 
 ## Pédagogie & cohérence
