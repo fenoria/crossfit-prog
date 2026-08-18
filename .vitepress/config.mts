@@ -232,7 +232,6 @@ export default defineConfig({
     }
   },
   themeConfig: {
-    currentWeek: loadCurrentWeekLink(),
     // VitePress prefixes `themeConfig.logo` with `base` automatically.
     logo: { src: '/logo.svg', alt: 'Prog T. Maxel' },
     siteTitle: 'Prog T. Maxel',
