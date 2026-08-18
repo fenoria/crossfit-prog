@@ -110,11 +110,6 @@ function loadCurrentWeekLink(): string {
   return loadCurrent().week
 }
 
-/** Lien semaine courante avec `base` (GitHub Pages) — prêt pour `router.go`. */
-function loadCurrentWeekHref(): string {
-  return asset(loadCurrent().week)
-}
-
 function seasonDirsNewestFirst(): string[] {
   if (!existsSync(progDir)) return []
   return readdirSync(progDir)
@@ -237,7 +232,7 @@ export default defineConfig({
     }
   },
   themeConfig: {
-    currentWeek: loadCurrentWeekHref(),
+    currentWeek: loadCurrentWeekLink(),
     // VitePress prefixes `themeConfig.logo` with `base` automatically.
     logo: { src: '/logo.svg', alt: 'Prog T. Maxel' },
     siteTitle: 'Prog T. Maxel',
