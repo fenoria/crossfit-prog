@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
-import { useData, useRouter, withBase } from 'vitepress'
+import { useData, useRouter } from 'vitepress'
 
 const { page, theme } = useData()
 const router = useRouter()
@@ -18,7 +18,7 @@ onMounted(() => {
 
   const target = theme.value.currentWeek
   if (typeof target === 'string' && target.length > 0) {
-    router.go(withBase(target))
+    router.go(target)
   }
 })
 </script>
