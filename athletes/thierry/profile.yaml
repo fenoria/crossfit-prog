@@ -184,7 +184,7 @@ gym_ladder_level:
   bmu: 4       # EMOM 10' × 6/min stable — densité haute (cran 4)
   rmu: 4       # EMOM × 2/min stable (S01 vendredi)
   hspu: 3      # 4×10 strict propres, 1–2 RIR
-  hsw: 3       # 20 m continu ; chute au demi-tour (cran 4 pivot pas validé)
+  hsw: 4       # S02 : 4×10 m unbroken, pivot OK sans mur (cran 4 en cours de validation)
 
 benchmarks:
   last_run: "2026-08-07"
@@ -207,8 +207,26 @@ benchmarks:
       rmu: "EMOM — 2/min stable"
     flags:
       - "adducteur : tension (pas douleur) dès ~120 kg BS — surveiller montées lourdes"
-      - "mercredi WOD team RPE 9 — fatigue 3/5"
-      - "ampoules main post-BMU vendredi"
+      - "mercredi WOD team RPE 9 (S01) ; RPE 8 (S02) — mieux absorbé"
+      - "ampoules main récurrentes post-BMU (S01 + S02) — straps OK si limitantes"
+  s02_results:
+    week: "2026-08-10 to 2026-08-16"
+    force:
+      back_squat: "115 kg × 4×3 (maintien, plafond adducteur)"
+      strict_press: "60 kg × 4×4"
+      weighted_pullup: "+28 kg × 4×4"
+    gym:
+      bmu: "EMOM 10' — 5/min (ampoules)"
+      rmu: "EMOM 8' — 2/min stable"
+      hspu_strict: "4 × 9"
+      hsw: "4 × 10 m unbroken ; pivot OK sans mur"
+    oly:
+      power_snatch: "70 kg × 4×1 (maintien S01)"
+      power_clean: "100 kg × 4×1 (maintien S01)"
+    team_wod_rpe: 8
+    flags:
+      - "Z2 MEV non atteint (< 60 min tracé)"
+      - "samedi team extra EMOM 16' (volume hors prog)"
   battery:
     - back_squat
     - front_squat
