@@ -64,11 +64,12 @@ schedule:
     time: "12:00-13:30"
     max_minutes: 90
     team_day: wed  # souvent WOD team box — compter fatigue
+    notes: "Z2 réel souvent VTT court (~4 km) lun/mar — allonger une sortie (~30–40’) ou dimanche pour MEV 60’"
   saturday:
     frequency: optional  # décider semaine / J-1 selon dispo
     time: "10:00-12:30"
     max_minutes: 150
-    notes: "Souvent ~1/2 si dispo ; volume luxe / team / Z2 selon meso"
+    notes: "Souvent ~1/2 si dispo ; si séance : souvent WOD team plutôt que Z2 — compter fatigue. Z2 à sécuriser en weekday (VTT) ou dimanche. Semaine pic/deload : pas de team extra."
   sunday: usually_off
   preferences:
     active_recovery_over_rest: true  # Z2 > off si créneau possible
@@ -147,13 +148,13 @@ prs_current_kg:
 # Bornes méthodo : knowledge/volume-landmarks.yaml (Z2 déjà 60/120/180 ; gym/force/oly null).
 # En conflit profile vs landmarks pour la prog courante → profile gagne.
 volumes:
-  updated: "2026-08-07"
+  updated: "2026-08-23"
   gym:
     unit: skill_minutes_quality_per_week
     mev: 50
     mav: 80
     mrv: 100
-    current_target: 50   # entrée ACC-GYM ; BMU 10' + HSPU + HSW ≈ baseline S01
+    current_target: 60   # S03 surcharge digérée ; pic S04 vers MAV 80
   force_lower:
     unit: hard_sets_per_week
     mev: 4
@@ -180,11 +181,11 @@ volumes:
     current_target: 60
 
 gym_ladder_level:
-  # crans 1–5 — knowledge/gym-ladder.md ; baseline S01 (2026-08-07)
-  bmu: 4       # EMOM 10' × 6/min stable — densité haute (cran 4)
-  rmu: 4       # EMOM × 2/min stable (S01 vendredi)
-  hspu: 3      # 4×10 strict propres, 1–2 RIR
-  hsw: 4       # S02 : 4×10 m unbroken, pivot OK sans mur (cran 4 en cours de validation)
+  # crans 1–5 — knowledge/gym-ladder.md ; baseline S01, MAJ S03 (2026-08-23)
+  bmu: 4       # couplet E2MOM OK (S03) ; densité 5–6/min S01–S02
+  rmu: 4       # S03 : EMOM 12' 2/min impair + 3/min pair (≈30) — 3 unbroken stables
+  hspu: 3      # S03 : EMOM 12' × 5/min = 60 stricts — cran 3 solide ; cran 4 = kipping, pas avant Fire
+  hsw: 4       # S03 : 5× (6 m + pivot + 6 m) — cran 4 validé
 
 benchmarks:
   last_run: "2026-08-07"
@@ -227,6 +228,30 @@ benchmarks:
     flags:
       - "Z2 MEV non atteint (< 60 min tracé)"
       - "samedi team extra EMOM 16' (volume hors prog)"
+  s03_results:
+    week: "2026-08-17 to 2026-08-23"
+    force:
+      back_squat: "115 kg × 4×3 (maintien, plafond adducteur)"
+      romanian_deadlift: "95 kg × 3×8"
+      strict_press: "55 kg × 4×4 (bas de fourchette prescrite ; vs 60 kg 4×3 S02)"
+      weighted_pullup: "+28 kg × 4×4"
+    gym:
+      bmu: "couplet E2MOM 10' — 4 BMU + 250 m (ok, sans chiffre densité)"
+      rmu: "EMOM 12' — 2/min impair + 3/min pair (≈30)"
+      hspu_strict: "EMOM 12' — 5/min (60 total)"
+      hsw: "5 × (6 m + pivot + 6 m)"
+    oly:
+      power_snatch: "70 kg × 5×1"
+      power_clean: "100 kg × 5×1"
+      clean_pull: "120 kg × 3×2"
+    other:
+      high_jump_cm: 116
+    flags:
+      - "Z2 : 2× 4 km VTT lun/mar — MEV 60' encore non atteint"
+      - "samedi team extra (run, C&J, burpees, T2B) à la place du renfo — 2e semaine d'affilée"
+      - "jeudi off perso, séance reportée samedi"
+      - "mercredi box = mobilité + high jump 116 cm (pas de team, RPE 3)"
+      - "ampoules non mentionnées (vs S01+S02)"
   battery:
     - back_squat
     - front_squat

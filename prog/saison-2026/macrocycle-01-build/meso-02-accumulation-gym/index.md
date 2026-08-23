@@ -3,7 +3,7 @@
 <!-- Coach : code ACC-GYM -->
 
 **Macrocycle** : 1 — Build → Fire · **Saison** : 2026  
-**Durée prévue** : 4 sem. (10 août – 6 sept.) · **Statut** : rédigé (S02–S05) · en cours d’exécution (S02)
+**Durée prévue** : 4 sem. (10 août – 6 sept.) · **Statut** : rédigé (S02–S05) · S03 faite · en cours (S04)
 
 ## Pourquoi
 
@@ -58,4 +58,4 @@ La qualité limitante est le volume / la répétabilité gym. Avant le pic B Fir
 
 ## Notes meso
 
-_(volumes réels vs prévus ; arbitrage si Fire officialise une autre date)_
+S03 : surcharge gym propre (RMU 2/3 × 12’, HSPU 60, HSW pivot 6+6). Z2 sous MEV. Samedi team extra ×2 (S02–S03) → S04 samedi off / Z2 only.
