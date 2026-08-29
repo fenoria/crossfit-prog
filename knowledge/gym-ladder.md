@@ -15,6 +15,8 @@ Une **qualité dominante par séance skill** en ACC-GYM. Progresser d’un cran 
 | 2 | Singles techniques | EMOM 8–12’ × 1 | Singles stables, repos court OK |
 | 3 | Doubles / petites séries | EMOM ou E2MOM 2–3 | Doubles propres sans grind |
 | 4 | Densité sous fatigue légère | Couplets courts BMU + ergo easy | Séries stables après cardio léger |
+
+Dose couplet (cran 4) : **EMOM 60 s** = skill + ergo **≤ 5–6 cal / ≤ 15–20 s** easy, viser ~15 s de repos. **10 cal ou 250 m** = **E2MOM**, pas EMOM.
 | 5 | Sous fatigue CF | Mixed TRA (pas junk en Acc) | Réservé TRA-MIX / REAL |
 
 ## RMU

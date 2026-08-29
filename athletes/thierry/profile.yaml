@@ -269,6 +269,8 @@ coaching:
   pedagogy_required: true
   feedback_schema: "blocs Notes / feedback (### par jour) dans prog/_templates/semaine.md"
   prog_immutability: "semaine commencée/passée = contenu séances figé ; mise en forme OK ; Notes OK ; adaptations = futur only"
+  # S03 E2MOM 4 BMU + 250 m OK ; S04 EMOM 4 BMU + 10 cal trop long (ergo mange le repos)
+  gym_couplet_dose: "EMOM 60s : skill + ergo ≤ 5–6 cal / ≤ 15–20 s easy, viser ~15 s repos. 10 cal ou 250 m = E2MOM, pas EMOM."
   mrv_signals:
     - sommeil_degrade
     - chute_perf
