@@ -64,7 +64,7 @@ schedule:
     time: "12:00-13:30"
     max_minutes: 90
     team_day: wed  # souvent WOD team box — compter fatigue
-    notes: "Z2 réel souvent VTT court (~4 km) lun/mar — allonger une sortie (~30–40’) ou dimanche pour MEV 60’"
+    notes: "Z2 réel souvent VTT court (~4 km) lun/mar — insuffisant seul (S02–S03 sous MEV ; S04 rattrapé dimanche course ~40–60’). Sortie ≥ 40–60’ samedi ou dimanche OK VTT ou course easy ; pas seulement le VTT weekday."
   saturday:
     frequency: optional  # décider semaine / J-1 selon dispo
     time: "10:00-12:30"
@@ -182,9 +182,9 @@ volumes:
 
 gym_ladder_level:
   # crans 1–5 — knowledge/gym-ladder.md ; baseline S01, MAJ S04 (2026-08-30)
-  bmu: 4       # S04 : EMOM 14' 4+10 cal, ~15 s repos — cran 4 couplet validé (plafond)
+  bmu: 4       # S04 : EMOM 14' 4 UB propres + 10 cal, ~15 s repos — cran 4 couplet validé (plafond)
   rmu: 4       # S04 : EMOM 10' 2+10 cal, ~15 s repos — cran 4 couplet validé
-  hspu: 3      # S04 : 5×10 strict — cran 3 volume haut ; cran 4 = kipping, pas avant Fire
+  hspu: 3      # S04 : 5×10 strict plafond (~0 RIR dernières) — cran 3 ; kipping pas avant Fire
   hsw: 4       # S04 : 5× (10 m + pivot + 10 m) unbroken — cran 4 confirmé (vs 6+6 S03)
 
 benchmarks:
@@ -260,18 +260,20 @@ benchmarks:
       strict_press: "60 kg × 3×3"
       weighted_pullup: "+32 kg × 3×3"
     gym:
-      bmu: "EMOM 14' — 4 BMU + 10 cal, ~15 s repos/min (plafond, passé)"
+      bmu: "EMOM 14' — 4 UB propres + 10 cal, ~15 s repos/min (plafond, passé)"
       rmu: "EMOM 10' — 2 RMU + 10 cal, ~15 s repos/min (passé)"
-      hspu_strict: "5 × 10"
+      hspu_strict: "5 × 10 plafond (~0 RIR dernières)"
       hsw: "5 × (10 m + pivot + 10 m) unbroken"
     oly:
-      power_snatch: "70 kg × 3×1 (facile, vs 62,5–65 prescrit)"
-      power_clean: "100 kg × 3×1 (facile, vs 87,5–90 prescrit)"
+      power_snatch: "70 kg × 3×1 @ RPE 7 (maintien S01, vs 62,5–65 prescrit)"
+      power_clean: "100 kg × 3×1 @ RPE 7 (maintien S01, vs 87,5–90 prescrit)"
     team_wod_rpe: 9
     flags:
-      - "jeudi reporté samedi (perso) ; couplet 10 cal tenu malgré prédiction trop long"
+      - "jeudi reporté samedi (perso) — one-off, planning jeudi inchangé"
+      - "BMU 4 UB propres chaque minute ; 10 cal = plafond EMOM tenu"
+      - "HSPU 5×10 = plafond volume strict — deload S05 = 3×6–7, pas 8"
       - "mercredi team RPE 9 — J+1 non applicable (séance gym 3 j plus tard)"
-      - "Z2 non tracé cette semaine"
+      - "Z2 = 0 lun–sam, rattrapé dimanche course ~40–60’ (MEV atteint en fin de semaine)"
   battery:
     - back_squat
     - front_squat

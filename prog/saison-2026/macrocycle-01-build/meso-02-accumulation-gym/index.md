@@ -58,4 +58,4 @@ La qualité limitante est le volume / la répétabilité gym. Avant le pic B Fir
 
 ## Notes meso
 
-S04 pic : couplet EMOM 4 BMU / 2 RMU + 10 cal tenu (~15 s repos/min, plafond). HSW 5× (10+pivot+10) unbroken ; HSPU 5×10. Jeudi reporté samedi. S05 deload.
+S04 pic : BMU 4 UB propres + 10 cal / RMU 2+10 cal (~15 s repos, plafond). HSW cran 4 (5× 10+pivot+10). HSPU 5×10 plafond (~0 RIR) → S05 = 3×6–7. Oly 70/100 @ RPE 7. Z2 rattrapé dimanche course ~40–60’. Jeudi report = one-off.
