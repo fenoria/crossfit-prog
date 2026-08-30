@@ -16,7 +16,7 @@ Une **qualité dominante par séance skill** en ACC-GYM. Progresser d’un cran 
 | 3 | Doubles / petites séries | EMOM ou E2MOM 2–3 | Doubles propres sans grind |
 | 4 | Densité sous fatigue légère | Couplets courts BMU + ergo easy | Séries stables après cardio léger |
 
-Dose couplet (cran 4) : **EMOM 60 s** = skill + ergo **≤ 5–6 cal / ≤ 15–20 s** easy, viser ~15 s de repos. **10 cal ou 250 m** = **E2MOM**, pas EMOM.
+Dose couplet (cran 4) : **EMOM 60 s** = skill + ergo assez court pour **~15 s de repos**. Calibrer l’ergo sur le repos réel (souvent 5–8 cal easy ; 10 cal si le repos tient). Si repos < 12 s ou casse technique → −cal ou **E2MOM**. **250 m** = E2MOM.
 | 5 | Sous fatigue CF | Mixed TRA (pas junk en Acc) | Réservé TRA-MIX / REAL |
 
 ## RMU

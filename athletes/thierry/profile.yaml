@@ -148,13 +148,13 @@ prs_current_kg:
 # Bornes méthodo : knowledge/volume-landmarks.yaml (Z2 déjà 60/120/180 ; gym/force/oly null).
 # En conflit profile vs landmarks pour la prog courante → profile gagne.
 volumes:
-  updated: "2026-08-23"
+  updated: "2026-08-30"
   gym:
     unit: skill_minutes_quality_per_week
     mev: 50
     mav: 80
     mrv: 100
-    current_target: 60   # S03 surcharge digérée ; pic S04 vers MAV 80
+    current_target: 42   # deload S05 (−30 % vs 60) après pic S04
   force_lower:
     unit: hard_sets_per_week
     mev: 4
@@ -181,11 +181,11 @@ volumes:
     current_target: 60
 
 gym_ladder_level:
-  # crans 1–5 — knowledge/gym-ladder.md ; baseline S01, MAJ S03 (2026-08-23)
-  bmu: 4       # couplet E2MOM OK (S03) ; densité 5–6/min S01–S02
-  rmu: 4       # S03 : EMOM 12' 2/min impair + 3/min pair (≈30) — 3 unbroken stables
-  hspu: 3      # S03 : EMOM 12' × 5/min = 60 stricts — cran 3 solide ; cran 4 = kipping, pas avant Fire
-  hsw: 4       # S03 : 5× (6 m + pivot + 6 m) — cran 4 validé
+  # crans 1–5 — knowledge/gym-ladder.md ; baseline S01, MAJ S04 (2026-08-30)
+  bmu: 4       # S04 : EMOM 14' 4+10 cal, ~15 s repos — cran 4 couplet validé (plafond)
+  rmu: 4       # S04 : EMOM 10' 2+10 cal, ~15 s repos — cran 4 couplet validé
+  hspu: 3      # S04 : 5×10 strict — cran 3 volume haut ; cran 4 = kipping, pas avant Fire
+  hsw: 4       # S04 : 5× (10 m + pivot + 10 m) unbroken — cran 4 confirmé (vs 6+6 S03)
 
 benchmarks:
   last_run: "2026-08-07"
@@ -252,6 +252,26 @@ benchmarks:
       - "jeudi off perso, séance reportée samedi"
       - "mercredi box = mobilité + high jump 116 cm (pas de team, RPE 3)"
       - "ampoules non mentionnées (vs S01+S02)"
+  s04_results:
+    week: "2026-08-24 to 2026-08-30"
+    force:
+      back_squat: "115 kg × 3×3 (légèrement au-dessus plafond 112,5 prescrit)"
+      front_squat: "95 kg × 2×3"
+      strict_press: "60 kg × 3×3"
+      weighted_pullup: "+32 kg × 3×3"
+    gym:
+      bmu: "EMOM 14' — 4 BMU + 10 cal, ~15 s repos/min (plafond, passé)"
+      rmu: "EMOM 10' — 2 RMU + 10 cal, ~15 s repos/min (passé)"
+      hspu_strict: "5 × 10"
+      hsw: "5 × (10 m + pivot + 10 m) unbroken"
+    oly:
+      power_snatch: "70 kg × 3×1 (facile, vs 62,5–65 prescrit)"
+      power_clean: "100 kg × 3×1 (facile, vs 87,5–90 prescrit)"
+    team_wod_rpe: 9
+    flags:
+      - "jeudi reporté samedi (perso) ; couplet 10 cal tenu malgré prédiction trop long"
+      - "mercredi team RPE 9 — J+1 non applicable (séance gym 3 j plus tard)"
+      - "Z2 non tracé cette semaine"
   battery:
     - back_squat
     - front_squat
@@ -269,8 +289,8 @@ coaching:
   pedagogy_required: true
   feedback_schema: "blocs Notes / feedback (### par jour) dans prog/_templates/semaine.md"
   prog_immutability: "semaine commencée/passée = contenu séances figé ; mise en forme OK ; Notes OK ; adaptations = futur only"
-  # S03 E2MOM 4 BMU + 250 m OK ; S04 EMOM 4 BMU + 10 cal trop long (ergo mange le repos)
-  gym_couplet_dose: "EMOM 60s : skill + ergo ≤ 5–6 cal / ≤ 15–20 s easy, viser ~15 s repos. 10 cal ou 250 m = E2MOM, pas EMOM."
+  # S04 sam 29 : EMOM 4 BMU + 10 cal et 2 RMU + 10 cal — ~15 s repos/min, passé (plafond)
+  gym_couplet_dose: "EMOM 60s : viser ~15 s repos. Chez Thierry 10 cal easy = plafond tenu (S04). Si repos < 12 s ou casse → −cal ou E2MOM. 250 m = E2MOM."
   mrv_signals:
     - sommeil_degrade
     - chute_perf

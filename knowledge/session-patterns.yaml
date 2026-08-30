@@ -52,7 +52,7 @@ gym_skill_day:
     rmu_focus: ["ring support/kipping", "transition", "singles volume", "ring row/dip loaded"]
     bmu_focus: ["kipping swings", "hip-to-bar", "singles/triples volume", "strict pull loaded"]
     hsw_focus: ["HS hold/walk drills", "volume distance", "strict HSPU / wall walk"]
-    density: ["couplets gym+ergo courts unbroken", "EMOM : ergo ≤5–6 cal / ≤15–20 s ; 10 cal ou 250 m = E2MOM", "repos fixes"]
+    density: ["couplets gym+ergo courts unbroken", "EMOM : viser ~15 s repos (calibrer ergo ; 10 cal OK si repos tient ; 250 m = E2MOM)", "repos fixes"]
 
 oly_power_day:
   intent: "Puissance barre sans deep heavy squat obligatoire"
