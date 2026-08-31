@@ -273,7 +273,7 @@ benchmarks:
       - "BMU 4 UB propres chaque minute ; 10 cal = plafond EMOM tenu"
       - "HSPU 5×10 = plafond volume strict — deload S05 = 3×6–7, pas 8"
       - "mercredi team RPE 9 — J+1 non applicable (séance gym 3 j plus tard)"
-      - "Z2 = 0 lun–sam, rattrapé dimanche course ~40–60’ (MEV atteint en fin de semaine)"
+      - "Z2 = 0 lun–sam, rattrapé dimanche course 14 km / 6'26/km / 119 bpm (~90', MEV dépassé)"
   battery:
     - back_squat
     - front_squat
