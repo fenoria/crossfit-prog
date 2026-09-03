@@ -96,6 +96,7 @@ weaknesses_or_limits:
   - heavy_squat_snatch_caution
   - heavy_squat_clean_caution
   - residual_adductor_pain  # historique 2025 — charges prudentes ; pas un focus quotidien
+  - shoulder_mild_discomfort  # S05 : gêne légère push/HSPU (mar) ; BMU ok ; surveiller vend HSPU
 
 injury:
   name: desinsertion_adducteur
