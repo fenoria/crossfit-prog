@@ -149,31 +149,32 @@ prs_current_kg:
 # Bornes méthodo : knowledge/volume-landmarks.yaml (Z2 déjà 60/120/180 ; gym/force/oly null).
 # En conflit profile vs landmarks pour la prog courante → profile gagne.
 volumes:
-  updated: "2026-08-30"
+  updated: "2026-09-05"
+  # ACC-STR (21 sept.–18 oct.) : lower/upper vers MAV 8 ; gym maintien 30’ ; S08 tronquée sous MEV lower OK
   gym:
     unit: skill_minutes_quality_per_week
     mev: 50
     mav: 80
     mrv: 100
-    current_target: 42   # deload S05 (−30 % vs 60) après pic S04
+    current_target: 30   # maintien ACC-STR (2 séances skill, pas density)
   force_lower:
     unit: hard_sets_per_week
     mev: 4
     mav: 8
     mrv: 12
-    current_target: 4    # maintien en ACC-GYM
+    current_target: 8    # ACC-STR S09–S10 vers MAV ; S08 ~6 ; S11 deload ~4
   force_upper:
     unit: hard_sets_per_week
     mev: 4
     mav: 8
     mrv: 12
-    current_target: 4
+    current_target: 8    # ACC-STR ; S11 deload ~4
   oly:
     unit: quality_lifts_per_week
     mev: 10
     mav: 20
     mrv: 30
-    current_target: 10   # power singles maintien
+    current_target: 10   # maintien pendant ACC-STR (dès S09)
   z2:
     unit: minutes_per_week
     mev: 60

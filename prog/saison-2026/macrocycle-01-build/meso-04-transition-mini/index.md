@@ -3,7 +3,7 @@
 <!-- Coach : code TRANS -->
 
 **Macrocycle** : 1 — Build → Fire · **Saison** : 2026  
-**Durée prévue** : 1 sem. (14–20 septembre) · **Statut** : à venir
+**Durée prévue** : 1 sem. (14–20 septembre) · **Statut** : rédigé (S07) · à venir (exécution)
 
 ## Pourquoi
 
@@ -44,7 +44,7 @@ Pas de focus secondaire : tout reste bas.
 
 ## Semaines
 
-_(à écrire après Fire)_
+- [S07 — 14–20 septembre 2026](S07-2026-09-14.md) — décharge post-Fire
 
 ## Notes meso
 

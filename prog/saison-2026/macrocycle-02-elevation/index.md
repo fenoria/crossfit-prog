@@ -11,7 +11,7 @@ Post-Fire : accumulation force structurelle → haltéro power / technique → c
 
 | Meso | Fenêtre | Rôle | Statut |
 |------|---------|------|--------|
-| [Accumulation force](meso-01-accumulation-force/index.md) | 21 sept. – 18 oct. | Force structurelle (~4 sem.) | à venir |
+| [Accumulation force](meso-01-accumulation-force/index.md) | 21 sept. – 18 oct. | Force structurelle (~4 sem.) | rédigé (S08–S11) |
 | [Accumulation haltéro](meso-02-accumulation-halterro/index.md) | 19 oct. – 1er nov. | Power / pulls / technique (~2 sem.) | à venir |
 | [Conversion mixed](meso-03-conversion-mixed/index.md) | 2–15 nov. | Gym + barre + ergo sous fatigue (~2 sem.) | à venir |
 

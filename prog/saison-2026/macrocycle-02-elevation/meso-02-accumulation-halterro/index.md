@@ -23,15 +23,15 @@ Court bloc power / technique après la force structurelle, avant la conversion m
 
 ## Continuité
 
-- **Précède** : Accumulation force — deload et charges OK  
+- **Précède** : Accumulation force — deload S11 fait, charges S10 notées  
 - **Suit** : Conversion mixed — technique power stable, pas de douleur signalée
 
 ## Focus par semaine
 
 | Semaine | Focus | Contenu type |
 |---------|-------|--------------|
-| Sxx | Technique + power | Pulls, power, positions |
-| Sxx | Densité légère | Bar cycling contrôlé + maintien gym/force |
+| _(à planifier)_ | Technique + power | Entrée bloc · pulls · hangs |
+| _(à planifier)_ | Densité légère | Bar cycling · maintien force/gym |
 
 ## Maintien (hors focus)
 
@@ -48,7 +48,7 @@ Court bloc power / technique après la force structurelle, avant la conversion m
 
 ## Semaines
 
-_(à écrire en Macro 2)_
+_(à rédiger après deload S11)_
 
 ## Notes meso
 
