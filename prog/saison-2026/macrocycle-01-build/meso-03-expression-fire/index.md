@@ -3,7 +3,7 @@
 <!-- Coach : code REAL -->
 
 **Macrocycle** : 1 — Build → Fire · **Saison** : 2026  
-**Durée prévue** : 1 sem. (7–13 septembre) · **Statut** : rédigé (S06) · à venir (exécution)
+**Durée prévue** : 1 sem. (7–13 septembre) · **Statut** : rédigé (S06) · en cours (exécution)
 **Événement** : Fire Contest (Nantes) — rôle B · ~12–13 septembre
 
 ## Pourquoi
