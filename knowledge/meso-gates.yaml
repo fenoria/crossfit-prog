@@ -70,28 +70,38 @@ gates:
     from: ACC-STR
     to: TRA-POW
     required:
-      - "deload force fait"
+      - "semaine de pic force digérée (charges notées, pas de chute de perf)"
       - "charges force actuelles réévaluées (RPE) vs post-benchmarks / post-Fire"
       - "gym maintien ≥ 2 séances/sem. pendant ACC-STR"
       - "pas de douleur lower florissante signalée"
+    deload_rule: >
+      « Deload force fait » peut être satisfait par la PREMIÈRE SEMAINE du bloc puissance
+      quand elle porte la décharge (volume force −40/50 %, RPE ≤ 6,5, pas de hinge lourd)
+      — deload Israetel valide + pivot d'intention Issurin. Dans ce cas la gate se vérifie
+      à la sortie de cette semaine, pas avant (instance 2026 : S11). Une semaine tronquée
+      + vacances en milieu de bloc compte comme décharge intermédiaire.
     on_fail: "Maintenir ACC-STR léger ou mini ACC-GYM refresh 1 sem."
 
   TRA_POW_to_TRA_MIX:
     from: TRA-POW
     to: TRA-MIX
     required:
-      - "power snatch / clean notés à RPE utile"
+      - "power snatch / clean notés à RPE utile, dans les fourchettes réelles de l'athlète"
+      - "cycling barre léger tenu sans casse technique"
       - "pas de régression technique majeure"
       - "pas de douleur florissante signalée"
+    soft_targets:
+      - "kipping HSPU amorcé en ACC-STR (drills → EMOM court → volume) si cran 3 strict stable — sinon rester strict et le noter"
     on_fail: "1 semaine technique / power supplémentaire"
 
   TRA_MIX_to_Macro3:
     from: TRA-MIX
     to: Macro3_TRA_team_or_REAL
     required:
-      - "1–2 séances mixed qualité digérées (RPE noté)"
+      - "2–3 séances mixed qualité digérées (RPE noté) — dont 1 format chronométré et 1 simulation à deux blocs"
+      - "repères gym relevés en fin de bloc (densité BMU, série RMU, kipping HSPU, HSW avec pivots)"
       - "pas de douleur florissante signalée"
-      - "fraîcheur relative : pas de semaine surcharge empilée juste avant Macro 3"
+      - "fraîcheur relative : pas de semaine surcharge empilée juste avant Macro 3 (volume ↓ en fin de dernière semaine)"
     on_fail: "Semaine volume ↓ / Z2 puis retester mixed"
 
   Macro3_to_REAL_S7mbioz:
@@ -106,6 +116,11 @@ gates:
 
 retest_policy:
   after_each_macro: "re-benchmark force clé + proxies gym (pas tout re-maxer)"
+  measured_in_prog: >
+    Pas de semaine de tests dédiée quand le calendrier est serré : la semaine de pic
+    du bloc force sert de point de mesure (séries lourdes notées), le bloc puissance
+    mesure les charges barre, la dernière semaine mixed relève les proxies gym.
+    Instance 2026 : S10 (force) · S12 (puissance) · S15 (gym).
   mid_meso_if: "doute sur charges ou plateau > 2 semaines"
   never: "retester sur ego pendant deload"
   after_Fire: "notes peaking + éventuel recalibrage charges légères avant ACC-STR"

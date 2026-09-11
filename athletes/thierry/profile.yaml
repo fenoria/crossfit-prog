@@ -66,11 +66,12 @@ schedule:
     team_day: wed  # souvent WOD team box — compter fatigue
     notes: "Z2 réel souvent VTT court (~4 km) lun/mar — insuffisant seul (S02–S03 sous MEV ; S04 rattrapé dimanche course ~40–60’). Sortie ≥ 40–60’ samedi ou dimanche OK VTT ou course easy ; pas seulement le VTT weekday."
   saturday:
-    frequency: optional  # décider semaine / J-1 selon dispo
+    frequency: odd_iso_weeks_only  # MAJ 2026-09-11 : dispo uniquement les semaines ISO impaires (contrainte durable)
     time: "10:00-12:30"
     max_minutes: 150
-    notes: "Souvent ~1/2 si dispo ; si séance : souvent WOD team plutôt que Z2 — compter fatigue. Z2 à sécuriser en weekday (VTT) ou dimanche. Semaine pic/deload : pas de team extra."
-  sunday: usually_off
+    available_weeks_macro2: ["W39 (21–27 sept., vacances Milan)", "W41 (5–11 oct.)", "W43 (19–25 oct.)", "W45 (2–8 nov.)"]
+    notes: "Semaines impaires seulement — planifier le volume « luxe » (sortie longue, bloc seuil, simulation format compétition) sur ces samedis. Semaines paires : Z2 basculé au dimanche (bloc écrit, pas optionnel). Si team extra le samedi : compter comme effort dur et garder le dimanche off."
+  sunday: usually_off  # Z2 écrit le dimanche les semaines sans samedi (plancher 60 min/sem.)
   preferences:
     active_recovery_over_rest: true  # Z2 > off si créneau possible
     z2_preferred_on_available_days: true
@@ -150,49 +151,64 @@ prs_current_kg:
 # En conflit profile vs landmarks pour la prog courante → profile gagne.
 volumes:
   updated: "2026-09-11"
-  # ACC-STR (21 sept.–18 oct.) : lower/upper vers MAV 8 ; gym maintien 30’ ; S08 tronquée sous MEV lower OK
-  # S10 pic ~11 hard sets lower (BS 5 + FS 3 + DL 3, sous MRV 12) ; hinge = RDL S08–S09 puis DL volume S10
+  # Macro 2 révisé 3/2/3 : ACC-STR 21 sept.–11 oct. · TRA-POW 12–25 oct. · TRA-MIX 26 oct.–15 nov.
+  # ACC-STR : S08 tronquée (vacances = décharge intégrée) · S09 charge · S10 pic (11 hard sets lower : BS 5 + FS 3 + DL 3, sous MRV 12)
+  # Hinge en rampe : RDL S08 → DL 145–150 S09 → DL 155–160 S10 (plus d'exposition unique)
+  # S11 = décharge force (force ~9 sets, −50 % vs S10) ET entrée TRA-POW — pas de semaine deload séparée
   gym:
     unit: skill_minutes_quality_per_week
     mev: 50
     mav: 80
     mrv: 100
-    current_target: 30   # maintien ACC-STR (2 séances skill, pas density)
+    current_target: 30   # maintien ACC-STR / TRA-POW (2 séances skill) → 50 en TRA-MIX (gym dans les couplets)
   force_lower:
     unit: hard_sets_per_week
     mev: 4
     mav: 8
     mrv: 12
-    current_target: 8    # ACC-STR S09–S10 vers MAV ; S08 ~6 ; S10 pic ~11 (sous MRV) ; S11 deload ~4
+    current_target: 8    # ACC-STR S09 ~7 → S10 pic ~11 (sous MRV) · S11 décharge ~3 · TRA-POW/TRA-MIX ~3 (1 stimulus/sem.)
   force_upper:
     unit: hard_sets_per_week
     mev: 4
     mav: 8
     mrv: 12
-    current_target: 8    # ACC-STR ; S10 WPU +32–36 ; S11 deload ~4
+    current_target: 8    # ACC-STR S10 pic 8 (press 4×4 + WPU 4×4, WPU +36–40) · S11 décharge 6 · TRA-MIX ~3–6
   oly:
     unit: quality_lifts_per_week
     mev: 10
     mav: 20
     mrv: 30
-    current_target: 10   # maintien pendant ACC-STR (dès S09)
+    current_target: 10   # ACC-STR : 5 lifts dès S08 puis ~14 en S09–S10 (le résidu barre ne tombe plus à 0)
+    # TRA-POW : ~20–25 (dominant, sous MRV 30) · TRA-MIX : ~8–12 (maintien, charges légères dans les formats)
+    load_anchoring: "Prescrire sur le ressenti réel : arraché puissance 65–72,5 kg et épaulé puissance 90–100 kg sont à RPE ≤ 7 (S04, S06). Ne plus prescrire en dessous (62,5 / 87,5) — l'athlète fait ses charges habituelles et le journal devient faux."
   z2:
     unit: minutes_per_week
     mev: 60
     mav: 120
     mrv: 180
-    current_target: 60
+    current_target: 60   # plancher — blocs écrits dans les séances (samedi impair 60–75’ ou dimanche 50’), plus de finisher « si temps »
+  conditioning_hard:
+    unit: hard_minutes_per_week
+    current_target: 0    # ACC-STR : team mercredi seul (+ 1 bloc seuil 12–15’ RPE 6–7 dès S09)
+    tra_mix_target: 30   # TRA-MIX : team + 1 format chronométré par semaine, cap 30 min cumulées
 
 gym_ladder_level:
   # crans 1–5 — knowledge/gym-ladder.md ; baseline S01, MAJ S04 (2026-08-30)
   bmu: 4       # S04 : EMOM 14' 4 UB propres + 10 cal, ~15 s repos — cran 4 couplet validé (plafond)
   rmu: 4       # S04 : EMOM 10' 2+10 cal, ~15 s repos — cran 4 couplet validé
-  hspu: 3      # S04 : 5×10 strict plafond (~0 RIR dernières) — cran 3 ; kipping pas avant Fire
+  hspu: 3      # S04 : 5×10 strict plafond (~0 RIR dernières) — cran 3 stable
   hsw: 4       # S04 : 5× (10 m + pivot + 10 m) unbroken — cran 4 confirmé (vs 6+6 S03)
+  hspu_kipping_plan: "Verrou « pas avant Fire » levé (13 sept.) — cran 3 strict stable → intro kipping en Macro 2 : drills S08, EMOM court S09, volume S10, intégré aux couplets en TRA-MIX. Cible cran 4 au relevé S15. Skip au moindre inconfort d'épaule (S05)."
+  maintien_format: "En maintien, garder le format du cran (couplet BMU + pivot en HSW) — le linéaire et les séries sèches sont une régression de spécificité."
 
 benchmarks:
   last_run: "2026-08-07"
-  next_due: "post-Fire-2026"  # retest force clé + proxies gym après REAL B
+  next_due: "intégré à Macro 2 — pas de semaine de tests séparée"
+  measurement_plan:
+    force: "S10 (5–11 oct.) = point de mesure du bloc force : BS 5×3, FS avec pause 3×3, DL 3×3 (+ top set optionnel), strict press 4×4, traction lestée 4×4 → reporter dans prs_current_kg"
+    power: "S12 (19–25 oct.) : épaulé / arraché puissance + cycling notés en fin de bloc puissance"
+    gym: "S15 mardi (10 nov.) : relevé densité BMU, série RMU, kipping HSPU, distance HSW avec pivots → gym_ladder_level"
+    note: "Retest par la prog, pas par une semaine dédiée : la fraîcheur avant le pic C (12–13 déc.) prime."
   week_planned: "2026-08-03 to 2026-08-09"
   s01_results:
     force:

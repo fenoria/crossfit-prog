@@ -78,7 +78,10 @@ gym_skill_day:
     rule: "Mêmes skills sur le meso (BMU/RMU/HSPU/HSW) ; varier le format, pas le mouvement"
     volume_formats: [EMOM, E2MOM, quality_sets]
     hsw: "pivot si cran 4 validé ; linéaire = régression de spécificité en maintien"
-    hspu: "strict en Acc / ACC-STR ; kipping = TRA-MIX si cran 3 stable"
+    hspu: >
+      Strict = base en Acc. Kipping : introduire dès que le cran 3 strict est stable
+      (drills → EMOM court → volume), sans attendre TRA-MIX, pour que la skill soit
+      utilisable en compétition et pas découverte au peaking. Skip si gêne d'épaule.
 
 oly_power_day:
   intent: "Puissance barre sans deep heavy squat obligatoire"
@@ -98,10 +101,11 @@ conditioning_z2:
     - "30–60+ min Z2 ergo ou mix easy — parole possible"
 
 conditioning_specific:
-  intent: "Expression CF (bloc spécifique seulement)"
+  intent: "Expression CF (blocs de conversion mixed et spécifique / REAL)"
   template:
     - "WOD format compétition ou couplets points faibles"
     - "Volume total limité ; qualité pacing"
+    - "En TRA-MIX : 1 format « qualité » (repos complets, RPE ≤ 8) + 1 format chronométré par semaine ; team compris dans le cap d'efforts durs"
 
 team_wod:
   intent: "Contrainte box mercredi / samedi — comptabiliser fatigue"

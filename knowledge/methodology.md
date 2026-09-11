@@ -99,13 +99,23 @@ REAL ancrés sur B puis C (Bompa multi-peak) :
 
 | Macro | Fenêtre | Séquence | Pic |
 |-------|---------|----------|-----|
-| **Macro 2 — Élévation** | 21 sept. – 15 nov. | ACC-STR (~4) → TRA-POW (~2) → TRA-MIX (~2) | — (pas de taper A) |
+| **Macro 2 — Élévation** | 21 sept. – 15 nov. | ACC-STR (~3) → TRA-POW (~2) → TRA-MIX (~3) | — (pas de taper A) |
 | **Macro 3 — Spécifique** | 16 nov. – 13 déc. | TRA-MIX team (~2) → REAL S7mbioz (~2) | Pic C 12–13 déc. |
 | **Transition** | dès 14 déc. (~2–3 sem.) | Volume bas, GPP, Z2 | — |
 
 Sans date de comps : on enchaînerait Macro 2 sur le même canevas Issurin en changeant l’accent Accumulation. Ici les dates B/C sont connues → calendrier ci-dessus.
 
 **Instance 2026 — TRA-POW plutôt qu’ACC-OLY** : le bloc haltéro de ~2 sem. après ACC-STR est une **conversion puissance** (Bompa / Verkhoshansky), pas une accumulation Everett de 3–5 sem. ACC-OLY reste un type de meso valide ; il n’est pas le meso 2 de cette saison.
+
+**Révision Macro 2 du 2026-09-11 (3/2/3)** — détail et conflits d’auteurs dans `arbitrages.md` §15 :
+
+| Bloc | Fenêtre | Semaines |
+|------|---------|----------|
+| ACC-STR | 21 sept. – 11 oct. | S08 tronquée (vacances = décharge de milieu de bloc) · S09 charge · S10 pic |
+| TRA-POW | 12 – 25 oct. | S11 = **décharge force + pivot** · S12 chargée |
+| TRA-MIX | 26 oct. – 15 nov. | S13 qualité · S14 densité (simulation samedi) · S15 transfert puis volume ↓ |
+
+Principes retenus pour l’instance : **la décharge de fin de bloc force est fondue dans la semaine de pivot** (volume force −40/50 %, intention barre) plutôt que posée en semaine isolée ; la semaine retirée à la force va au mixed (résidu court, plus proche du pic C) ; un lift plafonné se surcharge par **tension** (pause) et **densité** (repos réduit), pas par les kilos ; **1 bloc seuil/sem.** dès la 2ᵉ semaine d’accumulation et Z2 en **blocs écrits** (pas de finisher optionnel) pour éviter le détraining aérobie ; kipping en appui renversé **introduit dès Macro 2** (cran 3 strict stable) au lieu d’attendre TRA-MIX.
 
 ### 3.5 Court terme (microcycle)
 Dans un meso concentré (Israetel) :
