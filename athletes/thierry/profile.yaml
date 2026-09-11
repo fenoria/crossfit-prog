@@ -47,8 +47,8 @@ goal:
       notes: "5e / 40 RX team mixte à 2 — référence pour Fire 2026"
   # Cible courante (année en cours) — à affiner quand les dates exactes sont publiées
   # 2026 : A (Battle) faite → ancre prochaine = B Fire Contest, puis C S7mbioz
-  competition: "Fire Contest (Nantes)"
-  date: "2026-09-12"  # approx 2ème we septembre 2026 (sam) ; confirmer dès officialisation
+  competition: "Atlantic Fire Contest (Nantes)"
+  date: "2026-09-12"  # 12–13 sept. 2026 confirmé (book athlètes AFC 26) ; J1 Human Project 360, J2 CIS Gouzé ; 8 WOD
   next_after_b:
     name: "S7mbioz Throwdown"
     date: "2026-12-12"  # 12–13 déc. 2026 (team)
