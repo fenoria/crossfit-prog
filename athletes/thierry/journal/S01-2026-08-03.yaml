@@ -1,0 +1,67 @@
+semaine: S01
+dates: "2026-08-03 → 2026-08-09"
+macro: macrocycle-01-build
+meso: benchmarks
+phase_micro: test
+prog: prog/saison-2026/macrocycle-01-build/meso-01-benchmarks/S01-2026-08-03.md
+statut: close
+
+jours:
+  lundi:
+    fait: oui
+    charges: "Back squat 130 kg × 3 (RPE 9)"
+    rpe: 9
+    note: "Tension adducteur à partir de 120 kg (pas une douleur) ; rien après la séance. Fatigue 1/5."
+  mardi:
+    fait: oui
+    charges: "Strict press 70 kg × 2 (RPE 9) · traction lestée +40 kg × 3 (RPE 9,5) · +52 kg × 1 (RPE 10)"
+    rpe: 9
+    note: "Échec du PR traction à +54 kg (monté, quelques centimètres manquants au menton). Fatigue 1/5."
+  mercredi:
+    fait: oui
+    charges: "WOD team, 38 min"
+    rpe: 9
+    note: "Haute intensité. Fatigue 3/5."
+  jeudi:
+    fait: oui
+    charges: "Deadlift 180 kg × 2 (RPE 9) · front squat 120 kg × 3 (RPE 9)"
+    rpe: 9
+    note: "Fatigue 1/5."
+  vendredi:
+    fait: oui
+    charges: "BMU EMOM 6/min · RMU 2/min · HSPU strict 4×10 · HSW 20 m · power snatch 70 kg × 3 (RPE 9) · power clean 100 kg × 3 (RPE 9)"
+    rpe: null
+    note: "Ampoule au creux de la main (BMU). Marge sur la distance HSW, mais chute au demi-tour."
+  samedi:
+    fait: oui
+    charges: "EMOM 6 rounds : 15 cal row / 10 KB swing + 8 T2B / 15 cal echo / 30 DU + 4 C&J 50 kg / repos"
+    rpe: 9
+    note: "Fait avec la partenaire Fire."
+  dimanche:
+    fait: off
+
+realise:
+  force_lower_sets: null
+  force_upper_sets: null
+  oly_lifts: 6
+  gym_min: null
+  z2_min: null
+  z2_note: "Semaine de tests — pas de Z2 tracé"
+  hard_min: 38
+  hard_min_note: "Team mercredi 38 min RPE 9 ; samedi EMOM team non chiffré"
+
+team_wod_rpe: 9
+
+flags:
+  - "Tension adducteur dès ~120 kg au back squat (pas de douleur)"
+  - "Ampoules paume après BMU"
+  - "Traction lestée : single à +52 kg tenu, échec à +54 kg"
+
+ecarts_prescrit_vs_realise: []
+
+gate: "benchmarks → ACC-GYM validée : prs_current_kg renseignés, proxies gym notés"
+synthese: >
+  Semaine de tests complète. Force : BS 130×3, DL 180×2, FS 120×3, press 70×2,
+  traction +40×3 (single +52). Oly puissance : 70 / 100 à RPE 9. Gym : BMU 6/min,
+  RMU 2/min, HSPU strict 4×10, HSW 20 m. Team mercredi RPE 9.
+suite: "S02 — entrée en accumulation gym : skill et densité EMOM, force et oly en maintien"

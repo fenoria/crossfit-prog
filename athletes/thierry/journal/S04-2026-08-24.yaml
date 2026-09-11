@@ -1,0 +1,80 @@
+semaine: S04
+dates: "2026-08-24 → 2026-08-30"
+macro: macrocycle-01-build
+meso: ACC-GYM
+phase_micro: pic
+prog: prog/saison-2026/macrocycle-01-build/meso-02-accumulation-gym/S04-2026-08-24.md
+statut: close
+
+jours:
+  lundi:
+    fait: oui
+    charges: "Back squat 115 kg (3×3, légèrement au-dessus du plafond 112,5 prescrit) · front squat 95 kg (2×3)"
+    note: ""
+  mardi:
+    fait: oui
+    charges: "Strict press 60 kg (3×3) · traction lestée +32 kg (3×3)"
+    note: ""
+  mercredi:
+    fait: oui
+    charges: "WOD team partagé : 2000 m row (1000 pour moi), 150 wall balls (75), 75 C&J 60 kg (40), 150 T2B (100 — 3×20 unbroken puis 2× 14+6), 2000 m row (1000) → 31'06"
+    rpe: 9
+    note: ""
+  jeudi:
+    fait: non
+    note: "Séance décalée au samedi pour raison personnelle."
+  vendredi:
+    fait: oui
+    charges: "HSW 5× (10 m + pivot + 10 m) unbroken · HSPU 5×10 (plafond, ~0 RIR sur les dernières) · power snatch 70 kg (RPE 7) · power clean 100 kg (RPE 7)"
+    note: "Oly = maintien des charges S01, pas un nouveau palier."
+  samedi:
+    fait: oui
+    charges: "Rattrapage jeudi : BMU EMOM 14 min 4 + 10 cal · RMU EMOM 10 min 2 + 10 cal · ~15 s de repos par minute · traction stricte 3×5"
+    note: "10 cal = plafond de l'EMOM (peu de marge) sans rupture ; 4 BMU unbroken propres chaque minute."
+  dimanche:
+    fait: oui
+    charges: "Zone 2 course 14 km · 6'26/km · 119 bpm moyens · ~90 min"
+    note: "Rattrapage du MEV (0 min du lundi au samedi) ; allure lente, FC stable — vrai Z2."
+
+realise:
+  force_lower_sets: 5
+  force_upper_sets: 6
+  oly_lifts: 6
+  gym_min: null
+  z2_min: 90
+  hard_min: 31
+  hard_min_note: "Team mercredi 31'06 à RPE 9"
+
+team_wod_rpe: 9
+
+flags:
+  - "Jeudi reporté au samedi (one-off, planning inchangé)"
+  - "HSPU 5×10 = plafond de volume strict → deload S05 à 3×6–7"
+  - "Couplets BMU et RMU à 10 cal = plafond EMOM tenu"
+  - "Z2 nul du lundi au samedi, rattrapé le dimanche"
+  - "Team RPE 9 sans application de la règle J+1 (séance gym 3 jours plus tard)"
+
+ecarts_prescrit_vs_realise:
+  - mouvement: power_snatch
+    prescrit: "62,5–65 kg"
+    realise: "70 kg à RPE 7"
+    sens: au_dessus
+    action: re_ancrer
+  - mouvement: power_clean
+    prescrit: "87,5–90 kg"
+    realise: "100 kg à RPE 7"
+    sens: au_dessus
+    action: re_ancrer
+  - mouvement: back_squat
+    prescrit: "112,5 kg"
+    realise: "115 kg"
+    sens: au_dessus
+    action: surveiller
+
+gate: "ACC-GYM → deload puis REAL : crans gym progressés (HSW 4, BMU/RMU couplets 4), maintien force tenu"
+synthese: >
+  Semaine de pic gym réussie : HSW 5× (10 + pivot + 10) unbroken, HSPU 5×10 au
+  plafond, couplets BMU et RMU à 10 cal avec ~15 s de repos par minute. Team
+  mercredi RPE 9. Oly en maintien à 70 / 100, nettement au-dessus du prescrit.
+  Z2 sauvé par la sortie du dimanche.
+suite: "S05 deload ACC-GYM (−30 % de volume skill, HSPU 3×6–7, mercredi Z2 prioritaire) puis expression Fire Contest"

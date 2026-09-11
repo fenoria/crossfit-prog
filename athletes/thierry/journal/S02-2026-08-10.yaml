@@ -1,0 +1,74 @@
+semaine: S02
+dates: "2026-08-10 → 2026-08-16"
+macro: macrocycle-01-build
+meso: ACC-GYM
+phase_micro: volume
+prog: prog/saison-2026/macrocycle-01-build/meso-02-accumulation-gym/S02-2026-08-10.md
+statut: close
+
+jours:
+  lundi:
+    fait: oui
+    charges: "Back squat 115 kg (4×3) · soulevé de terre roumain 90 kg"
+    note: ""
+  mardi:
+    fait: oui
+    charges: "Strict press 60 kg (4×4) · traction lestée +28 kg (4×4)"
+    note: ""
+  mercredi:
+    fait: oui
+    charges: "WOD team — worms 75 kg, burpees, double unders"
+    rpe: 8
+    note: "Fait avec Lisa."
+  jeudi:
+    fait: oui
+    charges: "BMU EMOM 5/min · RMU EMOM 2/min"
+    note: "Ampoules aux mains limitantes."
+  vendredi:
+    fait: oui
+    charges: "HSPU strict 4×9 · HSW 4×10 m unbroken (pivot sans mur) · power snatch 70 kg 4×1 · power clean 100 kg 4×1"
+    note: "Charges haltéro au-dessus du prescrit : en forme."
+  samedi:
+    fait: oui
+    charges: "WOD team EMOM 16 min (hors prog)"
+    note: "Fait avec Lisa."
+  dimanche:
+    fait: off
+
+realise:
+  force_lower_sets: 4
+  force_upper_sets: 8
+  oly_lifts: 8
+  gym_min: null
+  z2_min: null
+  z2_note: "Non tracé — sous le MEV de 60 min"
+  hard_min: null
+  hard_min_note: "Team mercredi RPE 8 + team samedi EMOM 16 min, durées non toutes chiffrées"
+
+team_wod_rpe: 8
+
+flags:
+  - "Z2 sous MEV (non tracé)"
+  - "Samedi team extra hors prog (EMOM 16 min)"
+  - "Ampoules limitantes sur les BMU (2e semaine)"
+  - "HSW 4×10 m unbroken avec pivot sans mur — signal de cran 4"
+
+ecarts_prescrit_vs_realise:
+  - mouvement: power_snatch
+    prescrit: "fourchette RPE 7 sous 70 kg"
+    realise: "70 kg 4×1"
+    sens: au_dessus
+    action: surveiller
+  - mouvement: power_clean
+    prescrit: "fourchette RPE 7 sous 100 kg"
+    realise: "100 kg 4×1"
+    sens: au_dessus
+    action: surveiller
+
+gate: null
+synthese: >
+  Semaine complète plus un team extra le samedi. Maintien force conforme (BS 115,
+  plafond adducteur respecté). Gym : RMU 2/min stable, BMU 5/min (ampoules),
+  HSPU 4×9, HSW cran 4 confirmé. Oly au niveau S01, au-dessus du prescrit.
+  Z2 sous MEV, non tracé.
+suite: "S03 surcharge — EMOM plus longs, RMU en petites séries, densité BMU en hausse si la qualité tient"

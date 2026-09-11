@@ -1,0 +1,133 @@
+# Instance de saison — 2026 (athlète thierry)
+# Tout ce qui est DATÉ ou NUMÉROTÉ vit ici. Les fichiers de knowledge/ restent génériques :
+# une gate ou une dose de maintien ne doit pas contenir « S10 » ou « 12 octobre ».
+#
+# Résolution : knowledge/*.yaml (méthodo, générique) + cette instance (calendrier)
+#              + athletes/<id>/profile.yaml (chiffres athlète, prioritaire).
+
+version: 1
+status: active
+updated: 2026-09-11
+athlete: thierry
+saison: 2026
+
+# ─────────────────────────────────────────────────────────────
+# Compétitions de la saison
+# ─────────────────────────────────────────────────────────────
+
+competitions:
+  - id: battle_normandy
+    nom: "Battle of Normandy Throwdown"
+    role: A
+    date: "2026-07"
+    format: team_of_3
+    statut: fait
+    resultat: "7e / 40 RX"
+  - id: fire_contest
+    nom: "Atlantic Fire Contest"
+    role: B
+    date: "2026-09-12 → 2026-09-13"
+    format: team_mixed_of_2
+    statut: a_venir
+    note: "8 WOD sur deux jours, deux sites"
+  - id: s7mbioz
+    nom: "S7mbioz Throwdown"
+    role: C
+    date: "2026-12-12 → 2026-12-13"
+    format: team
+    statut: a_venir
+    note: "Book non publié à ce jour — exigences à compléter dans competition-demands.yaml"
+
+# ─────────────────────────────────────────────────────────────
+# Chemin de mesos (ordre réellement suivi cette saison)
+# ─────────────────────────────────────────────────────────────
+
+chemin_mesos:
+  - benchmarks
+  - ACC-GYM
+  - REAL      # pic B — Fire Contest
+  - TRANS
+  - ACC-STR
+  - TRA-POW
+  - TRA-MIX
+  - TRA-MIX   # orienté team (Macro 3)
+  - REAL      # pic C — S7mbioz
+  - TRANS
+note_chemin: >
+  Ce chemin n'est pas le chemin par défaut de la méthodo : ACC-GYM passe avant ACC-STR
+  parce que la faiblesse prioritaire est la répétabilité gym et que le pic B tombe tôt.
+
+# ─────────────────────────────────────────────────────────────
+# Calendrier
+# ─────────────────────────────────────────────────────────────
+
+macrocycles:
+  macro_1_build:
+    fenetre: "2026-08-03 → 2026-09-20"
+    semaines: [S01, S02, S03, S04, S05, S06, S07]
+    mesos:
+      benchmarks: [S01]
+      ACC-GYM: [S02, S03, S04, S05]
+      REAL: [S06]
+      TRANS: [S07]
+  macro_2_elevation:
+    fenetre: "2026-09-21 → 2026-11-15"
+    semaines: [S08, S09, S10, S11, S12, S13, S14, S15]
+    mesos:
+      ACC-STR: [S08, S09, S10]
+      TRA-POW: [S11, S12]
+      TRA-MIX: [S13, S14, S15]
+    notes:
+      S08: "tronquée — vacances Milan 24–28 sept. (décharge intégrée)"
+      S11: "décharge force ET entrée du bloc puissance — pas de semaine deload séparée"
+  macro_3_specifique:
+    fenetre: "2026-11-16 → 2026-12-13"
+    mesos:
+      TRA-MIX_team: "16–29 nov."
+      REAL: "30 nov. – 13 déc. (pic C)"
+
+# ─────────────────────────────────────────────────────────────
+# Points de mesure (pas de semaine de tests dédiée cette saison)
+# ─────────────────────────────────────────────────────────────
+
+points_de_mesure:
+  force:
+    semaine: S10
+    date: "2026-10-05 → 2026-10-11"
+    contenu: "séries lourdes du pic force notées → prs_current_kg · test signature T2 le lundi"
+  aerobie:
+    semaine: S10
+    date: "2026-10-10"
+    contenu: "sortie longue + 5 × 3 min mesurés → aerobic_anchors · test signature T3"
+  puissance:
+    semaine: S12
+    date: "2026-10-19 → 2026-10-25"
+    contenu: "charges barre et cycling notées en fin de bloc puissance"
+  gym:
+    semaine: S15
+    date: "2026-11-10"
+    contenu: "densité muscle-up, série anneaux, kipping, marche sur les mains → gym_ladder_level · test signature T1"
+
+# ─────────────────────────────────────────────────────────────
+# Contraintes de calendrier propres à cette saison
+# ─────────────────────────────────────────────────────────────
+
+contraintes:
+  samedi: "disponible uniquement les semaines ISO impaires (profil : schedule.saturday)"
+  samedis_utiles_macro_2: ["2026-10-10 (sortie longue + mesure)", "2026-10-24 (sortie longue + seuil)", "2026-11-07 (simulation de journée de compétition)"]
+  vacances: ["2026-09-24 → 2026-09-28 (Milan)"]
+  team_box: "mercredi, format imposé par la box"
+
+# ─────────────────────────────────────────────────────────────
+# Réathlétisation — calendrier des paliers (contenu : knowledge/reathletisation.md)
+# ─────────────────────────────────────────────────────────────
+
+reathletisation:
+  adducteur:
+    palier_1: [S08, S09]
+    palier_2: [S10, S11, S12]
+    palier_3: [S13, S14, S15]
+    paliers_4_5: "Macro 3 et transition de fin d'année (volume de force bas)"
+    examen_plafond_squat: "fin de Macro 2, jamais avant une compétition"
+  epaule:
+    rampe_kipping: "drills S08 · volume court S09 · volume S10 · intégré aux couplets S13–S14 · relevé S15"

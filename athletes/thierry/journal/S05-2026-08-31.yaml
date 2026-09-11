@@ -1,0 +1,65 @@
+semaine: S05
+dates: "2026-08-31 → 2026-09-06"
+macro: macrocycle-01-build
+meso: ACC-GYM
+phase_micro: deload
+prog: prog/saison-2026/macrocycle-01-build/meso-02-accumulation-gym/S05-2026-08-31.md
+statut: close
+
+jours:
+  lundi:
+    fait: oui
+    charges: "Back squat 110 kg · core · 25 min bike Zone 2"
+    note: ""
+  mardi:
+    fait: oui
+    charges: "Strict press 55 kg · traction lestée +28 kg · Pallof seul en core · 25 min bike Zone 2"
+    note: "Pompes non faites : douleur à l'épaule, rien de grave mais pas envie de forcer."
+  mercredi:
+    fait: oui
+    charges: "WOD team box"
+    rpe: 7
+    note: "Z2 non fait (choix team). Épaule : gêne légère, pas bloquante."
+  jeudi:
+    fait: oui
+    charges: "BMU EMOM 8 min — 5/min (40 total, RPE ≤ 6) · drills RMU 2×2"
+    note: "Pas de Z2. Gêne d'épaule légère persistante, pas d'arrêt. Pas d'ampoules."
+  vendredi:
+    fait: non_renseigne
+    note: "Prévu : HSPU / HSW + oly léger, HSPU plafonnées à 6 reps par série si gêne d'épaule. Feedback jamais rempli."
+  samedi:
+    fait: non_renseigne
+    note: "Prévu : Z2 pour sécuriser le plancher hebdomadaire. Feedback jamais rempli."
+  dimanche:
+    fait: non_renseigne
+
+realise:
+  force_lower_sets: null
+  force_upper_sets: null
+  oly_lifts: null
+  gym_min: null
+  z2_min: 50
+  z2_note: "25 min lundi + 25 min mardi ; vendredi et samedi non renseignés — plancher 60 min probablement non atteint"
+  hard_min: null
+
+team_wod_rpe: 7
+
+flags:
+  - "Gêne d'épaule récurrente mardi → jeudi (pompes skippées, BMU et RMU sans problème) — premier signalement"
+  - "Fin de semaine non renseignée (vendredi à dimanche) — boucle de feedback ouverte"
+  - "Z2 probablement sous MEV pour la troisième semaine du bloc"
+
+ecarts_prescrit_vs_realise:
+  - mouvement: pompes_accessoire
+    prescrit: "accessoire mardi"
+    realise: "sauté"
+    sens: en_dessous
+    action: surveiller
+
+gate: "ACC-GYM → REAL Fire : validée sur les crans gym et le maintien force ; deload effectué"
+synthese: >
+  Deload conforme sur les trois premiers jours (charges respectées, BMU faciles à
+  5/min). Team mercredi RPE 7, sous le seuil J+1. Première apparition de la gêne
+  d'épaule sur les mouvements de poussée. La fin de semaine n'a jamais été
+  renseignée : c'est le trou qui a motivé la mise en place de ce journal.
+suite: "S06 Expression Fire Contest (pic B) — 7 au 13 septembre"

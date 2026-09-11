@@ -14,6 +14,7 @@ pattern_ids:
   - conditioning_specific
   - team_wod
   - benchmark_session
+  - competition_day
 
 common:
   warmup_min: "selon id knowledge/warmups.yaml (souvent 8–15 ; Z2-only 3–5)"
@@ -30,7 +31,11 @@ common:
       Deload = mêmes mouvements que les semaines chargées, volume −30 %.
     constraints:
       - "pas de 3e press / pompes extra si gêne épaule — rows + face pulls"
-      - "pas de fentes lourdes / Copenhagen chargé si adducteur — hip thrust, roll-out, suitcase OK"
+      - >
+        adducteur : pas de fente lourde ni de Copenhagen chargé « pour voir ».
+        La progression Copenhagen encadrée de knowledge/reathletisation.md est
+        en revanche attendue (2×/sem., remplace le gainage anti-latéral) —
+        évitement en séance, charge progressive dans le plan.
       - "core suspendu (T2B, hanging raise) pas la veille d’un gros EMOM BMU/RMU (grip)"
       - "box only ; pas de machines guidées"
 
@@ -45,7 +50,8 @@ force_lower:
     - finisher: "Z2 easy si budget"
   accessory_rotation:
     core_anti_extension: [hollow_hold, roll_out, dead_bug]
-    core_anti_lateral: [suitcase_carry, side_plank, pallof]
+    core_anti_lateral: [suitcase_carry, side_plank, pallof, copenhagen_progressif]
+    reathletisation: "1 bloc adducteur (5–8’) sur le jour lower — knowledge/reathletisation.md"
     posterior_no_heavy_hinge: [hip_thrust]
     hinge_secondary_stable: "RDL ou DL selon la semaine du meso — pas de rotation weekly du hinge"
 
@@ -120,3 +126,15 @@ benchmark_session:
     - "1–2 lifts max par jour"
     - "pas de max out squat snatch/clean agressif"
     - "stop si douleur nette signalée"
+
+competition_day:
+  intent: "Journée de compétition — le contenu est imposé, ce qui se programme c'est la journée"
+  template:
+    - "Logistique : check-in, horaires, chambre d'appel, contraintes de site"
+    - "Échauffement par heat selon la famille du WOD (pas un échauffement de séance unique)"
+    - "Ravitaillement et récupération entre les épreuves"
+    - "Débrief par WOD le soir même"
+  trame: knowledge/competition-day.yaml
+  lint_note: >
+    Pas de bloc **Échauffement** unique attendu sur ces journées : l'échauffement
+    est par épreuve et se fait en zone dédiée / chambre d'appel.

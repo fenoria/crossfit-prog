@@ -8,13 +8,21 @@ alwaysApply: false
 
 **Résolution** : `athletes/current.yaml` (`id`) → `athletes/<id>/profile.yaml`.
 
+## Profil vs journal
+- `profile.yaml` = **état courant** : charges, volumes, crans, planning, contraintes, ancres.
+- `athletes/<id>/journal/SXX-YYYY-MM-DD.yaml` = **historique** semaine par semaine (schéma : `knowledge/journal-schema.yaml`).
+- Ne pas remettre de bloc `sXX_results` dans le profil : une semaine se distille dans le journal.
+
 ## Champs clés
 - Capacités : `level`, `priorities`, `strengths`, `weaknesses_or_limits`, `gym_ladder_level`
 - Planning : jours, horaires, `max_minutes`, team day, samedi (fréquence, créneau, durée), dimanche (off vs Z2), `active_recovery_over_rest`
 - Matériel : setting box, machines guidées
 - Blessure : `injury`, `programming_rules`, protocoles référencés
 - Charges : `prs_current_kg`, `volumes.*` — jamais `prs_pre_injury_kg` pour les %
+- Conditioning : `aerobic_anchors` (FC, allures, splits) — `null` autorisé, la matrice retombe alors sur le RPE
 - Coaching : `coaching.*` (seuil team WOD, etc.)
 
 ## Mise à jour
-Feedback récurrent (douleur à X kg, plafond charge, contrainte planning durable) → profil immédiatement, pas seulement dans le chat.
+- Chaque feedback → entrée de journal (créée avec la semaine, complétée au fil de l'eau).
+- Feedback **récurrent ou durable** (douleur à X kg, plafond charge, contrainte planning, cran gym franchi, ancre aérobie testée) → profil immédiatement, pas seulement dans le chat ni seulement dans le journal.
+- Ne jamais inventer un chiffre absent du feedback : `null` + note.

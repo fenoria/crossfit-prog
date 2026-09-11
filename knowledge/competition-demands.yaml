@@ -1,0 +1,99 @@
+# Analyse des exigences de compétition → liste de trous → programmation
+# Sources : Verkhoshansky (transfert : préparer le régime réel) · Issurin (spécificité tardive)
+#           Bompa (peaking sur les exigences identifiées) · débriefs de compétition
+
+version: 1
+status: validated
+updated: 2026-09-11
+
+pourquoi: >
+  La programmation se construisait à partir des qualités générales (force, gym, filières)
+  et des faiblesses ressenties. Aucun document ne partait de ce que la compétition demande
+  réellement. Résultat : des trous invisibles jusqu'au jour J — un mouvement jamais
+  travaillé au standard, un objet lourd jamais manipulé, un format jamais répété.
+
+methode:
+  1: "Recenser les exigences observées : débriefs par WOD (competition-day.yaml §6), book de l'épreuve, éditions précédentes, formats habituels de l'organisateur."
+  2: "Pour chaque exigence : statut athlète — couvert / partiel / trou — avec la preuve (semaine, chiffre, feedback)."
+  3: "Les trous deviennent des lignes de programmation du bloc spécifique. Pas de trou sans action, pas d'action sans trou."
+  4: "Relire cette liste à l'entrée de chaque bloc de réalisation ; l'actualiser après chaque compétition."
+
+# ─────────────────────────────────────────────────────────────
+# Exigences connues
+# ─────────────────────────────────────────────────────────────
+
+exigences:
+  format_multi_wod:
+    exigence: "6 à 10 épreuves sur deux jours, heats espacés, longues attentes"
+    statut: couvert
+    preuve: "Simulation de deux formats avec pause de compétition en S14 (7 nov.) ; trame de journée dans competition-day.yaml"
+
+  team_synchronisation:
+    exigence: "Répartition des reps, bascules, mouvements synchronisés, un appelant"
+    statut: partiel
+    preuve: "Team du mercredi hebdomadaire, mais format imposé par la box — la répartition avec le partenaire de compétition ne se travaille pas"
+    action: "Bloc spécifique : au moins deux séances avec le ou les partenaires réels, plan de bascule écrit avant le départ"
+
+  objets_lourds_inhabituels:
+    exigence: "Worm, sac, sled, D-ball, objets non standard fréquents en compétition team"
+    statut: trou
+    preuve: "Seule exposition tracée : worm 75 kg dans un WOD team (S02). Rien dans la prog individuelle — matériel de box standard uniquement"
+    action: "Bloc spécifique : intégrer ce que la box possède (au moins un port lourd / carry chargé par semaine) ; à défaut, ne pas découvrir le jour J"
+
+  squat_clean_squat_snatch_au_standard:
+    exigence: "Les standards de compétition imposent parfois le squat clean ou le squat snatch"
+    statut: trou_assume
+    preuve: "Interdits à l'entraînement depuis la désinsertion adducteur (règle profil) — seul le power est travaillé"
+    action: >
+      Trou volontaire, pas une négligence : garder l'interdiction, et compenser en travaillant
+      le power à charge suffisante plus le front squat. Si un WOD impose le squat clean lourd,
+      c'est un WOD sur lequel on limite les pertes, pas un WOD qu'on gagne. À réexaminer si la
+      piste de réathlétisation ouvre l'amplitude chargée (reathletisation.md, paliers 4–5).
+
+  pompes_appui_renverse_en_volume:
+    exigence: "HSPU en volume, souvent kipping, sous fatigue"
+    statut: partiel
+    preuve: "Strict solide (5×10 en S04), kipping introduit seulement à partir de S08 et jamais ouvert pendant la semaine de Fire (S06)"
+    action: "Rampe kipping S08 → S15 avec relevé en S15 ; sous fatigue dans les couplets du bloc mixed"
+
+  repetabilite_gym_sous_fatigue:
+    exigence: "Refaire des séries de muscle-ups quand le cardio est haut"
+    statut: partiel
+    preuve: "Faiblesse déclarée n°1 ; couplets EMOM tenus au calme (S04), pré-fatigue introduite seulement en S13–S14"
+    action: "Test signature T1 à chaque macro ; couplets après pré-fatigue maintenus dans le bloc spécifique"
+
+  grip_et_mains:
+    exigence: "Enchaîner barre, anneaux, cordes et rameur sans lâcher sur les mains"
+    statut: partiel
+    preuve: "Ampoules limitantes en S01 et S02 ; plus de signalement depuis"
+    action: "Gestion des mains dans la trame de journée (competition-day.yaml) ; ne pas empiler suspendu la veille d'un gros volume BMU"
+
+  formats_longs_multi_blocs:
+    exigence: "Chippers de 12 à 20 min à plusieurs blocs, gestion de pacing"
+    statut: couvert
+    preuve: "AMRAP 12' en S13, chipper plafond 16' en S15, consignes de pacing explicites"
+
+  charges_barre_en_wod:
+    exigence: "Cycling de barre à charge moyenne sous fatigue (60–80 kg à l'épaulé)"
+    statut: couvert
+    preuve: "Densité barre en S12, épaulés à 60–70 kg dans les formats S13 à S15"
+
+  gestion_mentale_journee:
+    exigence: "Routine avant heat, focus, refermer un WOD raté"
+    statut: partiel
+    preuve: "Aucun protocole écrit avant competition-day.yaml (§5)"
+    action: "Appliquer la routine dès la simulation de S14 pour qu'elle soit rodée en décembre"
+
+# ─────────────────────────────────────────────────────────────
+# À compléter après chaque compétition
+# ─────────────────────────────────────────────────────────────
+
+a_completer:
+  fire_2026:
+    quand: "après le weekend des 12–13 septembre 2026"
+    source: "grille de débrief par WOD dans les Notes de la semaine S06"
+    remplir: "facteurs limitants les plus fréquents, mouvements ou standards non préparés, gestion de journée"
+  s7mbioz_2026:
+    quand: "dès publication du book de l'épreuve"
+    remplir: "format d'équipe, nombre de WOD, mouvements annoncés, matériel spécifique, contraintes de site"
+    note: "Tant que le book n'est pas sorti, préparer le générique team : objets lourds, synchronisation, transitions."

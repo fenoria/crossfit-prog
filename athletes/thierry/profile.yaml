@@ -4,6 +4,11 @@ age: 42
 height_cm: 179
 weight_kg: 87
 level: elite
+
+# Ce fichier = ÉTAT COURANT (charges, volumes, crans, planning, contraintes).
+# L'historique semaine par semaine vit dans journal/ (schéma : knowledge/journal-schema.yaml).
+journal_dir: athletes/thierry/journal/
+
 goal:
   type: competition_performance
   notes: "Performance compétition ; fraîcheur et spécificité > volume gratuit. Macros calés sur A (fait) → B Fire Contest (~sept.) → C S7mbioz (12–13 déc.). Petites compet opportunistes si dates connues, sans casser B/C. Macro 1 = Build gym → REAL Fire (pas ACC-STR avant le B). Prudence charges adducteur ≠ convalescence."
@@ -108,6 +113,7 @@ injury:
     - "pas de max out squat snatch / squat clean lourds"
     - "ne pas interroger systématiquement la douleur en feedback ; réagir seulement si l’athlète la signale"
     - "si douleur signalée → knowledge/adductor-protocol.yaml"
+    - "réathlétisation progressive (pas seulement évitement) → knowledge/reathletisation.md"
 
 prs_pre_injury_kg:
   # Tous 1RM / PR max — référence historique uniquement, jamais pour les %
@@ -123,6 +129,7 @@ prs_pre_injury_kg:
 prs_current_kg:
   # S01 benchmarks (2026-08-03 → 09) — charges de travail RPE 8–9, pas des 1RM
   # SoT pour les % de prog ; ne pas confondre avec prs_pre_injury_kg (1RM)
+  # Détail des séances de test : journal/S01-2026-08-03.yaml
   unit: working_weight  # 2–3RM ou singles RPE 7–9 selon le lift
   back_squat: 130        # 3RM @ RPE 9 ; tension adducteur dès ~120 (pas douleur)
   front_squat: 120       # 3RM @ RPE 9 (cible ≤8 dépassée — charge conservatrice pour %)
@@ -146,9 +153,22 @@ prs_current_kg:
     power_snatch: "70 kg (power) → vs snatch 80 PR full (comparaison partielle)"
     power_clean: "100 kg (power) → vs clean 130 PR full (comparaison partielle)"
 
-# Volumes Israetel — INSTANCE athlète (remplir après S01).
-# Bornes méthodo : knowledge/volume-landmarks.yaml (Z2 déjà 60/120/180 ; gym/force/oly null).
-# En conflit profile vs landmarks pour la prog courante → profile gagne.
+# Ancres physiologiques conditioning — pilotent Z2 / seuil (knowledge/conditioning-matrix.yaml)
+aerobic_anchors:
+  status: partial       # à compléter au test du samedi 10 octobre (S10)
+  updated: "2026-09-11"
+  hr_max_bpm: null      # jamais mesuré ; estimation d'âge (~178) trop grossière pour prescrire
+  z2_hr_ceiling_bpm: 130
+  z2_hr_source: "S04 : course 14 km à 6'26/km, 119 bpm moyens, ressenti conversationnel — plafond posé au-dessus du relevé, à confirmer"
+  run_z2_pace: "6'15–6'45/km"
+  run_threshold_pace: null
+  row_2k_split: null
+  bike_10min_avg_watts: null
+  tested_on: "2026-08-30 (partiel, sortie Z2 seulement)"
+  note: "Tant qu'une ancre est null, la prescription reste en RPE (repli prévu par la matrice conditioning)."
+
+# Volumes Israetel — INSTANCE athlète.
+# Bornes méthodo : knowledge/volume-landmarks.yaml (référence ; le profil gagne pour la prog courante).
 volumes:
   updated: "2026-09-11"
   # Macro 2 révisé 3/2/3 : ACC-STR 21 sept.–11 oct. · TRA-POW 12–25 oct. · TRA-MIX 26 oct.–15 nov.
@@ -204,95 +224,14 @@ gym_ladder_level:
 benchmarks:
   last_run: "2026-08-07"
   next_due: "intégré à Macro 2 — pas de semaine de tests séparée"
+  history: "athletes/thierry/journal/ (une entrée par semaine)"
+  signature_tests: knowledge/signature-tests.yaml  # 3 tests figés rejoués à chaque macro
   measurement_plan:
     force: "S10 (5–11 oct.) = point de mesure du bloc force : BS 5×3, FS avec pause 3×3, DL 3×3 (+ top set optionnel), strict press 4×4, traction lestée 4×4 → reporter dans prs_current_kg"
+    aerobie: "S10 samedi (10 oct.) : test aérobie signature + relevé FC / allure → aerobic_anchors"
     power: "S12 (19–25 oct.) : épaulé / arraché puissance + cycling notés en fin de bloc puissance"
     gym: "S15 mardi (10 nov.) : relevé densité BMU, série RMU, kipping HSPU, distance HSW avec pivots → gym_ladder_level"
     note: "Retest par la prog, pas par une semaine dédiée : la fraîcheur avant le pic C (12–13 déc.) prime."
-  week_planned: "2026-08-03 to 2026-08-09"
-  s01_results:
-    force:
-      back_squat: "130 kg × 3 @ RPE 9"
-      strict_press: "70 kg × 2 @ RPE 9"
-      weighted_pullup: "40 kg × 3 @ RPE 9.5 ; 52 kg × 1 @ RPE 10"
-      deadlift: "180 kg × 2 @ RPE 9"
-      front_squat: "120 kg × 3 @ RPE 9"
-    oly:
-      power_snatch: "70 kg × 3 @ RPE 9"
-      power_clean: "100 kg × 3 @ RPE 9"
-    gym:
-      bmu: "EMOM 10' — 6/min (60 total)"
-      hspu_strict: "4 × 10"
-      hsw: "20 m continu"
-      rmu: "EMOM — 2/min stable"
-    flags:
-      - "adducteur : tension (pas douleur) dès ~120 kg BS — surveiller montées lourdes"
-      - "mercredi WOD team RPE 9 (S01) ; RPE 8 (S02) — mieux absorbé"
-      - "ampoules main récurrentes post-BMU (S01 + S02) — straps OK si limitantes"
-  s02_results:
-    week: "2026-08-10 to 2026-08-16"
-    force:
-      back_squat: "115 kg × 4×3 (maintien, plafond adducteur)"
-      strict_press: "60 kg × 4×4"
-      weighted_pullup: "+28 kg × 4×4"
-    gym:
-      bmu: "EMOM 10' — 5/min (ampoules)"
-      rmu: "EMOM 8' — 2/min stable"
-      hspu_strict: "4 × 9"
-      hsw: "4 × 10 m unbroken ; pivot OK sans mur"
-    oly:
-      power_snatch: "70 kg × 4×1 (maintien S01)"
-      power_clean: "100 kg × 4×1 (maintien S01)"
-    team_wod_rpe: 8
-    flags:
-      - "Z2 MEV non atteint (< 60 min tracé)"
-      - "samedi team extra EMOM 16' (volume hors prog)"
-  s03_results:
-    week: "2026-08-17 to 2026-08-23"
-    force:
-      back_squat: "115 kg × 4×3 (maintien, plafond adducteur)"
-      romanian_deadlift: "95 kg × 3×8"
-      strict_press: "55 kg × 4×4 (bas de fourchette prescrite ; vs 60 kg 4×3 S02)"
-      weighted_pullup: "+28 kg × 4×4"
-    gym:
-      bmu: "couplet E2MOM 10' — 4 BMU + 250 m (ok, sans chiffre densité)"
-      rmu: "EMOM 12' — 2/min impair + 3/min pair (≈30)"
-      hspu_strict: "EMOM 12' — 5/min (60 total)"
-      hsw: "5 × (6 m + pivot + 6 m)"
-    oly:
-      power_snatch: "70 kg × 5×1"
-      power_clean: "100 kg × 5×1"
-      clean_pull: "120 kg × 3×2"
-    other:
-      high_jump_cm: 116
-    flags:
-      - "Z2 : 2× 4 km VTT lun/mar — MEV 60' encore non atteint"
-      - "samedi team extra (run, C&J, burpees, T2B) à la place du renfo — 2e semaine d'affilée"
-      - "jeudi off perso, séance reportée samedi"
-      - "mercredi box = mobilité + high jump 116 cm (pas de team, RPE 3)"
-      - "ampoules non mentionnées (vs S01+S02)"
-  s04_results:
-    week: "2026-08-24 to 2026-08-30"
-    force:
-      back_squat: "115 kg × 3×3 (légèrement au-dessus plafond 112,5 prescrit)"
-      front_squat: "95 kg × 2×3"
-      strict_press: "60 kg × 3×3"
-      weighted_pullup: "+32 kg × 3×3"
-    gym:
-      bmu: "EMOM 14' — 4 UB propres + 10 cal, ~15 s repos/min (plafond, passé)"
-      rmu: "EMOM 10' — 2 RMU + 10 cal, ~15 s repos/min (passé)"
-      hspu_strict: "5 × 10 plafond (~0 RIR dernières)"
-      hsw: "5 × (10 m + pivot + 10 m) unbroken"
-    oly:
-      power_snatch: "70 kg × 3×1 @ RPE 7 (maintien S01, vs 62,5–65 prescrit)"
-      power_clean: "100 kg × 3×1 @ RPE 7 (maintien S01, vs 87,5–90 prescrit)"
-    team_wod_rpe: 9
-    flags:
-      - "jeudi reporté samedi (perso) — one-off, planning jeudi inchangé"
-      - "BMU 4 UB propres chaque minute ; 10 cal = plafond EMOM tenu"
-      - "HSPU 5×10 = plafond volume strict — deload S05 = 3×6–7, pas 8"
-      - "mercredi team RPE 9 — J+1 non applicable (séance gym 3 j plus tard)"
-      - "Z2 = 0 lun–sam, rattrapé dimanche course 14 km / 6'26/km / 119 bpm (~90', MEV dépassé)"
   battery:
     - back_squat
     - front_squat
@@ -309,6 +248,7 @@ coaching:
   language: fr
   pedagogy_required: true
   feedback_schema: "blocs Notes / feedback (### par jour) dans prog/_templates/semaine.md"
+  journal_required: true  # tout feedback → entrée journal/ (knowledge/journal-schema.yaml) ; profil = état durable seulement
   prog_immutability: "semaine commencée/passée = contenu séances figé ; mise en forme OK ; Notes OK ; adaptations = futur only"
   # S04 sam 29 : EMOM 4 BMU + 10 cal et 2 RMU + 10 cal — ~15 s repos/min, passé (plafond)
   gym_couplet_dose: "EMOM 60s : viser ~15 s repos. Chez Thierry 10 cal easy = plafond tenu (S04). Si repos < 12 s ou casse → −cal ou E2MOM. 250 m = E2MOM."
@@ -323,7 +263,9 @@ coaching:
 
 knowledge:
   methodology_status: validated
+  methodology_version: 2
   methodology_validated_on: 2026-07-27
+  methodology_revalidated_on: 2026-09-11  # v2 : doses auditées, journal, réathlétisation, ancres aérobies, tests signature, compétition, séparation générique/instance
   ops_pack_validated_on: 2026-07-28
   corpus_notes: "12 ouvrages — conditioning pilote Laursen & Buchheit (conditioning-matrix.yaml)"
   refs:
@@ -331,7 +273,13 @@ knowledge:
     gates: knowledge/meso-gates.yaml
     gym_ladder: knowledge/gym-ladder.md
     adductor: knowledge/adductor-protocol.yaml
+    reathletisation: knowledge/reathletisation.md
     conditioning: knowledge/conditioning-matrix.yaml
     warmups: knowledge/warmups.yaml
     volumes: knowledge/volume-landmarks.yaml
     patterns: knowledge/session-patterns.yaml
+    journal_schema: knowledge/journal-schema.yaml
+    signature_tests: knowledge/signature-tests.yaml
+    competition_demands: knowledge/competition-demands.yaml
+    competition_day: knowledge/competition-day.yaml
+    taper: knowledge/taper-protocol.yaml

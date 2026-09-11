@@ -46,6 +46,18 @@ warmups:
       - "Drills spécifiques skill 4–6’ (voir gym-ladder cran actuel)"
       - "1–2 sets très submax avant volume EMOM"
 
+  warmup_shoulder_care:
+    duration_min: "12-15"
+    when: "jour gym avec kipping en appui renversé, ou upper si gêne d'épaule signalée"
+    steps:
+      - "Ergo easy 3’"
+      - "Scap + hollow / arch 2’"
+      - "Rotation externe élastique : coude au corps 2×12/côté puis à 90° 2×12/côté"
+      - "Wall slides ou serratus punch 2×10"
+      - "Drills spécifiques skill 3–4’ (voir gym-ladder cran actuel)"
+      - "1–2 sets très submax avant volume EMOM"
+    # Rampe kipping et règles d'arrêt : knowledge/reathletisation.md
+
   warmup_oly_power:
     duration_min: "10-12"
     when: "power snatch / power clean / pulls"

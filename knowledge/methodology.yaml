@@ -1,12 +1,19 @@
 status: validated
-version: 1
+version: 2
 updated: 2026-09-11
 validated_on: 2026-07-27
+revalidated_on: 2026-09-11  # v2 : doses auditées, journal, réathlétisation, ancres, tests signature, compétition, séparation générique/instance
 # md = narratif athlète ; yaml = contrat machine — garder meso_types / order / status sync
 source_of_truth:
-  knowledge: "knowledge/ (méthodo + ops + arbitrages) — books/ = brut"
-  athlete: "athletes/<id>/profile.yaml via athletes/current.yaml — instance (charges, volumes, douleur, planning)"
+  knowledge: "knowledge/ (méthodo + ops + arbitrages, générique) — books/ = brut"
+  instance: "knowledge/instances/<saison>.yaml — calendrier, chemin de mesos, points de mesure"
+  athlete: "athletes/<id>/profile.yaml via athletes/current.yaml — état courant (charges, volumes, crans, planning)"
+  athlete_history: "athletes/<id>/journal/ — historique semaine par semaine (knowledge/journal-schema.yaml)"
   prog: "prog/ — séances exécutées"
+separation_rule: >
+  Aucune date ni numéro de semaine dans les fichiers génériques de knowledge/ :
+  ils vont dans l'instance de saison. Aucun historique dans le profil : il va
+  dans le journal. Une seule source par information.
 pilots:
   structure: issurin
   dosing: israetel
@@ -21,6 +28,7 @@ gaps: []
 
 ops_pack:
   validated_on: 2026-07-28
+  extended_on: 2026-09-11
   files:
     - knowledge/maintenance-doses.yaml
     - knowledge/meso-gates.yaml
@@ -28,12 +36,20 @@ ops_pack:
     - knowledge/session-patterns.yaml
     - knowledge/warmups.yaml
     - knowledge/adductor-protocol.yaml
+    - knowledge/reathletisation.md
     - knowledge/conditioning-matrix.yaml
     - knowledge/volume-landmarks.yaml
+    - knowledge/journal-schema.yaml
+    - knowledge/signature-tests.yaml
+    - knowledge/competition-demands.yaml
+    - knowledge/competition-day.yaml
+    - knowledge/taper-protocol.yaml
+  instances:
+    - knowledge/instances/saison-2026.yaml
   templates:
     - prog/_templates/semaine.md
     - prog/_templates/meso.md
-  lint: "npm run lint:prog"
+  lint: "npm run lint:prog"  # forme (lint-prog.py) + doses et boucle de feedback (audit-prog.py)
 
 principles:
   - one_dominant_intent_per_meso
@@ -45,18 +61,30 @@ principles:
   - cut_volume_not_intent_when_fatigued
   - health_over_ego_bar_confidence_current_loads
   - z2_may_be_below_mev_in_REAL_for_freshness
+  - declared_doses_are_audited        # une dose écrite est une dose vérifiée
+  - measure_what_is_prescribed        # ancres physiologiques et tests signature figés
+  - demands_before_qualities          # partir des exigences de compétition, pas seulement des qualités
+  - progressive_reload_over_avoidance # une contrainte ancienne se recharge, elle ne se contourne pas indéfiniment
+  - one_source_per_information
 
 # Codes canoniques = meso_types. Label « REAL mini » = code REAL (durée courte Macro 1).
 meso_code_aliases:
   REAL-mini: REAL
   "REAL mini": REAL
 
-default_meso_order_post_injury:
-  - benchmarks
-  - ACC-GYM
+# Ordre par défaut d'un macrocycle complet. Le chemin réellement suivi une saison
+# donnée (et ses écarts) est dans knowledge/instances/<saison>.yaml → chemin_mesos.
+default_meso_order:
+  - benchmarks        # seulement si les charges courantes manquent
   - ACC-STR
+  - ACC-GYM           # avant ACC-STR si la répétabilité gym est la faiblesse prioritaire
+  - TRA-POW
   - TRA-MIX
-  - REAL  # label humain : REAL mini (Macro 1)
+  - REAL
+  - TRANS
+order_note: >
+  L'ordre se plie aux priorités du profil et à la date du pic : un pic proche impose
+  de raccourcir l'accumulation, une faiblesse prioritaire impose de la traiter en premier.
 
 annual_structure:
   model: bompa_multi_peak_plus_issurin_stages

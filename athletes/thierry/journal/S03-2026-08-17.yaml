@@ -1,0 +1,74 @@
+semaine: S03
+dates: "2026-08-17 → 2026-08-23"
+macro: macrocycle-01-build
+meso: ACC-GYM
+phase_micro: surcharge
+prog: prog/saison-2026/macrocycle-01-build/meso-02-accumulation-gym/S03-2026-08-17.md
+statut: close
+
+jours:
+  lundi:
+    fait: oui
+    charges: "Back squat 115 kg · soulevé de terre roumain 95 kg (3×8)"
+    note: "4 km VTT en Zone 2."
+  mardi:
+    fait: oui
+    charges: "Strict press 55 kg (4×4) · traction lestée +28 kg (4×4)"
+    note: "4 km VTT en Zone 2."
+  mercredi:
+    fait: oui
+    charges: "Mobilité + benchmark high jump : 116 cm"
+    rpe: 3
+    note: "Pas de WOD team ce mercredi."
+  jeudi:
+    fait: non
+    note: "Jour off pour raison personnelle — séance décalée au samedi."
+  vendredi:
+    fait: oui
+    charges: "HSPU EMOM 5/min (60 reps) · HSW 5× (6 m + pivot + 6 m) · power snatch 70 kg · power clean 100 kg · tirage épaulé 120 kg (3×2)"
+    note: ""
+  samedi:
+    fait: partiel
+    charges: "Séance de jeudi : RMU EMOM 12 min (2/min impaire, 3/min paire) · BMU OK. Renfo remplacé par un WOD team (run, C&J, burpees, T2B)"
+    note: "RPE du WOD team non noté."
+  dimanche:
+    fait: off
+
+realise:
+  force_lower_sets: 4
+  force_upper_sets: 8
+  oly_lifts: 11
+  gym_min: null
+  z2_min: null
+  z2_note: "2 × 4 km VTT — durée non tracée, sous le MEV de 60 min"
+  hard_min: null
+  hard_min_note: "WOD team samedi non chiffré, RPE non noté"
+
+team_wod_rpe: null
+
+flags:
+  - "Z2 sous MEV pour la deuxième semaine consécutive"
+  - "Samedi team extra à la place du renfo (2e semaine d'affilée)"
+  - "Jeudi off perso, séance reportée au samedi"
+  - "High jump 116 cm (repère nouveau)"
+  - "Pas d'ampoules mentionnées cette semaine"
+
+ecarts_prescrit_vs_realise:
+  - mouvement: strict_press
+    prescrit: "haut de fourchette (60 kg en 4×3 tenu en S02)"
+    realise: "55 kg en 4×4"
+    sens: en_dessous
+    action: surveiller
+  - mouvement: renfo_gym
+    prescrit: "renfo lesté jeudi"
+    realise: "WOD team samedi"
+    sens: autre
+    action: surveiller
+
+gate: null
+synthese: >
+  Semaine amputée du jeudi (reporté samedi). Force au plafond habituel
+  (BS 115, RDL 95, press 55, traction +28). Gym : RMU EMOM 12 min à 2/3,
+  HSPU 60 reps, HSW cran 4 confirmé avec pivot. Oly conforme, tirage 120.
+  Z2 encore sous MEV.
+suite: "S04 pic de densité, samedi off ou Z2 seul (pas de team extra), force en bas de fourchette lundi si reliquat"

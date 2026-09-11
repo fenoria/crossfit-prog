@@ -1,9 +1,9 @@
 # Matrice conditioning — Laursen & Buchheit (HIIT) + Bible PP + Issurin + Bompa
 # Mapping HIIT types (Laursen) : 1–2 ≈ aérobie O₂ (± neuro) · 3–4 ≈ O₂ + glycolyse · 5 ≈ glycolyse/neuro · 6 ≈ neuro seul
 
-version: 2
+version: 3
 status: validated
-updated: 2026-07-29
+updated: 2026-09-11
 sources:
   - "Laursen & Buchheit — Science and Application of High-Intensity Interval Training"
   - "Reiss & Prévost — La bible de la préparation physique"
@@ -17,11 +17,33 @@ athlete_rule: >
   Choisir une cible physiologique (Laursen) avant le format ; ne pas empiler
   type 4/5 le même jour qu’une grosse force / dens gym.
 
+# Ancres physiologiques — profil athlète actif : aerobic_anchors
+# Laursen & Buchheit prescrivent par intensité relative (%FC, %vVO2max, allure seuil).
+# Piloter au seul RPE sur un athlète expérimenté produit une dérive systématique :
+# la « Zone 2 » finit trop haute (elle devient du tempo qui coûte de la récupération)
+# et le seuil finit trop bas (il ne stimule plus rien).
+anchors:
+  source: "athletes/<id>/profile.yaml → aerobic_anchors"
+  priority: >
+    Si l'ancre existe, prescrire avec : Zone 2 = sous le plafond FC et dans le couloir
+    d'allure ; seuil = allure cible relevée. Si l'ancre est null, prescrire en RPE et
+    marqueurs de parole (repli explicite, pas un oubli).
+  fallback_rpe:
+    z2: "RPE 3–5, phrase complète possible"
+    tempo_threshold: "RPE 6–7, parole par mots courts"
+    glycolytic: "RPE 8–9"
+  arbitrage: >
+    En cas de désaccord entre l'ancre et le ressenti du jour (sommeil, chaleur,
+    fatigue résiduelle), le ressenti gagne : l'ancre cadre la prescription,
+    elle ne pilote pas la séance.
+  maj: "Relevé à chaque séance de mesure aérobie ; reporter dans le profil, pas seulement dans le journal."
+
 systems:
   z2:
     name: "Aérobie Z2"
     intent: "Récup active, base, préférence athlète (Z2 > off) — équivalent low-intensity continu (hors HIIT)"
     markers: "parole possible, RPE 3–5"
+    anchor: "profil aerobic_anchors : z2_hr_ceiling_bpm + run_z2_pace (prioritaires sur le RPE quand renseignés)"
     when: "toute l’année, surtout Accumulation / TRANS"
     laursen_note: "Complément obligatoire du HIIT ; pas un format HIIT"
     dose_cap:
@@ -34,6 +56,7 @@ systems:
     name: "Tempo / seuil"
     intent: "Capacité continuum aéro-anaérobie sans glycolyse max (proche seuil / mild HIIT)"
     markers: "RPE 6–7, durées contrôlées"
+    anchor: "profil aerobic_anchors : run_threshold_pace / row_2k_split (à relever en séance de mesure)"
     when: "fin Accumulation / début Transmutation, rare"
     laursen_note: "Souvent short intervals submax / récup active → cible type 1–2"
     dose_cap:

@@ -30,7 +30,7 @@ alwaysApply: false
 - RPE → repère charge/allure si possible.
 - Cibles **chiffrées** (reps, RPE, durée, repos) ; échauffements **en entier** ; glossaire si acronymes.
 - Interdit visible : chemins `knowledge/` / `athletes/`, champs profile, ids `warmup_*` / patterns seuls, codes meso bruts sans nom lisible.
-- Métadonnées coach : `<!-- pattern: … -->` · `<!-- warmup: … -->` uniquement.
+- Métadonnées coach : `<!-- pattern: … -->` · `<!-- warmup: … -->` · en tête de semaine `<!-- meso: … -->`, `<!-- dose: … -->`, `<!-- dose-note: … -->`.
 
 ## Ops pack (semaine / meso)
 
@@ -43,8 +43,9 @@ alwaysApply: false
 7. **Gym** — `knowledge/gym-ladder.md` en ACC-GYM
 8. **Options** — bornées : choix limité, même intention, mêmes repères
 9. **Volumes** — % / sets sur `prs_current_kg` + volumes profile
-10. **Feedback** — Notes (`###` par jour) : Fait · Charges / score · Note ; RPE par mouvement inline dans Charges ; fatigue / douleur dans Note ; **mercredi team** : RPE séance explicite (seuil J+1) ; suite en « Suite prévue : … »
-11. **Lint** — `npm run lint:prog` obligatoire après write-week / generate
+10. **Doses déclarées** — en tête de semaine, `<!-- meso: CODE -->` + `<!-- dose: … -->` (champs : `force_lower_sets`, `force_upper_sets`, `force_sessions`, `oly_lifts`, `oly_sessions`, `gym_min`, `gym_sessions`, `z2_min`, `hard_min`, `hard_sessions`, `team_sessions`, `threshold_min`, `threshold_sessions`, `alactic_sec`, `alactic_sessions`, `exempt`). Comptent : séries à RPE ≥ 6–7 des patterns force, gestes de qualité barre (singles / doubles / tirages, hors cycling), minutes de skill hors warm-up, minutes Z2 écrites, minutes d'effort dur **programmé** (le team compte en `team_sessions`). Exemption justifiée → `exempt=…` + `<!-- dose-note: … -->`. Vérifié par `scripts/audit-prog.py`.
+11. **Feedback** — Notes (`###` par jour) : Fait · Charges / score · Note ; RPE par mouvement inline dans Charges ; fatigue / douleur dans Note ; **mercredi team** : RPE séance explicite (seuil J+1) ; suite en « Suite prévue : … » ; puis entrée de journal (`athletes/<id>/journal/`)
+12. **Lint** — `npm run lint:prog` obligatoire après write-week / generate (forme + audit des doses)
 
 ## Pédagogie & cohérence
 

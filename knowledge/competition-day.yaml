@@ -1,0 +1,195 @@
+# Trame jour de compétition — échauffement, ravitaillement, récupération, mental
+# Sources : Bompa (peaking / expression) · Encyclopédie mentale (routines, focus)
+#           Bible PP (échauffement, ravitaillement) · Laursen & Buchheit (re-warm, priming)
+# Usage agent : caler les journées REAL (weekend de compétition) et la semaine qui les précède.
+#               Ce fichier ne prescrit pas d'entraînement — il structure la journée.
+
+version: 1
+status: validated
+updated: 2026-09-11
+scope: "formats multi-WOD sur 1–2 jours (individuel ou team)"
+
+principe: >
+  Sur un format à 6–10 WODs répartis sur deux jours, la performance se perd rarement
+  sur la préparation physique : elle se perd sur les échauffements bâclés, le
+  refroidissement entre épreuves, le ravitaillement improvisé et la dérive
+  d'attention. La journée se prépare comme une séance : écrite à l'avance.
+
+# ─────────────────────────────────────────────────────────────
+# 1. Trame de journée
+# ─────────────────────────────────────────────────────────────
+
+journee:
+  reveil:
+    quand: "3 h avant le heat 1 (2 h 30 minimum)"
+    contenu:
+      - "Repas principal 2 h 30–3 h avant : glucides digestes + protéines modérées, gras bas"
+      - "Hydratation : 500 ml eau, sel si chaleur ou sudation forte"
+      - "Mobilité douce 5–10’ — pas d'étirement long passif"
+  arrivee:
+    quand: "check-in + 0 ; viser 45–60’ avant le heat 1"
+    contenu:
+      - "Repérage : zone d'échauffement, matériel dispo, plancher, hauteur rig, rameurs / bikes"
+      - "Lecture du WOD 1 à voix haute avec le ou les partenaires : standards, transitions, points de bascule"
+      - "Poser le sac de ravitaillement à un point fixe (le retrouver fatigué doit être gratuit)"
+  entre_wods:
+    voir: "sections 2 et 4"
+  fin_de_journee:
+    contenu:
+      - "10–15’ Z2 très easy (bike ou marche) + mobilité — pas d'étirement agressif"
+      - "Repas complet dans l'heure : glucides + protéines"
+      - "Noter le débrief à chaud (voir section 5) — la mémoire de la veille est déjà fausse"
+      - "Sommeil prioritaire ; le J2 se joue sur la nuit"
+
+# ─────────────────────────────────────────────────────────────
+# 2. Échauffement par famille de WOD
+# ─────────────────────────────────────────────────────────────
+# Règle : finir l'échauffement 8–12 min avant le heat, pas 25 min avant.
+# Toujours : 3–5’ ergo easy + mobilité ciblée, puis montée spécifique au format.
+
+echauffement_par_famille:
+  lourd_barre:
+    exemples: "1RM / heavy complex / lourd sur barre"
+    duree_min: "15-20"
+    montee:
+      - "Ergo easy 4’ + mobilité hanches (mobilité lower habituelle)"
+      - "Barre à vide → paliers de 3–4 sets jusqu'à ~90 % de l'ouverture"
+      - "1 single à l'ouverture, pas plus — la barre chaude ne se garde pas 20 min"
+    note: "Pas de squat snatch / clean lourd hors compétition ; en compétition, exécuter le standard imposé sans improviser une variante"
+  gym_haut_du_corps:
+    exemples: "muscle-ups, HSPU, HSW, tractions"
+    duree_min: "12-15"
+    montee:
+      - "Ergo easy 3’ + scap / hollow / arch 2’"
+      - "Drills du cran actuel puis 2–3 reps très submax du mouvement du WOD"
+      - "1 mini-série au rythme prévu (3–5 reps), pas plus"
+    note: "Ne jamais découvrir le rig ou la hauteur des anneaux au heat"
+  metcon_mixte:
+    exemples: "couplets, chippers, intervalles"
+    duree_min: "12-15"
+    montee:
+      - "Ergo easy 4–5’ progressif"
+      - "Répétition des mouvements du WOD à charge légère, 2 tours"
+      - "1 pic court à l'intensité de course (20–30 s) puis repos"
+  ergo_long_ou_endurance:
+    exemples: "row/bike/ski long, run, sortie"
+    duree_min: "10-12"
+    montee:
+      - "8’ progressif jusqu'à l'allure cible"
+      - "2 × 20 s à l'allure cible, repos 1’"
+  sprint_ou_alactique:
+    exemples: "sprint ergo, max effort court, finale courte"
+    duree_min: "12-15"
+    montee:
+      - "Ergo easy 5’"
+      - "3 × 10 s en montée de vitesse, repos complet 1–2’"
+      - "Dernier effort 5–8 s à intensité de course, 5’ avant le heat"
+
+# ─────────────────────────────────────────────────────────────
+# 3. Ravitaillement
+# ─────────────────────────────────────────────────────────────
+
+ravitaillement:
+  regle: "Rien de nouveau le jour J — tout ce qui est mangé a déjà été testé à l'entraînement"
+  intervalle_court:
+    quand: "moins de 90 min entre deux WODs"
+    contenu:
+      - "Glucides liquides ou faciles (boisson glucidique, compote, banane)"
+      - "150–300 ml d'eau par intervalle, sel si chaleur"
+      - "Pas de gras ni de fibres"
+  intervalle_long:
+    quand: "plus de 2 h entre deux WODs"
+    contenu:
+      - "Petit repas : glucides + protéines légères (riz / pâtes / sandwich blanc + jambon ou blanc de poulet)"
+      - "Terminer 90 min avant le heat suivant"
+  cafeine:
+    note: "Si utilisée à l'entraînement : 1 prise avant le premier WOD de la journée, éventuellement une seconde avant la finale — pas à chaque heat"
+
+# ─────────────────────────────────────────────────────────────
+# 4. Récupération entre épreuves
+# ─────────────────────────────────────────────────────────────
+
+recuperation_inter_wod:
+  immediat:
+    quand: "0–10 min après le WOD"
+    contenu:
+      - "3–5’ de retour au calme actif (marche, bike très easy) — ne pas s'asseoir tout de suite"
+      - "Boire, se changer si trempé"
+  intermediaire:
+    quand: "10 min → 30 min avant le heat suivant"
+    contenu:
+      - "Position allongée jambes surélevées 10’ si possible, ou assis au calme"
+      - "Mobilité douce sur les zones sollicitées ; pas de massage agressif avant un effort"
+      - "Grip : ouvrir / relâcher les mains, pas d'étirement forcé des avant-bras"
+  re_warm:
+    regle: "Après plus de 45 min d'attente, tout heat se ré-échauffe — 5–8’ minimum"
+    contenu:
+      - "Ergo easy 3–4’ + montée courte spécifique au format suivant"
+  chaleur_ou_froid:
+    - "Chaleur : ombre, glace nuque/mains, boisson fraîche salée"
+    - "Froid : rester couvert entre les heats, ré-échauffement plus long (8–10’)"
+
+# ─────────────────────────────────────────────────────────────
+# 5. Mental et team
+# ─────────────────────────────────────────────────────────────
+
+mental:
+  source: "Encyclopédie de la préparation mentale — routines, focus, acceptation de l'incertitude"
+  avant_heat:
+    - "Routine identique à chaque WOD (même ordre, mêmes gestes, même minutage)"
+    - "Un seul mot-clé de focus par WOD (exemple : « respire », « cycle », « unbroken jusqu'à 12 »)"
+    - "Plan de course dit à voix haute : découpage, cadence, points de casse prévus"
+  pendant:
+    - "Se ramener au plan quand la comparaison au voisin s'installe"
+    - "Le plan se révise entre les WODs, pas pendant"
+  apres:
+    - "Deux minutes de débrief factuel maximum, puis on referme — le WOD suivant est le seul qui compte"
+    - "Pas de calcul de classement entre les épreuves si ça parasite"
+
+team:
+  avant:
+    - "Répartition des reps décidée et dite avant le heat, avec le plan B si l'un casse"
+    - "Standards de synchronisation vérifiés à l'échauffement (cadence commune, signal de bascule)"
+    - "Un seul appelant par WOD (qui compte, qui annonce les switchs)"
+  pendant:
+    - "Consignes courtes et positives ; annoncer la bascule avant d'être en échec, pas après"
+  apres:
+    - "Débrief team factuel : ce qui a coûté du temps aux transitions"
+
+# ─────────────────────────────────────────────────────────────
+# 6. Débrief — à remplir le soir même
+# ─────────────────────────────────────────────────────────────
+# Alimente knowledge/competition-demands.yaml et le journal athlète.
+
+debrief:
+  quand: "le soir de chaque journée, à chaud"
+  par_wod:
+    - format          # AMRAP / for time / EMOM / chipper / max lift, durée
+    - mouvements      # liste avec charges et standards
+    - resultat        # temps, reps, charge
+    - placement
+    - rpe             # /10
+    - facteur_limitant  # voir liste ci-dessous
+    - note
+  facteurs_limitants:
+    - grip
+    - filiere_aerobie
+    - filiere_glycolytique
+    - skill_gym
+    - force_max
+    - cycling_barre
+    - pacing
+    - transitions
+    - coordination_team
+    - materiel_ou_standard_inhabituel
+    - mental
+  par_journee:
+    - fraicheur_entree      # 1–5
+    - fraicheur_fin         # 1–5
+    - sommeil_nuit_precedente  # 1–5
+    - ravitaillement_ok     # oui / non + quoi corriger
+    - rewarm_respecte       # oui / non
+  synthese:
+    - ce_qui_a_porte        # quelles qualités du bloc se sont exprimées
+    - trous_identifies      # → competition-demands.yaml
+    - a_changer_prochaine_fois

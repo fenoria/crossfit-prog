@@ -1,5 +1,9 @@
 # Sxx — [dates lisibles, ex. 3–9 août 2026]
 
+<!-- meso: CODE -->
+<!-- dose: force_lower_sets=0 force_upper_sets=0 force_sessions=0 oly_lifts=0 oly_sessions=0 gym_min=0 gym_sessions=0 z2_min=0 hard_min=0 hard_sessions=0 team_sessions=0 -->
+<!-- dose-note: (facultatif) justifier une exemption — exempt=z2,gym dans la balise dose -->
+
 **Meso** : [nom] · **Macrocycle N — [nom]** · **Saison YYYY**
 
 ## Objectif de la semaine
@@ -192,3 +196,6 @@ Remplir après chaque séance (ou coller le feedback en chat — mise à jour en
 
 **Synthèse semaine** :  
 **Suite prévue** : …
+
+<!-- Après la semaine : distiller dans athletes/<id>/journal/Sxx-AAAA-MM-JJ.yaml (schéma knowledge/journal-schema.yaml). -->
+

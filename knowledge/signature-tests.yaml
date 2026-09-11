@@ -1,0 +1,70 @@
+# Tests signature — trois protocoles figés, rejoués à chaque macrocycle
+# Sources : Bompa (mesure périodique) · Issurin (contrôle des résidus entre blocs)
+#           Low (progression gym mesurée) · Laursen & Buchheit (repère de filière)
+
+version: 1
+status: validated
+updated: 2026-09-11
+
+pourquoi: >
+  Les charges de barre se suivent naturellement (elles sont écrites chaque semaine).
+  Les trois qualités qui décident réellement d'une performance en compétition —
+  répétabilité gym sous fatigue, capacité à répéter des séries de force lourdes,
+  et seuil aérobie — n'avaient aucune mesure répétée à l'identique. Sans protocole
+  figé, « ça progresse » reste une impression.
+
+regles:
+  - "Protocole strictement identique d'une fois sur l'autre : même format, même charge, même ergo, même ordre, même créneau si possible."
+  - "Un test n'est pas une séance de développement : on ne cherche pas le record, on cherche la comparaison."
+  - "Jamais en semaine de pic, jamais à moins de deux semaines d'une compétition."
+  - "Les trois tests sont logés dans des séances déjà prévues — ils ne coûtent pas de volume supplémentaire."
+  - "Résultat → journal de la semaine, et profil si le repère durable bouge (crans gym, charges, ancres aérobies)."
+  - "Si le protocole doit changer (matériel, blessure), la série repart de zéro et on le note ici."
+
+frequence: "1 fois par macrocycle, dans la semaine de mesure du bloc concerné"
+
+tests:
+  T1_densite_muscle_up:
+    nom: "Densité muscle-up barre en couplet"
+    qualite: "répétabilité gym sous fatigue — la faiblesse déclarée n°1"
+    protocole: "EMOM 10 min · 4 muscle-ups barre + 10 cal rameur ou vélo · s'arrêter dès qu'une minute casse"
+    score:
+      - minutes_propres
+      - repos_moyen_par_minute_s
+      - casse_ou_singles  # oui / non
+    conditions: "jour gym, pas après un effort dur la veille"
+    reference_actuelle: "S04 (2026-08-29) : EMOM 14 min tenu à 4 + 10 cal, ~15 s de repos par minute — protocole voisin, pas identique"
+    prochain_releve: "S15 mardi (2026-11-10)"
+
+  T2_squat_repetable:
+    nom: "Squat répétable"
+    qualite: "force lower utilisable en série, et suivi du plafond adducteur"
+    protocole: "Back squat 5×3 @ 115 kg · repos 2 min chronométrés · même barre, même profondeur"
+    score:
+      - series_tenues_rpe_max_8
+      - rpe_derniere_serie
+      - tension_adducteur  # aucune / légère / nette — alimente reathletisation.md
+      - repos_tenu  # oui / non
+    conditions: "premier jour de la semaine, jambes fraîches"
+    reference_actuelle: "aucune — première exécution en S10"
+    prochain_releve: "S10 lundi (2026-10-05)"
+
+  T3_seuil_5x3:
+    nom: "Seuil 5 × 3 minutes"
+    qualite: "capacité au seuil — le repère aérobie qui manque au dossier"
+    protocole: "5 × 3 min · repos 1 min easy · même ergo à chaque fois (rameur par défaut) · allure la plus régulière possible"
+    score:
+      - split_ou_allure_moyenne
+      - fc_moyenne_3e_intervalle
+      - derive_1_vers_5_pct
+    conditions: "séance aérobie, pas le lendemain d'un effort dur"
+    reference_actuelle: "aucune — première exécution en S10"
+    prochain_releve: "S10 samedi (2026-10-10)"
+
+interpretation:
+  - "Progrès réel = même score avec moins de repos, ou meilleur score à repos identique."
+  - "T1 en baisse alors que la force monte = le bloc a sacrifié la répétabilité gym : corriger la dose de maintien."
+  - "T3 en baisse = la base aérobie s'érode (souvent Zone 2 sous le MEV) : l'audit doit déjà l'avoir signalé."
+  - "T2 stable avec tension adducteur en baisse = la piste de réathlétisation fonctionne, le plafond peut s'examiner."
+
+historique: "athletes/<id>/journal/ — une ligne par exécution dans la semaine concernée"

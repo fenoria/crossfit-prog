@@ -1,19 +1,20 @@
-# Critères de sortie / gates de meso
-# Scope actuel : chemin Macro 1 compressé vers Fire Contest (B)
-#   benchmarks → ACC-GYM → REAL (Fire) → TRANS → Macro 2 (ACC-STR…)
-# Macro 2+ : ACC-STR → TRA-POW → TRA-MIX → Macro 3 (TRA team → REAL S7mbioz)
+# Critères de sortie / gates de meso — FICHIER GÉNÉRIQUE
+# Les gates décrivent des transitions entre types de meso, pas un calendrier.
+# Le chemin réellement suivi, les dates et les numéros de semaine vivent dans
+# knowledge/instances/<saison>.yaml. Aucune date ni « SXX » ici.
 # Ne pas enchaîner au calendrier seul : vérifier gates + fatigue (+ douleur seulement si signalée).
 # Code canonique REAL (label « REAL mini » / pic B = même code, durée courte).
 
-version: 1
+version: 2
 status: validated
 updated: 2026-09-11
-scope: macrocycle_1_path_fire_b
+scope: generic
+instance: knowledge/instances/saison-2026.yaml  # chemin et calendrier de la saison en cours
 sources:
   - "Israetel — progresser sous MRV, deload"
   - "Issurin — intention de bloc atteinte avant pivot"
-  - "Bompa — REAL ancré sur pics B/C"
-  - "Profil — gym volume prioritaire Macro 1 Build ; Fire B puis S7mbioz C"
+  - "Bompa — REAL ancré sur les pics de la saison"
+  - "Profil athlète actif — priorités et faiblesses (déterminent l'ordre des blocs, voir instance)"
 
 global_blockers:
   - "douleur lower florissante signalée (≥ 6) → ne pas avancer vers ACC-STR lourd ; adapter"
@@ -32,10 +33,10 @@ gates:
       - "ergo court smoke test (benchmarks only — pas un WOD HI)"
     on_fail: "Prolonger benchmarks 2–3 jours ou retester le lift manquant ; ne pas inventer des %"
 
-  ACC_GYM_to_REAL_Fire:
+  ACC_GYM_to_REAL:
     from: ACC-GYM
     to: REAL
-    label: "REAL Fire Contest (pic B)"
+    label: "entrée en réalisation depuis un bloc gym"
     required:
       - "deload ACC-GYM fait (−30 % volume skill) ou semaine pic digérée / allègement pré-Fire"
       - "au moins 2 skills gym ont progressé d’un cran ladder OU densité EMOM stable vs baseline"
@@ -47,25 +48,25 @@ gates:
       - "HSW ou HSPU : volume/distance en hausse vs S01"
     on_fail: "1 semaine ACC-GYM supplémentaire (volume) ou allonger le deload ; ne pas forcer un taper A"
 
-  REAL_Fire_to_TRANS:
+  REAL_to_TRANS:
     from: REAL
     to: TRANS
-    label: "post-Fire Contest"
+    label: "sortie de compétition"
     required:
-      - "weekend Fire Contest fait ou skip documenté"
-      - "notes peaking (ce qui a marché) dans Notes meso / semaine (`prog/`)"
+      - "weekend de compétition fait ou skip documenté"
+      - "débrief par WOD rempli (competition-day.yaml §6) et notes peaking dans `prog/`"
+      - "exigences révélées reportées dans competition-demands.yaml"
     on_fail: "Documenter le skip ; enchaîner TRANS quand même si fatigue haute"
 
-  TRANS_to_Macro2_ACC_STR:
+  TRANS_to_ACC_STR:
     from: TRANS
     to: ACC-STR
     required:
-      - "fatigue subjective redescendue vs semaine Fire"
-      - "intention Macro 2 confirmée (force → puissance barre → mixed → Macro 3 S7mbioz)"
+      - "fatigue subjective redescendue vs semaine de compétition"
+      - "intention du macro suivant confirmée"
       - "pas de douleur lower florissante signalée bloquant le squat/hinge"
     on_fail: "Prolonger TRANS 3–7 jours (Z2 / GPP) avant ACC-STR"
 
-  # Gates Macro 2 (réutilisées post-Fire)
   ACC_STR_to_TRA_POW:
     from: ACC-STR
     to: TRA-POW
@@ -78,8 +79,8 @@ gates:
       « Deload force fait » peut être satisfait par la PREMIÈRE SEMAINE du bloc puissance
       quand elle porte la décharge (volume force −40/50 %, RPE ≤ 6,5, pas de hinge lourd)
       — deload Israetel valide + pivot d'intention Issurin. Dans ce cas la gate se vérifie
-      à la sortie de cette semaine, pas avant (instance 2026 : S11). Une semaine tronquée
-      + vacances en milieu de bloc compte comme décharge intermédiaire.
+      à la sortie de cette semaine, pas avant. Une semaine tronquée par des vacances
+      en milieu de bloc compte comme décharge intermédiaire.
     on_fail: "Maintenir ACC-STR léger ou mini ACC-GYM refresh 1 sem."
 
   TRA_POW_to_TRA_MIX:
@@ -94,9 +95,9 @@ gates:
       - "kipping HSPU amorcé en ACC-STR (drills → EMOM court → volume) si cran 3 strict stable — sinon rester strict et le noter"
     on_fail: "1 semaine technique / power supplémentaire"
 
-  TRA_MIX_to_Macro3:
+  TRA_MIX_to_specifique:
     from: TRA-MIX
-    to: Macro3_TRA_team_or_REAL
+    to: TRA-MIX_team
     required:
       - "2–3 séances mixed qualité digérées (RPE noté) — dont 1 format chronométré et 1 simulation à deux blocs"
       - "repères gym relevés en fin de bloc (densité BMU, série RMU, kipping HSPU, HSW avec pivots)"
@@ -104,23 +105,26 @@ gates:
       - "fraîcheur relative : pas de semaine surcharge empilée juste avant Macro 3 (volume ↓ en fin de dernière semaine)"
     on_fail: "Semaine volume ↓ / Z2 puis retester mixed"
 
-  Macro3_to_REAL_S7mbioz:
+  TRA_MIX_team_to_REAL:
     from: TRA-MIX_team
     to: REAL
-    label: "REAL S7mbioz (pic C)"
+    label: "entrée en réalisation depuis un bloc spécifique équipe"
     required:
       - "au moins 2 séances team / formats partagés digérées (ou équivalent box)"
-      - "fraîcheur relative avant le weekend 12–13 déc."
+      - "au moins 2 séances avec le ou les partenaires réels de la compétition"
+      - "trous de competition-demands.yaml traités ou explicitement assumés"
+      - "fraîcheur relative avant le weekend de compétition"
       - "pas de douleur florissante signalée"
     on_fail: "Allonger spécificité légère ou avancer le taper (volume ↓)"
 
 retest_policy:
   after_each_macro: "re-benchmark force clé + proxies gym (pas tout re-maxer)"
+  signature_tests: "les trois protocoles figés de knowledge/signature-tests.yaml sont rejoués une fois par macro"
   measured_in_prog: >
     Pas de semaine de tests dédiée quand le calendrier est serré : la semaine de pic
     du bloc force sert de point de mesure (séries lourdes notées), le bloc puissance
     mesure les charges barre, la dernière semaine mixed relève les proxies gym.
-    Instance 2026 : S10 (force) · S12 (puissance) · S15 (gym).
+    Semaines concrètes : voir points_de_mesure dans l'instance de saison.
   mid_meso_if: "doute sur charges ou plateau > 2 semaines"
   never: "retester sur ego pendant deload"
-  after_Fire: "notes peaking + éventuel recalibrage charges légères avant ACC-STR"
+  after_competition: "débrief par WOD + notes peaking + éventuel recalibrage de charges avant le bloc suivant"

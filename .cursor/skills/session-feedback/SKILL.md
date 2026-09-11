@@ -13,6 +13,8 @@ Règles : **`.cursor/rules/prog-writing.mdc`** (immutabilité, Notes) · **`.cur
 4. Team WOD RPE ≥ seuil profil (défaut 8) → −volume J+1.
 5. Adapter la suite sans casser l’intention du meso ; écrire bloc jour + **Synthèse semaine** / **Suite prévue**.
 6. Semaine commencée/passée : Notes OK, contenu prescrit figé — adapter uniquement la suite.
-7. Récurrent/durable → profil (+ rule si process).
-8. Fin de meso : vérifier `knowledge/meso-gates.yaml` avant meso suivant.
-9. Confirmer brièvement ce qui change et pourquoi.
+7. **Journal** : reporter la semaine dans `athletes/<id>/journal/SXX-YYYY-MM-DD.yaml` (schéma `knowledge/journal-schema.yaml`) — jours, `realise` (doses effectives), `flags`, `ecarts_prescrit_vs_realise`, `gate`, synthèse. Chiffre absent du feedback → `null` + note, jamais d’estimation inventée.
+8. **Écart prescrit / réalisé** : si le même mouvement sort deux semaines de suite dans le même sens (ex. barre systématiquement au-dessus du prescrit), la prescription est fausse — ré-ancrer les fourchettes dans le profil (`volumes.oly.load_anchoring`, `prs_current_kg`) et le signaler.
+9. Récurrent/durable → profil (+ rule si process).
+10. Fin de meso : vérifier `knowledge/meso-gates.yaml` avant meso suivant.
+11. `npm run lint:prog` (inclut l’audit doses / boucle de feedback) puis confirmer brièvement ce qui change et pourquoi.

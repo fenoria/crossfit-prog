@@ -1,0 +1,56 @@
+# Schéma du journal athlète — une entrée par semaine
+# Entrées : athletes/<id>/journal/SXX-YYYY-MM-DD.yaml (instance)
+# Ce fichier : le contrat (méthodo / ops pack)
+#
+# Pourquoi : le profil doit rester l'ÉTAT COURANT (charges, volumes, crans, planning).
+# L'historique semaine par semaine vit ici. Sans cette séparation, le profil grossit,
+# l'historique s'arrête en silence (cas S05, non distillée) et les écarts entre
+# prescrit et réalisé se détectent des semaines trop tard (cf. arbitrages.md §15).
+
+version: 1
+status: validated
+updated: 2026-09-11
+
+regles:
+  - "Une entrée par semaine, créée dès que la semaine est écrite, complétée au fil des feedbacks."
+  - "Source : blocs Notes / feedback de la semaine dans prog/ (SoT du réalisé) — le journal les structure, il ne les remplace pas."
+  - "Ne jamais inventer un chiffre absent du feedback : mettre null et documenter dans la clé *_note."
+  - "Un fait durable (plafond de charge, contrainte planning, cran gym, gêne récurrente) remonte AUSSI au profil."
+  - "Le journal est une archive : on n'y réécrit pas le passé, on ajoute."
+
+champs:
+  semaine: "SXX"
+  dates: "YYYY-MM-DD → YYYY-MM-DD"
+  macro: "dossier macrocycle"
+  meso: "code meso (voir methodology.yaml meso_types)"
+  phase_micro: "volume | surcharge | pic | deload | test | expression | transition"
+  prog: "chemin de la semaine dans prog/"
+  statut: "planifiee | en_cours | close"
+
+  jours: >
+    Clé par jour (lundi…dimanche). Sous-clés : fait (oui | partiel | non | off),
+    charges (texte libre, RPE inline), rpe (séance, /10, surtout team), note.
+
+  realise: >
+    Doses réellement effectuées sur la semaine — matière première de l'audit.
+    Champs : force_lower_sets, force_upper_sets, oly_lifts, gym_min, z2_min, hard_min.
+    null autorisé quand le feedback ne permet pas de trancher (+ clé *_note).
+
+  team_wod_rpe: "RPE de la séance team (déclenche la règle J+1 au-delà du seuil profil)"
+
+  flags: "liste courte de faits saillants (douleur, ampoules, séance déplacée, volume hors prog)"
+
+  ecarts_prescrit_vs_realise: >
+    Liste. Par item : mouvement, prescrit, realise, sens (au_dessus | en_dessous | autre),
+    action (rien | re_ancrer | surveiller). Deux semaines de suite dans le même sens
+    sur le même mouvement = la prescription est fausse, pas l'athlète : on ré-ancre.
+
+  gate: "état de la gate de meso si la semaine est en fin de bloc"
+  synthese: "2–4 phrases — reprise de la Synthèse semaine de prog/"
+  suite: "ce qui a été décidé pour la semaine suivante"
+
+audit:
+  retrospectif_partiel: >
+    Les semaines antérieures à la mise en place des balises dose (S01–S07) ont un
+    bloc realise incomplet : les volumes n'ont pas été recalculés a posteriori.
+    L'audit machine ne les traite pas comme des violations.

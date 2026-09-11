@@ -1,0 +1,97 @@
+# Affûtage — protocole chiffré des 14 derniers jours
+# Sources : Bompa (peaking, taper) · Issurin (résidus courts avant réalisation)
+#           Israetel (couper le volume, garder l'intensité) · Encyclopédie mentale (routines)
+
+version: 1
+status: validated
+updated: 2026-09-11
+
+pourquoi: >
+  L'affûtage était décrit qualitativement — « volume ↓, fraîcheur ↑ ». Un affûtage sans
+  chiffres ne se vérifie pas et ne s'apprend pas : impossible de savoir, après coup, si
+  la fraîcheur du jour J venait du plan ou du hasard. Le taper est la partie du plan qui
+  a le plus d'effet sur la performance et le moins de coût.
+
+principe:
+  - "Le volume descend fortement, l'intensité reste — c'est ce qui préserve la vitesse et la confiance."
+  - "La fréquence des séances ne descend presque pas : on garde le rythme, on raccourcit."
+  - "Aucun mouvement nouveau, aucune charge inconnue dans les 10 derniers jours."
+  - "Ce qui n'est pas acquis à J-14 ne le sera pas : le taper ne rattrape rien, il révèle."
+
+# ─────────────────────────────────────────────────────────────
+# Trame par jour
+# ─────────────────────────────────────────────────────────────
+
+trame:
+  J-14_a_J-8:
+    label: "Dernière semaine de charge utile"
+    volume: "70 % du volume de la semaine de pic du bloc"
+    intensite: "maintenue"
+    contenu:
+      - "Dernier effort dur autorisé : J-7"
+      - "Dernier stimulus de force à volume réduit (2 à 3 séries par mouvement)"
+      - "Dernier format complet type compétition"
+  J-7_a_J-4:
+    label: "Coupe du volume"
+    volume: "40 à 50 % de la semaine de pic"
+    intensite: "maintenue sur des doses courtes"
+    contenu:
+      - "Force : 2 séries par mouvement, RPE ≤ 7, charges habituelles"
+      - "Barre : singles techniques dans la fourchette confortable"
+      - "Gym : format du cran, volume divisé par deux, jamais à la casse"
+      - "Zone 2 conservée intégralement — c'est le volume le moins coûteux"
+  J-3:
+    label: "Ouverture"
+    volume: "30 % de la semaine de pic"
+    intensite: "quelques efforts courts à intensité de course"
+    contenu:
+      - "Primer : 2 rounds courts des mouvements attendus, RPE ≤ 7"
+      - "Pas de nouveau format, pas de score à battre"
+  J-2:
+    label: "Réveil"
+    volume: "20 %"
+    contenu:
+      - "Ouverture très courte : 10 à 15 min, quelques gestes rapides à charge légère"
+      - "Mobilité, sommeil, préparation logistique du sac et des trajets"
+  J-1:
+    label: "Veille"
+    volume: "Zone 2 easy 20 à 30 min + mobilité"
+    contenu:
+      - "Aucune charge, aucun effort dur, aucune découverte de mouvement"
+      - "Lecture de la trame de journée (competition-day.yaml) et du plan de course"
+  J0:
+    label: "Compétition"
+    voir: knowledge/competition-day.yaml
+
+# ─────────────────────────────────────────────────────────────
+# Cas particuliers
+# ─────────────────────────────────────────────────────────────
+
+team_box_dans_la_fenetre:
+  regle: >
+    Un WOD team de box tombant entre J-4 et J-2 est soit remplacé par de la Zone 2,
+    soit fait à RPE ≤ 6 sans chercher le score. Ce n'est pas une consigne de confort :
+    c'est le principal facteur de fatigue résiduelle non planifiée.
+  precedent: "S06 (semaine Fire) : team fait le mercredi à J-3 malgré la consigne Zone 2, par contrainte de créneau — à trancher à l'avance la prochaine fois."
+
+skills_sensibles:
+  regle: "Un mouvement à risque (kipping en appui renversé si l'épaule est susceptible) se travaille jusqu'à J-7 puis se laisse tranquille — mais il doit avoir été ouvert dans la semaine, pas découvert le jour J."
+  precedent: "S06 : pompes en appui renversé jamais ouvertes de la semaine avant la compétition."
+
+charges_pendant_le_taper:
+  regle: >
+    Prescrire les charges habituelles, pas des charges basses « de sécurité ».
+    Un athlète qui fait spontanément ses charges de travail rendra la prescription
+    fausse (cf. arbitrages.md §15) et le taper illisible.
+
+controle:
+  a_verifier_a_J-1:
+    - "Sommeil des trois dernières nuits"
+    - "Fraîcheur déclarée (1–5)"
+    - "Aucune douleur signalée"
+    - "Sac, trajets, check-in connus"
+  signal_d_alerte: "Fraîcheur ≤ 3/5 à J-1 → couper tout ce qui reste, y compris l'ouverture du J-1."
+
+apres:
+  - "Noter dans le journal ce qui a été tenu et ce qui a sauté."
+  - "Un taper réussi se reconnaît à la fraîcheur du J1 et à la tenue du J2, pas au score d'un WOD."

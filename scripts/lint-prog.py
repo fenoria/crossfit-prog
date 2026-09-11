@@ -3,10 +3,12 @@
 
 from __future__ import annotations
 
+import importlib.util
 import json
 import re
 import sys
 import xml.etree.ElementTree as ET
+from datetime import date, timedelta
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -27,7 +29,10 @@ PATTERN_IDS = {
     "conditioning_specific",
     "team_wod",
     "benchmark_session",
+    "competition_day",
 }
+# Journée de compétition : échauffement par heat (chambre d'appel), pas de bloc unique.
+NO_WARMUP_PATTERNS = {"competition_day"}
 
 DAY_BLOCKS = re.compile(
     r"^## (Lundi|Mardi|Mercredi|Jeudi|Vendredi|Samedi|Dimanche)\b.*?(?=^## |\Z)",
@@ -103,8 +108,21 @@ def load_meso_codes() -> set[str]:
     return codes
 
 
+WEEK_DATE = re.compile(r"^S(\d+)-(\d{4})-(\d{2})-(\d{2})\.md$")
+
+
 def week_files() -> list[Path]:
     return sorted(p for p in PROG.rglob("S*.md") if p.name.startswith("S"))
+
+
+def is_past_week(path: Path) -> bool:
+    """Semaine terminée : les recommandations de forme ne sont plus actionnables
+    (contenu prescrit figé — voir règle d'immutabilité)."""
+    m = WEEK_DATE.match(path.name)
+    if not m:
+        return False
+    start = date(int(m.group(2)), int(m.group(3)), int(m.group(4)))
+    return start + timedelta(days=6) < date.today()
 
 
 def strip_html_comments(text: str) -> str:
@@ -152,6 +170,7 @@ def check_week(
     text = path.read_text(encoding="utf-8")
     rel = path.relative_to(ROOT)
     visible = strip_html_comments(text)
+    past = is_past_week(path)
 
     if "### Fondements" not in text and "## Fondements" not in text:
         errors.append(f"{rel} : section Fondements manquante")
@@ -185,13 +204,16 @@ def check_week(
             if pid not in pattern_ids:
                 errors.append(f"{rel} : {day} pattern inconnu « {pid} »")
 
+        if set(patterns) & NO_WARMUP_PATTERNS:
+            continue
+
         if day in {"Lundi", "Mardi", "Jeudi", "Vendredi"}:
             if not warmups:
                 errors.append(f"{rel} : {day} sans <!-- warmup: … -->")
             if not has_echauffement:
                 errors.append(f"{rel} : {day} sans **Échauffement** écrit")
 
-        if day in {"Mercredi", "Samedi"} and patterns:
+        if day in {"Mercredi", "Samedi"} and patterns and not past:
             if day == "Samedi" and re.search(r"\bOFF\b", block, re.I):
                 continue
             if not warmups:
@@ -281,6 +303,19 @@ def check_public_svgs(errors: list[str]) -> None:
             )
 
 
+def load_audit():
+    """audit-prog.py (nom avec tiret) : chargement explicite."""
+    path = Path(__file__).resolve().parent / "audit-prog.py"
+    if not path.exists():
+        return None
+    spec = importlib.util.spec_from_file_location("audit_prog", path)
+    if spec is None or spec.loader is None:
+        return None
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
 def main() -> int:
     errors: list[str] = []
     warnings: list[str] = []
@@ -303,6 +338,14 @@ def main() -> int:
         warnings.append("aucune semaine S*.md sous prog/")
     for w in weeks:
         check_week(w, pattern_ids, warmup_ids, errors, warnings)
+
+    audit = load_audit()
+    if audit is None:
+        warnings.append("audit-prog.py introuvable — doses non vérifiées")
+    else:
+        audit_errors, audit_warnings = audit.run_audit()
+        errors.extend(audit_errors)
+        warnings.extend(audit_warnings)
 
     for w in warnings:
         print(f"WARN  {w}")

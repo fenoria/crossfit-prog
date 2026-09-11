@@ -1,8 +1,11 @@
-# Méthodologie CrossFit élite — v1
+# Méthodologie CrossFit élite — v2
 
-**Statut : `validated`**  
+**Statut : `validated`** — v2 revalidée avec l’athlète le 2026-09-11  
 Validée le : 2026-07-27 (athlète : oui sur structure Issurin, GYM d’abord, power Oly, conditioning maintien, microcycles volume→surcharge→pic→deload)  
+Étendue le : 2026-09-11, **revalidée le même jour** — sept chantiers, détail et conflits d’auteurs dans `arbitrages.md` §16 à §19  
 Sources : corpus `books/` (12 ouvrages) · profil athlète actif (`athletes/<id>/profile.yaml`) · arbitrages `knowledge/arbitrages.md`
+
+> **Ce que la v2 change.** La v1 décrivait bien *quoi* faire. Elle ne vérifiait rien, ne mesurait presque rien, ne partait pas de la compétition, et traitait une blessure ancienne comme une contrainte définitive. La v2 ajoute quatre choses : les doses écrites sont **auditées**, les qualités clés sont **mesurées à protocole figé**, la préparation part des **exigences de l’épreuve**, et une contrainte ancienne se **recharge progressivement** au lieu de se contourner indéfiniment. Rien du socle v1 n’est retiré.
 
 ---
 
@@ -14,6 +17,11 @@ Sources : corpus `books/` (12 ouvrages) · profil athlète actif (`athletes/<id>
 4. **Comprendre pour adhérer** — chaque cycle / meso / semaine / séance a un pourquoi explicite.
 5. **Santé > ego** — confiance barre et charges actuelles guident les variantes (power vs squat) ; douleur signalée → adapter.
 6. **Z2 > off** si créneau possible ; vrai repos seulement si fatigue/douleur/deload/taper l’exigent.
+7. **Une dose écrite est une dose vérifiée** — chaque semaine déclare ses volumes, un audit les confronte au profil et aux caps. Une borne qu’on n’ausculte jamais n’est pas une borne, c’est une intention.
+8. **Mesurer ce qu’on prescrit** — trois tests figés rejoués chaque macro, des ancres physiologiques pour le cardio. Sans protocole répété à l’identique, « ça progresse » reste une impression.
+9. **Partir de la demande, pas seulement des qualités** — à l’approche d’un pic, la question n’est plus « qu’est-ce qui est faible » mais « qu’est-ce que l’épreuve exige et que je n’ai jamais fait ».
+10. **Recharger plutôt qu’éviter** — une blessure ancienne se réathlétise par paliers indolores ; sinon l’évitement devient un plafond permanent.
+11. **Une information, une source** — le profil porte l’état courant, le journal l’historique, l’instance de saison le calendrier, `knowledge/` le générique.
 
 **Règle d’or** : si la fatigue monte, on coupe le **volume**, pas l’intention du bloc.
 
@@ -25,8 +33,9 @@ Sources : corpus `books/` (12 ouvrages) · profil athlète actif (`athletes/<id>
 |--------|------------------|
 | Cardio / ergos / WB / burpees forts | Ne pas sur-investir le conditioning ; maintien |
 | Faible volume gym | Meso(s) GYM prioritaires ; densité + renfo (Low) |
-| Charges post-blessure (adducteur 2025) | Benchmarks d’abord ; charges actuelles only ; pas de focus quotidien douleur |
-| Frileux squat snatch/clean lourds | Power / technique / pulls ; exposition profonde rare |
+| Charges post-blessure (adducteur 2025) | Benchmarks d’abord ; charges actuelles only ; pas de focus quotidien douleur — **et** piste de recharge progressive (`reathletisation.md`) avec critère chiffré de relèvement du plafond de squat |
+| Frileux squat snatch/clean lourds | Power / technique / pulls ; exposition profonde rare — manque assumé et écrit dans `competition-demands.yaml` |
+| Gêne d’épaule signalée en poussée | Prehab rotateurs / serratus sur les jours gym ; le volume de kipping ne monte que si les deux dernières séances sont passées sans gêne |
 | 90 min midi · samedi optionnel | Séances condensées ; samedi = volume « luxe » si dispo |
 | Box only | Pas de machines guidées |
 
@@ -77,6 +86,8 @@ Un meso = **3–5 semaines** + deload (Israetel), **une intention dominante** :
 
 On **répète** et **alterne** ces blocs dans l’année selon le calendrier compétitions et les résidus — on ne fait **pas** une seule fois FORCE puis GYM puis HALTÉRO puis SPEC.
 
+> **Générique vs instance.** Les sections 3.3 et 3.4 racontent le raisonnement de la saison en cours ; le calendrier qui fait foi (fenêtres, numéros de semaine, points de mesure, paliers de réathlétisation) est dans `knowledge/instances/saison-2026.yaml`. Les gates, les doses de maintien et les caps n’en contiennent plus.
+
 ### 3.3 Macrocycle 1 en cours (3 août – 20 sept. 2026) — Build → Fire Contest (B)
 
 Contexte : athlète déjà en forme (élite) ; Macro 1 = **Build** pour élever encore le plafond gym, puis **exprimer** sur le pic B. Priorité gym (qualité limitante, validée). Prudence charges / pas PRs pré-blessure (adducteur 2025) — ce n’est pas une phase de convalescence.
@@ -115,6 +126,8 @@ Sans date de comps : on enchaînerait Macro 2 sur le même canevas Issurin en ch
 | TRA-POW | 12 – 25 oct. | S11 = **décharge force + pivot** · S12 chargée |
 | TRA-MIX | 26 oct. – 15 nov. | S13 qualité · S14 densité (simulation samedi) · S15 transfert puis volume ↓ |
 
+**Ajouts du 2026-09-11 dans Macro 2** : deux expositions gym par semaine pendant le bloc force (la marche sur les mains passe au mardi) · bloc de réathlétisation adducteur sur le jour lower, prehab épaule sur les jours gym · relevé aérobie chiffré le samedi 10 octobre · deux des trois tests signature logés en S10, le troisième en S15.
+
 Principes retenus pour l’instance : **la décharge de fin de bloc force est fondue dans la semaine de pivot** (volume force −40/50 %, intention barre) plutôt que posée en semaine isolée ; la semaine retirée à la force va au mixed (résidu court, plus proche du pic C) ; un lift plafonné se surcharge par **tension** (pause) et **densité** (repos réduit), pas par les kilos ; **1 bloc seuil/sem.** dès la 2ᵉ semaine d’accumulation et Z2 en **blocs écrits** (pas de finisher optionnel) pour éviter le détraining aérobie ; kipping en appui renversé **introduit dès Macro 2** (cran 3 strict stable) au lieu d’attendre TRA-MIX.
 
 ### 3.5 Court terme (microcycle)
@@ -130,6 +143,9 @@ Jours : Lun–Ven ≤90 min · Mercredi team si box · Samedi optionnel · Diman
 - Deload dès signes : sommeil, chute perf, RPE excessif chronique, douleur signalée.
 - Intensité : RPE / % sur **benchmarks actuels**, jamais PRs pré-blessure.
 - Progression : d’abord volume/qualité reps, ensuite charge.
+- **Doses déclarées et auditées** : chaque semaine annonce ses volumes (séries force, gestes de barre, minutes de skill, minutes de Zone 2, efforts durs) en tête de fichier. `npm run lint:prog` les confronte au profil, aux doses de maintien du meso et aux caps de la matrice conditioning. Une semaine peut sortir des bornes, à condition que ce soit déclaré et justifié.
+- **Prescrire au niveau réel** : si l’athlète fait spontanément plus lourd que prescrit deux semaines de suite, la prescription est fausse — on ré-ancre les fourchettes, on ne répète pas la consigne.
+- **Une seule source de chiffres** : `profile.volumes`. `volume-landmarks.yaml` ne donne que des ordres de grandeur pour démarrer ou détecter une valeur aberrante.
 
 ---
 
@@ -154,9 +170,16 @@ Jours : Lun–Ven ≤90 min · Mercredi team si box · Samedi optionnel · Diman
 - Maintien Z2 fréquent (préférence athlète).
 - Matrice Z2 / tempo / glycolytique / alactique + caps : `knowledge/conditioning-matrix.yaml` (**pilote** Laursen & Buchheit ; Bible PP en socle FR).
 - HI surtout en TRA/REAL ; team WOD dur compte dans le quota.
+- **Ancres physiologiques** (`profile.aerobic_anchors`) : quand la FC plafond et l’allure de seuil sont relevées, la Zone 2 et les blocs seuil se prescrivent avec ces chiffres. Tant qu’une ancre manque, on prescrit en RPE — repli explicite, pas oubli. En cas de désaccord ancre / ressenti du jour, le ressenti gagne.
+
+### Réathlétisation
+- Une contrainte de plus d’un an ne se traite plus par l’évitement seul : paliers indolores, dose de 5 à 8 min deux fois par semaine, à la place d’un accessoire de même famille.
+- Le plafond de charge ne se relève pas au feeling : critère à trois conditions, +2,5 kg maximum, annulation immédiate si la tension revient (`knowledge/reathletisation.md`).
+- Les garde-fous de séance restent inchangés (pas de squat snatch / clean lourds, protocole douleur on-demand).
 
 ### Mental
 - Actif en pré-comp : routines, focus, acceptation incertitude (Encyclopédie mentale).
+- Routine identique avant chaque heat, un mot-clé de focus par WOD, débrief factuel court puis on referme (`knowledge/competition-day.yaml`).
 
 ---
 
@@ -171,6 +194,16 @@ Jours : Lun–Ven ≤90 min · Mercredi team si box · Samedi optionnel · Diman
 Mettre à jour le profil athlète actif → `prs_current_kg`, `gym_ladder_level`, `volumes.*` (MEV de départ).  
 Gate : `knowledge/meso-gates.yaml` → `benchmarks_to_ACC_GYM`.
 
+### 6bis. Tests signature et ancres (mesure continue)
+
+Une semaine de tests dédiée est un luxe que le calendrier n’offre pas toujours. La mesure se fait donc **dans la prog** :
+
+- **Trois tests figés** (`knowledge/signature-tests.yaml`), rejoués une fois par macrocycle, logés dans des séances déjà prévues : densité muscle-up en couplet, squat répétable (5×3 avec repos chronométré), seuil 5 × 3 min. Même protocole, même matériel, même ordre — sinon la comparaison ne vaut rien.
+- **Ancres aérobies** relevées lors d’une sortie longue déjà programmée : FC plafond de Zone 2, allure de seuil, dérive sur les intervalles.
+- Résultats → journal de la semaine, puis profil si le repère durable bouge.
+
+Progresser, sur ces tests, c’est souvent **le même score avec plus de repos**, pas un score plus élevé.
+
 ---
 
 ## 7. Adaptation coaching
@@ -179,6 +212,20 @@ Gate : `knowledge/meso-gates.yaml` → `benchmarks_to_ACC_GYM`.
 - Planning ponctuel (vacances) → Z2 ou séance réduite (noter dans Notes de la semaine ; durable → profile).
 - Douleur signalée (dont adducteur) → `knowledge/adductor-protocol.yaml` — **pas** de score quotidien demandé.
 - Team RPE ≥ 8 → −volume J+1.
+- **Boucle fermée** : chaque semaine passée se distille dans une entrée de journal (`athletes/<id>/journal/`, schéma `knowledge/journal-schema.yaml`). L’audit signale une semaine passée sans feedback ni entrée. Une boucle ouverte, c’est une semaine qui n’a servi à rien d’autre qu’à s’entraîner.
+- **Écart prescrit / réalisé** : consigné semaine par semaine ; deux fois dans le même sens sur le même mouvement → on ré-ancre la prescription.
+
+## 7ter. Compétition
+
+La préparation d’un pic ne part pas des qualités mais de la demande :
+
+| Document | Rôle |
+|----------|------|
+| `competition-demands.yaml` | Exigence → statut (couvert / partiel / trou) → preuve → action. Alimenté par le débrief par WOD et le book de l’épreuve. Pas de trou sans action, pas d’action sans trou. |
+| `taper-protocol.yaml` | Affûtage chiffré sur quatorze jours : pourcentages de volume par fenêtre, dernier effort dur à J-7, intensité maintenue, décision anticipée pour le WOD team qui tombe dans les quatre derniers jours. |
+| `competition-day.yaml` | Trame de journée : check-in, échauffement **par famille de WOD**, ravitaillement, récupération entre les heats, routines mentales, grille de débrief. |
+
+Deux règles issues de septembre 2026 : pendant l’affûtage, prescrire les **charges habituelles** (des charges basses « de sécurité » ne sont pas suivies) ; et **tout mouvement sensible doit avoir été ouvert dans la semaine**, jamais découvert le jour J.
 
 ## 7bis. Ops pack (cohérence opérationnelle) — 2026-07-28
 
@@ -192,11 +239,20 @@ Fichiers normatifs (en plus de cette méthodo) :
 | `session-patterns.yaml` | Ids de séances obligatoires |
 | `warmups.yaml` | Warm-ups réutilisables |
 | `adductor-protocol.yaml` | Arbre douleur (on-demand si signalée) |
-| `conditioning-matrix.yaml` | Caps energy systems |
-| `volume-landmarks.yaml` | MEV/MAV/MRV (à remplir post-S01) |
+| `reathletisation.md` | Paliers adducteur et épaule, critère de relèvement du plafond |
+| `conditioning-matrix.yaml` | Caps energy systems + ancres physiologiques |
+| `volume-landmarks.yaml` | Ordres de grandeur MEV/MAV/MRV (référence, pas source) |
+| `journal-schema.yaml` | Schéma d’une entrée de journal athlète |
+| `signature-tests.yaml` | Trois protocoles figés rejoués par macro |
+| `competition-demands.yaml` | Exigences de compétition → trous → actions |
+| `competition-day.yaml` | Trame de journée de compétition |
+| `taper-protocol.yaml` | Affûtage chiffré des quatorze derniers jours |
+| `instances/<saison>.yaml` | Calendrier, chemin de mesos, points de mesure — **tout ce qui est daté** |
 
 Templates : `prog/_templates/semaine.md` · `prog/_templates/meso.md`  
-Lint : `npm run lint:prog`
+Lint : `npm run lint:prog` — forme (`scripts/lint-prog.py`) **et** doses, caps, boucle de feedback (`scripts/audit-prog.py`)
+
+**Règle de séparation** : aucune date ni numéro de semaine dans les fichiers génériques ; aucun historique dans le profil ; aucun chiffre de volume ailleurs que dans le profil.
 
 ---
 
@@ -229,6 +285,17 @@ Lint : `npm run lint:prog`
 - [x] Maintien / gates / ladder / patterns / warmups / conditioning matrix (+ protocole douleur on-demand)
 - [x] Templates meso + semaine (feedback structuré)
 - [x] Patch cohérence 2026-07-28 (canon REAL, SoT, lint, Z2/volumes)
-- [ ] Volumes MEV/MAV/MRV gym/force/oly chiffrés — **après S01**
+- [x] Volumes MEV/MAV/MRV gym/force/oly chiffrés — faits dans le profil ; `volume-landmarks.yaml` rétrogradé au rang de référence
 
-Validée le 2026-07-27 (athlète). Ops pack 2026-07-28. Calendrier B/C ancré 2026-07-29. Prochaine étape : benchmarks 3–9 août → remplir profile → ACC-GYM.
+## Validation v2 (2026-09-11, athlète : oui sur l’ensemble)
+
+- [x] **Doses auditées** : chaque semaine déclare ses volumes, `npm run lint:prog` les vérifie (profil, doses de maintien, caps conditioning, boucle de feedback, écart prescrit/réalisé)
+- [x] **Journal** : le profil devient l’état courant, l’historique passe dans `athletes/<id>/journal/`
+- [x] **Réathlétisation** : paliers adducteur deux fois par semaine **à partir du 21 septembre**, prehab épaule sur les jours gym, critère chiffré de relèvement du plafond de squat
+- [x] **Ancres aérobies** : relevé lors de la sortie longue du 10 octobre, puis prescription cardio par FC et allure
+- [x] **Tests signature** : trois protocoles figés rejoués à chaque macrocycle
+- [x] **Compétition** : exigences → trous → actions, affûtage chiffré, trame de journée
+- [x] **Séparation générique / instance / profil / journal**
+- [x] **Maintien gym à deux expositions par semaine pendant un bloc force** (touch court le mardi, séance le jeudi, ~8 min ajoutées à deux séances) — accepté
+
+Validée le 2026-07-27 (athlète). Ops pack 2026-07-28. Calendrier B/C ancré 2026-07-29. **v2 rédigée et revalidée le 2026-09-11.** Prochaine revue : à la porte de sortie du bloc force (relevé du 10 octobre et tests signature de S10).

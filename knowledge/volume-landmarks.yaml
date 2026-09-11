@@ -1,45 +1,51 @@
-# Volumes cibles (Israetel)
-# Règle d’écriture (post-S01) :
-#   - athletes/<id>/profile.yaml → volumes = INSTANCE athlète (chiffres courants, targets semaine)
-#   - ce fichier = BORNES / standards méthodo (référence ; Z2 déjà calibré)
-# Ne pas remplir les deux « à l’identique » sans sync : en cas de doute, profile gagne pour la prog.
+# Volumes cibles (Israetel) — BORNES MÉTHODO, ordres de grandeur
+#
+# Une seule source pour la prog : athletes/<id>/profile.yaml → volumes.
+# C'est ce que la prog utilise et ce que scripts/audit-prog.py vérifie.
+# Ce fichier sert à trois choses, et à rien d'autre :
+#   1. point de départ quand un nouvel athlète n'a pas encore de chiffres
+#   2. garde-fou de vraisemblance quand une valeur de profil paraît aberrante
+#   3. définition des unités (elles doivent être identiques des deux côtés)
+# En cas d'écart, le profil gagne — sans avoir à se justifier : il est calibré sur
+# des relevés réels, ces fourchettes ne le sont pas.
 
-version: 1
-status: draft_values  # structure ops OK ; valeurs gym/force/oly après S01 → puis validated
-updated: 2026-07-28
+version: 2
+status: validated
+updated: 2026-09-11
+scope: "athlète élite masculin expérimenté, 4–5 séances de 90 min par semaine"
 note: >
-  Sans 1RM / proxies actuels, gym/force/oly restent null.
-  Z2 MEV 60 = cible Accumulation / année type.
+  Les fourchettes ci-dessous sont des ordres de grandeur, pas des cibles.
   En REAL (et souvent TRA), maintenance-doses peut imposer un min Z2 < MEV
   (fraîcheur Issurin) — autorisé, pas une violation Israetel.
-  Après benchmarks : estimer MEV bas (entrée ACC-GYM), progresser vers MAV,
-  deload si signes MRV (voir profile.coaching.mrv_signals).
+  Démarrage d'un bloc : entrer par le bas de la fourchette, progresser vers le MAV,
+  deload aux signes MRV (voir profile.coaching.mrv_signals).
 
 domains:
   gym:
     unit: "skill_minutes_quality_per_week"  # EMOM/drills submax, hors warm-up
-    mev: null
-    mav: null
-    mrv: null
-    starting_note: "Post-S01 : partir bas (ex. 40–60 min skill qualité/sem.) puis +10–15 %/sem. si récup OK"
+    mev: "40-50"
+    mav: "70-90"
+    mrv: "100-120"
+    starting_note: "Entrer bas (40–60 min de skill qualité par semaine) puis +10–15 %/sem. si la récupération suit"
+    maintien_note: "Hors bloc gym, 20–30 min suffisent à tenir le niveau si le format du cran est respecté"
 
   force_lower:
-    unit: "hard_sets_per_week"  # séries ≥ RPE 6–7 squat/hinge
-    mev: null
-    mav: null
-    mrv: null
+    unit: "hard_sets_per_week"  # séries ≥ RPE 6–7 squat/hinge, accessoires exclus
+    mev: "3-5"
+    mav: "7-9"
+    mrv: "11-14"
 
   force_upper:
-    unit: "hard_sets_per_week"
-    mev: null
-    mav: null
-    mrv: null
+    unit: "hard_sets_per_week"  # press et tirage vertical, accessoires exclus
+    mev: "3-5"
+    mav: "7-9"
+    mrv: "11-14"
 
   oly:
-    unit: "quality_lifts_per_week"  # singles/doubles techniques comptés
-    mev: null
-    mav: null
-    mrv: null
+    unit: "quality_lifts_per_week"  # singles / doubles techniques et tirages ; cycling exclu
+    mev: "8-12"
+    mav: "18-22"
+    mrv: "28-32"
 
   z2:
     unit: "minutes_per_week"
@@ -49,7 +55,13 @@ domains:
     note: >
       MEV Accumulation / année. REAL peut descendre à 30 min/sem. (maintenance-doses)
       sans être « sous-MEV illégal » — peaking = fraîcheur.
+      Trois semaines consécutives sous le MEV hors REAL = détraining : l'audit le signale en erreur.
 
 deload_default:
   volume_reduction_pct: 30
   intensity: "maintenir charges relatives ou −5 %, couper volume"
+
+verification: >
+  Les doses réellement écrites dans prog/ sont déclarées par semaine
+  (balise dose) et confrontées au profil par scripts/audit-prog.py.
+  Ce fichier n'est pas lu par l'audit — il ne sert pas de source de vérité.
