@@ -35,6 +35,10 @@ Après Accumulation gym + pic B, on élève la force structurelle (squat, hinge,
 | S10 (5–11 oct.) | Pic (MAV) | Lun BS 5×3 · ven DL + FS · pas d’empilement même jour |
 | S11 (12–18 oct.) | Deload | −30 % volume · sortie meso |
 
+## Banque accessoires (ce meso)
+
+Lifts et skills **stables**. Accessoires **nouveaux** vs Macro 1 (plus de duo dead bug + Pallof chaque séance) : hollow / suitcase (S08) → roll-out (S09) → hip thrust + row (S10) → deload = mêmes mouvements à −30 %. Formats gym/oly légèrement rotatifs (EMOM vs sets, hangs/pulls, HSW pivot).
+
 ## Maintien (hors focus)
 
 - Gym : ≥ 2 séances/sem. skill (résidu) — **S08 tronquée : 1×**

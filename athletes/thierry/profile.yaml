@@ -302,6 +302,7 @@ coaching:
     - douleur_signalee  # toute douleur (dont adducteur) — seulement si l’athlète la mentionne
   team_wod_rpe_threshold_cut_next_day: 8
   adductor_focus: minimal  # pas de score quotidien ; protocole on-demand si feedback douleur
+  accessory_rotation: "banque nouvelle par meso ; lifts/skills stables ; 1–2 accessoires RPE 6–7 ; pas le même duo 4 semaines ; pas de conjugate weekly (knowledge/session-patterns.yaml)"
 
 knowledge:
   methodology_status: validated

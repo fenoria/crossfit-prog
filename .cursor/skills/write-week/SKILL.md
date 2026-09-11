@@ -13,7 +13,7 @@ Règles rédaction : **`.cursor/rules/prog-writing.mdc`** (ton, ops pack, immuta
 - Fiches livres + `knowledge/arbitrages.md` pertinentes
 - Ops pack (agent only — ne pas coller ces chemins dans le texte visible) :
   - `knowledge/maintenance-doses.yaml` (`REAL-mini` → `REAL`)
-  - `knowledge/session-patterns.yaml`
+  - `knowledge/session-patterns.yaml` (ids + `accessory_rotation` : lifts stables, banque accessoires **nouvelle par meso**)
   - `knowledge/warmups.yaml` → recopier steps sous **Échauffement**
   - `knowledge/gym-ladder.md` si ACC-GYM
   - `knowledge/meso-gates.yaml` si changement de meso

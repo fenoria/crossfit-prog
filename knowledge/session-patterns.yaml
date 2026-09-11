@@ -3,7 +3,7 @@
 
 version: 1
 status: validated
-updated: 2026-07-28
+updated: 2026-09-11
 
 pattern_ids:
   - force_lower
@@ -22,6 +22,17 @@ common:
   always_respect: [current_benchmarks, no_guided_machines, no_pre_injury_prs]
   warmup_ids_ref: knowledge/warmups.yaml
   off_pattern_requires: "justifier dans Notes de la semaine (+ profil athlète actif si contrainte durable)"
+  accessory_rotation:
+    rule: >
+      Lifts et skills stables sur le meso ; accessoires = nouvelle banque à chaque meso.
+      1–2 accessoires par séance, 8–12 min, RPE 6–7 ; ne vole pas le lift du jour.
+      Pas le même duo 4 semaines de suite. Pas de rotation hebdo type conjugate.
+      Deload = mêmes mouvements que les semaines chargées, volume −30 %.
+    constraints:
+      - "pas de 3e press / pompes extra si gêne épaule — rows + face pulls"
+      - "pas de fentes lourdes / Copenhagen chargé si adducteur — hip thrust, roll-out, suitcase OK"
+      - "core suspendu (T2B, hanging raise) pas la veille d’un gros EMOM BMU/RMU (grip)"
+      - "box only ; pas de machines guidées"
 
 
 force_lower:
@@ -32,14 +43,24 @@ force_lower:
     - secondary: "Hinge (RDL/DL variant) volume modéré"
     - core: "anti-extension / roll-out"
     - finisher: "Z2 easy si budget"
+  accessory_rotation:
+    core_anti_extension: [hollow_hold, roll_out, dead_bug]
+    core_anti_lateral: [suitcase_carry, side_plank, pallof]
+    posterior_no_heavy_hinge: [hip_thrust]
+    hinge_secondary_stable: "RDL ou DL selon la semaine du meso — pas de rotation weekly du hinge"
 
 force_upper:
   intent: "Press + pull force relative"
   template:
     - primary: "Strict press"
-    - secondary: "Weighted pull-ups ou rows"
-    - accessory: "DB/KB shoulder health"
+    - secondary: "Weighted pull-ups (vertical) — slot stable du meso"
+    - accessory: "tirage horizontal OU shoulder health — pas un 3e press"
     - finisher: "Z2 ou skill gym léger"
+  accessory_rotation:
+    horizontal_pull: [ring_row, db_row, bent_over_row]
+    shoulder_health: [face_pulls, ytwl]
+    anti_rotation_optional: [pallof]
+    note: "WPU = pull primaire du meso ; row = accessoire (2–3 sets RPE 6–7), pas un 2e hard pattern"
 
 gym_skill_day:
   intent: "Technique + volume d'une skill dominante (Low)"
@@ -53,6 +74,11 @@ gym_skill_day:
     bmu_focus: ["kipping swings", "hip-to-bar", "singles/triples volume", "strict pull loaded"]
     hsw_focus: ["HS hold/walk drills", "volume distance", "strict HSPU / wall walk"]
     density: ["couplets gym+ergo courts unbroken", "EMOM : viser ~15 s repos (calibrer ergo ; 10 cal OK si repos tient ; 250 m = E2MOM)", "repos fixes"]
+  accessory_rotation:
+    rule: "Mêmes skills sur le meso (BMU/RMU/HSPU/HSW) ; varier le format, pas le mouvement"
+    volume_formats: [EMOM, E2MOM, quality_sets]
+    hsw: "pivot si cran 4 validé ; linéaire = régression de spécificité en maintien"
+    hspu: "strict en Acc / ACC-STR ; kipping = TRA-MIX si cran 3 stable"
 
 oly_power_day:
   intent: "Puissance barre sans deep heavy squat obligatoire"
@@ -61,6 +87,10 @@ oly_power_day:
     - pulls: "snatch/clean pulls"
     - squat_light: "front squat léger technique si confort"
     - note: "squat snatch/clean lourd = rare ; stop si douleur/peur signalée"
+  accessory_rotation:
+    rule: "1 séance maintien/sem. hors ACC-OLY ; ne pas cloner le même couple de singles chaque semaine"
+    variants: [hang_power, snatch_or_clean_pull, power_singles]
+    note: "Everett : hangs / pulls / power selon le point faible ; un lift complet suffit si pulls le même jour"
 
 conditioning_z2:
   intent: "Récup active / base aérobie (maintien)"

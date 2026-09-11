@@ -1,6 +1,6 @@
 # Arbitrages méthodologiques
 
-Décisions corpus **validées** avec l’athlète (2026-07-27) · ops pack (2026-07-28) · Laursen/Buchheit (2026-07-29) · calendrier B/C (2026-07-29).  
+Décisions corpus **validées** avec l’athlète (2026-07-27) · ops pack (2026-07-28) · Laursen/Buchheit (2026-07-29) · calendrier B/C (2026-07-29) · variation accessoires (2026-09-11).  
 Rôle : conflits **entre auteurs** + décision retenue.  
 Contraintes athlète / calendrier / feedback durable → profil athlète actif (`athletes/<id>/profile.yaml`) (ne pas tout dupliquer ici).
 
@@ -64,3 +64,10 @@ Contraintes athlète / calendrier / feedback durable → profil athlète actif (
   - Transition dès 14 déc.
 - Fire = pic **secondaire** (expression / maintien) — pas un taper A qui casse le Build.
 - SoT dates : profil athlète actif (`competitions` + `competition` / `next_after_b`).
+
+## 13. Variation des accessoires vs spécificité des lifts (2026-09-11)
+- **Conflit** : cloner le même menu (dead bug + Pallof + RDL 3×8 + EMOM BMU/RMU + power singles) d’un meso à l’autre vs rotation conjugate weekly des mouvements principaux.
+- **Décision** : **lifts et skills stables sur le meso** (Zatsiorsky / Israetel — surcharge). **Accessoires = nouvelle banque à chaque meso** (Manuel muscu : 1–2 mouvements, reste de budget). Formats gym/oly légèrement rotatifs (Low : EMOM vs sets ; Everett : hangs / pulls / power) — pas de nouveaux skills gratuits.
+- **Pas** : rotation hebdo type conjugate (dilue le stimulus) ; isolation bodybuilding ; 3e press si gêne épaule.
+- **Pourquoi** : accommodation et ennui sur les accessoires ≠ variation des lifts qui portent le ROI du bloc. Tirage horizontal manquant = trou Zatsiorsky, pas du « fun ».
+- **Ops** : banques dans `knowledge/session-patterns.yaml` (`accessory_rotation`). Deload = mêmes mouvements, volume −30 %.
