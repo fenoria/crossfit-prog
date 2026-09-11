@@ -23,7 +23,7 @@ Transfert force + gym + barre vers formats combinés sous fatigue, avant le bloc
 
 ## Continuité
 
-- **Précède** : Accumulation haltéro — barre OK  
+- **Précède** : Conversion puissance — barre OK  
 - **Suit** : Macro 3 — 1–2 séances mixed qualité digérées, fraîcheur relative
 
 ## Focus par semaine

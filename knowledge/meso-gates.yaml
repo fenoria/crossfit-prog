@@ -1,13 +1,13 @@
 # Critères de sortie / gates de meso
 # Scope actuel : chemin Macro 1 compressé vers Fire Contest (B)
 #   benchmarks → ACC-GYM → REAL (Fire) → TRANS → Macro 2 (ACC-STR…)
-# Macro 2+ : ACC-STR → ACC-OLY → TRA-MIX → Macro 3 (TRA team → REAL S7mbioz)
+# Macro 2+ : ACC-STR → TRA-POW → TRA-MIX → Macro 3 (TRA team → REAL S7mbioz)
 # Ne pas enchaîner au calendrier seul : vérifier gates + fatigue (+ douleur seulement si signalée).
 # Code canonique REAL (label « REAL mini » / pic B = même code, durée courte).
 
 version: 1
 status: validated
-updated: 2026-07-29
+updated: 2026-09-11
 scope: macrocycle_1_path_fire_b
 sources:
   - "Israetel — progresser sous MRV, deload"
@@ -61,14 +61,14 @@ gates:
     to: ACC-STR
     required:
       - "fatigue subjective redescendue vs semaine Fire"
-      - "intention Macro 2 confirmée (force → oly → mixed → Macro 3 S7mbioz)"
+      - "intention Macro 2 confirmée (force → puissance barre → mixed → Macro 3 S7mbioz)"
       - "pas de douleur lower florissante signalée bloquant le squat/hinge"
     on_fail: "Prolonger TRANS 3–7 jours (Z2 / GPP) avant ACC-STR"
 
   # Gates Macro 2 (réutilisées post-Fire)
-  ACC_STR_to_ACC_OLY:
+  ACC_STR_to_TRA_POW:
     from: ACC-STR
-    to: ACC-OLY
+    to: TRA-POW
     required:
       - "deload force fait"
       - "charges force actuelles réévaluées (RPE) vs post-benchmarks / post-Fire"
@@ -76,14 +76,14 @@ gates:
       - "pas de douleur lower florissante signalée"
     on_fail: "Maintenir ACC-STR léger ou mini ACC-GYM refresh 1 sem."
 
-  ACC_OLY_to_TRA_MIX:
-    from: ACC-OLY
+  TRA_POW_to_TRA_MIX:
+    from: TRA-POW
     to: TRA-MIX
     required:
       - "power snatch / clean notés à RPE utile"
       - "pas de régression technique majeure"
       - "pas de douleur florissante signalée"
-    on_fail: "1 semaine technique oly supplémentaire"
+    on_fail: "1 semaine technique / power supplémentaire"
 
   TRA_MIX_to_Macro3:
     from: TRA-MIX

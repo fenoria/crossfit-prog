@@ -1,6 +1,6 @@
 # Arbitrages méthodologiques
 
-Décisions corpus **validées** avec l’athlète (2026-07-27) · ops pack (2026-07-28) · Laursen/Buchheit (2026-07-29) · calendrier B/C (2026-07-29) · variation accessoires (2026-09-11).  
+Décisions corpus **validées** avec l’athlète (2026-07-27) · ops pack (2026-07-28) · Laursen/Buchheit (2026-07-29) · calendrier B/C (2026-07-29) · variation accessoires (2026-09-11) · TRA-POW Macro 2 (2026-09-11).  
 Rôle : conflits **entre auteurs** + décision retenue.  
 Contraintes athlète / calendrier / feedback durable → profil athlète actif (`athletes/<id>/profile.yaml`) (ne pas tout dupliquer ici).
 
@@ -59,7 +59,7 @@ Contraintes athlète / calendrier / feedback durable → profil athlète actif (
 - **Conflit** : Macro 1 long (~15 sem. jusqu’à REAL générique) vs Fire Contest ~12 sept. + S7mbioz 12–13 déc.
 - **Décision** :
   - Macro 1 (3 août – 20 sept.) : Benchmarks → ACC-GYM → **REAL Fire (B)** → TRANS mini.
-  - Macro 2 (21 sept. – 15 nov.) : ACC-STR → ACC-OLY → TRA-MIX (élévation, pas de taper A).
+  - Macro 2 (21 sept. – 15 nov.) : ACC-STR → **TRA-POW** → TRA-MIX (élévation, pas de taper A). *(Amendement 2026-09-11 : voir §14.)*
   - Macro 3 (16 nov. – 13 déc.) : TRA team → **REAL S7mbioz (C)**.
   - Transition dès 14 déc.
 - Fire = pic **secondaire** (expression / maintien) — pas un taper A qui casse le Build.
@@ -71,3 +71,9 @@ Contraintes athlète / calendrier / feedback durable → profil athlète actif (
 - **Pas** : rotation hebdo type conjugate (dilue le stimulus) ; isolation bodybuilding ; 3e press si gêne épaule.
 - **Pourquoi** : accommodation et ennui sur les accessoires ≠ variation des lifts qui portent le ROI du bloc. Tirage horizontal manquant = trou Zatsiorsky, pas du « fun ».
 - **Ops** : banques dans `knowledge/session-patterns.yaml` (`accessory_rotation`). Deload = mêmes mouvements, volume −30 %.
+
+## 14. Macro 2 : TRA-POW plutôt qu’ACC-OLY (2026-09-11)
+- **Conflit** : 2 semaines haltéro après ACC-STR = accumulation Everett (ACC-OLY, meso 3–5 sem. + deload) vs conversion puissance (TRA-POW).
+- **Décision** : instance 2026 = **TRA-POW** (~2 sem., 19 oct. – 1er nov.). ACC-OLY reste un type valide ; on ne l’utilise pas ici. On ne vole pas de semaine à TRA-MIX ni on n’allonge ACC-STR (S08 déjà tronquée).
+- **Pourquoi** : après max strength, power / pulls / hangs = transmutation (Bompa, Verkhoshansky, Issurin résidu court). Deux semaines sans deload dédié ne sont pas une accumulation oly.
+- **Ops** : gates `ACC_STR_to_TRA_POW` → `TRA_POW_to_TRA_MIX` ; dossier `meso-02-conversion-puissance/`.

@@ -1,21 +1,21 @@
 # Macrocycle 2 — Élévation
 
 **Début prévu** : 21 septembre 2026 · **Fin prévue** : 15 novembre 2026  
-**Rôle** : élever le plafond force / haltéro / mixed **après** le pic B Fire Contest, en vue de S7mbioz.
+**Rôle** : élever le plafond force / puissance / mixed **après** le pic B Fire Contest, en vue de S7mbioz.
 
 ## Intention
 
-Post-Fire : accumulation force structurelle → haltéro power / technique → conversion mixed. Pas de second taper A ici — la réalisation majeure du semestre est le pic C en Macro 3.
+Post-Fire : accumulation force structurelle → conversion puissance barre → conversion mixed. Pas de second taper A ici — la réalisation majeure du semestre est le pic C en Macro 3.
 
 ## Mesos
 
 | Meso | Fenêtre | Rôle | Statut |
 |------|---------|------|--------|
 | [Accumulation force](meso-01-accumulation-force/index.md) | 21 sept. – 18 oct. | Force structurelle (~4 sem.) | rédigé (S08–S11) |
-| [Accumulation haltéro](meso-02-accumulation-halterro/index.md) | 19 oct. – 1er nov. | Power / pulls / technique (~2 sem.) | à venir |
+| [Conversion puissance](meso-02-conversion-puissance/index.md) | 19 oct. – 1er nov. | Power / pulls / technique (~2 sem.) | à venir |
 | [Conversion mixed](meso-03-conversion-mixed/index.md) | 2–15 nov. | Gym + barre + ergo sous fatigue (~2 sem.) | à venir |
 
 ## Règles fatigue box
 
 - Mercredi team à RPE ≥ 8 → alléger jeudi.  
-- Gym en **maintien** pendant Accumulation force / haltéro (≥ 2 stimuli/sem. skill).
+- Gym en **maintien** pendant Accumulation force (≥ 2 stimuli/sem. skill) et Conversion puissance (≥ 1).

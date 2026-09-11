@@ -7,7 +7,7 @@
 
 ## Pourquoi
 
-Après un pic B, une courte décharge protège l’enchaînement vers Macro 2 (élévation force / haltéro) sans empiler fatigue compétition + accumulation.
+Après un pic B, une courte décharge protège l’enchaînement vers Macro 2 (élévation force / puissance / mixed) sans empiler fatigue compétition + accumulation.
 
 ## Intention dominante
 
@@ -39,7 +39,7 @@ Pas de focus secondaire : tout reste bas.
 ## Métriques de succès (sortie)
 
 - [ ] Fatigue subjective redescendue vs semaine Fire  
-- [ ] Intention Macro 2 confirmée (force → oly → mixed)  
+- [ ] Intention Macro 2 confirmée (force → puissance barre → mixed)  
 - [ ] Pas de douleur florissante signalée bloquant le squat/hinge
 
 ## Semaines

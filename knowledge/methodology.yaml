@@ -1,6 +1,6 @@
 status: validated
 version: 1
-updated: 2026-07-29
+updated: 2026-09-11
 validated_on: 2026-07-27
 # md = narratif athlète ; yaml = contrat machine — garder meso_types / order / status sync
 source_of_truth:

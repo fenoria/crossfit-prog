@@ -88,7 +88,7 @@ oly_power_day:
     - squat_light: "front squat léger technique si confort"
     - note: "squat snatch/clean lourd = rare ; stop si douleur/peur signalée"
   accessory_rotation:
-    rule: "1 séance maintien/sem. hors ACC-OLY ; ne pas cloner le même couple de singles chaque semaine"
+    rule: "1 séance maintien/sem. hors ACC-OLY / TRA-POW ; ne pas cloner le même couple de singles chaque semaine"
     variants: [hang_power, snatch_or_clean_pull, power_singles]
     note: "Everett : hangs / pulls / power selon le point faible ; un lift complet suffit si pulls le même jour"
 

@@ -18,21 +18,21 @@ Après Accumulation gym + pic B, on élève la force structurelle (squat, hinge,
 ## Apport
 
 - Court : confiance et kilos actuels sous la barre  
-- Moyen : base pour haltéro + mixed  
+- Moyen : base pour conversion puissance + mixed  
 - Long : plafond force pour S7mbioz
 
 ## Continuité
 
 - **Précède** : Transition mini Macro 1 — fatigue post-Fire digérée  
-- **Suit** : Accumulation haltéro — deload force fait, charges réévaluées, gym maintien OK
+- **Suit** : Conversion puissance — deload force fait, charges réévaluées, gym maintien OK
 
 ## Focus par semaine
 
 | Semaine | Focus | Contenu type |
 |---------|-------|--------------|
 | S08 (21–27 sept.) | Volume entrée (tronquée) | Lun–mer force + gym · vacances 24–28 |
-| S09 (28 sept. – 4 oct.) | Reprise → volume | Mar squat · ven upper + FS · gym 2× |
-| S10 (5–11 oct.) | Pic (MAV) | Lun BS 5×3 · ven DL + FS · pas d’empilement même jour |
+| S09 (28 sept. – 4 oct.) | Reprise → volume | Mar squat · jeu gym + HSPU · ven upper + FS + hang |
+| S10 (5–11 oct.) | Pic (MAV) | Lun BS 5×3 · mar FS 3×3 + upper · ven DL volume (pas de squat le même jour) |
 | S11 (12–18 oct.) | Deload | −30 % volume · sortie meso |
 
 ## Banque accessoires (ce meso)
@@ -43,7 +43,7 @@ Lifts et skills **stables**. Accessoires **nouveaux** vs Macro 1 (plus de duo de
 
 - Gym : ≥ 2 séances/sem. skill (résidu) — **S08 tronquée : 1×**
 - Haltéro : power léger / technique (**≥ 1×/sem. dès S09**)
-- Force lower : **2 stimuli/sem.** dès S09 (squat lundi/mardi · hinge/FS vendredi) — S08 = 1× (créneau)
+- Force lower : **2 stimuli/sem.** dès S09 (squat + hinge/FS, jours séparés) — S08 = 1× (créneau) · S10 pic = BS / FS / DL **3 jours distincts**
 - Zone 2 : maintien MEV 60’ (rando S08 = Z2 naturelle)
 - Conditioning dur : team box compte ; pas de hero WODs
 
