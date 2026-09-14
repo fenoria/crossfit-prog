@@ -4,7 +4,7 @@
 
 version: 1
 status: validated
-updated: 2026-09-11
+updated: 2026-09-14
 
 pourquoi: >
   La programmation se construisait à partir des qualités générales (force, gym, filières)
@@ -31,24 +31,31 @@ exigences:
   team_synchronisation:
     exigence: "Répartition des reps, bascules, mouvements synchronisés, un appelant"
     statut: partiel
-    preuve: "Team du mercredi hebdomadaire, mais format imposé par la box — la répartition avec le partenaire de compétition ne se travaille pas"
-    action: "Bloc spécifique : au moins deux séances avec le ou les partenaires réels, plan de bascule écrit avant le départ"
+    preuve: >
+      Fire 2026 : WOD 2 répartition claire sans switch (ski 165 cal = 1er, couplet partenaire 350 = 6e).
+      WOD 4 Isabel synchro 48/60, 7e — partenaire imposait les pauses. Team mercredi box ≠ partenaire compétition.
+    action: "Bloc spécifique S7mbioz : au moins deux séances avec la partenaire réelle, plan de bascule écrit, synchro barre à charge moyenne"
 
   objets_lourds_inhabituels:
     exigence: "Worm, sac, sled, D-ball, objets non standard fréquents en compétition team"
-    statut: trou
-    preuve: "Seule exposition tracée : worm 75 kg dans un WOD team (S02). Rien dans la prog individuelle — matériel de box standard uniquement"
-    action: "Bloc spécifique : intégrer ce que la box possède (au moins un port lourd / carry chargé par semaine) ; à défaut, ne pas découvrir le jour J"
+    statut: partiel
+    preuve: >
+      Fire 2026 : sled pull 200+200 m (WOD 1) 5e, pas limitant.
+      Brancard + buse (WOD 5) 6e, limiteur = course avec charge.
+      Worm (WOD 7) chaos (timing / hang / épaule synchro), 9e — toujours le trou.
+    action: "Bloc spécifique : worm / port lourd si la box l'a ; sinon ne pas découvrir le jour J. Sled n'est plus un trou."
 
   squat_clean_squat_snatch_au_standard:
     exigence: "Les standards de compétition imposent parfois le squat clean ou le squat snatch"
     statut: trou_assume
-    preuve: "Interdits à l'entraînement depuis la désinsertion adducteur (règle profil) — seul le power est travaillé"
+    preuve: >
+      Interdits à l'entraînement depuis la désinsertion adducteur — seul le power est travaillé.
+      Fire 2026 WOD 6 : power autorisé, 95 kg (3 TNG + 3 FS + STOH) RPE 7, 3e, RAS adducteur.
+      WOD 4 snatch @ 50 kg : limiteur = synchro, pas l'amplitude.
     action: >
-      Trou volontaire, pas une négligence : garder l'interdiction, et compenser en travaillant
-      le power à charge suffisante plus le front squat. Si un WOD impose le squat clean lourd,
-      c'est un WOD sur lequel on limite les pertes, pas un WOD qu'on gagne. À réexaminer si la
-      piste de réathlétisation ouvre l'amplitude chargée (reathletisation.md, paliers 4–5).
+      Trou volontaire : garder l'interdiction, compenser power + front squat. Fire n'a pas
+      sanctionné le trou (power accepté). À réexaminer si la réathlétisation ouvre l'amplitude
+      chargée (reathletisation.md, paliers 4–5). Signal positif : FS après cleans @ 95 kg en RAS.
 
   pompes_appui_renverse_en_volume:
     exigence: "HSPU en volume, souvent kipping, sous fatigue"
@@ -59,8 +66,14 @@ exigences:
   repetabilite_gym_sous_fatigue:
     exigence: "Refaire des séries de muscle-ups quand le cardio est haut"
     statut: partiel
-    preuve: "Faiblesse déclarée n°1 ; couplets EMOM tenus au calme (S04), pré-fatigue introduite seulement en S13–S14"
+    preuve: "Faiblesse déclarée n°1 ; couplets EMOM tenus au calme (S04). Fire 2026 n'a pas sollicité BMU/RMU — le trou gym réel était le butterfly (voir kipping_pull_cycling)."
     action: "Test signature T1 à chaque macro ; couplets après pré-fatigue maintenus dans le bloc spécifique"
+
+  kipping_pull_cycling:
+    exigence: "Pull-ups butterfly et chest-to-bar en volume / sous fatigue, y compris dans un complexe gym court"
+    statut: trou_assume
+    preuve: "Fire 2026 WOD 3 : cut en ½, 7e, RPE 10 — butterfly = gros trou. C2B non vu, même famille de kipping cycling."
+    action: "Ne pas insérer dans Macro 2 (force → puissance → mixed). Intégrer en 2027 après S7mbioz."
 
   grip_et_mains:
     exigence: "Enchaîner barre, anneaux, cordes et rameur sans lâcher sur les mains"
@@ -91,8 +104,13 @@ exigences:
 a_completer:
   fire_2026:
     quand: "après le weekend des 12–13 septembre 2026"
-    source: "grille de débrief par WOD dans les Notes de la semaine S06"
-    remplir: "facteurs limitants les plus fréquents, mouvements ou standards non préparés, gestion de journée"
+    source: "grille de débrief par WOD dans les Notes de S06 (QCM 2026-09-14)"
+    statut: rempli
+    resultat: "7e / 20 RX team mixte à 2 ; cut avant la finale"
+    facteurs_limitants: "skill_gym dominant (butterfly WOD 3) ; worm (WOD 7) ; synchro barre (WOD 4) ; course avec charge (WOD 5)"
+    mouvements_non_prepares: "butterfly PU · C2B (même famille, 2027) · worm timing"
+    ce_qui_a_porte: "cardio/ergos (ski 1er) · barre power (WOD 6 3e, RPE 7) · team répartition (WOD 2) · taper S06 (fraîcheur 5/5)"
+    gestion_journee: "fraîcheur entrée 5/5 J1, 4/5 J2 ; douleur RAS ; sommeil / ravitaillement / re-warm non collectés"
   s7mbioz_2026:
     quand: "dès publication du book de l'épreuve"
     remplir: "format d'équipe, nombre de WOD, mouvements annoncés, matériel spécifique, contraintes de site"

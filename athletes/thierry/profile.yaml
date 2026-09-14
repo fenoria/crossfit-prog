@@ -11,7 +11,7 @@ journal_dir: athletes/thierry/journal/
 
 goal:
   type: competition_performance
-  notes: "Performance compétition ; fraîcheur et spécificité > volume gratuit. Macros calés sur A (fait) → B Fire Contest (~sept.) → C S7mbioz (12–13 déc.). Petites compet opportunistes si dates connues, sans casser B/C. Macro 1 = Build gym → REAL Fire (pas ACC-STR avant le B). Prudence charges adducteur ≠ convalescence."
+  notes: "Performance compétition ; fraîcheur et spécificité > volume gratuit. A Battle (7e/40) et B Fire (7e/20, 12–13 sept. 2026) faits → ancre = C S7mbioz (12–13 déc.). Petites compet opportunistes si dates connues, sans casser C. Macro 2 = force → puissance → mixed (inchangé post-Fire). Butterfly PU + C2B = 2027, pas 2026. Prudence charges adducteur ≠ convalescence."
   # Ancre annuelle pour caler les cycles (récurrent tant que non modifié)
   competitions:
     primary_a:
@@ -50,10 +50,18 @@ goal:
       place: 5
       field: 40
       notes: "5e / 40 RX team mixte à 2 — référence pour Fire 2026"
-  # Cible courante (année en cours) — à affiner quand les dates exactes sont publiées
-  # 2026 : A (Battle) faite → ancre prochaine = B Fire Contest, puis C S7mbioz
-  competition: "Atlantic Fire Contest (Nantes)"
-  date: "2026-09-12"  # 12–13 sept. 2026 confirmé (book athlètes AFC 26) ; J1 Human Project 360, J2 CIS Gouzé ; 8 WOD
+    - event: "Atlantic Fire Contest"
+      year: 2026
+      location: Nantes
+      when: "12–13 septembre"
+      division: RX
+      format: team_mixed_of_2
+      place: 7
+      field: 20
+      notes: "7e / 20 RX team mixte à 2 ; cut avant la finale. Limiteur = butterfly PU (WOD 3). Ski 165 cal = 1er. Complex 95 kg RPE 7 RAS adducteur (3e)."
+  # Cible courante — B Fire 2026 fait → ancre = C S7mbioz
+  competition: "S7mbioz Throwdown"
+  date: "2026-12-12"  # 12–13 déc. 2026 (team)
   next_after_b:
     name: "S7mbioz Throwdown"
     date: "2026-12-12"  # 12–13 déc. 2026 (team)
@@ -99,9 +107,10 @@ priorities:
 
 weaknesses_or_limits:
   - gym_volume_under_fatigue
+  - butterfly_pullup_cycling  # Fire 2026 WOD 3 : cut ½, RPE 10 — trou ; C2B même famille. Intégrer 2027, pas Macro 2
   - heavy_squat_snatch_caution
   - heavy_squat_clean_caution
-  - residual_adductor_pain  # historique 2025 — charges prudentes ; pas un focus quotidien
+  - residual_adductor_pain  # historique 2025 — charges prudentes ; pas un focus quotidien. Fire WOD 6 @ 95 kg (3 PC TNG + 3 FS + STOH) RPE 7, RAS.
   - shoulder_mild_discomfort  # S05 : gêne légère push/HSPU (mar) ; BMU ok ; surveiller vend HSPU
 
 injury:
@@ -219,6 +228,7 @@ gym_ladder_level:
   hspu: 3      # S04 : 5×10 strict plafond (~0 RIR dernières) — cran 3 stable
   hsw: 4       # S04 : 5× (10 m + pivot + 10 m) unbroken — cran 4 confirmé (vs 6+6 S03)
   hspu_kipping_plan: "Verrou « pas avant Fire » levé (13 sept.) — cran 3 strict stable → intro kipping en Macro 2 : drills S08, EMOM court S09, volume S10, intégré aux couplets en TRA-MIX. Cible cran 4 au relevé S15. Skip au moindre inconfort d'épaule (S05)."
+  kipping_pull_plan: "Butterfly PU + C2B : trou Fire 2026 (WOD 3, cut ½). Ne pas insérer dans Macro 2. Intégrer en 2027 après S7mbioz."
   maintien_format: "En maintien, garder le format du cran (couplet BMU + pivot en HSW) — le linéaire et les séries sèches sont une régression de spécificité."
 
 benchmarks:

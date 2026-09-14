@@ -3,7 +3,7 @@
 <!-- Coach : code TRANS -->
 
 **Macrocycle** : 1 — Build → Fire · **Saison** : 2026  
-**Durée prévue** : 1 sem. (14–20 septembre) · **Statut** : rédigé (S07) · à venir (exécution)
+**Durée prévue** : 1 sem. (14–20 septembre) · **Statut** : rédigé (S07) · en cours (exécution)
 
 ## Pourquoi
 

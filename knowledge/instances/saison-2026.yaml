@@ -7,7 +7,7 @@
 
 version: 1
 status: active
-updated: 2026-09-11
+updated: 2026-09-14
 athlete: thierry
 saison: 2026
 
@@ -28,8 +28,9 @@ competitions:
     role: B
     date: "2026-09-12 → 2026-09-13"
     format: team_mixed_of_2
-    statut: a_venir
-    note: "8 WOD sur deux jours, deux sites"
+    statut: fait
+    resultat: "7e / 20 RX"
+    note: "Cut avant la finale. Limiteur = butterfly PU. Taper S06 validé."
   - id: s7mbioz
     nom: "S7mbioz Throwdown"
     role: C

@@ -3,7 +3,7 @@
 <!-- Coach : code REAL -->
 
 **Macrocycle** : 1 — Build → Fire · **Saison** : 2026  
-**Durée prévue** : 1 sem. (7–13 septembre) · **Statut** : rédigé (S06) · en cours (exécution)
+**Durée prévue** : 1 sem. (7–13 septembre) · **Statut** : terminé (S06)
 **Événement** : Atlantic Fire Contest (Nantes) — rôle B · 12–13 septembre 2026 · 8 WOD · 2 sites
 
 ## Pourquoi
@@ -39,9 +39,9 @@ Tout hors compétition reste léger : pas de HI ajouté, pas de max force, gym e
 
 ## Métriques de succès (sortie)
 
-- [ ] Weekend Fire Contest fait ou skip documenté  
-- [ ] Notes peaking (charges, RPE, format team, fatigue) dans le fichier semaine  
-- [ ] Pas de surcharge inutiles la semaine du B
+- [x] Weekend Fire Contest fait ou skip documenté  
+- [x] Notes peaking (charges, RPE, format team, fatigue) dans le fichier semaine  
+- [x] Pas de surcharge inutiles la semaine du B
 
 ## Semaines
 
@@ -49,4 +49,4 @@ Tout hors compétition reste léger : pas de HI ajouté, pas de max force, gym e
 
 ## Notes meso
 
-_(résultat Fire ; arbitrage charges pour Macro 2)_
+Fire 2026 : **7e / 20 RX** team mixte à 2, cut avant la finale. Taper S06 validé (fraîcheur 5/5). Limiteur = butterfly PU (WOD 3). Macro 2 inchangé ; butterfly / C2B = 2027. Complex 95 kg RPE 7, RAS adducteur.

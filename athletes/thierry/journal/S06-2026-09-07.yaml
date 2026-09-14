@@ -4,7 +4,7 @@ macro: macrocycle-01-build
 meso: REAL
 phase_micro: expression
 prog: prog/saison-2026/macrocycle-01-build/meso-03-expression-fire/S06-2026-09-07.md
-statut: en_cours
+statut: close
 
 jours:
   lundi:
@@ -29,11 +29,13 @@ jours:
     charges: "Zone 2 bike 20 min + mobilité"
     note: "J-1 : volume easy, pas de charge ni d'intensité."
   samedi:
-    fait: a_venir
-    note: "Fire Contest J1 — Human Project 360, WOD 1 à 4, check-in 07h00. Débrief par WOD à remplir le soir même."
+    fait: oui
+    charges: "Fire J1 — WOD 1 18'17 5e RPE 9 · WOD 2 ski 165 cal 1er / couplet 350 reps 6e / 6 planches 3e RPE 9 · WOD 3 cut ½ 7e RPE 10 · WOD 4 48 snatch synchro 7e RPE 8"
+    note: "Fraîcheur entrée 5/5. Limiteur J1 = butterfly pull-ups (WOD 3). WOD 2 sans switch. WOD 4 : partenaire imposait les pauses."
   dimanche:
-    fait: a_venir
-    note: "Fire Contest J2 — CIS Gouzé, WOD 5 à finale."
+    fait: oui
+    charges: "Fire J2 — WOD 5 11'55 6e RPE 10 · WOD 6 95+58 kg 3e RPE 7 power · WOD 7 57 reps 9e RPE 9 legless · cut finale"
+    note: "Fraîcheur entrée 4/5. Classement 7e/20 RX. WOD 5 limiteur = course avec charge. WOD 6 RAS adducteur. WOD 7 worm chaos."
 
 realise:
   force_lower_sets: 0
@@ -48,9 +50,11 @@ realise:
 team_wod_rpe: 7
 
 flags:
-  - "Team le mercredi à J-3 malgré la consigne Z2 (contrainte de créneau box)"
-  - "HSPU non ouvertes de la semaine avant la compétition"
-  - "Fraîcheur déclarée bonne à J-2"
+  - "Team le mercredi à J-3 malgré la consigne Z2 (contrainte de créneau box) — n'a pas cassé la fraîcheur d'entrée"
+  - "HSPU non ouvertes de la semaine avant la compétition (non sollicitées sur Fire)"
+  - "Fraîcheur entrée Fire 5/5 samedi, 4/5 dimanche — taper S06 validé"
+  - "Trou Fire = pull-ups butterfly (WOD 3 cut ½) ; C2B même famille → 2027, pas Macro 2"
+  - "Worm chaos WOD 7 (9e) ; complex 95 kg RPE 7 RAS adducteur (3e)"
 
 ecarts_prescrit_vs_realise:
   - mouvement: power_clean
@@ -69,9 +73,10 @@ ecarts_prescrit_vs_realise:
     sens: au_dessus
     action: surveiller
 
-gate: "REAL → TRANS : à statuer après le weekend (débrief par WOD)"
+gate: "REAL → TRANS : validée (weekend fait, débrief par WOD, exigences reportées, RAS douleur)"
 synthese: >
-  Semaine d'affûtage tenue malgré l'inversion lundi / mardi et le team du mercredi.
-  Barre au niveau habituel le lundi (encore au-dessus du prescrit), taper respecté
-  le jeudi, journée easy le vendredi. Fraîcheur annoncée bonne à l'entrée du weekend.
-suite: "Débrief Fire par WOD le soir de chaque journée, puis S07 Transition mini (14 au 20 septembre)"
+  Affûtage S06 tenu (inversion lun/mar, team mercredi sous seuil). Fire 2026 : 7e / 20 RX
+  team mixte à 2, cut avant la finale. Cardio, barre power, team et fraîcheur ont porté.
+  Trou = butterfly pull-ups (WOD 3) ; worm encore chaotique. Macro 2 inchangé ;
+  butterfly / C2B en 2027. Rampe S07 écrite (pas la variante écrasé).
+suite: "S07 Transition mini (14–20 sept.) — rampe standard. Macro 2 ACC-STR dès S08."

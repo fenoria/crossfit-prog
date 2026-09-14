@@ -7,7 +7,7 @@ Plan annuel CrossFit élite à **plusieurs pics**, calé sur le calendrier comp�
 | Rôle | Événement | Dates | Place dans le plan |
 |------|-----------|-------|--------------------|
 | A | Battle of Normandy Throwdown | 2ᵉ we juillet | **Fait** (7ᵉ / 40 RX team 3) |
-| B | Fire Contest (Nantes) | ~12–13 septembre | Pic secondaire — fin Macro 1 |
+| B | Fire Contest (Nantes) | 12–13 septembre | **Fait** (7ᵉ / 20 RX team mixte) |
 | C | S7mbioz Throwdown | 12–13 décembre | Pic équipe — Macro 3 |
 
 ## Intention long terme
