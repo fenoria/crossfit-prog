@@ -34,17 +34,25 @@ alwaysApply: false
 
 ## Liens timer ([timer.fenoria.fr](https://timer.fenoria.fr))
 
-Ajouter un lien `[Timer](…)` sur chaque bloc chronométré (**EMOM**, **E2MOM**, **AMRAP**, **Tabata**, **For Time** à rounds fixés) — juste après la durée du format.
+**Règle** : lier le **format chronométré** lui-même **dès que les paramètres sont déduisibles** — réflexe par défaut à la rédaction / mise à jour d’une semaine.
 
-| Format prescrit | Query params (`rest=0` pour EMOM / E2MOM) |
-|-----------------|---------------------------------------------|
-| EMOM **N'** | `?type=emom&rounds=N&work=60&rest=0&start=1` |
-| E2MOM **N'** (**R** rounds) | `?type=emom&rounds=R&work=120&rest=0&start=1` |
-| AMRAP **N'** | `?type=amrap&duration=N:00&start=1` |
-| Tabata **R**×work/rest | `?type=tabata&rounds=R&work=…&rest=…&start=1` |
-| For Time **R** rounds | `?type=forTime&rounds=R&start=1` |
+Placement : le lien porte sur le format, pas un libellé « Timer » séparé (ex. `[EMOM **8'**](url) : **4 BMU** + …`).
 
-Exemple : `EMOM **8'** · [Timer](https://timer.fenoria.fr/?type=emom&rounds=8&work=60&rest=0&start=1) : **4 BMU** + …`
+**Quand oui** : **EMOM**, **E2MOM**, **AMRAP**, **Tabata**, **For Time** à rounds fixés, **Countdown** (durée fixe).
+
+**Quand non** (pas de lien) : WOD team au format inconnu · chrono libre sans durée ni rounds · Zone 2 ou mobilité sans durée de bloc unique · option « si temps » non chiffrée.
+
+**Défauts** : `pre=10` (pré-compte) · `rest=0` (EMOM / E2MOM) · `start=1` (lancement auto).
+
+| Format prescrit | Query params |
+|-----------------|--------------|
+| EMOM **N'** | `?type=emom&pre=10&rounds=N&work=60&rest=0&start=1` |
+| E2MOM **N'** (**R** rounds) | `?type=emom&pre=10&rounds=R&work=120&rest=0&start=1` |
+| AMRAP **N'** | `?type=amrap&pre=10&duration=N:00&start=1` |
+| Tabata **R**×work/rest | `?type=tabata&pre=10&rounds=R&work=…&rest=…&start=1` |
+| For Time **R** rounds | `?type=forTime&pre=10&rounds=R&start=1` |
+
+Exemple : `[EMOM **8'**](https://timer.fenoria.fr/?type=emom&pre=10&rounds=8&work=60&rest=0&start=1) : **4 BMU** + …`
 
 ## Ops pack (semaine / meso)
 

@@ -29,6 +29,7 @@ Règles rédaction : **`.cursor/rules/prog-writing.mdc`** (ton, ops pack, immuta
 2. Créer/mettre à jour `Sxx-YYYY-MM-DD.md` :
    - Pourquoi / intention / apport / suite · Fondements 1–3 refs
    - `<!-- pattern: -->` + `<!-- warmup: -->` ; échauffement détaillé ; séance numérotée
+   - **Liens timer** sur chaque bloc chronométré paramétrable (voir `prog-writing.mdc` → Liens timer)
    - Maintien code meso en français ; `schedule` / team / Z2 / samedi selon profil
    - Notes feedback (`###` par jour)
 3. Index meso + `.vitepress/current.json` si besoin.
