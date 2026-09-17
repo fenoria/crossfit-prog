@@ -1,0 +1,65 @@
+semaine: S07
+dates: "2026-09-14 → 2026-09-20"
+macro: macrocycle-01-build
+meso: TRANS
+phase_micro: transition
+prog: prog/saison-2026/macrocycle-01-build/meso-04-transition-mini/S07-2026-09-14.md
+statut: en_cours
+
+jours:
+  lundi:
+    fait: oui
+    charges: "Zone 2 30 min bike RPE 4–5 · mobilité 12–15 min · core (dead bug, side plank)"
+    note: "Post-Fire J+1 conforme."
+  mardi:
+    fait: oui
+    charges: "BMU 3×3 (2–3 RIR) · HSW 3×10 m linéaire · HSPU strict réduit/skip · Zone 2 25 min"
+    note: "Épaule : HSPU non tenus au prescrit 3×5. BMU et HSW OK."
+  mercredi:
+    fait: oui
+    charges: "WOD team box"
+    rpe: 9
+    note: "Au-dessus du seuil J+1 → allègement BS jeudi. Fatigue vs Fire redescendue."
+  jeudi:
+    note: "Consigne J+1 : BS 3×3 @ 105–110 kg (recommandé) ou 2×3 @ 110–115 kg · RDL 3×8 @ 90–95"
+  vendredi: {}
+  samedi: {}
+  dimanche: {}
+
+realise:
+  force_lower_sets: 0
+  force_upper_sets: 0
+  oly_lifts: 0
+  gym_min: null
+  gym_min_note: "Mardi BMU 3×3 + HSW 3×10 m + HSPU réduit/skip — minutes non chronométrées"
+  z2_min: 55
+  z2_note: "30 min bike lundi + 25 min mardi ; jeudi option 10–15 min ; samedi optionnel si plancher déjà atteint"
+  hard_min: null
+  hard_min_note: "Team mercredi RPE 9 — minutes non chronométrées"
+
+team_wod_rpe: 9
+
+flags:
+  - "Team mercredi RPE 9 → règle J+1 : allègement BS jeudi (3×3 @ 105–110 ou 2×3 @ 110–115)"
+  - "Épaule : HSPU réduit/skip mardi — signal S05 qui revient ; BMU/HSW OK"
+  - "Fatigue vs Fire redescendue — rampe jeu–ven, pas la variante écrasé"
+  - "Z2 55 min dès mercredi — plancher 60 min presque atteint"
+
+ecarts_prescrit_vs_realise:
+  - mouvement: hspu_strict
+    prescrit: "3×5 RPE ≤ 6"
+    realise: "réduit / skip (épaule)"
+    sens: en_dessous
+    action: surveiller
+  - mouvement: z2_mardi
+    prescrit: "15–20 min"
+    realise: "25 min"
+    sens: au_dessus
+    action: rien
+
+gate: "TRANS → ACC-STR : en cours — fatigue redescendue, pas de douleur lower ; jeudi–vendredi force encore à faire"
+synthese: >
+  Lun–mer tenus. Récup active lundi pile. Mardi gym touch sauf HSPU (épaule).
+  Team mercredi RPE 9, au-dessus du seuil : squat jeudi allégé. Fatigue Fire
+  redescendue, rampe standard (pas écrasé). Z2 55 min déjà.
+suite: "Jeudi 17/09 lower allégé (team RPE 9). Vendredi press à juger sur l’épaule."
