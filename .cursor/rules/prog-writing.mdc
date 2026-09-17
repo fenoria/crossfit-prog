@@ -32,6 +32,20 @@ alwaysApply: false
 - Interdit visible : chemins `knowledge/` / `athletes/`, champs profile, ids `warmup_*` / patterns seuls, codes meso bruts sans nom lisible.
 - Métadonnées coach : `<!-- pattern: … -->` · `<!-- warmup: … -->` · en tête de semaine `<!-- meso: … -->`, `<!-- dose: … -->`, `<!-- dose-note: … -->`.
 
+## Liens timer ([timer.fenoria.fr](https://timer.fenoria.fr))
+
+Ajouter un lien `[Timer](…)` sur chaque bloc chronométré (**EMOM**, **E2MOM**, **AMRAP**, **Tabata**, **For Time** à rounds fixés) — juste après la durée du format.
+
+| Format prescrit | Query params (`rest=0` pour EMOM / E2MOM) |
+|-----------------|---------------------------------------------|
+| EMOM **N'** | `?type=emom&rounds=N&work=60&rest=0&start=1` |
+| E2MOM **N'** (**R** rounds) | `?type=emom&rounds=R&work=120&rest=0&start=1` |
+| AMRAP **N'** | `?type=amrap&duration=N:00&start=1` |
+| Tabata **R**×work/rest | `?type=tabata&rounds=R&work=…&rest=…&start=1` |
+| For Time **R** rounds | `?type=forTime&rounds=R&start=1` |
+
+Exemple : `EMOM **8'** · [Timer](https://timer.fenoria.fr/?type=emom&rounds=8&work=60&rest=0&start=1) : **4 BMU** + …`
+
 ## Ops pack (semaine / meso)
 
 1. **Patterns** — `<!-- pattern: id -->` ∈ `knowledge/session-patterns.yaml` ; hors liste → Notes (+ profile si durable)
