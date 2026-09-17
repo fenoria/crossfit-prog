@@ -185,10 +185,20 @@ function buildSeasonItems(currentSeason: string | null): DefaultTheme.SidebarIte
     })
 }
 
+const TIMER_URL = 'https://timer.fenoria.fr'
+
 const current = loadCurrent()
 const livresDir = join(progDir, 'livres')
 const outilsDir = join(progDir, 'outils')
-const outilsItems = buildDirItems(outilsDir)
+const outilsItems: DefaultTheme.SidebarItem[] = [
+  {
+    text: 'Timer',
+    link: TIMER_URL,
+    target: '_blank',
+    rel: 'noopener noreferrer',
+  },
+  ...buildDirItems(outilsDir),
+]
 
 const sidebarItems: DefaultTheme.SidebarItem[] = [
   ...buildSeasonItems(current.season),

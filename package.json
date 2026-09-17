@@ -18,7 +18,5 @@
     "typescript": "^7.0.2",
     "vitepress": "^1.6.3"
   },
-  "dependencies": {
-    "@lucide/vue": "^1.28.0"
-  }
+  "dependencies": {}
 }
