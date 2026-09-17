@@ -1,0 +1,11 @@
+{
+  "name": "crossfit-prog",
+  "user": "ubuntu",
+  "install": "npm ci",
+  "terminals": [
+    {
+      "name": "docs-dev",
+      "command": "npm run docs:dev -- --host 127.0.0.1 --port 5173"
+    }
+  ]
+}
