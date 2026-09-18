@@ -3,7 +3,7 @@
 <!-- Coach : code TRANS -->
 
 **Macrocycle** : 1 — Build → Fire · **Saison** : 2026  
-**Durée prévue** : 1 sem. (14–20 septembre) · **Statut** : rédigé (S07) · en cours (exécution)
+**Durée prévue** : 1 sem. (14–20 septembre) · **Statut** : exécuté lun–ven (S07) · weekend optionnel · gate TRANS → ACC-STR validée
 
 ## Pourquoi
 
@@ -38,9 +38,9 @@ Pas de focus secondaire : tout reste bas.
 
 ## Métriques de succès (sortie)
 
-- [ ] Fatigue subjective redescendue vs semaine Fire  
-- [ ] Intention Macro 2 confirmée (force → puissance barre → mixed)  
-- [ ] Pas de douleur florissante signalée bloquant le squat/hinge
+- [x] Fatigue subjective redescendue vs semaine Fire  
+- [x] Intention Macro 2 confirmée (force → puissance barre → mixed)  
+- [x] Pas de douleur florissante signalée bloquant le squat/hinge
 
 ## Semaines
 
@@ -48,4 +48,4 @@ Pas de focus secondaire : tout reste bas.
 
 ## Notes meso
 
-_(état post-comp ; ajustements Macro 2)_
+Gate validée (18 sept.). Squat 110–115 kg RPE 7, RAS adducteur. Épaule persistante (HSPU / RMU) — drills kipping S08 skip si gêne.

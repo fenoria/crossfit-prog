@@ -19,31 +19,37 @@ jours:
     fait: oui
     charges: "WOD team box"
     rpe: 9
-    note: "Au-dessus du seuil J+1 → allègement BS jeudi. Fatigue vs Fire redescendue."
+    note: "Au-dessus du seuil J+1. Fatigue vs Fire redescendue."
   jeudi:
-    note: "Consigne J+1 : BS 3×3 @ 105–110 kg (recommandé) ou 2×3 @ 110–115 kg · RDL 3×8 @ 90–95"
-  vendredi: {}
+    fait: oui
+    charges: "BS 3×3 @ 110–115 kg RPE 7 · RDL 3×8 @ 90–95 kg RPE 6–7 · core · Z2 skip"
+    note: "Allègement J+1 non appliqué — charge standard tenue à RPE cible. RAS adducteur."
+  vendredi:
+    fait: oui
+    charges: "Strict press 3×4 @ 57,5–60 kg RPE 6–7 · traction lestée 3×4 @ +28–32 kg RPE 6–7 · BMU 3×3 (2 RIR) · RMU réduit/skip"
+    note: "Épaule : press tenu, RMU coupé. BMU OK."
   samedi: {}
   dimanche: {}
 
 realise:
-  force_lower_sets: 0
-  force_upper_sets: 0
+  force_lower_sets: 6
+  force_upper_sets: 6
   oly_lifts: 0
   gym_min: null
-  gym_min_note: "Mardi BMU 3×3 + HSW 3×10 m + HSPU réduit/skip — minutes non chronométrées"
+  gym_min_note: "Mar BMU 3×3 + HSW 3×10 m + HSPU skip ; ven BMU 3×3 + RMU réduit — minutes non chronométrées"
   z2_min: 55
-  z2_note: "30 min bike lundi + 25 min mardi ; jeudi option 10–15 min ; samedi optionnel si plancher déjà atteint"
+  z2_note: "30 min bike lundi + 25 min mardi ; jeudi Z2 skip ; vendredi pas de Z2 prescrit"
   hard_min: null
   hard_min_note: "Team mercredi RPE 9 — minutes non chronométrées"
 
 team_wod_rpe: 9
 
 flags:
-  - "Team mercredi RPE 9 → règle J+1 : allègement BS jeudi (3×3 @ 105–110 ou 2×3 @ 110–115)"
-  - "Épaule : HSPU réduit/skip mardi — signal S05 qui revient ; BMU/HSW OK"
-  - "Fatigue vs Fire redescendue — rampe jeu–ven, pas la variante écrasé"
-  - "Z2 55 min dès mercredi — plancher 60 min presque atteint"
+  - "Team mercredi RPE 9 mais BS jeudi 3×3 @ 110–115 kg RPE 7 — allègement J+1 non nécessaire"
+  - "Épaule persistante : HSPU mar skip, RMU ven réduit ; press 57,5–60 kg tenu ; BMU OK"
+  - "Fatigue vs Fire redescendue — rampe jeu–ven tenue, pas la variante écrasé"
+  - "Z2 55 min — plancher 60 min presque atteint ; samedi ISO paire optionnel"
+  - "RAS adducteur au squat 110–115 kg"
 
 ecarts_prescrit_vs_realise:
   - mouvement: hspu_strict
@@ -56,10 +62,16 @@ ecarts_prescrit_vs_realise:
     realise: "25 min"
     sens: au_dessus
     action: rien
+  - mouvement: rmu
+    prescrit: "3×2, 2 RIR"
+    realise: "réduit / skip (épaule)"
+    sens: en_dessous
+    action: surveiller
 
-gate: "TRANS → ACC-STR : en cours — fatigue redescendue, pas de douleur lower ; jeudi–vendredi force encore à faire"
+gate: "TRANS → ACC-STR : validée — fatigue redescendue, intention Macro 2 confirmée, pas de douleur lower. Épaule = flag S08 (kipping skip si gêne), pas un blocker de gate."
 synthese: >
-  Lun–mer tenus. Récup active lundi pile. Mardi gym touch sauf HSPU (épaule).
-  Team mercredi RPE 9, au-dessus du seuil : squat jeudi allégé. Fatigue Fire
-  redescendue, rampe standard (pas écrasé). Z2 55 min déjà.
-suite: "Jeudi 17/09 lower allégé (team RPE 9). Vendredi press à juger sur l’épaule."
+  Lun–ven tenus. Récup active lundi pile. Mardi gym touch sauf HSPU (épaule).
+  Team mercredi RPE 9, mais squat jeudi 110–115 kg à RPE 7 — allègement non
+  nécessaire, RAS adducteur. Vendredi press et traction lestée à la cible ;
+  BMU tenu, RMU réduit. Z2 55 min. Gate validée.
+suite: "S08 lun barre + squat 4×3 @ 112,5 kg. Mar : press 60 kg OK ; RMU 2×2 ou skip si épaule ; drills kipping skip si gêne. Samedi S07 off OK."
