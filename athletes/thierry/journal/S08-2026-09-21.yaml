@@ -1,0 +1,101 @@
+semaine: S08
+dates: "2026-09-21 → 2026-09-27"
+macro: macrocycle-02-elevation
+meso: ACC-STR
+phase_micro: volume
+prog: prog/saison-2026/macrocycle-02-elevation/meso-01-accumulation-force/S08-2026-09-21.md
+statut: close
+
+jours:
+  lundi:
+    fait: oui
+    charges: "Épaulé puissance 5×1 @ 90–100 kg RPE ≤ 7 · BS 4×3 @ 112,5 kg RPE 6–7 · RDL 3×8 @ 95 kg RPE 6–7"
+    note: "Adducteur : tension légère tenable sur l'isométrie, pas une douleur. Zone 2 10' skippée."
+  mardi:
+    fait: partiel
+    charges: "Strict press 3×4 @ 60 kg RPE 8+ · traction lestée 3×4 @ +30–32 kg RPE 8+ · ring row 3×8 RPE 6–7 · BMU EMOM 8' (4 + 10 cal) · HSW 2× (10 m + pivot + 10 m)"
+    note: "RMU skip — gêne d'épaule sur ce mouvement. BMU et HSW OK. Drills kipping skippés (temps), pas pour l'épaule."
+  mercredi:
+    fait: partiel
+    charges: "Mobilité + Zone 2 ~20 min"
+    rpe: null
+    note: "Team remplacé. Pas de RPE team — pas d'allègement J+1 mardi S09."
+  jeudi:
+    fait: oui
+    charges: "Randonnée"
+    note: "Journée longue ou jambes bien sollicitées. Durée non notée."
+  vendredi:
+    fait: oui
+    charges: "Randonnée"
+    note: "Option tonus non faite."
+  samedi:
+    fait: oui
+    charges: "Randonnée"
+    note: "Même registre."
+  dimanche:
+    fait: oui
+    charges: "Randonnée"
+    note: "Jambes au retour : fatigue normale, rien de bloquant."
+
+realise:
+  force_lower_sets: 7
+  force_upper_sets: 9
+  force_upper_sets_note: "Press 3 + tractions 3 + ring row 3, tous RPE ≥ 6"
+  oly_lifts: 5
+  gym_min: null
+  gym_min_note: "EMOM BMU 8' tenu + HSW non chronométrée. RMU et drills kipping skippés."
+  z2_min: 20
+  z2_min_note: "Mercredi ~20 min. Finisher lundi skippé. 4 jours de rando non chiffrés."
+  hard_min: 0
+
+team_wod_rpe: null
+
+flags:
+  - "Mercredi : team remplacé par mobilité + Zone 2 ~20 min — pas de seuil J+1"
+  - "Épaule : RMU skip, BMU et HSW OK. Drills kipping non faits (temps)"
+  - "Adducteur : tension légère sur l'isométrie, pas de douleur"
+  - "Press et tractions au prescrit mais RPE 8+"
+  - "Rando 4 jours exigeante, jambes OK au retour"
+
+ecarts_prescrit_vs_realise:
+  - mouvement: strict_press
+    prescrit: "3×4 @ 60 kg RPE 6–7"
+    realise: "3×4 @ 60 kg RPE 8+"
+    sens: au_dessus
+    action: surveiller
+  - mouvement: weighted_pullup
+    prescrit: "3×4 @ +30–32 kg RPE 6–7"
+    realise: "3×4 @ +30–32 kg RPE 8+"
+    sens: au_dessus
+    action: surveiller
+  - mouvement: rmu
+    prescrit: "3×2"
+    realise: "skip — gêne d'épaule"
+    sens: en_dessous
+    action: re_ancrer
+  - mouvement: hspu_kipping
+    prescrit: "drills 3×3"
+    realise: "skip — temps"
+    sens: en_dessous
+    action: surveiller
+  - mouvement: team_wod
+    prescrit: "WOD team box"
+    realise: "mobilité + Zone 2 ~20 min"
+    sens: autre
+    action: rien
+  - mouvement: z2
+    prescrit: "10 min lundi"
+    realise: "skip"
+    sens: en_dessous
+    action: rien
+
+gate: null
+synthese: >
+  Entrée ACC-STR tenue sur lower et barre (épaulé 90–100, squat 112,5, RDL 95, RPE cibles).
+  Upper plus dur que prévu (press et tractions RPE 8+ à la charge prescrite) — une semaine, pas de ré-ancrage.
+  BMU couplet et HSW OK ; RMU coupés pour l'épaule ; kipping non testé.
+  Pas de team. Quatre jours de rando exigeants, jambes récupérées.
+suite: >
+  S09 : pas d'allègement J+1. Kipping HSPU déjà acquis — jeudi EMOM 5' × 3,
+  skip seulement si l'épaule gêne. RMU ré-ancré à 3×1 (skip si gêne) :
+  S07 réduit, S08 skip. Press et tractions à surveiller.
