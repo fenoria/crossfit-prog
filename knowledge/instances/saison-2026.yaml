@@ -31,13 +31,6 @@ competitions:
     statut: fait
     resultat: "7e / 20 RX"
     note: "Cut avant la finale. Limiteur = butterfly PU. Taper S06 validé."
-  - id: s7mbioz
-    nom: "S7mbioz Throwdown"
-    role: C
-    date: "2026-12-12 → 2026-12-13"
-    format: team
-    statut: a_venir
-    note: "Book non publié à ce jour — exigences à compléter dans competition-demands.yaml"
 
 # ─────────────────────────────────────────────────────────────
 # Chemin de mesos (ordre réellement suivi cette saison)
@@ -52,7 +45,7 @@ chemin_mesos:
   - TRA-POW
   - TRA-MIX
   - TRA-MIX   # orienté team (Macro 3)
-  - REAL      # pic C — S7mbioz
+  - REAL      # pic C — annulé (2026-10-02), à redéfinir
   - TRANS
 note_chemin: >
   Ce chemin n'est pas le chemin par défaut de la méthodo : ACC-GYM passe avant ACC-STR
@@ -85,7 +78,7 @@ macrocycles:
     fenetre: "2026-11-16 → 2026-12-13"
     mesos:
       TRA-MIX_team: "16–29 nov."
-      REAL: "30 nov. – 13 déc. (pic C)"
+      REAL: "30 nov. – 13 déc. (pic C annulé — à redéfinir)"
 
 # ─────────────────────────────────────────────────────────────
 # Points de mesure (pas de semaine de tests dédiée cette saison)

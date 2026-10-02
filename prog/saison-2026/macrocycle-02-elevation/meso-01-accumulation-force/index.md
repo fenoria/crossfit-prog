@@ -27,7 +27,7 @@ Trois semaines suffisent ici : la semaine d'entrée est tronquée par les vacanc
 
 - Court : confiance et kilos actuels sous la barre
 - Moyen : base pour conversion puissance + mixed
-- Long : plafond force pour S7mbioz
+- Long : plafond force pour la fin de saison
 
 ## Continuité
 

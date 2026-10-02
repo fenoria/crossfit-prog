@@ -7,7 +7,7 @@
 
 ## Pourquoi
 
-Transfert force + gym + barre vers formats combinés sous fatigue, avant le bloc spécifique team de Macro 3 (S7mbioz).
+Transfert force + gym + barre vers formats combinés sous fatigue, avant le bloc spécifique team de Macro 3.
 
 Trois semaines et non deux : la répétabilité gym sous fatigue est la qualité limitante, et son résidu est court — elle doit être travaillée près du pic de décembre. La semaine vient du bloc force, dont le lift principal était plafonné.
 

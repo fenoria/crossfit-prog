@@ -5,7 +5,7 @@
 
 ## Intention
 
-Après S7mbioz : décharge, compensation tissus / épaules, PPG agréable, Z2 si créneau. Protéger l’enchaînement vers 2027 (Battle of Normandy — 2ᵉ weekend de juillet, à confirmer).
+Fin de saison : décharge, compensation tissus / épaules, PPG agréable, Z2 si créneau. Protéger l’enchaînement vers 2027 (Battle of Normandy — 2ᵉ weekend de juillet, à confirmer).
 
 ## Contenu type
 
@@ -16,7 +16,7 @@ Après S7mbioz : décharge, compensation tissus / épaules, PPG agréable, Z2 si
 
 ## Continuité
 
-- **Précède** : Expression S7mbioz  
+- **Précède** : Macrocycle 3 (à redéfinir)  
 - **Suit** : préparation / Macro 1 saison 2027 (à définir)
 
 ## Notes

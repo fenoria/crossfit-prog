@@ -2,12 +2,12 @@
 
 <!-- Coach : code TRA-MIX -->
 
-**Macrocycle** : 3 — Spécifique S7mbioz · **Saison** : 2026  
+**Macrocycle** : 3 — Spécifique · **Saison** : 2026  
 **Durée prévue** : ~2 sem. (16–29 nov.) · **Statut** : à venir
 
 ## Pourquoi
 
-Orienter la conversion vers le format **équipe** (S7mbioz) : synchro, partages, densités team, sans encore taper à fond.
+Orienter la conversion vers le format **équipe** : synchro, partages, densités team, sans encore taper à fond.
 
 ## Intention dominante
 
@@ -24,7 +24,7 @@ Orienter la conversion vers le format **équipe** (S7mbioz) : synchro, partages,
 ## Continuité
 
 - **Précède** : Conversion mixed Macro 2 — mixed digéré  
-- **Suit** : Expression S7mbioz — fraîcheur relative, pas de surcharge empilée
+- **Suit** : Expression — fraîcheur relative, pas de surcharge empilée
 
 ## Focus par semaine
 
@@ -61,7 +61,7 @@ Force / gym / oly en maintien léger ; Z2 OK ; HI surtout dans les séances team
 
 ## Semaines
 
-_(à écrire en approche S7mbioz)_
+_(à écrire — Macro 3 à redéfinir)_
 
 ## Notes meso
 

@@ -11,7 +11,7 @@ journal_dir: athletes/thierry/journal/
 
 goal:
   type: competition_performance
-  notes: "Performance compétition ; fraîcheur et spécificité > volume gratuit. A Battle (7e/40) et B Fire (7e/20, 12–13 sept. 2026) faits → ancre = C S7mbioz (12–13 déc.). Petites compet opportunistes si dates connues, sans casser C. Macro 2 = force → puissance → mixed (inchangé post-Fire). Butterfly PU + C2B = 2027, pas 2026. Prudence charges adducteur ≠ convalescence."
+  notes: "Performance compétition ; fraîcheur et spécificité > volume gratuit. A Battle (7e/40) et B Fire (7e/20, 12–13 sept. 2026) faits. Pic C de décembre 2026 annulé (2026-10-02) → ancre de fin de saison à redéfinir, impacts prog à revoir. Petites compet opportunistes si dates connues. Macro 2 = force → puissance → mixed (inchangé post-Fire). Butterfly PU + C2B = 2027, pas 2026. Prudence charges adducteur ≠ convalescence."
   # Ancre annuelle pour caler les cycles (récurrent tant que non modifié)
   competitions:
     primary_a:
@@ -25,13 +25,8 @@ goal:
       when: "2ème weekend de septembre"
       format: team_mixed_of_2  # team mixte à 2
       role: B  # plus petite — pic secondaire / maintien forme
-    team_c:
-      name: "S7mbioz Throwdown"
-      format: team
-      when: "12–13 décembre"  # dates 2026 confirmées ; récurrent si même créneau
-      role: C  # compet équipe — pic / spécificité team en fin d’année
     opportunistic:
-      notes: "Petites compet possibles dans l’année ; dates non fixées — intégrer seulement quand annoncées (sans casser le plan A/B/C)"
+      notes: "Petites compet possibles dans l’année ; dates non fixées — intégrer seulement quand annoncées (sans casser le plan A/B)"
   results:
     - event: "Battle of Normandy Throwdown"
       year: 2026
@@ -40,7 +35,7 @@ goal:
       format: team_of_3
       place: 7
       field: 40
-      notes: "7e / 40 RX en team de 3 — niveau élite confirmé ; suite 2026 = Fire Contest puis S7mbioz"
+      notes: "7e / 40 RX en team de 3 — niveau élite confirmé ; suite 2026 = Fire Contest"
     - event: "Fire Contest"
       year: 2025
       location: Nantes
@@ -59,12 +54,9 @@ goal:
       place: 7
       field: 20
       notes: "7e / 20 RX team mixte à 2 ; cut avant la finale. Limiteur = butterfly PU (WOD 3). Ski 165 cal = 1er. Complex 95 kg RPE 7 RAS adducteur (3e)."
-  # Cible courante — B Fire 2026 fait → ancre = C S7mbioz
-  competition: "S7mbioz Throwdown"
-  date: "2026-12-12"  # 12–13 déc. 2026 (team)
-  next_after_b:
-    name: "S7mbioz Throwdown"
-    date: "2026-12-12"  # 12–13 déc. 2026 (team)
+  # Cible courante — B Fire 2026 fait ; pic C déc. 2026 annulé → à redéfinir
+  competition: null
+  date: null
   next_primary_a: "Battle of Normandy Throwdown — 2ème weekend juillet 2027 (à confirmer)"
 
 body:
@@ -228,7 +220,7 @@ gym_ladder_level:
   hspu: 3      # S04 : 5×10 strict plafond (~0 RIR dernières) — cran 3 stable
   hsw: 4       # S04 : 5× (10 m + pivot + 10 m) unbroken — cran 4 confirmé (vs 6+6 S03)
   hspu_kipping_plan: "Geste déjà acquis (retour athlète, 29 sept. 2026) — ne pas programmer des drills de technique comme stimulus. Macro 2 : EMOM court S09, volume S10, intégré aux couplets en TRA-MIX. Cible cran 4 au relevé S15. Skip au moindre inconfort d'épaule (S05, RMU S08). Le strict reste la référence de force."
-  kipping_pull_plan: "Butterfly PU + C2B : trou Fire 2026 (WOD 3, cut ½). Ne pas insérer dans Macro 2. Intégrer en 2027 après S7mbioz."
+  kipping_pull_plan: "Butterfly PU + C2B : trou Fire 2026 (WOD 3, cut ½). Ne pas insérer dans Macro 2. Intégrer en 2027."
   maintien_format: "En maintien, garder le format du cran (couplet BMU + pivot en HSW) — le linéaire et les séries sèches sont une régression de spécificité."
 
 benchmarks:
@@ -241,7 +233,7 @@ benchmarks:
     aerobie: "S10 samedi (10 oct.) : test aérobie signature + relevé FC / allure → aerobic_anchors"
     power: "S12 (19–25 oct.) : épaulé / arraché puissance + cycling notés en fin de bloc puissance"
     gym: "S15 mardi (10 nov.) : relevé densité BMU, série RMU, kipping HSPU, distance HSW avec pivots → gym_ladder_level"
-    note: "Retest par la prog, pas par une semaine dédiée : la fraîcheur avant le pic C (12–13 déc.) prime."
+    note: "Retest par la prog, pas par une semaine dédiée : la fraîcheur prime."
   battery:
     - back_squat
     - front_squat

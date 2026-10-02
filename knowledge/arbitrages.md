@@ -56,14 +56,14 @@ Contraintes athlète / calendrier / feedback durable → profil athlète actif (
 - **Libellé** (2026-07-29) : abandon de « reconstruction » → **Build** partout (visible + méthodo).
 
 ## 12. Calendrier 2026 ancré B/C (2026-07-29)
-- **Conflit** : Macro 1 long (~15 sem. jusqu’à REAL générique) vs Fire Contest ~12 sept. + S7mbioz 12–13 déc.
+- **Conflit** : Macro 1 long (~15 sem. jusqu’à REAL générique) vs Fire Contest ~12 sept. + pic C de décembre.
 - **Décision** :
   - Macro 1 (3 août – 20 sept.) : Benchmarks → ACC-GYM → **REAL Fire (B)** → TRANS mini.
   - Macro 2 (21 sept. – 15 nov.) : ACC-STR → **TRA-POW** → TRA-MIX (élévation, pas de taper A). *(Amendement 2026-09-11 : voir §14.)*
-  - Macro 3 (16 nov. – 13 déc.) : TRA team → **REAL S7mbioz (C)**.
+  - Macro 3 (16 nov. – 13 déc.) : TRA team → **REAL (C)**. *(Amendement 2026-10-02 : pic C annulé — Macro 3 à redéfinir.)*
   - Transition dès 14 déc.
 - Fire = pic **secondaire** (expression / maintien) — pas un taper A qui casse le Build.
-- SoT dates : profil athlète actif (`competitions` + `competition` / `next_after_b`).
+- SoT dates : profil athlète actif (`competitions` + `competition`).
 
 ## 13. Variation des accessoires vs spécificité des lifts (2026-09-11)
 - **Conflit** : cloner le même menu (dead bug + Pallof + RDL 3×8 + EMOM BMU/RMU + power singles) d’un meso à l’autre vs rotation conjugate weekly des mouvements principaux.
@@ -86,7 +86,7 @@ Amende §14 (répartition des semaines) et §12 (fenêtres de mesos). Révision 
 - **Conflit 1 — où placer la décharge** : Israetel = deload dédié après le pic de meso ; Issurin = au pivot de bloc, on coupe le stimulus dominant et l’intention change. Le calendrier ajoutait un troisième facteur : S08 tronquée + 5 jours de vacances (24–28 sept.) = décharge déjà présente au milieu du bloc. Le plan initial chargeait donc 2 semaines (S09–S10) pour 1 semaine tronquée + 1 deload complet.
 - **Décision** : **la semaine de décharge force est la première semaine du bloc puissance** (S11 : volume force −40/50 %, RPE ≤ 6,5, pas de deadlift, intention barre). Un deload Israetel valide (volume coupé, charges relatives tenues) qui sert aussi de pivot Issurin. Pas de semaine « vide » en plus.
 - **Conflit 2 — combien de semaines pour la force** : Bompa/Zatsiorsky = bloc max strength de 3–5 semaines ; profil = squat plafonné (tension dès ~120 kg, charge de travail bornée à 115) et faiblesse n° 1 = répétabilité gym sous fatigue.
-- **Décision** : **ACC-STR 3 semaines** (21 sept. – 11 oct.) · **TRA-POW 2** (12–25 oct.) · **TRA-MIX 3** (26 oct. – 15 nov.). La semaine retirée à la force va au mixed, dont le résidu est court et qui sert directement le pic C du 12–13 décembre (Issurin : qualités à résidu court près du pic).
+- **Décision** : **ACC-STR 3 semaines** (21 sept. – 11 oct.) · **TRA-POW 2** (12–25 oct.) · **TRA-MIX 3** (26 oct. – 15 nov.). La semaine retirée à la force va au mixed, dont le résidu est court et qui sert directement le bloc spécifique de Macro 3 (Issurin : qualités à résidu court près du pic).
 - **Conflit 3 — surcharger un lift plafonné** : ajouter des séries indéfiniment (Israetel) vs progresser en charge (Zatsiorsky, impossible ici).
 - **Décision** : trois leviers explicites — (1) charger les patterns où il reste de la marge réelle (deadlift en rampe 145 → 160, traction lestée +36–40 alors qu’un single à +52 a été tenu, strict press) ; (2) **tension** via front squat avec pause 2 s à charge plus basse ; (3) **densité** (repos du back squat ramené à 2’ en semaine de pic). Le back squat reste à ≤ 115 kg.
 - **Conflit 4 — prescription vs comportement réel** : les charges barre prescrites étaient systématiquement sous le niveau réel (S04 : 62,5–65 prescrit / 70 fait à RPE 7 ; 87,5–90 prescrit / 100 fait à RPE 7 ; idem S06). L’athlète exécute ses charges habituelles → la prescription perd sa valeur et le journal devient faux.

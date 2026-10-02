@@ -34,7 +34,7 @@ exigences:
     preuve: >
       Fire 2026 : WOD 2 répartition claire sans switch (ski 165 cal = 1er, couplet partenaire 350 = 6e).
       WOD 4 Isabel synchro 48/60, 7e — partenaire imposait les pauses. Team mercredi box ≠ partenaire compétition.
-    action: "Bloc spécifique S7mbioz : au moins deux séances avec la partenaire réelle, plan de bascule écrit, synchro barre à charge moyenne"
+    action: "Bloc spécifique team : au moins deux séances avec la partenaire réelle, plan de bascule écrit, synchro barre à charge moyenne"
 
   objets_lourds_inhabituels:
     exigence: "Worm, sac, sled, D-ball, objets non standard fréquents en compétition team"
@@ -73,7 +73,7 @@ exigences:
     exigence: "Pull-ups butterfly et chest-to-bar en volume / sous fatigue, y compris dans un complexe gym court"
     statut: trou_assume
     preuve: "Fire 2026 WOD 3 : cut en ½, 7e, RPE 10 — butterfly = gros trou. C2B non vu, même famille de kipping cycling."
-    action: "Ne pas insérer dans Macro 2 (force → puissance → mixed). Intégrer en 2027 après S7mbioz."
+    action: "Ne pas insérer dans Macro 2 (force → puissance → mixed). Intégrer en 2027."
 
   grip_et_mains:
     exigence: "Enchaîner barre, anneaux, cordes et rameur sans lâcher sur les mains"
@@ -111,7 +111,3 @@ a_completer:
     mouvements_non_prepares: "butterfly PU · C2B (même famille, 2027) · worm timing"
     ce_qui_a_porte: "cardio/ergos (ski 1er) · barre power (WOD 6 3e, RPE 7) · team répartition (WOD 2) · taper S06 (fraîcheur 5/5)"
     gestion_journee: "fraîcheur entrée 5/5 J1, 4/5 J2 ; douleur RAS ; sommeil / ravitaillement / re-warm non collectés"
-  s7mbioz_2026:
-    quand: "dès publication du book de l'épreuve"
-    remplir: "format d'équipe, nombre de WOD, mouvements annoncés, matériel spécifique, contraintes de site"
-    note: "Tant que le book n'est pas sorti, préparer le générique team : objets lourds, synchronisation, transitions."

@@ -53,11 +53,11 @@ Le CrossFit compétition a des opportunités **toute l’année** → Bompa reco
 ANNÉE (instance 2026 — reste de saison post-Battle)
 ├── Macrocycle 1 (Build → pic B Fire)         ~7 semaines (août → mi-sept.)
 ├── Macrocycle 2 (Élévation)                  ~8 semaines (mi-sept. → mi-nov.)
-├── Macrocycle 3 (Spécifique + pic C S7mbioz) ~4 semaines (mi-nov. → mi-déc.)
+├── Macrocycle 3 (Spécifique, pic C à redéfinir) ~4 semaines (mi-nov. → mi-déc.)
 └── Transition / compensation                 ~2–3 semaines (dès mi-déc.)
 ```
 
-*(Gabarit générique Bompa : macros plus longs possibles quand le calendrier le permet. Ici les fenêtres sont **compressées** pour ancrer les REAL sur Fire Contest puis S7mbioz.)*
+*(Gabarit générique Bompa : macros plus longs possibles quand le calendrier le permet. Ici les fenêtres sont **compressées** pour ancrer les REAL sur les compétitions de la saison.)*
 
 Chaque **macrocycle** est construit à la Issurin comme un ou deux **stages** (~6–8 semaines chacun, ajustable) :
 
@@ -92,7 +92,7 @@ On **répète** et **alterne** ces blocs dans l’année selon le calendrier com
 
 Contexte : athlète déjà en forme (élite) ; Macro 1 = **Build** pour élever encore le plafond gym, puis **exprimer** sur le pic B. Priorité gym (qualité limitante, validée). Prudence charges / pas PRs pré-blessure (adducteur 2025) — ce n’est pas une phase de convalescence.
 
-**Ancres** : Fire Contest (~12–13 sept., rôle B) puis S7mbioz (12–13 déc., rôle C). Fire = pic secondaire (maintien de forme) → pas de taper A ultra-long ; ACC-STR et TRA-MIX longs sont **reportés en Macro 2**.
+**Ancres** : Fire Contest (~12–13 sept., rôle B) ; pic C de décembre annulé (2026-10-02), à redéfinir. Fire = pic secondaire (maintien de forme) → pas de taper A ultra-long ; ACC-STR et TRA-MIX longs sont **reportés en Macro 2**.
 
 | Semaines | Bloc | Pourquoi (livres) |
 |----------|------|-------------------|
@@ -104,14 +104,14 @@ Contexte : athlète déjà en forme (élite) ; Macro 1 = **Build** pour élever 
 **Maintien pendant les blocs** → doses chiffrées dans `knowledge/maintenance-doses.yaml` (résidus Issurin).  
 **Passage de meso** → gates dans `knowledge/meso-gates.yaml` (pas calendrier seul).
 
-### 3.4 Macrocycles 2 et 3 (post-Fire → S7mbioz) — instance 2026
+### 3.4 Macrocycles 2 et 3 (post-Fire) — instance 2026
 
 REAL ancrés sur B puis C (Bompa multi-peak) :
 
 | Macro | Fenêtre | Séquence | Pic |
 |-------|---------|----------|-----|
 | **Macro 2 — Élévation** | 21 sept. – 15 nov. | ACC-STR (~3) → TRA-POW (~2) → TRA-MIX (~3) | — (pas de taper A) |
-| **Macro 3 — Spécifique** | 16 nov. – 13 déc. | TRA-MIX team (~2) → REAL S7mbioz (~2) | Pic C 12–13 déc. |
+| **Macro 3 — Spécifique** | 16 nov. – 13 déc. | TRA-MIX team (~2) → REAL (~2) | Pic C annulé — à redéfinir |
 | **Transition** | dès 14 déc. (~2–3 sem.) | Volume bas, GPP, Z2 | — |
 
 Sans date de comps : on enchaînerait Macro 2 sur le même canevas Issurin en changeant l’accent Accumulation. Ici les dates B/C sont connues → calendrier ci-dessus.
@@ -278,7 +278,7 @@ Lint : `npm run lint:prog` — forme (`scripts/lint-prog.py`) **et** doses, caps
 - [x] Année en **2–3 macrocycles** (Bompa multi-pic) + transition — pas un seul run FORCE→GYM→HALTÉRO→SPEC façon BON
 - [x] Chaque macro = stages **Accumulation → Transmutation → Realization** (Issurin)
 - [x] Mesos nommés par **intention** (ACC-GYM, ACC-STR, TRA-MIX, REAL…) et **répétés** dans l’année
-- [x] Macro 1 août–sept. 2026 : Benchmarks → ACC-GYM → REAL (Fire B) → TRANS ; ACC-STR → TRA-POW → TRA-MIX en Macro 2 → REAL (S7mbioz C)
+- [x] Macro 1 août–sept. 2026 : Benchmarks → ACC-GYM → REAL (Fire B) → TRANS ; ACC-STR → TRA-POW → TRA-MIX en Macro 2 → REAL (pic C annulé, à redéfinir)
 
 ## Validation ops pack (2026-07-28)
 

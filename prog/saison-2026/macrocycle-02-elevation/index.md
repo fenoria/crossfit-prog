@@ -1,7 +1,7 @@
 # Macrocycle 2 — Élévation
 
 **Début prévu** : 21 septembre 2026 · **Fin prévue** : 15 novembre 2026  
-**Rôle** : élever le plafond force / puissance / mixed **après** le pic B Fire Contest, en vue de S7mbioz.
+**Rôle** : élever le plafond force / puissance / mixed **après** le pic B Fire Contest.
 
 ## Intention
 

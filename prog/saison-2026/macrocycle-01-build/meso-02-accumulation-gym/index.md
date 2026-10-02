@@ -19,7 +19,7 @@ La qualité limitante est le volume / la répétabilité gym. Avant le pic B Fir
 
 - Court : plus de reps gym de qualité sous contrôle  
 - Moyen : base pour exprimer à Fire Contest sans panne skill  
-- Long : plafond gym plus haut pour Macro 2 / S7mbioz
+- Long : plafond gym plus haut pour Macro 2
 
 ## Continuité
 

@@ -8,7 +8,7 @@
 
 ## Pourquoi
 
-Ancrer une phase d’expression sur le pic B (Bompa multi-pic). Fraîcheur, pas un taper A ultra-long : Fire reste secondaire face à S7mbioz en décembre.
+Ancrer une phase d’expression sur le pic B (Bompa multi-pic). Fraîcheur, pas un taper A ultra-long : Fire reste un pic secondaire.
 
 ## Intention dominante
 
@@ -19,7 +19,7 @@ Ancrer une phase d’expression sur le pic B (Bompa multi-pic). Fraîcheur, pas 
 ## Apport
 
 - Court : arriver frais et compétitif à Nantes  
-- Moyen : notes peaking (ce qui a marché) pour S7mbioz  
+- Moyen : notes peaking (ce qui a marché) pour les pics suivants  
 - Long : second pic annuel sans casser la progression gym/force
 
 ## Continuité

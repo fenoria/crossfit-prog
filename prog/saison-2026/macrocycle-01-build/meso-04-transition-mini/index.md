@@ -19,7 +19,7 @@ Après un pic B, une courte décharge protège l’enchaînement vers Macro 2 (�
 
 - Court : digérer Fire Contest  
 - Moyen : entrée propre en Accumulation force  
-- Long : enchaînement multi-pics soutenable jusqu’à S7mbioz
+- Long : enchaînement multi-pics soutenable jusqu’à la fin de saison
 
 ## Continuité
 
