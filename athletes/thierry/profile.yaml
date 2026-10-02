@@ -11,7 +11,7 @@ journal_dir: athletes/thierry/journal/
 
 goal:
   type: competition_performance
-  notes: "Performance compétition ; fraîcheur et spécificité > volume gratuit. A Battle (7e/40) et B Fire (7e/20, 12–13 sept. 2026) faits. Pic C de décembre 2026 annulé (2026-10-02) → ancre de fin de saison à redéfinir, impacts prog à revoir. Petites compet opportunistes si dates connues. Macro 2 = force → puissance → mixed (inchangé post-Fire). Butterfly PU + C2B = 2027, pas 2026. Prudence charges adducteur ≠ convalescence."
+  notes: "Performance compétition ; fraîcheur et spécificité > volume gratuit. A Battle (7e/40) et B Fire (7e/20, 12–13 sept. 2026) faits. Pic C de décembre 2026 annulé (2026-10-02) → Macro 3 = comblement des trous de compétition + simulation le samedi 5 déc. Petites compet opportunistes si dates connues. Macro 2 = force → puissance → mixed (inchangé post-Fire). Butterfly PU + C2B : drills seulement en Macro 3 si gate épaule, volume en 2027. Variété de mouvements (DU, sauts, objets, haltères…) exposée chaque semaine dès S11. Prudence charges adducteur ≠ convalescence."
   # Ancre annuelle pour caler les cycles (récurrent tant que non modifié)
   competitions:
     primary_a:
@@ -54,7 +54,7 @@ goal:
       place: 7
       field: 20
       notes: "7e / 20 RX team mixte à 2 ; cut avant la finale. Limiteur = butterfly PU (WOD 3). Ski 165 cal = 1er. Complex 95 kg RPE 7 RAS adducteur (3e)."
-  # Cible courante — B Fire 2026 fait ; pic C déc. 2026 annulé → à redéfinir
+  # Cible courante — B Fire 2026 fait ; pic C déc. 2026 annulé → simulation compétition 5 déc. (pas une compétition)
   competition: null
   date: null
   next_primary_a: "Battle of Normandy Throwdown — 2ème weekend juillet 2027 (à confirmer)"
@@ -126,6 +126,14 @@ prs_pre_injury_kg:
   snatch: 80
   deadlift: 200
   weighted_pullup_1rm: 50
+
+# Objets / portés — standards de compétition et capacité (retour athlète 2026-10-02)
+odd_objects_kg:
+  sandbag_competition: 70        # standard compet → charge cible des formats ; progression S12–S13 50 → S14–S15 70
+  sandbag_box_available: [50, 70]  # seuls sacs dispo à la box — ne prescrire que ces deux charges
+  farmer_competition_per_hand: 32
+  farmer_capacity_per_hand: 40   # 2×40 supporté en surcharge
+  notes: "Ne pas prescrire sous ces repères en format compétition ; adducteur : ramassage hanche haute, repli 50 kg si tension."
 
 prs_current_kg:
   # S01 benchmarks (2026-08-03 → 09) — charges de travail RPE 8–9, pas des 1RM
@@ -221,7 +229,7 @@ gym_ladder_level:
   hspu: 3      # S04 : 5×10 strict plafond (~0 RIR dernières) — cran 3 stable
   hsw: 4       # S04 : 5× (10 m + pivot + 10 m) unbroken — cran 4 confirmé (vs 6+6 S03)
   hspu_kipping_plan: "Geste déjà acquis (retour athlète, 29 sept. 2026) — ne pas programmer des drills de technique comme stimulus. SUSPENDU depuis S09 (douleur 4–5/10 en strict et kipping, règle de rampe : deux gênes consécutives → hors plan). Réintroduction : strict d'abord, à douleur 0–2, après 2 semaines sans douleur en poussée ; puis kipping EMOM court. Cible cran 4 au relevé S15 à réévaluer selon l'épaule."
-  kipping_pull_plan: "Butterfly PU + C2B : trou Fire 2026 (WOD 3, cut ½). Ne pas insérer dans Macro 2. Intégrer en 2027."
+  kipping_pull_plan: "Butterfly PU + C2B : trou Fire 2026 (WOD 3, cut ½). Pas dans Macro 2. Macro 3 (16–29 nov.) : kip swings + kipping PU singles / séries de 3 SEULEMENT si anneaux et HSPU sont revenus sans douleur en Macro 2 — pas de volume. Volume en 2027."
   maintien_format: "En maintien, garder le format du cran (couplet BMU + pivot en HSW) — le linéaire et les séries sèches sont une régression de spécificité."
 
 benchmarks:
@@ -261,6 +269,7 @@ coaching:
     - rpe_chronique_eleve
     - douleur_signalee  # toute douleur (dont adducteur) — seulement si l’athlète la mentionne
   team_wod_rpe_threshold_cut_next_day: 8
+  team_wod_log_movements: true  # dès S11 : noter mouvements + charges du WOD team (trace de la variété réellement couverte — knowledge/movement-coverage.yaml)
   adductor_focus: minimal  # pas de score quotidien ; protocole on-demand si feedback douleur
   accessory_rotation: "banque nouvelle par meso ; lifts/skills stables ; 1–2 accessoires RPE 6–7 ; pas le même duo 4 semaines ; pas de conjugate weekly (knowledge/session-patterns.yaml)"
 

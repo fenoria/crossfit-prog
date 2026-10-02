@@ -73,7 +73,7 @@ exigences:
     exigence: "Pull-ups butterfly et chest-to-bar en volume / sous fatigue, y compris dans un complexe gym court"
     statut: trou_assume
     preuve: "Fire 2026 WOD 3 : cut en ½, 7e, RPE 10 — butterfly = gros trou. C2B non vu, même famille de kipping cycling."
-    action: "Ne pas insérer dans Macro 2 (force → puissance → mixed). Intégrer en 2027."
+    action: "Pas dans Macro 2. Macro 3 : drills (kip swings, singles) sous condition épaule, sans volume. Volume en 2027."
 
   grip_et_mains:
     exigence: "Enchaîner barre, anneaux, cordes et rameur sans lâcher sur les mains"
@@ -91,11 +91,20 @@ exigences:
     statut: couvert
     preuve: "Densité barre en S12, épaulés à 60–70 kg dans les formats S13 à S15"
 
+  variete_mouvements:
+    exigence: "Corde (DU), sauts (box jump over), haltères (DB snatch), objets, course chargée — mouvements fréquents en WOD de compétition"
+    statut: partiel
+    preuve: >
+      Audit du 2 oct. 2026 : DU écrits une seule fois sur S01–S15, box jumps / sandbag / thrusters jamais.
+      Couverture laissée au WOD team du mercredi, non tracé. Aucun signalement de trou en compétition
+      sur ces gestes, mais aucune donnée non plus.
+    action: "Bloc variété hebdomadaire dès S11 (movement-coverage.yaml, audité par le lint) · référence DU en S15 · mouvements du WOD team notés"
+
   gestion_mentale_journee:
     exigence: "Routine avant heat, focus, refermer un WOD raté"
     statut: partiel
     preuve: "Aucun protocole écrit avant competition-day.yaml (§5)"
-    action: "Appliquer la routine dès la simulation de S14 pour qu'elle soit rodée en décembre"
+    action: "Appliquer la routine dès la simulation de S14, puis à chaque format de Macro 3 et à la simulation du 5 décembre"
 
 # ─────────────────────────────────────────────────────────────
 # À compléter après chaque compétition

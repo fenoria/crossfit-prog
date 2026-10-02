@@ -1,0 +1,62 @@
+# Couverture des familles de mouvements CrossFit (« variété mixed-modal »)
+# Sources : Verkhoshansky (transfert : préparer le régime réel) · Issurin (résidus courts des skills spécifiques)
+#           competition-demands.yaml (trous observés) · arbitrages.md §20
+
+version: 1
+status: validated
+updated: 2026-10-02
+
+pourquoi: >
+  La méthodo périodise des qualités (force, gym, filières). Les auteurs du corpus ne disent rien
+  de l'étendue des mouvements, qui est pourtant une exigence propre au CrossFit compétition.
+  Audit saison 2026 (2 oct.) : DU écrits une seule fois, box jumps / sandbag / thrusters jamais —
+  la couverture reposait sur le WOD team du mercredi, non tracé. Une famille non exposée
+  devient un trou invisible jusqu'au jour J.
+
+principe: >
+  Exposition fréquente, dose basse : 6–10 min, RPE 6–7, en fin de séance ou dans les formats
+  mixed. Ce n'est pas un stimulus dominant et ça ne vole pas le lift du jour. On entretient
+  le geste et l'efficacité (rythme, transitions), on ne cherche pas la fatigue.
+
+# ids utilisés dans la balise <!-- dose: … mixed=corde,sauts,… -->
+familles:
+  corde:
+    exemples: "double-unders (DU), single-unders rapides"
+  sauts:
+    exemples: "box jump (step-down), box jump over, broad jump, burpee box jump over"
+    contrainte: "box mi-hauteur, réception contrôlée, step-down en volume (adducteur / tendons)"
+  objets:
+    exemples: "sandbag / D-ball au-dessus de l'épaule ou à l'épaule, worm, sled"
+    contrainte: "charge modérée, RPE ≤ 7 ; ramassage hanche haute (adducteur) ; selon le matériel de la box, sinon KB lourde"
+  halteres:
+    exemples: "DB/KB snatch, DB thruster, devil press, DB clean & jerk, KB swing"
+  unilateral:
+    exemples: "fentes marchées DB légères, step-up chargé, pistols"
+    contrainte: "pas de fente lourde (adducteur) — charge légère, amplitude confortable"
+  portes:
+    exemples: "farmer / front rack / suitcase carry, course avec charge (sandbag, DB, KB)"
+  course:
+    exemples: "course 200–800 m dans un format"
+  suspendu:
+    exemples: "T2B, rope climb, kipping / butterfly pull-up (butterfly sous gate épaule)"
+
+# familles qui doivent apparaître au moins une fois sur chaque meso hors REAL / TRANS / benchmarks
+requises_par_meso: [corde, sauts, objets, halteres, unilateral, portes]
+
+# minimum de familles distinctes par semaine — vérifié par le lint (warning)
+min_familles_semaine:
+  ACC-GYM: 2
+  ACC-STR: 2
+  ACC-OLY: 2
+  ACC-GPP: 3
+  TRA-POW: 2
+  TRA-MIX: 3
+  REAL: 1      # seulement les mouvements attendus, ouverts dans la semaine
+  TRANS: 0
+  benchmarks: 0
+
+team_wod:
+  regle: >
+    Le WOD team du mercredi compte comme exposition seulement s'il est tracé : noter les
+    mouvements et les charges dans le feedback. Les familles qu'il couvre se déclarent
+    dans le journal, pas dans la balise dose (le contenu n'est pas connu à l'avance).

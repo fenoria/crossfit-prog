@@ -38,6 +38,12 @@ champs:
 
   team_wod_rpe: "RPE de la séance team (déclenche la règle J+1 au-delà du seuil profil)"
 
+  team_wod_mouvements: "liste des mouvements + charges du WOD team (dès S11) — null si non noté"
+
+  familles_couvertes: >
+    Familles de mouvements réellement faites sur la semaine (ids de movement-coverage.yaml),
+    WOD team compris s'il est tracé. Permet de comparer prescrit (mixed= dans la balise dose) et réalisé.
+
   flags: "liste courte de faits saillants (douleur, ampoules, séance déplacée, volume hors prog)"
 
   ecarts_prescrit_vs_realise: >

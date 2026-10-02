@@ -9,7 +9,7 @@
 
 Transfert force + gym + barre vers formats combinés sous fatigue, avant le bloc spécifique team de Macro 3.
 
-Trois semaines et non deux : la répétabilité gym sous fatigue est la qualité limitante, et son résidu est court — elle doit être travaillée près du pic de décembre. La semaine vient du bloc force, dont le lift principal était plafonné.
+Trois semaines et non deux : la répétabilité gym sous fatigue est la qualité limitante, et son résidu est court — elle doit être travaillée près du bloc de comblement des trous qui suit. La semaine vient du bloc force, dont le lift principal était plafonné.
 
 ## Intention dominante
 
@@ -47,6 +47,8 @@ Accessoires nouveaux : gainage sous charge (front rack carry) + ring row (S13–
 - Haltéro : 1 séance power/technique par semaine
 - Zone 2 : ≥ 60 min/sem.
 - Conditioning dur : max 2/sem. team compris · ≤ 30 min d'effort dur cumulé par semaine
+- Variété : ≥ 3 familles de mouvements par semaine, dans les formats ou en bloc court (DU, box jump over, sandbag, course chargée, DB snatch, fentes légères) · référence DU relevée en S15
+- Épaule : kipping en appui renversé seulement après un strict indolore (S13 strict → S14 kipping court) · la simulation de S14 ne contient pas de HSPU
 
 ## Métriques de succès (sortie)
 

@@ -44,8 +44,8 @@ chemin_mesos:
   - ACC-STR
   - TRA-POW
   - TRA-MIX
-  - TRA-MIX   # orienté team (Macro 3)
-  - REAL      # pic C — annulé (2026-10-02), à redéfinir
+  - TRA-MIX   # comblement des trous de compétition (Macro 3)
+  - REAL      # simulation compétition 5 déc. — remplace le pic C annulé (2026-10-02)
   - TRANS
 note_chemin: >
   Ce chemin n'est pas le chemin par défaut de la méthodo : ACC-GYM passe avant ACC-STR
@@ -77,8 +77,8 @@ macrocycles:
   macro_3_specifique:
     fenetre: "2026-11-16 → 2026-12-13"
     mesos:
-      TRA-MIX_team: "16–29 nov."
-      REAL: "30 nov. – 13 déc. (pic C annulé — à redéfinir)"
+      TRA-MIX_trous: "16–29 nov. — comblement des trous (objets, course chargée, corde, synchro, gym sous cardio)"
+      REAL: "30 nov. – 13 déc. — simulation compétition samedi 5 déc. (S18) puis bilan (S19) ; pic C annulé"
 
 # ─────────────────────────────────────────────────────────────
 # Points de mesure (pas de semaine de tests dédiée cette saison)

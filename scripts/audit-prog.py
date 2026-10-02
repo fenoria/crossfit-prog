@@ -9,11 +9,12 @@ Ce module contrôle le FOND mesurable :
 - caps energy systems (conditioning-matrix.yaml)
 - boucle de feedback : semaine passée sans Notes remplies ni entrée de journal
 - écart prescrit / réalisé répété : la prescription est fausse, pas l'athlète
+- couverture des familles de mouvements CrossFit (movement-coverage.yaml)
 
 Chaque semaine déclare ses doses en commentaire HTML (invisible sur le site) :
 
     <!-- meso: ACC-STR -->
-    <!-- dose: force_lower_sets=11 force_upper_sets=8 force_sessions=3 ... -->
+    <!-- dose: force_lower_sets=11 force_upper_sets=8 force_sessions=3 ... mixed=corde,sauts -->
     <!-- dose-note: texte libre expliquant une exemption -->
 
 Les semaines antérieures au déploiement des balises (voir DOSE_TAGS_FROM) sont ignorées.
@@ -37,6 +38,8 @@ ATHLETES = ROOT / "athletes"
 
 # Balises dose déployées à partir de Macro 2 (S08) — avant, feedback en prose seulement.
 DOSE_TAGS_FROM = date(2026, 9, 21)
+# Champ mixed= (familles de mouvements) exigé à partir de S11.
+MIXED_FROM = date(2026, 10, 12)
 
 MESO_TAG = re.compile(r"<!--\s*meso:\s*([A-Za-z0-9_-]+)\s*-->")
 DOSE_TAG = re.compile(r"<!--\s*dose:\s*(.*?)-->", re.S)
@@ -59,7 +62,7 @@ INT_FIELDS = {
     "alactic_sec",
     "alactic_sessions",
 }
-TEXT_FIELDS = {"exempt"}
+TEXT_FIELDS = {"exempt", "mixed"}
 
 # champ de dose → domaine de profile.volumes
 VOLUME_MAP = {
@@ -132,6 +135,8 @@ def parse_dose(text: str, rel: str, errors: list[str]) -> tuple[dict, set[str]] 
         if key in TEXT_FIELDS:
             if key == "exempt":
                 exempt |= {part for part in raw.split(",") if part}
+            elif key == "mixed":
+                values["mixed"] = {part for part in raw.split(",") if part}
             continue
         if key not in INT_FIELDS:
             errors.append(f"{rel} : balise dose — champ inconnu « {key} »")
@@ -258,6 +263,32 @@ def check_conditioning(
         warnings.append(f"{rel} : {dose['alactic_sec']} s alactiques > {cap_sec} s")
 
 
+def check_coverage(
+    rel: str,
+    meso: str,
+    dose: dict,
+    coverage: dict,
+    meso_union: dict[str, set[str]],
+    errors: list[str],
+    warnings: list[str],
+) -> None:
+    familles = set((coverage.get("familles") or {}).keys())
+    mixed = dose.get("mixed")
+    minimum = (coverage.get("min_familles_semaine") or {}).get(meso)
+    if mixed is None:
+        if isinstance(minimum, int) and minimum > 0:
+            warnings.append(f"{rel} : balise dose sans champ mixed= (familles de mouvements)")
+        return
+    for item in sorted(mixed - familles):
+        errors.append(f"{rel} : mixed — famille inconnue « {item} »")
+    if isinstance(minimum, int) and len(mixed & familles) < minimum:
+        warnings.append(
+            f"{rel} : {len(mixed & familles)} famille(s) de mouvements pour {minimum} requise(s) en {meso}"
+        )
+    meso_dir = str(Path(rel).parent)
+    meso_union.setdefault(meso_dir, set()).update(mixed)
+
+
 def check_feedback_loop(
     path: Path,
     rel: str,
@@ -326,6 +357,9 @@ def run_audit(today: date | None = None) -> tuple[list[str], list[str]]:
     systems = (miniyaml.load(KNOWLEDGE / "conditioning-matrix.yaml") or {}).get(
         "systems"
     ) or {}
+    coverage = miniyaml.load(KNOWLEDGE / "movement-coverage.yaml") or {}
+    meso_union: dict[str, set[str]] = {}
+    meso_codes: dict[str, str] = {}
 
     z2_streak: list[str] = []
     z2_mev = ((volumes.get("z2") or {}).get("mev")) or 0
@@ -358,6 +392,9 @@ def run_audit(today: date | None = None) -> tuple[list[str], list[str]]:
         )
         check_maintenance(rel, dose, exempt, meso_doses, errors, warnings)
         check_conditioning(rel, dose, exempt, systems, errors, warnings)
+        if start >= MIXED_FROM:
+            check_coverage(rel, meso, dose, coverage, meso_union, errors, warnings)
+            meso_codes[str(Path(rel).parent)] = meso
 
         if "z2_min" in dose and "z2" not in exempt and z2_mev:
             if dose["z2_min"] < z2_mev:
@@ -369,6 +406,16 @@ def run_audit(today: date | None = None) -> tuple[list[str], list[str]]:
                     )
             else:
                 z2_streak = []
+
+    required = set(coverage.get("requises_par_meso") or [])
+    for meso_dir, seen in sorted(meso_union.items()):
+        if meso_codes.get(meso_dir) in {"REAL", "TRANS", "benchmarks"}:
+            continue
+        missing = sorted(required - seen)
+        if missing:
+            warnings.append(
+                f"{meso_dir} : familles jamais exposées sur le meso — {', '.join(missing)}"
+            )
 
     check_ecarts(journal_dir, warnings)
     return errors, warnings

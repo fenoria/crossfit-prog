@@ -18,6 +18,7 @@ Règles rédaction : **`.claude/rules/prog-writing.md`** (ton, ops pack, immutab
   - `knowledge/gym-ladder.md` si ACC-GYM
   - `knowledge/meso-gates.yaml` si changement de meso
   - `knowledge/conditioning-matrix.yaml`
+  - `knowledge/movement-coverage.yaml` (familles de mouvements → `mixed=` dans la balise dose)
   - protocole douleur du profil seulement si douleur signalée
 
 ## Templates

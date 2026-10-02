@@ -5,7 +5,9 @@
 
 ## Intention
 
-Post-Fire : accumulation force structurelle → conversion puissance barre → conversion mixed. Pas de second taper A ici — la réalisation majeure du semestre est le pic C en Macro 3.
+Post-Fire : accumulation force structurelle → conversion puissance barre → conversion mixed. Pas de second taper A ici. Le pic C de décembre est annulé : Macro 3 devient un bloc de comblement des trous de compétition, clos par une journée de simulation.
+
+À partir de S11, chaque semaine contient un **bloc variété** court (corde, sauts, objets, haltères, unilatéral, portés) : les gestes CrossFit hors force et gym ne reposent plus sur le seul WOD team du mercredi, dont les mouvements sont désormais notés.
 
 Le squat est plafonné (charges contrôlées) : la force se construit là où il reste de la marge — hinge, traction lestée, press — et le squat se surcharge par la **tension** (pause) et la **densité**, pas par les kilos. Le temps libéré va au mixed sous fatigue, qualité limitante n° 1.
 

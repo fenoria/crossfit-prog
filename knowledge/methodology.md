@@ -53,7 +53,7 @@ Le CrossFit compétition a des opportunités **toute l’année** → Bompa reco
 ANNÉE (instance 2026 — reste de saison post-Battle)
 ├── Macrocycle 1 (Build → pic B Fire)         ~7 semaines (août → mi-sept.)
 ├── Macrocycle 2 (Élévation)                  ~8 semaines (mi-sept. → mi-nov.)
-├── Macrocycle 3 (Spécifique, pic C à redéfinir) ~4 semaines (mi-nov. → mi-déc.)
+├── Macrocycle 3 (Spécifique, comblement des trous → simulation) ~4 semaines (mi-nov. → mi-déc.)
 └── Transition / compensation                 ~2–3 semaines (dès mi-déc.)
 ```
 
@@ -92,7 +92,7 @@ On **répète** et **alterne** ces blocs dans l’année selon le calendrier com
 
 Contexte : athlète déjà en forme (élite) ; Macro 1 = **Build** pour élever encore le plafond gym, puis **exprimer** sur le pic B. Priorité gym (qualité limitante, validée). Prudence charges / pas PRs pré-blessure (adducteur 2025) — ce n’est pas une phase de convalescence.
 
-**Ancres** : Fire Contest (~12–13 sept., rôle B) ; pic C de décembre annulé (2026-10-02), à redéfinir. Fire = pic secondaire (maintien de forme) → pas de taper A ultra-long ; ACC-STR et TRA-MIX longs sont **reportés en Macro 2**.
+**Ancres** : Fire Contest (~12–13 sept., rôle B) ; pic C de décembre annulé (2026-10-02) — Macro 3 devient un bloc de comblement des trous clos par une simulation le 5 décembre. Fire = pic secondaire (maintien de forme) → pas de taper A ultra-long ; ACC-STR et TRA-MIX longs sont **reportés en Macro 2**.
 
 | Semaines | Bloc | Pourquoi (livres) |
 |----------|------|-------------------|
@@ -111,7 +111,7 @@ REAL ancrés sur B puis C (Bompa multi-peak) :
 | Macro | Fenêtre | Séquence | Pic |
 |-------|---------|----------|-----|
 | **Macro 2 — Élévation** | 21 sept. – 15 nov. | ACC-STR (~3) → TRA-POW (~2) → TRA-MIX (~3) | — (pas de taper A) |
-| **Macro 3 — Spécifique** | 16 nov. – 13 déc. | TRA-MIX team (~2) → REAL (~2) | Pic C annulé — à redéfinir |
+| **Macro 3 — Spécifique** | 16 nov. – 13 déc. | TRA-MIX comblement des trous (~2) → REAL simulation et bilan (~2) | Pas de pic — simulation compétition le 5 déc. |
 | **Transition** | dès 14 déc. (~2–3 sem.) | Volume bas, GPP, Z2 | — |
 
 Sans date de comps : on enchaînerait Macro 2 sur le même canevas Issurin en changeant l’accent Accumulation. Ici les dates B/C sont connues → calendrier ci-dessus.
@@ -146,6 +146,7 @@ Jours : Lun–Ven ≤90 min · Mercredi team si box · Samedi optionnel · Diman
 - **Doses déclarées et auditées** : chaque semaine annonce ses volumes (séries force, gestes de barre, minutes de skill, minutes de Zone 2, efforts durs) en tête de fichier. `npm run lint:prog` les confronte au profil, aux doses de maintien du meso et aux caps de la matrice conditioning. Une semaine peut sortir des bornes, à condition que ce soit déclaré et justifié.
 - **Prescrire au niveau réel** : si l’athlète fait spontanément plus lourd que prescrit deux semaines de suite, la prescription est fausse — on ré-ancre les fourchettes, on ne répète pas la consigne.
 - **Une seule source de chiffres** : `profile.volumes`. `volume-landmarks.yaml` ne donne que des ordres de grandeur pour démarrer ou détecter une valeur aberrante.
+- **Couverture des mouvements** (ajout 2026-10-02) : en plus des qualités, chaque semaine expose un minimum de **familles de mouvements CrossFit** (corde, sauts, objets, haltères, unilatéral, portés, course, suspendu) en blocs courts à RPE 6–7 ou dans les formats mixed ; chaque meso hors réalisation / transition couvre les six familles requises. Déclaré dans la balise dose (`mixed=`), vérifié par le lint. Le WOD team ne compte que s'il est tracé (mouvements notés dans le feedback). Détail : `movement-coverage.yaml` · arbitrage §20.
 
 ---
 
@@ -278,7 +279,7 @@ Lint : `npm run lint:prog` — forme (`scripts/lint-prog.py`) **et** doses, caps
 - [x] Année en **2–3 macrocycles** (Bompa multi-pic) + transition — pas un seul run FORCE→GYM→HALTÉRO→SPEC façon BON
 - [x] Chaque macro = stages **Accumulation → Transmutation → Realization** (Issurin)
 - [x] Mesos nommés par **intention** (ACC-GYM, ACC-STR, TRA-MIX, REAL…) et **répétés** dans l’année
-- [x] Macro 1 août–sept. 2026 : Benchmarks → ACC-GYM → REAL (Fire B) → TRANS ; ACC-STR → TRA-POW → TRA-MIX en Macro 2 → REAL (pic C annulé, à redéfinir)
+- [x] Macro 1 août–sept. 2026 : Benchmarks → ACC-GYM → REAL (Fire B) → TRANS ; ACC-STR → TRA-POW → TRA-MIX en Macro 2 → comblement des trous + simulation en Macro 3 (pic C annulé)
 
 ## Validation ops pack (2026-07-28)
 

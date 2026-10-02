@@ -49,6 +49,8 @@ Accessoires nouveaux vs bloc force : good morning léger + dead bug (S11) → st
 - Gym : 1 séance skill au cran actuel (couplet, pivot)
 - Zone 2 : ≥ 60 min/sem. (S11 dimanche · S12 samedi long)
 - Conditioning dur : max 1 en plus du team ; S12 = 1 bloc alactique (≤ 2 min de travail cumulé)
+- Variété : ≥ 2 familles de mouvements par semaine en blocs de 6–8 min à RPE 6–7 (S11 corde + sauts · S12 corde, haltère, objet, porté)
+- Épaule : anneaux et HSPU hors plan en S11 ; retour strict conditionnel en S12 (poussée indolore S10–S11)
 
 ## Métriques de succès (sortie)
 

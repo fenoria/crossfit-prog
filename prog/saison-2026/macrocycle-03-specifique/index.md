@@ -1,31 +1,38 @@
 # Macrocycle 3 — Spécifique
 
 **Début prévu** : 16 novembre 2026 · **Fin prévue** : 13 décembre 2026  
-**Pic** : C annulé (2026-10-02) — contenu à redéfinir
+**Pic** : aucun — le pic C de décembre est annulé (2 octobre 2026). Le macro se clôt sur une **journée de simulation compétition** le samedi 5 décembre.
 
 ## Intention
 
-Spécificité team + peaking court vers le pic C de fin d’année. Volume ↓, fraîcheur ↑, formats proches compétition équipe. Mental pré-comp discret (routines, focus).
+Sans compétition à préparer, ces quatre semaines ne servent pas à affûter : elles servent à **combler les trous** que les compétitions de 2026 ont montrés. On part de ce que l'épreuve exige et qui n'a jamais été travaillé, pas des qualités générales déjà en place (cardio, barre en power, ergos).
+
+Le macro se ferme sur une simulation de journée de compétition : elle vérifie que les trous travaillés tiennent en format, sous fatigue, avec la trame de journée. Ses résultats ouvrent la saison 2027 (Battle of Normandy en juillet).
 
 ## Mesos
 
 | Meso | Fenêtre | Rôle | Statut |
 |------|---------|------|--------|
-| [Spécificité team](meso-01-specificite-team/index.md) | 16–29 nov. | Conversion orientée team (~2 sem.) | à venir |
-| [Expression](meso-02-expression/index.md) | 30 nov. – 13 déc. | Affûtage + weekend compétition | à venir |
+| [Comblement des trous](meso-01-comblement-trous/index.md) | 16–29 nov. | Exigences de compétition non couvertes (~2 sem.) | à écrire |
+| [Simulation et bilan](meso-02-simulation-bilan/index.md) | 30 nov. – 13 déc. | Journée de simulation le 5 déc., puis bilan de saison (~2 sem.) | à écrire |
 
 ## Ce que ce macro doit corriger
 
-Le bloc spécifique ne part pas d'une page blanche : il part de la liste des manques constatés. À l'entrée — objets lourds inhabituels jamais manipulés hors team, synchronisation avec le partenaire réel non travaillée, répétabilité gym sous cardio encore en construction. À compléter dès que le débrief de Fire est écrit.
+Liste issue des débriefs de Battle et de Fire 2026 et de l'audit de couverture des mouvements (2 octobre) :
+
+| Trou | Preuve | Ce qu'on fait |
+|------|--------|---------------|
+| **Objets lourds inhabituels** (worm, sandbag, D-ball) | Fire WOD 7 worm : 9e, chaos de timing | Une exposition objet par séance mixed · worm si la box l'a, sinon sandbag lourd synchronisé à deux |
+| **Course avec charge** | Fire WOD 5 brancard : limiteur = course chargée | Course sandbag / KB en format, distances croissantes |
+| **Corde sous fatigue** | DU écrits une seule fois avant octobre ; première référence en S15 | DU dans les formats, à la suite d'un mouvement de jambes |
+| **Synchronisation avec la partenaire réelle** | Fire WOD 4 synchro barre : 7e, pauses imposées | Deux séances minimum avec elle, plan de bascule dit avant le départ |
+| **Répétabilité gym sous cardio** | Faiblesse déclarée n° 1 | Couplets après pré-fatigue, jamais à la casse |
+| **Butterfly / C2B** | Fire WOD 3 : cut à la moitié, RPE 10 | **Sous condition épaule** : drills de kip et singles seulement si les gestes en poussée sont revenus sans douleur — le volume reste pour 2027 |
 
 Le squat clean et le squat snatch lourds restent hors du plan : manque assumé au titre de la règle blessure, pas un oubli.
 
-## Affûtage
-
-Les quatorze derniers jours suivent des repères chiffrés (volume en pourcentage de la semaine de pic, dernier effort dur à J-7, décision prise à l'avance pour le team du mercredi qui tombe à J-3) — détail dans le meso d'expression.
-
 ## Règles fatigue box
 
-- Mercredi team dur compte dans le quota HI / fatigue.  
-- Semaine de compétition : volume bas, priorité récupération et ouverture.
-- Team du mercredi tombant dans les quatre derniers jours : Zone 2 ou RPE ≤ 6, tranché avant la semaine.
+- Mercredi team dur compte dans le quota d'efforts durs.
+- Samedis disponibles : **21 novembre** et **5 décembre** (semaines impaires) — le 5 décembre porte la simulation.
+- Semaine de simulation : volume ↓ du lundi au jeudi, team du mercredi à RPE ≤ 6 décidé à l'avance.
