@@ -1,0 +1,106 @@
+semaine: S09
+dates: "2026-09-28 → 2026-10-04"
+macro: macrocycle-02-elevation
+meso: ACC-STR
+phase_micro: volume
+prog: prog/saison-2026/macrocycle-02-elevation/meso-01-accumulation-force/S09-2026-09-28.md
+statut: en_cours  # dimanche (Zone 2 50') à confirmer
+
+jours:
+  lundi:
+    fait: off
+    note: "Retour voyage."
+  mardi:
+    fait: partiel
+    charges: "BS 4×3 @ 115 kg RPE 6–7 · DL 3×3 @ 150 kg RPE ≤ 7,5 · HSW 2× (10 m + pivot + 10 m)"
+    note: "Roll-out et réathlé adducteur palier 1 non faits. RMU skip — douleur d'épaule nette 4–5/10 pendant l'effort, disparaît après. Zone 2 finisher non renseigné."
+  mercredi:
+    fait: oui
+    charges: "WOD team box"
+    rpe: 7
+    note: "Sous le seuil — pas d'allègement J+1."
+  jeudi:
+    fait: partiel
+    charges: "BMU EMOM 10' (4 BMU + 10 cal) · HSPU strict 3×6 · HSPU kipping EMOM 5' × 3 · seuil 4 × 3' RPE 6–7"
+    note: "RMU skip (épaule). HSPU strict et kipping faits avec douleur 4–5/10, disparaît après. BMU sans douleur. Ergo / allure du seuil non notés."
+  vendredi:
+    fait: oui
+    charges: "Strict press 4×3 @ 63 kg RPE 8+ · traction lestée 4×3 @ +32 kg RPE 8+ · FS pause 2×3 @ 95 kg · arraché puissance @ 73 kg RPE ≤ 7 · tirage arraché @ 100 kg RPE ≤ 7"
+    note: "Upper sous fatigue. Gêne d'épaule légère 1–3/10 sur press / tractions / arraché. RPE du front squat non noté."
+  samedi:
+    fait: off
+  dimanche:
+    fait: null
+    note: "Zone 2 50' incertaine au moment du feedback (vendredi 2 oct.)."
+
+realise:
+  force_lower_sets: 9
+  force_lower_sets_note: "BS 4 + DL 3 + FS pause 2"
+  force_upper_sets: 8
+  force_upper_sets_note: "Press 4 + tractions 4 ; face pulls non renseignés"
+  oly_lifts: 14
+  oly_lifts_note: "Séance déclarée faite : 5 singles arraché + 3×3 tirages supposés au format prescrit, nombre de séries non confirmé"
+  gym_min: null
+  gym_min_note: "EMOM BMU 10' + HSPU strict 3×6 + kipping EMOM 5' + HSW mardi, non chronométrés. RMU ×2 skippés."
+  z2_min: null
+  z2_min_note: "Finisher mardi non renseigné ; dimanche 50' en attente."
+  threshold_min: 12
+  hard_min: 0
+
+team_wod_rpe: 7
+
+flags:
+  - "Épaule : douleur nette 4–5/10 sur RMU (mardi) et HSPU strict + kipping (jeudi), disparaît après l'effort — 4e semaine de signal (S05, S07, S08, S09), première douleur ≥ 4"
+  - "Épaule : gêne légère 1–3/10 sur press / tractions / arraché vendredi ; BMU et HSW sans douleur"
+  - "Réathlé adducteur palier 1 non fait (une seule semaine faite : S08)"
+  - "Upper RPE 8+ pour la 2e semaine de suite"
+  - "Barre au-dessus des fourchettes, facile"
+
+ecarts_prescrit_vs_realise:
+  - mouvement: strict_press
+    prescrit: "4×3 @ 62,5 kg RPE 6–7"
+    realise: "4×3 @ 63 kg RPE 8+"
+    sens: au_dessus
+    action: re_ancrer
+  - mouvement: weighted_pullup
+    prescrit: "4×3 @ +34–36 kg RPE 7"
+    realise: "4×3 @ +32 kg RPE 8+"
+    sens: au_dessus
+    action: re_ancrer
+  - mouvement: rmu
+    prescrit: "3×1 mardi + 3×1 jeudi"
+    realise: "skip ×2 — douleur d'épaule"
+    sens: en_dessous
+    action: re_ancrer
+  - mouvement: hspu_kipping
+    prescrit: "EMOM 5' × 3, skip si gêne"
+    realise: "fait avec douleur 4–5/10"
+    sens: autre
+    action: re_ancrer
+  - mouvement: power_snatch
+    prescrit: "5×1 @ 67,5–72,5 kg RPE ≤ 7"
+    realise: "@ 73 kg RPE ≤ 7"
+    sens: au_dessus
+    action: re_ancrer  # 4e semaine (S02, S04, S06, S09) → S10 70–75, S11 67,5–72,5 (décharge), S12 70–75
+  - mouvement: snatch_pull
+    prescrit: "3×3 @ 85–95 kg RPE ≤ 7"
+    realise: "@ 100 kg RPE ≤ 7"
+    sens: au_dessus
+    action: surveiller
+  - mouvement: reathletisation_adducteur
+    prescrit: "palier 1 isométrie"
+    realise: "non fait"
+    sens: en_dessous
+    action: surveiller
+
+gate: null
+synthese: >
+  Lower dans la cible (BS 4×3 @ 115 et DL 3×3 @ 150 à RPE ≤ 7,5, FS pause 95 tenu).
+  Barre facile au-dessus des fourchettes. Upper RPE 8+ pour la 2e semaine : sens
+  « au-dessus » deux fois de suite sur press et tractions → ré-ancrage. Épaule : première
+  douleur nette (4–5/10) sur anneaux et HSPU, BMU et HSW indolores. Team RPE 7.
+suite: >
+  S10 : pic lower inchangé. RMU, HSPU strict et kipping sortis du plan (règle de rampe
+  kipping : deux gênes consécutives + douleur ≥ 3) ; BMU et HSW conservés, bloc tolérance
+  épaule ajouté. Press 4×4 @ 57,5, tractions 4×4 @ +28–30. Arraché 70–75, tirage 95–105.
+  Adducteur reste au palier 1. Avis kiné recommandé si la douleur persiste.

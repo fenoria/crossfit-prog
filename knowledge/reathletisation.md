@@ -33,7 +33,7 @@ Même logique pour l'épaule : gêne légère signalée en S05 sur les mouvement
 | **4 — Amplitude chargée** | Fente latérale lestée légère, side lunge, slider adduction | 3 × 8 par côté, charge modérée | Amplitude complète confortable sous charge |
 | **5 — Transfert** | Squat profond en montée de charge encadrée (ci-dessous), split squat tempo | — | Voir critère de plafond |
 
-**Progression prévue (instance 2026)** : palier 1 sur S08–S09, palier 2 sur S10–S12, palier 3 sur S13–S15, paliers 4 et 5 pendant le Macrocycle 3 et la transition de décembre, où le volume de force est bas.
+**Progression prévue (instance 2026)** : palier 1 sur S08–S10 (S09 non fait), palier 2 sur S11–S12, palier 3 sur S13–S15, paliers 4 et 5 pendant le Macrocycle 3 et la transition de décembre, où le volume de force est bas.
 
 ### Critère de relèvement du plafond de squat
 
