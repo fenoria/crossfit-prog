@@ -1,6 +1,6 @@
 ---
 name: write-week
-description: Écrit ou met à jour une semaine d’entraînement en Markdown sous prog/ (Saison→Macro→Meso→Semaine). Use when creating a training week, mesocycle, macrocycle, or updating the program site content.
+description: Écrit ou met à jour une semaine d’entraînement en Markdown sous prog/ (Saison→Macro→Meso→Semaine). À utiliser pour créer une semaine, un mésocycle ou un macrocycle, ou mettre à jour le contenu du site programme.
 ---
 
 # Write week (prog/)

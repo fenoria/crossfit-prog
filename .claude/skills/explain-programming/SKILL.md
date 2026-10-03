@@ -1,6 +1,6 @@
 ---
 name: explain-programming
-description: Explique finement une séance/semaine/meso déjà généré via prog/ et la méthodo. Use when the athlete asks why a session exists, what it develops, or how it fits the cycle.
+description: Explique finement une séance/semaine/meso déjà généré via prog/ et la méthodo. À utiliser quand l’athlète demande pourquoi une séance existe, ce qu’elle développe ou comment elle s’insère dans le cycle.
 ---
 
 # Explain programming

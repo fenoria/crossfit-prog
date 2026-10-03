@@ -223,6 +223,7 @@ coaching:
   language: fr
   pedagogy_required: true
   feedback_schema: "blocs Notes / feedback (### par jour) dans prog/_templates/semaine.md"
+  feedback_mode: qcm_interactif  # feedback hebdo demandé → QCM AskUserQuestion construit depuis la semaine (skill session-feedback, « Mode QCM »)
   journal_required: true  # tout feedback → entrée journal/ (knowledge/journal-schema.yaml) ; profil = état durable seulement
   prog_immutability: "semaine commencée/passée = contenu séances figé ; mise en forme OK ; Notes OK ; adaptations = futur only"
   # S04 sam 29 : EMOM 4 BMU + 10 cal et 2 RMU + 10 cal — ~15 s repos/min, passé (plafond)

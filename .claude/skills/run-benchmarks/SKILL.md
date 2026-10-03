@@ -1,6 +1,6 @@
 ---
 name: run-benchmarks
-description: Propose et enregistre une batterie de benchmarks pour calibrer les charges et mesurer la progression. Use when planning test days, retesting PRs, or updating current loads in the active athlete profile.
+description: Propose et enregistre une batterie de benchmarks pour calibrer les charges et mesurer la progression. À utiliser pour planifier une journée de tests, retester des PRs ou mettre à jour les charges actuelles du profil actif.
 ---
 
 # Run benchmarks

@@ -1,6 +1,6 @@
 ---
 name: synthesize-methodology
-description: Analyse fine des ebooks dans books/, produit fiches livre et une méthodo CrossFit élite à valider. Use when synthesizing methodology, analyzing books, updating knowledge/methodology, or arbitrating between training authors.
+description: Analyse fine des ebooks dans books/, produit fiches livre et une méthodo CrossFit élite à valider. À utiliser pour synthétiser la méthodo, analyser un ouvrage, mettre à jour knowledge/methodology ou arbitrer entre auteurs.
 ---
 
 # Synthesize methodology

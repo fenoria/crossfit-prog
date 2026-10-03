@@ -1,7 +1,7 @@
 # Socle crossfit-prog
 
 ## Langue
-- Communiquer en **français** ; contenu `prog/`, méthodo et profile en FR.
+- Communiquer en **français** ; contenu `prog/`, méthodo, profil, skills et rules `.claude/` (descriptions comprises) en FR.
 - OK : titres d’ouvrages EN, acronymes standards (EMOM, RPE, Z2…).
 
 ## SoT (ordre en conflit)

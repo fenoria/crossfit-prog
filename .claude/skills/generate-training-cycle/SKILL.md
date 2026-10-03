@@ -1,6 +1,6 @@
 ---
 name: generate-training-cycle
-description: Génère saison/macro/meso/semaines en Markdown sous prog/, uniquement si la méthodo est validée. Use when generating a training cycle, mesocycle, microcycle, or weekly program.
+description: Génère saison/macro/meso/semaines en Markdown sous prog/, uniquement si la méthodo est validée. À utiliser pour générer un cycle d’entraînement, un mésocycle, un microcycle ou un programme hebdo.
 ---
 
 # Generate training cycle
