@@ -4,7 +4,7 @@
 
 version: 1
 status: validated
-updated: 2026-09-14
+updated: 2026-10-03
 
 pourquoi: >
   La programmation se construisait à partir des qualités générales (force, gym, filières)
@@ -25,8 +25,8 @@ methode:
 exigences:
   format_multi_wod:
     exigence: "6 à 10 épreuves sur deux jours, heats espacés, longues attentes"
-    statut: couvert
-    preuve: "Simulation de deux formats avec pause de compétition en S14 (7 nov.) ; trame de journée dans competition-day.yaml"
+    statut: partiel
+    preuve: "Trame de journée dans competition-day.yaml ; vécu sur Battle et Fire 2026. Pas de répétition hors compétition prévue (décision 2026-10-03)."
 
   team_synchronisation:
     exigence: "Répartition des reps, bascules, mouvements synchronisés, un appelant"
@@ -73,7 +73,7 @@ exigences:
     exigence: "Pull-ups butterfly et chest-to-bar en volume / sous fatigue, y compris dans un complexe gym court"
     statut: trou_assume
     preuve: "Fire 2026 WOD 3 : cut en ½, 7e, RPE 10 — butterfly = gros trou. C2B non vu, même famille de kipping cycling."
-    action: "Pas dans Macro 2. Macro 3 : drills (kip swings, singles) sous condition épaule, sans volume. Volume en 2027."
+    action: "Pas dans Macro 2. Macro 3 (accumulation gym) : kip swings → butterfly → C2B, volume bas à modéré, sous condition épaule. Volume en format en janvier 2027 (Open)."
 
   grip_et_mains:
     exigence: "Enchaîner barre, anneaux, cordes et rameur sans lâcher sur les mains"
@@ -104,7 +104,22 @@ exigences:
     exigence: "Routine avant heat, focus, refermer un WOD raté"
     statut: partiel
     preuve: "Aucun protocole écrit avant competition-day.yaml (§5)"
-    action: "Appliquer la routine dès la simulation de S14, puis à chaque format de Macro 3 et à la simulation du 5 décembre"
+    action: "Appliquer la routine à chaque format chronométré (S13–S15) et à chaque workout de l'Open 2027"
+
+# ─────────────────────────────────────────────────────────────
+# Échéance suivante — CrossFit Open 2027 (individuel, 3 workouts)
+# ─────────────────────────────────────────────────────────────
+
+open_2027:
+  format: "Individuel · un workout par semaine (annonce le jeudi, fait à la box le vendredi) · mouvements standard, formats de ~8 à 20 min"
+  exigences_cles:
+    - "Gym en volume à cadence régulière : T2B, butterfly / C2B, muscle-ups, pompes en appui renversé, marche sur les mains"
+    - "Corde (DU) et WB en séries longues, souvent juste après un autre mouvement"
+    - "Barre à charge moyenne en cycling, parfois en échelle de charge"
+    - "Haltère (DB snatch), burpees, ergos"
+  trous_prioritaires: [kipping_pull_cycling, pompes_appui_renverse_en_volume, repetabilite_gym_sous_fatigue]
+  hors_sujet: "Objets lourds, course chargée, synchro partenaire — trous de compétition team, gardés pour Battle 2027"
+  route: "Macro 3 accumulation gym (nov.–déc. 2026) → conversion Open (janv.–mi-févr. 2027) → Open"
 
 # ─────────────────────────────────────────────────────────────
 # À compléter après chaque compétition

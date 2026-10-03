@@ -5,7 +5,7 @@
 
 ## Intention
 
-Post-Fire : accumulation force structurelle → conversion puissance barre → conversion mixed. Macro 3 enchaîne sur un bloc de comblement des trous de compétition, clos par une journée de simulation.
+Post-Fire : accumulation force structurelle → conversion puissance barre → conversion mixed. Macro 3 enchaîne sur un bloc d'accumulation gym, premier étage de la route vers l'Open 2027.
 
 À partir de S11, chaque semaine contient un **bloc variété** court (corde, sauts, objets, haltères, unilatéral, portés) : les gestes CrossFit hors force et gym sont travaillés dans la semaine, en plus du WOD team du mercredi dont les mouvements sont notés.
 
@@ -24,11 +24,11 @@ Le squat est plafonné (charges contrôlées) : la force se construit là où il
 - Semaine d'entrée tronquée (21–23 sept.) puis 5 jours de vacances : ils font office de décharge de milieu de bloc.
 - Pic force = 5–11 octobre (volume et intensité max du bloc).
 - **S11 (12–18 oct.) = la décharge force** : volume force −40 à −50 %, l'intention bascule vers la puissance barre. Une seule semaine sert de sortie de bloc et d'entrée du suivant.
-- Fin de bloc mixed (9–15 nov.) : volume redescendu en fin de semaine pour entrer frais dans le bloc spécifique team.
+- Fin de bloc mixed (9–15 nov.) : volume redescendu en fin de semaine pour entrer frais dans le bloc d'accumulation gym.
 
 ## Règles fatigue box
 
 - Mercredi team à RPE ≥ 8 → alléger jeudi.
-- Samedi disponible **une semaine sur deux** (semaines impaires) : 10–11 oct., 24–25 oct., 7–8 nov. Ces samedis portent le volume « luxe » (sortie longue, bloc seuil, ou team assumé et compté dans la fatigue). Les autres semaines, la sortie easy passe au dimanche.
+- Samedi disponible **une semaine sur deux** (semaines impaires) : 10–11 oct., 24–25 oct., 7–8 nov. Ces samedis portent le volume « luxe » (sortie longue, bloc seuil, format long, ou team assumé et compté dans la fatigue). Les autres semaines, la sortie easy passe au dimanche.
 - Gym en **maintien** pendant Accumulation force (≥ 2 stimuli/sem. skill) et Conversion puissance (≥ 1). En Conversion mixed, la gym revient dans les formats combinés.
 - Zone 2 : plancher 60 min/semaine, blocs écrits dans la séance.

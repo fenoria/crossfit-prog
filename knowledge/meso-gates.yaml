@@ -105,6 +105,17 @@ gates:
       - "fraîcheur relative : pas de semaine surcharge empilée juste avant Macro 3 (volume ↓ en fin de dernière semaine)"
     on_fail: "Semaine volume ↓ / Z2 puis retester mixed"
 
+  TRA_MIX_to_ACC_GYM:
+    from: TRA-MIX
+    to: ACC-GYM
+    label: "nouveau stage d'accumulation hors échéance proche"
+    required:
+      - "repères gym relevés en fin de bloc mixed (densité BMU, séries de référence des skills travaillées)"
+      - "volume ↓ en fin de dernière semaine mixed (décharge faite avant de remonter le volume skill)"
+      - "pas de douleur florissante signalée (épaule en poussée et en traction notée /10)"
+      - "skills du nouveau bloc choisis à partir des exigences de l'échéance suivante"
+    on_fail: "Semaine volume ↓ / Z2 et skills techniques légers avant de lancer l'accumulation"
+
   TRA_MIX_team_to_REAL:
     from: TRA-MIX_team
     to: REAL

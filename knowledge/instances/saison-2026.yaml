@@ -7,7 +7,7 @@
 
 version: 1
 status: active
-updated: 2026-09-14
+updated: 2026-10-03
 athlete: thierry
 saison: 2026
 
@@ -32,6 +32,17 @@ competitions:
     resultat: "7e / 20 RX"
     note: "Cut avant la finale. Limiteur = butterfly PU. Taper S06 validé."
 
+# Échéance suivante (saison 2027) — oriente Macro 3 et la transition
+echeance_suivante:
+  id: open_2027
+  nom: "CrossFit Open 2027"
+  format: individual
+  workouts:
+    - { id: "27.1", annonce: "2027-02-18", fait_box: "2027-02-19" }
+    - { id: "27.2", annonce: "2027-02-25", fait_box: "2027-02-26" }
+    - { id: "27.3", annonce: "2027-03-04", fait_box: "2027-03-05" }
+  route: "Macro 3 ACC-GYM (16 nov. – 20 déc.) → TRANS (21 déc. – 3 janv.) → conversion Open 2027 (4 janv. – 14 févr.) → Open"
+
 # ─────────────────────────────────────────────────────────────
 # Chemin de mesos (ordre réellement suivi cette saison)
 # ─────────────────────────────────────────────────────────────
@@ -44,8 +55,7 @@ chemin_mesos:
   - ACC-STR
   - TRA-POW
   - TRA-MIX
-  - TRA-MIX   # comblement des trous de compétition (Macro 3)
-  - REAL      # simulation compétition 5 déc. — remplace le pic C annulé (2026-10-02)
+  - ACC-GYM   # Macro 3 — accumulation gym sans échéance, premier étage vers l'Open 2027
   - TRANS
 note_chemin: >
   Ce chemin n'est pas le chemin par défaut de la méthodo : ACC-GYM passe avant ACC-STR
@@ -74,11 +84,16 @@ macrocycles:
     notes:
       S08: "tronquée — vacances Milan 24–28 sept. (décharge intégrée)"
       S11: "décharge force ET entrée du bloc puissance — pas de semaine deload séparée"
-  macro_3_specifique:
-    fenetre: "2026-11-16 → 2026-12-13"
+  macro_3_accumulation_gym:
+    fenetre: "2026-11-16 → 2026-12-20"
+    semaines: [S16, S17, S18, S19, S20]
     mesos:
-      TRA-MIX_trous: "16–29 nov. — comblement des trous (objets, course chargée, corde, synchro, gym sous cardio)"
-      REAL: "30 nov. – 13 déc. — simulation compétition samedi 5 déc. (S18) puis bilan (S19) ; pic C annulé"
+      ACC-GYM: [S16, S17, S18, S19, S20]
+    notes:
+      S16-S19: "volume gym en montée : entrée → volume → surcharge → pic"
+      S20: "décharge −30 à −40 % + relevés gym + tests signature T1, T2, T4 (T3 le samedi 19 déc.)"
+  transition:
+    fenetre: "2026-12-21 → 2027-01-03"
 
 # ─────────────────────────────────────────────────────────────
 # Points de mesure (pas de semaine de tests dédiée cette saison)
@@ -100,7 +115,11 @@ points_de_mesure:
   gym:
     semaine: S15
     date: "2026-11-10"
-    contenu: "densité muscle-up, série anneaux, kipping, marche sur les mains → gym_ladder_level · test signature T1"
+    contenu: "densité muscle-up, série anneaux, kipping, marche sur les mains, DU, T2B → gym_ladder_level · test signature T1"
+  macro_3:
+    semaine: S20
+    date: "2026-12-14 → 2026-12-20"
+    contenu: "séries de référence butterfly / C2B / T2B / DU / HSPU · T1 densité muscle-up · T2 squat répétable · T4 CMJ · T3 seuil le samedi 19 déc."
 
 # ─────────────────────────────────────────────────────────────
 # Contraintes de calendrier propres à cette saison
@@ -108,7 +127,8 @@ points_de_mesure:
 
 contraintes:
   samedi: "disponible uniquement les semaines ISO impaires (profil : schedule.saturday)"
-  samedis_utiles_macro_2: ["2026-10-10 (sortie longue + mesure)", "2026-10-24 (sortie longue + seuil)", "2026-11-07 (simulation de journée de compétition)"]
+  samedis_utiles_macro_2: ["2026-10-10 (sortie longue + mesure)", "2026-10-24 (sortie longue + seuil)", "2026-11-07 (format long 14' + Zone 2)"]
+  samedis_utiles_macro_3: ["2026-11-21 (sortie longue + seuil)", "2026-12-05 (sortie longue + volume gym)", "2026-12-19 (test signature T3 seuil)"]
   vacances: ["2026-09-24 → 2026-09-28 (Milan)"]
   team_box: "mercredi, format imposé par la box"
 

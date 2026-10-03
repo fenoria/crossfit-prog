@@ -7,9 +7,9 @@
 
 ## Pourquoi
 
-Transfert force + gym + barre vers formats combinés sous fatigue, avant le bloc spécifique team de Macro 3.
+Transfert force + gym + barre vers formats combinés sous fatigue, avant le bloc d'accumulation gym de Macro 3.
 
-Trois semaines : la répétabilité gym sous fatigue est la qualité limitante, et son résidu est court — elle doit être travaillée près du bloc de comblement des trous qui suit. La semaine vient du bloc force, dont le lift principal était plafonné.
+Trois semaines : la répétabilité gym sous fatigue est la qualité limitante, et son résidu est court — elle doit être travaillée juste avant le bloc gym qui suit. La semaine vient du bloc force, dont le lift principal était plafonné.
 
 ## Intention dominante
 
@@ -19,8 +19,8 @@ Trois semaines : la répétabilité gym sous fatigue est la qualité limitante, 
 ## Apport
 
 - Court : mixed digéré à RPE noté
-- Moyen : entrée Macro 3 spécifique team
-- Long : expression sous format compétition
+- Moyen : entrée de Macro 3 (accumulation gym) avec des repères chiffrés
+- Long : répétabilité gym sous fatigue, base de la préparation Open 2027
 
 ## Continuité
 
@@ -32,7 +32,7 @@ Trois semaines : la répétabilité gym sous fatigue est la qualité limitante, 
 | Semaine | Focus | Contenu type |
 |---------|-------|--------------|
 | S13 (26 oct. – 1er nov.) | Mixed qualité | Couplets contrôlés gym + barre + ergo · kipping sous fatigue légère |
-| S14 (2–8 nov.) | Densité ↑ | Formats plus proches compétition team · samedi long |
+| S14 (2–8 nov.) | Densité ↑ | Repos raccourcis · samedi long : un format + Zone 2 |
 | S15 (9–15 nov.) | Transfert puis fraîcheur | Un format complet en début de semaine, volume ↓ ensuite · relevé des repères gym |
 
 ## Banque accessoires (ce meso)
@@ -48,7 +48,7 @@ Accessoires du meso : gainage sous charge (front rack carry) + ring row (S13–S
 - Zone 2 : ≥ 60 min/sem.
 - Conditioning dur : max 2/sem. team compris · ≤ 30 min d'effort dur cumulé par semaine
 - Variété : ≥ 3 familles de mouvements par semaine, dans les formats ou en bloc court (DU, box jump over, sandbag, course chargée, DB snatch, fentes légères) · référence DU relevée en S15
-- Épaule : progression S13 HSPU strict → S14 kipping court, si le strict est indolore · poussée à l'haltère dans la simulation de S14
+- Épaule : progression S13 HSPU strict → S14 kipping court, si le strict est indolore · poussée à l'haltère dans le format du samedi de S14
 
 ## Métriques de succès (sortie)
 
