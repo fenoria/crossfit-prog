@@ -49,7 +49,7 @@ schedule:
     time: "12:00-13:30"
     max_minutes: 90
     team_day: wed  # souvent WOD team box — compter fatigue
-    notes: "Pas de séance cardio en semaine hors box. Trajet vélo occasionnel vers la box (~4 km A/R) : négligeable — ne compte ni comme Z2 ni comme charge (précisé 2026-10-03). Le Z2 se fait en bloc écrit : sortie ≥ 40–60’ samedi ou dimanche (VTT, vélo ou course easy) ou en fin de séance box."
+    notes: "Pas de séance cardio en semaine hors box. Trajet vélo occasionnel vers la box (~4 km A/R) : négligeable — ne compte ni comme Z2 ni comme charge (précisé 2026-10-03). Le Z2 se fait en bloc écrit : sortie ≥ 40–60’ samedi ou dimanche (VTT, vélo ou course easy) ou en fin de séance box. Exploiter le créneau de 90’ : une séance légère (décharge, touch) est complétée par réathlétisation / mobilité / Z2 plutôt que raccourcie (retour 2026-10-03)."
   saturday:
     frequency: odd_iso_weeks_only  # MAJ 2026-09-11 : dispo uniquement les semaines ISO impaires (contrainte durable)
     time: "10:00-12:30"
