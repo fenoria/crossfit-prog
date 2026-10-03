@@ -69,7 +69,7 @@ schedule:
     time: "12:00-13:30"
     max_minutes: 90
     team_day: wed  # souvent WOD team box — compter fatigue
-    notes: "Z2 réel souvent VTT court (~4 km) lun/mar — insuffisant seul (S02–S03 sous MEV ; S04 rattrapé dimanche course ~40–60’). Sortie ≥ 40–60’ samedi ou dimanche OK VTT ou course easy ; pas seulement le VTT weekday."
+    notes: "Pas de séance cardio en semaine hors box. Trajet vélo occasionnel vers la box (~4 km A/R) : négligeable — ne compte ni comme Z2 ni comme charge (précisé 2026-10-03). Le Z2 se fait en bloc écrit : sortie ≥ 40–60’ samedi ou dimanche (VTT, vélo ou course easy) ou en fin de séance box."
   saturday:
     frequency: odd_iso_weeks_only  # MAJ 2026-09-11 : dispo uniquement les semaines ISO impaires (contrainte durable)
     time: "10:00-12:30"
@@ -183,7 +183,8 @@ volumes:
   # Macro 2 révisé 3/2/3 : ACC-STR 21 sept.–11 oct. · TRA-POW 12–25 oct. · TRA-MIX 26 oct.–15 nov.
   # ACC-STR : S08 tronquée (vacances = décharge intégrée) · S09 charge · S10 pic (11 hard sets lower : BS 5 + FS 3 + DL 3, sous MRV 12)
   # Hinge en rampe : RDL S08 → DL 145–150 S09 → DL 155–160 S10 (plus d'exposition unique)
-  # S11 = décharge force (force ~9 sets, −50 % vs S10) ET entrée TRA-POW — pas de semaine deload séparée
+  # S11 = décharge force ET entrée TRA-POW — pas de semaine deload séparée
+  # TRA-POW (révisé 2026-10-03) : plus de séries lourdes lentes — squat de vitesse ~60 % (S11), contraste BS 3×2 @ 110 → box jumps (S12), push press + traction explosive à la place de press strict / traction lestée lourds
   gym:
     unit: skill_minutes_quality_per_week
     mev: 50
@@ -195,13 +196,13 @@ volumes:
     mev: 4
     mav: 8
     mrv: 12
-    current_target: 8    # ACC-STR S09 ~7 → S10 pic ~11 (sous MRV) · S11 décharge ~3 · TRA-POW/TRA-MIX ~3 (1 stimulus/sem.)
+    current_target: 8    # ACC-STR S09 ~7 → S10 pic ~11 (sous MRV) · S11 décharge 0 (squat de vitesse) · S12 contraste 3 · TRA-MIX ~3 (1 stimulus/sem.)
   force_upper:
     unit: hard_sets_per_week
     mev: 4
     mav: 8
     mrv: 12
-    current_target: 8    # ACC-STR S10 pic 8 (press 4×4 + WPU 4×4) · S11 décharge 6 · TRA-MIX ~3–6
+    current_target: 8    # ACC-STR S10 pic 8 (press 4×4 + WPU 4×4) · TRA-POW : push press 4–5 séries (S11–S12), traction explosive hors séries dures · TRA-MIX ~3–6
     load_anchoring: "Ré-ancré après S08–S09 (RPE 8+ deux semaines de suite au prescrit) : press ~60 kg ×3–4 et traction +30–32 ×3–4 = RPE 8+. Prescrire RPE 7–8 à press 57,5 kg ×4 et traction +28–30 ×4 ; ne plus partir de prs_current (70 / +40) pour l'upper."
   oly:
     unit: quality_lifts_per_week
@@ -236,11 +237,12 @@ benchmarks:
   last_run: "2026-08-07"
   next_due: "intégré à Macro 2 — pas de semaine de tests séparée"
   history: "athletes/thierry/journal/ (une entrée par semaine)"
+  box_jump_max_cm: 116  # S03 (2026-08-19) : high jump box + disques, RPE 3 — max probablement sous-estimé · base des hauteurs de travail TRA-POW (~80–90 % = 95–105 cm)
   signature_tests: knowledge/signature-tests.yaml  # 3 tests figés rejoués à chaque macro
   measurement_plan:
     force: "S10 (5–11 oct.) = point de mesure du bloc force : BS 5×3, FS avec pause 3×3, DL 3×3 (+ top set optionnel), strict press 4×4, traction lestée 4×4 → reporter dans prs_current_kg"
     aerobie: "S10 samedi (10 oct.) : test aérobie signature + relevé FC / allure → aerobic_anchors"
-    power: "S12 (19–25 oct.) : épaulé / arraché puissance + cycling notés en fin de bloc puissance"
+    power: "S12 (19–25 oct.) : épaulé / arraché puissance + cycling notés en fin de bloc puissance · hauteur de travail box jump (S11–S12) vs max 116 cm"
     gym: "S15 mardi (10 nov.) : relevé densité BMU, série RMU, kipping HSPU, distance HSW avec pivots → gym_ladder_level"
     note: "Retest par la prog, pas par une semaine dédiée : la fraîcheur prime."
   battery:

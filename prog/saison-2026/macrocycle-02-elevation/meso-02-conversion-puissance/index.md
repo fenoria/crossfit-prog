@@ -7,15 +7,17 @@
 
 ## Pourquoi
 
-Après la force structurelle, on **convertit** vers la puissance barre (power, pulls, hangs, cycling) avant le mixed. Deux semaines = transmutation courte, pas une accumulation haltéro de 3–5 sem.
+Après la force structurelle, on **convertit** : la force acquise doit devenir de la vitesse utilisable (barre, sauts, poussée, traction) avant le mixed. Deux semaines = transmutation courte, pas une accumulation haltéro de 3–5 sem.
 
-La première semaine porte deux rôles à la fois : **décharge du bloc force** (volume force −40 à −50 %) et **entrée puissance** (volume barre léger, charges rapides). C'est la décharge du bloc précédent, pas une semaine chargée de plus.
+Convertir ne veut pas dire refaire le bloc force avec moins de séries : **le régime change**. Plus aucune série lourde et lente n'est faite pour elle-même — le lourd est soit remplacé par la vitesse (squat de vitesse, push press, traction explosive), soit immédiatement suivi d'un geste rapide (contraste squat → saut).
+
+La première semaine porte deux rôles à la fois : **décharge du bloc force** (plus aucune série dure de force, pas de deadlift) et **entrée puissance** (vitesse, sauts, lancers, barre légère). C'est la décharge du bloc précédent, pas une semaine chargée de plus.
 
 ## Intention dominante
 
 **Type de bloc** : Conversion puissance  
-**Stimulus** : power snatch / clean + pulls + hangs + cycling barre ; densité barre modérée ; squat snatch / clean lourds rares et contrôlés.  
-**Ce que ce n’est pas** : cycle haltéro compétition, accumulation longue, max squat contraints.
+**Stimulus** : power snatch / clean + hangs + complexes + cycling barre ; squat de vitesse et contraste lourd → saut ; sauts et lancers ; push press et traction explosive ; densité barre modérée.  
+**Ce que ce n’est pas** : cycle haltéro compétition, accumulation longue, max squat contraints, **séries lourdes et lentes de 3–4 reps** (c'est le bloc force).
 
 ## Charges barre — repère
 
@@ -36,16 +38,18 @@ Les charges barre se prescrivent à partir du **ressenti actuel** : arraché pui
 
 | Semaine | Focus | Contenu type |
 |---------|-------|--------------|
-| S11 (12–18 oct.) | Décharge force + entrée power | Squat volume bas, singles et hangs volume léger, gym touch |
-| S12 (19–25 oct.) | Densité barre | Complexes, cycling en minutes, 1 stimulus force, bloc alactique, samedi long |
+| S11 (12–18 oct.) | Décharge force + changement de régime | Squat de vitesse ~60 %, box jumps, lancers, push press, traction explosive, singles et hangs légers, gym touch |
+| S12 (19–25 oct.) | Conversion chargée | Épaulé / arraché puissance notés, contraste squat lourd → box jump, push press, complexe arraché, broad jumps, cycling, bloc alactique, samedi long |
 
 ## Banque accessoires (ce meso)
 
 Accessoires nouveaux vs bloc force : good morning léger + dead bug (S11) → step-up chargé modéré + Pallof (S12). Pas de fentes lourdes. Tirage horizontal conservé comme accessoire upper.
 
+Moyens de vitesse (propres à ce meso) : box jump (réception sur la box), broad jump (réception tenue), lancers de WB (arrière par-dessus la tête, poitrine contre le mur), push press, traction explosive à charge légère.
+
 ## Maintien (hors focus)
 
-- Force : 1 stimulus/sem. (squat ou hinge contrôlé, volume bas)
+- Force : 1 stimulus/sem. — S11 squat de vitesse (pas de série dure) · S12 contraste squat 3×2 @ 110 kg suivi de box jumps · press strict et traction lestée lourds en pause (repris en maintien en TRA-MIX)
 - Gym : 1 séance skill au cran actuel (couplet, pivot)
 - Zone 2 : ≥ 60 min/sem. (S11 dimanche · S12 samedi long)
 - Conditioning dur : max 1 en plus du team ; S12 = 1 bloc alactique (≤ 2 min de travail cumulé)
@@ -54,7 +58,8 @@ Accessoires nouveaux vs bloc force : good morning léger + dead bug (S11) → st
 
 ## Métriques de succès (sortie)
 
-- [ ] Décharge force effective (volume force −40 à −50 % en S11)
+- [ ] Décharge force effective en S11 (aucune série dure de force, pas de deadlift)
+- [ ] Contraste tenu en S12 : sauts aussi hauts ou plus hauts après le squat qu'à froid
 - [ ] Arraché / épaulé puissance notés à RPE utile (fourchettes réelles atteintes)
 - [ ] Cycling barre tenu en densité sans casse technique
 - [ ] Pas de régression technique majeure ni douleur signalée
@@ -62,8 +67,8 @@ Accessoires nouveaux vs bloc force : good morning léger + dead bug (S11) → st
 
 ## Semaines
 
-- [S11 — 12–18 octobre 2026](S11-2026-10-12.md) — décharge force + pivot puissance
-- [S12 — 19–25 octobre 2026](S12-2026-10-19.md) — densité barre
+- [S11 — 12–18 octobre 2026](S11-2026-10-12.md) — décharge force + changement de régime (vitesse)
+- [S12 — 19–25 octobre 2026](S12-2026-10-19.md) — conversion chargée (contraste, complexes, densité)
 
 ## Notes meso
 

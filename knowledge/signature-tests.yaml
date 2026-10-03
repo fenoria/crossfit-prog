@@ -1,10 +1,11 @@
-# Tests signature — trois protocoles figés, rejoués à chaque macrocycle
+# Tests signature — quatre protocoles figés, rejoués à chaque macrocycle
 # Sources : Bompa (mesure périodique) · Issurin (contrôle des résidus entre blocs)
 #           Low (progression gym mesurée) · Laursen & Buchheit (repère de filière)
+#           Martínez-Gómez 2020 (saut + VO2max prédicteurs du classement CF) — T4 ajouté 2026-10-03
 
-version: 1
+version: 2
 status: validated
-updated: 2026-09-11
+updated: 2026-10-03
 
 pourquoi: >
   Les charges de barre se suivent naturellement (elles sont écrites chaque semaine).
@@ -17,7 +18,7 @@ regles:
   - "Protocole strictement identique d'une fois sur l'autre : même format, même charge, même ergo, même ordre, même créneau si possible."
   - "Un test n'est pas une séance de développement : on ne cherche pas le record, on cherche la comparaison."
   - "Jamais en semaine de pic, jamais à moins de deux semaines d'une compétition."
-  - "Les trois tests sont logés dans des séances déjà prévues — ils ne coûtent pas de volume supplémentaire."
+  - "Les tests sont logés dans des séances déjà prévues — ils ne coûtent pas de volume supplémentaire."
   - "Résultat → journal de la semaine, et profil si le repère durable bouge (crans gym, charges, ancres aérobies)."
   - "Si le protocole doit changer (matériel, blessure), la série repart de zéro et on le note ici."
 
@@ -61,10 +62,23 @@ tests:
     reference_actuelle: "aucune — première exécution en S10"
     prochain_releve: "S10 samedi (2026-10-10)"
 
+  T4_saut_cmj:
+    nom: "Saut vertical (CMJ)"
+    qualite: "puissance des jambes — avec la VO2max, meilleur prédicteur du classement CF chez l'amateur (Martínez-Gómez 2020)"
+    protocole: "Après l'échauffement lower, avant les séries d'approche · 2 CMJ d'essai ~70 % puis 3 CMJ max, repos 45 s · mains sur les hanches · réception tenue sur deux pieds · filmé au ralenti avec l'application de saut (téléphone au sol, de face, ~1,5 m, mêmes chaussures)"
+    score:
+      - hauteur_max_cm
+      - hauteur_moyenne_3_cm
+      - tension_adducteur  # aucune / légère / nette
+    conditions: "jambes fraîches, pas après un effort dur la veille · jamais de saut en contrebas (règle adducteur)"
+    reference_actuelle: "aucune — première exécution en S10"
+    prochain_releve: "S10 lundi (2026-10-05)"
+
 interpretation:
   - "Progrès réel = même score avec moins de repos, ou meilleur score à repos identique."
   - "T1 en baisse alors que la force monte = le bloc a sacrifié la répétabilité gym : corriger la dose de maintien."
   - "T3 en baisse = la base aérobie s'érode (souvent Zone 2 sous le MEV) : l'audit doit déjà l'avoir signalé."
+  - "T4 en baisse pendant un bloc à volume élevé = fatigue nerveuse ou interférence (Schumann & Rønnestad) : vérifier l'ordre force / conditioning dans les séances."
   - "T2 stable avec tension adducteur en baisse = la piste de réathlétisation fonctionne, le plafond peut s'examiner."
 
 historique: "athletes/<id>/journal/ — une ligne par exécution dans la semaine concernée"

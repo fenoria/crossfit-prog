@@ -3,7 +3,9 @@
 **Statut : `validated`** — v2 revalidée avec l’athlète le 2026-09-11  
 Validée le : 2026-07-27 (athlète : oui sur structure Issurin, GYM d’abord, power Oly, conditioning maintien, microcycles volume→surcharge→pic→deload)  
 Étendue le : 2026-09-11, **revalidée le même jour** — sept chantiers, détail et conflits d’auteurs dans `arbitrages.md` §16 à §19  
-Sources : corpus `books/` (12 ouvrages) · profil athlète actif (`athletes/<id>/profile.yaml`) · arbitrages `knowledge/arbitrages.md`
+Sources : corpus `books/` (14 ouvrages + 12 articles CF, ajoutés le 2026-10-03 — voir §9) · profil athlète actif (`athletes/<id>/profile.yaml`) · arbitrages `knowledge/arbitrages.md`
+
+> **v2.1 validée le 2026-10-03** : section 9 (placement force / conditioning, force-endurance, régularité gym, test de saut) — 9.5 écarté.
 
 > **Ce que la v2 change.** La v1 décrivait bien *quoi* faire. Elle ne vérifiait rien, ne mesurait presque rien, ne partait pas de la compétition, et traitait une blessure ancienne comme une contrainte définitive. La v2 ajoute quatre choses : les doses écrites sont **auditées**, les qualités clés sont **mesurées à protocole figé**, la préparation part des **exigences de l’épreuve**, et une contrainte ancienne se **recharge progressivement** au lieu de se contourner indéfiniment. Rien du socle v1 n’est retiré.
 
@@ -18,7 +20,7 @@ Sources : corpus `books/` (12 ouvrages) · profil athlète actif (`athletes/<id>
 5. **Santé > ego** — confiance barre et charges actuelles guident les variantes (power vs squat) ; douleur signalée → adapter.
 6. **Z2 > off** si créneau possible ; vrai repos seulement si fatigue/douleur/deload/taper l’exigent.
 7. **Une dose écrite est une dose vérifiée** — chaque semaine déclare ses volumes, un audit les confronte au profil et aux caps. Une borne qu’on n’ausculte jamais n’est pas une borne, c’est une intention.
-8. **Mesurer ce qu’on prescrit** — trois tests figés rejoués chaque macro, des ancres physiologiques pour le cardio. Sans protocole répété à l’identique, « ça progresse » reste une impression.
+8. **Mesurer ce qu’on prescrit** — quatre tests figés rejoués chaque macro, des ancres physiologiques pour le cardio. Sans protocole répété à l’identique, « ça progresse » reste une impression.
 9. **Partir de la demande, pas seulement des qualités** — à l’approche d’un pic, la question n’est plus « qu’est-ce qui est faible » mais « qu’est-ce que l’épreuve exige et que je n’ai jamais fait ».
 10. **Recharger plutôt qu’éviter** — une blessure ancienne se réathlétise par paliers indolores ; sinon l’évitement devient un plafond permanent.
 11. **Une information, une source** — le profil porte l’état courant, le journal l’historique, l’instance de saison le calendrier, `knowledge/` le générique.
@@ -199,7 +201,7 @@ Gate : `knowledge/meso-gates.yaml` → `benchmarks_to_ACC_GYM`.
 
 Une semaine de tests dédiée est un luxe que le calendrier n’offre pas toujours. La mesure se fait donc **dans la prog** :
 
-- **Trois tests figés** (`knowledge/signature-tests.yaml`), rejoués une fois par macrocycle, logés dans des séances déjà prévues : densité muscle-up en couplet, squat répétable (5×3 avec repos chronométré), seuil 5 × 3 min. Même protocole, même matériel, même ordre — sinon la comparaison ne vaut rien.
+- **Quatre tests figés** (`knowledge/signature-tests.yaml`), rejoués une fois par macrocycle, logés dans des séances déjà prévues : densité muscle-up en couplet, squat répétable (5×3 avec repos chronométré), seuil 5 × 3 min, saut vertical (CMJ, ajouté le 2026-10-03). Même protocole, même matériel, même ordre — sinon la comparaison ne vaut rien.
 - **Ancres aérobies** relevées lors d’une sortie longue déjà programmée : FC plafond de Zone 2, allure de seuil, dérive sur les intervalles.
 - Résultats → journal de la semaine, puis profil si le repère durable bouge.
 
@@ -244,7 +246,7 @@ Fichiers normatifs (en plus de cette méthodo) :
 | `conditioning-matrix.yaml` | Caps energy systems + ancres physiologiques |
 | `volume-landmarks.yaml` | Ordres de grandeur MEV/MAV/MRV (référence, pas source) |
 | `journal-schema.yaml` | Schéma d’une entrée de journal athlète |
-| `signature-tests.yaml` | Trois protocoles figés rejoués par macro |
+| `signature-tests.yaml` | Quatre protocoles figés rejoués par macro |
 | `competition-demands.yaml` | Exigences de compétition → trous → actions |
 | `competition-day.yaml` | Trame de journée de compétition |
 | `taper-protocol.yaml` | Affûtage chiffré des quatorze derniers jours |
@@ -263,6 +265,49 @@ Lint : `npm run lint:prog` — forme (`scripts/lint-prog.py`) **et** doses, caps
 - Une copie du cycle BON-2026
 - Un programme bodybuilding
 - Du concurrent « force+gym+oly+VO2 max » chaque semaine
+
+---
+
+## 9. v2.1 — entraînement concurrent et données CrossFit
+
+**Statut : `validated`** — rédigée et validée avec l'athlète le 2026-10-03 (9.5 écarté).  
+Sources : Schumann & Rønnestad (pilote interférence) · Viada (soutien pratique) · 12 articles CF (`knowledge/books/articles-crossfit.md`). Conflits d'auteurs : `arbitrages.md` §22 à §25.
+
+> **Ce que la v2.1 ajoute.** La v2 dit *quoi* travailler et *combien*. Il lui manquait deux choses : **où placer** la force et le conditioning l'un par rapport à l'autre, et **ce que les données CrossFit disent** de la performance. Aucune architecture ne change : blocs Issurin, priorité gym et conditioning en maintien restent tels quels.
+
+### 9.1 Placement force / conditioning (§22)
+- **La qualité prioritaire du bloc ouvre la séance.** Skill gym et barre technique ou lourde d'abord, conditioning dur ensuite. Le Z2 va en fin de séance ou sur un autre créneau.
+- Grille d'ordre intra-séance (Viada) : technique et intense → peu technique et intense → technique et léger → peu technique et léger.
+- En ACC-STR / TRA-POW : **pas de conditioning des jambes au-dessus de la Z2 avant la force explosive des jambes dans la même séance** (échauffement excepté). Si un bloc cardio doit précéder, la séance commence par le haut du corps.
+- En bloc force, le volume Z2 se fait de préférence en vélo, rameur ou ski plutôt qu'en course.
+- Le bain froid **après la force** est réservé à la compétition et aux enchaînements serrés : il freine les adaptations de force.
+
+### 9.2 Force : ticket d'entrée, puis force-endurance (§24)
+- Force max **entretenue** (un stimulus lourd par semaine hors focus), **pas poursuivie** au-delà du niveau requis par la compétition.
+- **Force-endurance à 70–80 %** (séries de 5 à 10 reps en densité ou sous fatigue) : un moyen explicite en TRA-MIX et en maintien.
+- Pas de nouveau bloc force max sans trou de force identifié dans `competition-demands.yaml`.
+
+### 9.3 Répétabilité gym : régularité et pauses (articles)
+- Sur l'Open, le meilleur prédicteur du classement est la **cadence et la régularité des séries de gym**, avec des pauses courtes et décidées à l'avance (Mangine 2023–2024). Ce n'est pas le pic de force.
+- La priorité gym s'oriente donc vers la **régularité sous fatigue** : séries découpées dès le départ, découpage annoncé avant le WOD, même cadence sur la première et la dernière série.
+- Pacing **sous le seuil** sur les parties cardio d'un WOD mixte, pour préserver la qualité de la partie technique qui suit (Viada).
+
+### 9.4 Mesure
+- **T4 — saut vertical (CMJ)** ajouté aux tests signature : 3 sauts max filmés au ralenti avec une application, réception tenue au sol, jamais de saut en contrebas. Saut + VO2max expliquent 81 % du classement chez des amateurs (Martínez-Gómez 2020). Premier relevé : début du pic force, avant le squat.
+- Dans les WODs où un découpage est prescrit, noter le **découpage réellement tenu** (champ `decoupage_gym` du journal).
+
+### 9.5 Exposition aux mouvements faibles (§25) — **écarté**
+- Non retenu (athlète, 2026-10-03). On s'en tient à §4 (couverture des familles de mouvements) et au comblement des trous de Macro 3.
+
+### Ce que la v2.1 ne change pas
+Architecture Issurin · Bompa multi-pic · doses Israetel · conditioning en maintien · règles blessure et réathlétisation · TRA-POW par changement de régime (§21 maintenu contre l'objection de Viada sur la vitesse, voir §23).
+
+### Validation v2.1 (2026-10-03, athlète)
+- [x] 9.1 Placement force / conditioning
+- [x] 9.2 Force max entretenue, force-endurance à 70–80 %
+- [x] 9.3 Répétabilité gym orientée régularité et pauses (+ découpage tenu noté)
+- [x] 9.4 Test de saut T4 (CMJ filmé par application, premier relevé lundi du pic force)
+- [ ] 9.5 Mouvements faibles chronométrés une fois par meso — **écarté**
 
 ---
 

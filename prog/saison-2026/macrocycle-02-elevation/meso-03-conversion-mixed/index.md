@@ -42,7 +42,8 @@ Accessoires nouveaux : gainage sous charge (front rack carry) + ring row (S13–
 
 ## Maintien (hors focus)
 
-- Force : 1 stimulus/sem. (entretien neural léger, RPE ≤ 7)
+- Force : 1 stimulus/sem. (2 séries lourdes RPE ≤ 7 + force-endurance ~70 %, 6–8 reps)
+- Formats chronométrés : découpage des séries de gym annoncé avant le départ, noté après
 - Gym : dans le mixed + 1 séance skill isolée si besoin
 - Haltéro : 1 séance power/technique par semaine
 - Zone 2 : ≥ 60 min/sem.

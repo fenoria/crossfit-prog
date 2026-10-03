@@ -88,7 +88,7 @@ points_de_mesure:
   force:
     semaine: S10
     date: "2026-10-05 → 2026-10-11"
-    contenu: "séries lourdes du pic force notées → prs_current_kg · test signature T2 le lundi"
+    contenu: "séries lourdes du pic force notées → prs_current_kg · tests signature T4 (saut CMJ) puis T2 le lundi"
   aerobie:
     semaine: S10
     date: "2026-10-10"

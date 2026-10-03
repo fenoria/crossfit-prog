@@ -47,7 +47,8 @@ Le pic C est annulé : il n'y a rien à affûter avant la fin de l'année. C'est
 
 ## Maintien (hors focus)
 
-- Force : 1 stimulus/sem. (charges habituelles, RPE ≤ 7)
+- Force : 1 stimulus/sem. (charges habituelles, RPE ≤ 7, + force-endurance ~70 %)
+- Formats chronométrés : découpage annoncé avant le départ, noté après
 - Barre : 1 séance power/technique par semaine + charges moyennes dans les formats
 - Gym : dans les couplets + 1 séance au format du cran
 - Zone 2 : ≥ 60 min/sem.

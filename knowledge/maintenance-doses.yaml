@@ -56,7 +56,7 @@ by_meso_type:
   TRA-MIX:
     dominant: mixed_cf
     gym: { min_per_week: 1, unit: gym_session, note: "souvent dans le mixed ; 1 skill isolé si besoin" }
-    force: { min_per_week: 1, unit: force_stimulus, note: "entretien neural léger" }
+    force: { min_per_week: 1, unit: force_stimulus, note: "entretien neural léger + force-endurance 70–80 % (5–10 reps en densité ou sous fatigue) — methodology §9.2" }
     oly: { min_per_week: 1, unit: oly_session }
     z2: { min_minutes_week: 45 }
     cond_hi: { max_per_week: 2, note: "doses limitées ; qualité pacing" }

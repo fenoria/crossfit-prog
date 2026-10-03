@@ -1,8 +1,8 @@
 status: validated
-version: 2
-updated: 2026-09-11
+version: 2.1
+updated: 2026-10-03
 validated_on: 2026-07-27
-revalidated_on: 2026-09-11  # v2 : doses auditées, journal, réathlétisation, ancres, tests signature, compétition, séparation générique/instance
+revalidated_on: 2026-10-03  # v2.1 : concurrent (Schumann & Rønnestad), force-endurance, régularité gym, test de saut — methodology.md §9 ; v2 2026-09-11 : doses auditées, journal, réathlétisation, ancres, tests signature, compétition, séparation générique/instance
 # md = narratif athlète ; yaml = contrat machine — garder meso_types / order / status sync
 source_of_truth:
   knowledge: "knowledge/ (méthodo + ops + arbitrages, générique) — books/ = brut"
@@ -23,7 +23,8 @@ pilots:
   macro_peaking: bompa
   mental: encyclo_pm
   conditioning: laursen_buchheit_hiit
-secondary_refs: [encyclo_pp, manuel_muscu, bible_pp]
+  concurrent: schumann_ronnestad_concurrent
+secondary_refs: [encyclo_pp, manuel_muscu, bible_pp, viada_hybrid, articles_crossfit]
 gaps: []
 
 ops_pack:

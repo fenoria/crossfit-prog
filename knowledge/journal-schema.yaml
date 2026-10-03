@@ -7,9 +7,9 @@
 # l'historique s'arrête en silence (cas S05, non distillée) et les écarts entre
 # prescrit et réalisé se détectent des semaines trop tard (cf. arbitrages.md §15).
 
-version: 1
+version: 2
 status: validated
-updated: 2026-09-11
+updated: 2026-10-03
 
 regles:
   - "Une entrée par semaine, créée dès que la semaine est écrite, complétée au fil des feedbacks."
@@ -43,6 +43,11 @@ champs:
   familles_couvertes: >
     Familles de mouvements réellement faites sur la semaine (ids de movement-coverage.yaml),
     WOD team compris s'il est tracé. Permet de comparer prescrit (mixed= dans la balise dose) et réalisé.
+
+  decoupage_gym: >
+    Pour les WODs où un découpage des séries de gym est prescrit (methodology §9.3) :
+    mouvement, découpage annoncé, découpage tenu, cadence première vs dernière série
+    (stable | en baisse). null si non noté.
 
   flags: "liste courte de faits saillants (douleur, ampoules, séance déplacée, volume hors prog)"
 

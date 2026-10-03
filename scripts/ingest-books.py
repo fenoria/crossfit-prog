@@ -90,15 +90,27 @@ def main() -> int:
     files = sorted(
         [p for p in BOOKS.iterdir() if p.suffix.lower() in {".pdf", ".epub"}]
     )
+    # Articles scientifiques : texte déjà extrait (books/papers/*.txt)
+    papers = BOOKS / "papers"
+    if papers.is_dir():
+        files += sorted(papers.glob("*.txt"))
+    # Filtre optionnel : `npm run ingest -- hybrid concurrent` (sous-chaîne du nom)
+    filters = [a.lower() for a in sys.argv[1:]]
+    if filters:
+        files = [p for p in files if any(f in str(p.relative_to(BOOKS)).lower() for f in filters)]
     if not files:
         print("No books found", file=sys.stderr)
         return 1
 
     for path in files:
         slug = slugify(path.name)
+        out_dir = OUT / "papers" if path.suffix.lower() == ".txt" else OUT
+        out_dir.mkdir(parents=True, exist_ok=True)
         print(f"Extracting {path.name} -> {slug} ...")
         try:
-            if path.suffix.lower() == ".pdf":
+            if path.suffix.lower() == ".txt":
+                full = path.read_text(encoding="utf-8")
+            elif path.suffix.lower() == ".pdf":
                 full = extract_pdf(path)
             else:
                 full = extract_epub(path)
@@ -106,9 +118,12 @@ def main() -> int:
             print(f"  FAIL: {e}", file=sys.stderr)
             continue
 
-        full_path = OUT / f"{slug}.full.txt"
-        hi_path = OUT / f"{slug}.highlights.txt"
+        full_path = out_dir / f"{slug}.full.txt"
+        hi_path = out_dir / f"{slug}.highlights.txt"
         full_path.write_text(full, encoding="utf-8", errors="replace")
+        if path.suffix.lower() == ".txt":  # article court : le texte complet suffit
+            print(f"  {len(full):,} chars full")
+            continue
         hi_path.write_text(extract_highlights(full), encoding="utf-8", errors="replace")
         print(f"  {len(full):,} chars full; highlights {hi_path.stat().st_size:,} bytes")
 

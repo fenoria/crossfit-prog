@@ -1,6 +1,6 @@
 # Livres
 
-Douze ouvrages nourrissent la réflexion de planification. Ces fiches résument la vision de chaque auteur, les idées clés, et les principes utiles pour structurer une progression.
+Quatorze ouvrages et une sélection d'articles scientifiques nourrissent la réflexion de planification. Ces fiches résument la vision de chaque auteur, les idées clés, et les principes utiles pour structurer une progression.
 
 **Schémas** : [Concepts clés](/livres/concepts) — année, stages, dose, transfert, conditioning.
 
@@ -14,6 +14,8 @@ Douze ouvrages nourrissent la réflexion de planification. Ces fiches résument 
 | Haltéro | Everett | — |
 | Transfert force → compétition | Verkhoshansky | Zatsiorsky |
 | Conditioning | Laursen & Buchheit | Bible PP · Encyclopédie PP |
+| Combiner force et endurance | Schumann & Rønnestad | Viada · Articles CrossFit |
+| Ce qui prédit la performance CrossFit | Articles CrossFit | Viada |
 | Mental pré-comp | Encyclopédie mentale | — |
 | Accessoires renfo | Manuel muscu (secondaire) | — |
 
@@ -39,6 +41,12 @@ Douze ouvrages nourrissent la réflexion de planification. Ces fiches résument 
 10. [Encyclopédie de la PP](encyclo-pp.md) — réservoir d’idées
 11. [Encyclopédie de la préparation mentale](encyclo-pm.md) — routines & stress pré-comp
 12. [Manuel ultime de musculation](manuel-muscu.md) — accessoires free-weight
+
+### Entraînement concurrent & données CrossFit
+
+13. [Schumann & Rønnestad — Concurrent Aerobic and Strength Training](schumann-ronnestad-concurrent.md) — interférence, ordre, espacement
+14. [Viada — The Hybrid Athlete](viada-hybrid.md) — placement pratique, force-endurance, pacing
+15. [Articles scientifiques CrossFit](articles-crossfit.md) — prédicteurs de performance, pacing de l'Open
 
 ## Utilité en planification
 
