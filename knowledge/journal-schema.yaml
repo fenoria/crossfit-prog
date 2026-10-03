@@ -17,6 +17,7 @@ regles:
   - "Ne jamais inventer un chiffre absent du feedback : mettre null et documenter dans la clé *_note."
   - "Un fait durable (plafond de charge, contrainte planning, cran gym, gêne récurrente) remonte AUSSI au profil."
   - "Le journal est une archive : on n'y réécrit pas le passé, on ajoute."
+  - "Champs ajoutés en cours de saison (team_wod_mouvements, familles_couvertes : dès S11 ; decoupage_gym : v2.1) : absents des entrées antérieures, normal — ne pas les rétro-remplir."
 
 champs:
   semaine: "SXX"
@@ -33,7 +34,8 @@ champs:
 
   realise: >
     Doses réellement effectuées sur la semaine — matière première de l'audit.
-    Champs : force_lower_sets, force_upper_sets, oly_lifts, gym_min, z2_min, hard_min.
+    Champs : force_lower_sets, force_upper_sets, oly_lifts, gym_min, z2_min, hard_min,
+    threshold_min (mêmes noms que la balise dose).
     null autorisé quand le feedback ne permet pas de trancher (+ clé *_note).
 
   team_wod_rpe: "RPE de la séance team (déclenche la règle J+1 au-delà du seuil profil)"

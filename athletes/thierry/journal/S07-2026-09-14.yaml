@@ -4,7 +4,7 @@ macro: macrocycle-01-build
 meso: TRANS
 phase_micro: transition
 prog: prog/saison-2026/macrocycle-01-build/meso-04-transition-mini/S07-2026-09-14.md
-statut: en_cours
+statut: close
 
 jours:
   lundi:
@@ -29,7 +29,9 @@ jours:
     charges: "Strict press 3×4 @ 57,5–60 kg RPE 6–7 · traction lestée 3×4 @ +28–32 kg RPE 6–7 · BMU 3×3 (2 RIR) · RMU réduit/skip"
     note: "Épaule : press tenu, RMU coupé. BMU OK."
   samedi: {}
-  dimanche: {}
+  dimanche:
+    fait: null
+    note: "Non renseigné dans le feedback (off recommandé)."
 
 realise:
   force_lower_sets: 6
