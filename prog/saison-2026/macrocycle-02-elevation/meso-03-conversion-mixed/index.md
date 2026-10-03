@@ -9,13 +9,12 @@
 
 Transfert force + gym + barre vers formats combinés sous fatigue, avant le bloc spécifique team de Macro 3.
 
-Trois semaines et non deux : la répétabilité gym sous fatigue est la qualité limitante, et son résidu est court — elle doit être travaillée près du bloc de comblement des trous qui suit. La semaine vient du bloc force, dont le lift principal était plafonné.
+Trois semaines : la répétabilité gym sous fatigue est la qualité limitante, et son résidu est court — elle doit être travaillée près du bloc de comblement des trous qui suit. La semaine vient du bloc force, dont le lift principal était plafonné.
 
 ## Intention dominante
 
 **Type de bloc** : Conversion mixed  
 **Stimulus** : couplings gym + barre + ergo ; densités orientées transfert ; kipping en appui renversé sous fatigue ; HI dosé.  
-**Ce que ce n’est pas** : taper compétition, accumulation force pure.
 
 ## Apport
 
@@ -38,7 +37,7 @@ Trois semaines et non deux : la répétabilité gym sous fatigue est la qualité
 
 ## Banque accessoires (ce meso)
 
-Accessoires nouveaux : gainage sous charge (front rack carry) + ring row (S13–S14), mobilité épaule / hanche en fin de séance sur S15. Volume accessoire bas : le mixed porte déjà la fatigue.
+Accessoires du meso : gainage sous charge (front rack carry) + ring row (S13–S14), mobilité épaule / hanche en fin de séance sur S15. Volume accessoire bas : le mixed porte déjà la fatigue.
 
 ## Maintien (hors focus)
 
@@ -49,15 +48,15 @@ Accessoires nouveaux : gainage sous charge (front rack carry) + ring row (S13–
 - Zone 2 : ≥ 60 min/sem.
 - Conditioning dur : max 2/sem. team compris · ≤ 30 min d'effort dur cumulé par semaine
 - Variété : ≥ 3 familles de mouvements par semaine, dans les formats ou en bloc court (DU, box jump over, sandbag, course chargée, DB snatch, fentes légères) · référence DU relevée en S15
-- Épaule : kipping en appui renversé seulement après un strict indolore (S13 strict → S14 kipping court) · la simulation de S14 ne contient pas de HSPU
+- Épaule : progression S13 HSPU strict → S14 kipping court, si le strict est indolore · poussée à l'haltère dans la simulation de S14
 
 ## Métriques de succès (sortie)
 
 - [ ] 2–3 séances mixed qualité digérées (RPE noté)
 - [ ] Répétabilité gym sous fatigue en progrès vs bloc gym d'août (séries tenues après cardio)
 - [ ] Repères gym relevés en fin de bloc (kipping en appui renversé, densité muscle-up)
-- [ ] Pas de douleur florissante signalée
-- [ ] Pas de semaine surcharge empilée juste avant Macro 3
+- [ ] Indolore (adducteur, épaule)
+- [ ] Fatigue basse à l'entrée de Macro 3
 
 ## Semaines
 

@@ -9,13 +9,12 @@
 
 Après Accumulation gym + pic B, on élève la force structurelle (squat, hinge, press, pull) tout en entretenant le skill gym — résidu Issurin.
 
-Trois semaines suffisent ici : la semaine d'entrée est tronquée par les vacances (décharge intégrée), et le squat est plafonné — une quatrième semaine de volume sur un lift qui ne peut pas monter en charge rendrait peu. La semaine récupérée va au bloc mixed, plus proche du pic de décembre.
+Trois semaines : la semaine d'entrée est tronquée par les vacances (décharge intégrée) et le squat est plafonné. La quatrième semaine va au bloc mixed, plus proche de la fin de saison.
 
 ## Intention dominante
 
 **Type de bloc** : Accumulation force  
-**Stimulus** : charges actuelles 70–85 % ressenti, volumes contrôlés, RPE ; pas de PRs pré-blessure.  
-**Ce que ce n’est pas** : peaking compétition, volume gym prioritaire, HI libre.
+**Stimulus** : charges actuelles 70–85 % ressenti, volumes contrôlés, RPE ; pourcentages calculés sur les charges actuelles.  
 
 ## Trois leviers de surcharge (squat plafonné)
 
@@ -44,23 +43,23 @@ Trois semaines suffisent ici : la semaine d'entrée est tronquée par les vacanc
 
 ## Banque accessoires (ce meso)
 
-Lifts et skills **stables**. Accessoires **nouveaux** vs Macro 1 (plus de duo dead bug + Pallof chaque séance) : hollow / suitcase (S08) → roll-out + side plank (S09) → hip thrust + row (S10). Formats gym/barre légèrement rotatifs (couplet vs sets, hangs/tirages, pivot en marche sur les mains).
+Lifts et skills **stables**. Accessoires du meso : hollow / suitcase (S08) → roll-out + side plank (S09) → hip thrust + row (S10). Formats gym/barre légèrement rotatifs (couplet vs sets, hangs/tirages, pivot en marche sur les mains).
 
 ## Maintien (hors focus)
 
-- Gym : **2 séances/sem.** skill, formats du cran actuel (couplet + pivot) — pas de régression en linéaire · **S08 tronquée : 1×**
+- Gym : **2 séances/sem.** skill, formats du cran actuel (couplet + pivot) · **S08 tronquée : 1×**
 - Haltéro : **≥ 5 lifts qualité/sem. dès S08**, cible ~10–13/sem. en S09–S10 (power, hangs, tirages)
 - Force lower : **2 stimuli/sem.** dès S09 (squat + hinge, jours séparés) — S08 = 1× (créneau) · S10 pic = squat / front squat / deadlift **3 jours distincts**
 - Zone 2 : plancher 60 min/sem. écrit dans les séances (randonnée S08 = Z2 naturelle)
-- Conditioning : team box compte ; **1 bloc seuil/sem. dès S09** (12–15 min, RPE 6–7) ; pas de hero WODs
+- Conditioning : team box compte ; **1 bloc seuil/sem. dès S09** (12–15 min, RPE 6–7)
 
 ## Métriques de succès (sortie)
 
-- [ ] Semaine de pic (5–11 oct.) digérée sans chute de perf
+- [ ] Semaine de pic (5–11 oct.) digérée, perfs tenues
 - [ ] Charges de référence notées : squat, front squat, deadlift, press, traction lestée
 - [ ] Gym maintien 2/sem. tenu, kipping en appui renversé amorcé
 - [ ] Zone 2 ≥ 60 min chaque semaine
-- [ ] Pas de douleur lower florissante signalée
+- [ ] Lower indolore
 
 ## Semaines
 

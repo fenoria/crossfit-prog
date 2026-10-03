@@ -13,7 +13,6 @@ Après un pic B, une courte décharge protège l’enchaînement vers Macro 2 (�
 
 **Type de bloc** : Transition  
 **Stimulus** : volume bas, PPG agréable, tissus / épaules, Z2 si créneau.  
-**Ce que ce n’est pas** : reprise force lourde, HI, tests.
 
 ## Apport
 

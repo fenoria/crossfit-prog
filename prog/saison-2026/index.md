@@ -8,7 +8,7 @@ Plan annuel CrossFit élite à **plusieurs pics**, calé sur le calendrier comp�
 |------|-----------|-------|--------------------|
 | A | Battle of Normandy Throwdown | 2ᵉ we juillet | **Fait** (7ᵉ / 40 RX team 3) |
 | B | Fire Contest (Nantes) | 12–13 septembre | **Fait** (7ᵉ / 20 RX team mixte) |
-| C | — | — | **Annulé** — remplacé par une journée de simulation compétition le 5 décembre |
+| C | Journée de simulation compétition | 5 décembre | Clôture de Macro 3 |
 
 ## Intention long terme
 
@@ -25,5 +25,5 @@ Plan annuel CrossFit élite à **plusieurs pics**, calé sur le calendrier comp�
 
 <figure class="concept-figure">
   <img src="/diagrams/saison-2026/annee-2026-pics.svg" alt="Saison 2026 : Macro 1 vers Fire Contest, Macro 2 élévation, Macro 3, transition" width="800" height="280" />
-  <figcaption>Saison 2026 — pic B (septembre) ; C (décembre) annulé, remplacé par une simulation.</figcaption>
+  <figcaption>Saison 2026 — pic B (septembre) ; journée de simulation compétition (décembre).</figcaption>
 </figure>

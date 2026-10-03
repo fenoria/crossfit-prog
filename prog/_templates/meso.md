@@ -14,7 +14,6 @@
 
 **Type de bloc** : [ex. Accumulation gym]  
 **Stimulus** : […]  
-**Ce que ce n’est pas** : […]
 
 ## Apport (court / moyen / long)
 

@@ -7,24 +7,23 @@
 
 ## Pourquoi
 
-Le pic C est annulé : il n'y a rien à affûter avant la fin de l'année. C'est le meilleur moment de la saison pour travailler ce que les compétitions ont révélé et qu'aucun bloc n'a encore traité — sans la pression d'une date proche, et avec le temps de digérer avant 2027.
+C'est le meilleur moment de la saison pour travailler ce que les compétitions ont révélé et qui reste à traiter — loin de toute date de compétition, avec le temps de digérer avant 2027.
 
 ## Intention dominante
 
 **Type de bloc** : Conversion mixed (orientée exigences de compétition)  
 **Stimulus** : formats mixed construits autour des trous — objet lourd, course chargée, corde sous fatigue, synchro à deux, gym après cardio.  
-**Ce que ce n'est pas** : un affûtage, une accumulation force, ni une découverte de mouvements en volume (un geste nouveau commence en qualité).
 
 ## Apport
 
 - Court : chaque trou exposé au moins deux fois, avec un repère noté
-- Moyen : simulation du 5 décembre faite sans mouvement découvert le jour même
+- Moyen : simulation du 5 décembre faite sur des mouvements déjà travaillés
 - Long : liste des trous mise à jour pour la saison 2027
 
 ## Continuité
 
 - **Précède** : Conversion mixed (Macro 2) — formats digérés, repères gym et DU notés en S15
-- **Suit** : Simulation et bilan — fraîcheur relative, pas de surcharge empilée
+- **Suit** : Simulation et bilan — fraîcheur relative
 
 ## Focus par semaine
 
@@ -41,8 +40,8 @@ Le pic C est annulé : il n'y a rien à affûter avant la fin de l'année. C'est
 | **Course avec charge** | Course sandbag **70 kg** (standard de compétition), 100 → 200 m | Temps par 100 m |
 | **Corde sous fatigue** | DU juste après un mouvement de jambes (WB, box jump over, course) | Séries cassées ou non |
 | **Synchro avec la partenaire réelle** | Deux séances minimum, plan de bascule écrit avant le départ | Nombre de bascules, temps perdu |
-| **Répétabilité gym sous cardio** | Couplets après pré-fatigue, jamais à la casse | Minutes propres en couplet |
-| **Butterfly / C2B** | **Seulement si** anneaux et HSPU sont revenus sans douleur en Macro 2 : kip swings, kipping pull-ups en singles et séries de 3 — **pas de volume** | Qualité du rebond, douleur /10 |
+| **Répétabilité gym sous cardio** | Couplets après pré-fatigue, arrêtés avant la casse | Minutes propres en couplet |
+| **Butterfly / C2B** | **Si** RMU et HSPU ont été travaillés indolores en Macro 2 : kip swings, kipping pull-ups en singles et séries de 3 · volume bas | Qualité du rebond, douleur /10 |
 | **Routine mentale de journée** | Même routine à chaque format chronométré | Appliquée oui / non |
 
 ## Maintien (hors focus)
@@ -58,7 +57,7 @@ Le pic C est annulé : il n'y a rien à affûter avant la fin de l'année. C'est
 
 - [ ] Chaque trou exposé au moins deux fois, repère noté
 - [ ] Au moins une séance avec la partenaire de compétition (deux si possible)
-- [ ] Pas de douleur florissante (adducteur, épaule)
+- [ ] Indolore (adducteur, épaule)
 - [ ] Fatigue maîtrisée à l'entrée de la semaine de simulation
 
 ## Semaines

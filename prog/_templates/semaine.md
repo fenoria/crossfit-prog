@@ -10,13 +10,6 @@
 
 [une ligne — ex. mesurer les charges actuelles, pas battre des records]
 
-## Glossaire (si besoin cette semaine)
-
-| Terme | Signification |
-|-------|----------------|
-| **RPE** | Effort perçu /10 |
-| **Zone 2** | Cardio facile (parole possible) · ergo au choix |
-
 ## Pourquoi / Intention / Apport / Suite
 
 - **Pourquoi** : …

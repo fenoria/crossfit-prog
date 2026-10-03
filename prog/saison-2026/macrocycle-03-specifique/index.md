@@ -1,11 +1,11 @@
 # Macrocycle 3 — Spécifique
 
 **Début prévu** : 16 novembre 2026 · **Fin prévue** : 13 décembre 2026  
-**Pic** : aucun — le pic C de décembre est annulé (2 octobre 2026). Le macro se clôt sur une **journée de simulation compétition** le samedi 5 décembre.
+**Clôture** : **journée de simulation compétition** le samedi 5 décembre.
 
 ## Intention
 
-Sans compétition à préparer, ces quatre semaines ne servent pas à affûter : elles servent à **combler les trous** que les compétitions de 2026 ont montrés. On part de ce que l'épreuve exige et qui n'a jamais été travaillé, pas des qualités générales déjà en place (cardio, barre en power, ergos).
+Ces quatre semaines servent à **combler les trous** que les compétitions de 2026 ont montrés. On part de ce que l'épreuve exige et qui reste à travailler ; les qualités générales déjà en place (cardio, barre en power, ergos) passent en maintien.
 
 Le macro se ferme sur une simulation de journée de compétition : elle vérifie que les trous travaillés tiennent en format, sous fatigue, avec la trame de journée. Ses résultats ouvrent la saison 2027 (Battle of Normandy en juillet).
 
@@ -26,10 +26,8 @@ Liste issue des débriefs de Battle et de Fire 2026 et de l'audit de couverture 
 | **Course avec charge** | Fire WOD 5 brancard : limiteur = course chargée | Course sandbag / KB en format, distances croissantes |
 | **Corde sous fatigue** | DU écrits une seule fois avant octobre ; première référence en S15 | DU dans les formats, à la suite d'un mouvement de jambes |
 | **Synchronisation avec la partenaire réelle** | Fire WOD 4 synchro barre : 7e, pauses imposées | Deux séances minimum avec elle, plan de bascule dit avant le départ |
-| **Répétabilité gym sous cardio** | Faiblesse déclarée n° 1 | Couplets après pré-fatigue, jamais à la casse |
-| **Butterfly / C2B** | Fire WOD 3 : cut à la moitié, RPE 10 | **Sous condition épaule** : drills de kip et singles seulement si les gestes en poussée sont revenus sans douleur — le volume reste pour 2027 |
-
-Le squat clean et le squat snatch lourds restent hors du plan : manque assumé au titre de la règle blessure, pas un oubli.
+| **Répétabilité gym sous cardio** | Faiblesse déclarée n° 1 | Couplets après pré-fatigue, arrêtés avant la casse |
+| **Butterfly / C2B** | Fire WOD 3 : cut à la moitié, RPE 10 | **Si la poussée est indolore** : drills de kip et singles · le volume est un objectif 2027 |
 
 ## Règles fatigue box
 

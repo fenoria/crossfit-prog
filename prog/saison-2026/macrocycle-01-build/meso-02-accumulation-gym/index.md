@@ -13,7 +13,6 @@ La qualité limitante est le volume / la répétabilité gym. Avant le pic B Fir
 
 **Type de bloc** : Accumulation gym  
 **Stimulus** : skill + densité (EMOM, volumes contrôlés), progression ladder ; force et haltéro en **maintien**.  
-**Ce que ce n’est pas** : conversion mixed lourde, peaking, force max agressive.
 
 ## Apport
 

@@ -12,7 +12,7 @@ Fin de saison : décharge, compensation tissus / épaules, PPG agréable, Z2 si 
 - Volume bas (−30 à −50 % vs blocs chargés)  
 - Mobilité, tissus, épaules  
 - Zone 2 préférée au off si entraînement possible  
-- Pas de HI, pas de tests max
+- Intensité modérée, effort aérobie et technique
 
 ## Continuité
 

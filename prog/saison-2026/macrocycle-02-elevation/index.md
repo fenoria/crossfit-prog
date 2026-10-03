@@ -5,11 +5,11 @@
 
 ## Intention
 
-Post-Fire : accumulation force structurelle → conversion puissance barre → conversion mixed. Pas de second taper A ici. Le pic C de décembre est annulé : Macro 3 devient un bloc de comblement des trous de compétition, clos par une journée de simulation.
+Post-Fire : accumulation force structurelle → conversion puissance barre → conversion mixed. Macro 3 enchaîne sur un bloc de comblement des trous de compétition, clos par une journée de simulation.
 
-À partir de S11, chaque semaine contient un **bloc variété** court (corde, sauts, objets, haltères, unilatéral, portés) : les gestes CrossFit hors force et gym ne reposent plus sur le seul WOD team du mercredi, dont les mouvements sont désormais notés.
+À partir de S11, chaque semaine contient un **bloc variété** court (corde, sauts, objets, haltères, unilatéral, portés) : les gestes CrossFit hors force et gym sont travaillés dans la semaine, en plus du WOD team du mercredi dont les mouvements sont notés.
 
-Le squat est plafonné (charges contrôlées) : la force se construit là où il reste de la marge — hinge, traction lestée, press — et le squat se surcharge par la **tension** (pause) et la **densité**, pas par les kilos. Le temps libéré va au mixed sous fatigue, qualité limitante n° 1.
+Le squat est plafonné (charges contrôlées) : la force se construit là où il reste de la marge — hinge, traction lestée, press — et le squat se surcharge par la **tension** (pause) et la **densité**. Le temps libéré va au mixed sous fatigue, qualité limitante n° 1.
 
 ## Mesos
 
@@ -21,7 +21,7 @@ Le squat est plafonné (charges contrôlées) : la force se construit là où il
 
 ## Séquence et décharges
 
-- Semaine d'entrée tronquée (21–23 sept.) puis 5 jours de vacances : la décharge de milieu de bloc est déjà dans le calendrier — pas de semaine allégée en plus.
+- Semaine d'entrée tronquée (21–23 sept.) puis 5 jours de vacances : ils font office de décharge de milieu de bloc.
 - Pic force = 5–11 octobre (volume et intensité max du bloc).
 - **S11 (12–18 oct.) = la décharge force** : volume force −40 à −50 %, l'intention bascule vers la puissance barre. Une seule semaine sert de sortie de bloc et d'entrée du suivant.
 - Fin de bloc mixed (9–15 nov.) : volume redescendu en fin de semaine pour entrer frais dans le bloc spécifique team.
@@ -31,4 +31,4 @@ Le squat est plafonné (charges contrôlées) : la force se construit là où il
 - Mercredi team à RPE ≥ 8 → alléger jeudi.
 - Samedi disponible **une semaine sur deux** (semaines impaires) : 10–11 oct., 24–25 oct., 7–8 nov. Ces samedis portent le volume « luxe » (sortie longue, bloc seuil, ou team assumé et compté dans la fatigue). Les autres semaines, la sortie easy passe au dimanche.
 - Gym en **maintien** pendant Accumulation force (≥ 2 stimuli/sem. skill) et Conversion puissance (≥ 1). En Conversion mixed, la gym revient dans les formats combinés.
-- Zone 2 : plancher 60 min/semaine, blocs écrits dans la séance — pas de finisher « si le temps le permet ».
+- Zone 2 : plancher 60 min/semaine, blocs écrits dans la séance.
