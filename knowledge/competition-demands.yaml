@@ -61,7 +61,7 @@ exigences:
     exigence: "HSPU en volume, souvent kipping, sous fatigue"
     statut: partiel
     preuve: "Strict solide (5×10 en S04), kipping introduit seulement à partir de S08 et jamais ouvert pendant la semaine de Fire (S06)"
-    action: "Rampe kipping S08 → S15 avec relevé en S15 ; sous fatigue dans les couplets du bloc mixed"
+    action: "Rampe kipping suspendue dès S10 (douleur d'épaule 4–5/10 en S09) ; retour strict puis kipping selon profil (hspu_kipping_plan) — relevé quand l'épaule le permet, volume sous fatigue ensuite"
 
   repetabilite_gym_sous_fatigue:
     exigence: "Refaire des séries de muscle-ups quand le cardio est haut"

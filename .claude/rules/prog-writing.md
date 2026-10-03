@@ -72,7 +72,7 @@ Exemple : `[EMOM **8'**](https://timer.fenoria.fr/?type=emom&pre=10&rounds=8&wor
 
 ## Pédagogie & cohérence
 
-À chaque niveau : **Pourquoi**, **Intention**, **Apport**, **Continuité**. Semaine : **Fondements (corpus)** 1–3 refs (auteur + titre) — voir template semaine. Pas de séance orpheline. Avant nouveau meso/semaine : relire dernières semaines + profil.
+À chaque niveau : **Pourquoi**, **Intention**, **Apport**, **Continuité**. Semaine : **Fondements (corpus)** 1–3 refs (auteur + titre) — voir template semaine. Pas de séance orpheline. Avant nouveau meso/semaine : profil + journal des 2 dernières semaines + semaine précédente (lecture ciblée : skill `write-week`).
 
 ## Planning & matériel
 

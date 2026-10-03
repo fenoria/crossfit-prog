@@ -1,13 +1,7 @@
 # Méthodologie CrossFit élite — v2
 
-**Statut : `validated`** — v2 revalidée avec l’athlète le 2026-09-11  
-Validée le : 2026-07-27 (athlète : oui sur structure Issurin, GYM d’abord, power Oly, conditioning maintien, microcycles volume→surcharge→pic→deload)  
-Étendue le : 2026-09-11, **revalidée le même jour** — sept chantiers, détail et conflits d’auteurs dans `arbitrages.md` §16 à §19  
-Sources : corpus `books/` (14 ouvrages + 12 articles CF, ajoutés le 2026-10-03 — voir §9) · profil athlète actif (`athletes/<id>/profile.yaml`) · arbitrages `knowledge/arbitrages.md`
-
-> **v2.1 validée le 2026-10-03** : section 9 (placement force / conditioning, force-endurance, régularité gym, test de saut) — 9.5 écarté.
-
-> **Ce que la v2 change.** La v1 décrivait bien *quoi* faire. Elle ne vérifiait rien, ne mesurait presque rien, ne partait pas de la compétition, et traitait une blessure ancienne comme une contrainte définitive. La v2 ajoute quatre choses : les doses écrites sont **auditées**, les qualités clés sont **mesurées à protocole figé**, la préparation part des **exigences de l’épreuve**, et une contrainte ancienne se **recharge progressivement** au lieu de se contourner indéfiniment. Rien du socle v1 n’est retiré.
+**Statut : `validated`** — v2.1 (2026-10-03) · historique des validations : `knowledge/methodology-changelog.md`
+Sources : corpus `books/` (14 ouvrages + 12 articles CF — voir §9) · profil athlète actif · arbitrages `knowledge/arbitrages.md` (archive détaillée : `arbitrages-archive.md`)
 
 ---
 
@@ -88,49 +82,36 @@ Un meso = **3–5 semaines** + deload (Israetel), **une intention dominante** :
 
 On **répète** et **alterne** ces blocs dans l’année selon le calendrier compétitions et les résidus — on ne fait **pas** une seule fois FORCE puis GYM puis HALTÉRO puis SPEC.
 
-> **Générique vs instance.** Les sections 3.3 et 3.4 racontent le raisonnement de la saison en cours ; le calendrier qui fait foi (fenêtres, numéros de semaine, points de mesure, paliers de réathlétisation) est dans `knowledge/instances/saison-2026.yaml`. Les gates, les doses de maintien et les caps n’en contiennent plus.
+> **Générique vs instance.** Le calendrier qui fait foi (fenêtres, numéros de semaine, mesos, points de mesure, samedis utiles, paliers de réathlétisation) est **uniquement** dans `knowledge/instances/<saison>.yaml`. Les sections 3.3 et 3.4 gardent le **raisonnement** de la saison, sans dates. Les gates, les doses de maintien et les caps n’en contiennent pas.
 
-### 3.3 Macrocycle 1 en cours (3 août – 20 sept. 2026) — Build → Fire Contest (B)
+### 3.3 Instance 2026 — Macro 1 Build → pic B (fait)
 
-Contexte : athlète déjà en forme (élite) ; Macro 1 = **Build** pour élever encore le plafond gym, puis **exprimer** sur le pic B. Priorité gym (qualité limitante, validée). Prudence charges / pas PRs pré-blessure (adducteur 2025) — ce n’est pas une phase de convalescence.
+Contexte : athlète déjà en forme (élite) ; Macro 1 = **Build** pour élever encore le plafond gym, puis **exprimer** sur le pic B (Fire Contest). Priorité gym (qualité limitante, validée). Prudence charges / pas PRs pré-blessure (adducteur 2025) — ce n’est pas une phase de convalescence.
 
-**Ancres** : Fire Contest (~12–13 sept., rôle B) ; échéance suivante = CrossFit Open 2027 (19 févr. – 5 mars) — Macro 3 devient un bloc d'accumulation gym sans échéance (arbitrages §26). Fire = pic secondaire (maintien de forme) → pas de taper A ultra-long ; ACC-STR et TRA-MIX longs sont **reportés en Macro 2**.
+Séquence : **Benchmarks** (calibrage Israetel MEV/MRV) → **ACC-GYM** (accumulation concentrée sur la qualité limitante — Issurin + Low ; dernière semaine = deload / pré-compétition) → **REAL** (pic B ancré — Bompa : expression + fraîcheur, taper court) → **TRANS** mini (digérer le B). Fire = pic secondaire (maintien de forme) → pas de taper A ultra-long ; ACC-STR et TRA-MIX longs sont **reportés en Macro 2**.
 
-| Semaines | Bloc | Pourquoi (livres) |
-|----------|------|-------------------|
-| 3–9 août | **Benchmarks** | Calibrage Israetel (MEV/MRV) |
-| 10 août – 6 sept. (~4 sem.) | **ACC-GYM** | Accumulation concentrée sur la qualité limitante (Issurin + Low) ; 4ᵉ sem. = deload / pré-Fire |
-| 7–13 sept. | **REAL** (Fire Contest) | Pic B ancré (Bompa) — expression + fraîcheur, taper court |
-| 14–20 sept. | **TRANS** mini | Digérer le B avant Macro 2 |
-
-**Maintien pendant les blocs** → doses chiffrées dans `knowledge/maintenance-doses.yaml` (résidus Issurin).  
+**Maintien pendant les blocs** → doses chiffrées dans `knowledge/maintenance-doses.yaml` (résidus Issurin).
 **Passage de meso** → gates dans `knowledge/meso-gates.yaml` (pas calendrier seul).
 
-### 3.4 Macrocycles 2 et 3 (post-Fire) — instance 2026
+### 3.4 Instance 2026 — Macros 2 et 3 (post-Fire), cap sur l'Open 2027
 
-REAL ancré sur B (Bompa multi-peak) ; l'Open 2027 oriente la fin de saison :
+REAL ancré sur B (Bompa multi-peak) ; l'Open 2027 oriente la fin de saison (arbitrages §26) :
 
-| Macro | Fenêtre | Séquence | Pic |
-|-------|---------|----------|-----|
-| **Macro 2 — Élévation** | 21 sept. – 15 nov. | ACC-STR (~3) → TRA-POW (~2) → TRA-MIX (~3) | — (pas de taper A) |
-| **Macro 3 — Accumulation gym** | 16 nov. – 20 déc. | ACC-GYM (4 sem. en montée + décharge et relevés) | — (premier étage vers l'Open 2027) |
-| **Transition** | 21 déc. – 3 janv. (~2 sem.) | Volume bas, GPP, Z2 | — |
+| Macro | Séquence | Pic |
+|-------|----------|-----|
+| **Macro 2 — Élévation** | ACC-STR (~3) → TRA-POW (~2) → TRA-MIX (~3) | — (pas de taper A) |
+| **Macro 3 — Accumulation gym** | ACC-GYM (4 sem. en montée + décharge et relevés) | — (premier étage vers l'Open 2027) |
+| **Transition** | Volume bas, GPP, Z2 (~2 sem.) | — |
 
-Sans date de comps : on enchaînerait Macro 2 sur le même canevas Issurin en changeant l’accent Accumulation. Ici la date B est connue et l'Open 2027 fixe l'échéance suivante → calendrier ci-dessus.
+Sans date de compétition : on enchaînerait Macro 2 sur le même canevas Issurin en changeant l’accent Accumulation.
 
-**Instance 2026 — TRA-POW plutôt qu’ACC-OLY** : le bloc haltéro de ~2 sem. après ACC-STR est une **conversion puissance** (Bompa / Verkhoshansky), pas une accumulation Everett de 3–5 sem. ACC-OLY reste un type de meso valide ; il n’est pas le meso 2 de cette saison.
+**TRA-POW plutôt qu’ACC-OLY** : le bloc haltéro de ~2 sem. après ACC-STR est une **conversion puissance** (Bompa / Verkhoshansky), pas une accumulation Everett de 3–5 sem. ACC-OLY reste un type de meso valide ; il n’est pas le meso 2 de cette saison.
 
-**Révision Macro 2 du 2026-09-11 (3/2/3)** — détail et conflits d’auteurs dans `arbitrages.md` §15 :
+**Macro 2 en 3/2/3** (arbitrages §15) : ACC-STR = semaine tronquée (vacances = décharge de milieu de bloc) · charge · pic ; TRA-POW = **décharge force + pivot** · semaine chargée ; TRA-MIX = qualité · densité (format long samedi) · transfert puis volume ↓.
 
-| Bloc | Fenêtre | Semaines |
-|------|---------|----------|
-| ACC-STR | 21 sept. – 11 oct. | S08 tronquée (vacances = décharge de milieu de bloc) · S09 charge · S10 pic |
-| TRA-POW | 12 – 25 oct. | S11 = **décharge force + pivot** · S12 chargée |
-| TRA-MIX | 26 oct. – 15 nov. | S13 qualité · S14 densité (format long samedi) · S15 transfert puis volume ↓ |
+**Ajouts dans Macro 2** : deux expositions gym par semaine pendant le bloc force (la marche sur les mains passe au mardi) · bloc de réathlétisation adducteur sur le jour lower, prehab épaule sur les jours gym · relevé aérobie chiffré sur un samedi utile · deux des trois tests signature en fin de bloc force, le troisième en fin de TRA-MIX.
 
-**Ajouts du 2026-09-11 dans Macro 2** : deux expositions gym par semaine pendant le bloc force (la marche sur les mains passe au mardi) · bloc de réathlétisation adducteur sur le jour lower, prehab épaule sur les jours gym · relevé aérobie chiffré le samedi 10 octobre · deux des trois tests signature logés en S10, le troisième en S15.
-
-Principes retenus pour l’instance : **la décharge de fin de bloc force est fondue dans la semaine de pivot** (volume force −40/50 %, intention barre) plutôt que posée en semaine isolée ; la semaine retirée à la force va au mixed (résidu court) ; un lift plafonné se surcharge par **tension** (pause) et **densité** (repos réduit), pas par les kilos ; **1 bloc seuil/sem.** dès la 2ᵉ semaine d’accumulation et Z2 en **blocs écrits** (pas de finisher optionnel) pour éviter le détraining aérobie ; kipping en appui renversé **introduit dès Macro 2** (cran 3 strict stable) au lieu d’attendre TRA-MIX.
+Principes retenus pour l’instance : **la décharge de fin de bloc force est fondue dans la semaine de pivot** (volume force −40/50 %, intention barre) plutôt que posée en semaine isolée ; la semaine retirée à la force va au mixed (résidu court) ; un lift plafonné se surcharge par **tension** (pause) et **densité** (repos réduit), pas par les kilos ; **1 bloc seuil/sem.** dès la 2ᵉ semaine d’accumulation et Z2 en **blocs écrits** (pas de finisher optionnel) pour éviter le détraining aérobie ; kipping en appui renversé introduit dès Macro 2 si l'épaule le permet (règle de rampe : deux gênes consécutives → retrait, voir profil).
 
 ### 3.5 Court terme (microcycle)
 Dans un meso concentré (Israetel) :
@@ -302,46 +283,6 @@ Sources : Schumann & Rønnestad (pilote interférence) · Viada (soutien pratiqu
 ### Ce que la v2.1 ne change pas
 Architecture Issurin · Bompa multi-pic · doses Israetel · conditioning en maintien · règles blessure et réathlétisation · TRA-POW par changement de régime (§21 maintenu contre l'objection de Viada sur la vitesse, voir §23).
 
-### Validation v2.1 (2026-10-03, athlète)
-- [x] 9.1 Placement force / conditioning
-- [x] 9.2 Force max entretenue, force-endurance à 70–80 %
-- [x] 9.3 Répétabilité gym orientée régularité et pauses (+ découpage tenu noté)
-- [x] 9.4 Test de saut T4 (CMJ filmé par application, premier relevé lundi du pic force)
-- [ ] 9.5 Mouvements faibles chronométrés une fois par meso — **écarté**
-
 ---
 
-## Validation méthodo de base
-
-- [x] Issurin blocs concentrés
-- [x] GYM prioritaire en Macro 1 Build
-- [x] Power Oly > squat Oly lourd (phase actuelle)
-- [x] Conditioning en maintien
-- [x] Microcycles volume → surcharge → pic → deload
-
-## Validation architecture annuelle
-
-- [x] Année en **2–3 macrocycles** (Bompa multi-pic) + transition — pas un seul run FORCE→GYM→HALTÉRO→SPEC façon BON
-- [x] Chaque macro = stages **Accumulation → Transmutation → Realization** (Issurin)
-- [x] Mesos nommés par **intention** (ACC-GYM, ACC-STR, TRA-MIX, REAL…) et **répétés** dans l’année
-- [x] Macro 1 août–sept. 2026 : Benchmarks → ACC-GYM → REAL (Fire B) → TRANS ; ACC-STR → TRA-POW → TRA-MIX en Macro 2 → ACC-GYM en Macro 3, vers l'Open 2027
-
-## Validation ops pack (2026-07-28)
-
-- [x] Maintien / gates / ladder / patterns / warmups / conditioning matrix (+ protocole douleur on-demand)
-- [x] Templates meso + semaine (feedback structuré)
-- [x] Patch cohérence 2026-07-28 (canon REAL, SoT, lint, Z2/volumes)
-- [x] Volumes MEV/MAV/MRV gym/force/oly chiffrés — faits dans le profil ; `volume-landmarks.yaml` rétrogradé au rang de référence
-
-## Validation v2 (2026-09-11, athlète : oui sur l’ensemble)
-
-- [x] **Doses auditées** : chaque semaine déclare ses volumes, `npm run lint:prog` les vérifie (profil, doses de maintien, caps conditioning, boucle de feedback, écart prescrit/réalisé)
-- [x] **Journal** : le profil devient l’état courant, l’historique passe dans `athletes/<id>/journal/`
-- [x] **Réathlétisation** : paliers adducteur deux fois par semaine **à partir du 21 septembre**, prehab épaule sur les jours gym, critère chiffré de relèvement du plafond de squat
-- [x] **Ancres aérobies** : relevé lors de la sortie longue du 10 octobre, puis prescription cardio par FC et allure
-- [x] **Tests signature** : trois protocoles figés rejoués à chaque macrocycle
-- [x] **Compétition** : exigences → trous → actions, affûtage chiffré, trame de journée
-- [x] **Séparation générique / instance / profil / journal**
-- [x] **Maintien gym à deux expositions par semaine pendant un bloc force** (touch court le mardi, séance le jeudi, ~8 min ajoutées à deux séances) — accepté
-
-Validée le 2026-07-27 (athlète). Ops pack 2026-07-28. Calendrier B/C ancré 2026-07-29. **v2 rédigée et revalidée le 2026-09-11.** Prochaine revue : à la porte de sortie du bloc force (relevé du 10 octobre et tests signature de S10).
+**Validation** : méthodo de base 2026-07-27 · ops pack 2026-07-28 · v2 2026-09-11 · v2.1 2026-10-03 — détail des cases validées : `knowledge/methodology-changelog.md`. Prochaine revue : à la sortie du bloc force (relevé aérobie et tests signature du pic force).

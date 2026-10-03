@@ -7,7 +7,7 @@ description: Ingère le feedback post-séance, met à jour profile / prog, adapt
 
 Règles : **`.claude/rules/prog-writing.md`** (immutabilité, Notes) · **`.claude/rules/athlete-profile.md`** (profil).
 
-1. Lire `athletes/current.yaml` → profil.
+1. Lire `athletes/current.yaml` → profil · la semaine concernée dans `prog/` · son entrée de journal + celle de la semaine précédente (règle des écarts, étape 8). Pas d’autres semaines ni de `methodology.md` sauf besoin précis.
 2. Parser feedback (blocs **Notes / feedback**, un `###` par jour) : fait · charges / score · note ; RPE par mouvement souvent inline dans charges ; RPE séance et **mouvements + charges** du mercredi team ; fatigue / douleur dans note si mentionnées.
 3. Pas de score douleur systématique. Si douleur → protocole profil / adapter volume.
 4. Team WOD RPE ≥ seuil profil (défaut 8) → −volume J+1.

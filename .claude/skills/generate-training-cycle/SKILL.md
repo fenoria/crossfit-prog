@@ -8,8 +8,8 @@ description: Génère saison/macro/meso/semaines en Markdown sous prog/, uniquem
 Règles : **`.claude/rules/prog-writing.md`**.
 
 ## Preconditions
-- `knowledge/methodology.md` **validated**
-- Profil actif + dernières pages `prog/`
+- `knowledge/methodology.yaml` **validated** ; `methodology.md` : sections architecture (§3) et domaines (§5) utiles au cycle
+- Profil actif + `knowledge/instances/<saison>.yaml` + journal des dernières semaines (pas les semaines `prog/` complètes)
 - Gates : `knowledge/meso-gates.yaml` avant meso suivant
 - Ops : maintenance-doses, session-patterns, conditioning-matrix, warmups, gym-ladder
 
@@ -18,7 +18,7 @@ Règles : **`.claude/rules/prog-writing.md`**.
 2. Saison → Macro (`macrocycle-NN-<slug>/`) → Meso (`meso-NN-<slug>/`, template meso).
 3. Semaines depuis `prog/_templates/semaine.md` : pattern/warmup comments, fondements, feedback.
 4. Microcycle Israetel : volume → surcharge → pic → deload.
-5. Index + `.vitepress/current.json` ; arbitrage → profil ou `knowledge/arbitrages.md`.
+5. Index + `.vitepress/current.json` ; calendrier (fenêtres, semaines, mesures) → `knowledge/instances/<saison>.yaml` uniquement ; arbitrage → profil ou `knowledge/arbitrages.md`.
 6. **Obligatoire** : `npm run lint:prog` — zéro ERROR.
 
 Pour le détail semaine par semaine, enchaîner avec skill **write-week**.

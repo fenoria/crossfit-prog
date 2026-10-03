@@ -1,0 +1,49 @@
+# Historique athlète — hors chemin de lecture par défaut (le profil = état courant).
+# Lire seulement pour une question de palmarès, de comparaison pré-blessure ou de calibrage ancien.
+athlete: thierry
+
+results:
+  - event: "Battle of Normandy Throwdown"
+    year: 2026
+    when: "2ème weekend de juillet"
+    division: RX
+    format: team_of_3
+    place: 7
+    field: 40
+    notes: "7e / 40 RX en team de 3 — niveau élite confirmé ; suite 2026 = Fire Contest"
+  - event: "Fire Contest"
+    year: 2025
+    location: Nantes
+    when: "2ème weekend de septembre"
+    division: RX
+    format: team_mixed_of_2
+    place: 5
+    field: 40
+    notes: "5e / 40 RX team mixte à 2 — référence pour Fire 2026"
+  - event: "Atlantic Fire Contest"
+    year: 2026
+    location: Nantes
+    when: "12–13 septembre"
+    division: RX
+    format: team_mixed_of_2
+    place: 7
+    field: 20
+    notes: "7e / 20 RX team mixte à 2 ; cut avant la finale. Limiteur = butterfly PU (WOD 3). Ski 165 cal = 1er. Complex 95 kg RPE 7 RAS adducteur (3e)."
+
+# Extrapolation Epley grossière depuis les tests S01 (2026-08) — indicatif, jamais pour programmer
+vs_pre_injury_1rm_estimate:
+  back_squat: "~143 kg"   # 130×3 → vs 160 PR
+  front_squat: "~132 kg"  # 120×3 → vs 140 PR
+  deadlift: "~192 kg"     # 180×2 → vs 200 PR
+  strict_press: "~75 kg"  # 70×2 ; pas de PR pré-blessure noté
+  weighted_pullup: "52 kg single @ RPE 10 → vs 50 PR (≈ au niveau ou au-dessus)"
+  power_snatch: "70 kg (power) → vs snatch 80 PR full (comparaison partielle)"
+  power_clean: "100 kg (power) → vs clean 130 PR full (comparaison partielle)"
+
+# Plan de mesure Macro 2 tel qu'écrit le 2026-09-11 (remplacé par instances/saison-2026.yaml → points_de_mesure)
+measurement_plan_macro2:
+  force: "S10 (5–11 oct.) = point de mesure du bloc force : BS 5×3, FS avec pause 3×3, DL 3×3 (+ top set optionnel), strict press 4×4, traction lestée 4×4 → reporter dans prs_current_kg"
+  aerobie: "S10 samedi (10 oct.) : test aérobie signature + relevé FC / allure → aerobic_anchors"
+  power: "S12 (19–25 oct.) : épaulé / arraché puissance + cycling notés en fin de bloc puissance · hauteur de travail box jump (S11–S12) vs max 116 cm"
+  gym: "S15 mardi (10 nov.) : relevé densité BMU, série RMU, kipping HSPU, distance HSW avec pivots → gym_ladder_level"
+  note: "Retest par la prog, pas par une semaine dédiée : la fraîcheur prime."

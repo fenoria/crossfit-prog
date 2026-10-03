@@ -11,7 +11,7 @@ journal_dir: athletes/thierry/journal/
 
 goal:
   type: competition_performance
-  notes: "Performance compétition ; fraîcheur et spécificité > volume gratuit. A Battle (7e/40) et B Fire (7e/20, 12–13 sept. 2026) faits. Prochaine échéance : CrossFit Open 2027 (workouts faits à la box le vendredi, lendemain de l’annonce). Macro 2 = force → puissance → mixed. Macro 3 (16 nov. – 20 déc.) = accumulation gym sans échéance, premier étage vers l’Open ; transition 21 déc. – 3 janv. ; conversion Open en janvier. Butterfly PU + C2B : technique + volume bas → modéré en Macro 3 si gate épaule, volume en format en janvier 2027. Petites compet opportunistes si dates connues. Variété de mouvements (DU, sauts, objets, haltères…) exposée chaque semaine dès S11. Prudence charges adducteur ≠ convalescence."
+  notes: "Performance compétition ; fraîcheur et spécificité > volume gratuit. Prochaine échéance : CrossFit Open 2027 — calendrier des macros et mesos : knowledge/instances/saison-2026.yaml. Butterfly PU + C2B : technique + volume bas → modéré en Macro 3 si gate épaule, volume en format en janvier 2027. Variété de mouvements (DU, sauts, objets, haltères…) exposée chaque semaine. Prudence charges adducteur ≠ convalescence."
   # Ancre annuelle pour caler les cycles (récurrent tant que non modifié)
   competitions:
     primary_a:
@@ -33,40 +33,10 @@ goal:
       routine: "workout annoncé le jeudi, fait le vendredi à la box (créneau midi)"
     opportunistic:
       notes: "Petites compet possibles dans l’année ; dates non fixées — intégrer seulement quand annoncées (sans casser le plan A/B)"
-  results:
-    - event: "Battle of Normandy Throwdown"
-      year: 2026
-      when: "2ème weekend de juillet"
-      division: RX
-      format: team_of_3
-      place: 7
-      field: 40
-      notes: "7e / 40 RX en team de 3 — niveau élite confirmé ; suite 2026 = Fire Contest"
-    - event: "Fire Contest"
-      year: 2025
-      location: Nantes
-      when: "2ème weekend de septembre"
-      division: RX
-      format: team_mixed_of_2
-      place: 5
-      field: 40
-      notes: "5e / 40 RX team mixte à 2 — référence pour Fire 2026"
-    - event: "Atlantic Fire Contest"
-      year: 2026
-      location: Nantes
-      when: "12–13 septembre"
-      division: RX
-      format: team_mixed_of_2
-      place: 7
-      field: 20
-      notes: "7e / 20 RX team mixte à 2 ; cut avant la finale. Limiteur = butterfly PU (WOD 3). Ski 165 cal = 1er. Complex 95 kg RPE 7 RAS adducteur (3e)."
+  results: athletes/thierry/history.yaml  # palmarès
   # Cible courante
   competition: "CrossFit Open 2027"
   date: "2027-02-19 → 2027-03-05"
-  open_2027:
-    - { workout: "27.1", annonce: "2027-02-18", fait: "2027-02-19" }
-    - { workout: "27.2", annonce: "2027-02-25", fait: "2027-02-26" }
-    - { workout: "27.3", annonce: "2027-03-04", fait: "2027-03-05" }
   next_primary_a: "Battle of Normandy Throwdown — 2ème weekend juillet 2027 (à confirmer)"
 
 body:
@@ -84,7 +54,6 @@ schedule:
     frequency: odd_iso_weeks_only  # MAJ 2026-09-11 : dispo uniquement les semaines ISO impaires (contrainte durable)
     time: "10:00-12:30"
     max_minutes: 150
-    available_weeks_macro2: ["W39 (21–27 sept., vacances Milan)", "W41 (5–11 oct.)", "W43 (19–25 oct.)", "W45 (2–8 nov.)"]
     notes: "Semaines impaires seulement — planifier le volume « luxe » (sortie longue, bloc seuil, format long) sur ces samedis. Semaines paires : Z2 basculé au dimanche (bloc écrit, pas optionnel). Si team extra le samedi : compter comme effort dur et garder le dimanche off."
   sunday: usually_off  # Z2 écrit le dimanche les semaines sans samedi (plancher 60 min/sem.)
   preferences:
@@ -162,15 +131,6 @@ prs_current_kg:
   snatch: null           # non testé (squat snatch interdit profil)
   notes: "SoT charges courantes post-S01. % prog sur ces valeurs uniquement — pas sur prs_pre_injury_kg."
   tested_on: "2026-08-03 to 2026-08-07"
-  vs_pre_injury_1rm_estimate:
-    # Extrapolation Epley grossière depuis les tests S01 — indicatif, pas pour programmer
-    back_squat: "~143 kg"   # 130×3 → vs 160 PR
-    front_squat: "~132 kg"  # 120×3 → vs 140 PR
-    deadlift: "~192 kg"     # 180×2 → vs 200 PR
-    strict_press: "~75 kg"  # 70×2 ; pas de PR pré-blessure noté
-    weighted_pullup: "52 kg single @ RPE 10 → vs 50 PR (≈ au niveau ou au-dessus)"
-    power_snatch: "70 kg (power) → vs snatch 80 PR full (comparaison partielle)"
-    power_clean: "100 kg (power) → vs clean 130 PR full (comparaison partielle)"
 
 # Ancres physiologiques conditioning — pilotent Z2 / seuil (knowledge/conditioning-matrix.yaml)
 aerobic_anchors:
@@ -190,10 +150,7 @@ aerobic_anchors:
 # Bornes méthodo : knowledge/volume-landmarks.yaml (référence ; le profil gagne pour la prog courante).
 volumes:
   updated: "2026-09-11"
-  # Macro 2 révisé 3/2/3 : ACC-STR 21 sept.–11 oct. · TRA-POW 12–25 oct. · TRA-MIX 26 oct.–15 nov.
-  # ACC-STR : S08 tronquée (vacances = décharge intégrée) · S09 charge · S10 pic (11 hard sets lower : BS 5 + FS 3 + DL 3, sous MRV 12)
-  # Hinge en rampe : RDL S08 → DL 145–150 S09 → DL 155–160 S10 (plus d'exposition unique)
-  # S11 = décharge force ET entrée TRA-POW — pas de semaine deload séparée
+  # Calendrier des blocs : knowledge/instances/saison-2026.yaml
   # TRA-POW (révisé 2026-10-03) : plus de séries lourdes lentes — squat de vitesse ~60 % (S11), contraste BS 3×2 @ 110 → box jumps (S12), push press + traction explosive à la place de press strict / traction lestée lourds
   gym:
     unit: skill_minutes_quality_per_week
@@ -206,7 +163,7 @@ volumes:
     mev: 4
     mav: 8
     mrv: 12
-    current_target: 8    # ACC-STR S09 ~7 → S10 pic ~11 (sous MRV) · S11 décharge 0 (squat de vitesse) · S12 contraste 3 · TRA-MIX ~3 (1 stimulus/sem.)
+    current_target: 8    # S10 pic ~11 (BS 5 + FS 3 + DL 3, sous MRV) · S11 décharge 0 (squat de vitesse) · S12 contraste 3 · TRA-MIX ~3 (1 stimulus/sem.)
   force_upper:
     unit: hard_sets_per_week
     mev: 4
@@ -219,7 +176,7 @@ volumes:
     mev: 10
     mav: 20
     mrv: 30
-    current_target: 10   # ACC-STR : 5 lifts dès S08 puis ~14 en S09–S10 (le résidu barre ne tombe plus à 0)
+    current_target: 10   # ACC-STR ~14 (le résidu barre ne tombe pas à 0)
     # TRA-POW : ~20–25 (dominant, sous MRV 30) · TRA-MIX : ~8–12 (maintien, charges légères dans les formats)
     load_anchoring: "Prescrire sur le ressenti réel : arraché puissance 65–72,5 kg et épaulé puissance 90–100 kg sont à RPE ≤ 7 (S04, S06) ; S09 arraché 73 et tirage arraché 100 à RPE ≤ 7 → ancre arraché puissance 70–75 kg (RPE ≤ 7), tirage arraché 95–105 kg. Ne plus prescrire en dessous (62,5 / 87,5) — l'athlète fait ses charges habituelles et le journal devient faux."
   z2:
@@ -249,12 +206,7 @@ benchmarks:
   history: "athletes/thierry/journal/ (une entrée par semaine)"
   box_jump_max_cm: 116  # S03 (2026-08-19) : high jump box + disques, RPE 3 — max probablement sous-estimé · base des hauteurs de travail TRA-POW (~80–90 % = 95–105 cm)
   signature_tests: knowledge/signature-tests.yaml  # 3 tests figés rejoués à chaque macro
-  measurement_plan:
-    force: "S10 (5–11 oct.) = point de mesure du bloc force : BS 5×3, FS avec pause 3×3, DL 3×3 (+ top set optionnel), strict press 4×4, traction lestée 4×4 → reporter dans prs_current_kg"
-    aerobie: "S10 samedi (10 oct.) : test aérobie signature + relevé FC / allure → aerobic_anchors"
-    power: "S12 (19–25 oct.) : épaulé / arraché puissance + cycling notés en fin de bloc puissance · hauteur de travail box jump (S11–S12) vs max 116 cm"
-    gym: "S15 mardi (10 nov.) : relevé densité BMU, série RMU, kipping HSPU, distance HSW avec pivots → gym_ladder_level"
-    note: "Retest par la prog, pas par une semaine dédiée : la fraîcheur prime."
+  measurement_plan: knowledge/instances/saison-2026.yaml  # points_de_mesure (pas de semaine de tests dédiée : la fraîcheur prime)
   battery:
     - back_squat
     - front_squat
@@ -292,18 +244,3 @@ knowledge:
   methodology_revalidated_on: 2026-09-11  # v2 : doses auditées, journal, réathlétisation, ancres aérobies, tests signature, compétition, séparation générique/instance
   ops_pack_validated_on: 2026-07-28
   corpus_notes: "12 ouvrages — conditioning pilote Laursen & Buchheit (conditioning-matrix.yaml)"
-  refs:
-    maintenance: knowledge/maintenance-doses.yaml
-    gates: knowledge/meso-gates.yaml
-    gym_ladder: knowledge/gym-ladder.md
-    adductor: knowledge/adductor-protocol.yaml
-    reathletisation: knowledge/reathletisation.md
-    conditioning: knowledge/conditioning-matrix.yaml
-    warmups: knowledge/warmups.yaml
-    volumes: knowledge/volume-landmarks.yaml
-    patterns: knowledge/session-patterns.yaml
-    journal_schema: knowledge/journal-schema.yaml
-    signature_tests: knowledge/signature-tests.yaml
-    competition_demands: knowledge/competition-demands.yaml
-    competition_day: knowledge/competition-day.yaml
-    taper: knowledge/taper-protocol.yaml

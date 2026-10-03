@@ -138,10 +138,11 @@ contraintes:
 
 reathletisation:
   adducteur:
-    palier_1: [S08, S09]
-    palier_2: [S10, S11, S12]
+    palier_1: [S08, S09, S10]  # S09 non fait
+    palier_2: [S11, S12]
     palier_3: [S13, S14, S15]
     paliers_4_5: "Macro 3 et transition de fin d'année (volume de force bas)"
     examen_plafond_squat: "fin de Macro 2, jamais avant une compétition"
   epaule:
-    rampe_kipping: "drills S08 · volume court S09 · volume S10 · intégré aux couplets S13–S14 · relevé S15"
+    rampe_kipping: "drills S08 · volume court S09 → SUSPENDU dès S10 (douleur 4–5/10 sur RMU et HSPU). Retour strict puis kipping après 2 semaines sans douleur en poussée (profil : gym_ladder_level.hspu_kipping_plan)"
+    kipping_pull: "Macro 3 : kip swings + kipping PU (S16) → butterfly séries courtes (S17) → C2B en EMOM (S18–S19) → série de référence (S20) — condition traction gêne ≤ 2/10"

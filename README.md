@@ -16,7 +16,7 @@ Programmation CrossFit élite — **source de vérité = [`prog/`](prog/)** (Mar
 
 ```text
 athletes/
-  current.yaml          ← athlète actif (Cursor)
+  current.yaml          ← athlète actif
   <id>/profile.yaml     ← instance (charges, planning, blessure…)
 prog/
   index.md              ← référentiel (méthodo, pérenne, neutre profil)

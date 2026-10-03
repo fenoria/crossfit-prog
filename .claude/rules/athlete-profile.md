@@ -10,7 +10,8 @@ paths:
 ## Profil vs journal
 - `profile.yaml` = **état courant** : charges, volumes, crans, planning, contraintes, ancres.
 - `athletes/<id>/journal/SXX-YYYY-MM-DD.yaml` = **historique** semaine par semaine (schéma : `knowledge/journal-schema.yaml`).
-- Ne pas remettre de bloc `sXX_results` dans le profil : une semaine se distille dans le journal.
+- `athletes/<id>/history.yaml` = palmarès, estimations anciennes, plans remplacés — **hors lecture par défaut**.
+- Ne pas remettre de bloc `sXX_results`, de récit de semaines passées ni de calendrier dans le profil : une semaine se distille dans le journal, le calendrier vit dans `knowledge/instances/<saison>.yaml`.
 
 ## Champs clés
 - Capacités : `level`, `priorities`, `strengths`, `weaknesses_or_limits`, `gym_ladder_level`

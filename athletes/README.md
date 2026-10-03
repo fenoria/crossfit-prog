@@ -2,9 +2,10 @@
 
 | Fichier | Rôle |
 |---|---|
-| [`current.yaml`](current.yaml) | Athlète actif (`id`) pour skills / rules Cursor |
+| [`current.yaml`](current.yaml) | Athlète actif (`id`) pour skills / rules Claude (`.claude/`) |
 | `<id>/profile.yaml` | État courant (charges, volumes, crans, douleur, planning, compet) |
 | `<id>/journal/SXX-YYYY-MM-DD.yaml` | Historique semaine par semaine (schéma : `knowledge/journal-schema.yaml`) |
+| `<id>/history.yaml` | Palmarès et archives (hors lecture par défaut) |
 
 Résolution : lire `current.yaml` → `athletes/<id>/profile.yaml`.
 

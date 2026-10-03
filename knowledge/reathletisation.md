@@ -33,7 +33,7 @@ Même logique pour l'épaule : gêne légère signalée en S05 sur les mouvement
 | **4 — Amplitude chargée** | Fente latérale lestée légère, side lunge, slider adduction | 3 × 8 par côté, charge modérée | Amplitude complète confortable sous charge |
 | **5 — Transfert** | Squat profond en montée de charge encadrée (ci-dessous), split squat tempo | — | Voir critère de plafond |
 
-**Progression prévue (instance 2026)** : palier 1 sur S08–S10 (S09 non fait), palier 2 sur S11–S12, palier 3 sur S13–S15, paliers 4 et 5 pendant le Macrocycle 3 et la transition de décembre, où le volume de force est bas.
+**Progression prévue** : calendrier des paliers dans `knowledge/instances/<saison>.yaml` (paliers 4 et 5 de préférence dans les blocs où le volume de force est bas).
 
 ### Critère de relèvement du plafond de squat
 
@@ -57,7 +57,7 @@ Objectif réaliste à horizon Macro 3 / transition : squat de travail à 120–1
 
 ## Piste épaule
 
-**Contexte** : gêne légère en poussée signalée en S05 (pompes sautées, muscle-ups sans problème), aucun signalement depuis. Le kipping en appui renversé est introduit à partir de S08 et monte jusqu'à S15.
+**Contexte** : historique des signaux et état courant (RMU / HSPU suspendus ou non, critère de retour) → profil (`weaknesses_or_limits`, `gym_ladder_level.hspu_kipping_plan`) et journal. Cette section ne porte que le protocole.
 
 **Dose** : 2 fois par semaine, 3 à 4 min, intégrées à l'échauffement des jours gym et upper (`warmup_shoulder_care`).
 
