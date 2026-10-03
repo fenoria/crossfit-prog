@@ -18,7 +18,7 @@ Règles : **`.claude/rules/prog-writing.md`**.
 2. Saison → Macro (`macrocycle-NN-<slug>/`) → Meso (`meso-NN-<slug>/`, template meso).
 3. Semaines depuis `prog/_templates/semaine.md` : pattern/warmup comments, fondements, feedback.
 4. Microcycle Israetel : volume → surcharge → pic → deload.
-5. Index + `.vitepress/current.json` ; calendrier (fenêtres, semaines, mesures) → `knowledge/instances/<saison>.yaml` uniquement ; arbitrage → profil ou `knowledge/arbitrages.md`.
+5. Index (« En cours » = auto par date) ; calendrier (fenêtres, semaines, mesures) → `knowledge/instances/<saison>.yaml` uniquement ; arbitrage → profil ou `knowledge/arbitrages.md`.
 6. **Obligatoire** : `npm run lint:prog` — zéro ERROR.
 
 Pour le détail semaine par semaine, enchaîner avec skill **write-week**.

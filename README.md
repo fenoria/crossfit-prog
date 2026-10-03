@@ -10,7 +10,7 @@ Programmation CrossFit élite — **source de vérité = [`prog/`](prog/)** (Mar
 | Instance | [`athletes/`](athletes/) — `current.yaml` + `<id>/profile.yaml` |
 | Séances | [`prog/`](prog/) — **SoT programmation** |
 | Site | **VitePress** → GitHub Pages |
-| En cours | [`.vitepress/current.json`](.vitepress/current.json) |
+| En cours | `/en-cours` — semaine couvrant la date du jour (auto, d’après `Sxx-YYYY-MM-DD.md`) |
 
 ## Hiérarchie
 
@@ -27,7 +27,6 @@ prog/
         S01-….md        ← 1 fichier = 1 semaine
   public/concepts/      ← schémas génériques
   public/diagrams/      ← schémas d’instance (hors collision /saison-YYYY/)
-.vitepress/current.json ← lien nav « En cours »
 ```
 
 ## Dev local
@@ -48,6 +47,6 @@ npm run lint:prog    # garde-fou structure prog/
 
 ## Coaching
 
-Feedback séance → blocs **Notes / feedback** (un jour = un titre) dans la semaine `prog/` + éventuellement `.vitepress/current.json`.  
+Feedback séance → blocs **Notes / feedback** (un jour = un titre) dans la semaine `prog/`.  
 Décisions durables : [`athletes/<id>/profile.yaml`](athletes/) (via [`current.yaml`](athletes/current.yaml)) · conflits corpus : [`knowledge/arbitrages.md`](knowledge/arbitrages.md).  
 Ops pack : `knowledge/maintenance-doses.yaml`, `meso-gates.yaml`, `gym-ladder.md`, etc. · lint : `npm run lint:prog`

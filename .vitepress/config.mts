@@ -86,28 +86,40 @@ function sortEntries(names: string[]): string[] {
   })
 }
 
-function loadCurrent(): { week: string; season: string | null } {
-  const fallbackWeek = defaultSeasonLink()
-  const currentPath = join(rootDir, 'current.json')
-  if (!existsSync(currentPath)) {
-    return { week: fallbackWeek, season: seasonFromLink(fallbackWeek) }
+/** Semaine programmée : lien + lundi (ISO) tiré du nom `Sxx-YYYY-MM-DD.md`. */
+export interface WeekEntry {
+  link: string
+  start: string
+}
+
+const WEEK_FILE = /^S\d+-(\d{4}-\d{2}-\d{2})\.md$/
+
+function collectWeeks(dir: string): WeekEntry[] {
+  if (!existsSync(dir)) return []
+  return readdirSync(dir).flatMap((name: string) => {
+    if (name.startsWith('.') || name.startsWith('_') || name === 'public') return []
+    const abs = join(dir, name)
+    if (statSync(abs).isDirectory()) return collectWeeks(abs)
+    const match = name.match(WEEK_FILE)
+    return match ? [{ link: toLink(abs), start: match[1] }] : []
+  })
+}
+
+/** Toutes les semaines, triées par date de début. */
+const weeks: WeekEntry[] = collectWeeks(progDir).sort((a, b) => a.start.localeCompare(b.start))
+
+/** Semaine couvrant `today` (sinon la dernière commencée, sinon la première). */
+function weekFor(today: string): WeekEntry | null {
+  let found: WeekEntry | null = null
+  for (const week of weeks) {
+    if (week.start <= today) found = week
   }
-  try {
-    const data = JSON.parse(readFileSync(currentPath, 'utf8')) as { week?: string }
-    const week = data.week || fallbackWeek
-    return { week, season: seasonFromLink(week) }
-  } catch {
-    return { week: fallbackWeek, season: seasonFromLink(fallbackWeek) }
-  }
+  return found ?? weeks[0] ?? null
 }
 
 function seasonFromLink(link: string): string | null {
   const match = link.match(/\/?(saison-\d{4})\b/)
   return match ? match[1] : null
-}
-
-function loadCurrentWeekLink(): string {
-  return loadCurrent().week
 }
 
 function seasonDirsNewestFirst(): string[] {
@@ -177,7 +189,7 @@ function buildSeasonItems(currentSeason: string | null): DefaultTheme.SidebarIte
       return [
         {
           text,
-          // Seule la saison « En cours » (current.json) reste ouverte
+          // Seule la saison en cours (date du build) reste ouverte
           collapsed: name !== currentSeason,
           items: [...overview, ...buildDirItems(abs)],
         },
@@ -187,7 +199,8 @@ function buildSeasonItems(currentSeason: string | null): DefaultTheme.SidebarIte
 
 const TIMER_URL = 'https://timer.fenoria.fr'
 
-const current = loadCurrent()
+const buildWeek = weekFor(new Date().toISOString().slice(0, 10))
+const currentSeason = buildWeek ? seasonFromLink(buildWeek.link) : null
 const livresDir = join(progDir, 'livres')
 const outilsDir = join(progDir, 'outils')
 const outilsItems: DefaultTheme.SidebarItem[] = [
@@ -201,7 +214,7 @@ const outilsItems: DefaultTheme.SidebarItem[] = [
 ]
 
 const sidebarItems: DefaultTheme.SidebarItem[] = [
-  ...buildSeasonItems(current.season),
+  ...buildSeasonItems(currentSeason),
   {
     text: 'Outils',
     collapsed: false,
@@ -242,6 +255,8 @@ export default defineConfig({
     }
   },
   themeConfig: {
+    // Lu côté client par <CurrentWeekRedirect> (page /en-cours)
+    weeks,
     // VitePress prefixes `themeConfig.logo` with `base` automatically.
     logo: { src: '/logo.svg', alt: 'Prog T. Maxel' },
     siteTitle: 'Prog T. Maxel',
@@ -254,7 +269,7 @@ export default defineConfig({
         items: outilsItems,
       },
       { text: 'Saisons', link: defaultSeasonLink() },
-      { text: 'En cours', link: loadCurrentWeekLink() },
+      { text: 'En cours', link: '/en-cours' },
     ],
     sidebar: {
       '/': sidebarItems,

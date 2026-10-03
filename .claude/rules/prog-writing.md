@@ -7,7 +7,7 @@ paths:
 
 - Séances : fichiers `.md` ; hiérarchie Saison → Macrocycle → Meso → Semaine (`Sxx-YYYY-MM-DD.md`).
 - Templates : `prog/_templates/semaine.md` · `prog/_templates/meso.md`
-- Site VitePress depuis `prog/` ; `.vitepress/current.json` = « En cours ».
+- Site VitePress depuis `prog/`  ; « En cours » = auto (date du jour vs lundi du nom de fichier) — rien à mettre à jour.
 - Nettoyer fichiers obsolètes quand la structure évolue.
 
 ## Référentiel vs saisons

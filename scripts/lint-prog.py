@@ -13,7 +13,6 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PROG = ROOT / "prog"
-VP_CURRENT = ROOT / ".vitepress" / "current.json"
 METHODO = ROOT / "knowledge" / "methodology.md"
 METHODO_YAML = ROOT / "knowledge" / "methodology.yaml"
 PATTERNS_FILE = ROOT / "knowledge" / "session-patterns.yaml"
@@ -145,19 +144,17 @@ def check_methodo(errors: list[str], warnings: list[str]) -> None:
             warnings.append("methodology.yaml : REAL-mini sans aliases ?")
 
 
-def check_current_json(errors: list[str]) -> None:
-    if not VP_CURRENT.exists():
-        errors.append(".vitepress/current.json manquant")
-        return
-    data = json.loads(VP_CURRENT.read_text(encoding="utf-8"))
-    week = data.get("week") or data.get("path")
-    if not week:
-        errors.append("current.json : clé week/path manquante")
-        return
-    rel = str(week).lstrip("/")
-    candidate = PROG / (rel if rel.endswith(".md") else f"{rel}.md")
-    if not candidate.exists():
-        errors.append(f"current.json pointe vers un fichier absent : {week}")
+def check_current_week(weeks: list[Path], warnings: list[str]) -> None:
+    """« En cours » (site) = semaine dont le lundi ≤ aujourd’hui < lundi + 7."""
+    today = date.today()
+    for w in weeks:
+        m = WEEK_DATE.match(w.name)
+        if not m:
+            continue
+        start = date(int(m.group(2)), int(m.group(3)), int(m.group(4)))
+        if start <= today <= start + timedelta(days=6):
+            return
+    warnings.append(f"aucune semaine ne couvre aujourd’hui ({today.isoformat()}) — « En cours » pointe sur la dernière")
 
 
 def check_week(
@@ -328,7 +325,6 @@ def main() -> int:
         return 2
 
     check_methodo(errors, warnings)
-    check_current_json(errors)
     check_meso_indexes(meso_codes, warnings)
     check_visible_prog(errors)
     check_public_svgs(errors)
@@ -336,6 +332,7 @@ def main() -> int:
     weeks = week_files()
     if not weeks:
         warnings.append("aucune semaine S*.md sous prog/")
+    check_current_week(weeks, warnings)
     for w in weeks:
         check_week(w, pattern_ids, warmup_ids, errors, warnings)
 

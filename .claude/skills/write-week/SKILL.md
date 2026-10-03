@@ -39,6 +39,6 @@ Règles rédaction : **`.claude/rules/prog-writing.md`** (ton, ops pack, immutab
    - **Liens timer** sur chaque bloc chronométré paramétrable (voir `prog-writing.md` → Liens timer)
    - Maintien code meso en français ; `schedule` / team / Z2 / samedi selon profil + instance
    - Notes feedback (`###` par jour)
-3. Créer l’entrée de journal (`statut: planifiee`) · index meso + `.vitepress/current.json` si besoin.
+3. Créer l’entrée de journal (`statut: planifiee`) · index meso si besoin (« En cours » = auto par date).
 4. Arbitrage durable → profil ou `knowledge/arbitrages.md`.
 5. **Obligatoire** : `npm run lint:prog` — zéro ERROR.
