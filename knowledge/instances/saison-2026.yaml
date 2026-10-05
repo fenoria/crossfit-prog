@@ -91,7 +91,7 @@ macrocycles:
       ACC-GYM: [S16, S17, S18, S19, S20]
     notes:
       S16-S19: "volume gym en montée : entrée → volume → surcharge → pic"
-      S20: "décharge −30 à −40 % + relevés gym + tests signature T1, T2, T4 (T3 le samedi 19 déc.)"
+      S20: "décharge −30 à −40 % + relevés gym + tests signature T1, T2 (T3 le samedi 19 déc.)"
   transition:
     fenetre: "2026-12-21 → 2027-01-03"
 
@@ -103,7 +103,7 @@ points_de_mesure:
   force:
     semaine: S10
     date: "2026-10-05 → 2026-10-11"
-    contenu: "séries lourdes du pic force notées → prs_current_kg · tests signature T4 (saut CMJ) puis T2 le lundi"
+    contenu: "séries lourdes du pic force notées → prs_current_kg · test signature T2 le lundi"
   aerobie:
     semaine: S10
     date: "2026-10-10"
@@ -119,7 +119,7 @@ points_de_mesure:
   macro_3:
     semaine: S20
     date: "2026-12-14 → 2026-12-20"
-    contenu: "séries de référence butterfly / C2B / T2B / DU / HSPU · T1 densité muscle-up · T2 squat répétable · T4 CMJ · T3 seuil le samedi 19 déc."
+    contenu: "séries de référence butterfly / C2B / T2B / DU / HSPU · T1 densité muscle-up · T2 squat répétable · T3 seuil le samedi 19 déc."
 
 # ─────────────────────────────────────────────────────────────
 # Contraintes de calendrier propres à cette saison

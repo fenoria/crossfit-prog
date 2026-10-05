@@ -14,7 +14,7 @@ Sources : corpus `books/` (14 ouvrages + 12 articles CF — voir §9) · profil 
 5. **Santé > ego** — confiance barre et charges actuelles guident les variantes (power vs squat) ; douleur signalée → adapter.
 6. **Z2 > off** si créneau possible ; vrai repos seulement si fatigue/douleur/deload/taper l’exigent.
 7. **Une dose écrite est une dose vérifiée** — chaque semaine déclare ses volumes, un audit les confronte au profil et aux caps. Une borne qu’on n’ausculte jamais n’est pas une borne, c’est une intention.
-8. **Mesurer ce qu’on prescrit** — quatre tests figés rejoués chaque macro, des ancres physiologiques pour le cardio. Sans protocole répété à l’identique, « ça progresse » reste une impression.
+8. **Mesurer ce qu’on prescrit** — trois tests figés rejoués chaque macro, des ancres physiologiques pour le cardio. Sans protocole répété à l’identique, « ça progresse » reste une impression.
 9. **Partir de la demande, pas seulement des qualités** — à l’approche d’un pic, la question n’est plus « qu’est-ce qui est faible » mais « qu’est-ce que l’épreuve exige et que je n’ai jamais fait ».
 10. **Recharger plutôt qu’éviter** — une blessure ancienne se réathlétise par paliers indolores ; sinon l’évitement devient un plafond permanent.
 11. **Une information, une source** — le profil porte l’état courant, le journal l’historique, l’instance de saison le calendrier, `knowledge/` le générique.
@@ -182,7 +182,7 @@ Gate : `knowledge/meso-gates.yaml` → `benchmarks_to_ACC_GYM`.
 
 Une semaine de tests dédiée est un luxe que le calendrier n’offre pas toujours. La mesure se fait donc **dans la prog** :
 
-- **Quatre tests figés** (`knowledge/signature-tests.yaml`), rejoués une fois par macrocycle, logés dans des séances déjà prévues : densité muscle-up en couplet, squat répétable (5×3 avec repos chronométré), seuil 5 × 3 min, saut vertical (CMJ, ajouté le 2026-10-03). Même protocole, même matériel, même ordre — sinon la comparaison ne vaut rien.
+- **Trois tests figés** (`knowledge/signature-tests.yaml`), rejoués une fois par macrocycle, logés dans des séances déjà prévues : densité muscle-up en couplet, squat répétable (5×3 avec repos chronométré), seuil 5 × 3 min. Même protocole, même matériel, même ordre — sinon la comparaison ne vaut rien.
 - **Ancres aérobies** relevées lors d’une sortie longue déjà programmée : FC plafond de Zone 2, allure de seuil, dérive sur les intervalles.
 - Résultats → journal de la semaine, puis profil si le repère durable bouge.
 
@@ -227,7 +227,7 @@ Fichiers normatifs (en plus de cette méthodo) :
 | `conditioning-matrix.yaml` | Caps energy systems + ancres physiologiques |
 | `volume-landmarks.yaml` | Ordres de grandeur MEV/MAV/MRV (référence, pas source) |
 | `journal-schema.yaml` | Schéma d’une entrée de journal athlète |
-| `signature-tests.yaml` | Quatre protocoles figés rejoués par macro |
+| `signature-tests.yaml` | Trois protocoles figés rejoués par macro |
 | `competition-demands.yaml` | Exigences de compétition → trous → actions |
 | `competition-day.yaml` | Trame de journée de compétition |
 | `taper-protocol.yaml` | Affûtage chiffré des quatorze derniers jours |
@@ -274,7 +274,7 @@ Sources : Schumann & Rønnestad (pilote interférence) · Viada (soutien pratiqu
 - Pacing **sous le seuil** sur les parties cardio d'un WOD mixte, pour préserver la qualité de la partie technique qui suit (Viada).
 
 ### 9.4 Mesure
-- **T4 — saut vertical (CMJ)** ajouté aux tests signature : 3 sauts max filmés au ralenti avec une application, réception tenue au sol, jamais de saut en contrebas. Saut + VO2max expliquent 81 % du classement chez des amateurs (Martínez-Gómez 2020). Premier relevé : début du pic force, avant le squat.
+- **T4 — saut vertical (CMJ)** — **retiré le 2026-10-05** avant le premier relevé : matériel et application payante indisponibles.
 - Dans les WODs où un découpage est prescrit, noter le **découpage réellement tenu** (champ `decoupage_gym` du journal).
 
 ### 9.5 Exposition aux mouvements faibles (§25) — **écarté**

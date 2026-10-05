@@ -10,7 +10,7 @@
 - [x] 9.1 Placement force / conditioning
 - [x] 9.2 Force max entretenue, force-endurance à 70–80 %
 - [x] 9.3 Répétabilité gym orientée régularité et pauses (+ découpage tenu noté)
-- [x] 9.4 Test de saut T4 (CMJ filmé par application, premier relevé lundi du pic force)
+- [x] 9.4 Test de saut T4 (CMJ filmé par application) — **retiré le 2026-10-05** (matériel et application payante indisponibles)
 - [ ] 9.5 Mouvements faibles chronométrés une fois par meso — **écarté**
 
 ---
