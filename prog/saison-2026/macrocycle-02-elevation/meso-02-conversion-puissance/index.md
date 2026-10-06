@@ -11,12 +11,12 @@ Après la force structurelle, on **convertit** : la force acquise doit devenir d
 
 Convertir, c'est **changer de régime** : le travail de force se fait à vitesse maximale (squat de vitesse, push press, traction explosive), ou le lourd est immédiatement suivi d'un geste rapide (contraste squat → saut).
 
-La première semaine porte deux rôles à la fois : **décharge du bloc force** (charges légères à vitesse maximale) et **entrée puissance** (vitesse, sauts, lancers, barre légère).
+La première semaine porte deux rôles à la fois : **décharge du bloc force** (charges légères à vitesse maximale) et **entrée puissance** (vitesse, sauts, barre légère).
 
 ## Intention dominante
 
 **Type de bloc** : Conversion puissance  
-**Stimulus** : power snatch / clean + hangs + complexes + cycling barre ; squat de vitesse et contraste lourd → saut ; sauts et lancers ; push press et traction explosive ; densité barre modérée.  
+**Stimulus** : power snatch / clean + hangs + complexes + cycling barre ; squat de vitesse et contraste lourd → saut ; sauts (box, broad jump) ; push press et traction explosive ; densité barre modérée.  
 
 ## Charges barre — repère
 
@@ -37,14 +37,14 @@ Les charges barre se prescrivent à partir du **ressenti actuel** : arraché pui
 
 | Semaine | Focus | Contenu type |
 |---------|-------|--------------|
-| S11 (12–18 oct.) | Décharge force + changement de régime | Squat de vitesse ~60 %, box jumps, lancers, push press, traction explosive, singles et hangs légers, gym touch |
+| S11 (12–18 oct.) | Décharge force + changement de régime | Squat de vitesse ~60 %, box jumps, broad jumps, push press, traction explosive, singles et hangs légers, gym touch |
 | S12 (19–25 oct.) | Conversion chargée | Épaulé / arraché puissance notés, contraste squat lourd → box jump, push press, complexe arraché, broad jumps, cycling, bloc alactique, samedi long |
 
 ## Banque accessoires (ce meso)
 
 Accessoires du meso : good morning léger + dead bug (S11) → step-up chargé modéré + Pallof (S12) · tirage horizontal en accessoire upper.
 
-Moyens de vitesse (propres à ce meso) : box jump (réception sur la box), broad jump (réception tenue), lancers de WB (arrière par-dessus la tête, poitrine contre le mur), push press, traction explosive à charge légère.
+Moyens de vitesse (propres à ce meso) : box jump (réception sur la box), broad jump (réception tenue), pompes explosives mains sur box, push press, traction explosive à charge légère.
 
 ## Maintien (hors focus)
 

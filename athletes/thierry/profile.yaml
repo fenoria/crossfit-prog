@@ -63,7 +63,7 @@ schedule:
 equipment:
   setting: crossfit_box
   guided_machines: false
-  notes: "Matériel box standard uniquement (barres, DB, KB, rings, rig, ergos, box, WB, rope…)"
+  notes: "Matériel box standard uniquement (barres, DB, KB, rings, rig, ergos, box, WB, rope…). Lancers de WB (contre le mur ou en espace dégagé) : logistiquement impossibles à la box (retour 2026-10-06) — puissance par sauts (box, broad jump), barre, KB swing, pompes explosives."
 
 strengths:
   - ergos

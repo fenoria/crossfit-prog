@@ -83,7 +83,7 @@ Nouvel arbitrage : ajouter un § numéroté ici (format court) ; si un § en rem
 
 ## 21. Conversion puissance : volume réduit vs changement de régime (2026-10-03)
 - **Décision** : en TRA-POW, **aucune série lourde et lente pour elle-même**. Le lourd est remplacé par la vitesse (squat ~60 %, push press, traction explosive légère) ou **immédiatement suivi** d’un geste explosif (contraste squat 2 reps → 30 s → box jumps). Sauts et lancers = moyens du bloc ; singles barre pour le relevé ; complexes à la place des tirages lourds.
-- **Garde-fous** : réceptions sur la box ou tenues (adducteur) ; douleur d’épaule ≥ 3/10 → arrêt (push press et lancers compris) ; pas de squat snatch ; pas de depth jump tant que le palier long adducteur n’est pas passé.
+- **Garde-fous** : réceptions sur la box ou tenues (adducteur) ; douleur d’épaule ≥ 3/10 → arrêt (push press et pompes explosives compris) ; pas de squat snatch ; pas de depth jump tant que le palier long adducteur n’est pas passé.
 
 ## 22. Placement force / conditioning : ordre et voisinage (2026-10-03)
 - **Décision** : (1) **la qualité prioritaire du bloc ouvre la séance**, toujours ; le conditioning dur après ou un autre jour. (2) En ACC-STR / TRA-POW, **pas de conditioning des jambes au-dessus de la Z2 avant la force explosive des jambes** dans la même séance (échauffement excepté) ; si un cardio doit précéder → séance commencée par le haut du corps. Après un team dur ou une sortie dure la veille → haut du corps ou technique en tête. (3) Sortie longue Z2 du week-end compatible avec la force du lundi (≥ 8 h). (4) En bloc force, Z2 de préférence **vélo, rameur ou ski** plutôt que course.
