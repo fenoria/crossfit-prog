@@ -1,0 +1,85 @@
+semaine: S10
+dates: "2026-10-05 → 2026-10-11"
+macro: macrocycle-02-elevation
+meso: ACC-STR
+phase_micro: pic
+prog: prog/saison-2026/macrocycle-02-elevation/meso-01-accumulation-force/S10-2026-10-05.md
+statut: en_cours  # feedback lun–mer recueilli le 7 oct. ; jeu–dim à venir
+
+jours:
+  lundi:
+    fait: oui
+    charges: "BS 5×3 @ 115 kg, repos 2' tenu, dernière série RPE 8 · hip thrust 3×8 @ 100 kg · hollow · adducteur palier 1 · Zone 2 12–15'"
+    note: "Repère de référence squat tenu. Adducteur palier 1 : deuxième semaine faite. RPE du hip thrust non noté (resté à 100)."
+  mardi:
+    fait: partiel
+    charges: "FS pause 3×3 @ 100 kg RPE 8 · strict press 4×4 @ 60 kg RPE 9 · traction lestée 4×4 @ +30 kg RPE 9 · bent-over row 3×8 @ 60 kg · HSW 2× + suspensions"
+    note: "Press et traction au-dessus du prescrit (57,5 / +28–30) pour simplifier le chargement de la barre. Séries complètes non précisées."
+  mercredi:
+    fait: oui
+    charges: "WOD team : row 1500 m · DB front squat ×70 + DB STOH ×70 (2 × 22,5 kg) · C2B ×60"
+    rpe: 9
+    note: "RPE ≥ 8 → jeudi allégé et deadlift vendredi 3×3 @ 145–150 sans top set. Douleur d'épaule 3/10 sur le STOH."
+  jeudi:
+    fait: null
+  vendredi:
+    fait: null
+  samedi:
+    fait: null
+  dimanche:
+    fait: null
+
+realise:
+  force_lower_sets: 8
+  force_lower_sets_note: "BS 5 + FS 3 ; deadlift vendredi à venir"
+  force_upper_sets: 8
+  force_upper_sets_note: "Press 4 + tractions 4 supposées complètes (non confirmé) ; row RPE non noté, non compté"
+  oly_lifts: null
+  oly_lifts_note: "Vendredi à venir"
+  gym_min: null
+  gym_min_note: "HSW 2× + suspensions mardi non chronométrés ; jeudi à venir"
+  z2_min: null
+  z2_min_note: "Finisher lundi 12–15' fait ; samedi à venir"
+  threshold_min: null
+  hard_min: null
+
+team_wod_rpe: 9
+team_wod_mouvements:
+  - "row 1500 m"
+  - "DB front squat ×70 @ 2 × 22,5 kg"
+  - "DB STOH ×70 @ 2 × 22,5 kg"
+  - "C2B ×60"
+familles_couvertes: [halteres, suspendu]
+
+flags:
+  - "Team RPE 9 → règle J+1 déclenchée (jeudi allégé, deadlift plafonné 145–150)"
+  - "Épaule : « mieux » que S09 ; douleur 3/10 sur DB STOH (team), rien signalé sur press / tractions"
+  - "Upper RPE 9 à 60 / +30 : troisième semaine d'upper RPE 8+"
+  - "FS pause 100 à RPE 8, au-dessus de la cible ≤ 7,5"
+  - "Récup : rien à signaler"
+
+ecarts_prescrit_vs_realise:
+  - mouvement: strict_press
+    prescrit: "4×4 @ 57,5 kg RPE 7–8"
+    realise: "4×4 @ 60 kg RPE 9"
+    sens: au_dessus
+    action: re_ancrer  # 3e semaine au-dessus (S08–S10) → load_anchoring du profil mis à jour ; plus de press strict lourd avant TRA-MIX
+  - mouvement: weighted_pullup
+    prescrit: "4×4 @ +28–30 kg RPE 7–8"
+    realise: "4×4 @ +30 kg RPE 9"
+    sens: au_dessus
+    action: re_ancrer
+  - mouvement: front_squat_pause
+    prescrit: "3×3 @ 100 kg RPE ≤ 7,5"
+    realise: "3×3 @ 100 kg RPE 8"
+    sens: au_dessus
+    action: surveiller
+
+gate: null
+synthese: >
+  Lower au pic tenu : squat 5×3 @ 115 repos 2' à RPE 8 (charge de référence), front squat
+  pause 100 à RPE 8. Upper monté à 60 / +30 pour la logistique, RPE 9. Team RPE 9 avec
+  STOH haltères douloureux à 3/10. Récup sans signal.
+suite: >
+  Jeudi version allégée, deadlift vendredi 3×3 @ 145–150 sans top set. S11 décharge
+  inchangée (push press 60–65 ×2 cohérent avec press 60 ×4 RPE 9).
