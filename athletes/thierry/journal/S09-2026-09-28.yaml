@@ -4,7 +4,7 @@ macro: macrocycle-02-elevation
 meso: ACC-STR
 phase_micro: volume
 prog: prog/saison-2026/macrocycle-02-elevation/meso-01-accumulation-force/S09-2026-09-28.md
-statut: en_cours  # dimanche (Zone 2 50') à confirmer
+statut: close
 
 jours:
   lundi:
@@ -28,10 +28,12 @@ jours:
     charges: "Strict press 4×3 @ 63 kg RPE 8+ · traction lestée 4×3 @ +32 kg RPE 8+ · FS pause 2×3 @ 95 kg · arraché puissance @ 73 kg RPE ≤ 7 · tirage arraché @ 100 kg RPE ≤ 7"
     note: "Upper sous fatigue. Gêne d'épaule légère 1–3/10 sur press / tractions / arraché. RPE du front squat non noté."
   samedi:
-    fait: off
+    fait: oui
+    charges: "Zone 2 45' BikeErg"
+    note: "Zone 2 avancée du dimanche. RPE et FC non notés (feedback du 7 oct.)."
   dimanche:
-    fait: null
-    note: "Zone 2 50' incertaine au moment du feedback (vendredi 2 oct.)."
+    fait: off
+    note: "Zone 2 faite la veille."
 
 realise:
   force_lower_sets: 9
@@ -42,8 +44,8 @@ realise:
   oly_lifts_note: "Séance déclarée faite : 5 singles arraché + 3×3 tirages supposés au format prescrit, nombre de séries non confirmé"
   gym_min: null
   gym_min_note: "EMOM BMU 10' + HSPU strict 3×6 + kipping EMOM 5' + HSW mardi, non chronométrés. RMU ×2 skippés."
-  z2_min: null
-  z2_min_note: "Finisher mardi non renseigné ; dimanche 50' en attente."
+  z2_min: 45
+  z2_min_note: "Samedi 45' BikeErg ; finisher mardi non renseigné (non compté). Sous le plancher de 60.
   threshold_min: 12
   hard_min: 0
 
@@ -55,6 +57,7 @@ flags:
   - "Réathlé adducteur palier 1 non fait (une seule semaine faite : S08)"
   - "Upper RPE 8+ pour la 2e semaine de suite"
   - "Barre au-dessus des fourchettes, facile"
+  - "Zone 2 : 45' (samedi, BikeErg) — sous le plancher de 60 min"
 
 ecarts_prescrit_vs_realise:
   - mouvement: strict_press
@@ -98,7 +101,7 @@ synthese: >
   Lower dans la cible (BS 4×3 @ 115 et DL 3×3 @ 150 à RPE ≤ 7,5, FS pause 95 tenu).
   Barre facile au-dessus des fourchettes. Upper RPE 8+ pour la 2e semaine : sens
   « au-dessus » deux fois de suite sur press et tractions → ré-ancrage. Épaule : première
-  douleur nette (4–5/10) sur anneaux et HSPU, BMU et HSW indolores. Team RPE 7.
+  douleur nette (4–5/10) sur anneaux et HSPU, BMU et HSW indolores. Team RPE 7. Zone 2 45' samedi (BikeErg), sous le plancher.
 suite: >
   S10 : pic lower inchangé. RMU, HSPU strict et kipping sortis du plan (règle de rampe
   kipping : deux gênes consécutives + douleur ≥ 3) ; BMU et HSW conservés, bloc tolérance
