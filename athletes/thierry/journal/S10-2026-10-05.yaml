@@ -4,7 +4,7 @@ macro: macrocycle-02-elevation
 meso: ACC-STR
 phase_micro: pic
 prog: prog/saison-2026/macrocycle-02-elevation/meso-01-accumulation-force/S10-2026-10-05.md
-statut: en_cours  # feedback lun–mar reçu le 7 oct. ; mer → dim à venir
+statut: en_cours  # feedback lun–mer reçu le 7 oct. ; jeu → dim à venir
 
 jours:
   lundi:
@@ -16,7 +16,10 @@ jours:
     charges: "FS pause 3×3 @ 100 kg RPE 7 · strict press 4×4 @ 60 kg RPE 8 · traction lestée 4×4 @ +28–30 kg · bent-over row 3×8 · HSW 2× · suspensions passive + active"
     note: "Press monté à 60 par choix (prescrit 57,5). Gêne d'épaule 1–2/10 sur le press seulement ; tractions, HSW et suspensions indolores. Charges exactes tractions / row non notées."
   mercredi:
-    fait: null
+    fait: oui
+    charges: "WOD team à partager 27:00 — 2000 m row · 100 C2B · 100 FS double DB 22,5 kg · 100 STOH double DB 22,5 kg · 1200 m row ; part ~65 % des reps, ~50 % du row"
+    rpe: 7
+    note: "Épaule gauche 2/10 sur STOH seulement, supportable. Sous le seuil → jeudi / vendredi inchangés."
   jeudi:
     fait: null
   vendredi:
@@ -39,12 +42,27 @@ realise:
   z2_min_note: "Finisher lundi 12–15' (durée exacte non notée) ; samedi à venir"
   threshold_min: null
   hard_min: null
+  hard_min_note: "Team mercredi 27' RPE 7 — même convention que S06 / S09 (non compté en minutes dures sous RPE 8)"
 
-team_wod_rpe: null
+team_wod_rpe: 7
+
+team_wod_mouvements:
+  - "Rameur ≈ 1000 m + 600 m (50 % de 2000 m + 1200 m)"
+  - "C2B ≈ 65"
+  - "Front squat double DB 22,5 kg ≈ 65"
+  - "STOH double DB 22,5 kg ≈ 65"
+
+decoupage_gym:
+  - mouvement: c2b
+    annonce: "partage 50/50 avec le binôme"
+    tenu: false
+    note: "Binôme a lâché, part assumée ~65 %"
+    cadence: null
 
 flags:
   - "Épaule : gêne 1–2/10 sur strict press seulement, sous le seuil d'arrêt ; RMU / HSPU hors plan, tractions / HSW / suspensions indolores"
   - "Adducteur : tension légère sur le palier 1, sans douleur"
+  - "Épaule gauche : 2/10 sur STOH (DB 22,5) au team, supportable ; C2B indolores"
 
 ecarts_prescrit_vs_realise:
   - mouvement: strict_press
@@ -57,6 +75,7 @@ gate: null
 synthese: >
   Pic lower bien parti : squat 5×3 @ 115 repos 2' tenu à RPE 7, front squat avec pause 3×3 @ 100 à RPE 7.
   Press monté à 4×4 @ 60 par choix, RPE 8, gêne d'épaule 1–2/10 seulement sur ce geste. Adducteur : tension légère, sans douleur.
+  Team 27' RPE 7 (~65 % des reps, C2B au-delà du partage prévu) ; épaule gauche 2/10 sur STOH.
 suite: >
   Fin de S10 inchangée (team mercredi, BMU jeudi, deadlift 3×3 @ 155–160 vendredi, sortie mesure samedi).
   S11 : palier 2 adducteur confirmé ; push press à surveiller côté épaule (0–2/10).
