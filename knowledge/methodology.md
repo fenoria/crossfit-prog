@@ -27,7 +27,7 @@ Sources : corpus `books/` (14 ouvrages + 12 articles CF — voir §9) · profil 
 
 | Donnée | Implication prog |
 |--------|------------------|
-| Cardio / ergos / WB / burpees forts | Ne pas sur-investir le conditioning ; maintien |
+| Cardio / ergos / WB / burpees forts | Ne pas sur-investir le conditioning ; maintien — mais 1 format court individuel / sem. en plus du team (arbitrages §27) |
 | Faible volume gym | Meso(s) GYM prioritaires ; densité + renfo (Low) |
 | Charges post-blessure (adducteur 2025) | Benchmarks d’abord ; charges actuelles only ; pas de focus quotidien douleur — **et** piste de recharge progressive (`reathletisation.md`) avec critère chiffré de relèvement du plafond de squat |
 | Frileux squat snatch/clean lourds | Power / technique / pulls ; exposition profonde rare — manque assumé et écrit dans `competition-demands.yaml` |
@@ -153,7 +153,7 @@ Jours : Lun–Ven ≤90 min · Mercredi team si box · Samedi optionnel · Diman
 ### Conditioning
 - Maintien Z2 fréquent (préférence athlète).
 - Matrice Z2 / tempo / glycolytique / alactique + caps : `knowledge/conditioning-matrix.yaml` (**pilote** Laursen & Buchheit ; Bible PP en socle FR).
-- HI surtout en TRA/REAL ; team WOD dur compte dans le quota.
+- HI surtout en TRA/REAL ; team WOD dur compte dans le quota. En ACC-GYM : 1 format court 8–12’ / sem., gym acquise uniquement (§27). Plafond 3 efforts durs / sem.
 - **Ancres physiologiques** (`profile.aerobic_anchors`) : quand la FC plafond et l’allure de seuil sont relevées, la Zone 2 et les blocs seuil se prescrivent avec ces chiffres. Tant qu’une ancre manque, on prescrit en RPE — repli explicite, pas oubli. En cas de désaccord ancre / ressenti du jour, le ressenti gagne.
 
 ### Réathlétisation

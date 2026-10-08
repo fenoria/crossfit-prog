@@ -30,9 +30,9 @@ Le volume gym sous fatigue est la faiblesse déclarée n° 1. Le butterfly a aus
 | Semaine | Focus dominant | Contenu type | Progressions gym |
 |---------|----------------|--------------|------------------|
 | S16 (16–22 nov.) | Entrée — volume adapté | Kip swings et traction kipping en séries courtes · T2B en séries · corde · couplet muscle-up barre · **samedi 21** : sortie longue + seuil | Kipping : séries de 3–5 · HSPU strict si épaule 0–2/10 |
-| S17 (23–29 nov.) | Volume ↑ | Butterfly en séries courtes · T2B en EMOM · corde en séries longues · muscle-ups anneaux si épaule | Butterfly 3–5 · T2B 5–8/min |
-| S18 (30 nov. – 6 déc.) | Surcharge | Butterfly / C2B en EMOM · couplets gym + ergo easy, découpage annoncé · **samedi 5** : sortie longue + volume gym | C2B introduit · HSPU kipping court si le strict est indolore |
-| S19 (7–13 déc.) | Pic | Densité maximale du bloc : couplets gym après pré-fatigue, même cadence première et dernière série | Volume max du bloc, 2 RIR |
+| S17 (23–29 nov.) | Volume ↑ | Butterfly en séries courtes · T2B en EMOM · corde en séries longues · muscle-ups anneaux si épaule · premier format court 8’ (gym maîtrisée) | Butterfly 3–5 · T2B 5–8/min |
+| S18 (30 nov. – 6 déc.) | Surcharge | Butterfly / C2B en EMOM · couplets gym + ergo easy, découpage annoncé · format court 10’ (T2B, corde, ergo) · **samedi 5** : sortie longue + volume gym | C2B introduit · HSPU kipping court si le strict est indolore |
+| S19 (7–13 déc.) | Pic | Densité maximale du bloc : couplets gym après pré-fatigue, même cadence première et dernière série · format court 12’, butterfly en séries courtes si propre | Volume max du bloc, 2 RIR |
 | S20 (14–20 déc.) | Décharge −30 à −40 % + relevés | Séries de référence (butterfly, C2B, T2B, corde, HSPU), densité muscle-up de référence · tests de la saison · **samedi 19** : seuil 5 × 3 min | Relevé des crans |
 
 ## Gestes travaillés
@@ -52,7 +52,7 @@ Le volume gym sous fatigue est la faiblesse déclarée n° 1. Le butterfly a aus
 - Haltéro : 1 séance power par semaine (singles + cycling à charge moyenne)
 - Zone 2 : ≥ 60 min par semaine
 - Seuil : 1 bloc par semaine (12–15 min à RPE 6–7)
-- Conditioning dur : le team du mercredi, seul effort dur de la semaine
+- Conditioning dur : le team du mercredi + **un format court par semaine dès S17** (8–12 min, RPE 8, découpage annoncé) avec la gym maîtrisée (T2B, muscle-ups barre, corde, marche sur les mains, burpees, wall balls) · butterfly et C2B en format seulement une fois les séries propres (S19–S20) · trois efforts durs au maximum
 - Variété : ≥ 2 familles de mouvements par semaine en bloc court (haltères, sauts, objets, portés, unilatéral) · les six familles couvertes sur le bloc
 - Réathlétisation : paliers 4–5 adducteur (volume de force bas) · prehab épaule sur chaque jour gym
 

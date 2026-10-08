@@ -31,6 +31,6 @@ Sur l'Open, ce qui sépare les athlètes, c'est la **cadence et la régularité 
 
 ## Règles fatigue box
 
-- Mercredi team = seul effort dur de la semaine. À RPE ≥ 8, on allège le jeudi.
+- Efforts durs : le **team du mercredi** + **un format court** (8–12 min, RPE 8) à partir de S17, avec la gym déjà maîtrisée (T2B, muscle-ups barre, corde, marche sur les mains) et un découpage annoncé. Le butterfly et le C2B s'y ajoutent quand les séries sont propres. Trois efforts durs au maximum par semaine. Team à RPE ≥ 8 → on allège le jeudi.
 - Samedis disponibles (semaines impaires) : **21 novembre**, **5 décembre**, **19 décembre**. Ils portent la sortie longue et le bloc seuil. Les autres semaines, la sortie easy passe au dimanche.
 - Zone 2 : plancher 60 min/semaine, blocs écrits dans la séance.

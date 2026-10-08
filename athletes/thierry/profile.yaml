@@ -188,7 +188,10 @@ volumes:
   conditioning_hard:
     unit: hard_minutes_per_week
     current_target: 0    # ACC-STR : team mercredi seul (+ 1 bloc seuil 12–15’ RPE 6–7 dès S09)
+    tra_pow_target: 10   # TRA-POW (dès S12) : team + 1 format court individuel 8–10’ RPE 8 (arbitrage §27, 2026-10-08)
     tra_mix_target: 30   # TRA-MIX : team + 1 format chronométré par semaine, cap 30 min cumulées
+    acc_gym_target: 12   # Macro 3 dès S17 : team + 1 format court 8–12’ RPE 8, gym acquise seulement (§27)
+    max_hard_sessions_week: 3  # team compris
 
 gym_ladder_level:
   # crans 1–5 — knowledge/gym-ladder.md ; baseline S01, MAJ S04 (2026-08-30)
@@ -235,6 +238,7 @@ coaching:
     - douleur_signalee  # toute douleur (dont adducteur) — seulement si l’athlète la mentionne
   team_wod_rpe_threshold_cut_next_day: 8
   team_wod_log_movements: true  # dès S11 : noter mouvements + charges du WOD team (trace de la variété réellement couverte — knowledge/movement-coverage.yaml)
+  wod_preference: "Aime les WODs (aspect ludique) — 1 format court individuel par semaine en plus du team, sans empiéter sur l'intention dominante (2026-10-08, arbitrage §27)"
   adductor_focus: minimal  # pas de score quotidien ; protocole on-demand si feedback douleur
   accessory_rotation: "banque nouvelle par meso ; lifts/skills stables ; 1–2 accessoires RPE 6–7 ; pas le même duo 4 semaines ; pas de conjugate weekly (knowledge/session-patterns.yaml)"
 

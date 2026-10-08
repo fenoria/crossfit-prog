@@ -68,7 +68,7 @@ systems:
     name: "Glycolytique / mixed dur"
     intent: "Spécificité CF sous acidose (couplets, chippers durs, long/short intervals durs)"
     markers: "RPE 8–9, récup incomplète"
-    when: "TRA-MIX, TRA-POW, REAL uniquement"
+    when: "TRA-MIX, TRA-POW, REAL ; en ACC-GYM 1 format court 8–12’ / sem. (arbitrage §27)"
     laursen_note: "Cibles type 3–5 ; long intervals ou short durs ; game-based / team compte ici"
     dose_cap:
       sessions_per_week_max: 2
@@ -88,6 +88,8 @@ systems:
 
 forbidden_outside_specific: >
   Pas de WODs « hero » / chippers durs gratuits en ACC-GYM / ACC-STR.
+  Exception ACC-GYM (arbitrage §27) : 1 format court 8–12’ RPE 8 par semaine,
+  mouvements gym acquis et indolores, découpage annoncé.
   Exception benchmarks : smoke test ergo court optionnel (ex. 500 m)
   pour calibrer — 1 effort max, skip si fatigue haute ; ce n’est pas du HI de développement.
 

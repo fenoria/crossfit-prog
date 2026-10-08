@@ -27,7 +27,7 @@ by_meso_type:
     force: { min_per_week: 1, unit: force_stimulus, note: "lower prudent OU upper ; pas les deux lourds" }
     oly: { min_per_week: 1, unit: oly_session }
     z2: { min_minutes_week: 60 }
-    cond_hi: { max_per_week: 0, note: "team WOD compte comme fatigue ; pas d’HI ajouté" }
+    cond_hi: { max_per_week: 1, note: "1 format court 8–12’ RPE 8 en plus du team, mouvements gym acquis seulement (arbitrage §27) ; team WOD compte comme fatigue" }
 
   ACC-STR:
     dominant: force

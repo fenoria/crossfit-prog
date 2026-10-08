@@ -13,6 +13,9 @@
 - [x] 9.4 Test de saut T4 (CMJ filmé par application) — **retiré le 2026-10-05** (matériel et application payante indisponibles)
 - [ ] 9.5 Mouvements faibles chronométrés une fois par meso — **écarté**
 
+## Ajustement 2026-10-08 (athlète)
+- [x] 1 format court individuel / sem. en plus du team en TRA-POW et ACC-GYM, gym acquise uniquement, plafond 3 efforts durs (arbitrages §27)
+
 ---
 
 ## Validation méthodo de base
