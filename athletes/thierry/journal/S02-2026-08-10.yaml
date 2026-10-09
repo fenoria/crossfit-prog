@@ -48,12 +48,12 @@ realise:
 team_wod_rpe: 8
 
 series:  # charge de travail la plus haute par mouvement (cf. journal-schema.yaml v3)
-  - { mvt: back_squat, kg: 115, serie: "4×3", rpe: null, type: travail }
-  - { mvt: romanian_deadlift, kg: 90, rpe: null, type: travail }
-  - { mvt: strict_press, kg: 60, serie: "4×4", rpe: null, type: travail }
-  - { mvt: weighted_pullup, kg: 28, serie: "4×4", rpe: null, type: travail }
-  - { mvt: power_snatch, kg: 70, serie: "4×1", rpe: null, type: travail }
-  - { mvt: power_clean, kg: 100, serie: "4×1", rpe: null, type: travail }
+  - { mvt: back_squat, kg: 115, serie: "4×3", rpe: 6.5, type: travail, comble: [rpe] }
+  - { mvt: romanian_deadlift, kg: 90, serie: "3×8", rpe: 6.5, type: travail, comble: [serie, rpe] }
+  - { mvt: strict_press, kg: 60, serie: "4×4", rpe: 6.5, type: travail, comble: [rpe] }
+  - { mvt: weighted_pullup, kg: 28, serie: "4×4", rpe: 6.5, type: travail, comble: [rpe] }
+  - { mvt: power_snatch, kg: 70, serie: "4×1", rpe: 7, type: travail, comble: [rpe] }
+  - { mvt: power_clean, kg: 100, serie: "4×1", rpe: 7, type: travail, comble: [rpe] }
 
 signaux:
   epaule: { niveau: 0 }

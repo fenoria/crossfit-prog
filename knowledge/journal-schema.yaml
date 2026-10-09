@@ -76,6 +76,11 @@ champs:
     → milieu (6.5), « ≤ 7 » → 7, « 8+ » → 8, null si non noté. type = test | travail | deload.
     Plusieurs lignes pour un même mvt autorisées (ex. test : 3 reps puis single). Ne pas inventer :
     charge absente du feedback → pas de ligne, ou kg approché + note.
+    pause: true = geste exécuté avec pause (ex. front squat pause 2 s). Les dashboards ramènent l'e1RM au geste
+    sans pause (× 1,07, constante PAUSE_FACTOR de scripts/build-analytics.py) et marquent le point d'un losange.
+    comble : [rpe, serie] = champs reconstitués depuis la prescription de prog/ (milieu de fourchette,
+    « prescrit respecté ») sur décision explicite de l'athlète (2026-10-09), jamais notés sur le moment.
+    Trace d'audit seulement : les dashboards les traitent comme des valeurs réelles (décision athlète). Ne pas utiliser pour les nouvelles semaines : noter le réel.
 
   crans: >
     Relevé de l'échelle gym (knowledge/gym-ladder.md), SEULEMENT les semaines où un cran est mesuré

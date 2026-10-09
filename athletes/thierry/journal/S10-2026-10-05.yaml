@@ -85,10 +85,10 @@ a_verifier:
 
 series:  # charge de travail la plus haute par mouvement (cf. journal-schema.yaml v3)
   - { mvt: back_squat, kg: 115, serie: "5×3", rpe: 7, type: travail, note: "repos 2' tenu" }
-  - { mvt: front_squat, kg: 100, serie: "3×3", rpe: 7, type: travail, note: "avec pause" }
+  - { mvt: front_squat, kg: 100, serie: "3×3", rpe: 7, type: travail, pause: true, note: "avec pause" }
   - { mvt: deadlift, kg: 160, serie: "3×3", rpe: 7, type: travail, note: "top set non tenté" }
   - { mvt: strict_press, kg: 60, serie: "4×4", rpe: 8, type: travail, note: "prescrit 57,5" }
-  - { mvt: weighted_pullup, kg: 30, serie: "4×4", rpe: null, type: travail, note: "+28–30 kg, charge exacte non notée" }
+  - { mvt: weighted_pullup, kg: 30, serie: "4×4", rpe: 7.5, type: travail, comble: [rpe], note: "+28–30 kg, charge exacte non notée" }
   - { mvt: power_snatch, kg: 75, serie: "3×1", rpe: 8, type: travail, note: "après le deadlift" }
   - { mvt: snatch_pull, kg: 105, serie: "3×3", rpe: 8, type: travail }
 

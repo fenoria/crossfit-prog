@@ -19,6 +19,7 @@
 }
 
 .an svg .an-t-sm { font-size: 9.5px; }
+.an svg .an-t-band { font-size: 7.5px; fill: var(--sw-ink-2); }
 .an svg .an-t-ink2 { fill: var(--sw-ink-2); }
 .an svg .an-t-bold { fill: var(--sw-ink); font-weight: 700; }
 .an svg .an-t-label { fill: var(--sw-ink); font-size: 12.5px; font-weight: 700; font-family: var(--vp-font-family-base); }
@@ -129,3 +130,13 @@
 .an-pill { font-family: var(--vp-font-family-mono); font-size: 11px; padding: 2px 9px; border-radius: 4px; border: 1px solid var(--sw-border); white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; background: var(--sw-hover); color: var(--sw-ink-2); }
 .an-rung__detail { grid-column: 1 / -1; font-size: 0.8125rem; color: var(--sw-ink-2); line-height: 1.45; }
 .an-rung__w { color: var(--sw-muted); font-family: var(--vp-font-family-mono); font-size: 11px; }
+
+.an-card-sub { font-family: var(--vp-font-family-mono); font-size: 11px; color: var(--sw-muted); margin-bottom: 4px; }
+
+.an-sw--hatch { background: repeating-linear-gradient(45deg, var(--sw-border) 0 1.5px, transparent 1.5px 5px); border: 1px solid var(--sw-border); }
+
+/* Charges : 2 colonnes, 1 sur mobile */
+.an-grid-lifts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--an-gap); margin-bottom: var(--an-gap); }
+@media (max-width: 640px) { .an-grid-lifts { grid-template-columns: minmax(0, 1fr); } }
+
+.an-diamond { width: 9px; height: 9px; display: inline-block; background: var(--sw-green); transform: rotate(45deg); margin-inline: 2px; }

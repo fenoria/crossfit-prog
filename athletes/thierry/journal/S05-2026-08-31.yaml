@@ -45,9 +45,9 @@ realise:
 team_wod_rpe: 7
 
 series:  # charge de travail la plus haute par mouvement (cf. journal-schema.yaml v3)
-  - { mvt: back_squat, kg: 110, rpe: null, type: deload }
-  - { mvt: strict_press, kg: 55, rpe: null, type: deload }
-  - { mvt: weighted_pullup, kg: 28, rpe: null, type: deload }
+  - { mvt: back_squat, kg: 110, serie: "2×3", rpe: 6, type: deload, comble: [serie, rpe] }
+  - { mvt: strict_press, kg: 55, serie: "2×3", rpe: 6, type: deload, comble: [serie, rpe] }
+  - { mvt: weighted_pullup, kg: 28, serie: "2×3", rpe: 6, type: deload, comble: [serie, rpe] }
 
 signaux:
   epaule: { niveau: 1, note: "Pompes sautées, gêne légère sur la poussée" }

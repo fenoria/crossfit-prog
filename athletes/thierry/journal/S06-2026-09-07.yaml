@@ -50,8 +50,8 @@ realise:
 team_wod_rpe: 7
 
 series:  # charge de travail la plus haute par mouvement (cf. journal-schema.yaml v3)
-  - { mvt: power_snatch, kg: 70, serie: "2×1", rpe: null, type: travail, note: "lundi Fire" }
-  - { mvt: power_clean, kg: 100, serie: "2×2", rpe: null, type: travail, note: "lundi Fire" }
+  - { mvt: power_snatch, kg: 70, serie: "2×1", rpe: 6, type: travail, comble: [rpe], note: "lundi Fire" }
+  - { mvt: power_clean, kg: 100, serie: "2×2", rpe: 6, type: travail, comble: [rpe], note: "lundi Fire" }
 
 signaux:
   epaule: { niveau: 0, note: "HSPU non sollicitées" }

@@ -54,7 +54,7 @@ team_wod_rpe: 7
 series:  # charge de travail la plus haute par mouvement (cf. journal-schema.yaml v3)
   - { mvt: back_squat, kg: 115, serie: "4×3", rpe: 6.5, type: travail }
   - { mvt: deadlift, kg: 150, serie: "3×3", rpe: 7.5, type: travail }
-  - { mvt: front_squat, kg: 95, serie: "2×3", rpe: null, type: travail, note: "avec pause" }
+  - { mvt: front_squat, kg: 95, serie: "2×3", rpe: 7, type: travail, pause: true, comble: [rpe], note: "avec pause" }
   - { mvt: strict_press, kg: 63, serie: "4×3", rpe: 8, type: travail }
   - { mvt: weighted_pullup, kg: 32, serie: "4×3", rpe: 8, type: travail }
   - { mvt: power_snatch, kg: 73, serie: "1", rpe: 7, type: travail }

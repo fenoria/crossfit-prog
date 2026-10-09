@@ -12,6 +12,7 @@ Usage    : npm run build:analytics
 from __future__ import annotations
 
 import json
+import re
 import sys
 from datetime import date, timedelta
 from pathlib import Path
@@ -58,8 +59,39 @@ VOLUMES = [
     ("oly_lifts", "Haltéro", "levées de qualité", "oly"),
     ("z2_min", "Zone 2", "minutes", "z2"),
 ]
+SHORT = {"benchmarks": "TEST", "ACC-GYM": "GYM", "REAL": "FIRE", "TRANS": "TRANS",
+         "ACC-STR": "FORCE", "TRA-POW": "PUISS", "TRA-MIX": "MIX"}
+
+# Table RPE → %1RM (Tuchscherer) : % du 1RM pour n répétitions maximales (n = reps + reps en réserve).
+RM_TABLE = {1: 1.0, 2: 0.955, 3: 0.922, 4: 0.892, 5: 0.863, 6: 0.837, 7: 0.811, 8: 0.786, 9: 0.762,
+            10: 0.739, 11: 0.707, 12: 0.68}
+PAUSE_FACTOR = 1.07  # un front squat pausé (2 s) se soulève ~5–10 % moins lourd : e1RM ramené au geste sans pause
+BODYWEIGHT_LIFTS = {"weighted_pullup"}  # le % s'applique à (poids de corps + lest)
+
 ZONES = [("epaule", "Épaule"), ("adducteur", "Adducteur"), ("mains", "Mains")]
 GESTES = [("bmu", "BMU"), ("hsw", "HSW"), ("rmu", "RMU"), ("hspu", "HSPU")]
+
+
+def pct_1rm(n: float) -> float:
+    """% du 1RM pour n reps max (interpolé ; au-delà de 12 on plafonne, donc e1RM prudent)."""
+    n = min(max(n, 1.0), 12.0)
+    lo, hi = int(n), min(int(n) + 1, 12)
+    return RM_TABLE[lo] + (RM_TABLE[hi] - RM_TABLE[lo]) * (n - lo)
+
+
+def parse_serie(serie: str) -> tuple[int, int] | None:
+    """« 5×3 » → (5 séries, 3 reps) ; « 1 » → (1, 1)."""
+    m = re.fullmatch(r"\s*(\d+)\s*[×x]\s*(\d+)\s*", serie or "")
+    if m:
+        return int(m.group(1)), int(m.group(2))
+    return (1, int(serie)) if re.fullmatch(r"\s*\d+\s*", serie or "") else None
+
+
+def e1rm(kg: float, reps: int | None, rpe: float | None, bodyweight: float = 0.0) -> float | None:
+    if reps is None or rpe is None:
+        return None
+    total = kg + bodyweight
+    return total / pct_1rm(reps + (10 - rpe)) - bodyweight
 
 
 def d(s: str) -> date:
@@ -107,18 +139,19 @@ def build_weeks(instance: dict, journals: dict[int, dict], today: date) -> list[
             phase, meso = MACRO_PHASE.get(key, "tr"), MESO_LABELS.get(code, code)
             if key == "macro_1_build" and code == "TRANS":
                 meso = "Transition mini"
+            short = SHORT.get(code, code)
         elif monday <= trans_end:
-            phase, meso = "tr", "Décharge fin d'année"
+            phase, meso, short = "tr", "Décharge fin d'année", "DECH"
         elif monday < open_start:
-            phase, meso = "op", "Prépa Open"
+            phase, meso, short = "op", "Prépa Open", "OPEN"
         else:
-            phase, meso = "op", "Open"
+            phase, meso, short = "op", "Open", "OPEN"
         j = journals.get(n, {})
         statut = j.get("statut")
         current = monday <= today < monday + timedelta(days=7)
         weeks.append({
             "n": n, "id": sid, "start": monday.isoformat(),
-            "phase": phase, "meso": meso,
+            "phase": phase, "meso": meso, "short": short,
             "phase_micro": j.get("phase_micro"),
             "done": statut == "close",
             "current": current,
@@ -148,22 +181,60 @@ def main() -> int:
 
     # ── charges ────────────────────────────────────────────────
     pre = profile.get("prs_pre_injury_kg") or {}
+    bodyweight = num(profile.get("weight_kg")) or 0.0
     lifts = []
     for mvt, label, pre_key in LIFTS:
+        bw = bodyweight if mvt in BODYWEIGHT_LIFTS else 0.0
         points = []
         for n in sorted(journals):
             if n > last:
                 continue
             for row in journals[n].get("series") or []:
-                if row.get("mvt") == mvt and num(row.get("kg")) is not None:
-                    points.append({
-                        "w": n - 1, "kg": row["kg"], "rpe": num(row.get("rpe")),
-                        "type": row.get("type", "travail"), "serie": row.get("serie") or "",
-                        "note": row.get("note") or "",
-                    })
+                if row.get("mvt") != mvt or num(row.get("kg")) is None:
+                    continue
+                parsed = parse_serie(row.get("serie") or "")
+                sets, reps = parsed if parsed else (None, None)
+                rpe = num(row.get("rpe"))
+                est = e1rm(row["kg"], reps, rpe, bw)
+                pause = bool(row.get("pause"))
+                if pause and est is not None:
+                    est *= PAUSE_FACTOR
+                points.append({
+                    "w": n - 1, "kg": row["kg"], "rpe": rpe,
+                    "type": row.get("type", "travail"), "serie": row.get("serie") or "",
+                    "sets": sets, "reps": reps,
+                    "e1rm": round(est, 1) if est is not None else None,
+                    "tonnage": round(sets * reps * row["kg"]) if parsed else None,
+                    "note": row.get("note") or "", "comble": row.get("comble") or [], "pause": pause,
+                })
         if len({p["w"] for p in points}) < 2:
             continue
-        lifts.append({"id": mvt, "label": label, "pre": num(pre.get(pre_key)) if pre_key else None, "points": points})
+        # Un point par semaine : le meilleur e1RM (à défaut la charge la plus haute).
+        best: dict[int, dict] = {}
+        for p in points:
+            key = p["e1rm"] if p["e1rm"] is not None else -1
+            cur = best.get(p["w"])
+            if cur is None or key > (cur["e1rm"] if cur["e1rm"] is not None else -1) or (
+                key == -1 and p["kg"] > cur["kg"] and cur["e1rm"] is None
+            ):
+                best[p["w"]] = p
+        first_test = next((p for p in points if p["type"] == "test"), None)
+        lifts.append({
+            "id": mvt, "label": label, "pre": num(pre.get(pre_key)) if pre_key else None,
+            "bodyweight": bw or None,
+            "weeks": [best[w] for w in sorted(best)],
+            "first_test": {"w": first_test["w"], "kg": first_test["kg"], "serie": first_test["serie"]} if first_test else None,
+        })
+
+    # Bandes de bloc (meso consécutifs) sur la période couverte par les graphes
+    blocks: list[dict] = []
+    for w in weeks[:last]:
+        j = journals.get(w["n"], {})
+        if blocks and blocks[-1]["meso"] == w["meso"] and blocks[-1]["phase"] == w["phase"]:
+            blocks[-1]["to"] = w["n"] - 1
+        else:
+            blocks.append({"from": w["n"] - 1, "to": w["n"] - 1, "meso": w["meso"], "short": w["short"], "phase": w["phase"]})
+    deloads = [w["n"] - 1 for w in weeks[:last] if (journals.get(w["n"], {}) or {}).get("phase_micro") == "deload"]
 
     # ── volumes ────────────────────────────────────────────────
     vol_profile = profile.get("volumes") or {}
@@ -263,6 +334,8 @@ def main() -> int:
             "suite": (cur_j.get("suite") or "").strip(),
         },
         "lifts": lifts,
+        "blocks": blocks,
+        "deloads": deloads,
         "volumes": volumes,
         "deviations": deviations,
         "signals": signals,
