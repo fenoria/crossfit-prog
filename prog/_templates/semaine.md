@@ -4,9 +4,7 @@
 <!-- dose: force_lower_sets=0 force_upper_sets=0 force_sessions=0 oly_lifts=0 oly_sessions=0 gym_min=0 gym_sessions=0 z2_min=0 hard_min=0 hard_sessions=0 team_sessions=0 mixed=corde,sauts -->
 <!-- dose-note: (facultatif) justifier une exemption — exempt=z2,gym dans la balise dose -->
 
-**Meso** : [nom] · **Macrocycle N — [nom]** · **Saison YYYY**
-
-**Phase micro** : volume adapté | surcharge | pic | deload (si meso chargé)
+**Macro** : [nom] · **Meso** : [nom] · **Micro** : volume adapté | surcharge | pic | deload (si meso chargé)
 
 ## Objectif de la semaine
 
