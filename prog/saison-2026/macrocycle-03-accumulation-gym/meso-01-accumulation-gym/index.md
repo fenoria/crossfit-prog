@@ -22,7 +22,7 @@ Le volume gym sous fatigue est la faiblesse déclarée n° 1. Le butterfly a aus
 
 ## Continuité
 
-- **Précède** : Conversion mixed (Macro 2) — repères gym et corde relevés en S15, volume redescendu en fin de semaine, pas de douleur signalée
+- **Précède** : Conversion mixed (Macro 2) — repères gym et corde relevés en S15, volume redescendu en fin de semaine, semaine indolore
 - **Suit** : Transition de fin d'année (dès le 21 décembre) — décharge faite en S20, relevés notés
 
 ## Focus par semaine

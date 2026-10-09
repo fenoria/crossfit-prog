@@ -8,7 +8,7 @@
 
 ## Objectif de la semaine
 
-[une ligne — ex. mesurer les charges actuelles, pas battre des records]
+[une ligne — ex. mesurer les charges actuelles à RPE 8 pour fixer les repères du meso — ou 2–3 puces si objectifs distincts]
 
 ## Pourquoi / Intention / Apport / Suite
 
@@ -25,7 +25,7 @@
 
 - Repos force : 2–3’ entre sets lourds
 - Team RPE ≥ 8 → alléger J+1 avec dose chiffrée
-- Cibles de séance **chiffrées** (reps, RPE, durée, repos) — pas de « lourd confortable » seul
+- Cibles de séance **chiffrées** (reps, RPE, durée, repos)
 - Même en cadre `RPE`, donner si possible un **ordre d’idée de charge / d’allure** à partir des capacités actuelles
 - Si option ou alternative : la cadrer clairement (quand, quoi choisir, quelle dose)
 
