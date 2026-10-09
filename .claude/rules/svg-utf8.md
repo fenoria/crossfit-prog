@@ -21,3 +21,5 @@ Quand on crée ou modifie un schéma SVG pour le site :
    - **Jamais** `prog/public/saison-YYYY/` : collision avec la page Markdown `/saison-YYYY/`
 
 4. Après génération : `npm run lint:prog`
+
+5. **Icônes** : après modification de `logo.svg` ou `favicon.svg` (favicon.svg = version simplifiée pour 16–48 px), lancer `npm run build:icons` — il régénère favicons, `apple-touch-icon.png`, icônes PWA (`icons/`, « any » + « maskable »), le manifeste et la version `?v=` des URLs (`.vitepress/icons.json`) ; commiter le tout. Ne pas éditer les PNG à la main.

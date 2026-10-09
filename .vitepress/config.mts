@@ -7,6 +7,10 @@ const rootDir = dirname(fileURLToPath(import.meta.url))
 const progDir = join(rootDir, '..', 'prog')
 const repoBase = process.env.VITEPRESS_BASE || '/'
 
+/** Version des icônes (empreinte écrite par `npm run build:icons`) : ajoutée en `?v=` pour contourner les caches. */
+const iconVersion: string = JSON.parse(readFileSync(join(rootDir, 'icons.json'), 'utf8')).version
+const icon = (path: string) => `${asset(path)}?v=${iconVersion}`
+
 /** Absolute public asset path, respecting `base` (e.g. GitHub Pages subpath). */
 function asset(path: string): string {
   const base = repoBase.endsWith('/') ? repoBase.slice(0, -1) : repoBase
@@ -316,12 +320,12 @@ export default defineConfig({
         href: 'https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap',
       },
     ],
-    ['link', { rel: 'icon', href: asset('/favicon.ico'), sizes: 'any' }],
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: asset('/favicon.svg') }],
-    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: asset('/favicon-32x32.png') }],
-    ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: asset('/favicon-16x16.png') }],
-    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: asset('/apple-touch-icon.png') }],
-    ['link', { rel: 'manifest', href: asset('/site.webmanifest') }],
+    ['link', { rel: 'icon', href: icon('/favicon.ico'), sizes: '48x48' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: icon('/favicon.svg'), sizes: 'any' }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: icon('/favicon-32x32.png') }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: icon('/favicon-16x16.png') }],
+    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: icon('/apple-touch-icon.png') }],
+    ['link', { rel: 'manifest', href: icon('/site.webmanifest') }],
     ['link', { rel: 'mask-icon', href: asset('/safari-pinned-tab.svg'), color: '#ff7edb' }],
     ['meta', { name: 'theme-color', content: '#262335' }],
     ['meta', { name: 'msapplication-TileColor', content: '#262335' }],

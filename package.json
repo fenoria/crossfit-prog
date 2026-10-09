@@ -15,12 +15,13 @@
     "docs:preview": "vitepress preview",
     "ingest": "python3 scripts/ingest-books.py",
     "lint:prog": "python3 scripts/lint-prog.py",
-    "build:analytics": "python3 scripts/build-analytics.py"
+    "build:analytics": "python3 scripts/build-analytics.py",
+    "build:icons": "node scripts/build-icons.mjs"
   },
   "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
     "@types/node": "^26.1.2",
     "typescript": "^7.0.2",
     "vitepress": "^1.6.3"
-  },
-  "dependencies": {}
+  }
 }
