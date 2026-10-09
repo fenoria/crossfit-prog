@@ -22,4 +22,4 @@ Contrainte planning, matériel, blessure, préférence méthodo, feedback récur
 - Règle universelle → ce fichier (rester concis) ; rédaction séances → `prog-writing.md` ; profil / planning durable → `athlete-profile.md` ou profil athlète.
 - `books/` et `knowledge/raw/` : lecture **ciblée** uniquement, jamais en masse. Archives (`*-archive.md`, `*-changelog.md`, `history.yaml`) : hors lecture par défaut.
 
-Après modification d’une rule ou d’une semaine : `npm run lint:prog`.
+Après modification d’une rule ou d’une semaine : `npm run lint:prog`. Après modification d’un journal : `npm run build:analytics` (dashboards `prog/analytics/`).

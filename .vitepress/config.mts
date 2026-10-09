@@ -213,8 +213,20 @@ const outilsItems: DefaultTheme.SidebarItem[] = [
   ...buildDirItems(outilsDir),
 ]
 
+const analyticsItems: DefaultTheme.SidebarItem[] = [
+  { text: 'Saison', link: '/analytics/' },
+  { text: 'Charges', link: '/analytics/charges' },
+  { text: 'Volumes et écarts', link: '/analytics/volumes' },
+  { text: 'Corps et signaux', link: '/analytics/sante' },
+]
+
 const sidebarItems: DefaultTheme.SidebarItem[] = [
   ...buildSeasonItems(currentSeason),
+  {
+    text: 'Analytics',
+    collapsed: false,
+    items: analyticsItems,
+  },
   {
     text: 'Outils',
     collapsed: false,
@@ -250,7 +262,7 @@ export default defineConfig({
   cleanUrls: true,
   appearance: 'dark',
   transformPageData(pageData) {
-    if (pageData.relativePath.startsWith('outils/')) {
+    if (pageData.relativePath.startsWith('outils/') || pageData.relativePath.startsWith('analytics/')) {
       pageData.frontmatter.aside = false
     }
   },
@@ -269,6 +281,7 @@ export default defineConfig({
         items: outilsItems,
       },
       { text: 'Saisons', link: defaultSeasonLink() },
+      { text: 'Analytics', link: '/analytics/' },
       { text: 'En cours', link: '/en-cours' },
     ],
     sidebar: {

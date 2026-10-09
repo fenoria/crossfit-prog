@@ -1,0 +1,36 @@
+# Lecture de la saison pour prog/analytics/ — texte rédigé, PAS calculé.
+# Les chiffres des graphes viennent du journal ; ici on ne met que l'interprétation.
+# Mise à jour : au feedback de fin de semaine (skill session-feedback), en s'appuyant sur le journal.
+# niveau : ok | warn | crit | info (couleur de la pastille)
+updated: 2026-10-09
+etat: "S10 en cours (pic force) — lundi à vendredi notés, samedi et dimanche à venir"
+lede: >
+  Neuf semaines faites depuis les tests du 3 août. S10, le pic du bloc force, est bien engagée :
+  squat 5×3 @ 115 tenu à RPE 7, deadlift 3×3 @ 160 à RPE ≤ 7. L'épaule reste le point à surveiller
+  (gêne 1–2/10 sur le press, RMU et HSPU toujours hors plan), mais les gestes gym et l'arraché sont indolores.
+
+items:
+  - zone: "Barre olympique"
+    niveau: ok
+    titre: "Toujours au-dessus du prescrit"
+    texte: "Arraché puissance 70 → 75 kg et épaulé 100 kg à RPE ≤ 7, semaine après semaine. Charges ré-ancrées : arraché 70–75, tirage 95–105. S10 : arraché 75 et tirage 105 à RPE 8 après le deadlift."
+  - zone: "Force bas du corps"
+    niveau: ok
+    titre: "Stable sous le plafond adducteur"
+    texte: "Squat 112,5–115 kg à RPE 6–7, deadlift 150 puis 160 kg à RPE ≤ 7,5. S10 : squat 5×3 @ 115 repos 2 min tenu à RPE 7, front squat pause 3×3 @ 100 à RPE 7."
+  - zone: "Force haut du corps"
+    niveau: warn
+    titre: "Plus dur que prévu"
+    texte: "Press 60–63 kg et traction +32 kg à RPE 8+ en S08 et S09. S10 : press 4×4 @ 60 à RPE 8 (monté de 57,5 par choix), troisième semaine au-dessus du prescrit : ancre réelle press ×4 = 60 kg."
+  - zone: "Épaule"
+    niveau: warn
+    titre: "Signal en baisse depuis S09"
+    texte: "Douleur 4–5/10 en S09 sur RMU et HSPU, hors plan depuis S10. S10 : gêne 1–2/10 sur le press seulement, 0/10 jeudi et vendredi (BMU, HSW, réception d'arraché). Avis kiné si la douleur revient."
+  - zone: "Zone 2"
+    niveau: warn
+    titre: "Chroniquement sous le plancher"
+    texte: "Une seule semaine à 60 min ou plus (S04). C'est le point de la prog qui glisse le plus souvent, faute de créneau dédié."
+  - zone: "Fire 2026"
+    niveau: info
+    titre: "Cardio et barre ont porté, le kipping a lâché"
+    texte: "7e sur 20 : ski 165 cal 1er, complex 3e. Cut au WOD 3 sur les butterfly : chantier du Macro 3 avant l'Open."

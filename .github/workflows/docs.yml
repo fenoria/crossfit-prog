@@ -5,6 +5,10 @@ on:
     branches: [dev]
     paths:
       - "prog/**"
+      - "athletes/**"
+      - "knowledge/instances/**"
+      - "scripts/build-analytics.py"
+      - "scripts/miniyaml.py"
       - ".vitepress/**"
       - "package.json"
       - "package-lock.json"
@@ -32,6 +36,8 @@ jobs:
           cache: npm
       - name: Install
         run: npm ci || npm install
+      - name: Données analytics
+        run: npm run build:analytics
       - name: Lint prog assets
         run: npm run lint:prog
       - name: Build

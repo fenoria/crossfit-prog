@@ -11,7 +11,8 @@
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
     "ingest": "python3 scripts/ingest-books.py",
-    "lint:prog": "python3 scripts/lint-prog.py"
+    "lint:prog": "python3 scripts/lint-prog.py",
+    "build:analytics": "python3 scripts/build-analytics.py"
   },
   "devDependencies": {
     "@types/node": "^26.1.2",

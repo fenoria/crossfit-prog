@@ -27,6 +27,12 @@
   --sw-red: #fe4450;
   --sw-purple: #b893ce;
   --sw-glow-pink: 0 0 2px #100c0f, 0 0 5px #dc078e33, 0 0 10px #f92aad, 0 0 20px #f92aad66;
+  /* Séries de graphes (phases) */
+  --sw-s1: #36f9f6;
+  --sw-s2: #ff7edb;
+  --sw-s3: #b893ce;
+  --sw-s4: #fede5d;
+  --sw-s5: #495495;
   --sw-glow-cyan: 0 0 6px #36f9f666, 0 0 14px #36f9f633;
 
   /* Brand = cyan néon */
