@@ -43,5 +43,5 @@ Ensuite : récapituler en 3–5 lignes ce qui a été compris, puis dérouler le
 8. **Écart prescrit / réalisé** : si le même mouvement sort deux semaines de suite dans le même sens (ex. barre systématiquement au-dessus du prescrit), la prescription est fausse — ré-ancrer les fourchettes dans le profil (`volumes.oly.load_anchoring`, `prs_current_kg`) et le signaler.
 9. Récurrent/durable → profil (+ rule si process).
 10. Fin de meso : vérifier `knowledge/meso-gates.yaml` avant meso suivant.
-11. **Analytics** : `npm run build:analytics` (régénère `.vitepress/theme/analytics/data/<saison>.json` depuis le journal ; le fichier se commite avec le journal).
+11. **Analytics** : `npm run build:analytics` (contrôle des données du dashboard ; elles sont générées automatiquement avant `npm run dev` et `docs:build` et par le CI, jamais commitées).
 12. `npm run lint:prog` (inclut l’audit doses / boucle de feedback) puis confirmer brièvement ce qui change et pourquoi.

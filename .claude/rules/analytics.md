@@ -12,7 +12,7 @@ paths:
 Une page par saison, dans le dossier de la saison (menu : entre « Vue d'ensemble » et le Macro 1). La page ne contient que les composants `<An… />` : ils lisent `data/<saison>.json` d'après le dossier de la page (`useSeasonData`), donc rien à modifier dans les composants pour une nouvelle saison.
 
 ## Flux de données
-`athletes/<id>/journal/S*.yaml` + `profile.yaml` + `knowledge/instances/saison-*.yaml` + doses des semaines `prog/` → `scripts/build-analytics.py` (`npm run build:analytics [saison-2026]`) → `.vitepress/theme/analytics/data/<saison>.json` (commité, régénéré aussi par la CI) → composants `An*.vue`.
+`athletes/<id>/journal/S*.yaml` + `profile.yaml` + `knowledge/instances/saison-*.yaml` + doses des semaines `prog/` → `scripts/build-analytics.py` (`npm run build:analytics [saison-2026]`) → `.vitepress/theme/analytics/data/<saison>.json` (généré, **non commité** : `.gitignore`) → composants `An*.vue`.
 - Une saison est construite si son instance a `status: active` ou `archived` (une instance `draft` est ignorée).
 - Les journaux sont attribués à une saison **par leur date** (fenêtre = début du 1er macrocycle → dernière semaine d'échéance) : la numérotation S01… peut donc repartir de zéro à la saison suivante.
 - Phases et couleurs de la frise : une par macrocycle de l'instance, dans l'ordre ; libellé = clé `label` du macrocycle (sinon dérivé de sa clé).
@@ -44,3 +44,8 @@ Macro en cours (% écoulé au jour près, fenêtre de l'instance de saison), jou
 2. Calcul dans `build-analytics.py`, jamais dans le composant.
 3. Graphe SVG à l'échelle 1:1 : mesurer la largeur avec `useChartWidth` et espacer les étiquettes de semaines (la saison fera 52 semaines). Info-bulle via `useTip` (survol et tap), classe `an-hit` sur les zones interactives.
 4. Vérifier desktop et mobile (375 px), puis `npm run docs:build`.
+
+## Mise à jour automatique
+- Le CI reconstruit et redéploie le site **chaque nuit** (`schedule` dans `.github/workflows/docs.yml`, 01:30 UTC) : les tuiles et la frise dépendent de la date. Le CI fixe `TZ=Europe/Paris`, sinon « aujourd'hui » serait calculé en UTC.
+- `data/*.json` est généré par `predev`, `predocs:dev` et `predocs:build` (jamais commité). Après un nouveau feedback : commit + push du journal, le déploiement suit.
+- Une nuit de cron ne comble pas un feedback manquant : sans journal à jour, les graphes restent à « non noté ».

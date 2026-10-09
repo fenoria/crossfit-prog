@@ -37,7 +37,7 @@ npm run dev          # alias docs:dev → http://localhost:5173
 npm run docs:build
 npm run ingest       # ré-extraire books/ → knowledge/raw/
 npm run lint:prog    # garde-fou structure prog/
-npm run build:analytics   # données du dashboard prog/saison-*/analytics.md (depuis le journal)
+npm run build:analytics   # données du dashboard prog/saison-*/analytics.md (depuis le journal ; lancé automatiquement avant dev et docs:build)
 ```
 
 ## GitHub Pages

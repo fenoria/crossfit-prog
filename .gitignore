@@ -4,6 +4,9 @@
 *.epub
 *.mobi
 
+# Données du dashboard analytics : générées par npm run build:analytics (avant dev et build)
+.vitepress/theme/analytics/data/
+
 # OS / editor
 .DS_Store
 *.swp

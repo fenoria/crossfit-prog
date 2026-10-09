@@ -6,8 +6,11 @@
     "node": ">=20"
   },
   "scripts": {
+    "predev": "npm run build:analytics",
     "dev": "vitepress dev",
+    "predocs:dev": "npm run build:analytics",
     "docs:dev": "vitepress dev",
+    "predocs:build": "npm run build:analytics",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
     "ingest": "python3 scripts/ingest-books.py",
