@@ -59,6 +59,7 @@ VOLUMES = [
     ("z2_min", "Zone 2", "minutes", "z2"),
 ]
 ZONES = [("epaule", "Épaule"), ("adducteur", "Adducteur"), ("mains", "Mains")]
+GESTES = [("bmu", "BMU"), ("hsw", "HSW"), ("rmu", "RMU"), ("hspu", "HSPU")]
 
 
 def d(s: str) -> date:
@@ -199,6 +200,25 @@ def main() -> int:
             notes.append(s.get("note") or "")
         signals.append({"id": key, "label": label, "levels": levels, "notes": notes})
 
+    # ── échelle gym ────────────────────────────────────────────
+    ladder = []
+    profile_ladder = profile.get("gym_ladder_level") or {}
+    for key, label in GESTES:
+        hist = []
+        for n in sorted(journals):
+            if n > last:
+                continue
+            c = (journals[n].get("crans") or {}).get(key)
+            if isinstance(c, dict) and num(c.get("cran")) is not None:
+                hist.append({"w": n - 1, "cran": c["cran"], "etat": c.get("etat", "actif"), "note": c.get("note") or ""})
+        if not hist:
+            continue
+        now = hist[-1]
+        if num(profile_ladder.get(key)) not in (None, now["cran"]):
+            print(f"ATTENTION cran {key} : journal {now['cran']} ≠ profil {profile_ladder.get(key)}", file=sys.stderr)
+        ladder.append({"id": key, "label": label, "base": hist[0]["cran"], "now": now["cran"],
+                       "etat": now["etat"], "note": now["note"], "w": now["w"], "history": hist})
+
     # ── KPI ────────────────────────────────────────────────────
     closed = [n for n, j in journals.items() if j.get("statut") == "close"]
     z2_mev = num(((vol_profile.get("z2") or {}).get("mev"))) or 60
@@ -246,6 +266,7 @@ def main() -> int:
         "volumes": volumes,
         "deviations": deviations,
         "signals": signals,
+        "ladder": ladder,
         "next": nexts,
         "constats": constats,
     }

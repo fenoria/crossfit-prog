@@ -60,6 +60,12 @@ signaux:
   adducteur: { niveau: 0 }
   mains: { niveau: 0 }
 
+crans:  # relevé de l'échelle gym — seulement les semaines où un cran est mesuré ou change
+  bmu: { cran: 4, etat: actif, note: "couplet 4 BMU + 10 cal, ~15 s de repos, indolore" }
+  rmu: { cran: 4, etat: actif, note: "couplet 2 RMU + 10 cal, ~15 s de repos" }
+  hspu: { cran: 3, etat: actif, note: "5×10 strict au plafond, ~0 RIR sur les dernières" }
+  hsw: { cran: 4, etat: actif, note: "5× (10 m + pivot + 10 m) unbroken" }
+
 flags:
   - "Jeudi reporté au samedi (one-off, planning inchangé)"
   - "HSPU 5×10 = plafond de volume strict → deload S05 à 3×6–7"

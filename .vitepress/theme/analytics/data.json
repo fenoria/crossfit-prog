@@ -1176,6 +1176,112 @@
    ]
   }
  ],
+ "ladder": [
+  {
+   "id": "bmu",
+   "label": "BMU",
+   "base": 3,
+   "now": 4,
+   "etat": "actif",
+   "note": "couplet 4 BMU + 10 cal, ~15 s de repos, indolore",
+   "w": 3,
+   "history": [
+    {
+     "w": 0,
+     "cran": 3,
+     "etat": "actif",
+     "note": "EMOM 6/min, ampoule au creux de la main"
+    },
+    {
+     "w": 3,
+     "cran": 4,
+     "etat": "actif",
+     "note": "couplet 4 BMU + 10 cal, ~15 s de repos, indolore"
+    }
+   ]
+  },
+  {
+   "id": "hsw",
+   "label": "HSW",
+   "base": 3,
+   "now": 4,
+   "etat": "actif",
+   "note": "5× (10 m + pivot + 10 m) unbroken",
+   "w": 3,
+   "history": [
+    {
+     "w": 0,
+     "cran": 3,
+     "etat": "actif",
+     "note": "20 m, chute au demi-tour"
+    },
+    {
+     "w": 3,
+     "cran": 4,
+     "etat": "actif",
+     "note": "5× (10 m + pivot + 10 m) unbroken"
+    }
+   ]
+  },
+  {
+   "id": "rmu",
+   "label": "RMU",
+   "base": 3,
+   "now": 4,
+   "etat": "suspendu",
+   "note": "douleur 4–5/10 en S09, hors plan dès S10",
+   "w": 8,
+   "history": [
+    {
+     "w": 0,
+     "cran": 3,
+     "etat": "actif",
+     "note": "EMOM 2/min"
+    },
+    {
+     "w": 3,
+     "cran": 4,
+     "etat": "actif",
+     "note": "couplet 2 RMU + 10 cal, ~15 s de repos"
+    },
+    {
+     "w": 8,
+     "cran": 4,
+     "etat": "suspendu",
+     "note": "douleur 4–5/10 en S09, hors plan dès S10"
+    }
+   ]
+  },
+  {
+   "id": "hspu",
+   "label": "HSPU",
+   "base": 3,
+   "now": 3,
+   "etat": "suspendu",
+   "note": "strict et kipping douloureux en S09 (4–5/10), hors plan dès S10",
+   "w": 8,
+   "history": [
+    {
+     "w": 0,
+     "cran": 3,
+     "etat": "actif",
+     "note": "strict 4×10"
+    },
+    {
+     "w": 3,
+     "cran": 3,
+     "etat": "actif",
+     "note": "5×10 strict au plafond, ~0 RIR sur les dernières"
+    },
+    {
+     "w": 8,
+     "cran": 3,
+     "etat": "suspendu",
+     "note": "strict et kipping douloureux en S09 (4–5/10), hors plan dès S10"
+    }
+   ]
+  }
+ ],
  "next": [
   {
    "when": "2026-10-05 → 2026-10-11",

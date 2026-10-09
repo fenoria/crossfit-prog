@@ -77,6 +77,13 @@ champs:
     Plusieurs lignes pour un même mvt autorisées (ex. test : 3 reps puis single). Ne pas inventer :
     charge absente du feedback → pas de ligne, ou kg approché + note.
 
+  crans: >
+    Relevé de l'échelle gym (knowledge/gym-ladder.md), SEULEMENT les semaines où un cran est mesuré
+    ou change (baseline, validation, suspension, reprise) — pas de recopie hebdo. Une clé par geste
+    (bmu, rmu, hspu, hsw) : { cran: 1–5, etat: actif | suspendu, note }. Le cran courant = dernière
+    entrée ; la base = première. Doit rester cohérent avec profile.gym_ladder_level (le builder alerte
+    sinon). Un geste suspendu garde son cran ; il reprend avec etat: actif à la semaine de reprise.
+
   signaux: >
     Ce que le corps a dit sur la semaine, une entrée par zone : epaule, adducteur, mains.
     Format { niveau, note }. niveau : 0 RAS · 1 tension / gêne légère · 2 gêne, geste réduit ou sauté ·

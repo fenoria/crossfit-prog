@@ -116,3 +116,16 @@
 }
 .an-tip strong { display: block; }
 .an-tip div { color: var(--sw-ink-2); }
+
+/* Échelle gym */
+.an-ladder { display: grid; gap: 14px; }
+.an-rung { display: grid; grid-template-columns: 64px 1fr auto; gap: 6px 12px; align-items: center; }
+.an-rung__name { font-family: var(--font-display); font-size: 0.875rem; font-weight: 700; color: var(--sw-ink); }
+.an-pips { display: flex; gap: 4px; }
+.an-pip { flex: 1; height: 10px; border-radius: 2px; background: var(--sw-hover); }
+.an-pip--on { background: var(--sw-cyan); }
+.an-pip--base { opacity: 0.45; }
+.an-pip--off { background: var(--sw-purple); }
+.an-pill { font-family: var(--vp-font-family-mono); font-size: 11px; padding: 2px 9px; border-radius: 4px; border: 1px solid var(--sw-border); white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; background: var(--sw-hover); color: var(--sw-ink-2); }
+.an-rung__detail { grid-column: 1 / -1; font-size: 0.8125rem; color: var(--sw-ink-2); line-height: 1.45; }
+.an-rung__w { color: var(--sw-muted); font-family: var(--vp-font-family-mono); font-size: 11px; }

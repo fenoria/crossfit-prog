@@ -10,6 +10,7 @@ import AnLifts from './components/AnLifts.vue'
 import AnVolumes from './components/AnVolumes.vue'
 import AnDeviations from './components/AnDeviations.vue'
 import AnSignals from './components/AnSignals.vue'
+import AnLadder from './components/AnLadder.vue'
 import './custom.css'
 import './tools.css'
 import './analytics.css'
@@ -28,5 +29,6 @@ export default {
     app.component('AnVolumes', AnVolumes)
     app.component('AnDeviations', AnDeviations)
     app.component('AnSignals', AnSignals)
+    app.component('AnLadder', AnLadder)
   },
 }

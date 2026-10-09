@@ -67,6 +67,12 @@ signaux:
   adducteur: { niveau: 1, note: "Tension dès ~120 kg au squat" }
   mains: { niveau: 1, note: "Ampoule au creux de la main (BMU)" }
 
+crans:  # relevé de l'échelle gym — seulement les semaines où un cran est mesuré ou change
+  bmu: { cran: 3, etat: actif, note: "EMOM 6/min, ampoule au creux de la main" }
+  rmu: { cran: 3, etat: actif, note: "EMOM 2/min" }
+  hspu: { cran: 3, etat: actif, note: "strict 4×10" }
+  hsw: { cran: 3, etat: actif, note: "20 m, chute au demi-tour" }
+
 flags:
   - "Tension adducteur dès ~120 kg au back squat (pas de douleur)"
   - "Ampoules paume après BMU"
