@@ -9,7 +9,7 @@
 
 version: 2
 status: validated
-updated: 2026-10-03
+updated: 2026-10-09
 
 regles:
   - "Une entrée par semaine, créée dès que la semaine est écrite, complétée au fil des feedbacks."
@@ -30,12 +30,16 @@ champs:
 
   jours: >
     Clé par jour (lundi…dimanche). Sous-clés : fait (oui | partiel | non | off),
-    charges (texte libre, RPE inline), rpe (séance, /10, surtout team), note.
+    charges (texte libre, RPE inline), rpe (séance, /10, surtout team),
+    z2_min (minutes de Zone 2 faites ce jour-là, fin de séance comprise ; 0 si pas faite,
+    null si non demandée — dès S10 jeudi), z2_ergo, note.
 
   realise: >
     Doses réellement effectuées sur la semaine — matière première de l'audit.
     Champs : force_lower_sets, force_upper_sets, oly_lifts, gym_min, z2_min, hard_min,
     threshold_min (mêmes noms que la balise dose).
+    z2_min = somme des z2_min des jours (fin de séance + séances dédiées) : c'est sur lui
+    que l'audit vérifie le plancher Zone 2 (arbitrages §28).
     null autorisé quand le feedback ne permet pas de trancher (+ clé *_note).
 
   team_wod_rpe: "RPE de la séance team (déclenche la règle J+1 au-delà du seuil profil)"

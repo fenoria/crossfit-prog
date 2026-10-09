@@ -154,11 +154,13 @@ Remplir après chaque séance (ou coller le feedback en chat — mise à jour en
 ### Lundi
 - **Fait** : oui / partiel / skip
 - **Charges / score** :
+- **Zone 2** : ___ min (ergo) / non
 - **Note** :
 
 ### Mardi
 - **Fait** :
 - **Charges / score** :
+- **Zone 2** : ___ min (ergo) / non
 - **Note** :
 
 ### Mercredi
@@ -166,16 +168,19 @@ Remplir après chaque séance (ou coller le feedback en chat — mise à jour en
 - **Mouvements** : _(liste du WOD team + charges)_
 - **Charges / score** :
 - **RPE séance** : /10
+- **Zone 2** : ___ min (ergo) / non
 - **Note** :
 
 ### Jeudi
 - **Fait** :
 - **Charges / score** :
+- **Zone 2** : ___ min (ergo) / non
 - **Note** :
 
 ### Vendredi
 - **Fait** :
 - **Charges / score** :
+- **Zone 2** : ___ min (ergo) / non
 - **Note** :
 
 ### Samedi

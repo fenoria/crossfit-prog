@@ -171,8 +171,17 @@ def check_volumes(
         if isinstance(mrv, int) and value > mrv:
             errors.append(f"{rel} : {domain} {value} > MRV {mrv} (profil)")
         if isinstance(mev, int) and value < mev:
-            if domain == "z2" or field in dominant_fields:
+            if field in dominant_fields:
                 warnings.append(f"{rel} : {domain} {value} < MEV {mev} (profil)")
+
+
+def realised_z2(journal_dir: Path, stem: str) -> int | None:
+    """Zone 2 réellement faite (journal) — le déclaré ne compte que les séances dédiées."""
+    entry = journal_dir / f"{stem}.yaml"
+    if not entry.exists():
+        return None
+    value = ((miniyaml.load(entry) or {}).get("realise") or {}).get("z2_min")
+    return value if isinstance(value, int) else None
 
 
 def check_maintenance(
@@ -180,6 +189,7 @@ def check_maintenance(
     dose: dict,
     exempt: set[str],
     meso_doses: dict,
+    z2_done: int | None,
     errors: list[str],
     warnings: list[str],
 ) -> None:
@@ -201,11 +211,11 @@ def check_maintenance(
             )
 
     z2_spec = meso_doses.get("z2")
-    if isinstance(z2_spec, dict) and "z2_min" in dose and "z2" not in exempt:
+    if isinstance(z2_spec, dict) and z2_done is not None and "z2" not in exempt:
         minimum = z2_spec.get("min_minutes_week")
-        if isinstance(minimum, int) and dose["z2_min"] < minimum:
+        if isinstance(minimum, int) and z2_done < minimum:
             warnings.append(
-                f"{rel} : maintien — Zone 2 {dose['z2_min']} min pour {minimum} min requises"
+                f"{rel} : maintien — Zone 2 réalisée {z2_done} min pour {minimum} min requises"
             )
 
     hi_spec = meso_doses.get("cond_hi")
@@ -390,14 +400,15 @@ def run_audit(today: date | None = None) -> tuple[list[str], list[str]]:
         check_volumes(
             rel, dose, exempt, volumes, meso_doses.get("dominant"), errors, warnings
         )
-        check_maintenance(rel, dose, exempt, meso_doses, errors, warnings)
+        z2_done = realised_z2(journal_dir, path.stem)
+        check_maintenance(rel, dose, exempt, meso_doses, z2_done, errors, warnings)
         check_conditioning(rel, dose, exempt, systems, errors, warnings)
         if start >= MIXED_FROM:
             check_coverage(rel, meso, dose, coverage, meso_union, errors, warnings)
             meso_codes[str(Path(rel).parent)] = meso
 
-        if "z2_min" in dose and "z2" not in exempt and z2_mev:
-            if dose["z2_min"] < z2_mev:
+        if z2_done is not None and "z2" not in exempt and z2_mev:
+            if z2_done < z2_mev:
                 z2_streak.append(path.stem.split("-")[0])
                 if len(z2_streak) >= 3:
                     errors.append(

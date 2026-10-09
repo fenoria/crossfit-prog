@@ -49,7 +49,7 @@ schedule:
     time: "12:00-13:30"
     max_minutes: 90
     team_day: wed  # souvent WOD team box — compter fatigue
-    notes: "Pas de séance cardio en semaine hors box. Trajet vélo occasionnel vers la box (~4 km A/R) : négligeable — ne compte ni comme Z2 ni comme charge (précisé 2026-10-03). Le Z2 se fait en bloc écrit : sortie ≥ 40–60’ samedi ou dimanche (VTT, vélo ou course easy) ou en fin de séance box. Exploiter le créneau de 90’ : une séance légère (décharge, touch) est complétée par réathlétisation / mobilité / Z2 plutôt que raccourcie (retour 2026-10-03)."
+    notes: "Pas de séance cardio en semaine hors box. Trajet vélo occasionnel vers la box (~4 km A/R) : négligeable — ne compte ni comme Z2 ni comme charge (précisé 2026-10-03). Z2 écrite seulement en séance dédiée : sortie ≥ 40–60’ samedi ou dimanche (VTT, vélo ou course easy). En semaine, Z2 de fin de séance au gré du temps restant, non écrite (coaching.z2_end_of_session). Exploiter le créneau de 90’ : une séance légère (décharge, touch) est complétée par réathlétisation / mobilité plutôt que raccourcie (retour 2026-10-03, Z2 retirée 2026-10-09)."
   saturday:
     frequency: odd_iso_weeks_only  # MAJ 2026-09-11 : dispo uniquement les semaines ISO impaires (contrainte durable)
     time: "10:00-12:30"
@@ -184,7 +184,7 @@ volumes:
     mev: 60
     mav: 120
     mrv: 180
-    current_target: 60   # plancher — blocs écrits dans les séances (samedi impair 60–75’ ou dimanche 50’), plus de finisher « si temps »
+    current_target: 60   # plancher vérifié sur le réalisé (journal) — séance dédiée écrite (samedi impair 60–75’ ou dimanche 50’) + Z2 de fin de séance au gré du temps (arbitrages §28)
   conditioning_hard:
     unit: hard_minutes_per_week
     current_target: 0    # ACC-STR : team mercredi seul (+ 1 bloc seuil 12–15’ RPE 6–7 dès S09)
@@ -236,6 +236,7 @@ coaching:
     - chute_perf
     - rpe_chronique_eleve
     - douleur_signalee  # toute douleur (dont adducteur) — seulement si l’athlète la mentionne
+  z2_end_of_session: "Fait de la Z2 en fin de séance s'il reste du temps, sinon non (2026-10-09). Ne pas l'écrire dans les séances lun–ven ; la demander à chaque feedback, par séance (minutes + ergo). Z2 écrite seulement en séance dédiée."
   team_wod_rpe_threshold_cut_next_day: 8
   team_wod_log_movements: true  # dès S11 : noter mouvements + charges du WOD team (trace de la variété réellement couverte — knowledge/movement-coverage.yaml)
   wod_preference: "Aime les WODs (aspect ludique) — 1 format court individuel par semaine en plus du team, sans empiéter sur l'intention dominante (2026-10-08, arbitrage §27)"

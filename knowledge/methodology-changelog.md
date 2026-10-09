@@ -16,6 +16,9 @@
 ## Ajustement 2026-10-08 (athlète)
 - [x] 1 format court individuel / sem. en plus du team en TRA-POW et ACC-GYM, gym acquise uniquement, plafond 3 efforts durs (arbitrages §27)
 
+## Ajustement 2026-10-09 (athlète)
+- [x] Zone 2 écrite en séance dédiée uniquement ; Z2 de fin de séance au gré du temps, demandée à chaque feedback ; plancher 60 min vérifié sur le réalisé (arbitrages §28)
+
 ---
 
 ## Validation méthodo de base

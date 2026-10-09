@@ -4,7 +4,7 @@ macro: macrocycle-02-elevation
 meso: ACC-STR
 phase_micro: pic
 prog: prog/saison-2026/macrocycle-02-elevation/meso-01-accumulation-force/S10-2026-10-05.md
-statut: en_cours  # feedback lun–mer reçu le 7 oct. ; jeu → dim à venir
+statut: en_cours  # feedback lun–mer reçu le 7 oct., jeudi le 9 oct. ; ven → dim à venir
 
 jours:
   lundi:
@@ -21,7 +21,11 @@ jours:
     rpe: 7
     note: "Épaule gauche 2/10 sur STOH seulement, supportable. Sous le seuil → jeudi / vendredi inchangés."
   jeudi:
-    fait: null
+    fait: oui
+    charges: "BMU EMOM 10' (4 BMU + 10 cal BikeErg, ~20 s de repos) · HSW 3× (10 m + pivot + 10 m)"
+    z2_min: 25  # prescrit 10'
+    z2_ergo: BikeErg
+    note: "Version complète (team RPE 7). Épaule 0/10 sur BMU, HSW, rotation externe et serratus. Repos > cible ~15 s : BikeErg plus facile que rameur / SkiErg pour 10 cal."
   vendredi:
     fait: null
   samedi:
@@ -37,9 +41,9 @@ realise:
   oly_lifts: null
   oly_lifts_note: "Vendredi à venir"
   gym_min: null
-  gym_min_note: "Touch mardi (HSW + suspensions) non chronométré ; jeudi à venir"
+  gym_min_note: "Touch mardi (HSW + suspensions) non chronométré ; jeudi : EMOM BMU 10' + HSW 3× (durée HSW non chronométrée)"
   z2_min: null
-  z2_min_note: "Finisher lundi 12–15' (durée exacte non notée) ; samedi à venir"
+  z2_min_note: "Finisher lundi 12–15' (durée exacte non notée) + jeudi 25' ; samedi à venir"
   threshold_min: null
   hard_min: null
   hard_min_note: "Team mercredi 27' RPE 7 — même convention que S06 / S09 (non compté en minutes dures sous RPE 8)"
@@ -63,6 +67,7 @@ flags:
   - "Épaule : gêne 1–2/10 sur strict press seulement, sous le seuil d'arrêt ; RMU / HSPU hors plan, tractions / HSW / suspensions indolores"
   - "Adducteur : tension légère sur le palier 1, sans douleur"
   - "Épaule gauche : 2/10 sur STOH (DB 22,5) au team, supportable ; C2B indolores"
+  - "Épaule : 0/10 jeudi sur BMU, HSW, rotation externe et serratus"
 
 ecarts_prescrit_vs_realise:
   - mouvement: strict_press
@@ -70,12 +75,18 @@ ecarts_prescrit_vs_realise:
     realise: "4×4 @ 60 kg RPE 8"
     sens: au_dessus
     action: re_ancrer  # 3e semaine au-dessus (S08–S10) : ancre profil = press ×4 @ 60 RPE 8 ; S11–S12 en push press, S14 déjà à 2×4 @ 60 RPE ≤ 7 (cohérent)
+  - mouvement: bmu
+    prescrit: "EMOM 10' : 4 BMU + 10 cal, repos ~15 s visé"
+    realise: "EMOM 10' : 4 BMU + 10 cal BikeErg, ~20 s de repos"
+    sens: au_dessus
+    action: surveiller  # 1re occurrence ; ergo non précisé dans la prescription — préciser l'ergo ou monter à 12 cal BikeErg si ça se répète
 
 gate: null
 synthese: >
   Pic lower bien parti : squat 5×3 @ 115 repos 2' tenu à RPE 7, front squat avec pause 3×3 @ 100 à RPE 7.
   Press monté à 4×4 @ 60 par choix, RPE 8, gêne d'épaule 1–2/10 seulement sur ce geste. Adducteur : tension légère, sans douleur.
   Team 27' RPE 7 (~65 % des reps, C2B au-delà du partage prévu) ; épaule gauche 2/10 sur STOH.
+  Jeudi complet : BMU EMOM 10' avec ~20 s de repos (BikeErg), épaule 0/10 sur tous les gestes gym, Zone 2 25' BikeErg (prescrit 10').
 suite: >
-  Fin de S10 inchangée (team mercredi, BMU jeudi, deadlift 3×3 @ 155–160 vendredi, sortie mesure samedi).
+  Vendredi et samedi inchangés (deadlift 3×3 @ 155–160 avec option top set, sortie mesure samedi).
   S11 : palier 2 adducteur confirmé ; push press à surveiller côté épaule (0–2/10).
