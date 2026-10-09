@@ -46,6 +46,17 @@ realise:
 
 team_wod_rpe: 9
 
+series:  # charge de travail la plus haute par mouvement (cf. journal-schema.yaml v3)
+  - { mvt: back_squat, kg: 115, serie: "3×3", rpe: 7, type: travail, note: "110–115 kg" }
+  - { mvt: romanian_deadlift, kg: 92.5, serie: "3×8", rpe: 6.5, type: travail, note: "90–95 kg" }
+  - { mvt: strict_press, kg: 60, serie: "3×4", rpe: 6.5, type: travail, note: "57,5–60 kg" }
+  - { mvt: weighted_pullup, kg: 32, serie: "3×4", rpe: 6.5, type: travail, note: "+28–32 kg" }
+
+signaux:
+  epaule: { niveau: 2, note: "HSPU sautées, RMU réduits" }
+  adducteur: { niveau: 0, note: "Squat 110–115 RAS" }
+  mains: { niveau: 0 }
+
 flags:
   - "Team mercredi RPE 9 mais BS jeudi 3×3 @ 110–115 kg RPE 7 — allègement J+1 non nécessaire"
   - "Épaule persistante : HSPU mar skip, RMU ven réduit ; press 57,5–60 kg tenu ; BMU OK"

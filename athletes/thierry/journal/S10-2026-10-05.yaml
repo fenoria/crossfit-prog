@@ -83,6 +83,20 @@ a_verifier:
   - "Zone 2 ≥ 60 min sur la semaine ? (au 9 oct. : ~37–40' lun + jeu → samedi doit couvrir ≥ 20–25')"
   - "Prêt à basculer sur la puissance (S11) ?"
 
+series:  # charge de travail la plus haute par mouvement (cf. journal-schema.yaml v3)
+  - { mvt: back_squat, kg: 115, serie: "5×3", rpe: 7, type: travail, note: "repos 2' tenu" }
+  - { mvt: front_squat, kg: 100, serie: "3×3", rpe: 7, type: travail, note: "avec pause" }
+  - { mvt: deadlift, kg: 160, serie: "3×3", rpe: 7, type: travail, note: "top set non tenté" }
+  - { mvt: strict_press, kg: 60, serie: "4×4", rpe: 8, type: travail, note: "prescrit 57,5" }
+  - { mvt: weighted_pullup, kg: 30, serie: "4×4", rpe: null, type: travail, note: "+28–30 kg, charge exacte non notée" }
+  - { mvt: power_snatch, kg: 75, serie: "3×1", rpe: 8, type: travail, note: "après le deadlift" }
+  - { mvt: snatch_pull, kg: 105, serie: "3×3", rpe: 8, type: travail }
+
+signaux:
+  epaule: { niveau: 1, note: "Gêne 1–2/10 sur le press ; 2/10 épaule gauche sur STOH au team" }
+  adducteur: { niveau: 1, note: "Tension légère sans douleur (palier 1)" }
+  mains: { niveau: 0 }
+
 flags:
   - "Épaule : gêne 1–2/10 sur strict press seulement, sous le seuil d'arrêt ; RMU / HSPU hors plan, tractions / HSW / suspensions indolores"
   - "Adducteur : tension légère sur le palier 1, sans douleur"

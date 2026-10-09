@@ -47,6 +47,19 @@ realise:
 
 team_wod_rpe: 8
 
+series:  # charge de travail la plus haute par mouvement (cf. journal-schema.yaml v3)
+  - { mvt: back_squat, kg: 115, serie: "4×3", rpe: null, type: travail }
+  - { mvt: romanian_deadlift, kg: 90, rpe: null, type: travail }
+  - { mvt: strict_press, kg: 60, serie: "4×4", rpe: null, type: travail }
+  - { mvt: weighted_pullup, kg: 28, serie: "4×4", rpe: null, type: travail }
+  - { mvt: power_snatch, kg: 70, serie: "4×1", rpe: null, type: travail }
+  - { mvt: power_clean, kg: 100, serie: "4×1", rpe: null, type: travail }
+
+signaux:
+  epaule: { niveau: 0 }
+  adducteur: { niveau: 0, note: "Squat 115 sous plafond" }
+  mains: { niveau: 2, note: "Ampoules limitantes sur les BMU" }
+
 flags:
   - "Z2 sous MEV (non tracé)"
   - "Samedi team extra hors prog (EMOM 16 min)"

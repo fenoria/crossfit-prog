@@ -46,6 +46,20 @@ realise:
 
 team_wod_rpe: null
 
+series:  # charge de travail la plus haute par mouvement (cf. journal-schema.yaml v3)
+  - { mvt: back_squat, kg: 115, rpe: null, type: travail }
+  - { mvt: romanian_deadlift, kg: 95, serie: "3×8", rpe: null, type: travail }
+  - { mvt: strict_press, kg: 55, serie: "4×4", rpe: null, type: travail }
+  - { mvt: weighted_pullup, kg: 28, serie: "4×4", rpe: null, type: travail }
+  - { mvt: power_snatch, kg: 70, rpe: null, type: travail }
+  - { mvt: power_clean, kg: 100, rpe: null, type: travail }
+  - { mvt: clean_pull, kg: 120, serie: "3×2", rpe: null, type: travail }
+
+signaux:
+  epaule: { niveau: 0 }
+  adducteur: { niveau: 0 }
+  mains: { niveau: 0, note: "Plus d'ampoules signalées" }
+
 flags:
   - "Z2 sous MEV pour la deuxième semaine consécutive"
   - "Samedi team extra à la place du renfo (2e semaine d'affilée)"

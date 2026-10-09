@@ -52,6 +52,21 @@ realise:
 
 team_wod_rpe: 9
 
+series:  # charge de travail la plus haute par mouvement (cf. journal-schema.yaml v3)
+  - { mvt: back_squat, kg: 130, serie: "1×3", rpe: 9, type: test, note: "3RM test" }
+  - { mvt: deadlift, kg: 180, serie: "1×2", rpe: 9, type: test, note: "2RM test" }
+  - { mvt: front_squat, kg: 120, serie: "1×3", rpe: 9, type: test }
+  - { mvt: strict_press, kg: 70, serie: "1×2", rpe: 9, type: test, note: "2RM test" }
+  - { mvt: weighted_pullup, kg: 40, serie: "1×3", rpe: 9.5, type: test, note: "3RM test" }
+  - { mvt: weighted_pullup, kg: 52, serie: "1×1", rpe: 10, type: test, note: "single ; échec à +54" }
+  - { mvt: power_snatch, kg: 70, serie: "3×1", rpe: 9, type: test, note: "3 singles test" }
+  - { mvt: power_clean, kg: 100, serie: "3×1", rpe: 9, type: test, note: "3 singles test" }
+
+signaux:
+  epaule: { niveau: 0 }
+  adducteur: { niveau: 1, note: "Tension dès ~120 kg au squat" }
+  mains: { niveau: 1, note: "Ampoule au creux de la main (BMU)" }
+
 flags:
   - "Tension adducteur dès ~120 kg au back squat (pas de douleur)"
   - "Ampoules paume après BMU"

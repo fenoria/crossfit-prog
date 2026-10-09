@@ -17,6 +17,7 @@ regles:
   - "Ne jamais inventer un chiffre absent du feedback : mettre null et documenter dans la clé *_note."
   - "Un fait durable (plafond de charge, contrainte planning, cran gym, gêne récurrente) remonte AUSSI au profil."
   - "Le journal est une archive : on n'y réécrit pas le passé, on ajoute."
+  - "series et signaux (v3, 2026-10-09) alimentent les dashboards prog/analytics/ (npm run build:analytics) : un champ absent = point absent du graphe, jamais un zéro. Rétro-remplis S01–S10 depuis les feedbacks."
   - "Champs ajoutés en cours de saison (team_wod_mouvements, familles_couvertes : dès S11 ; decoupage_gym : v2.1) : absents des entrées antérieures, normal — ne pas les rétro-remplir."
 
 champs:
@@ -65,6 +66,22 @@ champs:
     Écrite avec la semaine ; le QCM les couvre, la réponse va dans jours / flags / synthese.
 
   flags: "liste courte de faits saillants (douleur, ampoules, séance déplacée, volume hors prog)"
+
+  series: >
+    Liste, une ligne par mouvement clé et par semaine : la charge de travail la plus haute.
+    Format compact : { mvt, kg, serie, rpe, type, note }.
+    mvt = id snake_case stable (back_squat, front_squat, deadlift, romanian_deadlift, strict_press,
+    weighted_pullup, power_snatch, power_clean, snatch_pull, clean_pull). kg = charge de la barre ou
+    du lest (kg). serie = "séries×reps" ("5×3"), "" si non noté. rpe = nombre /10 : fourchette 6–7
+    → milieu (6.5), « ≤ 7 » → 7, « 8+ » → 8, null si non noté. type = test | travail | deload.
+    Plusieurs lignes pour un même mvt autorisées (ex. test : 3 reps puis single). Ne pas inventer :
+    charge absente du feedback → pas de ligne, ou kg approché + note.
+
+  signaux: >
+    Ce que le corps a dit sur la semaine, une entrée par zone : epaule, adducteur, mains.
+    Format { niveau, note }. niveau : 0 RAS · 1 tension / gêne légère · 2 gêne, geste réduit ou sauté ·
+    3 douleur ≥ 4/10. On prend le PIRE niveau de la semaine. Une zone sans signal = niveau 0.
+    Nouvelle zone (ex. coude, dos) : l'ajouter ici ET dans le composant d'affichage.
 
   ecarts_prescrit_vs_realise: >
     Liste. Par item : mouvement, prescrit, realise, sens (au_dessus | en_dessous | autre),

@@ -45,11 +45,25 @@ realise:
   gym_min: null
   gym_min_note: "EMOM BMU 10' + HSPU strict 3×6 + kipping EMOM 5' + HSW mardi, non chronométrés. RMU ×2 skippés."
   z2_min: 45
-  z2_min_note: "Samedi 45' BikeErg ; finisher mardi non renseigné (non compté). Sous le plancher de 60.
+  z2_min_note: "Samedi 45' BikeErg ; finisher mardi non renseigné (non compté). Sous le plancher de 60."
   threshold_min: 12
   hard_min: 0
 
 team_wod_rpe: 7
+
+series:  # charge de travail la plus haute par mouvement (cf. journal-schema.yaml v3)
+  - { mvt: back_squat, kg: 115, serie: "4×3", rpe: 6.5, type: travail }
+  - { mvt: deadlift, kg: 150, serie: "3×3", rpe: 7.5, type: travail }
+  - { mvt: front_squat, kg: 95, serie: "2×3", rpe: null, type: travail, note: "avec pause" }
+  - { mvt: strict_press, kg: 63, serie: "4×3", rpe: 8, type: travail }
+  - { mvt: weighted_pullup, kg: 32, serie: "4×3", rpe: 8, type: travail }
+  - { mvt: power_snatch, kg: 73, serie: "1", rpe: 7, type: travail }
+  - { mvt: snatch_pull, kg: 100, serie: "3×3", rpe: 7, type: travail }
+
+signaux:
+  epaule: { niveau: 3, note: "Douleur 4–5/10 sur RMU et HSPU strict + kipping ; gêne 1–3/10 sur press / tractions / arraché" }
+  adducteur: { niveau: 0 }
+  mains: { niveau: 0 }
 
 flags:
   - "Épaule : douleur nette 4–5/10 sur RMU (mardi) et HSPU strict + kipping (jeudi), disparaît après l'effort — 4e semaine de signal (S05, S07, S08, S09), première douleur ≥ 4"

@@ -49,6 +49,15 @@ realise:
 
 team_wod_rpe: 7
 
+series:  # charge de travail la plus haute par mouvement (cf. journal-schema.yaml v3)
+  - { mvt: power_snatch, kg: 70, serie: "2×1", rpe: null, type: travail, note: "lundi Fire" }
+  - { mvt: power_clean, kg: 100, serie: "2×2", rpe: null, type: travail, note: "lundi Fire" }
+
+signaux:
+  epaule: { niveau: 0, note: "HSPU non sollicitées" }
+  adducteur: { niveau: 0, note: "Complex 95 kg RAS au Fire" }
+  mains: { niveau: 0 }
+
 flags:
   - "Team le mercredi à J-3 malgré la consigne Z2 (contrainte de créneau box) — n'a pas cassé la fraîcheur d'entrée"
   - "HSPU non ouvertes de la semaine avant la compétition (non sollicitées sur Fire)"

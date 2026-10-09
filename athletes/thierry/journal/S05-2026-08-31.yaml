@@ -44,6 +44,16 @@ realise:
 
 team_wod_rpe: 7
 
+series:  # charge de travail la plus haute par mouvement (cf. journal-schema.yaml v3)
+  - { mvt: back_squat, kg: 110, rpe: null, type: deload }
+  - { mvt: strict_press, kg: 55, rpe: null, type: deload }
+  - { mvt: weighted_pullup, kg: 28, rpe: null, type: deload }
+
+signaux:
+  epaule: { niveau: 1, note: "Pompes sautées, gêne légère sur la poussée" }
+  adducteur: { niveau: 0 }
+  mains: { niveau: 0 }
+
 flags:
   - "Gêne d'épaule récurrente mardi → jeudi (pompes skippées, BMU et RMU sans problème) — premier signalement"
   - "Fin de semaine non renseignée (vendredi à dimanche) — boucle de feedback ouverte"
