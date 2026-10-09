@@ -102,7 +102,7 @@ Organisation type (à adapter au calendrier et au niveau de pratique) :
 
 ### Littérature
 
-Douze ouvrages de référence — **[fiches de lecture](/livres/)** · **[concepts](/livres/concepts)** :
+Quatorze ouvrages de référence et une sélection d'articles scientifiques — **[fiches de lecture](/livres/)** · **[concepts](/livres/concepts)** :
 
 | Domaine | Ouvrage | Rôle |
 |---------|---------|------|
@@ -114,6 +114,9 @@ Douze ouvrages de référence — **[fiches de lecture](/livres/)** · **[concep
 | Haltéro | [Everett — *Olympic Weightlifting*](/livres/everett-oly) | Technique + prog Oly |
 | Gym / BW | [Low — *Overcoming Gravity*](/livres/low-og) | **Pilote** volume & progressions gym |
 | Conditioning / HIIT | [Laursen & Buchheit — *Science and Application of HIIT*](/livres/laursen-buchheit-hiit) | **Pilote** energy systems / formats HIIT |
+| Concurrent | [Schumann & Rønnestad — *Concurrent Aerobic and Strength Training*](/livres/schumann-ronnestad-concurrent) | **Pilote** placement force / endurance |
+| Hybride | [Viada — *The Hybrid Athlete*](/livres/viada-hybrid) | Pratique du concurrent, force = ticket d'entrée |
+| Données CrossFit | [Articles scientifiques CF](/livres/articles-crossfit) | Ce qui prédit la performance (pacing, régularité gym) |
 | PP générale | [Reiss & Prévost — *La bible de la préparation physique*](/livres/bible-pp) | Socle PP FR |
 | PP large | [*L’encyclopédie de la préparation physique*](/livres/encyclo-pp) | Complément |
 | Mental | [*L’encyclopédie de la préparation mentale*](/livres/encyclo-pm) | Pré-comp, routines |
@@ -127,6 +130,7 @@ Quand les auteurs divergent, un **pilote** tranche ; les autres soutiennent :
 - **Israetel** pilote la dose (zone utile + deload).
 - **Gym = Low** en meso dédié · **Oly = Everett** · **Force = Zatsiorsky + transfert Verkhoshansky**.
 - **Conditioning = Laursen & Buchheit** (cibles / formats) + Bible PP en socle.
+- **Concurrent = Schumann & Rønnestad** : la qualité prioritaire ouvre la séance, le conditioning dur vient après (Viada en soutien pratique).
 
 ## Niveaux
 

@@ -1,8 +1,15 @@
 status: validated
 version: 2.1
-updated: 2026-10-03
+updated: 2026-10-09
 validated_on: 2026-07-27
-revalidated_on: 2026-10-03  # v2.1 : concurrent (Schumann & Rønnestad), force-endurance, régularité gym, test de saut — methodology.md §9 ; v2 2026-09-11 : doses auditées, journal, réathlétisation, ancres, tests signature, compétition, séparation générique/instance
+revalidated_on: 2026-10-03  # v2.1 : concurrent (Schumann & Rønnestad), force-endurance, régularité gym — methodology.md §9 ; v2 2026-09-11 : doses auditées, journal, réathlétisation, ancres, tests signature, compétition, séparation générique/instance
+adjustments:  # validés athlète, sans changement de version — détail dans arbitrages.md
+  - date: 2026-10-08
+    ref: "§27"
+    what: "1 format court individuel / sem. en plus du team (TRA-POW, ACC-GYM), plafond 3 efforts durs"
+  - date: 2026-10-09
+    ref: "§28"
+    what: "Z2 écrite en séance dédiée seulement ; plancher 60 min vérifié sur le réalisé"
 # md = narratif athlète ; yaml = contrat machine — garder meso_types / order / status sync
 source_of_truth:
   knowledge: "knowledge/ (méthodo + ops + arbitrages, générique) — books/ = brut"
@@ -131,4 +138,5 @@ domains:
   conditioning:
     role: maintenance
     z2: frequent
-    high_intensity: "TRA-MIX / TRA-POW / REAL only — see conditioning-matrix.yaml"
+    z2_written: dedicated_sessions_only  # arbitrages §28
+    high_intensity: "surtout TRA-MIX / TRA-POW / REAL ; en ACC-GYM 1 format court 8–12' gym maîtrisée (§27) ; max 3 efforts durs / sem. team compris — see conditioning-matrix.yaml"

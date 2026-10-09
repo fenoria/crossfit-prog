@@ -47,10 +47,9 @@ systems:
     when: "toute l’année, surtout Accumulation / TRANS"
     laursen_note: "Complément obligatoire du HIIT ; pas un format HIIT"
     dose_cap:
-      weekday_finisher_min: "8–15"
       dedicated_session_min: "30–60+"
       week_min_typical: 60
-    notes: "Créneau dispo sans fatigue haute → Z2 plutôt qu’off"
+    notes: "Créneau dispo sans fatigue haute → Z2 plutôt qu’off. Écrite seulement en séance dédiée ; la Z2 de fin de séance n'est pas prescrite, elle est relevée au feedback et le plancher se vérifie sur le réalisé (arbitrages §28)."
 
   tempo_threshold:
     name: "Tempo / seuil"

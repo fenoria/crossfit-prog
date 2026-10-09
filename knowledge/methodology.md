@@ -37,9 +37,9 @@ Sources : corpus `books/` (14 ouvrages + 12 articles CF — voir §9) · profil 
 
 ---
 
-## 3. Architecture temporelle (années — livres, pas BON)
+## 3. Architecture temporelle
 
-> **Correction** : l’ancienne prog BON (FORCE → GYM → HALTÉRO → SPÉCIFIQUE → pré-comp → taper) était un **unique pic** vers une compétition. Ce n’est **pas** le modèle annuel retenu. On s’aligne sur **Issurin** (stages / résidus) + **Bompa** (plan annuel multi-pics + transition). La séquence force Bompa (AA → max strength → conversion) guide un macro « force » classique ; **exception Macro 1 Build** : Accumulation **gym** (ACC-GYM) prime sur AA force, car c’est la qualité limitante (Issurin + profil) — athlète déjà en forme, on élève le plafond ; prudence charges (adducteur 2025), pas une phase de convalescence.
+> Modèle annuel : **Issurin** (stages / résidus) + **Bompa** (plan annuel multi-pics + transition) — pas une séquence linéaire à pic unique (arbitrages §8–9). La séquence force Bompa (AA → max strength → conversion) guide un macro « force » classique ; **exception Macro 1 Build** : Accumulation **gym** (ACC-GYM) prime sur AA force, car c’est la qualité limitante (Issurin + profil) — athlète déjà en forme, on élève le plafond ; prudence charges (adducteur 2025), pas une phase de convalescence.
 
 ### 3.1 Long terme — année type CrossFit élite
 
@@ -65,7 +65,7 @@ Chaque **macrocycle** est construit à la Issurin comme un ou deux **stages** (~
 
 **Résidus (Issurin)** : on séquence pour que les qualités à résidu court (vitesse / spécificité / intensité nerveuse) soient **les plus proches** du pic ; les qualités à résidu long (aérobie, hypertrophie/structure) peuvent être plus tôt dans le stage.
 
-### 3.2 Types de mesocycles concentrés (pas une liste BON figée)
+### 3.2 Types de mesocycles concentrés
 
 Un meso = **3–5 semaines** + deload (Israetel), **une intention dominante** :
 
@@ -80,7 +80,7 @@ Un meso = **3–5 semaines** + deload (Israetel), **une intention dominante** :
 | REAL | Spécifique + peaking / taper | Issurin Real · Bompa peaking |
 | TRANS | Décharge, compensation, fun GPP | Bompa transition |
 
-On **répète** et **alterne** ces blocs dans l’année selon le calendrier compétitions et les résidus — on ne fait **pas** une seule fois FORCE puis GYM puis HALTÉRO puis SPEC.
+On **répète** et **alterne** ces blocs dans l’année selon le calendrier compétitions et les résidus.
 
 > **Générique vs instance.** Le calendrier qui fait foi (fenêtres, numéros de semaine, mesos, points de mesure, samedis utiles, paliers de réathlétisation) est **uniquement** dans `knowledge/instances/<saison>.yaml`. Les sections 3.3 et 3.4 gardent le **raisonnement** de la saison, sans dates. Les gates, les doses de maintien et les caps n’en contiennent pas.
 
@@ -243,7 +243,7 @@ Lint : `npm run lint:prog` — forme (`scripts/lint-prog.py`) **et** doses, caps
 ## 8. Ce que cette méthodo n’est pas
 
 - Une copie HWPO/Mayhem
-- Une copie du cycle BON-2026
+- Un cycle linéaire à pic unique (FORCE → GYM → HALTÉRO → SPÉCIFIQUE)
 - Un programme bodybuilding
 - Du concurrent « force+gym+oly+VO2 max » chaque semaine
 
@@ -274,7 +274,6 @@ Sources : Schumann & Rønnestad (pilote interférence) · Viada (soutien pratiqu
 - Pacing **sous le seuil** sur les parties cardio d'un WOD mixte, pour préserver la qualité de la partie technique qui suit (Viada).
 
 ### 9.4 Mesure
-- **T4 — saut vertical (CMJ)** — **retiré le 2026-10-05** avant le premier relevé : matériel et application payante indisponibles.
 - Dans les WODs où un découpage est prescrit, noter le **découpage réellement tenu** (champ `decoupage_gym` du journal).
 
 ### 9.5 Exposition aux mouvements faibles (§25) — **écarté**

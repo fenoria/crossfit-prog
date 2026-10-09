@@ -56,7 +56,7 @@ Nouvel arbitrage : ajouter un § numéroté ici (format court) ; si un § en rem
 - **Durées** : force 3 sem. · puissance 2 · mixed 3 ; la semaine retirée à la force va au mixed (résidu court).
 - **Lift plafonné** (squat ≤ 115 kg) : surcharger par (1) les patterns où il reste de la marge réelle, (2) la **tension** (pause), (3) la **densité** (repos réduit) — pas par les kilos.
 - **Prescription barre ancrée sur le réel** : fourchettes sur le ressenti réel, pilotage RPE + vitesse, pas % théorique → `volumes.*.load_anchoring` du profil.
-- **Conditioning en accumulation** : **1 bloc seuil/sem.** (12–20 min, RPE 6–7) dès la 2e semaine de force ; **Z2 en blocs écrits** (pas de finisher « si temps »). Pas de HI ajouté.
+- **Conditioning en accumulation** : **1 bloc seuil/sem.** (12–20 min, RPE 6–7) dès la 2e semaine de force. Pas de HI ajouté. Z2 : remplacé par §28.
 - **Kipping en appui renversé** : introduit avant TRA-MIX si cran 3 strict stable, sous règle de rampe épaule (§16) — état courant dans le profil.
 - **Mesure** : retest par la prog (pas de semaine de tests dédiée) — points de mesure dans l’instance.
 
@@ -106,7 +106,7 @@ Nouvel arbitrage : ajouter un § numéroté ici (format court) ; si un § en rem
 
 ## 27. « Ne pas sur-investir le conditioning » vs zéro effort dur individuel (2026-10-08)
 - **Constat** : de S07 à S12, aucun effort dur programmé hors team ; le team imposé par la box est sorti à RPE 7 (S09, S10) → ~0 min à RPE 8+ pendant six semaines, et le Macro 3 prévoyait « team seul effort dur » jusqu'au 20 décembre. Pacing individuel jamais travaillé (le team impose son rythme), alors que l'Open est individuel. Préférence athlète : les WODs rendent l'entraînement ludique.
-- **Décision** : (1) **un format court individuel par semaine** (8–12 min, RPE 8, découpage annoncé), en plus du team, dès **S12** (TRA-POW, dans le cap de 1 effort dur) et en **ACC-GYM** à partir de S17 ; S13–S15 inchangées (déjà team + 1 format). (2) Le format n'utilise que des **mouvem es séries propres (S19–S20). (3) Plafond **3 efforts durs / semaine** team compris ; cap 30 min durs inchangé ; Z2 ≥ 60 min inchangé.
+- **Décision** : (1) **un format court individuel par semaine** (8–12 min, RPE 8, découpage annoncé), en plus du team, dès **S12** (TRA-POW, dans le cap de 1 effort dur) et en **ACC-GYM** à partir de S17 ; S13–S15 inchangées (déjà team + 1 format). (2) Le format n'utilise que des **mouvements de gym maîtrisés** (T2B, muscle-ups barre, corde, marche sur les mains, burpees, wall balls) ; butterfly et C2B n'entrent en format qu'une fois les séries propres (S19–S20). (3) Plafond **3 efforts durs / semaine** team compris ; cap 30 min durs inchangé ; Z2 ≥ 60 min inchangé.
 - **Pourquoi** : Laursen & Buchheit (§6) limite le volume HI, pas sa présence ; une dose courte hebdomadaire coûte peu à 90 min / séance et entretient la filière glycolytique (résidu court, Issurin) et le pacing. Cardio fort = **moins** de conditioning qu'un athlète moyen, pas zéro.
 - **Ce qui ne change pas** : §6 (pas de WODs hero / chippers longs en ACC), §25 (pas de mouvement faible chronométré systématiquement), règles épaule, intention dominante gym du Macro 3.
 

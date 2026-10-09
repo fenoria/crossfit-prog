@@ -19,7 +19,7 @@ pattern_ids:
 common:
   warmup_min: "préparation spécifique selon id knowledge/warmups.yaml (3–6 ; team / Z2 : aucune) — mobilité et échauffement général à la charge de l'athlète"
   main_min: 45-60
-  accessory_or_finisher_min: 10-20
+  accessory_or_complement_min: 10-20
   always_respect: [current_benchmarks, no_guided_machines, no_pre_injury_prs]
   warmup_ids_ref: knowledge/warmups.yaml
   off_pattern_requires: "justifier dans le journal de la semaine (flags) (+ profil athlète actif si contrainte durable)"
@@ -47,7 +47,7 @@ force_lower:
     - primary: "Back or Front squat — séries lourdes submax"
     - secondary: "Hinge (RDL/DL variant) volume modéré"
     - core: "anti-extension / roll-out"
-    - finisher: "Z2 easy si budget"
+    - complement: "réathlétisation / mobilité si budget — pas de Z2 écrite (arbitrages §28)"
   accessory_rotation:
     core_anti_extension: [hollow_hold, roll_out, dead_bug]
     core_anti_lateral: [suitcase_carry, side_plank, pallof, copenhagen_progressif]
@@ -61,7 +61,7 @@ force_upper:
     - primary: "Strict press"
     - secondary: "Weighted pull-ups (vertical) — slot stable du meso"
     - accessory: "tirage horizontal OU shoulder health — pas un 3e press"
-    - finisher: "Z2 ou skill gym léger"
+    - complement: "skill gym léger ou prehab — pas de Z2 écrite (arbitrages §28)"
   accessory_rotation:
     horizontal_pull: [ring_row, db_row, bent_over_row]
     shoulder_health: [face_pulls, ytwl]

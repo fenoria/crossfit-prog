@@ -51,7 +51,7 @@ Analyse vidéo de 160 athlètes du top 10 000 de l'Open 2020 (Mangine 2023, 2024
 - Pas de qualité unique à maximiser : **puissance des jambes, force relative, aérobie** à bon niveau.
 - La **répétabilité de la gym** sous fatigue est le facteur le plus discriminant en compétition en ligne.
 - Un **découpage des séries décidé à l'avance** et tenu vaut mieux qu'un départ rapide.
-- Un **test de saut** standardisé est un marqueur simple de puissance utile.
+- Un **test de saut** standardisé est un marqueur simple de puissance utile (non retenu ici faute de matériel de mesure).
 
 ## Ce qu’on n’applique pas
 

@@ -29,7 +29,7 @@
 
 ## Apports retenus
 - **La priorité gym_volume_repeatability est confirmée** par les données de pacing. Au-delà du volume, on vise la **régularité des séries** et une **stratégie de pauses décidée à l'avance**.
-- **Le saut comme marqueur** : un test de saut simple (squat jump ou CMJ, même protocole) est candidat à un ajout aux ancres. Proposition, à valider.
+- **Le saut comme marqueur** : un test de saut simple (squat jump ou CMJ, même protocole) est un marqueur de puissance reconnu. Retenu en v2.1 puis **retiré le 2026-10-05** (matériel et application indisponibles).
 - La **VO2 / capacité aérobie** reste un déterminant des WODs longs : ça justifie de **maintenir** l'aérobie, sans le développer à l'excès.
 - **Force : un ticket d'entrée**, cohérent avec Viada. Elle prédit les WODs lourds et courts (Grace, Fran), à entretenir au niveau requis.
 

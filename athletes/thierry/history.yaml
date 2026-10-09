@@ -39,11 +39,3 @@ vs_pre_injury_1rm_estimate:
   weighted_pullup: "52 kg single @ RPE 10 → vs 50 PR (≈ au niveau ou au-dessus)"
   power_snatch: "70 kg (power) → vs snatch 80 PR full (comparaison partielle)"
   power_clean: "100 kg (power) → vs clean 130 PR full (comparaison partielle)"
-
-# Plan de mesure Macro 2 tel qu'écrit le 2026-09-11 (remplacé par instances/saison-2026.yaml → points_de_mesure)
-measurement_plan_macro2:
-  force: "S10 (5–11 oct.) = point de mesure du bloc force : BS 5×3, FS avec pause 3×3, DL 3×3 (+ top set optionnel), strict press 4×4, traction lestée 4×4 → reporter dans prs_current_kg"
-  aerobie: "S10 samedi (10 oct.) : test aérobie signature + relevé FC / allure → aerobic_anchors"
-  power: "S12 (19–25 oct.) : épaulé / arraché puissance + cycling notés en fin de bloc puissance · hauteur de travail box jump (S11–S12) vs max 116 cm"
-  gym: "S15 mardi (10 nov.) : relevé densité BMU, série RMU, kipping HSPU, distance HSW avec pivots → gym_ladder_level"
-  note: "Retest par la prog, pas par une semaine dédiée : la fraîcheur prime."
