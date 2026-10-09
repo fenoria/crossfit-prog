@@ -14,14 +14,10 @@
 
 ## Pourquoi / Intention / Apport / Suite
 
-- **Pourquoi** : …
+- **Pourquoi** : … ([Auteur] si le choix s'appuie sur un principe du corpus)
 - **Intention** : …
 - **Apport** : …
 - **Suite** : …
-
-### Fondements (corpus)
-
-- **[Auteur]** (*Titre*) — [principe en 1–2 phrases].
 
 ---
 

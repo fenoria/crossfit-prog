@@ -187,8 +187,8 @@ def check_week(
     past = is_past_week(path)
     started = is_started_week(path)
 
-    if "### Fondements" not in text and "## Fondements" not in text:
-        errors.append(f"{rel} : section Fondements manquante")
+    if "## Fondements" in text:
+        errors.append(f"{rel} : section Fondements à intégrer dans Pourquoi / Intention / Apport / Suite")
 
     if "**Pourquoi**" not in text:
         warnings.append(f"{rel} : **Pourquoi** manquant")

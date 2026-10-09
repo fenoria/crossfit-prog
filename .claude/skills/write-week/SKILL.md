@@ -25,7 +25,7 @@ Règles rédaction : **`.claude/rules/prog-writing.md`** (ton, ops pack, immutab
    - `knowledge/movement-coverage.yaml` (familles de mouvements → `mixed=` dans la balise dose)
    - `knowledge/gym-ladder.md` si ACC-GYM · `knowledge/meso-gates.yaml` si changement de meso
    - `knowledge/reathletisation.md` pour le palier en cours · protocole douleur du profil seulement si douleur signalée
-7. `knowledge/arbitrages.md` (décisions en vigueur, fichier court) · une fiche `knowledge/books/` seulement pour les **Fondements** cités.
+7. `knowledge/arbitrages.md` (décisions en vigueur, fichier court) · une fiche `knowledge/books/` seulement pour les refs corpus citées.
 
 ## Templates
 - Semaine : `prog/_templates/semaine.md`
@@ -34,7 +34,7 @@ Règles rédaction : **`.claude/rules/prog-writing.md`** (ton, ops pack, immutab
 ## Steps
 1. Assurer `index.md` Saison / Macro / Meso (`meso-NN-<slug>/`, `macrocycle-NN-<slug>/`).
 2. Créer/mettre à jour `Sxx-YYYY-MM-DD.md` :
-   - Pourquoi / intention / apport / suite · Fondements 1–3 refs
+   - Pourquoi / intention / apport / suite · 1–3 refs corpus intégrées (auteur entre parenthèses)
    - `<!-- pattern: -->` + `<!-- warmup: -->` ; préparation spécifique chiffrée ; séance numérotée
    - **Liens timer** sur chaque bloc chronométré paramétrable (voir `prog-writing.md` → Liens timer)
    - Maintien code meso en français ; `schedule` / team / Z2 / samedi selon profil + instance
