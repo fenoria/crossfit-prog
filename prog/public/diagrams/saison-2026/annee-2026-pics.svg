@@ -2,41 +2,41 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" role="img" aria-label="Saison 2026 pics Fire Contest">
   <defs>
     <style>
-      .t { font-family: Syne, 'DM Sans', system-ui, sans-serif; fill: #e8f4fd; }
-      .m { font-family: 'DM Sans', system-ui, sans-serif; fill: #78909c; }
-      .l { font-family: 'DM Sans', system-ui, sans-serif; fill: #b0bec5; }
-      .s { font-family: 'DM Sans', system-ui, sans-serif; fill: #0b1426; font-weight: 700; font-size: 12px; }
+      .t { font-family: 'Space Grotesk', system-ui, sans-serif; fill: #ffffff; }
+      .m { font-family: 'Space Grotesk', system-ui, sans-serif; fill: #848bbd; }
+      .l { font-family: 'Space Grotesk', system-ui, sans-serif; fill: #d4cfe8; }
+      .s { font-family: 'Space Grotesk', system-ui, sans-serif; fill: #241b2f; font-weight: 700; font-size: 12px; }
     </style>
   </defs>
-  <rect width="800" height="280" rx="8" fill="#0b1426"/>
+  <rect width="800" height="280" rx="8" fill="#241b2f"/>
 
   <text class="t" x="32" y="36" font-size="18" font-weight="700">Saison 2026 — calendrier des pics</text>
   <text class="m" x="32" y="56" font-size="12">A fait (juillet) · B Fire Contest (septembre) · cap sur l’Open 2027</text>
 
   <!-- timeline bar -->
-  <rect x="40" y="120" width="720" height="12" rx="6" fill="#1a2332"/>
+  <rect x="40" y="120" width="720" height="12" rx="6" fill="#34294f"/>
 
   <!-- Macro 1 -->
-  <rect x="40" y="110" width="220" height="32" rx="8" fill="#64ffda" opacity="0.9"/>
+  <rect x="40" y="110" width="220" height="32" rx="8" fill="#36f9f6" opacity="0.9"/>
   <text class="s" x="150" y="130" text-anchor="middle">Macro 1 Build</text>
 
   <!-- Macro 2 -->
-  <rect x="260" y="110" width="260" height="32" rx="8" fill="#82b1ff" opacity="0.9"/>
+  <rect x="260" y="110" width="260" height="32" rx="8" fill="#ff7edb" opacity="0.9"/>
   <text class="s" x="390" y="130" text-anchor="middle">Macro 2 Élévation</text>
 
   <!-- Macro 3 -->
-  <rect x="520" y="110" width="160" height="32" rx="8" fill="#b388ff" opacity="0.9"/>
+  <rect x="520" y="110" width="160" height="32" rx="8" fill="#b893ce" opacity="0.9"/>
   <text class="s" x="600" y="130" text-anchor="middle">Macro 3 Gym</text>
 
   <!-- Transition -->
-  <rect x="680" y="110" width="80" height="32" rx="8" fill="#1a2332" stroke="#546e7a" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <rect x="680" y="110" width="80" height="32" rx="8" fill="#34294f" stroke="#495495" stroke-width="1.5" stroke-dasharray="4 3"/>
   <text class="l" x="720" y="130" font-size="11" text-anchor="middle">TRANS</text>
 
   <!-- Peak markers -->
-  <line x1="230" y1="100" x2="230" y2="155" stroke="#ffe082" stroke-width="2"/>
-  <text fill="#ffe082" font-family="DM Sans, system-ui, sans-serif" font-size="11" font-weight="700" x="230" y="90" text-anchor="middle">B Fire ~12 sept.</text>
+  <line x1="230" y1="100" x2="230" y2="155" stroke="#fede5d" stroke-width="2"/>
+  <text fill="#fede5d" font-family="DM Sans, system-ui, sans-serif" font-size="11" font-weight="700" x="230" y="90" text-anchor="middle">B Fire ~12 sept.</text>
 
-  <text fill="#ffe082" font-family="DM Sans, system-ui, sans-serif" font-size="11" font-weight="700" x="760" y="90" text-anchor="end">→ Open 2027 (19 fév. – 5 mars)</text>
+  <text fill="#fede5d" font-family="DM Sans, system-ui, sans-serif" font-size="11" font-weight="700" x="760" y="90" text-anchor="end">→ Open 2027 (19 fév. – 5 mars)</text>
 
   <text class="m" x="40" y="190" font-size="12">août</text>
   <text class="m" x="230" y="190" font-size="12">sept.</text>

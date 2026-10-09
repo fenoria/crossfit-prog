@@ -83,7 +83,7 @@
   border-radius: 8px;
   background: var(--vp-button-brand-bg);
   color: var(--vp-button-brand-text);
-  font-family: Syne, 'DM Sans', sans-serif;
+  font-family: var(--font-display);
   font-size: 0.9375rem;
   font-weight: 700;
   cursor: pointer;
@@ -118,7 +118,7 @@
   margin: 0 0 1rem;
   padding-top: 0;
   border-top: none;
-  font-family: Syne, 'DM Sans', sans-serif;
+  font-family: var(--font-display);
   font-size: 1.125rem;
   font-weight: 700;
   color: var(--vp-c-text-1);

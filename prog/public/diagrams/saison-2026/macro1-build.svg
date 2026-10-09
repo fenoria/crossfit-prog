@@ -2,40 +2,40 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" role="img" aria-label="Macro 1 Build vers Fire Contest">
   <defs>
     <style>
-      .t { font-family: Syne, 'DM Sans', system-ui, sans-serif; fill: #e8f4fd; }
-      .m { font-family: 'DM Sans', system-ui, sans-serif; fill: #78909c; }
-      .l { font-family: 'DM Sans', system-ui, sans-serif; fill: #b0bec5; }
-      .s { font-family: 'DM Sans', system-ui, sans-serif; fill: #0b1426; font-weight: 700; font-size: 11px; }
+      .t { font-family: 'Space Grotesk', system-ui, sans-serif; fill: #ffffff; }
+      .m { font-family: 'Space Grotesk', system-ui, sans-serif; fill: #848bbd; }
+      .l { font-family: 'Space Grotesk', system-ui, sans-serif; fill: #d4cfe8; }
+      .s { font-family: 'Space Grotesk', system-ui, sans-serif; fill: #241b2f; font-weight: 700; font-size: 11px; }
     </style>
   </defs>
-  <rect width="800" height="240" rx="8" fill="#0b1426"/>
+  <rect width="800" height="240" rx="8" fill="#241b2f"/>
 
   <text class="t" x="32" y="36" font-size="18" font-weight="700">Saison 2026 · Macro 1 — Build → Fire</text>
   <text class="m" x="32" y="56" font-size="12">Pic B Fire Contest (~12–13 sept.) — ACC-STR reporté en Macro 2</text>
 
   <g transform="translate(40, 90)">
-    <rect width="140" height="56" rx="8" fill="#1a2332" stroke="#ffe082" stroke-width="1.5"/>
-    <text class="l" x="70" y="24" font-size="11" text-anchor="middle" fill="#ffe082">Benchmarks</text>
+    <rect width="140" height="56" rx="8" fill="#34294f" stroke="#fede5d" stroke-width="1.5"/>
+    <text class="l" x="70" y="24" font-size="11" text-anchor="middle" fill="#fede5d">Benchmarks</text>
     <text class="m" x="70" y="42" font-size="9" text-anchor="middle">3–9 août</text>
   </g>
-  <polygon points="190,118 202,124 190,130" fill="#546e7a"/>
+  <polygon points="190,118 202,124 190,130" fill="#495495"/>
 
   <g transform="translate(210, 90)">
-    <rect width="160" height="56" rx="8" fill="#64ffda"/>
+    <rect width="160" height="56" rx="8" fill="#36f9f6"/>
     <text class="s" x="80" y="24" text-anchor="middle">ACC-GYM</text>
-    <text x="80" y="42" text-anchor="middle" font-family="DM Sans, system-ui, sans-serif" font-size="9" fill="#0b1426" opacity="0.75">10 août – 6 sept.</text>
+    <text x="80" y="42" text-anchor="middle" font-family="DM Sans, system-ui, sans-serif" font-size="9" fill="#241b2f" opacity="0.75">10 août – 6 sept.</text>
   </g>
-  <polygon points="380,118 392,124 380,130" fill="#546e7a"/>
+  <polygon points="380,118 392,124 380,130" fill="#495495"/>
 
   <g transform="translate(400, 90)">
-    <rect width="160" height="56" rx="8" fill="#b388ff"/>
+    <rect width="160" height="56" rx="8" fill="#b893ce"/>
     <text class="s" x="80" y="24" text-anchor="middle">Expression Fire</text>
-    <text x="80" y="42" text-anchor="middle" font-family="DM Sans, system-ui, sans-serif" font-size="9" fill="#0b1426" opacity="0.75">7–13 sept.</text>
+    <text x="80" y="42" text-anchor="middle" font-family="DM Sans, system-ui, sans-serif" font-size="9" fill="#241b2f" opacity="0.75">7–13 sept.</text>
   </g>
-  <polygon points="570,118 582,124 570,130" fill="#546e7a"/>
+  <polygon points="570,118 582,124 570,130" fill="#495495"/>
 
   <g transform="translate(590, 90)">
-    <rect width="160" height="56" rx="8" fill="#1a2332" stroke="#546e7a" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <rect width="160" height="56" rx="8" fill="#34294f" stroke="#495495" stroke-width="1.5" stroke-dasharray="4 3"/>
     <text class="l" x="80" y="24" font-size="11" text-anchor="middle">TRANS mini</text>
     <text class="m" x="80" y="42" font-size="9" text-anchor="middle">14–20 sept. → Macro 2</text>
   </g>
