@@ -23,20 +23,19 @@ const months = computed(() => {
   })
 })
 
-const cur = data.weeks.findIndex((w) => w.current)
-const openIdx = data.weeks.findIndex((w) => w.meso === 'Open')
-const fireIdx = data.weeks.findIndex((w) => w.meso === 'Expression Fire')
+const markers = [...data.markers].sort((a, b) => a.w - b.w)
+const markerOf = (i: number) => markers.find((m) => m.w === i)
 </script>
 
 <template>
   <div class="an an-panel">
     <div class="an-scroll">
-      <svg :viewBox="`0 0 ${width} 130`" :style="{ minWidth: '760px' }" role="img" aria-label="Frise de la saison">
+      <svg class="an-tl-svg" :viewBox="`0 0 ${width} 130`" :style="{ minWidth: '760px' }" role="img" aria-label="Frise de la saison">
         <text v-for="m in months" :key="m.x" :x="m.x" y="14" class="an-t-ink2">{{ m.label }}</text>
         <g
           v-for="(w, i) in data.weeks"
           :key="w.id"
-          @mousemove="show($event, `${w.id} · semaine du ${fmt(w.start)}`, [w.meso + (w.done ? ' · faite' : w.current ? ' · en cours' : '')])"
+          class="an-hit" @mousemove="show($event, `${w.id} · semaine du ${fmt(w.start)}`, [w.meso + (w.done ? ' · faite' : w.current ? ' · en cours' : '')])" @pointerdown="show($event, `${w.id} · semaine du ${fmt(w.start)}`, [w.meso + (w.done ? ' · faite' : w.current ? ' · en cours' : '')])"
           @mouseleave="hide"
         >
           <rect
@@ -49,23 +48,30 @@ const fireIdx = data.weeks.findIndex((w) => w.meso === 'Expression Fire')
             {{ (w.n % 2 === 1 || w.current) ? String(w.n).padStart(2, '0') : '' }}
           </text>
         </g>
-        <template v-if="fireIdx >= 0">
-          <line :x1="x(fireIdx) + CW / 2" :x2="x(fireIdx) + CW / 2" :y1="TOP - 4" :y2="TOP + H + 22" stroke="var(--sw-ink)" stroke-width="1.5" />
-          <text :x="x(fireIdx) + CW / 2 + 4" :y="TOP + H + 34" class="an-t-bold">Fire · 7e/20</text>
-        </template>
-        <template v-if="cur >= 0">
-          <line :x1="x(cur) + CW / 2" :x2="x(cur) + CW / 2" :y1="TOP - 4" :y2="TOP + H + 40" stroke="var(--sw-ink)" stroke-width="1.5" />
-          <text :x="x(cur) + CW / 2 + 4" :y="TOP + H + 52" class="an-t-bold">Aujourd'hui · {{ data.weeks[cur].id }}</text>
-        </template>
-        <template v-if="openIdx >= 0">
-          <line :x1="x(openIdx) + CW / 2" :x2="x(openIdx) + CW / 2" :y1="TOP - 4" :y2="TOP + H + 22" stroke="var(--sw-ink)" stroke-width="1.5" />
-          <text :x="x(openIdx) + CW / 2 - 4" :y="TOP + H + 34" text-anchor="end" class="an-t-bold">Open {{ data.kpis.open_label.split(' ')[0] }}</text>
-        </template>
+        <g v-for="m in markers" :key="m.kind + m.w">
+          <line :x1="x(m.w) + CW / 2" :x2="x(m.w) + CW / 2" :y1="TOP - 4" :y2="TOP + H + (m.kind === 'now' ? 40 : 22)" stroke="var(--sw-ink)" stroke-width="1.5" />
+          <text
+            :x="x(m.w) + CW / 2 + (m.side === 'left' ? -4 : 4)" :y="TOP + H + (m.kind === 'now' ? 52 : 34)"
+            :text-anchor="m.side === 'left' ? 'end' : 'start'" class="an-t-bold"
+          >{{ m.label }}</text>
+        </g>
       </svg>
     </div>
+    <div class="an-weeks" role="img" aria-label="Frise de la saison">
+      <div
+        v-for="w in data.weeks" :key="w.id" class="an-wk an-hit"
+        :class="{ 'an-wk--done': w.done, 'an-wk--now': w.current, 'an-wk--mark': markerOf(w.n - 1) }"
+        :style="{ '--wk': `var(--sw-${colorOf(w.phase)})` }"
+        @mousemove="show($event, `${w.id} · semaine du ${fmt(w.start)}`, [w.meso + (w.done ? ' · faite' : w.current ? ' · en cours' : ''), markerOf(w.n - 1)?.label ?? ''])" @pointerdown="show($event, `${w.id} · semaine du ${fmt(w.start)}`, [w.meso + (w.done ? ' · faite' : w.current ? ' · en cours' : ''), markerOf(w.n - 1)?.label ?? ''])"
+        @mouseleave="hide"
+      >{{ String(w.n).padStart(2, '0') }}</div>
+    </div>
+    <ul class="an-marks">
+      <li v-for="m in markers" :key="m.kind + m.w"><b>{{ data.weeks[m.w].id }}</b> {{ m.label }}</li>
+    </ul>
     <div class="an-legend">
       <span v-for="p in data.phases" :key="p.id"><i class="an-sw" :style="{ background: `var(--sw-${p.color})` }" />{{ p.label }}</span>
     </div>
-    <AnTooltip :tip="tip" />
+    <AnTooltip :tip="tip" @hide="hide" />
   </div>
 </template>

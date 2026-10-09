@@ -4,11 +4,8 @@ import PercentagesApp from './components/PercentagesApp.vue'
 import WeightliftingApp from './components/WeightliftingApp.vue'
 import AnKpis from './components/AnKpis.vue'
 import AnTimeline from './components/AnTimeline.vue'
-import AnConstats from './components/AnConstats.vue'
-import AnNext from './components/AnNext.vue'
 import AnLifts from './components/AnLifts.vue'
 import AnVolumes from './components/AnVolumes.vue'
-import AnDeviations from './components/AnDeviations.vue'
 import AnSignals from './components/AnSignals.vue'
 import AnLadder from './components/AnLadder.vue'
 import './custom.css'
@@ -23,11 +20,8 @@ export default {
     app.component('WeightliftingApp', WeightliftingApp)
     app.component('AnKpis', AnKpis)
     app.component('AnTimeline', AnTimeline)
-    app.component('AnConstats', AnConstats)
-    app.component('AnNext', AnNext)
     app.component('AnLifts', AnLifts)
     app.component('AnVolumes', AnVolumes)
-    app.component('AnDeviations', AnDeviations)
     app.component('AnSignals', AnSignals)
     app.component('AnLadder', AnLadder)
   },

@@ -213,20 +213,9 @@ const outilsItems: DefaultTheme.SidebarItem[] = [
   ...buildDirItems(outilsDir),
 ]
 
-const analyticsItems: DefaultTheme.SidebarItem[] = [
-  { text: 'Saison', link: '/analytics/' },
-  { text: 'Charges', link: '/analytics/charges' },
-  { text: 'Volumes et écarts', link: '/analytics/volumes' },
-  { text: 'Corps et signaux', link: '/analytics/sante' },
-]
-
 const sidebarItems: DefaultTheme.SidebarItem[] = [
   ...buildSeasonItems(currentSeason),
-  {
-    text: 'Analytics',
-    collapsed: false,
-    items: analyticsItems,
-  },
+  { text: 'Analytics', link: '/analytics/' },
   {
     text: 'Outils',
     collapsed: false,

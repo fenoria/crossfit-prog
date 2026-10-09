@@ -2,7 +2,8 @@
 """Génère les données des dashboards prog/analytics/ depuis le journal.
 
 Entrées  : athletes/<id>/journal/S*.yaml (SoT du réalisé, schéma v3), profile.yaml,
-           knowledge/instances/saison-*.yaml (calendrier), athletes/<id>/constats.yaml (texte).
+           knowledge/instances/saison-*.yaml (calendrier), doses déclarées des semaines prog/.
+Règles   : .claude/rules/analytics.md
 Sortie   : .vitepress/theme/analytics/data.json (lu par les composants An*.vue).
 
 Aucun chiffre n'est inventé : champ absent ou null = point absent du graphe.
@@ -68,6 +69,9 @@ RM_TABLE = {1: 1.0, 2: 0.955, 3: 0.922, 4: 0.892, 5: 0.863, 6: 0.837, 7: 0.811, 
 PAUSE_FACTOR = 1.07  # un front squat pausé (2 s) se soulève ~5–10 % moins lourd : e1RM ramené au geste sans pause
 BODYWEIGHT_LIFTS = {"weighted_pullup"}  # le % s'applique à (poids de corps + lest)
 
+DOSE = re.compile(r"<!--\s*dose:\s*(.*?)-->", re.S)
+COMPETITION_SHORT = {"fire_contest": "Fire", "battle_normandy": "Battle of Normandy"}
+
 ZONES = [("epaule", "Épaule"), ("adducteur", "Adducteur"), ("mains", "Mains")]
 GESTES = [("bmu", "BMU"), ("hsw", "HSW"), ("rmu", "RMU"), ("hspu", "HSPU")]
 
@@ -92,6 +96,19 @@ def e1rm(kg: float, reps: int | None, rpe: float | None, bodyweight: float = 0.0
         return None
     total = kg + bodyweight
     return total / pct_1rm(reps + (10 - rpe)) - bodyweight
+
+
+def load_prescribed() -> dict[int, dict]:
+    """Doses déclarées dans les semaines de prog/ (<!-- dose: … -->), par numéro de semaine."""
+    out: dict[int, dict] = {}
+    for f in (ROOT / "prog").rglob("S*.md"):
+        m = re.match(r"S(\d+)-", f.name)
+        block = DOSE.search(f.read_text(encoding="utf-8")) if m else None
+        if not block:
+            continue
+        out[int(m.group(1))] = {k: int(v) for k, v in (kv.split("=", 1) for kv in block.group(1).split() if "=" in kv)
+                                if v.isdigit()}
+    return out
 
 
 def d(s: str) -> date:
@@ -207,7 +224,7 @@ def main() -> int:
                     "tonnage": round(sets * reps * row["kg"]) if parsed else None,
                     "note": row.get("note") or "", "comble": row.get("comble") or [], "pause": pause,
                 })
-        if len({p["w"] for p in points}) < 2:
+        if not points:
             continue
         # Un point par semaine : le meilleur e1RM (à défaut la charge la plus haute).
         best: dict[int, dict] = {}
@@ -226,6 +243,13 @@ def main() -> int:
             "first_test": {"w": first_test["w"], "kg": first_test["kg"], "serie": first_test["serie"]} if first_test else None,
         })
 
+    # Les graphes n'affichent que les mouvements avec au moins 3 semaines de données ;
+    # le tonnage de la tuile se calcule sur tous.
+    lifts_all, lifts = lifts, [L for L in lifts if len({p["w"] for p in L["weeks"]}) >= 3]
+
+    def tonnage_of(week_index: int) -> int:
+        return round(sum((p["tonnage"] or 0) for L in lifts_all for p in L["weeks"] if p["w"] == week_index))
+
     # Bandes de bloc (meso consécutifs) sur la période couverte par les graphes
     blocks: list[dict] = []
     for w in weeks[:last]:
@@ -238,28 +262,21 @@ def main() -> int:
 
     # ── volumes ────────────────────────────────────────────────
     vol_profile = profile.get("volumes") or {}
+    prescribed = load_prescribed()
     volumes = []
     for field, label, unit, key in VOLUMES:
         lm = vol_profile.get(key) or {}
-        values, notes = [], []
+        values, notes, planned = [], [], []
         for n in range(1, last + 1):
             r = (journals.get(n) or {}).get("realise") or {}
             values.append(num(r.get(field)))
             notes.append(r.get(field + "_note") or r.get("z2_note" if field == "z2_min" else "") or "")
+            planned.append(prescribed.get(n, {}).get(field))
         volumes.append({
             "id": field, "label": label, "unit": unit,
             "mev": num(lm.get("mev")), "mrv": num(lm.get("mrv")),
-            "values": values, "notes": notes,
+            "values": values, "notes": notes, "prescrit": planned,
         })
-
-    # ── écarts prescrit / réalisé ──────────────────────────────
-    deviations = []
-    for n in range(1, last + 1):
-        up, down, other = [], [], []
-        for e in (journals.get(n) or {}).get("ecarts_prescrit_vs_realise") or []:
-            txt = f"{e.get('mouvement', '?')} : {e.get('realise', '?')} (prescrit {e.get('prescrit', '?')})"
-            {"au_dessus": up, "en_dessous": down}.get(e.get("sens"), other).append(txt)
-        deviations.append({"w": n - 1, "up": up, "down": down, "other": other})
 
     # ── signaux ────────────────────────────────────────────────
     signals = []
@@ -293,28 +310,54 @@ def main() -> int:
     # ── KPI ────────────────────────────────────────────────────
     closed = [n for n, j in journals.items() if j.get("statut") == "close"]
     z2_mev = num(((vol_profile.get("z2") or {}).get("mev"))) or 60
-    z2_ok = [n for n in closed if (num(((journals[n].get("realise") or {}).get("z2_min"))) or 0) >= z2_mev]
+    z2_tracked = [num((journals[n].get("realise") or {}).get("z2_min")) for n in closed]
+    z2_tracked = [v for v in z2_tracked if v is not None]  # semaines où la Z2 est chiffrée (« n.t. » exclues)
     first_open = d(instance["echeance_suivante"]["workouts"][0]["fait_box"])
-    comps = [c for c in instance.get("competitions") or [] if c.get("statut") == "fait"]
-    comp = comps[-1] if comps else None
     cur = next((w for w in weeks if w["current"]), None)
-    cur_j = journals.get(cur["n"], {}) if cur else {}
 
-    # ── prochains points ───────────────────────────────────────
-    nexts = []
-    for pm in (instance.get("points_de_mesure") or {}).values():
-        if not isinstance(pm, dict) or "semaine" not in pm:
+    # ── macro en cours (% écoulé, au jour près) ────────────────
+    macro = None
+    for key, m in (instance.get("macrocycles") or {}).items():
+        if "fenetre" not in m:
             continue
-        nexts.append({"when": pm["date"], "week": pm["semaine"], "text": pm["contenu"], "sort": pm["date"][:10]})
-    nexts.append({
-        "when": first_open.strftime("%d/%m/%Y"), "week": "",
-        "text": f"CrossFit Open {instance['echeance_suivante']['workouts'][0]['id']} — annonce le jeudi, fait en box le vendredi.",
-        "sort": first_open.isoformat(),
-    })
-    cur_start = cur["start"] if cur else today.isoformat()
-    nexts = sorted((x for x in nexts if x["sort"] >= cur_start), key=lambda x: x["sort"])
+        a, z = (d(x.strip()) for x in m["fenetre"].split("→"))
+        if a <= today <= z:
+            sems = m.get("semaines") or []
+            phase = next((p for p in PHASES if p["id"] == MACRO_PHASE.get(key, "tr")), {"label": key})
+            macro = {
+                "label": phase["label"].split(" · ")[0] + (" · " + phase["label"].split(" · ")[1] if " · " in phase["label"] else ""),
+                "pct": round(((today - a).days + 1) / ((z - a).days + 1) * 100),
+                "week": (sems.index(cur["id"]) + 1) if cur and cur["id"] in sems else None,
+                "weeks": len(sems) or None,
+            }
+            break
 
-    constats = miniyaml.load(adir / "constats.yaml") or {}
+    # ── tonnage de la semaine la plus récente et de la précédente (séries clés, une par mouvement) ──
+    tonnage_week = tonnage_of(last - 1)
+    tonnage_prev = tonnage_of(last - 2) if last >= 2 else None
+
+    # ── Zone 2 de la semaine la plus récente : réalisé de la semaine, à défaut somme des jours chiffrés ──
+    wj = journals.get(last, {})
+    z2_week = num((wj.get("realise") or {}).get("z2_min"))
+    if z2_week is None:
+        days = [num(v.get("z2_min")) for v in (wj.get("jours") or {}).values() if isinstance(v, dict)]
+        days = [x for x in days if x is not None]
+        z2_week = sum(days) if days else None
+
+    # ── marqueurs de frise : compétitions faites + Open + aujourd'hui ──
+    season_start = d(weeks[0]["start"])
+    markers = []
+    for c in instance.get("competitions") or []:
+        if c.get("statut") != "fait":
+            continue
+        idx = (d(str(c["date"])[:10] if len(str(c["date"])) >= 10 else str(c["date"]) + "-01") - season_start).days // 7
+        if 0 <= idx < len(weeks):
+            res = str(c.get("resultat") or "").replace(" RX", "").replace(" ", "")
+            markers.append({"w": idx, "kind": "event", "label": COMPETITION_SHORT.get(c.get("id"), c.get("nom")) + (f" · {res}" if res else "")})
+    open_idx = (first_open - season_start).days // 7
+    markers.append({"w": open_idx, "kind": "event", "label": f"Open {instance['echeance_suivante']['workouts'][0]['id']}", "side": "left"})
+    if cur:
+        markers.append({"w": cur["n"] - 1, "kind": "now", "label": f"Aujourd'hui · {cur['id']}"})
 
     data = {
         "generated": today.isoformat(),
@@ -325,23 +368,17 @@ def main() -> int:
         "kpis": {
             "weeks_done": len(closed), "weeks_total": len(weeks),
             "days_to_open": (first_open - today).days, "open_label": f"{instance['echeance_suivante']['workouts'][0]['id']} ({first_open.strftime('%d/%m/%Y')})",
-            "competition": f"{comp.get('resultat', '')} — {comp.get('nom', '')}" if comp else "",
-            "z2_ok": len(z2_ok), "z2_of": len(closed), "z2_mev": z2_mev,
-        },
-        "current": {
-            "id": cur["id"] if cur else None, "meso": cur["meso"] if cur else None,
-            "phase_micro": cur_j.get("phase_micro"), "synthese": (cur_j.get("synthese") or "").strip(),
-            "suite": (cur_j.get("suite") or "").strip(),
+            "macro": macro, "tonnage_week": tonnage_week, "tonnage_prev": tonnage_prev, "z2_week": z2_week, "week_id": f"S{last:02d}",
+            "prev_id": f"S{last - 1:02d}" if last >= 2 else None,
+            "z2_avg": round(sum(z2_tracked) / len(z2_tracked)) if z2_tracked else None, "z2_weeks": len(z2_tracked), "z2_mev": z2_mev,
         },
         "lifts": lifts,
         "blocks": blocks,
         "deloads": deloads,
         "volumes": volumes,
-        "deviations": deviations,
         "signals": signals,
         "ladder": ladder,
-        "next": nexts,
-        "constats": constats,
+        "markers": markers,
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")

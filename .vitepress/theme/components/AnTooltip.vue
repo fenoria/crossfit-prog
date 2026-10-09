@@ -1,8 +1,16 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, onBeforeUnmount, onMounted } from 'vue'
 import type { TipState } from '../analytics/useTip'
 
 const props = defineProps<{ tip: TipState }>()
+const emit = defineEmits<{ hide: [] }>()
+
+// Tactile : pas de survol, donc l'info-bulle se ferme au prochain appui hors d'une zone interactive.
+function onPointerDown(e: PointerEvent) {
+  if (!(e.target as Element | null)?.closest?.('.an-hit')) emit('hide')
+}
+onMounted(() => document.addEventListener('pointerdown', onPointerDown))
+onBeforeUnmount(() => document.removeEventListener('pointerdown', onPointerDown))
 
 // Décalage curseur ; bascule à gauche près du bord droit.
 const style = computed(() => {
