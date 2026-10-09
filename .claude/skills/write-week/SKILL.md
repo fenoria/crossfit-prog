@@ -15,12 +15,12 @@ Règles rédaction : **`.claude/rules/prog-writing.md`** (ton, ops pack, immutab
 1. `athletes/current.yaml` → profil (état courant, prioritaire sur tout chiffre).
 2. `knowledge/instances/<saison>.yaml` → semaine, meso, points de mesure, samedis utiles, paliers de réathlétisation.
 3. **Journal** des 2 dernières semaines (`athletes/<id>/journal/`) → réalisé, écarts, flags, `suite`. C'est le résumé du passé : pas besoin de relire les semaines `prog/` complètes.
-4. **Semaine précédente** dans `prog/` en entier (continuité de forme, échauffements, progression).
+4. **Semaine précédente** dans `prog/` en entier (continuité de forme, charges d'approche, progression).
 5. Semaines S-2 et S-3 : `grep` des balises `<!-- pattern|dose|meso -->` et des titres de jours seulement (rotation des accessoires, variété).
 6. Ops pack, uniquement les entrées du meso en cours :
    - `knowledge/maintenance-doses.yaml` (`REAL-mini` → `REAL`)
    - `knowledge/session-patterns.yaml` (ids + `accessory_rotation` : lifts stables, banque accessoires **nouvelle par meso**)
-   - `knowledge/warmups.yaml` → recopier les steps sous **Échauffement**
+   - `knowledge/warmups.yaml` → **Préparation spécifique** chiffrée pour la séance (pas d'échauffement générique) · **Prehab épaule** dans la séance si `warmup_shoulder_care`
    - `knowledge/conditioning-matrix.yaml`
    - `knowledge/movement-coverage.yaml` (familles de mouvements → `mixed=` dans la balise dose)
    - `knowledge/gym-ladder.md` si ACC-GYM · `knowledge/meso-gates.yaml` si changement de meso
@@ -35,7 +35,7 @@ Règles rédaction : **`.claude/rules/prog-writing.md`** (ton, ops pack, immutab
 1. Assurer `index.md` Saison / Macro / Meso (`meso-NN-<slug>/`, `macrocycle-NN-<slug>/`).
 2. Créer/mettre à jour `Sxx-YYYY-MM-DD.md` :
    - Pourquoi / intention / apport / suite · Fondements 1–3 refs
-   - `<!-- pattern: -->` + `<!-- warmup: -->` ; échauffement détaillé ; séance numérotée
+   - `<!-- pattern: -->` + `<!-- warmup: -->` ; préparation spécifique chiffrée ; séance numérotée
    - **Liens timer** sur chaque bloc chronométré paramétrable (voir `prog-writing.md` → Liens timer)
    - Maintien code meso en français ; `schedule` / team / Z2 / samedi selon profil + instance
    - Pas de bloc feedback : ce qu'il faut relever s'écrit dans la séance (« noter … » sur la ligne) ; la section `## Bilan` s'ajoute au feedback (skill `session-feedback`)

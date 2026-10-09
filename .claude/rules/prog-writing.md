@@ -27,7 +27,7 @@ paths:
 - Séances (`saison-YYYY/**`) : **feuille de route exécutable** — ordre, format, repos, durée, cibles sans interprétation restante.
 - `Objectif de la semaine` + `Intention` du jour systématiques ; en tête de semaine, pas créneau / matériel / profil.
 - RPE → repère charge/allure si possible. **Tout mouvement chargé (barre, DB/KB, lest, sac) porte une charge en kg**, accessoires compris : sans historique, fourchette de départ dérivée d'un lift connu (repère cité dans la ligne) + condition de montée.
-- Cibles **chiffrées** (reps, RPE, durée, repos) ; échauffements **en entier** ; pas de section glossaire ni de bloc « Règles » en tête de semaine : l’athlète lit d’abord le corps des séances → toute précision utile (sens d’un format, repère de hauteur, RPE visé d’un bloc, seuil d’arrêt, condition « si… → … », plancher Zone 2) va **dans la séance, sur la ligne de l’exercice concerné**.
+- Cibles **chiffrées** (reps, RPE, durée, repos) ; **pas d'échauffement générique** (mobilité et échauffement général laissés à l'athlète) mais une **Préparation spécifique** écrite en entier ; pas de section glossaire ni de bloc « Règles » en tête de semaine : l’athlète lit d’abord le corps des séances → toute précision utile (sens d’un format, repère de hauteur, RPE visé d’un bloc, seuil d’arrêt, condition « si… → … », plancher Zone 2) va **dans la séance, sur la ligne de l’exercice concerné**.
 - **Écrire ce qu'on fait, pas ce qu'on ne fait pas** : pas de mouvements « hors plan » / « sortis du plan », pas de liste « pas de X cette semaine », pas d'historique « déplacé / remplacé / reporté / au lieu de ». Une restriction (blessure, plafond) s'exprime par la prescription positive (charge, geste, condition de progression). OK : consignes d'exécution (« sans pause », « réception tenue »), conditions « si… → … », et bloc Bilan (récit de ce qui s'est passé).
 - Interdit visible : chemins `knowledge/` / `athletes/`, champs profile, ids `warmup_*` / patterns seuls, codes meso bruts sans nom lisible.
 - Métadonnées coach : `<!-- pattern: … -->` · `<!-- warmup: … -->` · en tête de semaine `<!-- meso: … -->`, `<!-- dose: … -->`, `<!-- dose-note: … -->`.
@@ -57,7 +57,7 @@ Exemple : `[EMOM **8'**](https://timer.fenoria.fr/?type=emom&pre=10&rounds=8&wor
 ## Ops pack (semaine / meso)
 
 1. **Patterns** — `<!-- pattern: id -->` ∈ `knowledge/session-patterns.yaml` ; hors liste → `flags` du journal (+ profile si durable)
-2. **Warm-ups** — id `knowledge/warmups.yaml` + échauffement **recopié en entier** (id invisible)
+2. **Préparation spécifique** — id `knowledge/warmups.yaml` en commentaire + bloc `**Préparation spécifique**` qui s'ouvre sur « Après mobilité et échauffement libres : » et ne contient que ce qui fixe une charge, une hauteur ou un geste : séries d'approche chiffrées, rampe de sauts, ouverture des mouvements d'un format. Jamais d'ergo easy, de mobilité globale ni d'activation générique (`coaching.warmup`). Ids `prep: none` (team, Z2) → pas de bloc. `warmup_shoulder_care` → bloc `**Prehab épaule**` dans la séance, avant la gym (ce n'est pas de l'échauffement). Semaines commencées : ancien bloc **Échauffement** conservé (immutabilité)
 3. **Maintien** — `knowledge/maintenance-doses.yaml` (code meso en français ; `REAL-mini` → `REAL`)
 4. **Gates** — pas de meso suivant sans `knowledge/meso-gates.yaml` (condition en français)
 5. **Douleur** — pas d’interrogation systématique ; si signalée → protocole profil (ex. adductor)

@@ -139,7 +139,7 @@ Jours : Lun–Ven ≤90 min · Mercredi team si box · Samedi optionnel · Diman
 - Patterns : squat, hinge, press, pull (Zatsiorsky).
 - Accumulation : 70–85 % ressenti actuel, volumes contrôlés, tempo si tissus.
 - Squats contrôlés (pas de max agressif) ; power / stance adaptés si besoin.
-- Warm-up lower : `warmup_adductor_friendly` (mobilité hanches douce — standard lower, pas un « focus blessure »).
+- Préparation lower : `warmup_adductor_friendly` (séries d'approche chiffrées ; mobilité hanches faite par l'athlète dans sa routine — standard lower, pas un « focus blessure »).
 
 ### Gym (priorité)
 - Skill technique + volume (EMOM, densité) + renfo lesté (Low).
@@ -221,7 +221,7 @@ Fichiers normatifs (en plus de cette méthodo) :
 | `meso-gates.yaml` | Critères de sortie de meso |
 | `gym-ladder.md` | Progressions BMU/RMU/HSPU/HSW |
 | `session-patterns.yaml` | Ids de séances obligatoires |
-| `warmups.yaml` | Warm-ups réutilisables |
+| `warmups.yaml` | Préparations spécifiques réutilisables (échauffement général laissé à l'athlète) |
 | `adductor-protocol.yaml` | Arbre douleur (on-demand si signalée) |
 | `reathletisation.md` | Paliers adducteur et épaule, critère de relèvement du plafond |
 | `conditioning-matrix.yaml` | Caps energy systems + ancres physiologiques |

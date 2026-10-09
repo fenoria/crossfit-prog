@@ -25,7 +25,7 @@
 
 ---
 
-<!-- Coach only : pattern + warmup en commentaires séparés ; échauffement écrit en entier. -->
+<!-- Coach only : pattern + warmup en commentaires séparés ; pas d'échauffement générique, seulement la préparation spécifique (approches chiffrées, rampe de sauts, ouverture du format). -->
 
 ## Lundi JJ/MM — [titre court]
 
@@ -34,11 +34,9 @@
 
 **Intention** : …
 
-**Échauffement** (12–15’) :
+**Préparation spécifique** — après mobilité et échauffement libres :
 
-1. …
-2. …
-3. …
+1. [lift principal] barre à vide → … → … kg, 2 sets d'approche
 
 **Séance** :
 
@@ -54,9 +52,9 @@
 
 **Intention** : …
 
-**Échauffement** (8–12’) :
+**Préparation spécifique** — après mobilité et échauffement libres :
 
-1. …
+1. [press / traction] → … kg, 2 sets d'approche
 
 **Séance** :
 
@@ -76,11 +74,6 @@
 1. **WOD team** — noter format, **mouvements et charges**, RPE (si ≥ 8 → alléger jeudi : −1 set / −10–15 % ou RPE −1)
 2. **Sinon** — zone 2 [durée]’ — [allure / repère simple]
 
-**Échauffement** :
-
-- Team : …
-- Zone 2 : 2–3’ easy puis zone 2
-
 ---
 
 ## Jeudi JJ/MM — [titre court]
@@ -90,7 +83,7 @@
 
 **Intention** : …
 
-**Échauffement** :
+**Préparation spécifique** — après mobilité et échauffement libres :
 
 1. …
 
@@ -103,15 +96,20 @@
 ## Vendredi JJ/MM — [titre court]
 
 <!-- pattern: gym_skill_day -->
-<!-- warmup: warmup_gym_skill -->
+<!-- warmup: warmup_shoulder_care -->
 
 **Intention** : …
 
-**Échauffement** :
+**Préparation spécifique** — après mobilité et échauffement libres :
 
-1. …
+1. Drills [skill] 3’ puis 1×3 facile
 
 **Séance** :
+
+**Prehab épaule** (~5’, avant la gym) :
+
+- Rotation externe élastique : coude au corps **2×12/côté** puis à 90° d'abduction **2×12/côté**
+- Wall slides ou serratus punch **2×10**
 
 1. [mouvement] — [format] — [charge / RPE cible] — [repos] — noter …
 
@@ -121,7 +119,7 @@
 
 Off par défaut.
 
-Si séance : [contenu + durée + échauffement écrit].
+Si séance : [contenu + durée + préparation spécifique si charges ou format].
 
 ---
 
@@ -129,7 +127,6 @@ Si séance : [contenu + durée + échauffement écrit].
 
 Off recommandé.
 
-Si zone 2 : **[durée]’** · échauffement 2–3’ easy puis zone 2.
+Si zone 2 : **[durée]’** · entrée progressive, puis zone 2.
 
 <!-- Pas de bloc feedback à l'écriture : le réalisé va dans athletes/<id>/journal/ (QCM), la section « ## Bilan » s'ajoute ici au feedback de fin de semaine. -->
-

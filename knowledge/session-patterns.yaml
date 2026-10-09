@@ -17,7 +17,7 @@ pattern_ids:
   - competition_day
 
 common:
-  warmup_min: "selon id knowledge/warmups.yaml (souvent 8–15 ; Z2-only 3–5)"
+  warmup_min: "préparation spécifique selon id knowledge/warmups.yaml (3–6 ; team / Z2 : aucune) — mobilité et échauffement général à la charge de l'athlète"
   main_min: 45-60
   accessory_or_finisher_min: 10-20
   always_respect: [current_benchmarks, no_guided_machines, no_pre_injury_prs]
@@ -136,5 +136,5 @@ competition_day:
     - "Débrief par WOD le soir même"
   trame: knowledge/competition-day.yaml
   lint_note: >
-    Pas de bloc **Échauffement** unique attendu sur ces journées : l'échauffement
+    Pas de bloc **Préparation spécifique** unique attendu sur ces journées : l'échauffement
     est par épreuve et se fait en zone dédiée / chambre d'appel.

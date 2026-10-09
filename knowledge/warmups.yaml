@@ -1,74 +1,79 @@
-# Warm-ups réutilisables (box, ≤ 12–15 min)
+# Préparations spécifiques réutilisables (box, ≤ 5–8 min)
 
-version: 1
+version: 2
 status: validated
-updated: 2026-07-28
+updated: 2026-10-09
 
+# Décision 2026-10-09 (profil coaching.warmup) : l'athlète fait sa mobilité puis
+# son échauffement général seul, selon le cœur de la séance. On n'écrit plus
+# d'échauffement générique (ergo easy, mobilité globale, PVC, scap pulls).
+#
 # Utilisation agent : id en commentaire HTML dans la séance
 #   <!-- warmup: warmup_adductor_friendly -->
-# + recopier les steps en français sous **Échauffement** (visible athlète).
-# Ne jamais laisser seulement l’id dans le texte visible de prog/.
+# + écrire sous **Préparation spécifique** uniquement ce qui fixe une charge,
+#   une hauteur ou un geste propre à la séance (séries d'approche chiffrées,
+#   rampe de sauts, ouverture des mouvements du format).
+# Première ligne visible : « Après mobilité et échauffement libres : »
+# Ne jamais laisser seulement l'id dans le texte visible de prog/.
+#
+# La prehab d'épaule n'est pas de l'échauffement : bloc **Prehab épaule** dans
+# le corps de la séance, avant la gym (comme la réathlétisation adducteur).
+#
+# prep: none → pas de bloc **Préparation spécifique** écrit (team, Z2).
 
 warmups:
   warmup_general_90:
-    duration_min: "10-12"
-    when: "séance mixte / team"
-    steps:
-      - "Ergo easy 3–5’ (row/bike/ski)"
-      - "Mobilité globale : hanches, thoracique, épaules 3’"
-      - "Activation : 2 rounds empty bar ou PVC + scap pulls"
+    prep: none
+    when: "team box (échauffement de la box) ou séance sans geste spécifique"
 
   warmup_adductor_friendly:
-    duration_min: "12-15"
+    duration_min: "3-6"
     when: "tout lower (squat, hinge, FS, DL)"
-    steps:
-      - "Ergo easy 4–5’ (vélo ou rameur)"
-      - "Mobilité hanches : frog rock / fente latérale légère 2–3’"
-      - "Pont fessier ou hip thrust bodyweight 2×8"
-      - "Squat progressif barre à vide → charges légères"
+    specific:
+      - "Séries d'approche du lift principal : barre à vide → 2 ou 3 paliers chiffrés, remontée rapide"
+      - "Si sauts dans la séance : rampe de box jumps par hauteurs chiffrées, 2 sauts par hauteur"
     # Si douleur signalée en séance → adductor-protocol.yaml (pas de check systématique)
 
   warmup_upper_scap:
-    duration_min: "8-12"
+    duration_min: "3-5"
     when: "press, pull, gym haut du corps"
-    steps:
-      - "Ergo easy 2–3’ ou jump rope easy"
-      - "Scap pulls / band pull-aparts / face pulls légers 2×12"
-      - "Shoulder CARs ou openers 1–2’"
-      - "Build press ou kipping drills légers"
+    specific:
+      - "Séries d'approche du press / de la traction : barre à vide ou poids de corps → 2 paliers chiffrés"
 
   warmup_gym_skill:
-    duration_min: "10-12"
-    when: "jour skill BMU/RMU/HSW/HSPU"
-    steps:
-      - "Ergo easy 3’"
-      - "Scap + hollow / arch 2’"
-      - "Drills spécifiques skill 4–6’ (voir gym-ladder cran actuel)"
+    duration_min: "4-6"
+    when: "jour skill BMU/RMU/HSW/HSPU (épaule indolore)"
+    specific:
+      - "Drills spécifiques skill 3–4' (voir gym-ladder cran actuel)"
       - "1–2 sets très submax avant volume EMOM"
 
   warmup_shoulder_care:
-    duration_min: "12-15"
+    duration_min: "4-6"
     when: "jour gym avec kipping en appui renversé, ou upper si gêne d'épaule signalée"
-    steps:
-      - "Ergo easy 3’"
-      - "Scap + hollow / arch 2’"
+    specific:
+      - "Drills spécifiques skill 3–4' (voir gym-ladder cran actuel)"
+      - "1–2 sets très submax avant volume EMOM"
+    prehab_in_session:
       - "Rotation externe élastique : coude au corps 2×12/côté puis à 90° 2×12/côté"
       - "Wall slides ou serratus punch 2×10"
-      - "Drills spécifiques skill 3–4’ (voir gym-ladder cran actuel)"
-      - "1–2 sets très submax avant volume EMOM"
+    # Bloc **Prehab épaule** obligatoire dans la séance (vérifié par le lint).
     # Rampe kipping et règles d'arrêt : knowledge/reathletisation.md
 
   warmup_oly_power:
-    duration_min: "10-12"
+    duration_min: "4-6"
     when: "power snatch / power clean / pulls"
-    steps:
-      - "Ergo easy 3’"
-      - "Mobilité cheville/hanche/thoracique 3’"
-      - "PVC / barre : muscle snatch, OH squat léger si confort, clean tall"
-      - "Build technique — pas de deep heavy squat snatch/clean"
+    specific:
+      - "Barre à vide : muscle + tall (snatch ou clean) 1–2'"
+      - "Séries d'approche chiffrées → première charge de travail"
+      - "Pas de deep heavy squat snatch/clean"
+
+  warmup_mixed_format:
+    duration_min: "4-6"
+    when: "format mixed / chronométré (conditioning_specific)"
+    specific:
+      - "Approches chiffrées des charges du format"
+      - "1 round easy ou ouverture de chaque mouvement du format · repos 90 s–2'"
 
   warmup_z2_only:
-    duration_min: "3-5"
-    when: "séance Z2 pure"
-    steps:
-      - "2–3’ easy puis entrer en Z2 (parole possible)"
+    prep: none
+    when: "séance Z2 pure (entrée progressive dans la séance elle-même)"

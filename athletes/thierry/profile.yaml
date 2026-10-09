@@ -237,6 +237,7 @@ coaching:
     - rpe_chronique_eleve
     - douleur_signalee  # toute douleur (dont adducteur) — seulement si l’athlète la mentionne
   z2_end_of_session: "Fait de la Z2 en fin de séance s'il reste du temps, sinon non (2026-10-09). Ne pas l'écrire dans les séances lun–ven ; la demander à chaque feedback, par séance (minutes + ergo). Z2 écrite seulement en séance dédiée."
+  warmup: "Fait sa mobilité puis s'échauffe seul selon le cœur de la séance (2026-10-09). Pas d'échauffement générique écrit ; seulement une « Préparation spécifique » (séries d'approche chiffrées, rampe de sauts, ouverture des mouvements d'un format). Prehab épaule = bloc de séance, pas d'échauffement (knowledge/warmups.yaml)."
   team_wod_rpe_threshold_cut_next_day: 8
   team_wod_log_movements: true  # dès S11 : noter mouvements + charges du WOD team (trace de la variété réellement couverte — knowledge/movement-coverage.yaml)
   wod_preference: "Aime les WODs (aspect ludique) — 1 format court individuel par semaine en plus du team, sans empiéter sur l'intention dominante (2026-10-08, arbitrage §27)"

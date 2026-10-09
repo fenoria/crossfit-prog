@@ -71,20 +71,28 @@ def load_pattern_ids() -> set[str]:
     return ids or PATTERN_IDS
 
 
-def load_warmup_ids() -> set[str]:
+def load_warmup_ids() -> tuple[set[str], set[str]]:
+    """Ids de préparation connus, et ceux marqués `prep: none` (pas de bloc écrit)."""
     ids: set[str] = set()
+    no_prep: set[str] = set()
     if not WARMUPS_FILE.exists():
-        return ids
+        return ids, no_prep
     in_warmups = False
+    current = None
     for line in WARMUPS_FILE.read_text(encoding="utf-8").splitlines():
         if line.strip() == "warmups:":
             in_warmups = True
             continue
-        if in_warmups and re.match(r"^  [a-z][a-z0-9_]*:", line):
-            ids.add(line.strip().rstrip(":"))
-        elif in_warmups and line and not line.startswith(" "):
+        if not in_warmups:
+            continue
+        if re.match(r"^  [a-z][a-z0-9_]*:", line):
+            current = line.strip().rstrip(":")
+            ids.add(current)
+        elif current and re.match(r"^    prep:\s*none\b", line):
+            no_prep.add(current)
+        elif line and not line.startswith(" "):
             break
-    return ids
+    return ids, no_prep
 
 
 def load_meso_codes() -> set[str]:
@@ -124,6 +132,14 @@ def is_past_week(path: Path) -> bool:
     return start + timedelta(days=6) < date.today()
 
 
+def is_started_week(path: Path) -> bool:
+    """Semaine commencée : contenu figé, format d'échauffement d'origine conservé."""
+    m = WEEK_DATE.match(path.name)
+    if not m:
+        return False
+    return date(int(m.group(2)), int(m.group(3)), int(m.group(4))) <= date.today()
+
+
 def strip_html_comments(text: str) -> str:
     return HTML_COMMENT.sub("", text)
 
@@ -161,6 +177,7 @@ def check_week(
     path: Path,
     pattern_ids: set[str],
     warmup_ids: set[str],
+    no_prep_ids: set[str],
     errors: list[str],
     warnings: list[str],
 ) -> None:
@@ -168,6 +185,7 @@ def check_week(
     rel = path.relative_to(ROOT)
     visible = strip_html_comments(text)
     past = is_past_week(path)
+    started = is_started_week(path)
 
     if "### Fondements" not in text and "## Fondements" not in text:
         errors.append(f"{rel} : section Fondements manquante")
@@ -191,6 +209,7 @@ def check_week(
         patterns = extract_comment_ids(block, COMMENT_PATTERN)
         warmups = extract_comment_ids(block, COMMENT_WARMUP)
         has_echauffement = bool(re.search(r"\*\*Échauffement\*\*", block, re.I))
+        has_prep = bool(re.search(r"\*\*Préparation spécifique\*\*", block, re.I))
 
         if day != "Dimanche" and not patterns:
             if day == "Samedi" and re.search(r"\bOFF\b", block, re.I):
@@ -204,19 +223,24 @@ def check_week(
         if set(patterns) & NO_WARMUP_PATTERNS:
             continue
 
-        if day in {"Lundi", "Mardi", "Jeudi", "Vendredi"}:
-            if not warmups:
-                errors.append(f"{rel} : {day} sans <!-- warmup: … -->")
-            if not has_echauffement:
-                errors.append(f"{rel} : {day} sans **Échauffement** écrit")
+        if day in {"Lundi", "Mardi", "Jeudi", "Vendredi"} and not warmups:
+            errors.append(f"{rel} : {day} sans <!-- warmup: … -->")
 
-        if day in {"Mercredi", "Samedi"} and patterns and not past:
-            if day == "Samedi" and re.search(r"\bOFF\b", block, re.I):
-                continue
-            if not warmups:
-                warnings.append(f"{rel} : {day} sans <!-- warmup: … --> (recommandé)")
-            if not has_echauffement:
-                warnings.append(f"{rel} : {day} sans **Échauffement** écrit (recommandé)")
+        if started:
+            # Format d'origine (bloc **Échauffement** complet) : contenu figé.
+            if day in {"Lundi", "Mardi", "Jeudi", "Vendredi"} and not has_echauffement and not has_prep:
+                errors.append(f"{rel} : {day} sans **Échauffement** écrit")
+        else:
+            if has_echauffement:
+                errors.append(
+                    f"{rel} : {day} bloc **Échauffement** générique — écrire **Préparation spécifique** "
+                    "(mobilité et échauffement général laissés à l'athlète)"
+                )
+            needs_prep = any(w not in no_prep_ids for w in warmups)
+            if needs_prep and not has_prep:
+                errors.append(f"{rel} : {day} sans **Préparation spécifique** écrite")
+            if "warmup_shoulder_care" in warmups and not re.search(r"\*\*Prehab épaule\*\*", block):
+                errors.append(f"{rel} : {day} warmup_shoulder_care sans bloc **Prehab épaule** dans la séance")
 
         for wid in warmups:
             if warmup_ids and wid not in warmup_ids:
@@ -317,7 +341,7 @@ def main() -> int:
     errors: list[str] = []
     warnings: list[str] = []
     pattern_ids = load_pattern_ids()
-    warmup_ids = load_warmup_ids()
+    warmup_ids, no_prep_ids = load_warmup_ids()
     meso_codes = load_meso_codes()
 
     if not PROG.exists():
@@ -334,7 +358,7 @@ def main() -> int:
         warnings.append("aucune semaine S*.md sous prog/")
     check_current_week(weeks, warnings)
     for w in weeks:
-        check_week(w, pattern_ids, warmup_ids, errors, warnings)
+        check_week(w, pattern_ids, warmup_ids, no_prep_ids, errors, warnings)
 
     audit = load_audit()
     if audit is None:
