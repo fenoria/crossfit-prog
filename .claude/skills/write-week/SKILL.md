@@ -39,6 +39,6 @@ Règles rédaction : **`.claude/rules/prog-writing.md`** (ton, ops pack, immutab
    - **Liens timer** sur chaque bloc chronométré paramétrable (voir `prog-writing.md` → Liens timer)
    - Maintien code meso en français ; `schedule` / team / Z2 / samedi selon profil + instance
    - Pas de bloc feedback : ce qu'il faut relever s'écrit dans la séance (« noter … » sur la ligne) ; la section `## Bilan` s'ajoute au feedback (skill `session-feedback`)
-3. Créer l’entrée de journal (`statut: planifiee`) avec `reperes` (relevés attendus de la semaine, à `null`, format en commentaire) et `a_verifier` (questions à trancher au bilan) · index meso si besoin (« En cours » = auto par date).
+3. Créer l’entrée de journal (`statut: planifiee`) avec `reperes` (relevés attendus de la semaine, à `null`, format en commentaire), `series: []` et `signaux` à niveau 0 (voir `knowledge/journal-schema.yaml` v3) et `a_verifier` (questions à trancher au bilan) · index meso si besoin (« En cours » = auto par date).
 4. Arbitrage durable → profil ou `knowledge/arbitrages.md`.
 5. **Obligatoire** : `npm run lint:prog` — zéro ERROR.

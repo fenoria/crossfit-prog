@@ -24,5 +24,6 @@ paths:
 
 ## Mise à jour
 - Chaque feedback → entrée de journal (créée avec la semaine, complétée au fil de l'eau).
+- Les champs structurés du journal (`series`, `signaux`) nourrissent `prog/analytics/` : ne pas les laisser vides après un feedback.
 - Feedback **récurrent ou durable** (douleur à X kg, plafond charge, contrainte planning, cran gym franchi, ancre aérobie testée) → profil immédiatement, pas seulement dans le chat ni seulement dans le journal.
 - Ne jamais inventer un chiffre absent du feedback : `null` + note.
