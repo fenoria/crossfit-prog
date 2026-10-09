@@ -4,7 +4,7 @@ macro: macrocycle-02-elevation
 meso: ACC-STR
 phase_micro: pic
 prog: prog/saison-2026/macrocycle-02-elevation/meso-01-accumulation-force/S10-2026-10-05.md
-statut: en_cours  # feedback lun–mer reçu le 7 oct., jeudi le 9 oct. ; ven → dim à venir
+statut: en_cours  # feedback lun–mer reçu le 7 oct., jeudi et vendredi le 9 oct. ; sam → dim à venir
 
 jours:
   lundi:
@@ -27,23 +27,26 @@ jours:
     z2_ergo: BikeErg
     note: "Version complète (team RPE 7). Épaule 0/10 sur BMU, HSW, rotation externe et serratus. Repos > cible ~15 s : BikeErg plus facile que rameur / SkiErg pour 10 cal."
   vendredi:
-    fait: null
+    fait: oui
+    charges: "Deadlift 3×3 @ 160 kg RPE ≤ 7 · top set non tenté · tirage arraché 3×3 @ 105 kg RPE 8 · arraché puissance 3×1 @ 75 kg RPE 8"
+    z2_min: 0
+    note: "Deadlift en haut de fourchette à RPE ≤ 7 : critère du top set rempli mais non tenté. Barre en haut de fourchette, RPE 8 (cible ≤ 7–7,5) après le deadlift. Épaule 0/10, y compris en réception d'arraché."
   samedi:
     fait: null
   dimanche:
     fait: null
 
 realise:
-  force_lower_sets: null
-  force_lower_sets_note: "Partiel au 7 oct. : BS 5 + FS pause 3 = 8 ; deadlift vendredi à venir"
+  force_lower_sets: 11
+  force_lower_sets_note: "BS 5 + FS pause 3 + deadlift 3 (sous MRV 12)"
   force_upper_sets: 8
   force_upper_sets_note: "Press 4 + tractions 4"
-  oly_lifts: null
-  oly_lifts_note: "Vendredi à venir"
+  oly_lifts: 12
+  oly_lifts_note: "Tirage arraché 3×3 + arraché puissance 3×1"
   gym_min: null
   gym_min_note: "Touch mardi (HSW + suspensions) non chronométré ; jeudi : EMOM BMU 10' + HSW 3× (durée HSW non chronométrée)"
   z2_min: null
-  z2_min_note: "Finisher lundi 12–15' (durée exacte non notée) + jeudi 25' ; samedi à venir"
+  z2_min_note: "Finisher lundi 12–15' (durée exacte non notée) + jeudi 25' + vendredi 0 ; samedi à venir"
   threshold_min: null
   hard_min: null
   hard_min_note: "Team mercredi 27' RPE 7 — même convention que S06 / S09 (non compté en minutes dures sous RPE 8)"
@@ -66,10 +69,10 @@ decoupage_gym:
 reperes:
   back_squat: "115 kg × 5×3 repos 2' tenu, RPE 7"  # format de référence, rejoué à chaque macro
   front_squat_pause: "100 kg × 3×3, RPE 7"
-  deadlift: null  # kg × reps @ RPE · top set kg × 2 @ RPE
+  deadlift: "160 kg × 3×3, RPE ≤ 7 · top set non tenté"
   strict_press: "60 kg × 4×4, RPE 8"
   traction_lestee: null  # +kg × reps @ RPE (mardi : +28–30, charge exacte non notée)
-  arrache_puissance: null  # kg @ RPE (vendredi)
+  arrache_puissance: "75 kg × 3×1, RPE 8 (après deadlift) · tirage 105 kg × 3×3, RPE 8"
   zone2_support_duree: null  # support · minutes (samedi)
   zone2_fc: null  # FC moyenne · FC fin de sortie · allure ou puissance moyenne
   zone2_plafond_fc: null  # FC où la phrase complète devient difficile
@@ -77,9 +80,7 @@ reperes:
   fc_max_vue: null
 
 a_verifier:
-  - "Deadlift : RPE réel, top set tenté ?"
-  - "Épaule : douleur au quotidien ?"
-  - "Zone 2 ≥ 60 min sur la semaine ?"
+  - "Zone 2 ≥ 60 min sur la semaine ? (au 9 oct. : ~37–40' lun + jeu → samedi doit couvrir ≥ 20–25')"
   - "Prêt à basculer sur la puissance (S11) ?"
 
 flags:
@@ -87,6 +88,7 @@ flags:
   - "Adducteur : tension légère sur le palier 1, sans douleur"
   - "Épaule gauche : 2/10 sur STOH (DB 22,5) au team, supportable ; C2B indolores"
   - "Épaule : 0/10 jeudi sur BMU, HSW, rotation externe et serratus"
+  - "Épaule : 0/10 vendredi, réception d'arraché à 75 comprise"
 
 ecarts_prescrit_vs_realise:
   - mouvement: strict_press
@@ -99,6 +101,16 @@ ecarts_prescrit_vs_realise:
     realise: "EMOM 10' : 4 BMU + 10 cal BikeErg, ~20 s de repos"
     sens: au_dessus
     action: surveiller  # 1re occurrence ; ergo non précisé dans la prescription — préciser l'ergo ou monter à 12 cal BikeErg si ça se répète
+  - mouvement: arrache_puissance
+    prescrit: "3×1 @ 70–75 kg RPE ≤ 7 · tirage 3×3 @ 95–105 kg RPE ≤ 7,5"
+    realise: "3×1 @ 75 kg RPE 8 · tirage 3×3 @ 105 kg RPE 8"
+    sens: au_dessus  # RPE au-dessus de la cible au haut de fourchette ; S09 : 73 / 100 à RPE ≤ 7, sans deadlift lourd avant
+    action: surveiller  # placé après un deadlift 3×3 @ 160 ; pas de ré-ancrage tant que ça ne se répète pas en séance fraîche
+  - mouvement: deadlift
+    prescrit: "3×3 @ 155–160 kg RPE 7–8, top set 172,5–177,5 si RPE ≤ 7"
+    realise: "3×3 @ 160 kg RPE ≤ 7, top set non tenté"
+    sens: autre
+    action: rien  # 1re semaine de deadlift lourd du macro ; marge confirmée à 160
 
 gate: null
 synthese: >
@@ -106,6 +118,7 @@ synthese: >
   Press monté à 4×4 @ 60 par choix, RPE 8, gêne d'épaule 1–2/10 seulement sur ce geste. Adducteur : tension légère, sans douleur.
   Team 27' RPE 7 (~65 % des reps, C2B au-delà du partage prévu) ; épaule gauche 2/10 sur STOH.
   Jeudi complet : BMU EMOM 10' avec ~20 s de repos (BikeErg), épaule 0/10 sur tous les gestes gym, Zone 2 25' BikeErg (prescrit 10').
+  Vendredi : deadlift 3×3 @ 160 à RPE ≤ 7 (top set non tenté), tirage 105 et arraché puissance 75 à RPE 8 après le deadlift ; épaule 0/10. Pas de Zone 2.
 suite: >
-  Vendredi et samedi inchangés (deadlift 3×3 @ 155–160 avec option top set, sortie mesure samedi).
+  Samedi inchangé (sortie longue + bloc seuil, séance de mesure) ; la Zone 2 de la semaine dépend de lui (~37–40' au compteur pour un plancher de 60').
   S11 : palier 2 adducteur confirmé ; push press à surveiller côté épaule (0–2/10).
