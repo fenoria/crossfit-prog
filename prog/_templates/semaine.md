@@ -6,6 +6,8 @@
 
 **Meso** : [nom] · **Macrocycle N — [nom]** · **Saison YYYY**
 
+**Phase micro** : volume adapté | surcharge | pic | deload (si meso chargé)
+
 ## Objectif de la semaine
 
 [une ligne — ex. mesurer les charges actuelles à RPE 8 pour fixer les repères du meso — ou 2–3 puces si objectifs distincts]
@@ -20,10 +22,6 @@
 ### Fondements (corpus)
 
 - **[Auteur]** (*Titre*) — [principe en 1–2 phrases].
-
-### Microcycle (si meso chargé)
-
-**Phase micro** : volume adapté | surcharge | pic | deload
 
 ---
 
