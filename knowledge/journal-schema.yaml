@@ -7,13 +7,13 @@
 # l'historique s'arrête en silence (cas S05, non distillée) et les écarts entre
 # prescrit et réalisé se détectent des semaines trop tard (cf. arbitrages.md §15).
 
-version: 2
+version: 3
 status: validated
 updated: 2026-10-09
 
 regles:
-  - "Une entrée par semaine, créée dès que la semaine est écrite, complétée au fil des feedbacks."
-  - "Source : blocs Notes / feedback de la semaine dans prog/ (SoT du réalisé) — le journal les structure, il ne les remplace pas."
+  - "Une entrée par semaine, créée dès que la semaine est écrite (statut planifiee, reperes à null, a_verifier), complétée au fil des feedbacks."
+  - "Le journal est la SoT du réalisé : le feedback (QCM ou collé) s'écrit ici directement. La semaine prog/ ne reçoit qu'une section « Bilan » lisible (synthèse, repères, suite) en fin de semaine. Dès S10 ; S01–S09 gardent leurs blocs Notes en archive."
   - "Ne jamais inventer un chiffre absent du feedback : mettre null et documenter dans la clé *_note."
   - "Un fait durable (plafond de charge, contrainte planning, cran gym, gêne récurrente) remonte AUSSI au profil."
   - "Le journal est une archive : on n'y réécrit pas le passé, on ajoute."
@@ -55,6 +55,15 @@ champs:
     mouvement, découpage annoncé, découpage tenu, cadence première vs dernière série
     (stable | en baisse). null si non noté.
 
+  reperes: >
+    Relevés attendus de la semaine (charges de référence, repères puissance / gym / aérobie),
+    clé = repère, valeur = texte libre. Créés à null à l'écriture de la semaine, format attendu
+    en commentaire de fin de ligne ; remplis au feedback, repris dans la section Bilan.
+
+  a_verifier: >
+    Liste de questions à trancher au bilan (sensations, critères de passage, gate de macro).
+    Écrite avec la semaine ; le QCM les couvre, la réponse va dans jours / flags / synthese.
+
   flags: "liste courte de faits saillants (douleur, ampoules, séance déplacée, volume hors prog)"
 
   ecarts_prescrit_vs_realise: >
@@ -63,7 +72,7 @@ champs:
     sur le même mouvement = la prescription est fausse, pas l'athlète : on ré-ancre.
 
   gate: "état de la gate de meso si la semaine est en fin de bloc"
-  synthese: "2–4 phrases — reprise de la Synthèse semaine de prog/"
+  synthese: "2–4 phrases, version coach (la Synthèse du Bilan dans prog/ en est la version lisible)"
   suite: "ce qui a été décidé pour la semaine suivante"
 
 audit:

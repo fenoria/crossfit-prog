@@ -225,10 +225,10 @@ coaching:
   feedback_loop: true
   language: fr
   pedagogy_required: true
-  feedback_schema: "blocs Notes / feedback (### par jour) dans prog/_templates/semaine.md"
+  feedback_schema: "réalisé jour par jour dans le journal (knowledge/journal-schema.yaml) ; dans prog/, section « Bilan » seulement en fin de semaine — pas de bloc feedback vide dans les semaines (préférence 2026-10-09)"
   feedback_mode: qcm_interactif  # feedback hebdo demandé → QCM AskUserQuestion construit depuis la semaine (skill session-feedback, « Mode QCM »)
   journal_required: true  # tout feedback → entrée journal/ (knowledge/journal-schema.yaml) ; profil = état durable seulement
-  prog_immutability: "semaine commencée/passée = contenu séances figé ; mise en forme OK ; Notes OK ; adaptations = futur only"
+  prog_immutability: "semaine commencée/passée = contenu séances figé ; mise en forme OK ; Bilan OK ; adaptations = futur only"
   # S04 sam 29 : EMOM 4 BMU + 10 cal et 2 RMU + 10 cal — ~15 s repos/min, passé (plafond)
   gym_couplet_dose: "EMOM 60s : viser ~15 s repos. Chez Thierry 10 cal easy = plafond tenu (S04). Si repos < 12 s ou casse → −cal ou E2MOM. 250 m = E2MOM."
   mrv_signals:

@@ -16,7 +16,7 @@ Règles : **`.claude/rules/prog-writing.md`**.
 ## Steps
 1. Objectif / date (ou Build sans A-event).
 2. Saison → Macro (`macrocycle-NN-<slug>/`) → Meso (`meso-NN-<slug>/`, template meso).
-3. Semaines depuis `prog/_templates/semaine.md` : pattern/warmup comments, fondements, feedback.
+3. Semaines depuis `prog/_templates/semaine.md` : pattern/warmup comments, fondements ; pas de bloc feedback (entrée de journal `planifiee` avec `reperes` / `a_verifier`, Bilan ajouté au feedback).
 4. Microcycle Israetel : volume → surcharge → pic → deload.
 5. Index (« En cours » = auto par date) ; calendrier (fenêtres, semaines, mesures) → `knowledge/instances/<saison>.yaml` uniquement ; arbitrage → profil ou `knowledge/arbitrages.md`.
 6. **Obligatoire** : `npm run lint:prog` — zéro ERROR.

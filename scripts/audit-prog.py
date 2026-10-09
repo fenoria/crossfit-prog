@@ -7,7 +7,7 @@ Ce module contrôle le FOND mesurable :
 - volumes hebdo vs bornes MEV / MRV du profil athlète
 - doses de maintien minimales du code meso (maintenance-doses.yaml)
 - caps energy systems (conditioning-matrix.yaml)
-- boucle de feedback : semaine passée sans Notes remplies ni entrée de journal
+- boucle de feedback : semaine passée sans entrée de journal ou avec des jours vides
 - écart prescrit / réalisé répété : la prescription est fausse, pas l'athlète
 - couverture des familles de mouvements CrossFit (movement-coverage.yaml)
 
@@ -317,14 +317,13 @@ def check_feedback_loop(
     entry = journal_dir / f"{path.stem}.yaml"
     if not entry.exists():
         warnings.append(f"{rel} : semaine passée sans entrée de journal ({entry.name})")
-    notes = text.split("## Notes", 1)[-1]
+        return
+    jours = (miniyaml.load(entry) or {}).get("jours") or {}
     filled = [
-        line
-        for line in re.findall(r"^-\s+\*\*Fait\*\*\s*:\s*(.*)$", notes, re.M)
-        if line.strip() and "/" not in line.strip()
+        day for day, info in jours.items() if isinstance(info, dict) and info.get("fait") is not None
     ]
     if not filled:
-        warnings.append(f"{rel} : semaine passée sans feedback rempli (blocs Notes vides)")
+        warnings.append(f"{rel} : semaine passée sans feedback rempli (jours du journal vides)")
 
 
 def check_ecarts(journal_dir: Path, warnings: list[str]) -> None:

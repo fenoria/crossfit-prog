@@ -28,7 +28,7 @@ paths:
 - `Objectif de la semaine` + `Intention` du jour systématiques ; en tête de semaine, pas créneau / matériel / profil.
 - RPE → repère charge/allure si possible. **Tout mouvement chargé (barre, DB/KB, lest, sac) porte une charge en kg**, accessoires compris : sans historique, fourchette de départ dérivée d'un lift connu (repère cité dans la ligne) + condition de montée.
 - Cibles **chiffrées** (reps, RPE, durée, repos) ; échauffements **en entier** ; pas de section glossaire ni de bloc « Règles » en tête de semaine : l’athlète lit d’abord le corps des séances → toute précision utile (sens d’un format, repère de hauteur, RPE visé d’un bloc, seuil d’arrêt, condition « si… → … », plancher Zone 2) va **dans la séance, sur la ligne de l’exercice concerné**.
-- **Écrire ce qu'on fait, pas ce qu'on ne fait pas** : pas de mouvements « hors plan » / « sortis du plan », pas de liste « pas de X cette semaine », pas d'historique « déplacé / remplacé / reporté / au lieu de ». Une restriction (blessure, plafond) s'exprime par la prescription positive (charge, geste, condition de progression). OK : consignes d'exécution (« sans pause », « réception tenue »), conditions « si… → … », et blocs Notes/feedback (récit de ce qui s'est passé).
+- **Écrire ce qu'on fait, pas ce qu'on ne fait pas** : pas de mouvements « hors plan » / « sortis du plan », pas de liste « pas de X cette semaine », pas d'historique « déplacé / remplacé / reporté / au lieu de ». Une restriction (blessure, plafond) s'exprime par la prescription positive (charge, geste, condition de progression). OK : consignes d'exécution (« sans pause », « réception tenue »), conditions « si… → … », et bloc Bilan (récit de ce qui s'est passé).
 - Interdit visible : chemins `knowledge/` / `athletes/`, champs profile, ids `warmup_*` / patterns seuls, codes meso bruts sans nom lisible.
 - Métadonnées coach : `<!-- pattern: … -->` · `<!-- warmup: … -->` · en tête de semaine `<!-- meso: … -->`, `<!-- dose: … -->`, `<!-- dose-note: … -->`.
 
@@ -56,7 +56,7 @@ Exemple : `[EMOM **8'**](https://timer.fenoria.fr/?type=emom&pre=10&rounds=8&wor
 
 ## Ops pack (semaine / meso)
 
-1. **Patterns** — `<!-- pattern: id -->` ∈ `knowledge/session-patterns.yaml` ; hors liste → Notes (+ profile si durable)
+1. **Patterns** — `<!-- pattern: id -->` ∈ `knowledge/session-patterns.yaml` ; hors liste → `flags` du journal (+ profile si durable)
 2. **Warm-ups** — id `knowledge/warmups.yaml` + échauffement **recopié en entier** (id invisible)
 3. **Maintien** — `knowledge/maintenance-doses.yaml` (code meso en français ; `REAL-mini` → `REAL`)
 4. **Gates** — pas de meso suivant sans `knowledge/meso-gates.yaml` (condition en français)
@@ -67,7 +67,8 @@ Exemple : `[EMOM **8'**](https://timer.fenoria.fr/?type=emom&pre=10&rounds=8&wor
 8. **Options** — bornées : choix limité, même intention, mêmes repères
 9. **Volumes** — % / sets sur `prs_current_kg` + volumes profile
 10. **Doses déclarées** — en tête de semaine, `<!-- meso: CODE -->` + `<!-- dose: … -->` (champs : `force_lower_sets`, `force_upper_sets`, `force_sessions`, `oly_lifts`, `oly_sessions`, `gym_min`, `gym_sessions`, `z2_min`, `hard_min`, `hard_sessions`, `team_sessions`, `threshold_min`, `threshold_sessions`, `alactic_sec`, `alactic_sessions`, `exempt`, `mixed` = liste d'ids de familles de mouvements, ex. `mixed=corde,sauts,objets`). Comptent : séries à RPE ≥ 6–7 des patterns force, gestes de qualité barre (singles / doubles / tirages, hors cycling), minutes de skill hors warm-up, minutes Z2 des séances dédiées (le plancher hebdo se vérifie sur le réalisé du journal), minutes d'effort dur **programmé** (le team compte en `team_sessions`). Exemption justifiée → `exempt=…` + `<!-- dose-note: … -->`. Vérifié par `scripts/audit-prog.py`.
-11. **Feedback** — Notes (`###` par jour) : Fait · Charges / score · Zone 2 (minutes + ergo, lun–ven) · Note ; RPE par mouvement inline dans Charges ; fatigue / douleur dans Note ; **mercredi team** : RPE séance explicite (seuil J+1) + mouvements et charges ; suite en « Suite prévue : … » ; puis entrée de journal (`athletes/<id>/journal/`)
+11. **Feedback** — pas de bloc feedback à l'écriture de la semaine : ce qu'il faut relever se dit dans la séance (« noter … » sur la ligne). Le réalisé jour par jour va **directement dans le journal** (`athletes/<id>/journal/`, recueilli par QCM — skill `session-feedback`). À l'écriture, l'entrée de journal (`statut: planifiee`) porte les `reperes` attendus (à `null`) et les points `a_verifier` au bilan. Au feedback de fin de semaine seulement, ajouter en fin de fichier une section `## Bilan` : **Synthèse semaine** (récit lisible pour l'athlète, chiffres clés) · **Repères** si la semaine en relève · **Suite prévue**
+12. **Variété** — `knowledge/movement-coverage.yaml` : minimum de familles de mouvements par semaine selon le meso, six familles requises par meso ; blocs courts RPE 6–7 ou dans les formats mixed · WOD team : mouvements notés dans le journal
 12. **Variété** — `knowledge/movement-coverage.yaml` : minimum de familles de mouvements par semaine selon le meso, six familles requises par meso ; blocs courts RPE 6–7 ou dans les formats mixed · WOD team : mouvements notés dans le feedback
 13. **Lint** — `npm run lint:prog` obligatoire après write-week / generate (forme + audit des doses)
 
@@ -81,4 +82,4 @@ Source : `schedule`, `equipment`, préférences du profil. Samedi selon `schedul
 
 ## Immutabilité
 
-Semaine **commencée ou passée** : interdit de modifier le contenu prescrit (exercices, doses, structure). OK : mise en forme cosmétique, blocs Notes/feedback. Adaptations → semaines futures uniquement.
+Semaine **commencée ou passée** : interdit de modifier le contenu prescrit (exercices, doses, structure). OK : mise en forme cosmétique, section Bilan (les blocs Notes des semaines S01–S09 restent en archive). Adaptations → semaines futures uniquement.

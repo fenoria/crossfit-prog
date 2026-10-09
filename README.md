@@ -47,6 +47,6 @@ npm run lint:prog    # garde-fou structure prog/
 
 ## Coaching
 
-Feedback séance → blocs **Notes / feedback** (un jour = un titre) dans la semaine `prog/`.  
+Feedback séance → journal [`athletes/<id>/journal/`](athletes/) (réalisé jour par jour, QCM) · en fin de semaine, section **Bilan** (synthèse, repères, suite) dans la semaine `prog/`.  
 Décisions durables : [`athletes/<id>/profile.yaml`](athletes/) (via [`current.yaml`](athletes/current.yaml)) · conflits corpus : [`knowledge/arbitrages.md`](knowledge/arbitrages.md).  
 Ops pack : `knowledge/maintenance-doses.yaml`, `meso-gates.yaml`, `gym-ladder.md`, etc. · lint : `npm run lint:prog`

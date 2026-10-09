@@ -1,0 +1,20 @@
+semaine: S11
+dates: "2026-10-12 → 2026-10-18"
+macro: macrocycle-02-elevation
+meso: TRA-POW
+phase_micro: deload
+prog: prog/saison-2026/macrocycle-02-elevation/meso-02-conversion-puissance/S11-2026-10-12.md
+statut: planifiee
+
+reperes:
+  box_jump_hauteur: null  # hauteur de travail en cm (max 116 cm le 19 août)
+
+a_verifier:
+  - "Fatigue redescendue par rapport à la semaine de pic ?"
+  - "Squat de vitesse : barre rapide ou lourde ?"
+  - "Box jumps et broad jumps : explosifs ou mous ?"
+  - "Push press indolore (0–2/10) ?"
+  - "Vitesse sous la barre : sensations ?"
+  - "Gym touch OK, poussée indolore toute la semaine ?"
+  - "DU et KB swing : sensations ?"
+  - "Zone 2 ≥ 60 min sur la semaine ?"

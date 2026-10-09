@@ -175,8 +175,8 @@ def check_week(
     if "**Pourquoi**" not in text:
         warnings.append(f"{rel} : **Pourquoi** manquant")
 
-    if "Notes / feedback" not in text and "## Notes" not in text:
-        warnings.append(f"{rel} : section Notes / feedback absente")
+    if past and "## Bilan" not in text and "## Notes" not in text:
+        warnings.append(f"{rel} : semaine passée sans section Bilan")
 
     for m in INTERNAL_LEAK.finditer(visible):
         errors.append(f"{rel} : ref interne visible « {m.group(0)} » (réservé knowledge/agent)")

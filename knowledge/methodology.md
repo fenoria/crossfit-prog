@@ -192,8 +192,8 @@ Progresser, sur ces tests, c’est souvent **le même score avec plus de repos**
 
 ## 7. Adaptation coaching
 
-- Feedback post-séance (blocs Notes semaine) → ajuster volume/variante **sans changer l’intention du meso**.
-- Planning ponctuel (vacances) → Z2 ou séance réduite (noter dans Notes de la semaine ; durable → profile).
+- Feedback post-séance (journal de la semaine) → ajuster volume/variante **sans changer l’intention du meso**.
+- Planning ponctuel (vacances) → Z2 ou séance réduite (noter dans le journal de la semaine ; durable → profile).
 - Douleur signalée (dont adducteur) → `knowledge/adductor-protocol.yaml` — **pas** de score quotidien demandé.
 - Team RPE ≥ 8 → −volume J+1.
 - **Boucle fermée** : chaque semaine passée se distille dans une entrée de journal (`athletes/<id>/journal/`, schéma `knowledge/journal-schema.yaml`). L’audit signale une semaine passée sans feedback ni entrée. Une boucle ouverte, c’est une semaine qui n’a servi à rien d’autre qu’à s’entraîner.

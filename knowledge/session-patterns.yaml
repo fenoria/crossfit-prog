@@ -22,7 +22,7 @@ common:
   accessory_or_finisher_min: 10-20
   always_respect: [current_benchmarks, no_guided_machines, no_pre_injury_prs]
   warmup_ids_ref: knowledge/warmups.yaml
-  off_pattern_requires: "justifier dans Notes de la semaine (+ profil athlète actif si contrainte durable)"
+  off_pattern_requires: "justifier dans le journal de la semaine (flags) (+ profil athlète actif si contrainte durable)"
   accessory_rotation:
     rule: >
       Lifts et skills stables sur le meso ; accessoires = nouvelle banque à chaque meso.

@@ -63,6 +63,25 @@ decoupage_gym:
     note: "Binôme a lâché, part assumée ~65 %"
     cadence: null
 
+reperes:
+  back_squat: "115 kg × 5×3 repos 2' tenu, RPE 7"  # format de référence, rejoué à chaque macro
+  front_squat_pause: "100 kg × 3×3, RPE 7"
+  deadlift: null  # kg × reps @ RPE · top set kg × 2 @ RPE
+  strict_press: "60 kg × 4×4, RPE 8"
+  traction_lestee: null  # +kg × reps @ RPE (mardi : +28–30, charge exacte non notée)
+  arrache_puissance: null  # kg @ RPE (vendredi)
+  zone2_support_duree: null  # support · minutes (samedi)
+  zone2_fc: null  # FC moyenne · FC fin de sortie · allure ou puissance moyenne
+  zone2_plafond_fc: null  # FC où la phrase complète devient difficile
+  seuil: null  # allure ou split moyen · FC moyenne 3e intervalle · écart intervalle 1 → 5 en %
+  fc_max_vue: null
+
+a_verifier:
+  - "Deadlift : RPE réel, top set tenté ?"
+  - "Épaule : douleur au quotidien ?"
+  - "Zone 2 ≥ 60 min sur la semaine ?"
+  - "Prêt à basculer sur la puissance (S11) ?"
+
 flags:
   - "Épaule : gêne 1–2/10 sur strict press seulement, sous le seuil d'arrêt ; RMU / HSPU hors plan, tractions / HSW / suspensions indolores"
   - "Adducteur : tension légère sur le palier 1, sans douleur"

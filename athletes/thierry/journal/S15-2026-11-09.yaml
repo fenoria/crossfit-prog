@@ -1,0 +1,26 @@
+semaine: S15
+dates: "2026-11-09 → 2026-11-15"
+macro: macrocycle-02-elevation
+meso: TRA-MIX
+phase_micro: deload
+prog: prog/saison-2026/macrocycle-02-elevation/meso-03-conversion-mixed/S15-2026-11-09.md
+statut: planifiee
+
+reperes:
+  format_lundi: null  # temps total · passage par bloc · découpage tenu WB / T2B / épaulés / BMU
+  bmu_couplet: null  # minutes propres à 4 BMU + 10 cal · repos moyen en s · ergo (référence, à rejouer à l'identique)
+  rmu_serie: null  # reps en série propre, ou « non relevé — épaule »
+  hspu_serie: null  # kipping ou strict, reps (strict de référence en août : 10), ou « non relevé — épaule »
+  du_serie: null  # série max sans casse
+  t2b_serie: null  # reps en série propre
+  hsw: null  # mètres et nombre de pivots
+  fatigue_15_nov: null  # 1–5
+
+a_verifier:
+  - "Gate d'entrée du bloc gym : formats mixed digérés · repères gym notés · semaine indolore · fatigue basse au 15 novembre"
+  - "Bilan Macro 2, force : ce qui a progressé (hinge, traction, press), ce qui est resté plafonné"
+  - "Bilan Macro 2, puissance : charges de barre et cycling"
+  - "Bilan Macro 2, mixed : ce qui a limité en format (gym, barre, souffle, mains)"
+  - "Bilan Macro 2, variété : familles de mouvements qui ont posé problème (corde, sauts, objets, haltères, course chargée)"
+  - "Bilan Macro 2, épaule : RMU / HSPU travaillés ? douleur en poussée /10"
+  - "À prioriser dans le bloc d'accumulation gym"
