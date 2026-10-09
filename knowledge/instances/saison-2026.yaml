@@ -67,6 +67,7 @@ note_chemin: >
 
 macrocycles:
   macro_1_build:
+    label: "Build → Fire"  # libellé affiché sur le dashboard analytics
     fenetre: "2026-08-03 → 2026-09-20"
     semaines: [S01, S02, S03, S04, S05, S06, S07]
     mesos:
@@ -75,6 +76,7 @@ macrocycles:
       REAL: [S06]
       TRANS: [S07]
   macro_2_elevation:
+    label: "Élévation"  # libellé affiché sur le dashboard analytics
     fenetre: "2026-09-21 → 2026-11-15"
     semaines: [S08, S09, S10, S11, S12, S13, S14, S15]
     mesos:
@@ -85,6 +87,7 @@ macrocycles:
       S08: "tronquée — vacances Milan 24–28 sept. (décharge intégrée)"
       S11: "décharge force ET entrée du bloc puissance — pas de semaine deload séparée"
   macro_3_accumulation_gym:
+    label: "Accumulation gym"  # libellé affiché sur le dashboard analytics
     fenetre: "2026-11-16 → 2026-12-20"
     semaines: [S16, S17, S18, S19, S20]
     mesos:

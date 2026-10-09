@@ -1,6 +1,8 @@
 <script setup lang="ts">
-import data from '../analytics/data.json'
+import { useSeasonData } from '../analytics/useSeasonData'
 import { wk } from '../analytics/useTip'
+
+const data = useSeasonData()
 </script>
 
 <template>

@@ -136,6 +136,12 @@ function defaultSeasonLink(): string {
   return `/${seasons[0]}/`
 }
 
+/** Analytics de la saison la plus récente qui a une page `analytics.md` (sinon l'accueil). */
+function analyticsLink(): string {
+  const season = seasonDirsNewestFirst().find((name: string) => existsSync(join(progDir, name, 'analytics.md')))
+  return season ? `/${season}/analytics` : '/'
+}
+
 function buildDirItems(dir: string): DefaultTheme.SidebarItem[] {
   if (!existsSync(dir)) return []
   const entries = sortEntries(readdirSync(dir))
@@ -215,7 +221,6 @@ const outilsItems: DefaultTheme.SidebarItem[] = [
 
 const sidebarItems: DefaultTheme.SidebarItem[] = [
   ...buildSeasonItems(currentSeason),
-  { text: 'Analytics', link: '/analytics/' },
   {
     text: 'Outils',
     collapsed: false,
@@ -251,7 +256,7 @@ export default defineConfig({
   cleanUrls: true,
   appearance: 'dark',
   transformPageData(pageData) {
-    if (pageData.relativePath.startsWith('outils/') || pageData.relativePath.startsWith('analytics/')) {
+    if (pageData.relativePath.startsWith('outils/') || pageData.relativePath.endsWith('/analytics.md')) {
       pageData.frontmatter.aside = false
     }
   },
@@ -270,7 +275,7 @@ export default defineConfig({
         items: outilsItems,
       },
       { text: 'Saisons', link: defaultSeasonLink() },
-      { text: 'Analytics', link: '/analytics/' },
+      { text: 'Analytics', link: analyticsLink() },
       { text: 'En cours', link: '/en-cours' },
     ],
     sidebar: {

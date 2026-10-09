@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
-"""Génère les données des dashboards prog/analytics/ depuis le journal.
+"""Génère les données des dashboard prog/saison-*/analytics.md depuis le journal.
 
-Entrées  : athletes/<id>/journal/S*.yaml (SoT du réalisé, schéma v3), profile.yaml,
+Entrées  : athletes/<id>/journal/S*.yaml (SoT du réalisé, schéma v3), profile.yaml (saison archivée :
+           athletes/<id>/seasons/<saison>.yaml, profil gelé en fin de saison),
            knowledge/instances/saison-*.yaml (calendrier), doses déclarées des semaines prog/.
 Règles   : .claude/rules/analytics.md
-Sortie   : .vitepress/theme/analytics/data.json (lu par les composants An*.vue).
+Sortie   : .vitepress/theme/analytics/data/<saison>.json, un fichier par saison (lu par les composants An*.vue
+           d'après le dossier de la page : prog/saison-2026/analytics.md ↔ data/saison-2026.json).
 
 Aucun chiffre n'est inventé : champ absent ou null = point absent du graphe.
-Usage    : npm run build:analytics
+Usage    : npm run build:analytics [saison-2026 …]   (sans argument : toutes les saisons actives ou archivées)
 """
 
 from __future__ import annotations
@@ -22,7 +24,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import miniyaml  # noqa: E402
 
-OUT = ROOT / ".vitepress" / "theme" / "analytics" / "data.json"
+OUT_DIR = ROOT / ".vitepress" / "theme" / "analytics" / "data"
 
 MESO_LABELS = {
     "benchmarks": "Benchmarks",
@@ -33,14 +35,21 @@ MESO_LABELS = {
     "TRA-POW": "Conversion puissance",
     "TRA-MIX": "Conversion mixed",
 }
-PHASES = [
-    {"id": "m1", "label": "Macro 1 · Build → Fire", "color": "s1"},
-    {"id": "m2", "label": "Macro 2 · Élévation", "color": "s2"},
-    {"id": "m3", "label": "Macro 3 · Accumulation gym", "color": "s3"},
-    {"id": "tr", "label": "Transition", "color": "s5"},
-    {"id": "op", "label": "Prépa Open · Open", "color": "s4"},
-]
-MACRO_PHASE = {"macro_1_build": "m1", "macro_2_elevation": "m2", "macro_3_accumulation_gym": "m3"}
+MACRO_COLORS = ["s1", "s2", "s3"]
+
+
+def phases_for(instance: dict) -> tuple[list[dict], dict[str, str]]:
+    """Phases de la frise : une par macrocycle (dans l'ordre de l'instance), puis transition et Open."""
+    phases, macro_phase = [], {}
+    macros = [(k, m) for k, m in (instance.get("macrocycles") or {}).items() if isinstance(m, dict) and m.get("semaines")]
+    for i, (key, m) in enumerate(macros, start=1):
+        label = m.get("label") or re.sub(r"^macro_\d+_", "", key).replace("_", " ").capitalize()
+        phases.append({"id": f"m{i}", "label": f"Macro {i} · {label}", "color": MACRO_COLORS[(i - 1) % len(MACRO_COLORS)]})
+        macro_phase[key] = f"m{i}"
+    phases.append({"id": "tr", "label": "Transition", "color": "s5"})
+    phases.append({"id": "op", "label": "Prépa Open · Open", "color": "s4"})
+    return phases, macro_phase
+
 
 # Mouvements suivis : (id, libellé, clé du profil pour la référence pré-blessure ou None)
 LIFTS = [
@@ -123,21 +132,34 @@ def active_athlete() -> str:
     return (miniyaml.load(ROOT / "athletes" / "current.yaml") or {}).get("id", "")
 
 
-def load_instance() -> dict:
+def load_instances() -> list[tuple[str, dict]]:
+    """Instances de saison à construire : knowledge/instances/saison-*.yaml au statut active ou archived."""
+    out = []
     for f in sorted((ROOT / "knowledge" / "instances").glob("saison-*.yaml")):
         data = miniyaml.load(f) or {}
-        if data.get("status") == "active":
-            return data
-    raise SystemExit("aucune instance de saison active dans knowledge/instances/")
+        if data.get("status") in ("active", "archived"):
+            out.append((f.stem, data))
+    if not out:
+        raise SystemExit("aucune instance de saison active ou archivée dans knowledge/instances/")
+    return out
 
 
-def build_weeks(instance: dict, journals: dict[int, dict], today: date) -> list[dict]:
+def season_window(instance: dict) -> tuple[date, date]:
+    """[début du 1er macrocycle, fin de la dernière semaine d'échéance[ : sert aussi à filtrer les journaux."""
     macros = instance.get("macrocycles") or {}
-    start = d(macros["macro_1_build"]["fenetre"].split("→")[0].strip())
+    first = next(m for m in macros.values() if isinstance(m, dict) and "fenetre" in m)
+    start = d(first["fenetre"].split("→")[0].strip())
+    open_week = [d(w["fait_box"]) for w in instance["echeance_suivante"]["workouts"]]
+    open_start = open_week[0] - timedelta(days=open_week[0].weekday())
+    return start, open_start + timedelta(weeks=len({x - timedelta(days=x.weekday()) for x in open_week}))
+
+
+def build_weeks(instance: dict, journals: dict[int, dict], today: date, macro_phase: dict[str, str]) -> list[dict]:
+    macros = instance.get("macrocycles") or {}
+    start, open_end = season_window(instance)
     trans_end = d(macros["transition"]["fenetre"].split("→")[1].strip())
     open_week = [d(w["fait_box"]) for w in instance["echeance_suivante"]["workouts"]]
     open_start = open_week[0] - timedelta(days=open_week[0].weekday())
-    open_end = open_start + timedelta(weeks=len({x - timedelta(days=x.weekday()) for x in open_week}))
 
     meso_of: dict[str, tuple[str, str]] = {}
     for key, macro in macros.items():
@@ -153,8 +175,8 @@ def build_weeks(instance: dict, journals: dict[int, dict], today: date) -> list[
         monday = start + timedelta(weeks=i)
         if sid in meso_of:
             key, code = meso_of[sid]
-            phase, meso = MACRO_PHASE.get(key, "tr"), MESO_LABELS.get(code, code)
-            if key == "macro_1_build" and code == "TRANS":
+            phase, meso = macro_phase.get(key, "tr"), MESO_LABELS.get(code, code)
+            if code == "TRANS" and phase == "m1":
                 meso = "Transition mini"
             short = SHORT.get(code, code)
         elif monday <= trans_end:
@@ -176,22 +198,29 @@ def build_weeks(instance: dict, journals: dict[int, dict], today: date) -> list[
     return weeks
 
 
-def main() -> int:
-    athlete = active_athlete()
-    adir = ROOT / "athletes" / athlete
-    profile = miniyaml.load(adir / "profile.yaml") or {}
-    instance = load_instance()
-    today = date.today()
+def profile_for(season_id: str, instance: dict, adir: Path, current: dict) -> dict:
+    """Saison active : profil courant. Saison archivée : profil de fin de saison gelé dans athletes/<id>/seasons/."""
+    if instance.get("status") != "archived":
+        return current
+    snapshot = adir / "seasons" / f"{season_id}.yaml"
+    if snapshot.exists():
+        return miniyaml.load(snapshot) or {}
+    print(f"ATTENTION {season_id} archivée sans profil de fin de saison ({snapshot.relative_to(ROOT)}) : profil courant utilisé",
+          file=sys.stderr)
+    return current
+
+
+def build_season(season_id: str, instance: dict, athlete: str, adir: Path, profile: dict, today: date) -> None:
+    phases, macro_phase = phases_for(instance)
+    start, end = season_window(instance)
 
     journals: dict[int, dict] = {}
     for f in sorted((adir / "journal").glob("S*.yaml")):
-        data = miniyaml.load(f) or {}
-        try:
-            journals[int(f.name[1:3])] = data
-        except ValueError:
-            continue
+        m = re.match(r"S(\d+)-(\d{4}-\d{2}-\d{2})", f.name)
+        if m and start <= d(m.group(2)) < end:  # numérotation S01… propre à chaque saison : on filtre par dates
+            journals[int(m.group(1))] = miniyaml.load(f) or {}
 
-    weeks = build_weeks(instance, journals, today)
+    weeks = build_weeks(instance, journals, today, macro_phase)
     # Index de la dernière semaine qui a un réalisé (fait ou en cours)
     with_data = [w["n"] for w in weeks if w["done"] or (w["current"] and journals.get(w["n"], {}).get("series"))]
     last = max(with_data) if with_data else 1
@@ -323,7 +352,7 @@ def main() -> int:
         a, z = (d(x.strip()) for x in m["fenetre"].split("→"))
         if a <= today <= z:
             sems = m.get("semaines") or []
-            phase = next((p for p in PHASES if p["id"] == MACRO_PHASE.get(key, "tr")), {"label": key})
+            phase = next((p for p in phases if p["id"] == macro_phase.get(key, "tr")), {"label": key})
             macro = {
                 "label": phase["label"].split(" · ")[0] + (" · " + phase["label"].split(" · ")[1] if " · " in phase["label"] else ""),
                 "pct": round(((today - a).days + 1) / ((z - a).days + 1) * 100),
@@ -361,9 +390,10 @@ def main() -> int:
 
     data = {
         "generated": today.isoformat(),
+        "season": season_id,
         "athlete": athlete,
         "last": last - 1,  # index (0-based) de la dernière semaine avec réalisé
-        "phases": PHASES,
+        "phases": phases,
         "weeks": weeks,
         "kpis": {
             "weeks_done": len(closed), "weeks_total": len(weeks),
@@ -380,11 +410,24 @@ def main() -> int:
         "ladder": ladder,
         "markers": markers,
     }
-    OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    print(f"analytics : {len(weeks)} semaines, {len(lifts)} mouvements, dernière semaine S{last:02d} → {OUT.relative_to(ROOT)}")
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    out = OUT_DIR / f"{season_id}.json"
+    out.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    print(f"analytics {season_id} : {len(weeks)} semaines, {len(lifts)} mouvements, dernière semaine S{last:02d} → {out.relative_to(ROOT)}")
+
+
+def main(argv: list[str]) -> int:
+    athlete = active_athlete()
+    adir = ROOT / "athletes" / athlete
+    profile = miniyaml.load(adir / "profile.yaml") or {}
+    wanted = set(argv)
+    seasons = [(sid, inst) for sid, inst in load_instances() if not wanted or sid in wanted]
+    if wanted and len(seasons) != len(wanted):
+        raise SystemExit(f"saison inconnue parmi : {', '.join(sorted(wanted))}")
+    for sid, inst in seasons:
+        build_season(sid, inst, athlete, adir, profile_for(sid, inst, adir, profile), date.today())
     return 0
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    raise SystemExit(main(sys.argv[1:]))

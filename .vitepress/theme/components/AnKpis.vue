@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import data from '../analytics/data.json'
+import { useSeasonData } from '../analytics/useSeasonData'
+
+const data = useSeasonData()
 
 const k = data.kpis
 </script>

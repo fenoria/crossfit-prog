@@ -1,0 +1,1693 @@
+{
+ "generated": "2026-10-09",
+ "season": "saison-2026",
+ "athlete": "thierry",
+ "last": 9,
+ "phases": [
+  {
+   "id": "m1",
+   "label": "Macro 1 · Build → Fire",
+   "color": "s1"
+  },
+  {
+   "id": "m2",
+   "label": "Macro 2 · Élévation",
+   "color": "s2"
+  },
+  {
+   "id": "m3",
+   "label": "Macro 3 · Accumulation gym",
+   "color": "s3"
+  },
+  {
+   "id": "tr",
+   "label": "Transition",
+   "color": "s5"
+  },
+  {
+   "id": "op",
+   "label": "Prépa Open · Open",
+   "color": "s4"
+  }
+ ],
+ "weeks": [
+  {
+   "n": 1,
+   "id": "S01",
+   "start": "2026-08-03",
+   "phase": "m1",
+   "meso": "Benchmarks",
+   "short": "TEST",
+   "phase_micro": "test",
+   "done": true,
+   "current": false
+  },
+  {
+   "n": 2,
+   "id": "S02",
+   "start": "2026-08-10",
+   "phase": "m1",
+   "meso": "Accumulation gym",
+   "short": "GYM",
+   "phase_micro": "volume",
+   "done": true,
+   "current": false
+  },
+  {
+   "n": 3,
+   "id": "S03",
+   "start": "2026-08-17",
+   "phase": "m1",
+   "meso": "Accumulation gym",
+   "short": "GYM",
+   "phase_micro": "surcharge",
+   "done": true,
+   "current": false
+  },
+  {
+   "n": 4,
+   "id": "S04",
+   "start": "2026-08-24",
+   "phase": "m1",
+   "meso": "Accumulation gym",
+   "short": "GYM",
+   "phase_micro": "pic",
+   "done": true,
+   "current": false
+  },
+  {
+   "n": 5,
+   "id": "S05",
+   "start": "2026-08-31",
+   "phase": "m1",
+   "meso": "Accumulation gym",
+   "short": "GYM",
+   "phase_micro": "deload",
+   "done": true,
+   "current": false
+  },
+  {
+   "n": 6,
+   "id": "S06",
+   "start": "2026-09-07",
+   "phase": "m1",
+   "meso": "Expression Fire",
+   "short": "FIRE",
+   "phase_micro": "expression",
+   "done": true,
+   "current": false
+  },
+  {
+   "n": 7,
+   "id": "S07",
+   "start": "2026-09-14",
+   "phase": "m1",
+   "meso": "Transition mini",
+   "short": "TRANS",
+   "phase_micro": "transition",
+   "done": true,
+   "current": false
+  },
+  {
+   "n": 8,
+   "id": "S08",
+   "start": "2026-09-21",
+   "phase": "m2",
+   "meso": "Accumulation force",
+   "short": "FORCE",
+   "phase_micro": "volume",
+   "done": true,
+   "current": false
+  },
+  {
+   "n": 9,
+   "id": "S09",
+   "start": "2026-09-28",
+   "phase": "m2",
+   "meso": "Accumulation force",
+   "short": "FORCE",
+   "phase_micro": "volume",
+   "done": true,
+   "current": false
+  },
+  {
+   "n": 10,
+   "id": "S10",
+   "start": "2026-10-05",
+   "phase": "m2",
+   "meso": "Accumulation force",
+   "short": "FORCE",
+   "phase_micro": "pic",
+   "done": false,
+   "current": true
+  },
+  {
+   "n": 11,
+   "id": "S11",
+   "start": "2026-10-12",
+   "phase": "m2",
+   "meso": "Conversion puissance",
+   "short": "PUISS",
+   "phase_micro": "deload",
+   "done": false,
+   "current": false
+  },
+  {
+   "n": 12,
+   "id": "S12",
+   "start": "2026-10-19",
+   "phase": "m2",
+   "meso": "Conversion puissance",
+   "short": "PUISS",
+   "phase_micro": "surcharge",
+   "done": false,
+   "current": false
+  },
+  {
+   "n": 13,
+   "id": "S13",
+   "start": "2026-10-26",
+   "phase": "m2",
+   "meso": "Conversion mixed",
+   "short": "MIX",
+   "phase_micro": "volume",
+   "done": false,
+   "current": false
+  },
+  {
+   "n": 14,
+   "id": "S14",
+   "start": "2026-11-02",
+   "phase": "m2",
+   "meso": "Conversion mixed",
+   "short": "MIX",
+   "phase_micro": "surcharge",
+   "done": false,
+   "current": false
+  },
+  {
+   "n": 15,
+   "id": "S15",
+   "start": "2026-11-09",
+   "phase": "m2",
+   "meso": "Conversion mixed",
+   "short": "MIX",
+   "phase_micro": "deload",
+   "done": false,
+   "current": false
+  },
+  {
+   "n": 16,
+   "id": "S16",
+   "start": "2026-11-16",
+   "phase": "m3",
+   "meso": "Accumulation gym",
+   "short": "GYM",
+   "phase_micro": null,
+   "done": false,
+   "current": false
+  },
+  {
+   "n": 17,
+   "id": "S17",
+   "start": "2026-11-23",
+   "phase": "m3",
+   "meso": "Accumulation gym",
+   "short": "GYM",
+   "phase_micro": null,
+   "done": false,
+   "current": false
+  },
+  {
+   "n": 18,
+   "id": "S18",
+   "start": "2026-11-30",
+   "phase": "m3",
+   "meso": "Accumulation gym",
+   "short": "GYM",
+   "phase_micro": null,
+   "done": false,
+   "current": false
+  },
+  {
+   "n": 19,
+   "id": "S19",
+   "start": "2026-12-07",
+   "phase": "m3",
+   "meso": "Accumulation gym",
+   "short": "GYM",
+   "phase_micro": null,
+   "done": false,
+   "current": false
+  },
+  {
+   "n": 20,
+   "id": "S20",
+   "start": "2026-12-14",
+   "phase": "m3",
+   "meso": "Accumulation gym",
+   "short": "GYM",
+   "phase_micro": null,
+   "done": false,
+   "current": false
+  },
+  {
+   "n": 21,
+   "id": "S21",
+   "start": "2026-12-21",
+   "phase": "tr",
+   "meso": "Décharge fin d'année",
+   "short": "DECH",
+   "phase_micro": null,
+   "done": false,
+   "current": false
+  },
+  {
+   "n": 22,
+   "id": "S22",
+   "start": "2026-12-28",
+   "phase": "tr",
+   "meso": "Décharge fin d'année",
+   "short": "DECH",
+   "phase_micro": null,
+   "done": false,
+   "current": false
+  },
+  {
+   "n": 23,
+   "id": "S23",
+   "start": "2027-01-04",
+   "phase": "op",
+   "meso": "Prépa Open",
+   "short": "OPEN",
+   "phase_micro": null,
+   "done": false,
+   "current": false
+  },
+  {
+   "n": 24,
+   "id": "S24",
+   "start": "2027-01-11",
+   "phase": "op",
+   "meso": "Prépa Open",
+   "short": "OPEN",
+   "phase_micro": null,
+   "done": false,
+   "current": false
+  },
+  {
+   "n": 25,
+   "id": "S25",
+   "start": "2027-01-18",
+   "phase": "op",
+   "meso": "Prépa Open",
+   "short": "OPEN",
+   "phase_micro": null,
+   "done": false,
+   "current": false
+  },
+  {
+   "n": 26,
+   "id": "S26",
+   "start": "2027-01-25",
+   "phase": "op",
+   "meso": "Prépa Open",
+   "short": "OPEN",
+   "phase_micro": null,
+   "done": false,
+   "current": false
+  },
+  {
+   "n": 27,
+   "id": "S27",
+   "start": "2027-02-01",
+   "phase": "op",
+   "meso": "Prépa Open",
+   "short": "OPEN",
+   "phase_micro": null,
+   "done": false,
+   "current": false
+  },
+  {
+   "n": 28,
+   "id": "S28",
+   "start": "2027-02-08",
+   "phase": "op",
+   "meso": "Prépa Open",
+   "short": "OPEN",
+   "phase_micro": null,
+   "done": false,
+   "current": false
+  },
+  {
+   "n": 29,
+   "id": "S29",
+   "start": "2027-02-15",
+   "phase": "op",
+   "meso": "Open",
+   "short": "OPEN",
+   "phase_micro": null,
+   "done": false,
+   "current": false
+  },
+  {
+   "n": 30,
+   "id": "S30",
+   "start": "2027-02-22",
+   "phase": "op",
+   "meso": "Open",
+   "short": "OPEN",
+   "phase_micro": null,
+   "done": false,
+   "current": false
+  },
+  {
+   "n": 31,
+   "id": "S31",
+   "start": "2027-03-01",
+   "phase": "op",
+   "meso": "Open",
+   "short": "OPEN",
+   "phase_micro": null,
+   "done": false,
+   "current": false
+  }
+ ],
+ "kpis": {
+  "weeks_done": 9,
+  "weeks_total": 31,
+  "days_to_open": 133,
+  "open_label": "27.1 (19/02/2027)",
+  "macro": {
+   "label": "Macro 2 · Élévation",
+   "pct": 34,
+   "week": 3,
+   "weeks": 8
+  },
+  "tonnage_week": 6675,
+  "tonnage_prev": 5413,
+  "z2_week": 25,
+  "week_id": "S10",
+  "prev_id": "S09",
+  "z2_avg": 52,
+  "z2_weeks": 5,
+  "z2_mev": 60
+ },
+ "lifts": [
+  {
+   "id": "back_squat",
+   "label": "Back squat",
+   "pre": 160,
+   "bodyweight": null,
+   "weeks": [
+    {
+     "w": 0,
+     "kg": 130,
+     "rpe": 9,
+     "type": "test",
+     "serie": "1×3",
+     "sets": 1,
+     "reps": 3,
+     "e1rm": 145.7,
+     "tonnage": 390,
+     "note": "3RM test",
+     "comble": [],
+     "pause": false
+    },
+    {
+     "w": 1,
+     "kg": 115,
+     "rpe": 6.5,
+     "type": "travail",
+     "serie": "4×3",
+     "sets": 4,
+     "reps": 3,
+     "e1rm": 139.6,
+     "tonnage": 1380,
+     "note": "",
+     "comble": [
+      "rpe"
+     ],
+     "pause": false
+    },
+    {
+     "w": 2,
+     "kg": 115,
+     "rpe": 6.5,
+     "type": "travail",
+     "serie": "4×3",
+     "sets": 4,
+     "reps": 3,
+     "e1rm": 139.6,
+     "tonnage": 1380,
+     "note": "",
+     "comble": [
+      "serie",
+      "rpe"
+     ],
+     "pause": false
+    },
+    {
+     "w": 3,
+     "kg": 115,
+     "rpe": 6.5,
+     "type": "travail",
+     "serie": "3×3",
+     "sets": 3,
+     "reps": 3,
+     "e1rm": 139.6,
+     "tonnage": 1035,
+     "note": "prescrit 112,5",
+     "comble": [
+      "rpe"
+     ],
+     "pause": false
+    },
+    {
+     "w": 4,
+     "kg": 110,
+     "rpe": 6,
+     "type": "deload",
+     "serie": "2×3",
+     "sets": 2,
+     "reps": 3,
+     "e1rm": 135.6,
+     "tonnage": 660,
+     "note": "",
+     "comble": [
+      "serie",
+      "rpe"
+     ],
+     "pause": false
+    },
+    {
+     "w": 6,
+     "kg": 115,
+     "rpe": 7,
+     "type": "travail",
+     "serie": "3×3",
+     "sets": 3,
+     "reps": 3,
+     "e1rm": 137.4,
+     "tonnage": 1035,
+     "note": "110–115 kg",
+     "comble": [],
+     "pause": false
+    },
+    {
+     "w": 7,
+     "kg": 112.5,
+     "rpe": 6.5,
+     "type": "travail",
+     "serie": "4×3",
+     "sets": 4,
+     "reps": 3,
+     "e1rm": 136.5,
+     "tonnage": 1350,
+     "note": "",
+     "comble": [],
+     "pause": false
+    },
+    {
+     "w": 8,
+     "kg": 115,
+     "rpe": 6.5,
+     "type": "travail",
+     "serie": "4×3",
+     "sets": 4,
+     "reps": 3,
+     "e1rm": 139.6,
+     "tonnage": 1380,
+     "note": "",
+     "comble": [],
+     "pause": false
+    },
+    {
+     "w": 9,
+     "kg": 115,
+     "rpe": 7,
+     "type": "travail",
+     "serie": "5×3",
+     "sets": 5,
+     "reps": 3,
+     "e1rm": 137.4,
+     "tonnage": 1725,
+     "note": "repos 2' tenu",
+     "comble": [],
+     "pause": false
+    }
+   ],
+   "first_test": {
+    "w": 0,
+    "kg": 130,
+    "serie": "1×3"
+   }
+  },
+  {
+   "id": "front_squat",
+   "label": "Front squat",
+   "pre": 140,
+   "bodyweight": null,
+   "weeks": [
+    {
+     "w": 0,
+     "kg": 120,
+     "rpe": 9,
+     "type": "test",
+     "serie": "1×3",
+     "sets": 1,
+     "reps": 3,
+     "e1rm": 134.5,
+     "tonnage": 360,
+     "note": "",
+     "comble": [],
+     "pause": false
+    },
+    {
+     "w": 3,
+     "kg": 95,
+     "rpe": 7,
+     "type": "travail",
+     "serie": "2×3",
+     "sets": 2,
+     "reps": 3,
+     "e1rm": 113.5,
+     "tonnage": 570,
+     "note": "",
+     "comble": [
+      "rpe"
+     ],
+     "pause": false
+    },
+    {
+     "w": 8,
+     "kg": 95,
+     "rpe": 7,
+     "type": "travail",
+     "serie": "2×3",
+     "sets": 2,
+     "reps": 3,
+     "e1rm": 121.4,
+     "tonnage": 570,
+     "note": "avec pause",
+     "comble": [
+      "rpe"
+     ],
+     "pause": true
+    },
+    {
+     "w": 9,
+     "kg": 100,
+     "rpe": 7,
+     "type": "travail",
+     "serie": "3×3",
+     "sets": 3,
+     "reps": 3,
+     "e1rm": 127.8,
+     "tonnage": 900,
+     "note": "avec pause",
+     "comble": [],
+     "pause": true
+    }
+   ],
+   "first_test": {
+    "w": 0,
+    "kg": 120,
+    "serie": "1×3"
+   }
+  },
+  {
+   "id": "deadlift",
+   "label": "Soulevé de terre",
+   "pre": 200,
+   "bodyweight": null,
+   "weeks": [
+    {
+     "w": 0,
+     "kg": 180,
+     "rpe": 9,
+     "type": "test",
+     "serie": "1×2",
+     "sets": 1,
+     "reps": 2,
+     "e1rm": 195.2,
+     "tonnage": 360,
+     "note": "2RM test",
+     "comble": [],
+     "pause": false
+    },
+    {
+     "w": 8,
+     "kg": 150,
+     "rpe": 7.5,
+     "type": "travail",
+     "serie": "3×3",
+     "sets": 3,
+     "reps": 3,
+     "e1rm": 176.5,
+     "tonnage": 1350,
+     "note": "",
+     "comble": [],
+     "pause": false
+    },
+    {
+     "w": 9,
+     "kg": 160,
+     "rpe": 7,
+     "type": "travail",
+     "serie": "3×3",
+     "sets": 3,
+     "reps": 3,
+     "e1rm": 191.2,
+     "tonnage": 1440,
+     "note": "top set non tenté",
+     "comble": [],
+     "pause": false
+    }
+   ],
+   "first_test": {
+    "w": 0,
+    "kg": 180,
+    "serie": "1×2"
+   }
+  },
+  {
+   "id": "romanian_deadlift",
+   "label": "Soulevé de terre roumain",
+   "pre": null,
+   "bodyweight": null,
+   "weeks": [
+    {
+     "w": 1,
+     "kg": 90,
+     "rpe": 6.5,
+     "type": "travail",
+     "serie": "3×8",
+     "sets": 3,
+     "reps": 8,
+     "e1rm": 129.8,
+     "tonnage": 2160,
+     "note": "",
+     "comble": [
+      "serie",
+      "rpe"
+     ],
+     "pause": false
+    },
+    {
+     "w": 2,
+     "kg": 95,
+     "rpe": 6.5,
+     "type": "travail",
+     "serie": "3×8",
+     "sets": 3,
+     "reps": 8,
+     "e1rm": 137.0,
+     "tonnage": 2280,
+     "note": "",
+     "comble": [
+      "rpe"
+     ],
+     "pause": false
+    },
+    {
+     "w": 6,
+     "kg": 92.5,
+     "rpe": 6.5,
+     "type": "travail",
+     "serie": "3×8",
+     "sets": 3,
+     "reps": 8,
+     "e1rm": 133.4,
+     "tonnage": 2220,
+     "note": "90–95 kg",
+     "comble": [],
+     "pause": false
+    },
+    {
+     "w": 7,
+     "kg": 95,
+     "rpe": 6.5,
+     "type": "travail",
+     "serie": "3×8",
+     "sets": 3,
+     "reps": 8,
+     "e1rm": 137.0,
+     "tonnage": 2280,
+     "note": "",
+     "comble": [],
+     "pause": false
+    }
+   ],
+   "first_test": null
+  },
+  {
+   "id": "strict_press",
+   "label": "Strict press",
+   "pre": null,
+   "bodyweight": null,
+   "weeks": [
+    {
+     "w": 0,
+     "kg": 70,
+     "rpe": 9,
+     "type": "test",
+     "serie": "1×2",
+     "sets": 1,
+     "reps": 2,
+     "e1rm": 75.9,
+     "tonnage": 140,
+     "note": "2RM test",
+     "comble": [],
+     "pause": false
+    },
+    {
+     "w": 1,
+     "kg": 60,
+     "rpe": 6.5,
+     "type": "travail",
+     "serie": "4×4",
+     "sets": 4,
+     "reps": 4,
+     "e1rm": 75.1,
+     "tonnage": 960,
+     "note": "",
+     "comble": [
+      "rpe"
+     ],
+     "pause": false
+    },
+    {
+     "w": 2,
+     "kg": 55,
+     "rpe": 6.5,
+     "type": "travail",
+     "serie": "4×4",
+     "sets": 4,
+     "reps": 4,
+     "e1rm": 68.9,
+     "tonnage": 880,
+     "note": "",
+     "comble": [
+      "rpe"
+     ],
+     "pause": false
+    },
+    {
+     "w": 3,
+     "kg": 60,
+     "rpe": 6.5,
+     "type": "travail",
+     "serie": "3×3",
+     "sets": 3,
+     "reps": 3,
+     "e1rm": 72.8,
+     "tonnage": 540,
+     "note": "",
+     "comble": [
+      "rpe"
+     ],
+     "pause": false
+    },
+    {
+     "w": 4,
+     "kg": 55,
+     "rpe": 6,
+     "type": "deload",
+     "serie": "2×3",
+     "sets": 2,
+     "reps": 3,
+     "e1rm": 67.8,
+     "tonnage": 330,
+     "note": "",
+     "comble": [
+      "serie",
+      "rpe"
+     ],
+     "pause": false
+    },
+    {
+     "w": 6,
+     "kg": 60,
+     "rpe": 6.5,
+     "type": "travail",
+     "serie": "3×4",
+     "sets": 3,
+     "reps": 4,
+     "e1rm": 75.1,
+     "tonnage": 720,
+     "note": "57,5–60 kg",
+     "comble": [],
+     "pause": false
+    },
+    {
+     "w": 7,
+     "kg": 60,
+     "rpe": 8,
+     "type": "travail",
+     "serie": "3×4",
+     "sets": 3,
+     "reps": 4,
+     "e1rm": 71.7,
+     "tonnage": 720,
+     "note": "",
+     "comble": [],
+     "pause": false
+    },
+    {
+     "w": 8,
+     "kg": 63,
+     "rpe": 8,
+     "type": "travail",
+     "serie": "4×3",
+     "sets": 4,
+     "reps": 3,
+     "e1rm": 73.0,
+     "tonnage": 756,
+     "note": "",
+     "comble": [],
+     "pause": false
+    },
+    {
+     "w": 9,
+     "kg": 60,
+     "rpe": 8,
+     "type": "travail",
+     "serie": "4×4",
+     "sets": 4,
+     "reps": 4,
+     "e1rm": 71.7,
+     "tonnage": 960,
+     "note": "prescrit 57,5",
+     "comble": [],
+     "pause": false
+    }
+   ],
+   "first_test": {
+    "w": 0,
+    "kg": 70,
+    "serie": "1×2"
+   }
+  },
+  {
+   "id": "weighted_pullup",
+   "label": "Traction lestée",
+   "pre": null,
+   "bodyweight": 87,
+   "weeks": [
+    {
+     "w": 0,
+     "kg": 40,
+     "rpe": 9.5,
+     "type": "test",
+     "serie": "1×3",
+     "sets": 1,
+     "reps": 3,
+     "e1rm": 53.0,
+     "tonnage": 120,
+     "note": "3RM test",
+     "comble": [],
+     "pause": false
+    },
+    {
+     "w": 1,
+     "kg": 28,
+     "rpe": 6.5,
+     "type": "travail",
+     "serie": "4×4",
+     "sets": 4,
+     "reps": 4,
+     "e1rm": 57.0,
+     "tonnage": 448,
+     "note": "",
+     "comble": [
+      "rpe"
+     ],
+     "pause": false
+    },
+    {
+     "w": 2,
+     "kg": 28,
+     "rpe": 6.5,
+     "type": "travail",
+     "serie": "4×4",
+     "sets": 4,
+     "reps": 4,
+     "e1rm": 57.0,
+     "tonnage": 448,
+     "note": "",
+     "comble": [
+      "rpe"
+     ],
+     "pause": false
+    },
+    {
+     "w": 3,
+     "kg": 32,
+     "rpe": 6.5,
+     "type": "travail",
+     "serie": "3×3",
+     "sets": 3,
+     "reps": 3,
+     "e1rm": 57.4,
+     "tonnage": 288,
+     "note": "",
+     "comble": [
+      "rpe"
+     ],
+     "pause": false
+    },
+    {
+     "w": 4,
+     "kg": 28,
+     "rpe": 6,
+     "type": "deload",
+     "serie": "2×3",
+     "sets": 2,
+     "reps": 3,
+     "e1rm": 54.8,
+     "tonnage": 168,
+     "note": "",
+     "comble": [
+      "serie",
+      "rpe"
+     ],
+     "pause": false
+    },
+    {
+     "w": 6,
+     "kg": 32,
+     "rpe": 6.5,
+     "type": "travail",
+     "serie": "3×4",
+     "sets": 3,
+     "reps": 4,
+     "e1rm": 62.0,
+     "tonnage": 384,
+     "note": "+28–32 kg",
+     "comble": [],
+     "pause": false
+    },
+    {
+     "w": 7,
+     "kg": 32,
+     "rpe": 8,
+     "type": "travail",
+     "serie": "3×4",
+     "sets": 3,
+     "reps": 4,
+     "e1rm": 55.2,
+     "tonnage": 384,
+     "note": "+30–32 kg",
+     "comble": [],
+     "pause": false
+    },
+    {
+     "w": 8,
+     "kg": 32,
+     "rpe": 8,
+     "type": "travail",
+     "serie": "4×3",
+     "sets": 4,
+     "reps": 3,
+     "e1rm": 50.9,
+     "tonnage": 384,
+     "note": "",
+     "comble": [],
+     "pause": false
+    },
+    {
+     "w": 9,
+     "kg": 30,
+     "rpe": 7.5,
+     "type": "travail",
+     "serie": "4×4",
+     "sets": 4,
+     "reps": 4,
+     "e1rm": 55.0,
+     "tonnage": 480,
+     "note": "+28–30 kg, charge exacte non notée",
+     "comble": [
+      "rpe"
+     ],
+     "pause": false
+    }
+   ],
+   "first_test": {
+    "w": 0,
+    "kg": 40,
+    "serie": "1×3"
+   }
+  },
+  {
+   "id": "power_snatch",
+   "label": "Arraché puissance",
+   "pre": null,
+   "bodyweight": null,
+   "weeks": [
+    {
+     "w": 0,
+     "kg": 70,
+     "rpe": 9,
+     "type": "test",
+     "serie": "3×1",
+     "sets": 3,
+     "reps": 1,
+     "e1rm": 73.3,
+     "tonnage": 210,
+     "note": "3 singles test",
+     "comble": [],
+     "pause": false
+    },
+    {
+     "w": 1,
+     "kg": 70,
+     "rpe": 7,
+     "type": "travail",
+     "serie": "4×1",
+     "sets": 4,
+     "reps": 1,
+     "e1rm": 78.5,
+     "tonnage": 280,
+     "note": "",
+     "comble": [
+      "rpe"
+     ],
+     "pause": false
+    },
+    {
+     "w": 2,
+     "kg": 70,
+     "rpe": 7,
+     "type": "travail",
+     "serie": "5×1",
+     "sets": 5,
+     "reps": 1,
+     "e1rm": 78.5,
+     "tonnage": 350,
+     "note": "",
+     "comble": [
+      "serie",
+      "rpe"
+     ],
+     "pause": false
+    },
+    {
+     "w": 3,
+     "kg": 70,
+     "rpe": 7,
+     "type": "travail",
+     "serie": "3×1",
+     "sets": 3,
+     "reps": 1,
+     "e1rm": 78.5,
+     "tonnage": 210,
+     "note": "",
+     "comble": [
+      "serie"
+     ],
+     "pause": false
+    },
+    {
+     "w": 5,
+     "kg": 70,
+     "rpe": 6,
+     "type": "travail",
+     "serie": "2×1",
+     "sets": 2,
+     "reps": 1,
+     "e1rm": 81.1,
+     "tonnage": 140,
+     "note": "lundi Fire",
+     "comble": [
+      "rpe"
+     ],
+     "pause": false
+    },
+    {
+     "w": 8,
+     "kg": 73,
+     "rpe": 7,
+     "type": "travail",
+     "serie": "1",
+     "sets": 1,
+     "reps": 1,
+     "e1rm": 81.8,
+     "tonnage": 73,
+     "note": "",
+     "comble": [],
+     "pause": false
+    },
+    {
+     "w": 9,
+     "kg": 75,
+     "rpe": 8,
+     "type": "travail",
+     "serie": "3×1",
+     "sets": 3,
+     "reps": 1,
+     "e1rm": 81.3,
+     "tonnage": 225,
+     "note": "après le deadlift",
+     "comble": [],
+     "pause": false
+    }
+   ],
+   "first_test": {
+    "w": 0,
+    "kg": 70,
+    "serie": "3×1"
+   }
+  },
+  {
+   "id": "power_clean",
+   "label": "Épaulé puissance",
+   "pre": null,
+   "bodyweight": null,
+   "weeks": [
+    {
+     "w": 0,
+     "kg": 100,
+     "rpe": 9,
+     "type": "test",
+     "serie": "3×1",
+     "sets": 3,
+     "reps": 1,
+     "e1rm": 104.7,
+     "tonnage": 300,
+     "note": "3 singles test",
+     "comble": [],
+     "pause": false
+    },
+    {
+     "w": 1,
+     "kg": 100,
+     "rpe": 7,
+     "type": "travail",
+     "serie": "4×1",
+     "sets": 4,
+     "reps": 1,
+     "e1rm": 112.1,
+     "tonnage": 400,
+     "note": "",
+     "comble": [
+      "rpe"
+     ],
+     "pause": false
+    },
+    {
+     "w": 2,
+     "kg": 100,
+     "rpe": 7,
+     "type": "travail",
+     "serie": "5×1",
+     "sets": 5,
+     "reps": 1,
+     "e1rm": 112.1,
+     "tonnage": 500,
+     "note": "",
+     "comble": [
+      "serie",
+      "rpe"
+     ],
+     "pause": false
+    },
+    {
+     "w": 3,
+     "kg": 100,
+     "rpe": 7,
+     "type": "travail",
+     "serie": "3×1",
+     "sets": 3,
+     "reps": 1,
+     "e1rm": 112.1,
+     "tonnage": 300,
+     "note": "",
+     "comble": [
+      "serie"
+     ],
+     "pause": false
+    },
+    {
+     "w": 5,
+     "kg": 100,
+     "rpe": 6,
+     "type": "travail",
+     "serie": "2×2",
+     "sets": 2,
+     "reps": 2,
+     "e1rm": 119.5,
+     "tonnage": 400,
+     "note": "lundi Fire",
+     "comble": [
+      "rpe"
+     ],
+     "pause": false
+    },
+    {
+     "w": 7,
+     "kg": 100,
+     "rpe": 7,
+     "type": "travail",
+     "serie": "5×1",
+     "sets": 5,
+     "reps": 1,
+     "e1rm": 112.1,
+     "tonnage": 500,
+     "note": "90–100 kg",
+     "comble": [],
+     "pause": false
+    }
+   ],
+   "first_test": {
+    "w": 0,
+    "kg": 100,
+    "serie": "3×1"
+   }
+  }
+ ],
+ "blocks": [
+  {
+   "from": 0,
+   "to": 0,
+   "meso": "Benchmarks",
+   "short": "TEST",
+   "phase": "m1"
+  },
+  {
+   "from": 1,
+   "to": 4,
+   "meso": "Accumulation gym",
+   "short": "GYM",
+   "phase": "m1"
+  },
+  {
+   "from": 5,
+   "to": 5,
+   "meso": "Expression Fire",
+   "short": "FIRE",
+   "phase": "m1"
+  },
+  {
+   "from": 6,
+   "to": 6,
+   "meso": "Transition mini",
+   "short": "TRANS",
+   "phase": "m1"
+  },
+  {
+   "from": 7,
+   "to": 9,
+   "meso": "Accumulation force",
+   "short": "FORCE",
+   "phase": "m2"
+  }
+ ],
+ "deloads": [
+  4
+ ],
+ "volumes": [
+  {
+   "id": "force_lower_sets",
+   "label": "Force bas du corps",
+   "unit": "séries dures",
+   "mev": 4,
+   "mrv": 12,
+   "values": [
+    null,
+    4,
+    4,
+    5,
+    null,
+    0,
+    6,
+    7,
+    9,
+    11
+   ],
+   "notes": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "BS 4 + DL 3 + FS pause 2",
+    "BS 5 + FS pause 3 + deadlift 3 (sous MRV 12)"
+   ],
+   "prescrit": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    7,
+    9,
+    11
+   ]
+  },
+  {
+   "id": "force_upper_sets",
+   "label": "Force haut du corps",
+   "unit": "séries dures",
+   "mev": 4,
+   "mrv": 12,
+   "values": [
+    null,
+    8,
+    8,
+    6,
+    null,
+    0,
+    6,
+    9,
+    8,
+    8
+   ],
+   "notes": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Press 3 + tractions 3 + ring row 3, tous RPE ≥ 6",
+    "Press 4 + tractions 4 ; face pulls non renseignés",
+    "Press 4 + tractions 4"
+   ],
+   "prescrit": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    6,
+    8,
+    8
+   ]
+  },
+  {
+   "id": "oly_lifts",
+   "label": "Haltéro",
+   "unit": "levées de qualité",
+   "mev": 10,
+   "mrv": 30,
+   "values": [
+    6,
+    8,
+    11,
+    6,
+    null,
+    12,
+    0,
+    5,
+    14,
+    12
+   ],
+   "notes": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Séance déclarée faite : 5 singles arraché + 3×3 tirages supposés au format prescrit, nombre de séries non confirmé",
+    "Tirage arraché 3×3 + arraché puissance 3×1"
+   ],
+   "prescrit": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    5,
+    14,
+    12
+   ]
+  },
+  {
+   "id": "z2_min",
+   "label": "Zone 2",
+   "unit": "minutes",
+   "mev": 60,
+   "mrv": 180,
+   "values": [
+    null,
+    null,
+    null,
+    90,
+    50,
+    null,
+    55,
+    20,
+    45,
+    null
+   ],
+   "notes": [
+    "Semaine de tests — pas de Z2 tracé",
+    "Non tracé — sous le MEV de 60 min",
+    "2 × 4 km VTT — durée non tracée, sous le MEV de 60 min",
+    "",
+    "25 min lundi + 25 min mardi ; vendredi et samedi non renseignés — plancher 60 min probablement non atteint",
+    "~20 min lundi + ~15 min mardi + 10 km bike jeudi + 20 min vendredi — bike non converti en minutes",
+    "30 min bike lundi + 25 min mardi ; jeudi Z2 skip ; vendredi pas de Z2 prescrit",
+    "Mercredi ~20 min. Finisher lundi skippé. 4 jours de rando non chiffrés.",
+    "Samedi 45' BikeErg ; finisher mardi non renseigné (non compté). Sous le plancher de 60.",
+    "Finisher lundi 12–15' (durée exacte non notée) + jeudi 25' + vendredi 0 ; samedi à venir"
+   ],
+   "prescrit": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    10,
+    60,
+    82
+   ]
+  }
+ ],
+ "signals": [
+  {
+   "id": "epaule",
+   "label": "Épaule",
+   "levels": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    2,
+    2,
+    3,
+    1
+   ],
+   "notes": [
+    "",
+    "",
+    "",
+    "",
+    "Pompes sautées, gêne légère sur la poussée",
+    "HSPU non sollicitées",
+    "HSPU sautées, RMU réduits",
+    "RMU sautés",
+    "Douleur 4–5/10 sur RMU et HSPU strict + kipping ; gêne 1–3/10 sur press / tractions / arraché",
+    "Gêne 1–2/10 sur le press ; 2/10 épaule gauche sur STOH au team"
+   ]
+  },
+  {
+   "id": "adducteur",
+   "label": "Adducteur",
+   "levels": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1
+   ],
+   "notes": [
+    "Tension dès ~120 kg au squat",
+    "Squat 115 sous plafond",
+    "",
+    "",
+    "",
+    "Complex 95 kg RAS au Fire",
+    "Squat 110–115 RAS",
+    "Tension légère sur l'isométrie",
+    "",
+    "Tension légère sans douleur (palier 1)"
+   ]
+  },
+  {
+   "id": "mains",
+   "label": "Mains",
+   "levels": [
+    1,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "notes": [
+    "Ampoule au creux de la main (BMU)",
+    "Ampoules limitantes sur les BMU",
+    "Plus d'ampoules signalées",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ]
+  }
+ ],
+ "ladder": [
+  {
+   "id": "bmu",
+   "label": "BMU",
+   "base": 3,
+   "now": 4,
+   "etat": "actif",
+   "note": "couplet 4 BMU + 10 cal, ~15 s de repos, indolore",
+   "w": 3,
+   "history": [
+    {
+     "w": 0,
+     "cran": 3,
+     "etat": "actif",
+     "note": "EMOM 6/min, ampoule au creux de la main"
+    },
+    {
+     "w": 3,
+     "cran": 4,
+     "etat": "actif",
+     "note": "couplet 4 BMU + 10 cal, ~15 s de repos, indolore"
+    }
+   ]
+  },
+  {
+   "id": "hsw",
+   "label": "HSW",
+   "base": 3,
+   "now": 4,
+   "etat": "actif",
+   "note": "5× (10 m + pivot + 10 m) unbroken",
+   "w": 3,
+   "history": [
+    {
+     "w": 0,
+     "cran": 3,
+     "etat": "actif",
+     "note": "20 m, chute au demi-tour"
+    },
+    {
+     "w": 3,
+     "cran": 4,
+     "etat": "actif",
+     "note": "5× (10 m + pivot + 10 m) unbroken"
+    }
+   ]
+  },
+  {
+   "id": "rmu",
+   "label": "RMU",
+   "base": 3,
+   "now": 4,
+   "etat": "suspendu",
+   "note": "douleur 4–5/10 en S09, hors plan dès S10",
+   "w": 8,
+   "history": [
+    {
+     "w": 0,
+     "cran": 3,
+     "etat": "actif",
+     "note": "EMOM 2/min"
+    },
+    {
+     "w": 3,
+     "cran": 4,
+     "etat": "actif",
+     "note": "couplet 2 RMU + 10 cal, ~15 s de repos"
+    },
+    {
+     "w": 8,
+     "cran": 4,
+     "etat": "suspendu",
+     "note": "douleur 4–5/10 en S09, hors plan dès S10"
+    }
+   ]
+  },
+  {
+   "id": "hspu",
+   "label": "HSPU",
+   "base": 3,
+   "now": 3,
+   "etat": "suspendu",
+   "note": "strict et kipping douloureux en S09 (4–5/10), hors plan dès S10",
+   "w": 8,
+   "history": [
+    {
+     "w": 0,
+     "cran": 3,
+     "etat": "actif",
+     "note": "strict 4×10"
+    },
+    {
+     "w": 3,
+     "cran": 3,
+     "etat": "actif",
+     "note": "5×10 strict au plafond, ~0 RIR sur les dernières"
+    },
+    {
+     "w": 8,
+     "cran": 3,
+     "etat": "suspendu",
+     "note": "strict et kipping douloureux en S09 (4–5/10), hors plan dès S10"
+    }
+   ]
+  }
+ ],
+ "markers": [
+  {
+   "w": 5,
+   "kind": "event",
+   "label": "Fire · 7e/20"
+  },
+  {
+   "w": 28,
+   "kind": "event",
+   "label": "Open 27.1",
+   "side": "left"
+  },
+  {
+   "w": 9,
+   "kind": "now",
+   "label": "Aujourd'hui · S10"
+  }
+ ]
+}

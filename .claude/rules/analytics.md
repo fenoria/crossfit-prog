@@ -1,20 +1,30 @@
 ---
 paths:
-  - "prog/analytics/**"
+  - "prog/saison-*/analytics.md"
   - ".vitepress/theme/analytics/**"
   - ".vitepress/theme/analytics.css"
   - ".vitepress/theme/components/An*.vue"
   - "scripts/build-analytics.py"
 ---
 
-# Dashboard analytics (`prog/analytics/`)
+# Dashboard analytics (`prog/saison-*/analytics.md`)
 
-Une seule page (`prog/analytics/index.md`) : tuiles, frise de saison, charges, dose hebdo, signaux, crans gym. Thème SynthWave (tokens `--sw-*` dans `custom.css`).
+Une page par saison, dans le dossier de la saison (menu : entre « Vue d'ensemble » et le Macro 1). La page ne contient que les composants `<An… />` : ils lisent `data/<saison>.json` d'après le dossier de la page (`useSeasonData`), donc rien à modifier dans les composants pour une nouvelle saison.
 
 ## Flux de données
-`athletes/<id>/journal/S*.yaml` + `profile.yaml` + `knowledge/instances/saison-*.yaml` + doses des semaines `prog/` → `scripts/build-analytics.py` (`npm run build:analytics`) → `.vitepress/theme/analytics/data.json` (commité, régénéré aussi par la CI) → composants `An*.vue`.
+`athletes/<id>/journal/S*.yaml` + `profile.yaml` + `knowledge/instances/saison-*.yaml` + doses des semaines `prog/` → `scripts/build-analytics.py` (`npm run build:analytics [saison-2026]`) → `.vitepress/theme/analytics/data/<saison>.json` (commité, régénéré aussi par la CI) → composants `An*.vue`.
+- Une saison est construite si son instance a `status: active` ou `archived` (une instance `draft` est ignorée).
+- Les journaux sont attribués à une saison **par leur date** (fenêtre = début du 1er macrocycle → dernière semaine d'échéance) : la numérotation S01… peut donc repartir de zéro à la saison suivante.
+- Phases et couleurs de la frise : une par macrocycle de l'instance, dans l'ordre ; libellé = clé `label` du macrocycle (sinon dérivé de sa clé).
 - Rien n'est écrit à la main dans les composants : un libellé, un repère ou un chiffre vient des données. Champ absent ou `null` = point absent du graphe, jamais un zéro.
 - Pas de texte explicatif sur la page : le dashboard se lit par les légendes (pastilles) et les info-bulles.
+
+## Nouvelle saison
+1. **Geler l'ancienne saison d'abord** : copier le profil actif vers `athletes/<id>/seasons/saison-YYYY.yaml` (`cp athletes/<id>/profile.yaml athletes/<id>/seasons/saison-AAAA.yaml`, AAAA = saison qui se termine), puis passer son instance en `status: archived`. Le profil actif n'est pas dupliqué : il reste le point de départ de la nouvelle saison.
+2. `knowledge/instances/saison-YYYY.yaml` (`status: active`, macrocycles avec `label`, `semaines`, `fenetre`, `mesos`, `echeance_suivante`).
+3. Dossier `prog/saison-YYYY/` avec `analytics.md` (copie de la page précédente : titre + composants).
+4. `npm run build:analytics`, vérifier le menu et la page.
+Une saison archivée se construit avec son profil gelé (volumes, poids de corps, références pré-blessure de l'époque) ; sans ce fichier, le builder alerte et retombe sur le profil courant.
 
 ## Journal → dashboard
 Champs lus : `series` (charges), `signaux` (épaule / adducteur / mains, 0–3), `crans` (échelle gym, seulement quand un cran change), `realise.*` (doses), `phase_micro`, `statut`. Contrat : `knowledge/journal-schema.yaml`. Le cran courant du journal doit rester égal à `gym_ladder_level` du profil (le builder alerte sinon).

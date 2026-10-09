@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import data from '../analytics/data.json'
+import { useSeasonData } from '../analytics/useSeasonData'
 import { useTip } from '../analytics/useTip'
 import AnTooltip from './AnTooltip.vue'
+
+const data = useSeasonData()
 
 const { tip, show, hide } = useTip()
 const CW = 30, GAP = 3, LEFT = 4, TOP = 30, H = 46

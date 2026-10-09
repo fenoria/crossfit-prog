@@ -6,6 +6,7 @@
 | `<id>/profile.yaml` | État courant (charges, volumes, crans, douleur, planning, compet) |
 | `<id>/journal/SXX-YYYY-MM-DD.yaml` | Historique semaine par semaine (schéma : `knowledge/journal-schema.yaml`) |
 | `<id>/history.yaml` | Palmarès et archives (hors lecture par défaut) |
+| `<id>/seasons/<saison>.yaml` | Profil gelé en fin de saison (copie de `profile.yaml`, **jamais modifié**, hors lecture par défaut) — sert à reconstruire le dashboard d'une saison archivée |
 
 Résolution : lire `current.yaml` → `athletes/<id>/profile.yaml`.
 
