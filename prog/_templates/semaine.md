@@ -21,14 +21,6 @@
 
 - **[Auteur]** (*Titre*) — [principe en 1–2 phrases].
 
-## Règles
-
-- Repos force : 2–3’ entre sets lourds
-- Team RPE ≥ 8 → alléger J+1 avec dose chiffrée
-- Cibles de séance **chiffrées** (reps, RPE, durée, repos)
-- Même en cadre `RPE`, donner si possible un **ordre d’idée de charge / d’allure** à partir des capacités actuelles
-- Si option ou alternative : la cadrer clairement (quand, quoi choisir, quelle dose)
-
 ### Microcycle (si meso chargé)
 
 **Phase micro** : volume adapté | surcharge | pic | deload
