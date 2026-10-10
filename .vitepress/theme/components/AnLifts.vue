@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
-import { useSeasonData } from '../analytics/useSeasonData'
+import { useSeasonData, weekNo } from '../analytics/useSeasonData'
 import { useChartWidth } from '../analytics/useChartWidth'
-import { fr, useTip, wk } from '../analytics/useTip'
+import { fr, useTip } from '../analytics/useTip'
 import AnTooltip from './AnTooltip.vue'
 
 const data = useSeasonData()
+const wk = (i: number) => weekNo(data, i)
 
 const { tip, show, hide } = useTip()
 const N = data.last + 1

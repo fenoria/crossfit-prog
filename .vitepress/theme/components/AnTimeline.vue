@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { useSeasonData } from '../analytics/useSeasonData'
+import { useSeasonData, weekNo } from '../analytics/useSeasonData'
 import { useTip } from '../analytics/useTip'
 import AnTooltip from './AnTooltip.vue'
 
 const data = useSeasonData()
+const wk = (i: number) => weekNo(data, i)
 
 const { tip, show, hide } = useTip()
 const CW = 30, GAP = 3, LEFT = 4, TOP = 30, H = 46
@@ -37,7 +38,7 @@ const markerOf = (i: number) => markers.find((m) => m.w === i)
         <g
           v-for="(w, i) in data.weeks"
           :key="w.id"
-          class="an-hit" @mousemove="show($event, `${w.id} · semaine du ${fmt(w.start)}`, [w.meso + (w.done ? ' · faite' : w.current ? ' · en cours' : '')])" @pointerdown="show($event, `${w.id} · semaine du ${fmt(w.start)}`, [w.meso + (w.done ? ' · faite' : w.current ? ' · en cours' : '')])"
+          class="an-hit" @mousemove="show($event, `S${wk(w.n - 1)} · semaine du ${fmt(w.start)}`, [w.meso + (w.done ? ' · faite' : w.current ? ' · en cours' : '') + ` (prog ${w.id})`])" @pointerdown="show($event, `S${wk(w.n - 1)} · semaine du ${fmt(w.start)}`, [w.meso + (w.done ? ' · faite' : w.current ? ' · en cours' : '') + ` (prog ${w.id})`])"
           @mouseleave="hide"
         >
           <rect
@@ -47,7 +48,7 @@ const markerOf = (i: number) => markers.find((m) => m.w === i)
             :stroke="w.current ? 'var(--sw-ink)' : 'none'" stroke-width="2"
           />
           <text :x="x(i) + CW / 2" :y="TOP + H + 15" text-anchor="middle" :class="{ 'an-t-bold': w.current }">
-            {{ (w.n % 2 === 1 || w.current) ? String(w.n).padStart(2, '0') : '' }}
+            {{ (w.n % 2 === 1 || w.current) ? wk(w.n - 1) : '' }}
           </text>
         </g>
         <g v-for="m in markers" :key="m.kind + m.w">
@@ -64,12 +65,12 @@ const markerOf = (i: number) => markers.find((m) => m.w === i)
         v-for="w in data.weeks" :key="w.id" class="an-wk an-hit"
         :class="{ 'an-wk--done': w.done, 'an-wk--now': w.current, 'an-wk--mark': markerOf(w.n - 1) }"
         :style="{ '--wk': `var(--sw-${colorOf(w.phase)})` }"
-        @mousemove="show($event, `${w.id} · semaine du ${fmt(w.start)}`, [w.meso + (w.done ? ' · faite' : w.current ? ' · en cours' : ''), markerOf(w.n - 1)?.label ?? ''])" @pointerdown="show($event, `${w.id} · semaine du ${fmt(w.start)}`, [w.meso + (w.done ? ' · faite' : w.current ? ' · en cours' : ''), markerOf(w.n - 1)?.label ?? ''])"
+        @mousemove="show($event, `S${wk(w.n - 1)} · semaine du ${fmt(w.start)}`, [w.meso + (w.done ? ' · faite' : w.current ? ' · en cours' : '') + ` (prog ${w.id})`, markerOf(w.n - 1)?.label ?? ''])" @pointerdown="show($event, `S${wk(w.n - 1)} · semaine du ${fmt(w.start)}`, [w.meso + (w.done ? ' · faite' : w.current ? ' · en cours' : '') + ` (prog ${w.id})`, markerOf(w.n - 1)?.label ?? ''])"
         @mouseleave="hide"
-      >{{ String(w.n).padStart(2, '0') }}</div>
+      >{{ wk(w.n - 1) }}</div>
     </div>
     <ul class="an-marks">
-      <li v-for="m in markers" :key="m.kind + m.w"><b>{{ data.weeks[m.w].id }}</b> {{ m.label }}</li>
+      <li v-for="m in markers" :key="m.kind + m.w"><b>S{{ wk(m.w) }}</b> {{ m.label }}</li>
     </ul>
     <div class="an-legend">
       <span v-for="p in data.phases" :key="p.id"><i class="an-sw" :style="{ background: `var(--sw-${p.color})` }" />{{ p.label }}</span>

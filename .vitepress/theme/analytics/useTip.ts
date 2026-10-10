@@ -24,6 +24,3 @@ export function useTip() {
 }
 
 export const fr = (v: number | string) => String(v).replace('.', ',')
-
-/** Libellé semaine court : « S09 » → « 09 ». */
-export const wk = (i: number) => String(i + 1).padStart(2, '0')

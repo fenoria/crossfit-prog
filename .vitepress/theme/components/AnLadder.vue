@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { useSeasonData } from '../analytics/useSeasonData'
-import { wk } from '../analytics/useTip'
+import { useSeasonData, weekNo } from '../analytics/useSeasonData'
 
 const data = useSeasonData()
+const wk = (i: number) => weekNo(data, i)
 </script>
 
 <template>

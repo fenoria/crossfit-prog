@@ -120,6 +120,27 @@ def load_prescribed() -> dict[int, dict]:
     return out
 
 
+def cal_label(week: dict) -> str:
+    """Libellé calendaire d'une semaine : « S41 » (semaine ISO), distinct de l'id de prog « S10 »."""
+    return f"S{week['iso']:02d}"
+
+
+def calify(obj, weeks: list[dict]):
+    """Remplace les numéros de semaine de prog (« S09 ») par les semaines calendaires dans les notes du journal."""
+    table = {w["id"]: cal_label(w) for w in weeks}
+
+    def fix(text: str) -> str:
+        return re.sub(r"\bS(\d{2})\b", lambda m: table.get(m.group(0), m.group(0)), text)
+
+    if isinstance(obj, dict):
+        return {k: (fix(v) if k == "note" and isinstance(v, str)
+                    else [fix(x) if isinstance(x, str) else x for x in v] if k == "notes" and isinstance(v, list)
+                    else calify(v, weeks)) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [calify(x, weeks) for x in obj]
+    return obj
+
+
 def d(s: str) -> date:
     return date.fromisoformat(str(s)[:10])
 
@@ -188,8 +209,9 @@ def build_weeks(instance: dict, journals: dict[int, dict], today: date, macro_ph
         j = journals.get(n, {})
         statut = j.get("statut")
         current = monday <= today < monday + timedelta(days=7)
+        iso_year, iso_week, _ = monday.isocalendar()
         weeks.append({
-            "n": n, "id": sid, "start": monday.isoformat(),
+            "n": n, "id": sid, "iso": iso_week, "iso_year": iso_year, "start": monday.isoformat(),
             "phase": phase, "meso": meso, "short": short,
             "phase_micro": j.get("phase_micro"),
             "done": statut == "close",
@@ -386,7 +408,7 @@ def build_season(season_id: str, instance: dict, athlete: str, adir: Path, profi
     open_idx = (first_open - season_start).days // 7
     markers.append({"w": open_idx, "kind": "event", "label": f"Open {instance['echeance_suivante']['workouts'][0]['id']}", "side": "left"})
     if cur:
-        markers.append({"w": cur["n"] - 1, "kind": "now", "label": f"Aujourd'hui · {cur['id']}"})
+        markers.append({"w": cur["n"] - 1, "kind": "now", "label": f"Aujourd'hui · {cal_label(cur)}"})
 
     data = {
         "generated": today.isoformat(),
@@ -398,8 +420,8 @@ def build_season(season_id: str, instance: dict, athlete: str, adir: Path, profi
         "kpis": {
             "weeks_done": len(closed), "weeks_total": len(weeks),
             "days_to_open": (first_open - today).days, "open_label": f"{instance['echeance_suivante']['workouts'][0]['id']} ({first_open.strftime('%d/%m/%Y')})",
-            "macro": macro, "tonnage_week": tonnage_week, "tonnage_prev": tonnage_prev, "z2_week": z2_week, "week_id": f"S{last:02d}",
-            "prev_id": f"S{last - 1:02d}" if last >= 2 else None,
+            "macro": macro, "tonnage_week": tonnage_week, "tonnage_prev": tonnage_prev, "z2_week": z2_week, "week_id": cal_label(weeks[last - 1]),
+            "prev_id": cal_label(weeks[last - 2]) if last >= 2 else None,
             "z2_avg": round(sum(z2_tracked) / len(z2_tracked)) if z2_tracked else None, "z2_weeks": len(z2_tracked), "z2_mev": z2_mev,
         },
         "lifts": lifts,
@@ -410,6 +432,7 @@ def build_season(season_id: str, instance: dict, athlete: str, adir: Path, profi
         "ladder": ladder,
         "markers": markers,
     }
+    data = calify(data, weeks)
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     out = OUT_DIR / f"{season_id}.json"
     out.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
